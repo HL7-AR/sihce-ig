@@ -648,7 +648,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "parametros-patch-identifier-sihce","Parameters.parameter:patient.resource","Parameters.parameter.resource","","SubjectOfCare Client Resident
-","",1,1,"","","","Patient {[CanonicalType[http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA]]} {[]}
+","",1,1,"","","","Patient {[CanonicalType[http://sihce.gob.ar/StructureDefinition/PatientXBA]]} {[]}
 ","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"",""
 "parametros-patch-identifier-sihce","Parameters.parameter:patient.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
 ","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -717,7 +717,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "parametros-update-sdm-sihce","Parameters.parameter:patient.resource","Parameters.parameter.resource","","SubjectOfCare Client Resident
-","",1,1,"","","","Patient {[CanonicalType[http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA]]} {[]}
+","",1,1,"","","","Patient {[CanonicalType[http://sihce.gob.ar/StructureDefinition/PatientXBA]]} {[]}
 ","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"",""
 "parametros-update-sdm-sihce","Parameters.parameter:patient.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
 ","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

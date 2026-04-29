@@ -1,5 +1,6 @@
 id: SIHCE.fhir.core
-canonical: http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core
+# Base canonical (not the IG resource URL); avoids RESOURCE_CANONICAL_MISMATCH in Publisher QA
+canonical: http://sihce.gob.ar
 name: GuiaDeImplementacionSIHCE
 title: "Guía de Implementación SIHCE - FHIR R4"
 status: draft

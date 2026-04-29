@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MLPersona",
-  "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona",
+  "url": "http://sihce.gob.ar/StructureDefinition/MLPersona",
   "version": "1.2.0",
   "name": "MLPersona",
   "title": "Modelo Lógico de Persona para SIHCE",
@@ -42,7 +42,7 @@
   ],
   "kind": "logical",
   "abstract": false,
-  "type": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona",
+  "type": "http://sihce.gob.ar/StructureDefinition/MLPersona",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation": "specialization",
   "differential": {

@@ -14,15 +14,15 @@
          </div>
          <h2>GuiaDeImplementacionSIHCE</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core</pre>
+         <pre>http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core</pre>
       </div>
    </text>
-   <url value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core"/>
+   <url value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core"/>
    <version value="1.2.0"/>
    <name value="GuiaDeImplementacionSIHCE"/>
    <title value="Guía de Implementación SIHCE - FHIR R4"/>
    <status value="draft"/>
-   <date value="2026-04-29T16:47:32-03:00"/>
+   <date value="2026-04-29T16:58:47-03:00"/>
    <publisher value="SIHCE Development Team"/>
    <contact>
       <name value="SIHCE Development Team"/>
@@ -371,7 +371,7 @@
          </reference>
          <name value="Ejemplo Parameters Patch Identifier"/>
          <description value="Ejemplo de Parameters para actualizar identificador local."/>
-         <exampleCanonical value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce"/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -389,7 +389,7 @@
          </reference>
          <name value="Ejemplo Parameters Update SDM"/>
          <description value="Ejemplo de Parameters para actualizacion de SDM."/>
-         <exampleCanonical value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce"/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -406,7 +406,7 @@
             <reference value="Patient/PersonaSIHCEMin"/>
          </reference>
          <name value="PersonaSIHCEMin"/>
-         <exampleCanonical value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>

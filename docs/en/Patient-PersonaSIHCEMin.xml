@@ -3,7 +3,7 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="PersonaSIHCEMin"/>
   <meta>
-    <profile value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"/>
+    <profile value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
   </meta>
   <language value="en"/>
   <text>

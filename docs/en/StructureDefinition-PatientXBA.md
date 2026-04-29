@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA | *Version*:1.2.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/PatientXBA | *Version*:1.2.0 |
 | Draft as of 2025-02-28 | *Computable Name*:PacienteSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
 {
   "resourceType" : "StructureDefinition",
   "id" : "PatientXBA",
-  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA",
+  "url" : "http://sihce.gob.ar/StructureDefinition/PatientXBA",
   "version" : "1.2.0",
   "name" : "PacienteSIHCE",
   "title" : "Paciente SIHCE (PatientXBA)",

@@ -3,7 +3,7 @@
   "id": "ParametrosUpdateSDMEjemplo",
   "meta": {
     "profile": [
-      "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce"
+      "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"
     ]
   },
   "parameter": [
@@ -14,7 +14,7 @@
         "id": "PersonaSIHCEMin",
         "meta": {
           "profile": [
-            "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"
+            "http://sihce.gob.ar/StructureDefinition/PatientXBA"
           ]
         },
         "identifier": [

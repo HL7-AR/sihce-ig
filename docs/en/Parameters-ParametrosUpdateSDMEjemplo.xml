@@ -3,7 +3,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="ParametrosUpdateSDMEjemplo"/>
   <meta>
-    <profile value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce"/>
+    <profile value="http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"/>
   </meta>
   <language value="en"/>
   <parameter>
@@ -12,7 +12,7 @@
       <Patient>
         <id value="PersonaSIHCEMin"/>
         <meta>
-          <profile value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"/>
+          <profile value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
         </meta>
         <language value="en"/>
         <identifier>

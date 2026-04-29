@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona | *Version*:1.2.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MLPersona | *Version*:1.2.0 |
 | Draft as of 2026-04-24 | *Computable Name*:MLPersona |
 
  
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
 {
   "resourceType" : "StructureDefinition",
   "id" : "MLPersona",
-  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona",
+  "url" : "http://sihce.gob.ar/StructureDefinition/MLPersona",
   "version" : "1.2.0",
   "name" : "MLPersona",
   "title" : "Modelo Lógico de Persona para SIHCE",
@@ -60,7 +60,7 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
   }],
   "kind" : "logical",
   "abstract" : false,
-  "type" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona",
+  "type" : "http://sihce.gob.ar/StructureDefinition/MLPersona",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {

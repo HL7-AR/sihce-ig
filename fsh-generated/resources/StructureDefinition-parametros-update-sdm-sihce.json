@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "parametros-update-sdm-sihce",
-  "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce",
+  "url": "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce",
   "name": "ParametrosUpdateSDMSIHCE",
   "title": "Parametros Update SDM SIHCE",
   "status": "draft",
@@ -48,7 +48,7 @@
           {
             "code": "Patient",
             "profile": [
-              "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"
+              "http://sihce.gob.ar/StructureDefinition/PatientXBA"
             ]
           }
         ]

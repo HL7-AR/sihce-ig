@@ -25,7 +25,7 @@ Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual iden
   "resourceType" : "Patient",
   "id" : "PersonaSIHCEMin",
   "meta" : {
-    "profile" : ["http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"]
+    "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
   },
   "identifier" : [{
     "use" : "official",

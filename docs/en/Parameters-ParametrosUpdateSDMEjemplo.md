@@ -15,7 +15,7 @@
   "resourceType" : "Parameters",
   "id" : "ParametrosUpdateSDMEjemplo",
   "meta" : {
-    "profile" : ["http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce"]
+    "profile" : ["http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"]
   },
   "parameter" : [{
     "name" : "patient",
@@ -23,7 +23,7 @@
       "resourceType" : "Patient",
       "id" : "PersonaSIHCEMin",
       "meta" : {
-        "profile" : ["http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"]
+        "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
       },
       "identifier" : [{
         "use" : "official",

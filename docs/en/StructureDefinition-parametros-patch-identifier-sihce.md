@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce | *Version*:1.2.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce | *Version*:1.2.0 |
 | Draft as of 2026-04-29 | *Computable Name*:ParametrosPatchIdentifierSIHCE |
 
  
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-patch-
 {
   "resourceType" : "StructureDefinition",
   "id" : "parametros-patch-identifier-sihce",
-  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce",
+  "url" : "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce",
   "version" : "1.2.0",
   "name" : "ParametrosPatchIdentifierSIHCE",
   "title" : "Parametros Patch Identifier SIHCE",
   "status" : "draft",
-  "date" : "2026-04-29T16:47:32-03:00",
+  "date" : "2026-04-29T16:58:47-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -162,7 +162,7 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-patch-
       "min" : 1,
       "type" : [{
         "code" : "Patient",
-        "profile" : ["http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"]
+        "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
       }]
     }]
   }

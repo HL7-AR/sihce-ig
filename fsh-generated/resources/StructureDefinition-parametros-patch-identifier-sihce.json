@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "parametros-patch-identifier-sihce",
-  "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce",
+  "url": "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce",
   "name": "ParametrosPatchIdentifierSIHCE",
   "title": "Parametros Patch Identifier SIHCE",
   "status": "draft",
@@ -112,7 +112,7 @@
           {
             "code": "Patient",
             "profile": [
-              "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"
+              "http://sihce.gob.ar/StructureDefinition/PatientXBA"
             ]
           }
         ]

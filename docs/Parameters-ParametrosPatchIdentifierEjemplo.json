@@ -2,7 +2,7 @@
   "resourceType" : "Parameters",
   "id" : "ParametrosPatchIdentifierEjemplo",
   "meta" : {
-    "profile" : ["http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce"]
+    "profile" : ["http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"]
   },
   "parameter" : [{
     "name" : "old-identifier",
@@ -24,7 +24,7 @@
       "resourceType" : "Patient",
       "id" : "PersonaSIHCEMin",
       "meta" : {
-        "profile" : ["http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"]
+        "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
       },
       "identifier" : [{
         "use" : "official",

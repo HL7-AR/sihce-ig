@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "ParametrosPatchIdentifierEjemplo"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce>
+       fhir:v "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce>
      ] )
   ] ; # 
   fhir:language [ fhir:v "en"] ; # 
@@ -43,8 +43,8 @@
        fhir:id [ fhir:v "PersonaSIHCEMin" ] ;
        fhir:meta [
          fhir:profile ( [
-           fhir:v "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"^^xsd:anyURI ;
-           fhir:l <http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA>
+           fhir:v "http://sihce.gob.ar/StructureDefinition/PatientXBA"^^xsd:anyURI ;
+           fhir:l <http://sihce.gob.ar/StructureDefinition/PatientXBA>
          ] )
        ] ;
        fhir:language [ fhir:v "en" ] ;

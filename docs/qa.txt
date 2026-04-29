@@ -1,22 +1,21 @@
 GuiaDeImplementacionSIHCE : Validation Results
 =========================================
 
-err = 11, warn = 75, info = 1
+err = 0, warn = 75, info = 1
 IG Publisher Version: 2.2.7
-Generated Wed Apr 29 16:49:52 ART 2026. FHIR version 4.0.1 for SIHCE.fhir.core#1.2.0 (canonical = http://sihce.gob.ar)
- Build Errors : 1 / 71 / 0
- /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core : 2 / 2 / 1
+Generated Wed Apr 29 17:00:59 ART 2026. FHIR version 4.0.1 for SIHCE.fhir.core#1.2.0 (canonical = http://sihce.gob.ar)
+ Build Errors : 0 / 71 / 0
+ /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core : 0 / 2 / 1
  /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/NamingSystem-renaper-dni : 0 / 0 / 1
  /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/Parameters-ParametrosPatchIdentifierEjemplo : 0 / 6 / 4
  /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/Parameters-ParametrosUpdateSDMEjemplo : 0 / 4 / 4
  /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/Patient-PersonaSIHCEMin : 0 / 2 / 1
- /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-MLPersona : 2 / 56 / 1
- /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-PatientXBA : 2 / 0 / 2
- /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce : 2 / 0 / 1
- /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce : 2 / 0 / 1
+ /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-MLPersona : 0 / 56 / 1
+ /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-PatientXBA : 0 / 0 / 2
+ /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce : 0 / 0 / 1
+ /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PersonaSIHCEMin.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: en/Aspectos-Generales.html#/html/body/div/div/div/p/a at Line 348, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/CasosDeUso.html#/html/body/div/div/div/p/a at Line 283, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
@@ -43,7 +42,7 @@ WARNING: en/Patient-PersonaSIHCEMin.change.history.html#/html/body/div/div/div/p
 WARNING: en/Patient-PersonaSIHCEMin.html#/html/body/div/div/div/p/a at Line 247, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/Patient-PersonaSIHCEMin.json.html#/html/body/div/div/div/p/a at Line 301, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/Patient-PersonaSIHCEMin.ttl.html#/html/body/div/div/div/p/a at Line 305, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/Patient-PersonaSIHCEMin.xml.html#/html/body/div/div/div/p/a at Line 290, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/Patient-PersonaSIHCEMin.xml.html#/html/body/div/div/div/p/a at Line 289, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/Seguridad.html#/html/body/div/div/div/p/a at Line 476, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-MLPersona-definitions.html#/html/body/div/div/div/p/a at Line 674, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-MLPersona-examples.html#/html/body/div/div/div/p/a at Line 285, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
@@ -53,7 +52,7 @@ WARNING: en/StructureDefinition-MLPersona.html#/html/body/div/div/div/p/a at Lin
 WARNING: en/StructureDefinition-MLPersona.profile.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 275, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-MLPersona.profile.json.html#/html/body/div/div/div/p/a at Line 2318, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-MLPersona.profile.ttl.html#/html/body/div/div/div/p/a at Line 1834, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-MLPersona.profile.xml.html#/html/body/div/div/div/p/a at Line 2056, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-MLPersona.profile.xml.html#/html/body/div/div/div/p/a at Line 2054, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-PatientXBA-definitions.html#/html/body/div/div/div/p/a at Line 1089, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-PatientXBA-examples.html#/html/body/div/div/div/p/a at Line 306, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-PatientXBA-mappings.html#/html/body/div/div/div/p/a at Line 1469, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
@@ -62,7 +61,7 @@ WARNING: en/StructureDefinition-PatientXBA.html#/html/body/div/div/div/p/a at Li
 WARNING: en/StructureDefinition-PatientXBA.profile.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 285, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-PatientXBA.profile.json.html#/html/body/div/div/div/p/a at Line 5652, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-PatientXBA.profile.ttl.html#/html/body/div/div/div/p/a at Line 4472, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-PatientXBA.profile.xml.html#/html/body/div/div/div/p/a at Line 5196, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-PatientXBA.profile.xml.html#/html/body/div/div/div/p/a at Line 5195, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-patch-identifier-sihce-definitions.html#/html/body/div/div/div/p/a at Line 662, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-patch-identifier-sihce-examples.html#/html/body/div/div/div/p/a at Line 306, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-patch-identifier-sihce-mappings.html#/html/body/div/div/div/p/a at Line 577, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
@@ -71,7 +70,7 @@ WARNING: en/StructureDefinition-parametros-patch-identifier-sihce.html#/html/bod
 WARNING: en/StructureDefinition-parametros-patch-identifier-sihce.profile.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 285, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-patch-identifier-sihce.profile.json.html#/html/body/div/div/div/p/a at Line 2903, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-patch-identifier-sihce.profile.ttl.html#/html/body/div/div/div/p/a at Line 2466, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-parametros-patch-identifier-sihce.profile.xml.html#/html/body/div/div/div/p/a at Line 2669, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-parametros-patch-identifier-sihce.profile.xml.html#/html/body/div/div/div/p/a at Line 2667, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-update-sdm-sihce-definitions.html#/html/body/div/div/div/p/a at Line 450, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-update-sdm-sihce-examples.html#/html/body/div/div/div/p/a at Line 306, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-update-sdm-sihce-mappings.html#/html/body/div/div/div/p/a at Line 413, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
@@ -80,7 +79,7 @@ WARNING: en/StructureDefinition-parametros-update-sdm-sihce.html#/html/body/div/
 WARNING: en/StructureDefinition-parametros-update-sdm-sihce.profile.history.html#/html/body/div/div/div/div/div/h2/div/div/div/p/a at Line 285, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-update-sdm-sihce.profile.json.html#/html/body/div/div/div/p/a at Line 1467, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/StructureDefinition-parametros-update-sdm-sihce.profile.ttl.html#/html/body/div/div/div/p/a at Line 1328, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/StructureDefinition-parametros-update-sdm-sihce.profile.xml.html#/html/body/div/div/div/p/a at Line 1381, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/StructureDefinition-parametros-update-sdm-sihce.profile.xml.html#/html/body/div/div/div/p/a at Line 1379, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/artifacts.html#/html/body/div/div/div/p/a at Line 256, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/index.html#/html/body/div/div/div/p/a at Line 324, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/toc.html#/html/body/div/div/div/p/a at Line 192, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
@@ -89,10 +88,8 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core.json ==
-ERROR: ImplementationGuide.where(url = 'http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core'): Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core.json - the canonical URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core). Use the special-url parameter if you really mean for it not to match
 WARNING: ImplementationGuide/SIHCE.fhir.core: ImplementationGuide.language.system: A definition for CodeSystem 'urn:ietf:bcp:47' could not be found, so the code cannot be validated
 WARNING: ImplementationGuide/SIHCE.fhir.core: ImplementationGuide.language: A definition for CodeSystem 'urn:ietf:bcp:47' could not be found, so the code cannot be validated
-ERROR: /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core: URL Mismatch http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core
 == fsh-generated/resources/NamingSystem-renaper-dni.json ==
 == fsh-generated/resources/Parameters-ParametrosPatchIdentifierEjemplo.json ==
 WARNING: Parameters/ParametrosPatchIdentifierEjemplo: Parameters.parameter[0].value.ofType(Identifier).system: No definition could be found for URL value 'http://msgc.gcba.gob.ar'
@@ -110,7 +107,6 @@ WARNING: Parameters/ParametrosUpdateSDMEjemplo: Parameters.parameter[0]: If the 
 WARNING: Patient/PersonaSIHCEMin: Patient.identifier[0].system: No definition could be found for URL value 'http://www.renaper.gob.ar/dni'
 WARNING: Patient/PersonaSIHCEMin: Patient.identifier[1].system: No definition could be found for URL value 'http://hospitalitaliano.org.ar/fhir'
 == fsh-generated/resources/StructureDefinition-MLPersona.json ==
-ERROR: StructureDefinition.where(url = 'http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona'): Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-MLPersona.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/MLPersona) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona). Use the special-url parameter if you really mean for it not to match
 WARNING: StructureDefinition/MLPersona: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/MLPersona: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/MLPersona: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -167,14 +163,7 @@ WARNING: StructureDefinition/MLPersona: StructureDefinition.differential.element
 WARNING: StructureDefinition/MLPersona: StructureDefinition.differential.element[13]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/MLPersona: StructureDefinition.differential.element[14]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/MLPersona: StructureDefinition.differential.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-ERROR: /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-MLPersona: URL Mismatch http://sihce.gob.ar/StructureDefinition/MLPersona vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona
 == fsh-generated/resources/StructureDefinition-PatientXBA.json ==
-ERROR: StructureDefinition.where(url = 'http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA'): Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-PatientXBA.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/PatientXBA) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA). Use the special-url parameter if you really mean for it not to match
 INFORMATION: StructureDefinition/PatientXBA: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-ERROR: /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-PatientXBA: URL Mismatch http://sihce.gob.ar/StructureDefinition/PatientXBA vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA
 == fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce.json ==
-ERROR: StructureDefinition.where(url = 'http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce'): Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce). Use the special-url parameter if you really mean for it not to match
-ERROR: /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce: URL Mismatch http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce
 == fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce.json ==
-ERROR: StructureDefinition.where(url = 'http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce'): Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce). Use the special-url parameter if you really mean for it not to match
-ERROR: /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce: URL Mismatch http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce

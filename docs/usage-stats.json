@@ -6,17 +6,17 @@
   "profiles": {
     "Patient": [
       {
-        "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA",
+        "url": "http://sihce.gob.ar/StructureDefinition/PatientXBA",
         "title": "Paciente SIHCE (PatientXBA)"
       }
     ],
     "Parameters": [
       {
-        "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce",
+        "url": "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce",
         "title": "Parametros Patch Identifier SIHCE"
       },
       {
-        "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce",
+        "url": "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce",
         "title": "Parametros Update SDM SIHCE"
       }
     ]

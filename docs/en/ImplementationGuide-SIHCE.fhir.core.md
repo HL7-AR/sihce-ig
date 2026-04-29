@@ -9,12 +9,12 @@
   "resourceType" : "ImplementationGuide",
   "id" : "SIHCE.fhir.core",
   "language" : "en",
-  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core",
+  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
   "version" : "1.2.0",
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R4",
   "status" : "draft",
-  "date" : "2026-04-29T16:47:32-03:00",
+  "date" : "2026-04-29T16:58:47-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -633,7 +633,7 @@
       },
       "name" : "Ejemplo Parameters Patch Identifier",
       "description" : "Ejemplo de Parameters para actualizar identificador local.",
-      "exampleCanonical" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce"
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"
     },
     {
       "extension" : [{
@@ -645,7 +645,7 @@
       },
       "name" : "Ejemplo Parameters Update SDM",
       "description" : "Ejemplo de Parameters para actualizacion de SDM.",
-      "exampleCanonical" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce"
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"
     },
     {
       "extension" : [{
@@ -704,7 +704,7 @@
         "reference" : "Patient/PersonaSIHCEMin"
       },
       "name" : "PersonaSIHCEMin",
-      "exampleCanonical" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/PatientXBA"
     },
     {
       "extension" : [{

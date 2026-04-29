@@ -1,37 +1,9 @@
 [{
   "id" : "SIHCE.fhir.core",
   "type" : "ImplementationGuide",
-  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core",
+  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
   "version" : "1.2.0",
   "name" : "GuiaDeImplementacionSIHCE"
-},
-{
-  "id" : "MLPersona",
-  "type" : "StructureDefinition",
-  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona",
-  "version" : "1.2.0",
-  "name" : "MLPersona"
-},
-{
-  "id" : "PatientXBA",
-  "type" : "StructureDefinition",
-  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA",
-  "version" : "1.2.0",
-  "name" : "PacienteSIHCE"
-},
-{
-  "id" : "parametros-patch-identifier-sihce",
-  "type" : "StructureDefinition",
-  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce",
-  "version" : "1.2.0",
-  "name" : "ParametrosPatchIdentifierSIHCE"
-},
-{
-  "id" : "parametros-update-sdm-sihce",
-  "type" : "StructureDefinition",
-  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce",
-  "version" : "1.2.0",
-  "name" : "ParametrosUpdateSDMSIHCE"
 },
 {
   "id" : "renaper-dni",
@@ -39,4 +11,32 @@
   "url" : "http://sihce.gob.ar/NamingSystem/renaper-dni",
   "version" : "1.2.0",
   "name" : "RenaperDNI"
+},
+{
+  "id" : "MLPersona",
+  "type" : "StructureDefinition",
+  "url" : "http://sihce.gob.ar/StructureDefinition/MLPersona",
+  "version" : "1.2.0",
+  "name" : "MLPersona"
+},
+{
+  "id" : "PatientXBA",
+  "type" : "StructureDefinition",
+  "url" : "http://sihce.gob.ar/StructureDefinition/PatientXBA",
+  "version" : "1.2.0",
+  "name" : "PacienteSIHCE"
+},
+{
+  "id" : "parametros-patch-identifier-sihce",
+  "type" : "StructureDefinition",
+  "url" : "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce",
+  "version" : "1.2.0",
+  "name" : "ParametrosPatchIdentifierSIHCE"
+},
+{
+  "id" : "parametros-update-sdm-sihce",
+  "type" : "StructureDefinition",
+  "url" : "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce",
+  "version" : "1.2.0",
+  "name" : "ParametrosUpdateSDMSIHCE"
 }]
