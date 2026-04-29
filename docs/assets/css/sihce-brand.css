@@ -1,0 +1,32 @@
+/* SIHCE: cabecera con logos embebidos */
+#segment-header > .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+.ig-brand-logos {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+.ig-brand-logo {
+  display: block;
+  height: 44px;
+  width: auto;
+  max-width: 100%;
+}
+.ig-brand-logo--hl7ar {
+  width: 170px;
+  height: 44px;
+}
+.ig-brand-logo--caba {
+  width: 44px;
+  height: 44px;
+}
+#ig-status {
+  flex: 1 1 200px;
+  min-width: 280px;
+}

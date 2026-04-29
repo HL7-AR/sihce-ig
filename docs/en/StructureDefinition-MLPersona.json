@@ -1,0 +1,1693 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "MLPersona",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition MLPersona</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona\" title=\"Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación\">MLPersona</a><a name=\"MLPersona\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Modelo Lógico de Persona para SIHCE</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial\" title=\"Nombre oficial de la persona\">NombreOficial</a><a name=\"MLPersona.NombreOficial\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Nombre oficial de la persona</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial.PrimerNombre\" title=\"Primer nombre\">PrimerNombre</a><a name=\"MLPersona.NombreOficial.PrimerNombre\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Primer nombre</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial.OtrosNombres\" title=\"Siguientes nombres\">OtrosNombres</a><a name=\"MLPersona.NombreOficial.OtrosNombres\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Siguientes nombres<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial.PrimerApellido\" title=\"Primer parte del apellido o primer apellido\">PrimerApellido</a><a name=\"MLPersona.NombreOficial.PrimerApellido\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Primer parte del apellido o primer apellido</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial.SegundoApellido\" title=\"Resto del o los apellido(s)\">SegundoApellido</a><a name=\"MLPersona.NombreOficial.SegundoApellido\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Resto del o los apellido(s)<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.NombreSocial\" title=\"Nombre o pseudonimo por el cual la persona desea ser identificada\">NombreSocial</a><a name=\"MLPersona.NombreSocial\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#HumanName\">HumanName</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Nombre o pseudonimo por el cual la persona desea ser identificada<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.NombreSocial.Nombre\" title=\"Nombre de pila por el cual la persona desea ser identificada\">Nombre</a><a name=\"MLPersona.NombreSocial.Nombre\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Nombre de pila por el cual la persona desea ser identificada</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco\" title=\"DNI + Identificador de dominio local\">IdentificadorUnivoco</a><a name=\"MLPersona.IdentificadorUnivoco\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">2..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identificador unívoco de la persona<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco.TipoDoc\" title=\"Que documento se va a usar\">TipoDoc</a><a name=\"MLPersona.IdentificadorUnivoco.TipoDoc\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Que documento se va a usar</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco.NroDoc\" title=\"El valor del numero de DNI por ejemplo\">NroDoc</a><a name=\"MLPersona.IdentificadorUnivoco.NroDoc\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">El valor del numero de DNI por ejemplo</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco.URIDominio\" title=\"URI del dominio que federó el paciente\">URIDominio</a><a name=\"MLPersona.IdentificadorUnivoco.URIDominio\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">URI del dominio que federó el paciente</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco.idLocal\" title=\"ID local del paciente en el dominio\">idLocal</a><a name=\"MLPersona.IdentificadorUnivoco.idLocal\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">ID local del paciente en el dominio</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.GeneroAdministrativo\" title=\"Género de registro administrativo, por ejemplo el que figure en su DNI\">GeneroAdministrativo</a><a name=\"MLPersona.GeneroAdministrativo\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Género de registro administrativo, por ejemplo el que figure en su DNI</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.FechaNacimiento\" title=\"Fecha y hora de nacimiento\">FechaNacimiento</a><a name=\"MLPersona.FechaNacimiento\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Fecha y hora de nacimiento</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-MLPersona-definitions.html#MLPersona.Estado\" title=\"Inactivo | Validado | Permanente | Temporal\">Estado</a><a name=\"MLPersona.Estado\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Inactivo | Validado | Permanente | Temporal</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona",
+  "version" : "1.2.0",
+  "name" : "MLPersona",
+  "title" : "Modelo Lógico de Persona para SIHCE",
+  "status" : "draft",
+  "date" : "2026-04-24T09:43:51-03:00",
+  "publisher" : "SIHCE Development Team",
+  "contact" : [{
+    "name" : "SIHCE Development Team",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://sihce.gob.ar/"
+    }]
+  }],
+  "description" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "mlpersona-to-sihce",
+    "uri" : "http://hl7.org/fhir/StructureDefinition/Patient",
+    "name" : "Mapping del Modelo Lógico MLPersona al perfil PacienteSIHCE",
+    "comment" : "Mapeo entre el modelo lógico MLPersona y el perfil Patient SIHCE"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "4.0.1"
+    }],
+    "element" : [{
+      "id" : "MLPersona",
+      "path" : "MLPersona",
+      "short" : "Modelo Lógico de Persona para SIHCE",
+      "definition" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "MLPersona.NombreOficial",
+      "path" : "MLPersona.NombreOficial",
+      "short" : "Nombre oficial de la persona",
+      "definition" : "Nombre oficial de la persona",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.NombreOficial",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "HumanName"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official')",
+        "comment" : "Nombre oficial mapeado al name slice oficial"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.id",
+      "path" : "MLPersona.NombreOficial.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.extension",
+      "path" : "MLPersona.NombreOficial.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.use",
+      "path" : "MLPersona.NombreOficial.use",
+      "short" : "usual | official | temp | nickname | anonymous | old | maiden",
+      "definition" : "Identifies the purpose for this name.",
+      "comment" : "Applications can assume that a name is current unless it explicitly says that it is temporary or old.",
+      "requirements" : "Allows the appropriate name for a particular context of use to be selected from among a set of names.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HumanName.use",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old name etc.for a current/permanent one",
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "NameUse"
+        }],
+        "strength" : "required",
+        "description" : "The use of a human name.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.7, but often indicated by which field contains the name"
+      },
+      {
+        "identity" : "rim",
+        "map" : "unique(./use)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./NamePurpose"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.text",
+      "path" : "MLPersona.NombreOficial.text",
+      "short" : "Text representation of the full name",
+      "definition" : "Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.",
+      "comment" : "Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.",
+      "requirements" : "A renderable, unencoded form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HumanName.text",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "implied by XPN.11"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./formatted"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.family",
+      "path" : "MLPersona.NombreOficial.family",
+      "short" : "Family name (often called 'Surname')",
+      "definition" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+      "comment" : "Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).",
+      "alias" : ["surname"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HumanName.family",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.1/FN.1"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./part[partType = FAM]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./FamilyName"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.given",
+      "path" : "MLPersona.NombreOficial.given",
+      "short" : "Given names (not always 'first'). Includes middle names",
+      "definition" : "Given name.",
+      "comment" : "If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called \"first name\" since given names do not always come first.",
+      "alias" : ["first name",
+      "middle name"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "HumanName.given",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "orderMeaning" : "Given Names appear in the correct order for presenting the name",
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.2 + XPN.3"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./part[partType = GIV]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./GivenNames"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.prefix",
+      "path" : "MLPersona.NombreOficial.prefix",
+      "short" : "Parts that come before the name",
+      "definition" : "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "HumanName.prefix",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "orderMeaning" : "Prefixes appear in the correct order for presenting the name",
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.5"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./part[partType = PFX]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./TitleCode"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.suffix",
+      "path" : "MLPersona.NombreOficial.suffix",
+      "short" : "Parts that come after the name",
+      "definition" : "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "HumanName.suffix",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "orderMeaning" : "Suffixes appear in the correct order for presenting the name",
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN/4"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./part[partType = SFX]"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.period",
+      "path" : "MLPersona.NombreOficial.period",
+      "short" : "Time period when name was/is in use",
+      "definition" : "Indicates the period of time when this name was valid for the named person.",
+      "requirements" : "Allows names to be placed in historical context.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HumanName.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.13 + XPN.14"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./usablePeriod[type=\"IVL<TS>\"]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StartDate and ./EndDate"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.PrimerNombre",
+      "path" : "MLPersona.NombreOficial.PrimerNombre",
+      "short" : "Primer nombre",
+      "definition" : "Primer nombre",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.NombreOficial.PrimerNombre",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official').given[0]",
+        "comment" : "Primer nombre al primer elemento de given"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.OtrosNombres",
+      "path" : "MLPersona.NombreOficial.OtrosNombres",
+      "short" : "Siguientes nombres",
+      "definition" : "Siguientes nombres",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "MLPersona.NombreOficial.OtrosNombres",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official').given[1..*]",
+        "comment" : "Otros nombres a los siguientes elementos de given"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.PrimerApellido",
+      "path" : "MLPersona.NombreOficial.PrimerApellido",
+      "short" : "Primer parte del apellido o primer apellido",
+      "definition" : "Primer parte del apellido o primer apellido",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.NombreOficial.PrimerApellido",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official').family.extension.where(url = 'http://example.org/fhir/StructureDefinition/ExtensionPrimerApellido').valueString",
+        "comment" : "Primer apellido a la extensión primerApellido"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.SegundoApellido",
+      "path" : "MLPersona.NombreOficial.SegundoApellido",
+      "short" : "Resto del o los apellido(s)",
+      "definition" : "Resto del o los apellido(s)",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "MLPersona.NombreOficial.SegundoApellido",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official').family.extension.where(url = 'http://example.org/fhir/StructureDefinition/ExtensionSegundoApellido').valueString",
+        "comment" : "Segundo apellido a la extensión segundoApellido"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial",
+      "path" : "MLPersona.NombreSocial",
+      "short" : "Nombre o pseudonimo por el cual la persona desea ser identificada",
+      "definition" : "Nombre o pseudonimo por el cual la persona desea ser identificada",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "MLPersona.NombreSocial",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "HumanName"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'usual')",
+        "comment" : "Nombre social mapeado al name slice social"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.id",
+      "path" : "MLPersona.NombreSocial.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.extension",
+      "path" : "MLPersona.NombreSocial.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.use",
+      "path" : "MLPersona.NombreSocial.use",
+      "short" : "usual | official | temp | nickname | anonymous | old | maiden",
+      "definition" : "Identifies the purpose for this name.",
+      "comment" : "Applications can assume that a name is current unless it explicitly says that it is temporary or old.",
+      "requirements" : "Allows the appropriate name for a particular context of use to be selected from among a set of names.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HumanName.use",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "This is labeled as \"Is Modifier\" because applications should not mistake a temporary or old name etc.for a current/permanent one",
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "NameUse"
+        }],
+        "strength" : "required",
+        "description" : "The use of a human name.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/name-use|4.0.1"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.7, but often indicated by which field contains the name"
+      },
+      {
+        "identity" : "rim",
+        "map" : "unique(./use)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./NamePurpose"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.text",
+      "path" : "MLPersona.NombreSocial.text",
+      "short" : "Text representation of the full name",
+      "definition" : "Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.",
+      "comment" : "Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.",
+      "requirements" : "A renderable, unencoded form.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HumanName.text",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "implied by XPN.11"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./formatted"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.family",
+      "path" : "MLPersona.NombreSocial.family",
+      "short" : "Family name (often called 'Surname')",
+      "definition" : "The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.",
+      "comment" : "Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).",
+      "alias" : ["surname"],
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HumanName.family",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.1/FN.1"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./part[partType = FAM]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./FamilyName"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.given",
+      "path" : "MLPersona.NombreSocial.given",
+      "short" : "Given names (not always 'first'). Includes middle names",
+      "definition" : "Given name.",
+      "comment" : "If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called \"first name\" since given names do not always come first.",
+      "alias" : ["first name",
+      "middle name"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "HumanName.given",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "orderMeaning" : "Given Names appear in the correct order for presenting the name",
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.2 + XPN.3"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./part[partType = GIV]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./GivenNames"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.prefix",
+      "path" : "MLPersona.NombreSocial.prefix",
+      "short" : "Parts that come before the name",
+      "definition" : "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "HumanName.prefix",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "orderMeaning" : "Prefixes appear in the correct order for presenting the name",
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.5"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./part[partType = PFX]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./TitleCode"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.suffix",
+      "path" : "MLPersona.NombreSocial.suffix",
+      "short" : "Parts that come after the name",
+      "definition" : "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "HumanName.suffix",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "orderMeaning" : "Suffixes appear in the correct order for presenting the name",
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN/4"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./part[partType = SFX]"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.period",
+      "path" : "MLPersona.NombreSocial.period",
+      "short" : "Time period when name was/is in use",
+      "definition" : "Indicates the period of time when this name was valid for the named person.",
+      "requirements" : "Allows names to be placed in historical context.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "HumanName.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "XPN.13 + XPN.14"
+      },
+      {
+        "identity" : "rim",
+        "map" : "./usablePeriod[type=\"IVL<TS>\"]"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StartDate and ./EndDate"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.Nombre",
+      "path" : "MLPersona.NombreSocial.Nombre",
+      "short" : "Nombre de pila por el cual la persona desea ser identificada",
+      "definition" : "Nombre de pila por el cual la persona desea ser identificada",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.NombreSocial.Nombre",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'usual').given",
+        "comment" : "Nombre social al given del name slice social"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco",
+      "path" : "MLPersona.IdentificadorUnivoco",
+      "short" : "Identificador unívoco de la persona",
+      "definition" : "DNI + Identificador de dominio local",
+      "min" : 2,
+      "max" : "*",
+      "base" : {
+        "path" : "MLPersona.IdentificadorUnivoco",
+        "min" : 2,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier",
+        "comment" : "Identificadores únicos del modelo lógico"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.id",
+      "path" : "MLPersona.IdentificadorUnivoco.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.extension",
+      "path" : "MLPersona.IdentificadorUnivoco.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.use",
+      "path" : "MLPersona.IdentificadorUnivoco.use",
+      "short" : "usual | official | temp | secondary | old (If known)",
+      "definition" : "The purpose of this identifier.",
+      "comment" : "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
+      "requirements" : "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.use",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "This is labeled as \"Is Modifier\" because applications should not mistake a temporary id for a permanent one.",
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "IdentifierUse"
+        }],
+        "strength" : "required",
+        "description" : "Identifies the purpose for this identifier, if known .",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-use|4.0.1"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "N/A"
+      },
+      {
+        "identity" : "rim",
+        "map" : "Role.code or implied by context"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.type",
+      "path" : "MLPersona.IdentificadorUnivoco.type",
+      "short" : "Description of identifier",
+      "definition" : "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.",
+      "comment" : "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
+      "requirements" : "Allows users to make use of identifiers when the identifier system is not known.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.type",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "binding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString" : "IdentifierType"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+          "valueBoolean" : true
+        }],
+        "strength" : "extensible",
+        "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/identifier-type|4.0.1"
+      },
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.5"
+      },
+      {
+        "identity" : "rim",
+        "map" : "Role.code or implied by context"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.system",
+      "path" : "MLPersona.IdentificadorUnivoco.system",
+      "short" : "The namespace for the identifier value",
+      "definition" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
+      "comment" : "Identifier.system is always case sensitive.",
+      "requirements" : "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.system",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "uri"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueUri" : "http://www.acme.com/identifiers/patient"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.4 / EI-2-4"
+      },
+      {
+        "identity" : "rim",
+        "map" : "II.root or Role.id.root"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./IdentifierType"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.value",
+      "path" : "MLPersona.IdentificadorUnivoco.value",
+      "short" : "The value that is unique",
+      "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
+      "comment" : "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension](http://hl7.org/fhir/R4/extension-rendered-value.html). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.value",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "example" : [{
+        "label" : "General",
+        "valueString" : "123456"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.1 / EI.1"
+      },
+      {
+        "identity" : "rim",
+        "map" : "II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./Value"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.period",
+      "path" : "MLPersona.IdentificadorUnivoco.period",
+      "short" : "Time period when id is/was valid for use",
+      "definition" : "Time period during which identifier is/was valid for use.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.7 + CX.8"
+      },
+      {
+        "identity" : "rim",
+        "map" : "Role.effectiveTime or implied by context"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./StartDate and ./EndDate"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.assigner",
+      "path" : "MLPersona.IdentificadorUnivoco.assigner",
+      "short" : "Organization that issued id (may be just text)",
+      "definition" : "Organization that issued/manages the identifier.",
+      "comment" : "The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Identifier.assigner",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }],
+      "isModifier" : false,
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "v2",
+        "map" : "CX.4 / (CX.4,CX.9,CX.10)"
+      },
+      {
+        "identity" : "rim",
+        "map" : "II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper"
+      },
+      {
+        "identity" : "servd",
+        "map" : "./IdentifierIssuingAuthority"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.TipoDoc",
+      "path" : "MLPersona.IdentificadorUnivoco.TipoDoc",
+      "short" : "Que documento se va a usar",
+      "definition" : "Que documento se va a usar",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.IdentificadorUnivoco.TipoDoc",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier.where(type.coding.code = 'NI').type",
+        "comment" : "Tipo de documento al DNI identifier"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.NroDoc",
+      "path" : "MLPersona.IdentificadorUnivoco.NroDoc",
+      "short" : "El valor del numero de DNI por ejemplo",
+      "definition" : "El valor del numero de DNI por ejemplo",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.IdentificadorUnivoco.NroDoc",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier.where(type.coding.code = 'NI').value",
+        "comment" : "Número de documento al value del DNI"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.URIDominio",
+      "path" : "MLPersona.IdentificadorUnivoco.URIDominio",
+      "short" : "URI del dominio que federó el paciente",
+      "definition" : "URI del dominio que federó el paciente",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.IdentificadorUnivoco.URIDominio",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier.where(type.coding.code = 'MR').system",
+        "comment" : "URI del dominio al system del identifier"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.idLocal",
+      "path" : "MLPersona.IdentificadorUnivoco.idLocal",
+      "short" : "ID local del paciente en el dominio",
+      "definition" : "ID local del paciente en el dominio",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.IdentificadorUnivoco.idLocal",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier.where(type.coding.code = 'MR').value",
+        "comment" : "ID local al value del identifier de dominio"
+      }]
+    },
+    {
+      "id" : "MLPersona.GeneroAdministrativo",
+      "path" : "MLPersona.GeneroAdministrativo",
+      "short" : "Género de registro administrativo, por ejemplo el que figure en su DNI",
+      "definition" : "Género de registro administrativo, por ejemplo el que figure en su DNI",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.GeneroAdministrativo",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.gender",
+        "comment" : "Género administrativo al gender de Patient"
+      }]
+    },
+    {
+      "id" : "MLPersona.FechaNacimiento",
+      "path" : "MLPersona.FechaNacimiento",
+      "short" : "Fecha y hora de nacimiento",
+      "definition" : "Fecha y hora de nacimiento",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.FechaNacimiento",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.birthDate",
+        "comment" : "Fecha de nacimiento al birthDate"
+      }]
+    },
+    {
+      "id" : "MLPersona.Estado",
+      "path" : "MLPersona.Estado",
+      "short" : "Inactivo | Validado | Permanente | Temporal",
+      "definition" : "Inactivo | Validado | Permanente | Temporal",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "MLPersona.Estado",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.active",
+        "comment" : "Estado del modelo lógico al active de Patient (requiere transformación de códigos)"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "MLPersona",
+      "path" : "MLPersona",
+      "short" : "Modelo Lógico de Persona para SIHCE",
+      "definition" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"
+    },
+    {
+      "id" : "MLPersona.NombreOficial",
+      "path" : "MLPersona.NombreOficial",
+      "short" : "Nombre oficial de la persona",
+      "definition" : "Nombre oficial de la persona",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "HumanName"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official')",
+        "comment" : "Nombre oficial mapeado al name slice oficial"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.PrimerNombre",
+      "path" : "MLPersona.NombreOficial.PrimerNombre",
+      "short" : "Primer nombre",
+      "definition" : "Primer nombre",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official').given[0]",
+        "comment" : "Primer nombre al primer elemento de given"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.OtrosNombres",
+      "path" : "MLPersona.NombreOficial.OtrosNombres",
+      "short" : "Siguientes nombres",
+      "definition" : "Siguientes nombres",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official').given[1..*]",
+        "comment" : "Otros nombres a los siguientes elementos de given"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.PrimerApellido",
+      "path" : "MLPersona.NombreOficial.PrimerApellido",
+      "short" : "Primer parte del apellido o primer apellido",
+      "definition" : "Primer parte del apellido o primer apellido",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official').family.extension.where(url = 'http://example.org/fhir/StructureDefinition/ExtensionPrimerApellido').valueString",
+        "comment" : "Primer apellido a la extensión primerApellido"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreOficial.SegundoApellido",
+      "path" : "MLPersona.NombreOficial.SegundoApellido",
+      "short" : "Resto del o los apellido(s)",
+      "definition" : "Resto del o los apellido(s)",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'official').family.extension.where(url = 'http://example.org/fhir/StructureDefinition/ExtensionSegundoApellido').valueString",
+        "comment" : "Segundo apellido a la extensión segundoApellido"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial",
+      "path" : "MLPersona.NombreSocial",
+      "short" : "Nombre o pseudonimo por el cual la persona desea ser identificada",
+      "definition" : "Nombre o pseudonimo por el cual la persona desea ser identificada",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "HumanName"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'usual')",
+        "comment" : "Nombre social mapeado al name slice social"
+      }]
+    },
+    {
+      "id" : "MLPersona.NombreSocial.Nombre",
+      "path" : "MLPersona.NombreSocial.Nombre",
+      "short" : "Nombre de pila por el cual la persona desea ser identificada",
+      "definition" : "Nombre de pila por el cual la persona desea ser identificada",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.name.where(use = 'usual').given",
+        "comment" : "Nombre social al given del name slice social"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco",
+      "path" : "MLPersona.IdentificadorUnivoco",
+      "short" : "Identificador unívoco de la persona",
+      "definition" : "DNI + Identificador de dominio local",
+      "min" : 2,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier",
+        "comment" : "Identificadores únicos del modelo lógico"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.TipoDoc",
+      "path" : "MLPersona.IdentificadorUnivoco.TipoDoc",
+      "short" : "Que documento se va a usar",
+      "definition" : "Que documento se va a usar",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier.where(type.coding.code = 'NI').type",
+        "comment" : "Tipo de documento al DNI identifier"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.NroDoc",
+      "path" : "MLPersona.IdentificadorUnivoco.NroDoc",
+      "short" : "El valor del numero de DNI por ejemplo",
+      "definition" : "El valor del numero de DNI por ejemplo",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier.where(type.coding.code = 'NI').value",
+        "comment" : "Número de documento al value del DNI"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.URIDominio",
+      "path" : "MLPersona.IdentificadorUnivoco.URIDominio",
+      "short" : "URI del dominio que federó el paciente",
+      "definition" : "URI del dominio que federó el paciente",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier.where(type.coding.code = 'MR').system",
+        "comment" : "URI del dominio al system del identifier"
+      }]
+    },
+    {
+      "id" : "MLPersona.IdentificadorUnivoco.idLocal",
+      "path" : "MLPersona.IdentificadorUnivoco.idLocal",
+      "short" : "ID local del paciente en el dominio",
+      "definition" : "ID local del paciente en el dominio",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.identifier.where(type.coding.code = 'MR').value",
+        "comment" : "ID local al value del identifier de dominio"
+      }]
+    },
+    {
+      "id" : "MLPersona.GeneroAdministrativo",
+      "path" : "MLPersona.GeneroAdministrativo",
+      "short" : "Género de registro administrativo, por ejemplo el que figure en su DNI",
+      "definition" : "Género de registro administrativo, por ejemplo el que figure en su DNI",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.gender",
+        "comment" : "Género administrativo al gender de Patient"
+      }]
+    },
+    {
+      "id" : "MLPersona.FechaNacimiento",
+      "path" : "MLPersona.FechaNacimiento",
+      "short" : "Fecha y hora de nacimiento",
+      "definition" : "Fecha y hora de nacimiento",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.birthDate",
+        "comment" : "Fecha de nacimiento al birthDate"
+      }]
+    },
+    {
+      "id" : "MLPersona.Estado",
+      "path" : "MLPersona.Estado",
+      "short" : "Inactivo | Validado | Permanente | Temporal",
+      "definition" : "Inactivo | Validado | Permanente | Temporal",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mapping" : [{
+        "identity" : "mlpersona-to-sihce",
+        "map" : "Patient.active",
+        "comment" : "Estado del modelo lógico al active de Patient (requiere transformación de códigos)"
+      }]
+    }]
+  }
+}

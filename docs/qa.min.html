@@ -1,0 +1,741 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 66, errors = 11, warn = 75, info = 1-->
+<head>
+  <title>GuiaDeImplementacionSIHCE : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for GuiaDeImplementacionSIHCE</h1>
+ <p>Generated Wed Apr 29 15:52:53 ART 2026, FHIR version 4.0.1 for SIHCE.fhir.core#1.2.0 (canonical = <a href="http://sihce.gob.ar">http://sihce.gob.ar</a> (<a href="http://sihce.gob.ar/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.2.7</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = SIHCE.fhir.core, Canonical = http://sihce.gob.ar</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>Stated Languages: n/a. IG Resource Lang: en. 1 of 9 (11%) of resources have a language. <a href="https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-resource-language-policy">Population Policy</a>: NONE</td></tr>
+ <tr><td><a href="https://confluence.hl7.org/spaces/FHIR/pages/144970227/IG+Publication+Request+Documentation">Publication Request</a>:</td><td><ul><li>Error fetching package-list from http://sihce.gob.ar: sihce.gob.ar <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> SIHCE.fhir.core</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://sihce.gob.ar</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4Xu3LMQoAIBADwftr/v8GtdbqEAthAtMspJJUx9rYW8ftHwAA+NcRAAAAXplLq0BWj/rZigAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACwSURBVDhP7ZLBDsIwCIaLZz34xG3f2cQYo5UfYalJoY07ePFL4GcbpZSVWmvJgwifG+njkLDACgfVIehAQ5ffdMDvxSS2Dmqty62UUmS1rIWD8UuWd9xxVt1AnoaSGx6Buap+0G80K3BTtbtwhLPZQL0CSIA9OwUXON7dZkBeASTAThb3bffMjnCHGy00ZgUeqi5f3YOcsw01vsqYMrMljwgLrBDOwP53xL+D3R2k9ALHsmr3Yu73+gAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">7.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/7.1.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4Xu3LMQoAIBADwftr/v8GtdbqEAthAtMspJJUx9rYW8ftHwAA+NcRAAAAXplLq0BWj/rZigAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"> (as above)</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #fcf7c0" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAEvnpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHjarVdbdsQmDP1nFV0CEojHcnie0x10+b14EM5kkmbS1k4sLGQk7pVEYsZff07zBy4mScZLTCGHYHH57DMXDJJ9XPV6kvXXc79YHTzpzZlgqByke7xm3voBPca03/N2QmqvCx1PBSO5J0rZ+vqsr3tBTp8X2hE4eni2fX+wF3K8I/KP97YjCjnFp631tj37rUr3r3eRgwSKHk/PNsaQMU5sfQSefQXq4uUeGG1PqtB3NWXExMORs3g6t6N069e7ApnxJMcGhuQiXtilayJdwFtQiRCwcH4sPIs9YH7E5sbom+udbVk4mWMZf2DtTpDn/Dgj+ka/0+CwlsKecM+02nDkl3oSXUgn3PHDHz2ndjw/6cF2+AiF+Uj3nD3Na9PYRfEBWIS9Kd3KNYJdXSheXwXc0QaDrE0YrDvjTrbYhhTotqHSKsaZGNxP8tSp0KRxyUYNIXoeHCGZm2F3KRNIytzcSga/bpockSMdScGuXTnkHZ9Y6HKbL3eNku3GdoIpExZDWv3727xrOOeqJSKbDlaIi1c1IApLoH8JmIERmhtUuQDW+/O1eHVgUC6YEzZYbDWPJarQnVzuItrBUCAftUex7wUAEVwLgiEHBmwgJxQQUWSORAAygaCC0FGNXMEAiXBHkOydCyAH1QHf+CbSZcrCDzW6qvPGiQso2rSqGGR5L8if6BNyqIgTLyJBoiTJUoILq/JCiGG15xJd9FFiiDEmE3MsySWfJIUUU0o5lczZoX1LRp3mlHMuBU4LVi74usCglMrVVV+lhhprqtnU0pA+zTdpocWWWm6lc3cdBd5Djz313MuggVQafsgII4408igTqTbd9FNmmNHMNPMsh7VN68v9C9Zos8YXU8swHtagjVGXoNVOZHEGxtgTCI9gDYwhsRdnNpH3vJhbnOE8QlUII0hZ5HRajIFBP4hl0uFuM2eA4v/Cm4np4o3/K3NmUfcmc6+8fcVaX6dEuxh7lOEC1TpU34yzcMIPjt/vpflqgi6BlVvdGkC8VVHIyzr8Pkljv5n4rbwXykvgtAK0/aGiPvYklbhn6TtpfjJ4UzoT9t6n7YpHLS8j+6M07xp+LdGpdiBm2qzKcmLqQUnid6X55QfphsJpsvSFkwFQkk4kg38byU8RHb7jw+EaWR2JqOeoARZT92Somj2jaEq58n5c5knRmrpqVXXdqy67A8EpomE3LcaOqX5RzMcyqxJ2b4VlbsXx3OQs7Q8aLdzKoXwpQoOKgj36sXMn2/pJt+l/Sk3zkqs8zk4VMZobfT6EpMMlPejC1px+2e7EP1jWE6j8c0zmi/pJCgxXbSPtTo6ssYRwZtF4zO48RQ2bNig66Ha+Qft1Zg+vy5STsvZG6HRBq7Mmxnpa49Rg6vlY9ON4XIwvE8v8Q6YVeYklO/UqGpSQgs25P/dxqodbPrXrtanevULCB8/mnZq8TyV7CNAmzLsg1v8i45SVfhl0K0m34g9q46AW3sXodEX1VHRZOXXp1cicDhaSQpTn5wbGdyf7rheY3/bUl6Nys4Bak/FSEScb+4kp/Lb6f5Lsjtv+8bBfp4jXxJP5uW/8dFLHiT+IsvkbxL7pfRLafrkAAAEiaUNDUElDQyBwcm9maWxlAAB4nJ2Qv0rDUBTGf6niP+qkOKhDBteCg2ZyqQqhoBBjBatTmqRYTGJIUopv4Jvow3QQBJ/BWcHZ70YHB7N44eP8OJzzffdeaNlJmJbzu5BmVeH63cHl4MpefGOZtrTFXhCWedfzTmg8n69Ypr50jFfz3J9nIYrLUHUmZWFeVGAdiJ1plRuWWL/t+0fiB7EdpVkkfhLvRGlk2Oz6aTIJfzzNbdpxdnFu+tI2Lj1O8bAZMmFMQkVHNVPnGId9VZeCgHtKQtWEWL2pZipuRKWcXA5FfZFu05C3Wed5ShnKYywvk3BHKk+Th/nf77WPs3rT2pjlQRHUrTmpNRrB+yOsDmDtGVauG7KWfr+tYcapZ/75xi8Ik1B1a4BIzwAADRxpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IlhNUCBDb3JlIDQuNC4wLUV4aXYyIj4KIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgIHhtbG5zOkdJTVA9Imh0dHA6Ly93d3cuZ2ltcC5vcmcveG1wLyIKICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIgogICB4bXBNTTpEb2N1bWVudElEPSJnaW1wOmRvY2lkOmdpbXA6ZjNlMmQ5MzgtMDE4Yi00YmEyLThiMzQtNDBiM2Q4MmJjZDMzIgogICB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0ZTMwYzM5LTllYWItNGJjZS1hMjU0LTUxOGY3ODRjODg0NiIKICAgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmUxNzgzM2U1LWQ1ZWMtNDM3NC1hYzJlLTk0YzVlN2I5OGUzNyIKICAgZGM6Rm9ybWF0PSJpbWFnZS9wbmciCiAgIEdJTVA6QVBJPSIyLjAiCiAgIEdJTVA6UGxhdGZvcm09Ik1hYyBPUyIKICAgR0lNUDpUaW1lU3RhbXA9IjE3MjYxMzMyOTE1MjEwMDciCiAgIEdJTVA6VmVyc2lvbj0iMi4xMC4zMCIKICAgdGlmZjpPcmllbnRhdGlvbj0iMSIKICAgeG1wOkNyZWF0b3JUb29sPSJHSU1QIDIuMTAiPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJzYXZlZCIKICAgICAgc3RFdnQ6Y2hhbmdlZD0iLyIKICAgICAgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpmN2Q4YzdkZC1mMGNlLTQxNWYtOWQ1ZS04NGE2YThmNGZkMDUiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkdpbXAgMi4xMCAoTWFjIE9TKSIKICAgICAgc3RFdnQ6d2hlbj0iMjAyNC0wOS0xMlQxNzoyODoxMSswODowMCIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz7Mhr9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AkMCRwLD3FR3AAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAC8SURBVBjTY/gPAf9e/YUwmBig4Nh7CA0T+H/7JqrAhzf3UQR+TeB4DGEx/mdgYPhy/vg32W/iIUxQFW+Xvf7h9tb03AOolv8rHU84/Wf69fsRVOAt80F1+Tcal/k/QAVuqfx0e/tRmVmBBSrAyyPG8zTglpmEEFRAgUfkj8Z9BUVO2ddQFeIC/wQYFBj4PnMwMDCwMDAwCDB95RJj+8DDygsVYBFiY2Bj4f4nCncpA8OfH/9/8zMzMDAwAAB49kdRfpOTuAAAAABJRU5ErkJggg==" alt="." style="background-color: #fcf7c0; background-color: inherit" title="NPM Package IG Dependency" class="hierarchy"/> hl7.fhir.uv.tools.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.1.2 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/tools</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/tools/1.1.2</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #fcf7c0; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Internal Dependency</td></tr>
+</table><para>Templates: sihce.branded.template#0.1.0 -&gt; fhir2.base.template#0.1.0</para></div></td></tr>
+ <tr><td>Related IGs:</td><td>n/a</td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><ul><li><a href="http://build.fhir.org/namingsystem.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version</a></li><li><a href="http://build.fhir.org/namingsystem.html">http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url</a></li></ul></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (1 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://sihce.gob.ar (Problem #1 with package-list.json at http://sihce.gob.ar: sihce.gob.ar)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 11, warn = 75, info = 1, broken links = 66, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>71</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_ImplementationGuide-SIHCE.fhir.core"><b>/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_Parameters-ParametrosPatchIdentifierEjemplo"><b>/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/Parameters-ParametrosPatchIdentifierEjemplo</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_Parameters-ParametrosUpdateSDMEjemplo"><b>/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/Parameters-ParametrosUpdateSDMEjemplo</b></a></td><td><b>0</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_Patient-PersonaSIHCEMin"><b>/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/Patient-PersonaSIHCEMin</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_StructureDefinition-MLPersona"><b>/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-MLPersona</b></a></td><td><b>2</b></td><td><b>56</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_StructureDefinition-PatientXBA"><b>/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-PatientXBA</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_StructureDefinition-parametros-patch-identifier-sihce"><b>/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_StructureDefinition-parametros-update-sdm-sihce"><b>/Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.definition&#8203;.parameter[23]&#8203;.value</b></td><td><b>error</b></td><td><b>Supressed messages file not found</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PersonaSIHCEMin.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Aspectos-Generales.html#l556">en&#8203;/Aspectos-Generales&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 348, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/CasosDeUso.html#l423">en&#8203;/CasosDeUso&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 283, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/HistorialDeCambios.html#l627">en&#8203;/HistorialDeCambios&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 341, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/ModeloLogico.html#l1798">en&#8203;/ModeloLogico&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 701, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/NamingSystem-renaper-dni-testing.html#l378">en&#8203;/NamingSystem-renaper-dni-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 273, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/NamingSystem-renaper-dni.change.history.html#l345">en&#8203;/NamingSystem-renaper-dni&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/NamingSystem-renaper-dni.html#l466">en&#8203;/NamingSystem-renaper-dni&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 299, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/NamingSystem-renaper-dni.json.html#l453">en&#8203;/NamingSystem-renaper-dni&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 308, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/NamingSystem-renaper-dni.ttl.html#l528">en&#8203;/NamingSystem-renaper-dni&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 318, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/NamingSystem-renaper-dni.xml.html#l527">en&#8203;/NamingSystem-renaper-dni&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 302, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Operaciones.html#l1609">en&#8203;/Operaciones&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 452, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosPatchIdentifierEjemplo.change.history.html#l345">en&#8203;/Parameters-ParametrosPatchIdentifierEjemplo&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosPatchIdentifierEjemplo.html#l419">en&#8203;/Parameters-ParametrosPatchIdentifierEjemplo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 247, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosPatchIdentifierEjemplo.json.html#l501">en&#8203;/Parameters-ParametrosPatchIdentifierEjemplo&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 326, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosPatchIdentifierEjemplo.ttl.html#l612">en&#8203;/Parameters-ParametrosPatchIdentifierEjemplo&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 325, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosPatchIdentifierEjemplo.xml.html#l639">en&#8203;/Parameters-ParametrosPatchIdentifierEjemplo&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 313, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosUpdateSDMEjemplo.change.history.html#l345">en&#8203;/Parameters-ParametrosUpdateSDMEjemplo&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosUpdateSDMEjemplo.html#l401">en&#8203;/Parameters-ParametrosUpdateSDMEjemplo&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 247, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosUpdateSDMEjemplo.json.html#l477">en&#8203;/Parameters-ParametrosUpdateSDMEjemplo&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 312, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosUpdateSDMEjemplo.ttl.html#l558">en&#8203;/Parameters-ParametrosUpdateSDMEjemplo&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 309, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Parameters-ParametrosUpdateSDMEjemplo.xml.html#l579">en&#8203;/Parameters-ParametrosUpdateSDMEjemplo&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 299, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Patient-PersonaSIHCEMin.change.history.html#l345">en&#8203;/Patient-PersonaSIHCEMin&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 233, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Patient-PersonaSIHCEMin.html#l376">en&#8203;/Patient-PersonaSIHCEMin&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 247, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Patient-PersonaSIHCEMin.json.html#l459">en&#8203;/Patient-PersonaSIHCEMin&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 301, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Patient-PersonaSIHCEMin.ttl.html#l534">en&#8203;/Patient-PersonaSIHCEMin&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 305, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Patient-PersonaSIHCEMin.xml.html#l548">en&#8203;/Patient-PersonaSIHCEMin&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 290, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/Seguridad.html#l949">en&#8203;/Seguridad&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 476, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-MLPersona-definitions.html#l6746">en&#8203;/StructureDefinition-MLPersona-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 674, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-MLPersona-examples.html#l371">en&#8203;/StructureDefinition-MLPersona-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 285, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-MLPersona-mappings.html#l1145">en&#8203;/StructureDefinition-MLPersona-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 417, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-MLPersona-testing.html#l393">en&#8203;/StructureDefinition-MLPersona-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 292, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-MLPersona.html#l7377">en&#8203;/StructureDefinition-MLPersona&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2227, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-MLPersona.profile.history.html#l368">en&#8203;/StructureDefinition-MLPersona&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/h2&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 275, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-MLPersona.profile.json.html#l4265">en&#8203;/StructureDefinition-MLPersona&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2318, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-MLPersona.profile.ttl.html#l7873">en&#8203;/StructureDefinition-MLPersona&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1834, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-MLPersona.profile.xml.html#l8521">en&#8203;/StructureDefinition-MLPersona&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2056, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-PatientXBA-definitions.html#l14010">en&#8203;/StructureDefinition-PatientXBA-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1089, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-PatientXBA-examples.html#l403">en&#8203;/StructureDefinition-PatientXBA-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 306, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-PatientXBA-mappings.html#l4166">en&#8203;/StructureDefinition-PatientXBA-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1469, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-PatientXBA-testing.html#l399">en&#8203;/StructureDefinition-PatientXBA-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 302, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-PatientXBA.html#l14800">en&#8203;/StructureDefinition-PatientXBA&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3975, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-PatientXBA.profile.history.html#l374">en&#8203;/StructureDefinition-PatientXBA&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/h2&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 285, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-PatientXBA.profile.json.html#l10763">en&#8203;/StructureDefinition-PatientXBA&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 5652, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-PatientXBA.profile.ttl.html#l20788">en&#8203;/StructureDefinition-PatientXBA&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 4472, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-PatientXBA.profile.xml.html#l22540">en&#8203;/StructureDefinition-PatientXBA&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 5196, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-patch-identifier-sihce-definitions.html#l8275">en&#8203;/StructureDefinition-parametros-patch-identifier-sihce-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 662, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-patch-identifier-sihce-examples.html#l403">en&#8203;/StructureDefinition-parametros-patch-identifier-sihce-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 306, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-patch-identifier-sihce-mappings.html#l1609">en&#8203;/StructureDefinition-parametros-patch-identifier-sihce-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 577, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-patch-identifier-sihce-testing.html#l399">en&#8203;/StructureDefinition-parametros-patch-identifier-sihce-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 302, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-patch-identifier-sihce.html#l12198">en&#8203;/StructureDefinition-parametros-patch-identifier-sihce&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3356, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-patch-identifier-sihce.profile.history.html#l374">en&#8203;/StructureDefinition-parametros-patch-identifier-sihce&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/h2&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 285, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-patch-identifier-sihce.profile.json.html#l5249">en&#8203;/StructureDefinition-parametros-patch-identifier-sihce&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2903, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-patch-identifier-sihce.profile.ttl.html#l10285">en&#8203;/StructureDefinition-parametros-patch-identifier-sihce&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2466, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-patch-identifier-sihce.profile.xml.html#l11134">en&#8203;/StructureDefinition-parametros-patch-identifier-sihce&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2669, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-update-sdm-sihce-definitions.html#l3739">en&#8203;/StructureDefinition-parametros-update-sdm-sihce-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 450, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-update-sdm-sihce-examples.html#l403">en&#8203;/StructureDefinition-parametros-update-sdm-sihce-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 306, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-update-sdm-sihce-mappings.html#l877">en&#8203;/StructureDefinition-parametros-update-sdm-sihce-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 413, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-update-sdm-sihce-testing.html#l399">en&#8203;/StructureDefinition-parametros-update-sdm-sihce-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 302, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-update-sdm-sihce.html#l8176">en&#8203;/StructureDefinition-parametros-update-sdm-sihce&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2482, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-update-sdm-sihce.profile.history.html#l374">en&#8203;/StructureDefinition-parametros-update-sdm-sihce&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/h2&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 285, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-update-sdm-sihce.profile.json.html#l2435">en&#8203;/StructureDefinition-parametros-update-sdm-sihce&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1467, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-update-sdm-sihce.profile.ttl.html#l4729">en&#8203;/StructureDefinition-parametros-update-sdm-sihce&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1328, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/StructureDefinition-parametros-update-sdm-sihce.profile.xml.html#l5200">en&#8203;/StructureDefinition-parametros-update-sdm-sihce&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1381, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/artifacts.html#l440">en&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/index.html#l495">en&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 324, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b><a href="en/toc.html#l445">en&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 192, column 22</a></b></td><td><b>warning</b></td><td><b>The link 'http://sihce.gob.ar/' for &quot;SIHCE Development Team&quot; is a canonical link and is therefore unsafe with regard to versions</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">HTML_LINK_VERSIONLESS_CANONICAL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_ImplementationGuide-SIHCE.fhir.core"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/SIHCE.fhir.core: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.where(url = 'http:&#8203;/&#8203;/sihce&#8203;.gob&#8203;.ar&#8203;/ImplementationGuide&#8203;/SIHCE&#8203;.fhir&#8203;.core&#8203;/ImplementationGuide&#8203;/SIHCE&#8203;.fhir&#8203;.core')</b></td><td><b>error</b></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core.json - the canonical URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide&#8203;.language&#8203;.system (l1&#8203;/c77)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'urn:ietf:bcp:47' could not be found, so the code cannot be validated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.language (l1/c77)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'urn:ietf:bcp:47' could not be found, so the code cannot be validated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ImplementationGuide-SIHCE&#8203;.fhir&#8203;.core</b></td><td><b>error</b></td><td><b>URL Mismatch http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_Parameters-ParametrosPatchIdentifierEjemplo"> </a>
+<h2><a href="Parameters-ParametrosPatchIdentifierEjemplo.html">fsh-generated/resources/Parameters-ParametrosPatchIdentifierEjemplo.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(4)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Parameters: Validated against <i>this.</i><a href="StructureDefinition-parametros-patch-identifier-sihce.html">Parametros Patch Identifier SIHCE</a></li><li>Parameters.parameter[2].resource: Validated against <i>this.</i><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters&#8203;.parameter[0]&#8203;.value&#8203;.ofType(Identifier)&#8203;.system (l13&#8203;/c44)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://msgc.gcba.gob.ar'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="StructureDefinition-parametros-patch-identifier-sihce.html">Parametros Patch Identifier SIHCE</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters&#8203;.parameter[1]&#8203;.value&#8203;.ofType(Identifier)&#8203;.system (l20&#8203;/c44)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://msgc.gcba.gob.ar'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="StructureDefinition-parametros-patch-identifier-sihce.html">Parametros Patch Identifier SIHCE</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters&#8203;.parameter[2]&#8203;.resource&#8203;/*Patient&#8203;/PersonaSIHCEMin*&#8203;/&#8203;.identifier[0]&#8203;.system (l37&#8203;/c54)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://www.renaper.gob.ar/dni'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters&#8203;.parameter[2]&#8203;.resource&#8203;/*Patient&#8203;/PersonaSIHCEMin*&#8203;/&#8203;.identifier[1]&#8203;.system (l58&#8203;/c60)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hospitalitaliano.org.ar/fhir'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters&#8203;.parameter[2]&#8203;.resource&#8203;/*Patient&#8203;/PersonaSIHCEMin*&#8203;/ (l26&#8203;/c8)</b></td><td><b>warning</b></td><td><b>Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6</span></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters.parameter[2] (l24/c6)</b></td><td><b>warning</b></td><td><b>If the parameter 'patient' is an instance of the parameter defined in the base FHIR standard, then it must have a value</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_Parameters-ParametrosUpdateSDMEjemplo"> </a>
+<h2><a href="Parameters-ParametrosUpdateSDMEjemplo.html">fsh-generated/resources/Parameters-ParametrosUpdateSDMEjemplo.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(4)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Parameters: Validated against <i>this.</i><a href="StructureDefinition-parametros-update-sdm-sihce.html">Parametros Update SDM SIHCE</a></li><li>Parameters.parameter[0].resource: Validated against <i>this.</i><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters&#8203;.parameter[0]&#8203;.resource&#8203;/*Patient&#8203;/PersonaSIHCEMin*&#8203;/&#8203;.identifier[0]&#8203;.system (l23&#8203;/c54)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://www.renaper.gob.ar/dni'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters&#8203;.parameter[0]&#8203;.resource&#8203;/*Patient&#8203;/PersonaSIHCEMin*&#8203;/&#8203;.identifier[1]&#8203;.system (l44&#8203;/c60)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hospitalitaliano.org.ar/fhir'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters&#8203;.parameter[0]&#8203;.resource&#8203;/*Patient&#8203;/PersonaSIHCEMin*&#8203;/ (l12&#8203;/c8)</b></td><td><b>warning</b></td><td><b>Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6</span></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Parameters.parameter[0] (l10/c6)</b></td><td><b>warning</b></td><td><b>If the parameter 'patient' is an instance of the parameter defined in the base FHIR standard, then it must have a value</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_Patient-PersonaSIHCEMin"> </a>
+<h2><a href="Patient-PersonaSIHCEMin.html">fsh-generated/resources/Patient-PersonaSIHCEMin.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Patient: Validated against <i>this.</i><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[0].system (l12/c48)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://www.renaper.gob.ar/dni'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.identifier[1].system (l33/c54)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hospitalitaliano.org.ar/fhir'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_StructureDefinition-MLPersona"> </a>
+<h2><a href="StructureDefinition-MLPersona.html">fsh-generated/resources/StructureDefinition-MLPersona.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sihce&#8203;.gob&#8203;.ar&#8203;/ImplementationGuide&#8203;/SIHCE&#8203;.fhir&#8203;.core&#8203;/StructureDefinition&#8203;/MLPersona')</b></td><td><b>error</b></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-MLPersona.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/MLPersona) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[1] (l1&#8203;/c34504)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[2] (l1&#8203;/c35117)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[3] (l1&#8203;/c36874)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4] (l1&#8203;/c38276)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[5] (l1&#8203;/c39302)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6] (l1&#8203;/c40245)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[7] (l1&#8203;/c41349)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8] (l1&#8203;/c42239)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9] (l1&#8203;/c43085)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10] (l1&#8203;/c43929)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[11] (l1&#8203;/c44346)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12] (l1&#8203;/c44784)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13] (l1&#8203;/c45374)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14] (l1&#8203;/c45938)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15] (l1&#8203;/c46667)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[16] (l1&#8203;/c47278)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17] (l1&#8203;/c49033)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18] (l1&#8203;/c50433)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19] (l1&#8203;/c51457)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20] (l1&#8203;/c52398)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21] (l1&#8203;/c53500)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22] (l1&#8203;/c54388)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[23] (l1&#8203;/c55232)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24] (l1&#8203;/c56074)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25] (l1&#8203;/c56561)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[26] (l1&#8203;/c57239)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27] (l1&#8203;/c57866)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28] (l1&#8203;/c59637)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[29] (l1&#8203;/c60994)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30] (l1&#8203;/c62824)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31] (l1&#8203;/c63966)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32] (l1&#8203;/c65446)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33] (l1&#8203;/c66230)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[34] (l1&#8203;/c67375)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35] (l1&#8203;/c67836)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[36] (l1&#8203;/c68311)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37] (l1&#8203;/c68803)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[38] (l1&#8203;/c69282)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[39] (l1&#8203;/c69763)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40] (l1&#8203;/c70138)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41] (l1&#8203;/c70574)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1] (l1&#8203;/c71128)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2] (l1&#8203;/c71472)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3] (l1&#8203;/c71837)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4] (l1&#8203;/c72352)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5] (l1&#8203;/c72840)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6] (l1&#8203;/c73252)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7] (l1&#8203;/c73673)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8] (l1&#8203;/c74026)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9] (l1&#8203;/c74412)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10] (l1&#8203;/c74813)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11] (l1&#8203;/c75227)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12] (l1&#8203;/c75631)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13] (l1&#8203;/c76045)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14] (l1&#8203;/c76358)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15] (l1&#8203;/c76741)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-MLPersona</b></td><td><b>error</b></td><td><b>URL Mismatch http://sihce.gob.ar/StructureDefinition/MLPersona vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_StructureDefinition-PatientXBA"> </a>
+<h2><a href="StructureDefinition-PatientXBA.html">fsh-generated/resources/StructureDefinition-PatientXBA.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sihce&#8203;.gob&#8203;.ar&#8203;/ImplementationGuide&#8203;/SIHCE&#8203;.fhir&#8203;.core&#8203;/StructureDefinition&#8203;/PatientXBA')</b></td><td><b>error</b></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-PatientXBA.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/PatientXBA) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c90459)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-PatientXBA</b></td><td><b>error</b></td><td><b>URL Mismatch http://sihce.gob.ar/StructureDefinition/PatientXBA vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_StructureDefinition-parametros-patch-identifier-sihce"> </a>
+<h2><a href="StructureDefinition-parametros-patch-identifier-sihce.html">fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sihce&#8203;.gob&#8203;.ar&#8203;/ImplementationGuide&#8203;/SIHCE&#8203;.fhir&#8203;.core&#8203;/StructureDefinition&#8203;/parametros-patch-identifier-sihce')</b></td><td><b>error</b></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-parametros-patch-identifier-sihce</b></td><td><b>error</b></td><td><b>URL Mismatch http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_AI_EDUCATION_bus-caba_security_SIHCE-IG-SRC_fsh-generated_resources_StructureDefinition-parametros-update-sdm-sihce"> </a>
+<h2><a href="StructureDefinition-parametros-update-sdm-sihce.html">fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td><td><b>Validating</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/sihce&#8203;.gob&#8203;.ar&#8203;/ImplementationGuide&#8203;/SIHCE&#8203;.fhir&#8203;.core&#8203;/StructureDefinition&#8203;/parametros-update-sdm-sihce')</b></td><td><b>error</b></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce). Use the special-url parameter if you really mean for it not to match</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">RESOURCE_CANONICAL_MISMATCH</span></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-parametros-update-sdm-sihce</b></td><td><b>error</b></td><td><b>URL Mismatch http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce vs http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PatientXBA.html">fsh-generated/resources/StructureDefinition-PatientXBA.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td><td><a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core.json</a></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core.json - the canonical URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/ImplementationGuide/SIHCE.fhir.core). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-MLPersona.html">fsh-generated/resources/StructureDefinition-MLPersona.json</a></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-MLPersona.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/MLPersona) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/MLPersona). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-PatientXBA.html">fsh-generated/resources/StructureDefinition-PatientXBA.json</a></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-PatientXBA.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/PatientXBA) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-parametros-patch-identifier-sihce.html">fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce.json</a></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-patch-identifier-sihce.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-parametros-update-sdm-sihce.html">fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce.json</a></td><td><b>Conformance resource /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce.json - the canonical URL (http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce) does not match the URL (http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce). Use the special-url parameter if you really mean for it not to match</b></td><td>--</td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Parameters-ParametrosPatchIdentifierEjemplo.html">fsh-generated/resources/Parameters-ParametrosPatchIdentifierEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://msgc.gcba.gob.ar'</b></td><td><a href="StructureDefinition-parametros-patch-identifier-sihce.html">Parametros Patch Identifier SIHCE</a></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Parameters-ParametrosPatchIdentifierEjemplo.html">fsh-generated/resources/Parameters-ParametrosPatchIdentifierEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://msgc.gcba.gob.ar'</b></td><td><a href="StructureDefinition-parametros-patch-identifier-sihce.html">Parametros Patch Identifier SIHCE</a></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Parameters-ParametrosPatchIdentifierEjemplo.html">fsh-generated/resources/Parameters-ParametrosPatchIdentifierEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://www.renaper.gob.ar/dni'</b></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Parameters-ParametrosPatchIdentifierEjemplo.html">fsh-generated/resources/Parameters-ParametrosPatchIdentifierEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://hospitalitaliano.org.ar/fhir'</b></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Parameters-ParametrosUpdateSDMEjemplo.html">fsh-generated/resources/Parameters-ParametrosUpdateSDMEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://www.renaper.gob.ar/dni'</b></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Parameters-ParametrosUpdateSDMEjemplo.html">fsh-generated/resources/Parameters-ParametrosUpdateSDMEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://hospitalitaliano.org.ar/fhir'</b></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PersonaSIHCEMin.html">fsh-generated/resources/Patient-PersonaSIHCEMin.json</a></td><td><b>No definition could be found for URL value 'http://www.renaper.gob.ar/dni'</b></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Patient-PersonaSIHCEMin.html">fsh-generated/resources/Patient-PersonaSIHCEMin.json</a></td><td><b>No definition could be found for URL value 'http://hospitalitaliano.org.ar/fhir'</b></td><td><a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></td>
+   </tr>
+</table>
+<hr/>
+<a name="UNKNOWN_CODESYSTEM"> </a>
+<h2>UNKNOWN_CODESYSTEM</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-SIHCE.fhir.core.json</a></td><td><b>A definition for CodeSystem 'urn:ietf:bcp:47' could not be found, so the code cannot be validated</b></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
+   </tr>
+</table>
+</body>
+</html>

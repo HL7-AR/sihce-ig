@@ -1,0 +1,375 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v1.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/sihce-brand.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
+            <br/>
+            <span style="display:inline-block;">1.2.0 - 
+
+
+            </span>
+          </p>
+        </div>
+        <!-- Logos locales (assets/images); sin enlaces a sitios externos -->
+<div id="ig-brand-logos" class="ig-brand-logos" aria-label="HL7 Argentina y Ciudad de Buenos Aires">
+  <img class="ig-brand-logo ig-brand-logo--hl7ar"
+       src="assets/images/logo-hl7-argentina.svg"
+       alt="HL7 Argentina"
+       height="44"
+       width="170"
+       loading="lazy"/>
+  <img class="ig-brand-logo ig-brand-logo--caba"
+       src="assets/images/logo-caba.svg"
+       alt="Ciudad Autónoma de Buenos Aires"
+       height="44"
+       width="44"
+       loading="lazy"/>
+</div>
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="index.html">Inicio</a>
+  </li>
+  <li>
+    <a href="Aspectos-Generales.html">Generalidades</a>
+  </li>
+  <li>
+    <a href="Operaciones.html">Operaciones</a>
+  </li>
+  <li>
+    <a href="CasosDeUso.html">Casos de Uso</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="ModeloLogico.html">Modelo Lógico</a>
+  </li>
+  <li>
+    <a href="Seguridad.html">Seguridad</a>
+  </li>
+  <li>
+    <a href="HistorialDeCambios.html">Historial de Cambios</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Historial de Cambios</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v1.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Historial de Cambios</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#versión-120" id="markdown-toc-versión-120">Versión 1.2.0</a></li>
+  <li><a href="#versión-017" id="markdown-toc-versión-017">Versión 0.1.7</a></li>
+  <li><a href="#versión-016" id="markdown-toc-versión-016">Versión 0.1.6</a></li>
+  <li><a href="#versión-015" id="markdown-toc-versión-015">Versión 0.1.5</a></li>
+  <li><a href="#versión-014" id="markdown-toc-versión-014">Versión 0.1.4</a></li>
+  <li><a href="#versión-013" id="markdown-toc-versión-013">Versión 0.1.3</a></li>
+  <li><a href="#versión-012" id="markdown-toc-versión-012">Versión 0.1.2</a></li>
+  <li><a href="#versión-011" id="markdown-toc-versión-011">Versión 0.1.1</a></li>
+  <li><a href="#versión-010" id="markdown-toc-versión-010">Versión 0.1.0</a></li>
+</ul>
+
+</div>
+<h3 id="versión-120">Versión 1.2.0</h3>
+
+<ul>
+  <li>Título de la guía unificado a <strong>Guía de Implementación SIHCE - FHIR R4</strong>; versión de paquete <strong>1.2.0</strong>.</li>
+  <li>Endpoints REST documentados como recurso <strong><code class="language-plaintext highlighter-rouge">Patient</code></strong> (incluidas operaciones <code class="language-plaintext highlighter-rouge">$patch-identifier</code> y <code class="language-plaintext highlighter-rouge">$update-sdm</code>); perfil de payload <strong><code class="language-plaintext highlighter-rouge">PatientXBA</code></strong> (<code class="language-plaintext highlighter-rouge">StructureDefinition/PatientXBA</code>).</li>
+  <li>Operaciones: parámetros de búsqueda y definiciones de <code class="language-plaintext highlighter-rouge">Parameters</code> integrados en la misma página que cada operación; POST enlazado al perfil PatientXBA.</li>
+  <li>Página <strong>Seguridad</strong>: diagramas (flujo X-BA y arquitectura); tablas en Markdown; alineación con la publicación de referencia.</li>
+  <li><strong>Casos de Uso</strong>: diagrama de contexto y diagramas de secuencia (Mermaid).</li>
+  <li><strong>Artefactos</strong> / <strong>TOC</strong>: contenido duplicado del menú eliminado; retirados perfil y ejemplo de Organization.</li>
+  <li>Menú: <strong>Tabla de contenidos</strong> como primer ítem; enlace a informe QA retirado del menú y del pie.</li>
+  <li>Plantilla local: cabecera con enlace a <a href="https://buenosaires.gob.ar/inicio/">Ciudad de Buenos Aires</a> y <a href="https://www.hl7.org.ar/">HL7 Argentina</a>.</li>
+</ul>
+
+<h3 id="versión-017">Versión 0.1.7</h3>
+
+<ul>
+  <li>Mapping del Modelo Lógico MLPersona al perfil PacienteSIHCE</li>
+</ul>
+
+<h3 id="versión-016">Versión 0.1.6</h3>
+
+<ul>
+  <li>
+    <p>Se elimina extensión de apellidos no utilizada y se ajusta el perfil PacienteSIHCE a utilizar solo el atributo family. Acompañado a este cambio también se modifican las instancias de ejemplo del perfil.</p>
+  </li>
+  <li>
+    <p>Se adaptan los datos del perfil PacienteSIHCE y las instancias de ejemplo a los estrictamente utilizados como entrada/salida de los casos de uso.</p>
+  </li>
+  <li>
+    <p>Se agregan logos de HL7 Argentina y el escudo oficial de CABA, ambos en el header de la guía.</p>
+  </li>
+  <li>
+    <p>FederarPersona ya no retorna estado y corrección en el caso de uso (diagrama de secuencia).</p>
+  </li>
+  <li>
+    <p>Diagrama y modelo lógico de ModificarIDLocalPersona.</p>
+  </li>
+  <li>
+    <p>Diagrama y modelo lógico de ModificarSDMPersona.</p>
+  </li>
+</ul>
+
+<h3 id="versión-015">Versión 0.1.5</h3>
+
+<ul>
+  <li>
+    <p>Se agrega la página HistorialDeCambios.md y se actualiza el menú para incluirla.</p>
+  </li>
+  <li>
+    <p>Se agrega el historial de cambios correspondiente a cada versión para un mejor seguimiento de los cambios por parte del lector de la IG.</p>
+  </li>
+</ul>
+
+<h3 id="versión-014">Versión 0.1.4</h3>
+
+<ul>
+  <li>
+    <p>Se agregan nuevas páginas: Aspectos-Generales.md, Operaciones.md y se actualiza el menú y la sección de páginas en la configuración.</p>
+  </li>
+  <li>
+    <p>Se corrige la URL del publisher por http://hl7.org.ar y se actualiza el nombre de la IG agregando FHIR R4 para indicar la versión de FHIR utilizada.</p>
+  </li>
+  <li>
+    <p>Mejoras en la estructura de los modelos lógicos y documentación de casos de uso.</p>
+  </li>
+  <li>
+    <p>Se agregan diagramas y ejemplos visuales en la documentación.</p>
+  </li>
+  <li>
+    <p>Se actualizan las páginas ModeloLogico y CasosDeUso, para agregar los correspondientes a ModificarPersona, AltaDominio y ModificarDominio.</p>
+  </li>
+</ul>
+
+<h3 id="versión-013">Versión 0.1.3</h3>
+
+<ul>
+  <li>
+    <p>Se agrega la página ModeloLogico.md y se actualiza el menú para incluirla.</p>
+  </li>
+  <li>
+    <p>Se agregan ejemplos y documentación de modelos lógicos de BuscarPersona y FederarPersona.</p>
+  </li>
+</ul>
+
+<h3 id="versión-012">Versión 0.1.2</h3>
+
+<ul>
+  <li>
+    <p>Se agrega la página CasosDeUso.md y se actualiza el menú para incluirla.</p>
+  </li>
+  <li>
+    <p>Se agregan los diagramas de secuencia correspondientes a los casos de uso BuscarPersona y FederarPersona.</p>
+  </li>
+</ul>
+
+<h3 id="versión-011">Versión 0.1.1</h3>
+
+<ul>
+  <li>
+    <p>Se cambia el canonical a http://sihce.gob.ar y el nombre de la IG a "Guía de Implementación SIHCE".</p>
+  </li>
+  <li>
+    <p>Se corrige la URL del publisher.</p>
+  </li>
+  <li>
+    <p>Se mejora la estructura de los perfiles de paciente y dominio, agregando slicing.</p>
+  </li>
+</ul>
+
+<h3 id="versión-010">Versión 0.1.0</h3>
+
+<ul>
+  <li>
+    <p>Versión inicial del proyecto, con configuración base para SIHCE.</p>
+  </li>
+  <li>
+    <p>Se define canonical, publisher y estructura inicial de menú y dependencias.</p>
+  </li>
+  <li>
+    <p>Se agregan los primeros perfiles y extensiones, y se inicia la documentación básica.</p>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="http://sihce.gob.ar/">SIHCE Development Team</a>.  
+          Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Wed, Apr 29, 2026 15:50-0300">2026-04-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

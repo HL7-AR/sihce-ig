@@ -1,0 +1,38 @@
+# SIHCE.fhir.core#1.2.0: Guía de Implementación SIHCE - FHIR R4(en)
+
+## Pages
+
+* [Inicio](en/index.md)
+* [Generalidades](en/Aspectos-Generales.md)
+* [Artefactos](en/artifacts.md)
+* [Casos de Uso](en/CasosDeUso.md)
+* [Operaciones](en/Operaciones.md)
+* [Seguridad](en/Seguridad.md)
+* [Modelo Lógico](en/ModeloLogico.md)
+* [Historial de Cambios](en/HistorialDeCambios.md)
+
+## Resources
+
+### Logicals
+
+* [Modelo Lógico de Persona para SIHCE](en/StructureDefinition-MLPersona.md)
+
+### Resource Profiles
+
+* [Paciente SIHCE (PatientXBA)](en/StructureDefinition-PatientXBA.md)
+* [Parametros Patch Identifier SIHCE](en/StructureDefinition-parametros-patch-identifier-sihce.md)
+* [Parametros Update SDM SIHCE](en/StructureDefinition-parametros-update-sdm-sihce.md)
+
+### ImplementationGuides
+
+* [Guía de Implementación SIHCE - FHIR R4](en/ImplementationGuide-SIHCE.fhir.core.md)
+
+### NamingSystems
+
+* [RenaperDNI](en/NamingSystem-renaper-dni.md)
+
+### Examples
+
+* [ParametrosPatchIdentifierEjemplo (Parameters)](en/Parameters-ParametrosPatchIdentifierEjemplo.md)
+* [ParametrosUpdateSDMEjemplo (Parameters)](en/Parameters-ParametrosUpdateSDMEjemplo.md)
+* [PersonaSIHCEMin (Patient)](en/Patient-PersonaSIHCEMin.md)

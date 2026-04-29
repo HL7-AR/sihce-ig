@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="ParametrosUpdateSDMEjemplo"/>
+  <meta>
+    <profile value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce"/>
+  </meta>
+  <parameter>
+    <name value="patient"/>
+    <resource>
+      <Patient>
+        <id value="PersonaSIHCEMin"/>
+        <meta>
+          <profile value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"/>
+        </meta>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NI"/>
+            </coding>
+          </type>
+          <system value="http://www.renaper.gob.ar/dni"/>
+          <value value="12345678"/>
+        </identifier>
+        <identifier>
+          <use value="secondary"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+            </coding>
+          </type>
+          <system value="http://hospitalitaliano.org.ar/fhir"/>
+          <value value="23"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <text value="Carlos Pereira"/>
+          <family value="Pereira"/>
+          <given value="Carlos"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1939-12-20"/>
+      </Patient>
+    </resource>
+  </parameter>
+</Parameters>
