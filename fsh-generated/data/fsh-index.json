@@ -1,5 +1,37 @@
 [
   {
+    "outputFile": "ConceptMap-BuscarPersonaModeloAFHIR.json",
+    "fshName": "BuscarPersonaModeloAFHIR",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/ConceptMapBuscarPersona.fsh",
+    "startLine": 1,
+    "endLine": 64
+  },
+  {
+    "outputFile": "ConceptMap-FederarPersonaModeloAFHIR.json",
+    "fshName": "FederarPersonaModeloAFHIR",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/ConceptMapFederarPersona.fsh",
+    "startLine": 1,
+    "endLine": 63
+  },
+  {
+    "outputFile": "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.json",
+    "fshName": "ModificarIDLocalPersonaModeloAFHIR",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/ConceptMapModificarIDLocalPersona.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "ConceptMap-ModificarSDMPersonaModeloAFHIR.json",
+    "fshName": "ModificarSDMPersonaModeloAFHIR",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/ConceptMapModificarSDMPersona.fsh",
+    "startLine": 1,
+    "endLine": 74
+  },
+  {
     "outputFile": "NamingSystem-renaper-dni.json",
     "fshName": "renaper-dni",
     "fshType": "Instance",
@@ -32,12 +64,44 @@
     "endLine": 17
   },
   {
+    "outputFile": "StructureDefinition-BuscarPersona.json",
+    "fshName": "BuscarPersona",
+    "fshType": "Logical",
+    "fshFile": "logicals/LogicalBuscarPersona.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-FederarPersona.json",
+    "fshName": "FederarPersona",
+    "fshType": "Logical",
+    "fshFile": "logicals/LogicalFederarPersona.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
     "outputFile": "StructureDefinition-MLPersona.json",
     "fshName": "MLPersona",
     "fshType": "Logical",
     "fshFile": "logicals/MLPersona.fsh",
     "startLine": 1,
     "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-ModificarIDLocalPersona.json",
+    "fshName": "ModificarIDLocalPersona",
+    "fshType": "Logical",
+    "fshFile": "logicals/LogicalModificarIDLocalPersona.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-ModificarSDMPersona.json",
+    "fshName": "ModificarSDMPersona",
+    "fshType": "Logical",
+    "fshFile": "logicals/LogicalModificarSDMPersona.fsh",
+    "startLine": 1,
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-PatientXBA.json",

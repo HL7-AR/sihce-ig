@@ -15,13 +15,24 @@
 
 ### Logicals
 
+* [Modelo lógico BuscarPersona (FederadorBA)](en/StructureDefinition-BuscarPersona.md)
+* [Modelo lógico FederarPersona (FederadorBA)](en/StructureDefinition-FederarPersona.md)
 * [Modelo Lógico de Persona para SIHCE](en/StructureDefinition-MLPersona.md)
+* [Modelo lógico ModificarIDLocalPersona (FederadorBA)](en/StructureDefinition-ModificarIDLocalPersona.md)
+* [Modelo lógico ModificarSDMPersona (FederadorBA)](en/StructureDefinition-ModificarSDMPersona.md)
 
 ### Resource Profiles
 
 * [Paciente SIHCE (PatientXBA)](en/StructureDefinition-PatientXBA.md)
 * [Parametros Patch Identifier SIHCE](en/StructureDefinition-parametros-patch-identifier-sihce.md)
 * [Parametros Update SDM SIHCE](en/StructureDefinition-parametros-update-sdm-sihce.md)
+
+### ConceptMaps
+
+* [BuscarPersona: modelo lógico a FHIR](en/ConceptMap-BuscarPersonaModeloAFHIR.md)
+* [FederarPersona: modelo lógico a FHIR](en/ConceptMap-FederarPersonaModeloAFHIR.md)
+* [ModificarIDLocalPersona: modelo lógico a FHIR](en/ConceptMap-ModificarIDLocalPersonaModeloAFHIR.md)
+* [ModificarSDMPersona: modelo lógico a FHIR](en/ConceptMap-ModificarSDMPersonaModeloAFHIR.md)
 
 ### ImplementationGuides
 

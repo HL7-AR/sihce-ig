@@ -1,0 +1,137 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ModificarIDLocalPersonaModeloAFHIR",
+  "url": "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR",
+  "title": "ModificarIDLocalPersona: modelo lógico a FHIR",
+  "description": "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).",
+  "purpose": "Cambio de id local manteniendo validación por SDM.",
+  "version": "1.2.0",
+  "name": "ModificarIDLocalPersonaModeloAFHIR",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-04-29",
+  "publisher": "SIHCE Development Team",
+  "group": [
+    {
+      "source": "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
+      "target": "http://hl7.org/fhir/StructureDefinition/Patient",
+      "element": [
+        {
+          "code": "ModificarIDLocalPersona.DatosPersona.tipoDocumento",
+          "target": [
+            {
+              "code": "Patient.identifier",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio",
+          "target": [
+            {
+              "code": "Patient.identifier",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosPersona.sexo",
+          "target": [
+            {
+              "code": "Patient.gender",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosPersona.primerNombre",
+          "target": [
+            {
+              "code": "Patient.name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosPersona.segundoNombre",
+          "target": [
+            {
+              "code": "Patient.name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosPersona.primerApellido",
+          "target": [
+            {
+              "code": "Patient.name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosPersona.segundoApellido",
+          "target": [
+            {
+              "code": "Patient.name",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosPersona.fechaNacimiento",
+          "target": [
+            {
+              "code": "Patient.birthDate",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosModificacion.idDominio",
+          "target": [
+            {
+              "code": "Patient.identifier",
+              "equivalence": "equivalent",
+              "comment": "URI del dominio en slice idDominio."
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual",
+          "target": [
+            {
+              "code": "Patient.identifier",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo",
+          "target": [
+            {
+              "code": "Patient.identifier",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
+      "target": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
+      "element": [
+        {
+          "code": "ModificarIDLocalPersona.DatosRespuesta.mensaje",
+          "target": [
+            {
+              "code": "OperationOutcome.issue",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

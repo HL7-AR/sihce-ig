@@ -14,7 +14,7 @@
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R4",
   "status" : "draft",
-  "date" : "2026-04-29T16:58:47-03:00",
+  "date" : "2026-04-29T17:48:08-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -626,6 +626,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/BuscarPersonaModeloAFHIR"
+      },
+      "name" : "BuscarPersona: modelo lógico a FHIR",
+      "description" : "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
       }],
       "reference" : {
@@ -650,6 +662,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/FederarPersonaModeloAFHIR"
+      },
+      "name" : "FederarPersona: modelo lógico a FHIR",
+      "description" : "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BuscarPersona"
+      },
+      "name" : "Modelo lógico BuscarPersona (FederadorBA)",
+      "description" : "Solicitud de búsqueda de persona por datos mínimos y respuesta mínima.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
@@ -657,6 +693,66 @@
       },
       "name" : "Modelo Lógico de Persona para SIHCE",
       "description" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FederarPersona"
+      },
+      "name" : "Modelo lógico FederarPersona (FederadorBA)",
+      "description" : "Federación de una persona con identificador local y validación de datos.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ModificarIDLocalPersona"
+      },
+      "name" : "Modelo lógico ModificarIDLocalPersona (FederadorBA)",
+      "description" : "Modificación del identificador local de una persona federada.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ModificarSDMPersona"
+      },
+      "name" : "Modelo lógico ModificarSDMPersona (FederadorBA)",
+      "description" : "Actualización del SDM de una persona federada; documento inmutable.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/ModificarIDLocalPersonaModeloAFHIR"
+      },
+      "name" : "ModificarIDLocalPersona: modelo lógico a FHIR",
+      "description" : "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/ModificarSDMPersonaModeloAFHIR"
+      },
+      "name" : "ModificarSDMPersona: modelo lógico a FHIR",
+      "description" : "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome.",
       "exampleBoolean" : false
     },
     {

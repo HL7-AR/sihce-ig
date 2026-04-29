@@ -253,12 +253,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="relaciones-con-fhir">Relaciones con FHIR</h4>
 
-<p>El modelo lógico BuscarPersona se mapea a los siguientes recursos FHIR:</p>
-
-<ul>
-  <li>DatosConsulta/DatosRespuesta → Patient</li>
-  <li>DatosDominio → Organization</li>
-</ul>
+<p>El correlato FHIR R4 (recurso y elemento) se documenta en el artefacto <a href="ConceptMap-BuscarPersonaModeloAFHIR.html"><strong>ConceptMap BuscarPersonaModeloAFHIR</strong></a>, alineado con la misma lógica que la <a href="https://diegokaminker.github.io/CoreARIG/ConceptMap-PacienteCoreARModeloAFHIR.html">Guía Core Argentina (ejemplo Paciente)</a>. El modelo lógico de esta operación es <a href="StructureDefinition-BuscarPersona.html"><strong>BuscarPersona</strong></a>.</p>
 
 <h4 id="validaciones">Validaciones</h4>
 
@@ -334,13 +329,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="relaciones-con-fhir-1">Relaciones con FHIR</h4>
 
-<p>El modelo lógico FederarPersona se mapea a los siguientes recursos FHIR:</p>
-
-<ul>
-  <li>DatosPersona → Patient</li>
-  <li>DatosDominio → Organization</li>
-  <li>DatosFederacion → Patient</li>
-</ul>
+<p>Ver <a href="ConceptMap-FederarPersonaModeloAFHIR.html"><strong>ConceptMap FederarPersonaModeloAFHIR</strong></a> y el modelo lógico <a href="StructureDefinition-FederarPersona.html"><strong>FederarPersona</strong></a>.</p>
 
 <h4 id="validaciones-1">Validaciones</h4>
 
@@ -415,13 +404,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="relaciones-con-fhir-2">Relaciones con FHIR</h4>
 
-<p>El modelo lógico ModificarIDLocalPersona se mapea a los siguientes recursos FHIR:</p>
-
-<ul>
-  <li>DatosPersona → Patient</li>
-  <li>DatosModificacion → Patient.identifier (para el dominio específico)</li>
-  <li>DatosRespuesta → Patient</li>
-</ul>
+<p>Ver <a href="ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html"><strong>ConceptMap ModificarIDLocalPersonaModeloAFHIR</strong></a> y el modelo lógico <a href="StructureDefinition-ModificarIDLocalPersona.html"><strong>ModificarIDLocalPersona</strong></a>.</p>
 
 <h4 id="validaciones-2">Validaciones</h4>
 
@@ -526,13 +509,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="relaciones-con-fhir-3">Relaciones con FHIR</h4>
 
-<p>El modelo lógico ModificarSDMPersona se mapea a los siguientes recursos FHIR:</p>
-
-<ul>
-  <li>SDMActual/SDMNuevo → Patient</li>
-  <li>DatosDominio → Patient.identifier (para el dominio específico)</li>
-  <li>DatosRespuesta → Patient</li>
-</ul>
+<p>Ver <a href="ConceptMap-ModificarSDMPersonaModeloAFHIR.html"><strong>ConceptMap ModificarSDMPersonaModeloAFHIR</strong></a> y el modelo lógico <a href="StructureDefinition-ModificarSDMPersona.html"><strong>ModificarSDMPersona</strong></a>.</p>
 
 <h4 id="validaciones-3">Validaciones</h4>
 
@@ -584,7 +561,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="http://sihce.gob.ar/">SIHCE Development Team</a>.  
           Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Apr 29, 2026 16:58-0300">2026-04-29</span>
+          Generated <span title="Wed, Apr 29, 2026 17:48-0300">2026-04-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a> |

@@ -1,4 +1,32 @@
 [{
+  "id" : "BuscarPersonaModeloAFHIR",
+  "type" : "ConceptMap",
+  "url" : "http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR",
+  "version" : "1.2.0",
+  "name" : "BuscarPersonaModeloAFHIR"
+},
+{
+  "id" : "FederarPersonaModeloAFHIR",
+  "type" : "ConceptMap",
+  "url" : "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR",
+  "version" : "1.2.0",
+  "name" : "FederarPersonaModeloAFHIR"
+},
+{
+  "id" : "ModificarIDLocalPersonaModeloAFHIR",
+  "type" : "ConceptMap",
+  "url" : "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR",
+  "version" : "1.2.0",
+  "name" : "ModificarIDLocalPersonaModeloAFHIR"
+},
+{
+  "id" : "ModificarSDMPersonaModeloAFHIR",
+  "type" : "ConceptMap",
+  "url" : "http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR",
+  "version" : "1.2.0",
+  "name" : "ModificarSDMPersonaModeloAFHIR"
+},
+{
   "id" : "SIHCE.fhir.core",
   "type" : "ImplementationGuide",
   "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
@@ -13,11 +41,39 @@
   "name" : "RenaperDNI"
 },
 {
+  "id" : "BuscarPersona",
+  "type" : "StructureDefinition",
+  "url" : "http://sihce.gob.ar/StructureDefinition/BuscarPersona",
+  "version" : "1.2.0",
+  "name" : "BuscarPersona"
+},
+{
+  "id" : "FederarPersona",
+  "type" : "StructureDefinition",
+  "url" : "http://sihce.gob.ar/StructureDefinition/FederarPersona",
+  "version" : "1.2.0",
+  "name" : "FederarPersona"
+},
+{
   "id" : "MLPersona",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/MLPersona",
   "version" : "1.2.0",
   "name" : "MLPersona"
+},
+{
+  "id" : "ModificarIDLocalPersona",
+  "type" : "StructureDefinition",
+  "url" : "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
+  "version" : "1.2.0",
+  "name" : "ModificarIDLocalPersona"
+},
+{
+  "id" : "ModificarSDMPersona",
+  "type" : "StructureDefinition",
+  "url" : "http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona",
+  "version" : "1.2.0",
+  "name" : "ModificarSDMPersona"
 },
 {
   "id" : "PatientXBA",

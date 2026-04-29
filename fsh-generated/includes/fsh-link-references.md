@@ -1,6 +1,14 @@
+[BuscarPersonaModeloAFHIR]: ConceptMap-BuscarPersonaModeloAFHIR.html
 [ParametrosPatchIdentifierEjemplo]: Parameters-ParametrosPatchIdentifierEjemplo.html
 [ParametrosUpdateSDMEjemplo]: Parameters-ParametrosUpdateSDMEjemplo.html
+[FederarPersonaModeloAFHIR]: ConceptMap-FederarPersonaModeloAFHIR.html
+[BuscarPersona]: StructureDefinition-BuscarPersona.html
 [MLPersona]: StructureDefinition-MLPersona.html
+[FederarPersona]: StructureDefinition-FederarPersona.html
+[ModificarIDLocalPersona]: StructureDefinition-ModificarIDLocalPersona.html
+[ModificarSDMPersona]: StructureDefinition-ModificarSDMPersona.html
+[ModificarIDLocalPersonaModeloAFHIR]: ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html
+[ModificarSDMPersonaModeloAFHIR]: ConceptMap-ModificarSDMPersonaModeloAFHIR.html
 [PacienteSIHCE]: StructureDefinition-PatientXBA.html
 [ParametrosPatchIdentifierSIHCE]: StructureDefinition-parametros-patch-identifier-sihce.html
 [ParametrosUpdateSDMSIHCE]: StructureDefinition-parametros-update-sdm-sihce.html

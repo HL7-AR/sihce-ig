@@ -22,7 +22,7 @@
    <name value="GuiaDeImplementacionSIHCE"/>
    <title value="Guía de Implementación SIHCE - FHIR R4"/>
    <status value="draft"/>
-   <date value="2026-04-29T16:58:47-03:00"/>
+   <date value="2026-04-29T17:48:08-03:00"/>
    <publisher value="SIHCE Development Team"/>
    <contact>
       <name value="SIHCE Development Team"/>
@@ -420,6 +420,24 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-BuscarPersonaModeloAFHIR.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/BuscarPersonaModeloAFHIR"/>
+         </reference>
+         <name value="BuscarPersona: modelo lógico a FHIR"/>
+         <description value="Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Parameters"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -456,6 +474,42 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-FederarPersonaModeloAFHIR.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/FederarPersonaModeloAFHIR"/>
+         </reference>
+         <name value="FederarPersona: modelo lógico a FHIR"/>
+         <description value="Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-BuscarPersona.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/BuscarPersona"/>
+         </reference>
+         <name value="Modelo lógico BuscarPersona (FederadorBA)"/>
+         <description value="Solicitud de búsqueda de persona por datos mínimos y respuesta mínima."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:logical"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -468,6 +522,96 @@
          <description value="Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-FederarPersona.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/FederarPersona"/>
+         </reference>
+         <name value="Modelo lógico FederarPersona (FederadorBA)"/>
+         <description value="Federación de una persona con identificador local y validación de datos."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ModificarIDLocalPersona.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ModificarIDLocalPersona"/>
+         </reference>
+         <name value="Modelo lógico ModificarIDLocalPersona (FederadorBA)"/>
+         <description value="Modificación del identificador local de una persona federada."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-ModificarSDMPersona.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/ModificarSDMPersona"/>
+         </reference>
+         <name value="Modelo lógico ModificarSDMPersona (FederadorBA)"/>
+         <description value="Actualización del SDM de una persona federada; documento inmutable."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/ModificarIDLocalPersonaModeloAFHIR"/>
+         </reference>
+         <name value="ModificarIDLocalPersona: modelo lógico a FHIR"/>
+         <description value="Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-ModificarSDMPersonaModeloAFHIR.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/ModificarSDMPersonaModeloAFHIR"/>
+         </reference>
+         <name value="ModificarSDMPersona: modelo lógico a FHIR"/>
+         <description value="Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">

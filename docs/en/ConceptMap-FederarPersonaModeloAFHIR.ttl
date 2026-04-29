@@ -1,0 +1,156 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FederarPersonaModeloAFHIR"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap FederarPersonaModeloAFHIR</b></p><a name=\"FederarPersonaModeloAFHIR\"> </a><a name=\"hcFederarPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"StructureDefinition-FederarPersona.html\">Modelo lógico FederarPersona (FederadorBA)</a> to <a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Comment</b></td></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosPersona.tipoDocumento\">FederarPersona.DatosPersona.tipoDocumento</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosPersona.documentoIdentificatorio\">FederarPersona.DatosPersona.documentoIdentificatorio</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosPersona.sexo\">FederarPersona.DatosPersona.sexo</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.gender\">Patient.gender</a></td><td>0..1</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosPersona.primerNombre\">FederarPersona.DatosPersona.primerNombre</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.name\">Patient.name</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosPersona.segundoNombre\">FederarPersona.DatosPersona.segundoNombre</a></td><td>0..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.name\">Patient.name</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosPersona.primerApellido\">FederarPersona.DatosPersona.primerApellido</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.name\">Patient.name</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosPersona.segundoApellido\">FederarPersona.DatosPersona.segundoApellido</a></td><td>0..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.name\">Patient.name</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosPersona.fechaNacimiento\">FederarPersona.DatosPersona.fechaNacimiento</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.birthDate\">Patient.birthDate</a></td><td>0..1</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosDominio.idLocalPersona\">FederarPersona.DatosDominio.idLocalPersona</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosDominio.idDominio\">FederarPersona.DatosDominio.idDominio</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosFederacion.idPersonaGlobal\">FederarPersona.DatosFederacion.idPersonaGlobal</a></td><td>0..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td>Identificador maestro / global según política del FederadorBA (p. ej. identifier adicional).</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"StructureDefinition-FederarPersona.html\">Modelo lógico FederarPersona (FederadorBA)</a> to <a href=\"http://hl7.org/fhir/R4/organization.html\">Organization</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosDominio\">FederarPersona.DatosDominio</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/organization.html#Organization\">Organization</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosDominio.idDominio\">FederarPersona.DatosDominio.idDominio</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/organization.html#Organization.identifier\">Organization.identifier</a></td><td>0..*</td><td>todo</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <a href=\"StructureDefinition-FederarPersona.html\">Modelo lógico FederarPersona (FederadorBA)</a> to <a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Comment</b></td></tr><tr><td><a href=\"StructureDefinition-FederarPersona.html#FederarPersona.DatosFederacion.mensaje\">FederarPersona.DatosFederacion.mensaje</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html#OperationOutcome.issue\">OperationOutcome.issue</a></td><td>1..*</td><td>todo</td><td>Texto informativo o de error en respuesta de operación.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR"^^xsd:anyURI ;
+     fhir:l <http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR>
+  ] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:name [ fhir:v "FederarPersonaModeloAFHIR"] ; # 
+  fhir:title [ fhir:v "FederarPersona: modelo lógico a FHIR"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-04-29"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SIHCE Development Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://sihce.gob.ar/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado."] ; # 
+  fhir:purpose [ fhir:v "Federación de persona; resultado incluye id global y mensaje."] ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "http://sihce.gob.ar/StructureDefinition/FederarPersona"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/StructureDefinition/FederarPersona>
+     ] ;
+     fhir:target [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/Patient"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/Patient>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "FederarPersona.DatosPersona.tipoDocumento" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.identifier" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosPersona.documentoIdentificatorio" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.identifier" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosPersona.sexo" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.gender" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosPersona.primerNombre" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.name" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosPersona.segundoNombre" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.name" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosPersona.primerApellido" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.name" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosPersona.segundoApellido" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.name" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosPersona.fechaNacimiento" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.birthDate" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosDominio.idLocalPersona" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.identifier" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosDominio.idDominio" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.identifier" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosFederacion.idPersonaGlobal" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Patient.identifier" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
+         fhir:comment [ fhir:v "Identificador maestro / global según política del FederadorBA (p. ej. identifier adicional)." ]
+       ] )
+     ] )
+  ] [
+     fhir:source [
+       fhir:v "http://sihce.gob.ar/StructureDefinition/FederarPersona"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/StructureDefinition/FederarPersona>
+     ] ;
+     fhir:target [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/Organization"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/Organization>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "FederarPersona.DatosDominio" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Organization" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "FederarPersona.DatosDominio.idDominio" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "Organization.identifier" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [
+       fhir:v "http://sihce.gob.ar/StructureDefinition/FederarPersona"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/StructureDefinition/FederarPersona>
+     ] ;
+     fhir:target [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/OperationOutcome"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/OperationOutcome>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "FederarPersona.DatosFederacion.mensaje" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "OperationOutcome.issue" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
+         fhir:comment [ fhir:v "Texto informativo o de error en respuesta de operación." ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

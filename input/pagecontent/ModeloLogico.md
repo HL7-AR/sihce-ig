@@ -64,10 +64,7 @@ Este modelo lógico se utiliza para representar las necesidades del negocio prev
 
 #### Relaciones con FHIR
 
-El modelo lógico BuscarPersona se mapea a los siguientes recursos FHIR:
-
-- DatosConsulta/DatosRespuesta → Patient
-- DatosDominio → Organization
+El correlato FHIR R4 (recurso y elemento) se documenta en el artefacto [**ConceptMap BuscarPersonaModeloAFHIR**](ConceptMap-BuscarPersonaModeloAFHIR.html), alineado con la misma lógica que la [Guía Core Argentina (ejemplo Paciente)](https://diegokaminker.github.io/CoreARIG/ConceptMap-PacienteCoreARModeloAFHIR.html). El modelo lógico de esta operación es [**BuscarPersona**](StructureDefinition-BuscarPersona.html).
 
 #### Validaciones
 
@@ -141,11 +138,7 @@ Este modelo lógico se utiliza para representar las necesidades del negocio prev
 
 #### Relaciones con FHIR
 
-El modelo lógico FederarPersona se mapea a los siguientes recursos FHIR:
-
-- DatosPersona → Patient
-- DatosDominio → Organization
-- DatosFederacion → Patient
+Ver [**ConceptMap FederarPersonaModeloAFHIR**](ConceptMap-FederarPersonaModeloAFHIR.html) y el modelo lógico [**FederarPersona**](StructureDefinition-FederarPersona.html).
 
 #### Validaciones
 
@@ -218,11 +211,7 @@ Este modelo lógico se utiliza para representar las necesidades del negocio prev
 
 #### Relaciones con FHIR
 
-El modelo lógico ModificarIDLocalPersona se mapea a los siguientes recursos FHIR:
-
-- DatosPersona → Patient
-- DatosModificacion → Patient.identifier (para el dominio específico)
-- DatosRespuesta → Patient
+Ver [**ConceptMap ModificarIDLocalPersonaModeloAFHIR**](ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html) y el modelo lógico [**ModificarIDLocalPersona**](StructureDefinition-ModificarIDLocalPersona.html).
 
 #### Validaciones
 
@@ -323,11 +312,7 @@ Este modelo lógico se utiliza para representar las necesidades del negocio prev
 
 #### Relaciones con FHIR
 
-El modelo lógico ModificarSDMPersona se mapea a los siguientes recursos FHIR:
-
-- SDMActual/SDMNuevo → Patient
-- DatosDominio → Patient.identifier (para el dominio específico)
-- DatosRespuesta → Patient
+Ver [**ConceptMap ModificarSDMPersonaModeloAFHIR**](ConceptMap-ModificarSDMPersonaModeloAFHIR.html) y el modelo lógico [**ModificarSDMPersona**](StructureDefinition-ModificarSDMPersona.html).
 
 #### Validaciones
 

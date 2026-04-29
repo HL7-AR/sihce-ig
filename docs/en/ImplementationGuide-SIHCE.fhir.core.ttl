@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "GuiaDeImplementacionSIHCE"] ; # 
   fhir:title [ fhir:v "Guía de Implementación SIHCE - FHIR R4"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-29T16:58:47-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-29T17:48:08-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;
@@ -1338,6 +1338,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/BuscarPersonaModeloAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "BuscarPersona: modelo lógico a FHIR" ] ;
+       fhir:description [ fhir:v "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Parameters"
          ]
        ] ) ;
@@ -1382,6 +1403,48 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/FederarPersonaModeloAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "FederarPersona: modelo lógico a FHIR" ] ;
+       fhir:description [ fhir:v "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/StructureDefinition/BuscarPersona> ;
+         fhir:reference [ fhir:v "StructureDefinition/BuscarPersona" ]
+       ] ;
+       fhir:name [ fhir:v "Modelo lógico BuscarPersona (FederadorBA)" ] ;
+       fhir:description [ fhir:v "Solicitud de búsqueda de persona por datos mínimos y respuesta mínima." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
@@ -1391,6 +1454,111 @@
        ] ;
        fhir:name [ fhir:v "Modelo Lógico de Persona para SIHCE" ] ;
        fhir:description [ fhir:v "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/StructureDefinition/FederarPersona> ;
+         fhir:reference [ fhir:v "StructureDefinition/FederarPersona" ]
+       ] ;
+       fhir:name [ fhir:v "Modelo lógico FederarPersona (FederadorBA)" ] ;
+       fhir:description [ fhir:v "Federación de una persona con identificador local y validación de datos." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona> ;
+         fhir:reference [ fhir:v "StructureDefinition/ModificarIDLocalPersona" ]
+       ] ;
+       fhir:name [ fhir:v "Modelo lógico ModificarIDLocalPersona (FederadorBA)" ] ;
+       fhir:description [ fhir:v "Modificación del identificador local de una persona federada." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona> ;
+         fhir:reference [ fhir:v "StructureDefinition/ModificarSDMPersona" ]
+       ] ;
+       fhir:name [ fhir:v "Modelo lógico ModificarSDMPersona (FederadorBA)" ] ;
+       fhir:description [ fhir:v "Actualización del SDM de una persona federada; documento inmutable." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/ModificarIDLocalPersonaModeloAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "ModificarIDLocalPersona: modelo lógico a FHIR" ] ;
+       fhir:description [ fhir:v "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ConceptMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR> ;
+         fhir:reference [ fhir:v "ConceptMap/ModificarSDMPersonaModeloAFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "ModificarSDMPersona: modelo lógico a FHIR" ] ;
+       fhir:description [ fhir:v "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
