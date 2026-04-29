@@ -74,7 +74,7 @@
        src="assets/images/logo-caba.svg"
        alt="Ciudad Autónoma de Buenos Aires"
        height="44"
-       width="44"
+       width="134"
        loading="lazy"/>
 </div>
 
@@ -180,73 +180,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#modelo-lógico---buscarpersona" id="markdown-toc-modelo-lógico---buscarpersona">Modelo Lógico - BuscarPersona</a>    <ul>
-      <li><a href="#descripción-general" id="markdown-toc-descripción-general">Descripción General</a></li>
-      <li><a href="#elementos-del-modelo" id="markdown-toc-elementos-del-modelo">Elementos del Modelo</a>        <ul>
-          <li><a href="#datosconsulta" id="markdown-toc-datosconsulta">DatosConsulta</a></li>
-          <li><a href="#datosdominio" id="markdown-toc-datosdominio">DatosDominio</a></li>
-          <li><a href="#datosrespuesta" id="markdown-toc-datosrespuesta">DatosRespuesta</a></li>
-        </ul>
-      </li>
-      <li><a href="#uso-del-modelo" id="markdown-toc-uso-del-modelo">Uso del Modelo</a></li>
-      <li><a href="#relaciones-con-fhir" id="markdown-toc-relaciones-con-fhir">Relaciones con FHIR</a></li>
-      <li><a href="#validaciones" id="markdown-toc-validaciones">Validaciones</a></li>
-    </ul>
-  </li>
-  <li><a href="#modelo-lógico---federarpersona" id="markdown-toc-modelo-lógico---federarpersona">Modelo Lógico - FederarPersona</a>    <ul>
-      <li><a href="#descripción-general-1" id="markdown-toc-descripción-general-1">Descripción General</a></li>
-      <li><a href="#elementos-del-modelo-1" id="markdown-toc-elementos-del-modelo-1">Elementos del Modelo</a>        <ul>
-          <li><a href="#datospersona" id="markdown-toc-datospersona">DatosPersona</a></li>
-          <li><a href="#datosdominio-1" id="markdown-toc-datosdominio-1">DatosDominio</a></li>
-          <li><a href="#datosfederacion" id="markdown-toc-datosfederacion">DatosFederacion</a></li>
-        </ul>
-      </li>
-      <li><a href="#uso-del-modelo-1" id="markdown-toc-uso-del-modelo-1">Uso del Modelo</a></li>
-      <li><a href="#relaciones-con-fhir-1" id="markdown-toc-relaciones-con-fhir-1">Relaciones con FHIR</a></li>
-      <li><a href="#validaciones-1" id="markdown-toc-validaciones-1">Validaciones</a></li>
-    </ul>
-  </li>
-  <li><a href="#modelo-lógico---modificaridlocalpersona" id="markdown-toc-modelo-lógico---modificaridlocalpersona">Modelo Lógico - ModificarIDLocalPersona</a>    <ul>
-      <li><a href="#descripción-general-2" id="markdown-toc-descripción-general-2">Descripción General</a></li>
-      <li><a href="#elementos-del-modelo-2" id="markdown-toc-elementos-del-modelo-2">Elementos del Modelo</a>        <ul>
-          <li><a href="#datospersona-1" id="markdown-toc-datospersona-1">DatosPersona</a></li>
-          <li><a href="#datosmodificacion" id="markdown-toc-datosmodificacion">DatosModificacion</a></li>
-          <li><a href="#datosrespuesta-1" id="markdown-toc-datosrespuesta-1">DatosRespuesta</a></li>
-        </ul>
-      </li>
-      <li><a href="#uso-del-modelo-2" id="markdown-toc-uso-del-modelo-2">Uso del Modelo</a></li>
-      <li><a href="#relaciones-con-fhir-2" id="markdown-toc-relaciones-con-fhir-2">Relaciones con FHIR</a></li>
-      <li><a href="#validaciones-2" id="markdown-toc-validaciones-2">Validaciones</a></li>
-    </ul>
-  </li>
-  <li><a href="#modelo-lógico---modificarsdmpersona" id="markdown-toc-modelo-lógico---modificarsdmpersona">Modelo Lógico - ModificarSDMPersona</a>    <ul>
-      <li><a href="#descripción-general-3" id="markdown-toc-descripción-general-3">Descripción General</a></li>
-      <li><a href="#elementos-del-modelo-3" id="markdown-toc-elementos-del-modelo-3">Elementos del Modelo</a>        <ul>
-          <li><a href="#sdmactual" id="markdown-toc-sdmactual">SDMActual</a></li>
-          <li><a href="#sdmnuevo" id="markdown-toc-sdmnuevo">SDMNuevo</a></li>
-          <li><a href="#datosdominio-2" id="markdown-toc-datosdominio-2">DatosDominio</a></li>
-          <li><a href="#datosrespuesta-2" id="markdown-toc-datosrespuesta-2">DatosRespuesta</a></li>
-        </ul>
-      </li>
-      <li><a href="#uso-del-modelo-3" id="markdown-toc-uso-del-modelo-3">Uso del Modelo</a></li>
-      <li><a href="#relaciones-con-fhir-3" id="markdown-toc-relaciones-con-fhir-3">Relaciones con FHIR</a></li>
-      <li><a href="#validaciones-3" id="markdown-toc-validaciones-3">Validaciones</a></li>
-    </ul>
-  </li>
+  <li><a href="#buscarpersona" id="markdown-toc-buscarpersona">BuscarPersona</a></li>
+  <li><a href="#federarpersona" id="markdown-toc-federarpersona">FederarPersona</a></li>
+  <li><a href="#modificaridlocalpersona" id="markdown-toc-modificaridlocalpersona">ModificarIDLocalPersona</a></li>
+  <li><a href="#modificarsdmpersona" id="markdown-toc-modificarsdmpersona">ModificarSDMPersona</a></li>
 </ul>
 
 </div>
-<!-- Auto-converted from ModeloLogico.html. Manual cleanup recommended. -->
+<!-- El IG inserta el único H2 (título de página). Contenido en H3+ para numeración 6.1, 6.1.1… -->
 
-<h1 id="modelo-lógico---buscarpersona">Modelo Lógico - BuscarPersona</h1>
+<p>Esta página describe los modelos lógicos de negocio del FederadorBA previos a su representación en FHIR. Cada operación tiene su propia sección bajo el título de página del IG.</p>
 
-<h2 id="descripción-general">Descripción General</h2>
+<h3 id="buscarpersona">BuscarPersona</h3>
+
+<h4 id="descripción-general">Descripción general</h4>
 
 <p>El modelo lógico BuscarPersona representa la solicitud de búsqueda de una persona en el FederadorBA, utilizando un conjunto mínimo de datos para verificar su existencia y obtener información básica de identificación.</p>
 
-<h2 id="elementos-del-modelo">Elementos del Modelo</h2>
+<h4 id="elementos-del-modelo">Elementos del modelo</h4>
 
-<h3 id="datosconsulta">DatosConsulta</h3>
+<h5 id="datosconsulta">DatosConsulta</h5>
 
 <p>Información mínima requerida para realizar la búsqueda de una persona.</p>
 
@@ -260,7 +213,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>sexo</td><td>string</td><td>1..1</td><td>Sexo de la persona: masculino, femenino.</td></tr>
   </tbody>
 </table>
-<h3 id="datosdominio">DatosDominio</h3>
+
+<h5 id="datosdominio">DatosDominio</h5>
 
 <p>Información del dominio que realiza la búsqueda.</p>
 
@@ -273,7 +227,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>idDominio</td><td>URI</td><td>1..1</td><td>Identificador único del dominio (URI).</td></tr>
   </tbody>
 </table>
-<h3 id="datosrespuesta">DatosRespuesta</h3>
+
+<h5 id="datosrespuesta">DatosRespuesta</h5>
 
 <p>Datos mínimos devueltos en caso de encontrar una coincidencia.</p>
 
@@ -291,54 +246,41 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>fechaDefuncion</td><td>date</td><td>0..1</td><td>Fecha de defunción de la persona (vacío si no existe).</td></tr>
   </tbody>
 </table>
-<h2 id="uso-del-modelo">Uso del Modelo</h2>
+
+<h4 id="uso-del-modelo">Uso del modelo</h4>
 
 <p>Este modelo lógico se utiliza para representar las necesidades del negocio previo a su estandarización utilizando FHIR, y no constituye un artefacto de interoperabilidad. El objetivo del modelo es representar la consulta sobre la existencia de una persona en el FederadorBA a partir de un conjunto mínimo de datos de entrada, devolviendo la información básica si se encuentra una coincidencia.</p>
 
-<h2 id="relaciones-con-fhir">Relaciones con FHIR</h2>
+<h4 id="relaciones-con-fhir">Relaciones con FHIR</h4>
 
 <p>El modelo lógico BuscarPersona se mapea a los siguientes recursos FHIR:</p>
 
 <ul>
-  <li>
-    <p>DatosConsulta/DatosRespuesta → Patient</p>
-  </li>
-  <li>
-    <p>DatosDominio → Organization</p>
-  </li>
+  <li>DatosConsulta/DatosRespuesta → Patient</li>
+  <li>DatosDominio → Organization</li>
 </ul>
 
-<h2 id="validaciones">Validaciones</h2>
+<h4 id="validaciones">Validaciones</h4>
 
 <p>El modelo incluye las siguientes validaciones:</p>
 
 <ul>
-  <li>
-    <p>Formato de documento: Debe ser numérico, con 7 a 9 dígitos.</p>
-  </li>
-  <li>
-    <p>Sexo: Se permiten valores masculino, femenino y other (al menos de momento para el MVP).</p>
-  </li>
-  <li>
-    <p>Campos obligatorios: Todos los campos con cardinalidad 1..1 deben estar presentes.</p>
-  </li>
-  <li>
-    <p>Múltiples coincidencias: Si se encuentran más de dos coincidencias exactas, se devuelve un error.</p>
-  </li>
-  <li>
-    <p>No coincidencias: Se devuelve un mensaje de error "No se encontró una persona con los datos ingresados".</p>
-  </li>
+  <li>Formato de documento: Debe ser numérico, con 7 a 9 dígitos.</li>
+  <li>Sexo: Se permiten valores masculino, femenino y other (al menos de momento para el MVP).</li>
+  <li>Campos obligatorios: Todos los campos con cardinalidad 1..1 deben estar presentes.</li>
+  <li>Múltiples coincidencias: Si se encuentran más de dos coincidencias exactas, se devuelve un error.</li>
+  <li>No coincidencias: Se devuelve un mensaje de error "No se encontró una persona con los datos ingresados".</li>
 </ul>
 
-<h1 id="modelo-lógico---federarpersona">Modelo Lógico - FederarPersona</h1>
+<h3 id="federarpersona">FederarPersona</h3>
 
-<h2 id="descripción-general-1">Descripción General</h2>
+<h4 id="descripción-general-1">Descripción general</h4>
 
 <p>El modelo lógico FederarPersona representa la operación de federar una persona en el FederadorBA, asociando un identificador local (ID_local_persona) con el identificador maestro y validando los datos proporcionados por el dominio.</p>
 
-<h2 id="elementos-del-modelo-1">Elementos del Modelo</h2>
+<h4 id="elementos-del-modelo-1">Elementos del modelo</h4>
 
-<h3 id="datospersona">DatosPersona</h3>
+<h5 id="datospersona">DatosPersona</h5>
 
 <p>Información mínima de la persona que se desea federar.</p>
 
@@ -357,7 +299,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>fechaNacimiento</td><td>date</td><td>1..1</td><td>Fecha de nacimiento de la persona (Formato AAAA-MM-DD).</td></tr>
   </tbody>
 </table>
-<h3 id="datosdominio-1">DatosDominio</h3>
+
+<h5 id="datosdominio-1">DatosDominio</h5>
 
 <p>Datos del dominio que solicita la federación.</p>
 
@@ -370,7 +313,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>idDominio</td><td>URI</td><td>1..1</td><td>Identificador único del dominio (URI).</td></tr>
   </tbody>
 </table>
-<h3 id="datosfederacion">DatosFederacion</h3>
+
+<h5 id="datosfederacion">DatosFederacion</h5>
 
 <p>Resultado del proceso de federación.</p>
 
@@ -383,54 +327,41 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>mensaje</td><td>string</td><td>1..1</td><td>Mensaje informativo o de error.</td></tr>
   </tbody>
 </table>
-<h2 id="uso-del-modelo-1">Uso del Modelo</h2>
+
+<h4 id="uso-del-modelo-1">Uso del modelo</h4>
 
 <p>Este modelo lógico se utiliza para representar las necesidades del negocio previo a su estandarización utilizando FHIR, y no constituye un artefacto de interoperabilidad. Representa cuando un dominio quiere registrar (federar) una persona en el FederadorBA, validando previamente la información y asignando un ID_local_persona al registro maestro, o retornando mensajes de error en caso de conflictos.</p>
 
-<h2 id="relaciones-con-fhir-1">Relaciones con FHIR</h2>
+<h4 id="relaciones-con-fhir-1">Relaciones con FHIR</h4>
 
 <p>El modelo lógico FederarPersona se mapea a los siguientes recursos FHIR:</p>
 
 <ul>
-  <li>
-    <p>DatosPersona → Patient</p>
-  </li>
-  <li>
-    <p>DatosDominio → Organization</p>
-  </li>
-  <li>
-    <p>DatosFederacion → Patient</p>
-  </li>
+  <li>DatosPersona → Patient</li>
+  <li>DatosDominio → Organization</li>
+  <li>DatosFederacion → Patient</li>
 </ul>
 
-<h2 id="validaciones-1">Validaciones</h2>
+<h4 id="validaciones-1">Validaciones</h4>
 
 <p>El modelo incluye las siguientes validaciones:</p>
 
 <ul>
-  <li>
-    <p>Formato de documento: Debe ser numérico, con 7 a 9 dígitos.</p>
-  </li>
-  <li>
-    <p>Sexo: Se permiten valores masculino, femenino y other (al menos de momento para el MVP).</p>
-  </li>
-  <li>
-    <p>Campos obligatorios: Todos los campos con cardinalidad 1..1 deben estar presentes.</p>
-  </li>
-  <li>
-    <p>Si ya existe la persona federada con otro idLocalPersona para el mismo dominio, se informa error.</p>
-  </li>
+  <li>Formato de documento: Debe ser numérico, con 7 a 9 dígitos.</li>
+  <li>Sexo: Se permiten valores masculino, femenino y other (al menos de momento para el MVP).</li>
+  <li>Campos obligatorios: Todos los campos con cardinalidad 1..1 deben estar presentes.</li>
+  <li>Si ya existe la persona federada con otro idLocalPersona para el mismo dominio, se informa error.</li>
 </ul>
 
-<h1 id="modelo-lógico---modificaridlocalpersona">Modelo Lógico - ModificarIDLocalPersona</h1>
+<h3 id="modificaridlocalpersona">ModificarIDLocalPersona</h3>
 
-<h2 id="descripción-general-2">Descripción General</h2>
+<h4 id="descripción-general-2">Descripción general</h4>
 
 <p>El modelo lógico ModificarIDLocalPersona representa la operación de modificar el ID local de una persona ya registrada en el FederadorBA. Esto permite que un dominio actualice el identificador local con el que se relaciona con una persona específica, validando previamente que los datos proporcionados coincidan con la información almacenada.</p>
 
-<h2 id="elementos-del-modelo-2">Elementos del Modelo</h2>
+<h4 id="elementos-del-modelo-2">Elementos del modelo</h4>
 
-<h3 id="datospersona-1">DatosPersona</h3>
+<h5 id="datospersona-1">DatosPersona</h5>
 
 <p>Información mínima de la persona.</p>
 
@@ -449,7 +380,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>fechaNacimiento</td><td>date</td><td>1..1</td><td>Fecha de nacimiento de la persona (Formato AAAA-MM-DD).</td></tr>
   </tbody>
 </table>
-<h3 id="datosmodificacion">DatosModificacion</h3>
+
+<h5 id="datosmodificacion">DatosModificacion</h5>
 
 <p>Información necesaria para realizar la modificación del ID local.</p>
 
@@ -463,7 +395,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>idLocalPersonaNuevo</td><td>string</td><td>1..1</td><td>Nuevo identificador local que reemplazará al actual.</td></tr>
   </tbody>
 </table>
-<h3 id="datosrespuesta-1">DatosRespuesta</h3>
+
+<h5 id="datosrespuesta-1">DatosRespuesta</h5>
 
 <p>Resultado del proceso de modificación.</p>
 
@@ -475,75 +408,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>mensaje</td><td>string</td><td>1..1</td><td>Mensaje informativo sobre el resultado de la operación o error encontrado.</td></tr>
   </tbody>
 </table>
-<h2 id="uso-del-modelo-2">Uso del Modelo</h2>
+
+<h4 id="uso-del-modelo-2">Uso del modelo</h4>
 
 <p>Este modelo lógico se utiliza para representar las necesidades del negocio previo a su estandarización utilizando FHIR, y no constituye un artefacto de interoperabilidad. Representa cuando un dominio necesita modificar el ID local, de una persona para el dominio indicado en la entrada, con el que se relaciona con una persona específica en el FederadorBA, validando previamente que los datos proporcionados (SDM) coincidan exactamente con la información almacenada.</p>
 
-<h2 id="relaciones-con-fhir-2">Relaciones con FHIR</h2>
+<h4 id="relaciones-con-fhir-2">Relaciones con FHIR</h4>
 
 <p>El modelo lógico ModificarIDLocalPersona se mapea a los siguientes recursos FHIR:</p>
 
 <ul>
-  <li>
-    <p>DatosPersona → Patient</p>
-  </li>
-  <li>
-    <p>DatosModificacion → Patient.identifier (para el dominio específico)</p>
-  </li>
-  <li>
-    <p>DatosRespuesta → Patient</p>
-  </li>
+  <li>DatosPersona → Patient</li>
+  <li>DatosModificacion → Patient.identifier (para el dominio específico)</li>
+  <li>DatosRespuesta → Patient</li>
 </ul>
 
-<h2 id="validaciones-2">Validaciones</h2>
+<h4 id="validaciones-2">Validaciones</h4>
 
 <p>El modelo incluye las siguientes validaciones:</p>
 
 <ul>
-  <li>
-    <p>Completitud de datos: Todos los campos obligatorios (SDM, ID dominio, ID_local_persona_actual e ID_local_persona_nuevo) deben estar presentes.</p>
-  </li>
-  <li>
-    <p>Formato de documento: Debe ser numérico, con 7 a 9 dígitos.</p>
-  </li>
-  <li>
-    <p>Sexo: Se permiten valores masculino, femenino y other (al menos de momento para el MVP).</p>
-  </li>
-  <li>
-    <p>Búsqueda por dominio e ID local: Debe existir exactamente una persona registrada con el ID_dominio e ID_local_persona_actual proporcionados.</p>
-  </li>
-  <li>
-    <p>Validación de identidad: El SDM ingresado debe coincidir exactamente con el SDM del registro encontrado en el FederadorBA.</p>
-  </li>
-  <li>
-    <p>Casos de error:</p>
-  </li>
-  <li>
-    <p>Datos incompletos: Se informa que faltan datos requeridos.</p>
-  </li>
-  <li>
-    <p>No se encuentra persona: Se informa que no existe una persona federada con los identificadores proporcionados.</p>
-  </li>
-  <li>
-    <p>Múltiples resultados: Se informa inconveniente para realizar modificación y se registra para auditoría.</p>
-  </li>
-  <li>
-    <p>SDM no coincidente: Se informa que los datos ingresados no coinciden con la persona registrada.</p>
-  </li>
-  <li>
-    <p>Éxito: Se actualiza el ID_local_persona y se informa que la operación fue exitosa.</p>
-  </li>
+  <li>Completitud de datos: Todos los campos obligatorios (SDM, ID dominio, ID_local_persona_actual e ID_local_persona_nuevo) deben estar presentes.</li>
+  <li>Formato de documento: Debe ser numérico, con 7 a 9 dígitos.</li>
+  <li>Sexo: Se permiten valores masculino, femenino y other (al menos de momento para el MVP).</li>
+  <li>Búsqueda por dominio e ID local: Debe existir exactamente una persona registrada con el ID_dominio e ID_local_persona_actual proporcionados.</li>
+  <li>Validación de identidad: El SDM ingresado debe coincidir exactamente con el SDM del registro encontrado en el FederadorBA.</li>
 </ul>
 
-<h1 id="modelo-lógico---modificarsdmpersona">Modelo Lógico - ModificarSDMPersona</h1>
+<p><strong>Casos de error:</strong></p>
 
-<h2 id="descripción-general-3">Descripción General</h2>
+<ul>
+  <li>Datos incompletos: Se informa que faltan datos requeridos.</li>
+  <li>No se encuentra persona: Se informa que no existe una persona federada con los identificadores proporcionados.</li>
+  <li>Múltiples resultados: Se informa inconveniente para realizar modificación y se registra para auditoría.</li>
+  <li>SDM no coincidente: Se informa que los datos ingresados no coinciden con la persona registrada.</li>
+  <li>Éxito: Se actualiza el ID_local_persona y se informa que la operación fue exitosa.</li>
+</ul>
+
+<h3 id="modificarsdmpersona">ModificarSDMPersona</h3>
+
+<h4 id="descripción-general-3">Descripción general</h4>
 
 <p>El modelo lógico ModificarSDMPersona representa la operación de modificar los datos del SDM (Set de Datos Mínimos) de una persona ya registrada en el FederadorBA. Esta operación permite que un dominio actualice información de una persona específica, validando previamente que los cambios sean correctos y manteniendo inmutable la información del documento identificatorio (Tipo y Número de documento).</p>
 
-<h2 id="elementos-del-modelo-3">Elementos del Modelo</h2>
+<h4 id="elementos-del-modelo-3">Elementos del modelo</h4>
 
-<h3 id="sdmactual">SDMActual</h3>
+<h5 id="sdmactual">SDMActual</h5>
 
 <p>Información mínima de la persona registrada actualmente en el FederadorBA.</p>
 
@@ -563,7 +473,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>fechaDefuncion</td><td>date</td><td>0..1</td><td>Fecha de defunción de la persona, en caso de existir (Formato AAAA-MM-DD).</td></tr>
   </tbody>
 </table>
-<h3 id="sdmnuevo">SDMNuevo</h3>
+
+<h5 id="sdmnuevo">SDMNuevo</h5>
 
 <p>Datos actualizados que se desean aplicar a la persona (sin modificar documento identificatorio).</p>
 
@@ -581,7 +492,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>fechaDefuncion</td><td>date</td><td>0..1</td><td>Fecha de defunción actualizada de la persona, en caso de existir (Formato AAAA-MM-DD).</td></tr>
   </tbody>
 </table>
-<h3 id="datosdominio-2">DatosDominio</h3>
+
+<h5 id="datosdominio-2">DatosDominio</h5>
 
 <p>Información del dominio que solicita la modificación.</p>
 
@@ -594,7 +506,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>idLocalPersona</td><td>string</td><td>1..1</td><td>Identificador local de la persona en el dominio.</td></tr>
   </tbody>
 </table>
-<h3 id="datosrespuesta-2">DatosRespuesta</h3>
+
+<h5 id="datosrespuesta-2">DatosRespuesta</h5>
 
 <p>Resultado del proceso de modificación.</p>
 
@@ -606,73 +519,44 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>mensaje</td><td>string</td><td>1..1</td><td>Mensaje informativo sobre el resultado de la operación o error encontrado.</td></tr>
   </tbody>
 </table>
-<h2 id="uso-del-modelo-3">Uso del Modelo</h2>
+
+<h4 id="uso-del-modelo-3">Uso del modelo</h4>
 
 <p>Este modelo lógico se utiliza para representar las necesidades del negocio previo a su estandarización utilizando FHIR, y no constituye un artefacto de interoperabilidad. Representa cuando un dominio necesita actualizar los datos (SDM) de una persona específica en el FederadorBA, validando los cambios para garantizar la integridad de la información, manteniendo inmutable los datos del documento identificatorio.</p>
 
-<h2 id="relaciones-con-fhir-3">Relaciones con FHIR</h2>
+<h4 id="relaciones-con-fhir-3">Relaciones con FHIR</h4>
 
 <p>El modelo lógico ModificarSDMPersona se mapea a los siguientes recursos FHIR:</p>
 
 <ul>
-  <li>
-    <p>SDMActual/SDMNuevo → Patient</p>
-  </li>
-  <li>
-    <p>DatosDominio → Patient.identifier (para el dominio específico)</p>
-  </li>
-  <li>
-    <p>DatosRespuesta → Patient</p>
-  </li>
+  <li>SDMActual/SDMNuevo → Patient</li>
+  <li>DatosDominio → Patient.identifier (para el dominio específico)</li>
+  <li>DatosRespuesta → Patient</li>
 </ul>
 
-<h2 id="validaciones-3">Validaciones</h2>
+<h4 id="validaciones-3">Validaciones</h4>
 
 <p>El modelo incluye las siguientes validaciones:</p>
 
 <ul>
-  <li>
-    <p>Completitud de datos: Todos los campos obligatorios (SDM actual, SDM nuevo, ID dominio e ID_local_persona) deben estar presentes.</p>
-  </li>
-  <li>
-    <p>Inmutabilidad del documento: No se permiten cambios en tipo y número de documento identificatorio.</p>
-  </li>
-  <li>
-    <p>Formato de documento: Debe ser numérico, con 7 a 9 dígitos.</p>
-  </li>
-  <li>
-    <p>Sexo: Se permiten valores masculino, femenino y other (al menos de momento para el MVP).</p>
-  </li>
-  <li>
-    <p>Búsqueda por dominio e ID local: Debe existir exactamente una persona registrada con el ID_dominio e ID_local_persona proporcionados.</p>
-  </li>
-  <li>
-    <p>Validación de identidad actual: El SDM actual ingresado debe coincidir con el SDM del registro encontrado en el FederadorBA.</p>
-  </li>
-  <li>
-    <p>Validación de integridad: Los cambios deben ser validados para garantizar integridad.</p>
-  </li>
-  <li>
-    <p>Casos de error:</p>
-  </li>
-  <li>
-    <p>Datos incompletos: Se informa que faltan datos requeridos.</p>
-  </li>
-  <li>
-    <p>No se encuentra persona: Se informa que no existe una persona federada con los identificadores proporcionados.</p>
-  </li>
-  <li>
-    <p>Múltiples resultados: Se informa inconveniente para realizar modificación y se registra para auditoría.</p>
-  </li>
-  <li>
-    <p>SDM actual no coincidente: Se informa que los datos actuales no coinciden con la persona registrada.</p>
-  </li>
-  <li>
-    <p>Datos ya actualizados: Se informa que los datos ya se encontraban actualizados en el FederadorBA.</p>
-  </li>
-  <li>
-    <p>Éxito: Se actualizan los datos del SDM (incluyendo fecha de óbito si estuviera disponible) y se informa que la operación fue exitosa.</p>
-  </li>
+  <li>Completitud de datos: Todos los campos obligatorios (SDM actual, SDM nuevo, ID dominio e ID_local_persona) deben estar presentes.</li>
+  <li>Inmutabilidad del documento: No se permiten cambios en tipo y número de documento identificatorio.</li>
+  <li>Formato de documento: Debe ser numérico, con 7 a 9 dígitos.</li>
+  <li>Sexo: Se permiten valores masculino, femenino y other (al menos de momento para el MVP).</li>
+  <li>Búsqueda por dominio e ID local: Debe existir exactamente una persona registrada con el ID_dominio e ID_local_persona proporcionados.</li>
+  <li>Validación de identidad actual: El SDM actual ingresado debe coincidir con el SDM del registro encontrado en el FederadorBA.</li>
+  <li>Validación de integridad: Los cambios deben ser validados para garantizar integridad.</li>
+</ul>
+
+<p><strong>Casos de error:</strong></p>
+
+<ul>
+  <li>Datos incompletos: Se informa que faltan datos requeridos.</li>
+  <li>No se encuentra persona: Se informa que no existe una persona federada con los identificadores proporcionados.</li>
+  <li>Múltiples resultados: Se informa inconveniente para realizar modificación y se registra para auditoría.</li>
+  <li>SDM actual no coincidente: Se informa que los datos actuales no coinciden con la persona registrada.</li>
+  <li>Datos ya actualizados: Se informa que los datos ya se encontraban actualizados en el FederadorBA.</li>
+  <li>Éxito: Se actualizan los datos del SDM (incluyendo fecha de óbito si estuviera disponible) y se informa que la operación fue exitosa.</li>
 </ul>
 
 
@@ -700,7 +584,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="http://sihce.gob.ar/">SIHCE Development Team</a>.  
           Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Apr 29, 2026 16:22-0300">2026-04-29</span>
+          Generated <span title="Wed, Apr 29, 2026 16:47-0300">2026-04-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a> |

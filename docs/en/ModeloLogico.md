@@ -5,15 +5,17 @@
 
 ## Modelo Lógico
 
-# Modelo Lógico - BuscarPersona
+Esta página describe los modelos lógicos de negocio del FederadorBA previos a su representación en FHIR. Cada operación tiene su propia sección bajo el título de página del IG.
 
-## Descripción General
+### BuscarPersona
+
+#### Descripción general
 
 El modelo lógico BuscarPersona representa la solicitud de búsqueda de una persona en el FederadorBA, utilizando un conjunto mínimo de datos para verificar su existencia y obtener información básica de identificación.
 
-## Elementos del Modelo
+#### Elementos del modelo
 
-### DatosConsulta
+##### DatosConsulta
 
 Información mínima requerida para realizar la búsqueda de una persona.
 
@@ -23,7 +25,7 @@ Información mínima requerida para realizar la búsqueda de una persona.
 | documentoIdentificatorio | string | 1..1 | Número del documento de identificación de la persona a buscar. Debe ser numérico (7-9 dígitos). |
 | sexo | string | 1..1 | Sexo de la persona: masculino, femenino. |
 
-### DatosDominio
+##### DatosDominio
 
 Información del dominio que realiza la búsqueda.
 
@@ -32,7 +34,7 @@ Información del dominio que realiza la búsqueda.
 | idLocalPersona | string | 0..1 | Identificador local de la persona en el dominio solicitante. |
 | idDominio | URI | 1..1 | Identificador único del dominio (URI). |
 
-### DatosRespuesta
+##### DatosRespuesta
 
 Datos mínimos devueltos en caso de encontrar una coincidencia.
 
@@ -46,18 +48,18 @@ Datos mínimos devueltos en caso de encontrar una coincidencia.
 | fechaNacimiento | date | 1..1 | Fecha de nacimiento de la persona encontrada. |
 | fechaDefuncion | date | 0..1 | Fecha de defunción de la persona (vacío si no existe). |
 
-## Uso del Modelo
+#### Uso del modelo
 
 Este modelo lógico se utiliza para representar las necesidades del negocio previo a su estandarización utilizando FHIR, y no constituye un artefacto de interoperabilidad. El objetivo del modelo es representar la consulta sobre la existencia de una persona en el FederadorBA a partir de un conjunto mínimo de datos de entrada, devolviendo la información básica si se encuentra una coincidencia.
 
-## Relaciones con FHIR
+#### Relaciones con FHIR
 
 El modelo lógico BuscarPersona se mapea a los siguientes recursos FHIR:
 
 * DatosConsulta/DatosRespuesta → Patient
 * DatosDominio → Organization
 
-## Validaciones
+#### Validaciones
 
 El modelo incluye las siguientes validaciones:
 
@@ -67,15 +69,15 @@ El modelo incluye las siguientes validaciones:
 * Múltiples coincidencias: Si se encuentran más de dos coincidencias exactas, se devuelve un error.
 * No coincidencias: Se devuelve un mensaje de error "No se encontró una persona con los datos ingresados".
 
-# Modelo Lógico - FederarPersona
+### FederarPersona
 
-## Descripción General
+#### Descripción general
 
 El modelo lógico FederarPersona representa la operación de federar una persona en el FederadorBA, asociando un identificador local (ID_local_persona) con el identificador maestro y validando los datos proporcionados por el dominio.
 
-## Elementos del Modelo
+#### Elementos del modelo
 
-### DatosPersona
+##### DatosPersona
 
 Información mínima de la persona que se desea federar.
 
@@ -90,7 +92,7 @@ Información mínima de la persona que se desea federar.
 | segundoApellido | string | 0..1 | Segundo apellido de la persona, en caso de existir. |
 | fechaNacimiento | date | 1..1 | Fecha de nacimiento de la persona (Formato AAAA-MM-DD). |
 
-### DatosDominio
+##### DatosDominio
 
 Datos del dominio que solicita la federación.
 
@@ -99,7 +101,7 @@ Datos del dominio que solicita la federación.
 | idLocalPersona | string | 1..1 | Identificador local de la persona en el dominio. |
 | idDominio | URI | 1..1 | Identificador único del dominio (URI). |
 
-### DatosFederacion
+##### DatosFederacion
 
 Resultado del proceso de federación.
 
@@ -108,11 +110,11 @@ Resultado del proceso de federación.
 | idPersonaGlobal | string | 0..1 | Identificador único global de la persona en el FederadorBA (si se federó correctamente). |
 | mensaje | string | 1..1 | Mensaje informativo o de error. |
 
-## Uso del Modelo
+#### Uso del modelo
 
 Este modelo lógico se utiliza para representar las necesidades del negocio previo a su estandarización utilizando FHIR, y no constituye un artefacto de interoperabilidad. Representa cuando un dominio quiere registrar (federar) una persona en el FederadorBA, validando previamente la información y asignando un ID_local_persona al registro maestro, o retornando mensajes de error en caso de conflictos.
 
-## Relaciones con FHIR
+#### Relaciones con FHIR
 
 El modelo lógico FederarPersona se mapea a los siguientes recursos FHIR:
 
@@ -120,7 +122,7 @@ El modelo lógico FederarPersona se mapea a los siguientes recursos FHIR:
 * DatosDominio → Organization
 * DatosFederacion → Patient
 
-## Validaciones
+#### Validaciones
 
 El modelo incluye las siguientes validaciones:
 
@@ -129,15 +131,15 @@ El modelo incluye las siguientes validaciones:
 * Campos obligatorios: Todos los campos con cardinalidad 1..1 deben estar presentes.
 * Si ya existe la persona federada con otro idLocalPersona para el mismo dominio, se informa error.
 
-# Modelo Lógico - ModificarIDLocalPersona
+### ModificarIDLocalPersona
 
-## Descripción General
+#### Descripción general
 
 El modelo lógico ModificarIDLocalPersona representa la operación de modificar el ID local de una persona ya registrada en el FederadorBA. Esto permite que un dominio actualice el identificador local con el que se relaciona con una persona específica, validando previamente que los datos proporcionados coincidan con la información almacenada.
 
-## Elementos del Modelo
+#### Elementos del modelo
 
-### DatosPersona
+##### DatosPersona
 
 Información mínima de la persona.
 
@@ -152,7 +154,7 @@ Información mínima de la persona.
 | segundoApellido | string | 0..1 | Segundo apellido de la persona, en caso de existir. |
 | fechaNacimiento | date | 1..1 | Fecha de nacimiento de la persona (Formato AAAA-MM-DD). |
 
-### DatosModificacion
+##### DatosModificacion
 
 Información necesaria para realizar la modificación del ID local.
 
@@ -162,7 +164,7 @@ Información necesaria para realizar la modificación del ID local.
 | idLocalPersonaActual | string | 1..1 | Identificador local actual de la persona en el dominio. |
 | idLocalPersonaNuevo | string | 1..1 | Nuevo identificador local que reemplazará al actual. |
 
-### DatosRespuesta
+##### DatosRespuesta
 
 Resultado del proceso de modificación.
 
@@ -170,11 +172,11 @@ Resultado del proceso de modificación.
 | :--- | :--- | :--- | :--- |
 | mensaje | string | 1..1 | Mensaje informativo sobre el resultado de la operación o error encontrado. |
 
-## Uso del Modelo
+#### Uso del modelo
 
 Este modelo lógico se utiliza para representar las necesidades del negocio previo a su estandarización utilizando FHIR, y no constituye un artefacto de interoperabilidad. Representa cuando un dominio necesita modificar el ID local, de una persona para el dominio indicado en la entrada, con el que se relaciona con una persona específica en el FederadorBA, validando previamente que los datos proporcionados (SDM) coincidan exactamente con la información almacenada.
 
-## Relaciones con FHIR
+#### Relaciones con FHIR
 
 El modelo lógico ModificarIDLocalPersona se mapea a los siguientes recursos FHIR:
 
@@ -182,7 +184,7 @@ El modelo lógico ModificarIDLocalPersona se mapea a los siguientes recursos FHI
 * DatosModificacion → Patient.identifier (para el dominio específico)
 * DatosRespuesta → Patient
 
-## Validaciones
+#### Validaciones
 
 El modelo incluye las siguientes validaciones:
 
@@ -191,22 +193,24 @@ El modelo incluye las siguientes validaciones:
 * Sexo: Se permiten valores masculino, femenino y other (al menos de momento para el MVP).
 * Búsqueda por dominio e ID local: Debe existir exactamente una persona registrada con el ID_dominio e ID_local_persona_actual proporcionados.
 * Validación de identidad: El SDM ingresado debe coincidir exactamente con el SDM del registro encontrado en el FederadorBA.
-* Casos de error:
+
+**Casos de error:**
+
 * Datos incompletos: Se informa que faltan datos requeridos.
 * No se encuentra persona: Se informa que no existe una persona federada con los identificadores proporcionados.
 * Múltiples resultados: Se informa inconveniente para realizar modificación y se registra para auditoría.
 * SDM no coincidente: Se informa que los datos ingresados no coinciden con la persona registrada.
 * Éxito: Se actualiza el ID_local_persona y se informa que la operación fue exitosa.
 
-# Modelo Lógico - ModificarSDMPersona
+### ModificarSDMPersona
 
-## Descripción General
+#### Descripción general
 
 El modelo lógico ModificarSDMPersona representa la operación de modificar los datos del SDM (Set de Datos Mínimos) de una persona ya registrada en el FederadorBA. Esta operación permite que un dominio actualice información de una persona específica, validando previamente que los cambios sean correctos y manteniendo inmutable la información del documento identificatorio (Tipo y Número de documento).
 
-## Elementos del Modelo
+#### Elementos del modelo
 
-### SDMActual
+##### SDMActual
 
 Información mínima de la persona registrada actualmente en el FederadorBA.
 
@@ -222,7 +226,7 @@ Información mínima de la persona registrada actualmente en el FederadorBA.
 | fechaNacimiento | date | 1..1 | Fecha de nacimiento de la persona (Formato AAAA-MM-DD). |
 | fechaDefuncion | date | 0..1 | Fecha de defunción de la persona, en caso de existir (Formato AAAA-MM-DD). |
 
-### SDMNuevo
+##### SDMNuevo
 
 Datos actualizados que se desean aplicar a la persona (sin modificar documento identificatorio).
 
@@ -236,7 +240,7 @@ Datos actualizados que se desean aplicar a la persona (sin modificar documento i
 | fechaNacimiento | date | 1..1 | Fecha de nacimiento actualizada de la persona (Formato AAAA-MM-DD). |
 | fechaDefuncion | date | 0..1 | Fecha de defunción actualizada de la persona, en caso de existir (Formato AAAA-MM-DD). |
 
-### DatosDominio
+##### DatosDominio
 
 Información del dominio que solicita la modificación.
 
@@ -245,7 +249,7 @@ Información del dominio que solicita la modificación.
 | idDominio | URI | 1..1 | Identificador único del dominio que solicita la modificación (URI). |
 | idLocalPersona | string | 1..1 | Identificador local de la persona en el dominio. |
 
-### DatosRespuesta
+##### DatosRespuesta
 
 Resultado del proceso de modificación.
 
@@ -253,11 +257,11 @@ Resultado del proceso de modificación.
 | :--- | :--- | :--- | :--- |
 | mensaje | string | 1..1 | Mensaje informativo sobre el resultado de la operación o error encontrado. |
 
-## Uso del Modelo
+#### Uso del modelo
 
 Este modelo lógico se utiliza para representar las necesidades del negocio previo a su estandarización utilizando FHIR, y no constituye un artefacto de interoperabilidad. Representa cuando un dominio necesita actualizar los datos (SDM) de una persona específica en el FederadorBA, validando los cambios para garantizar la integridad de la información, manteniendo inmutable los datos del documento identificatorio.
 
-## Relaciones con FHIR
+#### Relaciones con FHIR
 
 El modelo lógico ModificarSDMPersona se mapea a los siguientes recursos FHIR:
 
@@ -265,7 +269,7 @@ El modelo lógico ModificarSDMPersona se mapea a los siguientes recursos FHIR:
 * DatosDominio → Patient.identifier (para el dominio específico)
 * DatosRespuesta → Patient
 
-## Validaciones
+#### Validaciones
 
 El modelo incluye las siguientes validaciones:
 
@@ -276,7 +280,9 @@ El modelo incluye las siguientes validaciones:
 * Búsqueda por dominio e ID local: Debe existir exactamente una persona registrada con el ID_dominio e ID_local_persona proporcionados.
 * Validación de identidad actual: El SDM actual ingresado debe coincidir con el SDM del registro encontrado en el FederadorBA.
 * Validación de integridad: Los cambios deben ser validados para garantizar integridad.
-* Casos de error:
+
+**Casos de error:**
+
 * Datos incompletos: Se informa que faltan datos requeridos.
 * No se encuentra persona: Se informa que no existe una persona federada con los identificadores proporcionados.
 * Múltiples resultados: Se informa inconveniente para realizar modificación y se registra para auditoría.

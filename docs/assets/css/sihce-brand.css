@@ -25,9 +25,12 @@
   max-width: 180px;
   object-fit: contain;
 }
+/* Logotipo CABA (viewBox ~250×82; Gobierno de la Ciudad, CC BY 2.5 AR via Commons) */
 .ig-brand-logo--caba {
-  width: 44px;
+  width: auto;
   height: 44px;
+  max-width: 200px;
+  object-fit: contain;
 }
 #ig-status {
   flex: 1 1 200px;
