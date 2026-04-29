@@ -14,7 +14,7 @@
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R4",
   "status" : "draft",
-  "date" : "2026-04-29T15:50:30-03:00",
+  "date" : "2026-04-29T16:22:44-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

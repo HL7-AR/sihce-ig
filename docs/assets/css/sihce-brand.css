@@ -18,9 +18,12 @@
   width: auto;
   max-width: 100%;
 }
+/* Official asset ratio 468×142 (hl7.org.ar) */
 .ig-brand-logo--hl7ar {
-  width: 170px;
+  width: auto;
   height: 44px;
+  max-width: 180px;
+  object-fit: contain;
 }
 .ig-brand-logo--caba {
   width: 44px;
