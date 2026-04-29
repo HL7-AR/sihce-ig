@@ -1,0 +1,31 @@
+Logical: MLPersona
+Id: MLPersona
+Title: "Modelo Lógico de Persona para SIHCE"
+Description: "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"
+* ^version = "1.2.0"
+* ^status = #draft
+* ^date = "2026-04-24T09:43:51-03:00"
+* ^publisher = "SIHCE Development Team"
+* ^contact.name = "SIHCE Development Team"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "http://hl7.org.ar"
+* ^jurisdiction.coding.system = "urn:iso:std:iso:3166"
+* ^jurisdiction.coding.code = #AR
+* ^jurisdiction.coding.display = "Argentina"
+* . ^short = "Modelo Lógico de Persona para SIHCE"
+* . ^definition = "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"
+* NombreOficial 1..1 HumanName "Nombre oficial de la persona" "Nombre oficial de la persona"
+* NombreOficial.PrimerNombre 1..1 string "Primer nombre" "Primer nombre"
+* NombreOficial.OtrosNombres 0..* string "Siguientes nombres" "Siguientes nombres"
+* NombreOficial.PrimerApellido 1..1 string "Primer parte del apellido o primer apellido" "Primer parte del apellido o primer apellido"
+* NombreOficial.SegundoApellido 0..* string "Resto del o los apellido(s)" "Resto del o los apellido(s)"
+* NombreSocial 0..* HumanName "Nombre o pseudonimo por el cual la persona desea ser identificada" "Nombre o pseudonimo por el cual la persona desea ser identificada"
+* NombreSocial.Nombre 1..1 string "Nombre de pila por el cual la persona desea ser identificada" "Nombre de pila por el cual la persona desea ser identificada"
+* IdentificadorUnivoco 2..* Identifier "Identificador unívoco de la persona" "DNI + Identificador de dominio local"
+* IdentificadorUnivoco.TipoDoc 1..1 CodeableConcept "Que documento se va a usar" "Que documento se va a usar"
+* IdentificadorUnivoco.NroDoc 1..1 string "El valor del numero de DNI por ejemplo" "El valor del numero de DNI por ejemplo"
+* IdentificadorUnivoco.URIDominio 1..1 string "URI del dominio que federó el paciente" "URI del dominio que federó el paciente"
+* IdentificadorUnivoco.idLocal 1..1 string "ID local del paciente en el dominio" "ID local del paciente en el dominio"
+* GeneroAdministrativo 1..1 code "Género de registro administrativo, por ejemplo el que figure en su DNI" "Género de registro administrativo, por ejemplo el que figure en su DNI"
+* FechaNacimiento 1..1 dateTime "Fecha y hora de nacimiento" "Fecha y hora de nacimiento"
+* Estado 1..1 CodeableConcept "Inactivo | Validado | Permanente | Temporal" "Inactivo | Validado | Permanente | Temporal"

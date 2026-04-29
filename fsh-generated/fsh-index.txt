@@ -1,0 +1,9 @@
+Output File                                                 Name                              Type      FSH File                                        Lines
+NamingSystem-renaper-dni.json                               renaper-dni                       Instance  instances/renaper-dni.fsh                       1 - 20
+Parameters-ParametrosPatchIdentifierEjemplo.json            ParametrosPatchIdentifierEjemplo  Instance  instances/ParametrosPatchIdentifierEjemplo.fsh  1 - 13
+Parameters-ParametrosUpdateSDMEjemplo.json                  ParametrosUpdateSDMEjemplo        Instance  instances/ParametrosUpdateSDMEjemplo.fsh        1 - 7
+Patient-PersonaSIHCEMin.json                                PersonaSIHCEMin                   Instance  instances/PersonaSIHCEMin.fsh                   1 - 17
+StructureDefinition-MLPersona.json                          MLPersona                         Logical   logicals/MLPersona.fsh                          1 - 31
+StructureDefinition-PatientXBA.json                         PacienteSIHCE                     Profile   profiles/PacienteSIHCE.fsh                      1 - 76
+StructureDefinition-parametros-patch-identifier-sihce.json  ParametrosPatchIdentifierSIHCE    Profile   profiles/OperacionesParametrosSIHCE.fsh         1 - 22
+StructureDefinition-parametros-update-sdm-sihce.json        ParametrosUpdateSDMSIHCE          Profile   profiles/OperacionesParametrosSIHCE.fsh         24 - 35

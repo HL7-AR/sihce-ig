@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "parametros-patch-identifier-sihce",
+  "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-patch-identifier-sihce",
+  "name": "ParametrosPatchIdentifierSIHCE",
+  "title": "Parametros Patch Identifier SIHCE",
+  "status": "draft",
+  "description": "Estructura de Parameters para la operacion $patch-identifier de SIHCE.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Parameters",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Parameters",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Parameters.parameter",
+        "path": "Parameters.parameter",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "name"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 3
+      },
+      {
+        "id": "Parameters.parameter:oldIdentifier",
+        "path": "Parameters.parameter",
+        "sliceName": "oldIdentifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Parameters.parameter:oldIdentifier.name",
+        "path": "Parameters.parameter.name",
+        "patternString": "old-identifier"
+      },
+      {
+        "id": "Parameters.parameter:oldIdentifier.value[x]",
+        "path": "Parameters.parameter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Parameters.parameter:oldIdentifier.value[x].system",
+        "path": "Parameters.parameter.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Parameters.parameter:oldIdentifier.value[x].value",
+        "path": "Parameters.parameter.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Parameters.parameter:newIdentifier",
+        "path": "Parameters.parameter",
+        "sliceName": "newIdentifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Parameters.parameter:newIdentifier.name",
+        "path": "Parameters.parameter.name",
+        "patternString": "new-identifier"
+      },
+      {
+        "id": "Parameters.parameter:newIdentifier.value[x]",
+        "path": "Parameters.parameter.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Parameters.parameter:newIdentifier.value[x].system",
+        "path": "Parameters.parameter.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Parameters.parameter:newIdentifier.value[x].value",
+        "path": "Parameters.parameter.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Parameters.parameter:patient",
+        "path": "Parameters.parameter",
+        "sliceName": "patient",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Parameters.parameter:patient.name",
+        "path": "Parameters.parameter.name",
+        "patternString": "patient"
+      },
+      {
+        "id": "Parameters.parameter:patient.resource",
+        "path": "Parameters.parameter.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

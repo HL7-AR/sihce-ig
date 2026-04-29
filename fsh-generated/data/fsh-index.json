@@ -1,0 +1,66 @@
+[
+  {
+    "outputFile": "NamingSystem-renaper-dni.json",
+    "fshName": "renaper-dni",
+    "fshType": "Instance",
+    "fshFile": "instances/renaper-dni.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Parameters-ParametrosPatchIdentifierEjemplo.json",
+    "fshName": "ParametrosPatchIdentifierEjemplo",
+    "fshType": "Instance",
+    "fshFile": "instances/ParametrosPatchIdentifierEjemplo.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Parameters-ParametrosUpdateSDMEjemplo.json",
+    "fshName": "ParametrosUpdateSDMEjemplo",
+    "fshType": "Instance",
+    "fshFile": "instances/ParametrosUpdateSDMEjemplo.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "Patient-PersonaSIHCEMin.json",
+    "fshName": "PersonaSIHCEMin",
+    "fshType": "Instance",
+    "fshFile": "instances/PersonaSIHCEMin.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-MLPersona.json",
+    "fshName": "MLPersona",
+    "fshType": "Logical",
+    "fshFile": "logicals/MLPersona.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-PatientXBA.json",
+    "fshName": "PacienteSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/PacienteSIHCE.fsh",
+    "startLine": 1,
+    "endLine": 76
+  },
+  {
+    "outputFile": "StructureDefinition-parametros-patch-identifier-sihce.json",
+    "fshName": "ParametrosPatchIdentifierSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/OperacionesParametrosSIHCE.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-parametros-update-sdm-sihce.json",
+    "fshName": "ParametrosUpdateSDMSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/OperacionesParametrosSIHCE.fsh",
+    "startLine": 24,
+    "endLine": 35
+  }
+]

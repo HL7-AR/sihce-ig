@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "parametros-update-sdm-sihce",
+  "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/parametros-update-sdm-sihce",
+  "name": "ParametrosUpdateSDMSIHCE",
+  "title": "Parametros Update SDM SIHCE",
+  "status": "draft",
+  "description": "Estructura de Parameters para la operacion $update-sdm de SIHCE.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Parameters",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Parameters",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Parameters.parameter",
+        "path": "Parameters.parameter",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "name"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1
+      },
+      {
+        "id": "Parameters.parameter:patient",
+        "path": "Parameters.parameter",
+        "sliceName": "patient",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Parameters.parameter:patient.name",
+        "path": "Parameters.parameter.name",
+        "patternString": "patient"
+      },
+      {
+        "id": "Parameters.parameter:patient.resource",
+        "path": "Parameters.parameter.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core/StructureDefinition/PatientXBA"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

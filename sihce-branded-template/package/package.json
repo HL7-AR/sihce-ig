@@ -1,0 +1,13 @@
+{
+  "name": "sihce.branded.template",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "SIHCE: logos HL7 Argentina y CABA embebidos (extiende fhir2.base.template)",
+  "author": "SIHCE Development Team",
+  "canonical": "http://sihce.gob.ar/templates/sihce.branded.template",
+  "version": "0.1.0",
+  "base": "fhir2.base.template",
+  "dependencies": {
+    "fhir2.base.template": "0.1.0"
+  }
+}

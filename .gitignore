@@ -1,0 +1,12 @@
+# IG Publisher / Jekyll (requested)
+temp/
+input-cache/
+recovered-resources/
+
+# Publisher site (regenerate with _genonce.sh)
+output/
+
+# Local
+.DS_Store
+*.swp
+*.swo

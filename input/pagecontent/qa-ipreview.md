@@ -1,0 +1,116 @@
+<!-- Auto-converted from qa-ipreview.html. Manual cleanup recommended. -->
+
+IP Review
+
+## Unattributed Code Systems
+
+-
+
+urn:iso:std:iso:3166 (StructureDefinition-paciente-core-SIHCE.html)
+
+## Copyright Fragment
+
+This fragment is not visible to the reader
+
+This publication includes IP covered under the following statements.
+
+-
+This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see:           https://terminology.hl7.org/license.html (https://terminology.hl7.org/license.html)
+
+Show Usage
+
+-
+Organization type (http://terminology.hl7.org/7.1.0/CodeSystem-organization-type.html)
+:                 DominioSIHCE (StructureDefinition-organization-core-SIHCE.html)
+
+-
+identifierType (http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html)
+:                 Patient/PersonaSIHCEMin (Patient-PersonaSIHCEMin.html)
+
+## Copyright and Registered Trademark Uses
+
+-
+
+IG © 2025+ SIHCE Development Team.  Package SIHCE.fhir.core#1.0.1 based on FHIR 4.0.1. Generated 2026-04-24
+
+
+Links: Table of Contents |
+QA Report
+
+
+
+(        src (toc.html)
+)
+
+
+-
+
+hl7.fhir.us.hai: Healthcare Associated Infection Implementation Guide   ®© HL7 |
+
+CC0
+(        src (searchform.html)
+)
+
+
+-
+Guía de Implementación SIHCE - FHIR R4 - Local Development build (v1.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the Directory of published versions (        src (toc.html)
+)
+
+
+## External References
+
+Type
+
+Reference
+
+Content
+
+img (CasosDeUso.html)
+
+www.plantuml.com (https://www.plantuml.com/plantuml/svg/nPBFQXin4CRl-nI3eM130qwFEPJ4E852QNlgVIADWq2hsOwauZvEdY6tNlV5EgkrN6SBxjAMnc1Prf-Px_lfkuu99UNMDsWI2sovTS5nq-cgCwx3aE2EB0bQbirDqnmEmCNRqtMuWasE1WKwaiW1bybrl6MJMmg9NuEjqtTMHxTp1hMTqvr8Urur3Ve4MrsBu8BXjlCqp5d_VUqVlRCS6m1urlD2DLGvLq0YBCl5Uxrb3tKUX29QdQgYKbQ4p5Ws4b0mMRK8XjEMYrL3NdSt_VVu9PD5FNVQTQhYLn3t1SIdaSFjNhdYSbMk3HulGKLbd_Gu69LrkLw_qeagS9PqGFW6dr4DeyLowRphOdNiDHulujy0Gzi_ncU5Hu2p8DxkNKmKnXgMG1dMXusWL7xMBHuyAi4TIul6zK_XI1uNe-_V8XDwq8QYr53m9bitPADIAuxMKojpoggsWbhkXeUcZpkdT_sXR7sGNTa37ZSXC5WNEmxktbCvE9lQXnehrbJrJv03LcgpCHMp4qaJFV_6-kmy7c_yGHZBPsOeNpASVn7ICtnhSe-0gzd_dAaY9TXcCY-_m_TQXzpw7m00)
+
+img (CasosDeUso.html)
+
+www.plantuml.com (https://www.plantuml.com/plantuml/svg/jLNTQkiu4BxtKmo5WWDPjhrO5aesjCKi1BPBsSBUbeaqQORAabUII_C8-nXxiGzmE7UzpPkS9pcIhTGH8IKk74DiMHvztpS_Cxbs7grlQrMWyCP2PMhMR8ecxBBW1hM7tqcIHMdixKrH90FuQRw_3rVWscND_fwiCxfygEucnTxtG_CNL2pHbYiIQvo2vyPKHhGrQM-c87VBXGntNh50Roo7BzhKIqjk2evUpQGeK7cemaS7h5-s_mLGume8LyOUw9FmG4tM6bkUxKu9KpUAmlhdkBQMH5YVJGfIZXBqSU23A11QiVx325IbH8-JxaWKERy4IwvLFjW2lSPmGtbvSN7Ucvma-MxxfZm7jGw42MfPKhYXw_4mgePmTSf7qHqw8jOadXTLxqdJPJMafHUK899ZZZKigaSLBHzxIqm69_2WS_oa5zLkzpZNnn5ohH3aN7dMLo32gZV559FtkDJiQZD2SCR2UcK6Yirn5kFjU98ysOiA93lFsfihc0KiUWslf3tDzzcq778-_sq_wxEOxjEotR1ulYNdxz2BTTb3k3pDabTaKxdLf4qmWl91XES3rwpOjn9cq8RkH3KPv-az_TFIzWkwVP8fTCtun1PaRC8ymfJhmKtKSthL2QExA8NEy6HZAY6E0RGeUFjL0-jkEmECGQZV6t28iqiWPk0VqT0VuIMNCxSTwm-enxeV5gaXmiI6JL-sSRBkyCQqnK9trHb11w3CXzoFR8Rbf-APqS7yqy2g9MYCuwKY81qWlKKB2Y5r82nR9x9s7HHjtpGBCmHt5zkneOrbH3TQLXHzI_CivzkLqxT____rbtFOzAqAfFV1qeaHt3LQWVQUjEIOYB_eXHqRVIXXt4HD9dWibRFWmwV5zddv6nNBGF6ZfJvPr76g2aiDnh8hu9EL5i2QLfhq1s2Xx8OKQ3DKzIHNaOth_3rVnsVyNOTRMwll)
+
+img (CasosDeUso.html)
+
+www.plantuml.com (https://www.plantuml.com/plantuml/svg/ZLF1QXin4BthAmQVOaX-88UIbALWg4DfQQzbAat2W5QpZAHW-aSzzDHRh_wnxkokDsi7cZrObgLvxyrx6j_bWbfg6ntw8WgDj9nON8TQs7E7gS072gGOHD_VEpSLmCsxvVajx2Nm8tlKNVDHFCPFf5aINdrfzjV0OOBPTdbzxql5U7dwKEbPjiuj15xfVSF80HMyj5samgK620G1YsI7iK1ZE-0q5jWf0C0PPSyvzNKBf2fwjJcXdfGoXdE2pTPHp3Gnd_F-hzKVDNlKKo1lPB4Tw8R5N3m8P09Alb8gYj2DjSFz6ZyzdWwS2vsGy3WY4BmaY9B7oA1JwKGzIpBRcqKRW-VzyMyit1lEe9HhB5PbVOcr5QOKtahYCprnBeeA7Ie2ri15zFXxlP-TAJvJOag5yaYZX95_ea8xpQ3duvy4D-0n2-Ya6UHIz9N9hsaE-CKQhdBcfJLsxSVTHlxxF47NO3ynjkZ9eXqrPztfdQq8ae0NJfu3JNVhCZ7ihBTaiIUU3SqvuEQYXzc_4SrOEg0ls5hEOzMA57f47TzYTpRQL-l_zUkSv-ezvTpFGmFHE5waWmosZxyEN6HXbL9mfs_xkBj-hMty1m00)
+
+img (CasosDeUso.html)
+
+www.plantuml.com (https://www.plantuml.com/plantuml/svg/nLN1RXCn4BtlLupsb8Zs1tf0BHIaIcr1HN2j9lQaZEJrh6nl5Vf773Zrrcj-37lZE1iIBGiSMAdRaJFp_DxpZFVS1tIXQqo5AeY3IsdOibHjN6N5BTe0xqcJGotkpKLLvGGuVJrSFuCRqRnaXUxJvSr7Sbuipc9ueKA7vWHYUDlHevm0wmoHmcjHQ7BwlAe6Y0SRV4736XqeQLf3WKEdGHDe3E8hD04kKmHiSq9SXVZiGKRClFaPa7FYPlMswi6HHxqFKCyhCfuoyZxk6DL5vnMwhGiZWXDG_qhyRmKy0LdLaGqEeTrazRzFKHBhQSK-qBOIbfiA12KMZFYDMT0wQSKf5fi4rmCQlTgRzOi97ALwSEGx4r9MuYM9bixwV-V17JsmZ_aEMdG8s6aEujO_fkkvIZi-acMoWVm6nX4QVegWJMutnUjdUo3XiotsxOZZ9DxfbD7rRVnB_zuFykO5gmHeGie2x2l0IeHYgrXJJfccUW1Hcd885WDRjBbiiiRwW56sOe1N86WLLx0X6qQuZVcIXtd4bXsH_Emcz1jcGlnKkccIGsoNCgklInz784_bV1Tezt21B90PejKZz7gltcApu0HFWLGuIkwFHl_TAf2pClEqYbvfKLtoNAvqVFVT6yInp8zkSconN1D5zVfvDwEmVh6ivB1m-ltXAKzOn2rUzYC6fy1DAvuNR5XZV_K-OWfTFLb0jlbkZF6_zsDsFREQoApOcx4EPsu0dG7-lytZWhBTMT5qELFFe73VFmLu1KjIN_73WeFSIzj_QCpyxqppdLBa_QpE8rKk_lnLMtzVSP0HRyZgQUrP7Q_ASVwV_ghp-EuQynC0)
+
+img (CasosDeUso.html)
+
+www.plantuml.com (https://www.plantuml.com/plantuml/svg/bLF1Yjim4BthAuHFDgG_a4D9shIbfOSIcbikKsaQ1XID6TcXtR_PtzXhVcn7YHpYx65jWotpHk_flGTQfGwawu_1WEjOx8QF58bDgoWvQY5szYjw5F0idzR6b0tsmyTxt2ujX0xAiDx73NISlc54WO1fiOzRJ2t717y2_iG3X37q6rqanmh-GaaSuKSlvCd1eaXjID0vujWOStVkMnid2EH1rhsceIV8bBfFFGXnOzIZZMoX33qRgyz8JmLB2XL34PQw-fANvPXPDGP3maUjATx6tTJDPEAji7cqXqfdC6-jA-T2oWNwRDzIF9sVTHEdos1EZuE0usCRCF_pdLnrjPVBBJl71xrh7ON-QapPHN8Qmk-stskDNjnSrOSiEhF_mU8_IXsMoSmm1LSLmOFAP5B9SCkHZpc_g1ye-8GSJX1aUvNauM8r4psctZbCgQu-2pxuYTuCQtvN-idN_nK0)
+
+img (CasosDeUso.html)
+
+www.plantuml.com (https://www.plantuml.com/plantuml/svg/fLF1IiGm4BtdAq9FBUWFx45sTLSGz28UlSmcemoacJ995_5l_1P_p3GcqAN8kbfeqynxy-RDXAn318bZxnIOoAAtt9CdLaEAag41VDItQ570ibnlb2e4VNarZ-kLxjdI2ncGmcYV_HOYXpkBFcR44FkB4dr8x1hhb9f9BPKFuCY2RCR8GkyvfHt324BSAN1HUzPGGCjAf-T8BmbMrokD8YnjivkMrN5cqobq0PTQfxtjtYX4z8QWTa-s_7LPPB9fYmdFEb7PHwabph4yLybLc-yAsNe5J-d_q4O-caSC0_i0UuVt-0gkxVwbyOJ6a-6_g6n9qEJZxbJ9BfESK4t-yFcHs1moUEOW5oAQqyPmFpXCG9bgdMnXdoouw0S6HmRa1lezSMYxNreDep4OGjlKYs9vxiXRLTVfNQVFT8U_0000)
+
+img (Seguridad.html)
+
+www.plantuml.com (https://www.plantuml.com/plantuml/svg/XLF1RXen4BtxAqRX4bJO92H4A8SgPDaLg5MxmgZgWSjqFO33harjRwBcdthg9-J7EWOAYPggjxNdlJTltdXlVK0NcheIVgtD1XtMe6Y1JHLoQy8dh0c6JkC_wb8_4LpqNXGzVM_8b3HqpZxELhfS6_8UNaASROmghJFaeFy6jM17kjGRDE7EEaKkjPLrqEgb_Nmm_0y1o_Loss1F6brdmtmW19Q1ZoTI-q0rpit8rjfeUmBeGOwWbUVvPNOkDaSf1aju1PDfn6NdTxs_S78oJhCzIa8h6uo6MVuQ5QsHKJlet9mEYmdauyaKfbVjBJDUjDX5F-yBmPwwxxSjR-0YWV5iLa3nMSwWmA39XBbv1oj2JWU-TgSMLJUjuhs8b0Epbq2kNOsWz587h2Ahfe0AW_MyI0WEd_2RhhH2TQHAfbucaAB1YbDUDiwoWYFEa8r7Bx83iuyIwYOqjWF5XqbRHDg1VPN05uoge1MxYlBm0pRaQksjdvifBNaJ3W4RfNappp_nZq2CuGRwoMxSiyLAkxFzq2BMkeScrmbCoMyQuaUyZN8dSPZ-M3mjtnYblHiumaSxDBzgL5O8OmE1VU1i6T69tGH0Qkl6w19B_VpBx3KGs9KZaEGUjBAEjg7As2QEd30jgmvLI2EQVHWBseHuIuPO0gY2HTNSsyYkoNYy9v-8-5gY5N7BN_oF_WO=)
+
+img (Seguridad.html)
+
+www.plantuml.com (https://www.plantuml.com/plantuml/svg/VLFBRjim4BphAnREfNPh9sbQ80YA8h9irqBRM8XyoC50iH5N2XDfQP1KWQReltVrS6Bt4Pr8xipi39UwT1wjhwioS0-QjsYn0aKvrgLV6FPNM164LkD_wgb-93WzsojcfjeQ9lPJOnNPo9J6mj7RwFtYFFmd3BE7mfgQLGzTjDyUr5BcaOkINbRSebAQ2pWz2O8d2WncfjAipG3GmMprjTK_cv_0pm2UJS0WrSvJXHjMLC8-9qoIFv1alsib5XHjEAMYjbgXsl2hDDqHXoqpJQMVS4K1nbONTtxyiJk42rYkrmaagtGjnD9aM0w3NmU-qtWPpJkTPlLjkhg1e_dvB9ml_lB-WgEMlFFJRWwvOH9lUB6Ch-7wNPytRhQ2wl7FtlkIk6-Cmt5-f-rnWbwBqa6CBkI7lT2TqWL4o5Y2QpmQKBh9QuIw_f92LVlQm6l8o7gTwmoLSP1yZeT1mCPJco0IMwFHKzv86blHknbFmz58Qf_8UMqOGOPegP2PDcq8AatLhJNkZM1SVUkwOJluSTXDa9dXN2C_uaIWLqPUbTGplHL9RbJpihxl98aTtfER1CGA6eUIEuB9f9_xRjtT-QM0v2Vx3G==)
+
+## Internal Images
+
+Diferential.png
+
+MS.png
+
+StatisticsReferences.png
+
+binding.png
+
+ejemplo.png
+
+keyelements.png
+
+snap.png
+
+tree-filter.png

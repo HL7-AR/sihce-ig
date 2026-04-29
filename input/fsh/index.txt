@@ -1,0 +1,9 @@
+Name                Type      File
+DominioSIHCE        Profile   profiles/DominioSIHCE.fsh
+DominioSIHCEMin     Instance  instances/DominioSIHCEMin.fsh
+MLDominio           Logical   logicals/MLDominio.fsh
+MLPersona           Logical   logicals/MLPersona.fsh
+PacienteSIHCE       Profile   profiles/PacienteSIHCE.fsh
+PersonaSIHCEMin     Instance  instances/PersonaSIHCEMin.fsh
+mlpersona-to-sihce  Mapping   mappings/mlpersona-to-sihce.fsh
+renaper-dni         Instance  instances/renaper-dni.fsh

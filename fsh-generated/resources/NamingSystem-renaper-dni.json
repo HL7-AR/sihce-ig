@@ -1,0 +1,49 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "renaper-dni",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+      "valueUri": "http://sihce.gob.ar/NamingSystem/renaper-dni"
+    },
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+      "valueString": "1.0.1"
+    }
+  ],
+  "name": "RenaperDNI",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2025-07-01",
+  "publisher": "SIHCE Development Team",
+  "contact": [
+    {
+      "name": "SIHCE Development Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org.ar"
+        }
+      ]
+    }
+  ],
+  "description": "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "AR",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Argentina"
+        }
+      ]
+    }
+  ],
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "http://renaper.gob.ar/dni",
+      "preferred": true
+    }
+  ]
+}
