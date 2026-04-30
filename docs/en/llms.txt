@@ -1,10 +1,10 @@
-# SIHCE.fhir.core#1.2.0: Guía de Implementación SIHCE - FHIR R4(en)
+# SIHCE.fhir.core#1.2.0: Guía de Implementación SIHCE - FHIR R5(en)
 
 ## Pages
 
 * [Inicio](index.md)
 * [Generalidades](Aspectos-Generales.md)
-* [Artefactos](artifacts.md)
+* [Artifacts Summary](artifacts.md)
 * [Casos de Uso](CasosDeUso.md)
 * [Operaciones](Operaciones.md)
 * [Seguridad](Seguridad.md)
@@ -36,7 +36,7 @@
 
 ### ImplementationGuides
 
-* [Guía de Implementación SIHCE - FHIR R4](ImplementationGuide-SIHCE.fhir.core.md)
+* [Guía de Implementación SIHCE - FHIR R5](ImplementationGuide-SIHCE.fhir.core.md)
 
 ### NamingSystems
 
@@ -47,3 +47,4 @@
 * [ParametrosPatchIdentifierEjemplo (Parameters)](Parameters-ParametrosPatchIdentifierEjemplo.md)
 * [ParametrosUpdateSDMEjemplo (Parameters)](Parameters-ParametrosUpdateSDMEjemplo.md)
 * [PersonaSIHCEMin (Patient)](Patient-PersonaSIHCEMin.md)
+* [PersonaSIHCEPatch (Patient)](Patient-PersonaSIHCEPatch.md)

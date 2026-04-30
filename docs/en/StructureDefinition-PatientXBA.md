@@ -1,7 +1,7 @@
-# Paciente SIHCE (PatientXBA) - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Paciente SIHCE (PatientXBA) - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Paciente SIHCE (PatientXBA)**
 
 ## Resource Profile: Paciente SIHCE (PatientXBA) 
@@ -17,7 +17,7 @@ Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y fede
 **Usages:**
 
 * Use this Profile: [Parametros Patch Identifier SIHCE](StructureDefinition-parametros-patch-identifier-sihce.md) and [Parametros Update SDM SIHCE](StructureDefinition-parametros-update-sdm-sihce.md)
-* Examples for this Profile: [Patient/PersonaSIHCEMin](Patient-PersonaSIHCEMin.md)
+* Examples for this Profile: [Patient/PersonaSIHCEMin](Patient-PersonaSIHCEMin.md) and [Patient/PersonaSIHCEPatch](Patient-PersonaSIHCEPatch.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/PatientXBA)
 
@@ -52,11 +52,21 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
     }]
   }],
   "description" : "Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación)",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "interface",
+    "uri" : "http://hl7.org/fhir/interface",
+    "name" : "Interface Pattern"
   },
   {
     "identity" : "cda",
@@ -64,14 +74,9 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
     "name" : "CDA (R2)"
   },
   {
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
-  },
-  {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 v2 Mapping"
+    "name" : "HL7 V2 Mapping"
   },
   {
     "identity" : "loinc",

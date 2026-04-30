@@ -3,7 +3,7 @@
   "id" : "ModificarIDLocalPersonaModeloAFHIR",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ModificarIDLocalPersonaModeloAFHIR</b></p><a name=\"ModificarIDLocalPersonaModeloAFHIR\"> </a><a name=\"hcModificarIDLocalPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"StructureDefinition-ModificarIDLocalPersona.html\">Modelo lógico ModificarIDLocalPersona (FederadorBA)</a> to <a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Comment</b></td></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosPersona.tipoDocumento\">ModificarIDLocalPersona.DatosPersona.tipoDocumento</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio\">ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosPersona.sexo\">ModificarIDLocalPersona.DatosPersona.sexo</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.gender\">Patient.gender</a></td><td>0..1</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosPersona.primerNombre\">ModificarIDLocalPersona.DatosPersona.primerNombre</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.name\">Patient.name</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosPersona.segundoNombre\">ModificarIDLocalPersona.DatosPersona.segundoNombre</a></td><td>0..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.name\">Patient.name</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosPersona.primerApellido\">ModificarIDLocalPersona.DatosPersona.primerApellido</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.name\">Patient.name</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosPersona.segundoApellido\">ModificarIDLocalPersona.DatosPersona.segundoApellido</a></td><td>0..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.name\">Patient.name</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosPersona.fechaNacimiento\">ModificarIDLocalPersona.DatosPersona.fechaNacimiento</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.birthDate\">Patient.birthDate</a></td><td>0..1</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosModificacion.idDominio\">ModificarIDLocalPersona.DatosModificacion.idDominio</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td>URI del dominio en slice idDominio.</td></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual\">ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td/></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo\">ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/patient.html#Patient.identifier\">Patient.identifier</a></td><td>0..*</td><td>todo</td><td/></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"StructureDefinition-ModificarIDLocalPersona.html\">Modelo lógico ModificarIDLocalPersona (FederadorBA)</a> to <a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td></tr><tr><td><a href=\"StructureDefinition-ModificarIDLocalPersona.html#ModificarIDLocalPersona.DatosRespuesta.mensaje\">ModificarIDLocalPersona.DatosRespuesta.mensaje</a></td><td>1..1</td><td>todo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html#OperationOutcome.issue\">OperationOutcome.issue</a></td><td>1..*</td><td>todo</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ModificarIDLocalPersonaModeloAFHIR</b></p><a name=\"ModificarIDLocalPersonaModeloAFHIR\"> </a><a name=\"hcModificarIDLocalPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>ModificarIDLocalPersona.DatosPersona.tipoDocumento</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.sexo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.primerNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.segundoNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.primerApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.segundoApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.fechaNacimiento</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosModificacion.idDominio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td>URI del dominio en slice idDominio.</td></tr><tr><td>ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarIDLocalPersona.DatosRespuesta.mensaje</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>OperationOutcome.issue</td></tr></table></div>"
   },
   "url" : "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR",
   "version" : "1.2.0",
@@ -23,69 +23,67 @@
   "description" : "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).",
   "purpose" : "Cambio de id local manteniendo validación por SDM.",
   "group" : [{
-    "source" : "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
-    "target" : "http://hl7.org/fhir/StructureDefinition/Patient",
     "element" : [{
       "code" : "ModificarIDLocalPersona.DatosPersona.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.sexo",
       "target" : [{
         "code" : "Patient.gender",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.primerNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.primerApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosModificacion.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent",
+        "relationship" : "equivalent",
         "comment" : "URI del dominio en slice idDominio."
       }]
     },
@@ -93,25 +91,23 @@
       "code" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     }]
   },
   {
-    "source" : "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
-    "target" : "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
     "element" : [{
       "code" : "ModificarIDLocalPersona.DatosRespuesta.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     }]
   }]

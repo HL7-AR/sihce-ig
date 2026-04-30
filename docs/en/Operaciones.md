@@ -1,4 +1,4 @@
-# Operaciones - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
 * **Operaciones**
@@ -26,21 +26,21 @@ En todas las operaciones de la colección se envían estos headers:
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| Búsqueda de paciente por identificador y género | GET | `/Patient?identifier={system|value}&gender={code}` | Consulta pacientes por identificador y género (criterios estándar FHIR R4). |
+| Búsqueda de paciente por identificador y género | GET | `/Patient?identifier={system|value}&gender={code}` | Consulta pacientes por identificador y género (criterios estándar FHIR R5). |
 | Alta/Federación de paciente | POST | `/Patient` | Envía un recurso`Patient`conforme al perfil[PatientXBA](StructureDefinition-PatientXBA.md). |
 | Actualización de identificador local | POST | `/Patient/$patch-identifier` | Actualiza el identificador local usando`Parameters`. |
 | Actualización de SDM | POST | `/Patient/$update-sdm` | Actualiza datos mínimos del paciente mediante operación FHIR personalizada. |
 
 ### Búsqueda por identificador y género
 
-Interacción estándar de búsqueda FHIR R4 sobre el recurso `Patient` ([search](http://hl7.org/fhir/R4/patient.html#search)).
+Interacción estándar de búsqueda FHIR R5 sobre el recurso `Patient` ([search](http://hl7.org/fhir/R5/patient.html#search)).
 
 #### Parámetros de búsqueda
 
 | | | | |
 | :--- | :--- | :--- | :--- |
 | `identifier` | Requerido | token (`system|value`o solo`value`si el sistema es implícito) | Identificador del paciente. Ejemplo de sistema nacional:`http://www.renaper.gob.ar/dni`. Ver[NamingSystem renaper-dni](NamingSystem-renaper-dni.md). |
-| `gender` | Requerido | token (código de[AdministrativeGender](http://hl7.org/fhir/R4/codesystem-administrative-gender.html)) | Género administrativo del paciente (`male`,`female`,`other`,`unknown`). |
+| `gender` | Requerido | token (código de[AdministrativeGender](http://hl7.org/fhir/R5/codesystem-administrative-gender.html)) | Género administrativo del paciente (`male`,`female`,`other`,`unknown`). |
 
 Otros parámetros de búsqueda definidos en la especificación base de FHIR para `Patient` pueden estar soportados o no según el despliegue; para esta guía se documentan explícitamente los criterios anteriores por ser los utilizados en los casos de uso de SIHCE.
 
@@ -53,7 +53,7 @@ GET /Patient?identifier=http://www.renaper.gob.ar/dni|24068773&gender=male
 
 #### Respuesta esperada
 
-`200 OK` con un [Bundle](http://hl7.org/fhir/R4/bundle.html) de tipo `searchset` que contiene cero o más recursos `Patient` coincidentes.
+`200 OK` con un [Bundle](http://hl7.org/fhir/R5/bundle.html) de tipo `searchset` que contiene cero o más recursos `Patient` coincidentes.
 
 ### Alta/Federación de paciente
 

@@ -13,4 +13,5 @@
 [ParametrosPatchIdentifierSIHCE]: StructureDefinition-parametros-patch-identifier-sihce.html
 [ParametrosUpdateSDMSIHCE]: StructureDefinition-parametros-update-sdm-sihce.html
 [PersonaSIHCEMin]: Patient-PersonaSIHCEMin.html
+[PersonaSIHCEPatch]: Patient-PersonaSIHCEPatch.html
 [renaper-dni]: NamingSystem-renaper-dni.html

@@ -23,7 +23,7 @@
     <name value="patient"/>
     <resource>
       <Patient>
-        <id value="PersonaSIHCEMin"/>
+        <id value="PersonaSIHCEPatch"/>
         <meta>
           <profile value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
         </meta>
@@ -47,7 +47,7 @@
             </coding>
           </type>
           <system value="http://hospitalitaliano.org.ar/fhir"/>
-          <value value="23"/>
+          <value value="9876543210"/>
         </identifier>
         <name>
           <use value="official"/>

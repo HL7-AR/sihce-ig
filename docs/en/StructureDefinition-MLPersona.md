@@ -1,7 +1,7 @@
-# Modelo Lógico de Persona para SIHCE - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Modelo Lógico de Persona para SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Modelo Lógico de Persona para SIHCE**
 
 ## Logical Model: Modelo Lógico de Persona para SIHCE 
@@ -51,12 +51,17 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
     }]
   }],
   "description" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "mlpersona-to-sihce",
     "uri" : "http://hl7.org/fhir/StructureDefinition/Patient",
     "name" : "Mapping del Modelo Lógico MLPersona al perfil PacienteSIHCE",
     "comment" : "Mapeo entre el modelo lógico MLPersona y el perfil Patient SIHCE"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
   }],
   "kind" : "logical",
   "abstract" : false,

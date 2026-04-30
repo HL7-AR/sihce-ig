@@ -1,7 +1,7 @@
-# Ejemplo Parameters Patch Identifier - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Ejemplo Parameters Patch Identifier - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Ejemplo Parameters Patch Identifier**
 
 ## Example Parameters: Ejemplo Parameters Patch Identifier
@@ -35,7 +35,7 @@
     "name" : "patient",
     "resource" : {
       "resourceType" : "Patient",
-      "id" : "PersonaSIHCEMin",
+      "id" : "PersonaSIHCEPatch",
       "meta" : {
         "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
       },
@@ -59,7 +59,7 @@
           }]
         },
         "system" : "http://hospitalitaliano.org.ar/fhir",
-        "value" : "23"
+        "value" : "9876543210"
       }],
       "name" : [{
         "use" : "official",

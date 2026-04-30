@@ -1,7 +1,7 @@
-# ModificarSDMPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# ModificarSDMPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **ModificarSDMPersona: modelo lógico a FHIR**
 
 ## ConceptMap: ModificarSDMPersona: modelo lógico a FHIR (Experimental) 
@@ -40,143 +40,139 @@ Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a 
   "description" : "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome.",
   "purpose" : "Actualización de SDM con documento inmutable; correlación con PatientXBA.",
   "group" : [{
-    "source" : "http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona",
-    "target" : "http://hl7.org/fhir/StructureDefinition/Patient",
     "element" : [{
       "code" : "ModificarSDMPersona.SDMActual.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMActual.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMActual.sexo",
       "target" : [{
         "code" : "Patient.gender",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMActual.primerNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMActual.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMActual.primerApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMActual.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMActual.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMActual.fechaDefuncion",
       "target" : [{
         "code" : "Patient.deceased[x]",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMNuevo.sexo",
       "target" : [{
         "code" : "Patient.gender",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMNuevo.primerNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMNuevo.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMNuevo.primerApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMNuevo.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMNuevo.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.SDMNuevo.fechaDefuncion",
       "target" : [{
         "code" : "Patient.deceased[x]",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.DatosDominio.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarSDMPersona.DatosDominio.idLocalPersona",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     }]
   },
   {
-    "source" : "http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona",
-    "target" : "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
     "element" : [{
       "code" : "ModificarSDMPersona.DatosRespuesta.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     }]
   }]

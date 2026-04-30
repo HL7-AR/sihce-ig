@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://hl7.org/fhir/administrative-gender",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "AdministrativeGender",
     "title" : "AdministrativeGender",
@@ -9,35 +9,37 @@
     "oids" : ["2.16.840.1.113883.4.642.4.2"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+    "http://hl7.org/fhir/R5/valueset-administrative-gender.html" : "AdministrativeGender"
   },
   {
     "url" : "http://hl7.org/fhir/identifier-use",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "IdentifierUse",
     "title" : "IdentifierUse",
     "description" : "Identifies the purpose for this identifier, if known .",
-    "oids" : ["2.16.840.1.113883.4.642.4.58"],
+    "oids" : ["2.16.840.1.113883.4.642.1.58"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    "http://hl7.org/fhir/R5/valueset-identifier-use.html" : "IdentifierUse"
   },
   {
     "url" : "http://hl7.org/fhir/link-type",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "LinkType",
-    "title" : "LinkType",
-    "description" : "The type of link between this patient resource and another patient resource.",
-    "oids" : ["2.16.840.1.113883.4.642.4.424"],
+    "title" : "Link Type",
+    "description" : "The type of link between this Patient resource and other Patient/RelatedPerson resource(s).",
+    "oids" : ["2.16.840.1.113883.4.642.1.413",
+    "2.16.840.1.113883.4.642.2.234",
+    "2.16.840.1.113883.4.642.4.424"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+    "http://hl7.org/fhir/R5/valueset-link-type.html" : "Link Type"
   },
   {
     "url" : "http://hl7.org/fhir/name-use",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "NameUse",
     "title" : "NameUse",
@@ -45,7 +47,7 @@
     "oids" : ["2.16.840.1.113883.4.642.4.66"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
+    "http://hl7.org/fhir/R5/valueset-name-use.html" : "NameUse"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -57,7 +59,7 @@
     "oids" : ["2.16.840.1.113883.18.58"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+    "http://hl7.org/fhir/R5/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -69,7 +71,7 @@
     "oids" : ["2.16.840.1.113883.18.108"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+    "http://hl7.org/fhir/R5/valueset-identifier-type.html" : "Identifier Type Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
@@ -81,7 +83,7 @@
     "oids" : ["2.16.840.1.113883.5.2"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
@@ -93,6 +95,6 @@
     "oids" : ["2.16.840.1.113883.5.1008"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
   }]
 }

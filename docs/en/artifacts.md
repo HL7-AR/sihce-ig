@@ -1,39 +1,61 @@
-# Artefactos - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Artifacts Summary - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* **Artefactos**
+* **Artifacts Summary**
 
-## Artefactos
+## Artifacts Summary
 
-# Artefactos
+This page provides a list of the FHIR artifacts defined as part of this implementation guide.
 
-Esta página lista los artefactos FHIR definidos en esta guía de implementación.
+### Structures: Logical Models 
 
-### Structures: Logical Models
+These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.
 
-Modelos de datos del dominio en términos cercanos al negocio.
+| | |
+| :--- | :--- |
+| [ Modelo Lógico de Persona para SIHCE  ](StructureDefinition-MLPersona.md) | Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación |
+| [ Modelo lógico BuscarPersona (FederadorBA)  ](StructureDefinition-BuscarPersona.md) | Solicitud de búsqueda de persona por datos mínimos y respuesta mínima. |
+| [ Modelo lógico FederarPersona (FederadorBA)  ](StructureDefinition-FederarPersona.md) | Federación de una persona con identificador local y validación de datos. |
+| [ Modelo lógico ModificarIDLocalPersona (FederadorBA)  ](StructureDefinition-ModificarIDLocalPersona.md) | Modificación del identificador local de una persona federada. |
+| [ Modelo lógico ModificarSDMPersona (FederadorBA)  ](StructureDefinition-ModificarSDMPersona.md) | Actualización del SDM de una persona federada; documento inmutable. |
 
-* [Modelo Lógico de Persona para SIHCE](StructureDefinition-MLPersona.md) — empadronamiento e identificación.
+### Structures: Resource Profiles 
 
-### Structures: Resource Profiles
+These define constraints on FHIR resources for systems conforming to this implementation guide.
 
-Restricciones sobre recursos FHIR para sistemas conformes con esta guía.
+| | |
+| :--- | :--- |
+| [ Paciente SIHCE (PatientXBA)  ](StructureDefinition-PatientXBA.md) | Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación) |
+| [ Parametros Patch Identifier SIHCE  ](StructureDefinition-parametros-patch-identifier-sihce.md) | Estructura de Parameters para la operacion $patch-identifier de SIHCE. |
+| [ Parametros Update SDM SIHCE  ](StructureDefinition-parametros-update-sdm-sihce.md) | Estructura de Parameters para la operacion $update-sdm de SIHCE. |
 
-* [Paciente SIHCE (PatientXBA)](StructureDefinition-PatientXBA.md) — perfil de `Patient` para interoperabilidad SIHCE.
-* [Parámetros patch identifier SIHCE](StructureDefinition-parametros-patch-identifier-sihce.md) — cuerpo de `$patch-identifier`.
-* [Parámetros update SDM SIHCE](StructureDefinition-parametros-update-sdm-sihce.md) — cuerpo de `$update-sdm`.
+### Terminology: Naming Systems 
 
-### Terminology: Naming Systems
+These define identifier and/or code system identities used by systems conforming to this implementation guide.
 
-Identidades de sistemas de identificación o códigos.
+| | |
+| :--- | :--- |
+| [ renaper-dni  ](NamingSystem-renaper-dni.md) | This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI). |
 
-* [renaper-dni](NamingSystem-renaper-dni.md) — Documento Nacional de Identidad (RENAPER).
+### Terminology: Concept Maps 
 
-### Example: Example Instances
+These define transformations to convert between codes by systems conforming with this implementation guide.
 
-Instancias de ejemplo.
+| | |
+| :--- | :--- |
+| [ BuscarPersona: modelo lógico a FHIR  ](ConceptMap-BuscarPersonaModeloAFHIR.md) | Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5). |
+| [ FederarPersona: modelo lógico a FHIR  ](ConceptMap-FederarPersonaModeloAFHIR.md) | Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado. |
+| [ ModificarIDLocalPersona: modelo lógico a FHIR  ](ConceptMap-ModificarIDLocalPersonaModeloAFHIR.md) | Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje). |
+| [ ModificarSDMPersona: modelo lógico a FHIR  ](ConceptMap-ModificarSDMPersonaModeloAFHIR.md) | Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome. |
 
-* [PersonaSIHCEMin](Patient-PersonaSIHCEMin.md) — paciente de ejemplo con datos mínimos.
-* [Parámetros patch identifier - ejemplo](Parameters-ParametrosPatchIdentifierEjemplo.md)
-* [Parámetros update SDM - ejemplo](Parameters-ParametrosUpdateSDMEjemplo.md)
+### Example: Example Instances 
+
+These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.
+
+| | |
+| :--- | :--- |
+| [ Ejemplo Parameters Patch Identifier  ](Parameters-ParametrosPatchIdentifierEjemplo.md) | Ejemplo de Parameters para actualizar identificador local. |
+| [ Ejemplo Parameters Update SDM  ](Parameters-ParametrosUpdateSDMEjemplo.md) | Ejemplo de Parameters para actualizacion de SDM. |
+| [ PersonaSIHCEMin  ](Patient-PersonaSIHCEMin.md) |  |
+| [ PersonaSIHCEPatch  ](Patient-PersonaSIHCEPatch.md) |  |
 

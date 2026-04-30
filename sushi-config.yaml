@@ -2,10 +2,10 @@ id: SIHCE.fhir.core
 # Base canonical (not the IG resource URL); avoids RESOURCE_CANONICAL_MISMATCH in Publisher QA
 canonical: http://sihce.gob.ar
 name: GuiaDeImplementacionSIHCE
-title: "Guía de Implementación SIHCE - FHIR R4"
+title: "Guía de Implementación SIHCE - FHIR R5"
 status: draft
 version: 1.2.0
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0
 copyrightYear: 2026
 releaseLabel: ci-build
 publisher:
@@ -21,8 +21,6 @@ pages:
     title: Operaciones
   CasosDeUso.md:
     title: Casos de Uso
-  artifacts.md:
-    title: Artefactos
   ModeloLogico.md:
     title: Modelo Lógico
   Seguridad.md:

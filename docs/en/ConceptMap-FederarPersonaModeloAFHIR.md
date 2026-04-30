@@ -1,7 +1,7 @@
-# FederarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# FederarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **FederarPersona: modelo lógico a FHIR**
 
 ## ConceptMap: FederarPersona: modelo lógico a FHIR (Experimental) 
@@ -40,113 +40,107 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
   "description" : "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado.",
   "purpose" : "Federación de persona; resultado incluye id global y mensaje.",
   "group" : [{
-    "source" : "http://sihce.gob.ar/StructureDefinition/FederarPersona",
-    "target" : "http://hl7.org/fhir/StructureDefinition/Patient",
     "element" : [{
       "code" : "FederarPersona.DatosPersona.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosPersona.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosPersona.sexo",
       "target" : [{
         "code" : "Patient.gender",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosPersona.primerNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosPersona.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosPersona.primerApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosPersona.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosPersona.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosDominio.idLocalPersona",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosDominio.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosFederacion.idPersonaGlobal",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent",
+        "relationship" : "equivalent",
         "comment" : "Identificador maestro / global según política del FederadorBA (p. ej. identifier adicional)."
       }]
     }]
   },
   {
-    "source" : "http://sihce.gob.ar/StructureDefinition/FederarPersona",
-    "target" : "http://hl7.org/fhir/StructureDefinition/Organization",
     "element" : [{
       "code" : "FederarPersona.DatosDominio",
       "target" : [{
         "code" : "Organization",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.DatosDominio.idDominio",
       "target" : [{
         "code" : "Organization.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     }]
   },
   {
-    "source" : "http://sihce.gob.ar/StructureDefinition/FederarPersona",
-    "target" : "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
     "element" : [{
       "code" : "FederarPersona.DatosFederacion.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
-        "equivalence" : "equivalent",
+        "relationship" : "equivalent",
         "comment" : "Texto informativo o de error en respuesta de operación."
       }]
     }]

@@ -39,7 +39,7 @@
      fhir:name [ fhir:v "patient" ] ;
      fhir:Parameters.parameter.resource ( [
        a fhir:Patient ;
-       fhir:id [ fhir:v "PersonaSIHCEMin" ] ;
+       fhir:id [ fhir:v "PersonaSIHCEPatch" ] ;
        fhir:meta [
          fhir:profile ( [
            fhir:v "http://sihce.gob.ar/StructureDefinition/PatientXBA"^^xsd:anyURI ;
@@ -77,7 +77,7 @@
            fhir:v "http://hospitalitaliano.org.ar/fhir"^^xsd:anyURI ;
            fhir:l <http://hospitalitaliano.org.ar/fhir>
          ] ;
-         fhir:value [ fhir:v "23" ]
+         fhir:value [ fhir:v "9876543210" ]
        ] ) ;
        fhir:name ( [
          fhir:use [ fhir:v "official" ] ;

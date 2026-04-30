@@ -1,4 +1,4 @@
-# Inicio - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Inicio - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
 * **Inicio**
@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:1.2.0 |
-| Draft as of 2026-04-29 | *Computable Name*:GuiaDeImplementacionSIHCE |
+| Draft as of 2026-04-30 | *Computable Name*:GuiaDeImplementacionSIHCE |
 
 # Sistema Integrador de Historias Clínicas Electrónicas
 

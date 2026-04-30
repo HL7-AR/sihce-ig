@@ -1,6 +1,6 @@
 ### Versión 1.2.0
 
-- Título de la guía unificado a **Guía de Implementación SIHCE - FHIR R4**; versión de paquete **1.2.0**.
+- Título de la guía unificado a **Guía de Implementación SIHCE - FHIR R5**; versión de paquete **1.2.0**.
 - Endpoints REST documentados como recurso **`Patient`** (incluidas operaciones `$patch-identifier` y `$update-sdm`); perfil de payload **`PatientXBA`** (`StructureDefinition/PatientXBA`).
 - Operaciones: parámetros de búsqueda y definiciones de `Parameters` integrados en la misma página que cada operación; POST enlazado al perfil PatientXBA.
 - Página **Seguridad**: diagramas (flujo X-BA y arquitectura); tablas en Markdown; alineación con la publicación de referencia.
@@ -37,7 +37,7 @@
 
 - Se agregan nuevas páginas: Aspectos-Generales.md, Operaciones.md y se actualiza el menú y la sección de páginas en la configuración.
 
-- Se corrige la URL del publisher por http://hl7.org.ar y se actualiza el nombre de la IG agregando FHIR R4 para indicar la versión de FHIR utilizada.
+- Se corrige la URL del publisher por http://hl7.org.ar y se actualiza el nombre de la IG agregando FHIR R5 para indicar la versión de FHIR utilizada.
 
 - Mejoras en la estructura de los modelos lógicos y documentación de casos de uso.
 

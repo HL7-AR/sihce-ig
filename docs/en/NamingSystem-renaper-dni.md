@@ -1,7 +1,7 @@
-# renaper-dni - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# renaper-dni - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **renaper-dni**
 
 ## NamingSystem: renaper-dni 
@@ -28,8 +28,10 @@ This NamingSystem defines the official identification document issued by RENAPER
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "1.2.0"
+    "valueString" : "1.0.1"
   }],
+  "url" : "http://sihce.gob.ar/NamingSystem/renaper-dni",
+  "version" : "1.2.0",
   "name" : "RenaperDNI",
   "status" : "active",
   "kind" : "identifier",

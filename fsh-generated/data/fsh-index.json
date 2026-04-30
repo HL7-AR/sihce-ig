@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapBuscarPersona.fsh",
     "startLine": 1,
-    "endLine": 64
+    "endLine": 60
   },
   {
     "outputFile": "ConceptMap-FederarPersonaModeloAFHIR.json",
@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapFederarPersona.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 57
   },
   {
     "outputFile": "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.json",
@@ -21,7 +21,7 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapModificarIDLocalPersona.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 50
   },
   {
     "outputFile": "ConceptMap-ModificarSDMPersonaModeloAFHIR.json",
@@ -29,7 +29,7 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapModificarSDMPersona.fsh",
     "startLine": 1,
-    "endLine": 74
+    "endLine": 70
   },
   {
     "outputFile": "NamingSystem-renaper-dni.json",
@@ -60,6 +60,14 @@
     "fshName": "PersonaSIHCEMin",
     "fshType": "Instance",
     "fshFile": "instances/PersonaSIHCEMin.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Patient-PersonaSIHCEPatch.json",
+    "fshName": "PersonaSIHCEPatch",
+    "fshType": "Instance",
+    "fshFile": "instances/PersonaSIHCEPatch.fsh",
     "startLine": 1,
     "endLine": 17
   },

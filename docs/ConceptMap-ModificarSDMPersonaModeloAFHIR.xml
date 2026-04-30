@@ -3,7 +3,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
   <id value="ModificarSDMPersonaModeloAFHIR"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap ModificarSDMPersonaModeloAFHIR</b></p><a name="ModificarSDMPersonaModeloAFHIR"> </a><a name="hcModificarSDMPersonaModeloAFHIR"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="StructureDefinition-ModificarSDMPersona.html">Modelo lógico ModificarSDMPersona (FederadorBA)</a> to <a href="http://hl7.org/fhir/R4/patient.html">Patient</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMActual.tipoDocumento">ModificarSDMPersona.SDMActual.tipoDocumento</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">Patient.identifier</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMActual.documentoIdentificatorio">ModificarSDMPersona.SDMActual.documentoIdentificatorio</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">Patient.identifier</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMActual.sexo">ModificarSDMPersona.SDMActual.sexo</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">Patient.gender</a></td><td>0..1</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMActual.primerNombre">ModificarSDMPersona.SDMActual.primerNombre</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.name">Patient.name</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMActual.segundoNombre">ModificarSDMPersona.SDMActual.segundoNombre</a></td><td>0..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.name">Patient.name</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMActual.primerApellido">ModificarSDMPersona.SDMActual.primerApellido</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.name">Patient.name</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMActual.segundoApellido">ModificarSDMPersona.SDMActual.segundoApellido</a></td><td>0..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.name">Patient.name</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMActual.fechaNacimiento">ModificarSDMPersona.SDMActual.fechaNacimiento</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">Patient.birthDate</a></td><td>0..1</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMActual.fechaDefuncion">ModificarSDMPersona.SDMActual.fechaDefuncion</a></td><td>0..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">Patient.deceased[x]</a></td><td>0..1</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMNuevo.sexo">ModificarSDMPersona.SDMNuevo.sexo</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">Patient.gender</a></td><td>0..1</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMNuevo.primerNombre">ModificarSDMPersona.SDMNuevo.primerNombre</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.name">Patient.name</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMNuevo.segundoNombre">ModificarSDMPersona.SDMNuevo.segundoNombre</a></td><td>0..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.name">Patient.name</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMNuevo.primerApellido">ModificarSDMPersona.SDMNuevo.primerApellido</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.name">Patient.name</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMNuevo.segundoApellido">ModificarSDMPersona.SDMNuevo.segundoApellido</a></td><td>0..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.name">Patient.name</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMNuevo.fechaNacimiento">ModificarSDMPersona.SDMNuevo.fechaNacimiento</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">Patient.birthDate</a></td><td>0..1</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.SDMNuevo.fechaDefuncion">ModificarSDMPersona.SDMNuevo.fechaDefuncion</a></td><td>0..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">Patient.deceased[x]</a></td><td>0..1</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.DatosDominio.idDominio">ModificarSDMPersona.DatosDominio.idDominio</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">Patient.identifier</a></td><td>0..*</td><td>todo</td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.DatosDominio.idLocalPersona">ModificarSDMPersona.DatosDominio.idLocalPersona</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">Patient.identifier</a></td><td>0..*</td><td>todo</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="StructureDefinition-ModificarSDMPersona.html">Modelo lógico ModificarSDMPersona (FederadorBA)</a> to <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Card.</b></td><td><b>Type</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Card.</b></td><td><b>Type</b></td></tr><tr><td><a href="StructureDefinition-ModificarSDMPersona.html#ModificarSDMPersona.DatosRespuesta.mensaje">ModificarSDMPersona.DatosRespuesta.mensaje</a></td><td>1..1</td><td>todo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td><a href="http://hl7.org/fhir/R4/operationoutcome.html#OperationOutcome.issue">OperationOutcome.issue</a></td><td>1..*</td><td>todo</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap ModificarSDMPersonaModeloAFHIR</b></p><a name="ModificarSDMPersonaModeloAFHIR"> </a><a name="hcModificarSDMPersonaModeloAFHIR"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.SDMActual.tipoDocumento</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.SDMActual.documentoIdentificatorio</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.SDMActual.sexo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.SDMActual.primerNombre</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMActual.segundoNombre</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMActual.primerApellido</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMActual.segundoApellido</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMActual.fechaNacimiento</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.SDMActual.fechaDefuncion</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.sexo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.primerNombre</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.segundoNombre</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.primerApellido</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.segundoApellido</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.fechaNacimiento</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.fechaDefuncion</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.DatosDominio.idDominio</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.DatosDominio.idLocalPersona</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.DatosRespuesta.mensaje</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>OperationOutcome.issue</td></tr></table></div>
   </text>
   <url value="http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR"/>
   <version value="1.2.0"/>
@@ -23,143 +23,139 @@
   <description value="Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome."/>
   <purpose value="Actualización de SDM con documento inmutable; correlación con PatientXBA."/>
   <group>
-    <source value="http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona"/>
-    <target value="http://hl7.org/fhir/StructureDefinition/Patient"/>
     <element>
       <code value="ModificarSDMPersona.SDMActual.tipoDocumento"/>
       <target>
         <code value="Patient.identifier"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMActual.documentoIdentificatorio"/>
       <target>
         <code value="Patient.identifier"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMActual.sexo"/>
       <target>
         <code value="Patient.gender"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMActual.primerNombre"/>
       <target>
         <code value="Patient.name"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMActual.segundoNombre"/>
       <target>
         <code value="Patient.name"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMActual.primerApellido"/>
       <target>
         <code value="Patient.name"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMActual.segundoApellido"/>
       <target>
         <code value="Patient.name"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMActual.fechaNacimiento"/>
       <target>
         <code value="Patient.birthDate"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMActual.fechaDefuncion"/>
       <target>
         <code value="Patient.deceased[x]"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMNuevo.sexo"/>
       <target>
         <code value="Patient.gender"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMNuevo.primerNombre"/>
       <target>
         <code value="Patient.name"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMNuevo.segundoNombre"/>
       <target>
         <code value="Patient.name"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMNuevo.primerApellido"/>
       <target>
         <code value="Patient.name"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMNuevo.segundoApellido"/>
       <target>
         <code value="Patient.name"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMNuevo.fechaNacimiento"/>
       <target>
         <code value="Patient.birthDate"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.SDMNuevo.fechaDefuncion"/>
       <target>
         <code value="Patient.deceased[x]"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.DatosDominio.idDominio"/>
       <target>
         <code value="Patient.identifier"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="ModificarSDMPersona.DatosDominio.idLocalPersona"/>
       <target>
         <code value="Patient.identifier"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
   </group>
   <group>
-    <source value="http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona"/>
-    <target value="http://hl7.org/fhir/StructureDefinition/OperationOutcome"/>
     <element>
       <code value="ModificarSDMPersona.DatosRespuesta.mensaje"/>
       <target>
         <code value="OperationOutcome.issue"/>
-        <equivalence value="equivalent"/>
+        <relationship value="equivalent"/>
       </target>
     </element>
   </group>

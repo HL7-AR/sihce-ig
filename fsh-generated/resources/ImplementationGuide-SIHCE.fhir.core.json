@@ -4,7 +4,7 @@
   "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
   "version": "1.2.0",
   "name": "GuiaDeImplementacionSIHCE",
-  "title": "Guía de Implementación SIHCE - FHIR R4",
+  "title": "Guía de Implementación SIHCE - FHIR R5",
   "status": "draft",
   "publisher": "SIHCE Development Team",
   "contact": [
@@ -20,7 +20,7 @@
   ],
   "packageId": "SIHCE.fhir.core",
   "fhirVersion": [
-    "4.0.1"
+    "5.0.0"
   ],
   "definition": {
     "resource": [
@@ -29,8 +29,8 @@
           "reference": "ConceptMap/BuscarPersonaModeloAFHIR"
         },
         "name": "BuscarPersona: modelo lógico a FHIR",
-        "description": "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4).",
-        "exampleBoolean": false
+        "description": "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5).",
+        "isExample": false
       },
       {
         "reference": {
@@ -38,7 +38,10 @@
         },
         "name": "Ejemplo Parameters Patch Identifier",
         "description": "Ejemplo de Parameters para actualizar identificador local.",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"
+        "isExample": true,
+        "profile": [
+          "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"
+        ]
       },
       {
         "reference": {
@@ -46,7 +49,10 @@
         },
         "name": "Ejemplo Parameters Update SDM",
         "description": "Ejemplo de Parameters para actualizacion de SDM.",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"
+        "isExample": true,
+        "profile": [
+          "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"
+        ]
       },
       {
         "reference": {
@@ -54,7 +60,7 @@
         },
         "name": "FederarPersona: modelo lógico a FHIR",
         "description": "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado.",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -62,7 +68,7 @@
         },
         "name": "Modelo lógico BuscarPersona (FederadorBA)",
         "description": "Solicitud de búsqueda de persona por datos mínimos y respuesta mínima.",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -70,7 +76,7 @@
         },
         "name": "Modelo Lógico de Persona para SIHCE",
         "description": "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -78,7 +84,7 @@
         },
         "name": "Modelo lógico FederarPersona (FederadorBA)",
         "description": "Federación de una persona con identificador local y validación de datos.",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -86,7 +92,7 @@
         },
         "name": "Modelo lógico ModificarIDLocalPersona (FederadorBA)",
         "description": "Modificación del identificador local de una persona federada.",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -94,7 +100,7 @@
         },
         "name": "Modelo lógico ModificarSDMPersona (FederadorBA)",
         "description": "Actualización del SDM de una persona federada; documento inmutable.",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -102,7 +108,7 @@
         },
         "name": "ModificarIDLocalPersona: modelo lógico a FHIR",
         "description": "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -110,7 +116,7 @@
         },
         "name": "ModificarSDMPersona: modelo lógico a FHIR",
         "description": "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome.",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -118,7 +124,7 @@
         },
         "name": "Paciente SIHCE (PatientXBA)",
         "description": "Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación)",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -126,7 +132,7 @@
         },
         "name": "Parametros Patch Identifier SIHCE",
         "description": "Estructura de Parameters para la operacion $patch-identifier de SIHCE.",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
@@ -134,14 +140,27 @@
         },
         "name": "Parametros Update SDM SIHCE",
         "description": "Estructura de Parameters para la operacion $update-sdm de SIHCE.",
-        "exampleBoolean": false
+        "isExample": false
       },
       {
         "reference": {
           "reference": "Patient/PersonaSIHCEMin"
         },
         "name": "PersonaSIHCEMin",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/PatientXBA"
+        "isExample": true,
+        "profile": [
+          "http://sihce.gob.ar/StructureDefinition/PatientXBA"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Patient/PersonaSIHCEPatch"
+        },
+        "name": "PersonaSIHCEPatch",
+        "isExample": true,
+        "profile": [
+          "http://sihce.gob.ar/StructureDefinition/PatientXBA"
+        ]
       },
       {
         "reference": {
@@ -149,63 +168,72 @@
         },
         "name": "renaper-dni",
         "description": "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",
-        "exampleBoolean": false
+        "isExample": false
       }
     ],
     "page": {
-      "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
       "page": [
         {
-          "nameUrl": "index.html",
           "title": "Inicio",
-          "generation": "markdown"
+          "generation": "markdown",
+          "name": "index.html",
+          "sourceUrl": "index.html"
         },
         {
-          "nameUrl": "Aspectos-Generales.html",
           "title": "Generalidades",
-          "generation": "markdown"
+          "generation": "markdown",
+          "name": "Aspectos-Generales.html",
+          "sourceUrl": "Aspectos-Generales.html"
         },
         {
-          "nameUrl": "Operaciones.html",
           "title": "Operaciones",
-          "generation": "markdown"
+          "generation": "markdown",
+          "name": "Operaciones.html",
+          "sourceUrl": "Operaciones.html"
         },
         {
-          "nameUrl": "CasosDeUso.html",
           "title": "Casos de Uso",
-          "generation": "markdown"
+          "generation": "markdown",
+          "name": "CasosDeUso.html",
+          "sourceUrl": "CasosDeUso.html"
         },
         {
-          "nameUrl": "artifacts.html",
-          "title": "Artefactos",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "ModeloLogico.html",
           "title": "Modelo Lógico",
-          "generation": "markdown"
+          "generation": "markdown",
+          "name": "ModeloLogico.html",
+          "sourceUrl": "ModeloLogico.html"
         },
         {
-          "nameUrl": "Seguridad.html",
           "title": "Seguridad",
-          "generation": "markdown"
+          "generation": "markdown",
+          "name": "Seguridad.html",
+          "sourceUrl": "Seguridad.html"
         },
         {
-          "nameUrl": "HistorialDeCambios.html",
           "title": "Historial de Cambios",
-          "generation": "markdown"
+          "generation": "markdown",
+          "name": "HistorialDeCambios.html",
+          "sourceUrl": "HistorialDeCambios.html"
         }
-      ]
+      ],
+      "name": "toc.html",
+      "sourceUrl": "toc.html"
     },
     "parameter": [
       {
-        "code": "copyrightyear",
+        "code": {
+          "code": "copyrightyear",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
         "value": "2026"
       },
       {
-        "code": "releaselabel",
+        "code": {
+          "code": "releaselabel",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
         "value": "ci-build"
       }
     ]

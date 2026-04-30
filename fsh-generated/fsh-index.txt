@@ -1,12 +1,13 @@
 Output File                                                 Name                                Type      FSH File                                           Lines
-ConceptMap-BuscarPersonaModeloAFHIR.json                    BuscarPersonaModeloAFHIR            Instance  conceptmaps/ConceptMapBuscarPersona.fsh            1 - 64
-ConceptMap-FederarPersonaModeloAFHIR.json                   FederarPersonaModeloAFHIR           Instance  conceptmaps/ConceptMapFederarPersona.fsh           1 - 63
-ConceptMap-ModificarIDLocalPersonaModeloAFHIR.json          ModificarIDLocalPersonaModeloAFHIR  Instance  conceptmaps/ConceptMapModificarIDLocalPersona.fsh  1 - 54
-ConceptMap-ModificarSDMPersonaModeloAFHIR.json              ModificarSDMPersonaModeloAFHIR      Instance  conceptmaps/ConceptMapModificarSDMPersona.fsh      1 - 74
+ConceptMap-BuscarPersonaModeloAFHIR.json                    BuscarPersonaModeloAFHIR            Instance  conceptmaps/ConceptMapBuscarPersona.fsh            1 - 60
+ConceptMap-FederarPersonaModeloAFHIR.json                   FederarPersonaModeloAFHIR           Instance  conceptmaps/ConceptMapFederarPersona.fsh           1 - 57
+ConceptMap-ModificarIDLocalPersonaModeloAFHIR.json          ModificarIDLocalPersonaModeloAFHIR  Instance  conceptmaps/ConceptMapModificarIDLocalPersona.fsh  1 - 50
+ConceptMap-ModificarSDMPersonaModeloAFHIR.json              ModificarSDMPersonaModeloAFHIR      Instance  conceptmaps/ConceptMapModificarSDMPersona.fsh      1 - 70
 NamingSystem-renaper-dni.json                               renaper-dni                         Instance  instances/renaper-dni.fsh                          1 - 20
 Parameters-ParametrosPatchIdentifierEjemplo.json            ParametrosPatchIdentifierEjemplo    Instance  instances/ParametrosPatchIdentifierEjemplo.fsh     1 - 13
 Parameters-ParametrosUpdateSDMEjemplo.json                  ParametrosUpdateSDMEjemplo          Instance  instances/ParametrosUpdateSDMEjemplo.fsh           1 - 7
 Patient-PersonaSIHCEMin.json                                PersonaSIHCEMin                     Instance  instances/PersonaSIHCEMin.fsh                      1 - 17
+Patient-PersonaSIHCEPatch.json                              PersonaSIHCEPatch                   Instance  instances/PersonaSIHCEPatch.fsh                    1 - 17
 StructureDefinition-BuscarPersona.json                      BuscarPersona                       Logical   logicals/LogicalBuscarPersona.fsh                  1 - 22
 StructureDefinition-FederarPersona.json                     FederarPersona                      Logical   logicals/LogicalFederarPersona.fsh                 1 - 22
 StructureDefinition-MLPersona.json                          MLPersona                           Logical   logicals/MLPersona.fsh                             1 - 31

@@ -1,9 +1,15 @@
 #!/bin/bash
 publisher_jar=publisher.jar
 input_cache_path=./input-cache/
-# Force offline terminology mode (no tx server calls)
-txoption="-tx n/a"
-echo "Running without tx support: $txoption"
+# Use online terminology server by default (required for some R5 validations).
+# Set FHIR_OFFLINE_TX=1 to force offline mode when needed.
+txoption=""
+if [ "${FHIR_OFFLINE_TX:-0}" = "1" ]; then
+	txoption="-tx n/a"
+	echo "Running without tx support: $txoption"
+else
+	echo "Running with default terminology server configuration"
+fi
 
 export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8"
 

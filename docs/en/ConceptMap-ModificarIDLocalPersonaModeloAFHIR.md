@@ -1,7 +1,7 @@
-# ModificarIDLocalPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# ModificarIDLocalPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **ModificarIDLocalPersona: modelo lógico a FHIR**
 
 ## ConceptMap: ModificarIDLocalPersona: modelo lógico a FHIR (Experimental) 
@@ -40,69 +40,67 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
   "description" : "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).",
   "purpose" : "Cambio de id local manteniendo validación por SDM.",
   "group" : [{
-    "source" : "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
-    "target" : "http://hl7.org/fhir/StructureDefinition/Patient",
     "element" : [{
       "code" : "ModificarIDLocalPersona.DatosPersona.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.sexo",
       "target" : [{
         "code" : "Patient.gender",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.primerNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.primerApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosPersona.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosModificacion.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent",
+        "relationship" : "equivalent",
         "comment" : "URI del dominio en slice idDominio."
       }]
     },
@@ -110,25 +108,23 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
       "code" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo",
       "target" : [{
         "code" : "Patient.identifier",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     }]
   },
   {
-    "source" : "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
-    "target" : "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
     "element" : [{
       "code" : "ModificarIDLocalPersona.DatosRespuesta.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
-        "equivalence" : "equivalent"
+        "relationship" : "equivalent"
       }]
     }]
   }]

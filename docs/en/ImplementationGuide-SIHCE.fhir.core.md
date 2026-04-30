@@ -1,4 +1,4 @@
-# Resource Guía de Implementación SIHCE - FHIR R4
+# Resource Guía de Implementación SIHCE - FHIR R5
 
 
 
@@ -12,9 +12,9 @@
   "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
   "version" : "1.2.0",
   "name" : "GuiaDeImplementacionSIHCE",
-  "title" : "Guía de Implementación SIHCE - FHIR R4",
+  "title" : "Guía de Implementación SIHCE - FHIR R5",
   "status" : "draft",
-  "date" : "2026-04-29T17:48:08-03:00",
+  "date" : "2026-04-30T11:00:25-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -25,7 +25,7 @@
   }],
   "packageId" : "SIHCE.fhir.core",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["4.0.1"],
+  "fhirVersion" : ["5.0.0"],
   "dependsOn" : [{
     "id" : "hl7tx",
     "extension" : [{
@@ -33,7 +33,7 @@
       "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
-    "packageId" : "hl7.terminology.r4",
+    "packageId" : "hl7.terminology.r5",
     "version" : "7.1.0"
   },
   {
@@ -43,585 +43,13 @@
       "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
-    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
     "version" : "5.2.0"
   }],
   "definition" : {
     "extension" : [{
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "copyrightyear"
-      },
-      {
-        "url" : "value",
-        "valueString" : "2026"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "releaselabel"
-      },
-      {
-        "url" : "value",
-        "valueString" : "ci-build"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "autoload-resources"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-liquid"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template/liquid"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-liquid"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/liquid"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-qa"
-      },
-      {
-        "url" : "value",
-        "valueString" : "temp/qa"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-temp"
-      },
-      {
-        "url" : "value",
-        "valueString" : "temp/pages"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-output"
-      },
-      {
-        "url" : "value",
-        "valueString" : "output"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-suppressed-warnings"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/ignoreWarnings.txt"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://sihce.gob.ar/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "template-html"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template-page.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "template-md"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template-page-md.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-context"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-copyright"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-license"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-publisher"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "apply-wg"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "active-tables"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "fmm-definition"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "propagate-status"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "excludelogbinaryformat"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "tabbed-snapshots"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "i18n-default-lang"
-      },
-      {
-        "url" : "value",
-        "valueString" : "en"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "copyrightyear"
-      },
-      {
-        "url" : "value",
-        "valueString" : "2026"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "releaselabel"
-      },
-      {
-        "url" : "value",
-        "valueString" : "ci-build"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "autoload-resources"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-liquid"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template/liquid"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-liquid"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/liquid"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-qa"
-      },
-      {
-        "url" : "value",
-        "valueString" : "temp/qa"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-temp"
-      },
-      {
-        "url" : "value",
-        "valueString" : "temp/pages"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-output"
-      },
-      {
-        "url" : "value",
-        "valueString" : "output"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-suppressed-warnings"
-      },
-      {
-        "url" : "value",
-        "valueString" : "input/ignoreWarnings.txt"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "path-history"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://sihce.gob.ar/history.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "template-html"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template-page.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "template-md"
-      },
-      {
-        "url" : "value",
-        "valueString" : "template-page-md.html"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-contact"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-context"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-copyright"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-jurisdiction"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-license"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-publisher"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-version"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "apply-wg"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "active-tables"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "fmm-definition"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "propagate-status"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "excludelogbinaryformat"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "tabbed-snapshots"
-      },
-      {
-        "url" : "value",
-        "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "i18n-default-lang"
-      },
-      {
-        "url" : "value",
-        "valueString" : "en"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      "valueCode" : "hl7.fhir.uv.tools.r5#1.1.2"
     }],
     "resource" : [{
       "extension" : [{
@@ -632,8 +60,8 @@
         "reference" : "ConceptMap/BuscarPersonaModeloAFHIR"
       },
       "name" : "BuscarPersona: modelo lógico a FHIR",
-      "description" : "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4).",
-      "exampleBoolean" : false
+      "description" : "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5).",
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -645,7 +73,8 @@
       },
       "name" : "Ejemplo Parameters Patch Identifier",
       "description" : "Ejemplo de Parameters para actualizar identificador local.",
-      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"]
     },
     {
       "extension" : [{
@@ -657,7 +86,8 @@
       },
       "name" : "Ejemplo Parameters Update SDM",
       "description" : "Ejemplo de Parameters para actualizacion de SDM.",
-      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"]
     },
     {
       "extension" : [{
@@ -669,7 +99,7 @@
       },
       "name" : "FederarPersona: modelo lógico a FHIR",
       "description" : "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado.",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -681,7 +111,7 @@
       },
       "name" : "Modelo lógico BuscarPersona (FederadorBA)",
       "description" : "Solicitud de búsqueda de persona por datos mínimos y respuesta mínima.",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -693,7 +123,7 @@
       },
       "name" : "Modelo Lógico de Persona para SIHCE",
       "description" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -705,7 +135,7 @@
       },
       "name" : "Modelo lógico FederarPersona (FederadorBA)",
       "description" : "Federación de una persona con identificador local y validación de datos.",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -717,7 +147,7 @@
       },
       "name" : "Modelo lógico ModificarIDLocalPersona (FederadorBA)",
       "description" : "Modificación del identificador local de una persona federada.",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -729,7 +159,7 @@
       },
       "name" : "Modelo lógico ModificarSDMPersona (FederadorBA)",
       "description" : "Actualización del SDM de una persona federada; documento inmutable.",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -741,7 +171,7 @@
       },
       "name" : "ModificarIDLocalPersona: modelo lógico a FHIR",
       "description" : "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -753,7 +183,7 @@
       },
       "name" : "ModificarSDMPersona: modelo lógico a FHIR",
       "description" : "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome.",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -765,7 +195,7 @@
       },
       "name" : "Paciente SIHCE (PatientXBA)",
       "description" : "Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación)",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -777,7 +207,7 @@
       },
       "name" : "Parametros Patch Identifier SIHCE",
       "description" : "Estructura de Parameters para la operacion $patch-identifier de SIHCE.",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -789,7 +219,7 @@
       },
       "name" : "Parametros Update SDM SIHCE",
       "description" : "Estructura de Parameters para la operacion $update-sdm de SIHCE.",
-      "exampleBoolean" : false
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -800,7 +230,20 @@
         "reference" : "Patient/PersonaSIHCEMin"
       },
       "name" : "PersonaSIHCEMin",
-      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/PatientXBA"
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PersonaSIHCEPatch"
+      },
+      "name" : "PersonaSIHCEPatch",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
     },
     {
       "extension" : [{
@@ -812,148 +255,342 @@
       },
       "name" : "renaper-dni",
       "description" : "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",
-      "exampleBoolean" : false
+      "isExample" : false
     }],
     "page" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-        "valueUrl" : "toc.html"
-      }],
-      "nameUrl" : "toc.html",
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
       "page" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "index.html"
-        }],
-        "nameUrl" : "index.html",
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
         "title" : "Inicio",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Aspectos-Generales.html"
-        }],
-        "nameUrl" : "Aspectos-Generales.html",
+        "sourceUrl" : "Aspectos-Generales.html",
+        "name" : "Aspectos-Generales.html",
         "title" : "Generalidades",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Operaciones.html"
-        }],
-        "nameUrl" : "Operaciones.html",
+        "sourceUrl" : "Operaciones.html",
+        "name" : "Operaciones.html",
         "title" : "Operaciones",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "CasosDeUso.html"
-        }],
-        "nameUrl" : "CasosDeUso.html",
+        "sourceUrl" : "CasosDeUso.html",
+        "name" : "CasosDeUso.html",
         "title" : "Casos de Uso",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "artifacts.html"
-        }],
-        "nameUrl" : "artifacts.html",
-        "title" : "Artefactos",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "ModeloLogico.html"
-        }],
-        "nameUrl" : "ModeloLogico.html",
+        "sourceUrl" : "ModeloLogico.html",
+        "name" : "ModeloLogico.html",
         "title" : "Modelo Lógico",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Seguridad.html"
-        }],
-        "nameUrl" : "Seguridad.html",
+        "sourceUrl" : "Seguridad.html",
+        "name" : "Seguridad.html",
         "title" : "Seguridad",
         "generation" : "markdown"
       },
       {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "HistorialDeCambios.html"
-        }],
-        "nameUrl" : "HistorialDeCambios.html",
+        "sourceUrl" : "HistorialDeCambios.html",
+        "name" : "HistorialDeCambios.html",
         "title" : "Historial de Cambios",
         "generation" : "markdown"
       }]
     },
     "parameter" : [{
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2026"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "ci-build"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/capabilities"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/examples"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/extensions"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/models"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/operations"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/profiles"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/resources"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/vocabulary"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/maps"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/testing"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "input/history"
     },
     {
-      "code" : "path-resource",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
       "value" : "fsh-generated/resources"
     },
     {
-      "code" : "path-pages",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
       "value" : "template/config"
     },
     {
-      "code" : "path-pages",
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
       "value" : "input/images"
     },
     {
-      "code" : "path-tx-cache",
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
       "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "http://sihce.gob.ar/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "i18n-default-lang"
+      },
+      "value" : "en"
     }]
   }
 }

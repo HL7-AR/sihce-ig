@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "AdministrativeGender",
     "title" : "AdministrativeGender",
@@ -14,24 +14,40 @@
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
   },
   {
-    "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
-    "version" : "4.0.1",
+    "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+    "version" : "5.0.0",
     "status" : "active",
-    "name" : "Identifier Type Codes",
-    "title" : "IdentifierType",
+    "name" : "AllLanguages",
+    "title" : "All Languages",
+    "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.21"],
+    "sources" : ["2.16.840.1.113883.4.642.3.21"],
+    "uses" : {
+    },
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
+    "StructureDefinition-parametros-update-sdm-sihce.html" : "Parametros Update SDM SIHCE"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "IdentifierTypeCodes",
+    "title" : "Identifier Type Codes",
     "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
     "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
     "oids" : ["2.16.840.1.113883.4.642.3.45"],
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
     "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
+    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "IdentifierUse",
     "title" : "IdentifierUse",
@@ -41,46 +57,52 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
     "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
+    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
-    "version" : "4.0.1",
-    "status" : "draft",
+    "version" : "5.0.0",
+    "status" : "active",
     "name" : "CommonLanguages",
     "title" : "Common Languages",
-    "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+    "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
     "systems" : ["urn:ietf:bcp:47"],
-    "oids" : ["2.16.840.1.113883.4.642.3.20"],
-    "sources" : ["2.16.840.1.113883.4.642.3.20"],
+    "oids" : ["2.16.840.1.113883.4.642.3.891",
+    "2.16.840.1.113883.4.642.3.20"],
+    "sources" : ["2.16.840.1.113883.4.642.3.891",
+    "2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
     "StructureDefinition-parametros-update-sdm-sihce.html" : "Parametros Update SDM SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "LinkType",
-    "title" : "LinkType",
-    "description" : "The type of link between this patient resource and another patient resource.",
+    "title" : "Link Type",
+    "description" : "The type of link between this Patient resource and another Patient/RelatedPerson resource.",
     "systems" : ["http://hl7.org/fhir/link-type"],
-    "oids" : ["2.16.840.1.113883.4.642.3.423"],
-    "sources" : ["2.16.840.1.113883.4.642.3.423"],
+    "oids" : ["2.16.840.1.113883.4.642.2.234",
+    "2.16.840.1.113883.4.642.3.423",
+    "2.16.840.1.113883.4.642.3.412"],
+    "sources" : ["2.16.840.1.113883.4.642.2.234",
+    "2.16.840.1.113883.4.642.3.423",
+    "2.16.840.1.113883.4.642.3.412"],
     "uses" : {
     },
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/marital-status",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
-    "name" : "Marital Status Codes",
-    "title" : "MaritalStatus",
+    "name" : "MaritalStatusCodes",
+    "title" : "Marital Status Codes",
     "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
     "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"],
@@ -92,7 +114,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/name-use",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "NameUse",
     "title" : "NameUse",
@@ -102,12 +124,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.65"],
     "uses" : {
     },
-    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
+    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
-    "version" : "4.0.1",
+    "version" : "5.0.0",
     "status" : "active",
     "name" : "PatientContactRelationship",
     "title" : "Patient Contact Relationship ",

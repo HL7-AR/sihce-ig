@@ -11,8 +11,10 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "1.2.0"
+    "valueString" : "1.0.1"
   }],
+  "url" : "http://sihce.gob.ar/NamingSystem/renaper-dni",
+  "version" : "1.2.0",
   "name" : "RenaperDNI",
   "status" : "active",
   "kind" : "identifier",

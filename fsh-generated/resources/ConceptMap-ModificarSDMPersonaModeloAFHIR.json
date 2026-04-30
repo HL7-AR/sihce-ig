@@ -13,15 +13,13 @@
   "publisher": "SIHCE Development Team",
   "group": [
     {
-      "source": "http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona",
-      "target": "http://hl7.org/fhir/StructureDefinition/Patient",
       "element": [
         {
           "code": "ModificarSDMPersona.SDMActual.tipoDocumento",
           "target": [
             {
               "code": "Patient.identifier",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -30,7 +28,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -39,7 +37,7 @@
           "target": [
             {
               "code": "Patient.gender",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -48,7 +46,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -57,7 +55,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -66,7 +64,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -75,7 +73,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -84,7 +82,7 @@
           "target": [
             {
               "code": "Patient.birthDate",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -93,7 +91,7 @@
           "target": [
             {
               "code": "Patient.deceased[x]",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -102,7 +100,7 @@
           "target": [
             {
               "code": "Patient.gender",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -111,7 +109,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -120,7 +118,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -129,7 +127,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -138,7 +136,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -147,7 +145,7 @@
           "target": [
             {
               "code": "Patient.birthDate",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -156,7 +154,7 @@
           "target": [
             {
               "code": "Patient.deceased[x]",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -165,7 +163,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -174,22 +172,20 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         }
       ]
     },
     {
-      "source": "http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona",
-      "target": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
       "element": [
         {
           "code": "ModificarSDMPersona.DatosRespuesta.mensaje",
           "target": [
             {
               "code": "OperationOutcome.issue",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         }

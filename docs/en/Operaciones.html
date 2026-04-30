@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Operaciones - Guía de Implementación SIHCE - FHIR R4 v1.2.0</title>
+    <title>Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,7 +54,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
             <br/>
             <span style="display:inline-block;">1.2.0 - 
 
@@ -95,7 +95,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
 
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v1.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Operaciones</h2>
   
 
@@ -221,7 +221,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><th>Operación</th><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>Búsqueda de paciente por identificador y género</td><td>GET</td><td><code>/Patient?identifier={system|value}&amp;gender={code}</code></td><td>Consulta pacientes por identificador y género (criterios estándar FHIR R4).</td></tr>
+    <tr><td>Búsqueda de paciente por identificador y género</td><td>GET</td><td><code>/Patient?identifier={system|value}&amp;gender={code}</code></td><td>Consulta pacientes por identificador y género (criterios estándar FHIR R5).</td></tr>
     <tr><td>Alta/Federación de paciente</td><td>POST</td><td><code>/Patient</code></td><td>Envía un recurso <code>Patient</code> conforme al perfil <a href="StructureDefinition-PatientXBA.html">PatientXBA</a>.</td></tr>
     <tr><td>Actualización de identificador local</td><td>POST</td><td><code>/Patient/$patch-identifier</code></td><td>Actualiza el identificador local usando <code>Parameters</code>.</td></tr>
     <tr><td>Actualización de SDM</td><td>POST</td><td><code>/Patient/$update-sdm</code></td><td>Actualiza datos mínimos del paciente mediante operación FHIR personalizada.</td></tr>
@@ -231,7 +231,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><a id="op-busqueda"></a></p>
 <h3 id="búsqueda-por-identificador-y-género">Búsqueda por identificador y género</h3>
 
-<p>Interacción estándar de búsqueda FHIR R4 sobre el recurso <code class="language-plaintext highlighter-rouge">Patient</code> (<a href="http://hl7.org/fhir/R4/patient.html#search">search</a>).</p>
+<p>Interacción estándar de búsqueda FHIR R5 sobre el recurso <code class="language-plaintext highlighter-rouge">Patient</code> (<a href="http://hl7.org/fhir/R5/patient.html#search">search</a>).</p>
 
 <h4 id="parámetros-de-búsqueda">Parámetros de búsqueda</h4>
 
@@ -254,7 +254,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><code class="language-plaintext highlighter-rouge">gender</code></td>
       <td>Requerido</td>
-      <td>token (código de <a href="http://hl7.org/fhir/R4/codesystem-administrative-gender.html">AdministrativeGender</a>)</td>
+      <td>token (código de <a href="http://hl7.org/fhir/R5/codesystem-administrative-gender.html">AdministrativeGender</a>)</td>
       <td>Género administrativo del paciente (<code class="language-plaintext highlighter-rouge">male</code>, <code class="language-plaintext highlighter-rouge">female</code>, <code class="language-plaintext highlighter-rouge">other</code>, <code class="language-plaintext highlighter-rouge">unknown</code>).</td>
     </tr>
   </tbody>
@@ -269,7 +269,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="respuesta-esperada">Respuesta esperada</h4>
 
-<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> de tipo <code class="language-plaintext highlighter-rouge">searchset</code> que contiene cero o más recursos <code class="language-plaintext highlighter-rouge">Patient</code> coincidentes.</p>
+<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="http://hl7.org/fhir/R5/bundle.html">Bundle</a> de tipo <code class="language-plaintext highlighter-rouge">searchset</code> que contiene cero o más recursos <code class="language-plaintext highlighter-rouge">Patient</code> coincidentes.</p>
 
 <p><a id="op-alta-federacion"></a></p>
 <h3 id="altafederación-de-paciente">Alta/Federación de paciente</h3>
@@ -450,8 +450,8 @@ Content-Type: application/fhir+json
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="http://sihce.gob.ar/">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Apr 29, 2026 17:48-0300">2026-04-29</span>
+          Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Generated <span title="Thu, Apr 30, 2026 11:00-0300">2026-04-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a> |

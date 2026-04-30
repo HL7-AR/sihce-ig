@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Ejemplo Parameters Update SDM - XML Representation - Guía de Implementación SIHCE - FHIR R4 v1.2.0</title>
+    <title>Ejemplo Parameters Update SDM - XML Representation - Guía de Implementación SIHCE - FHIR R5 v1.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -50,14 +50,14 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.15"}
-    h3,h4,h5,h6{--heading-prefix:"5.15"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.15"}
+    h3,h4,h5,h6{--heading-prefix:"8.15"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
             <br/>
             <span style="display:inline-block;">1.2.0 - 
 
@@ -98,7 +98,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
 
@@ -145,7 +145,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artefactos</b></a></li><li><b>Ejemplo Parameters Update SDM</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Ejemplo Parameters Update SDM</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -159,7 +159,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v1.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -218,57 +218,57 @@
 
 
   <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
-&lt;<a href="http://hl7.org/fhir/R4/parameters.html#Parameters">Parameters</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Parameters.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ParametrosUpdateSDMEjemplo&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Parameters.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce&quot;/&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Parameters.meta">meta</a>&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Parameters.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter">parameter</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;PersonaSIHCEMin&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://sihce.gob.ar/StructureDefinition/PatientXBA&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/resource.html#Patient.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;NI&quot;/&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://www.renaper.gob.ar/dni&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;12345678&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;secondary&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
-              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MR&quot;/&gt;
-            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hospitalitaliano.org.ar/fhir&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;23&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Carlos Pereira&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pereira&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Carlos&quot;/&gt;
-        &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;male&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;1939-12-20&quot;/&gt;
-      &lt;/<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;
+&lt;<a href="http://hl7.org/fhir/R5/parameters.html#XParameters">Parameters</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/resource.html#XParameters.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;ParametrosUpdateSDMEjemplo&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/resource.html#XParameters.meta">meta</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#XMeta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R5/resource.html#XParameters.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/resource.html#XParameters.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/parameters.html#XParameters.parameter">parameter</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/parameters.html#XParameters.parameter.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/patient.html#XPatient">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/patient.html#XPatient">Patient</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/resource.html#XPatient.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;PersonaSIHCEMin&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/resource.html#XPatient.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#XMeta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://sihce.gob.ar/StructureDefinition/PatientXBA&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/resource.html#XPatient.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/resource.html#XPatient.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#XPatient.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.use">use</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;NI&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://www.renaper.gob.ar/dni&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;12345678&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/patient.html#XPatient.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#XPatient.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.use">use</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;secondary&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;MR&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://hospitalitaliano.org.ar/fhir&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;23&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/patient.html#XPatient.identifier">identifier</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#XPatient.name">name</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#HumanName#XHumanName.use">use</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#HumanName#XHumanName.text">text</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Carlos Pereira&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#HumanName#XHumanName.family">family</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Pereira&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#HumanName#XHumanName.given">given</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Carlos&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R5/patient.html#XPatient.name">name</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#XPatient.gender">gender</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;male&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/patient.html#XPatient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R5/datatypes.html#date">value</a>=&quot;1939-12-20&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R5/patient.html#XPatient">Patient</a>&gt;
     &lt;/resource&gt;
-  &lt;/<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter">parameter</a>&gt;
-&lt;/<a href="http://hl7.org/fhir/R4/parameters.html#Parameters">Parameters</a>&gt;</code></pre>
+  &lt;/<a href="http://hl7.org/fhir/R5/parameters.html#XParameters.parameter">parameter</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R5/parameters.html#XParameters">Parameters</a>&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -297,8 +297,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="http://sihce.gob.ar/">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Apr 29, 2026 17:48-0300">2026-04-29</span>
+          Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Generated <span title="Thu, Apr 30, 2026 11:00-0300">2026-04-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a> |

@@ -13,15 +13,13 @@
   "publisher": "SIHCE Development Team",
   "group": [
     {
-      "source": "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
-      "target": "http://hl7.org/fhir/StructureDefinition/Patient",
       "element": [
         {
           "code": "ModificarIDLocalPersona.DatosPersona.tipoDocumento",
           "target": [
             {
               "code": "Patient.identifier",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -30,7 +28,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -39,7 +37,7 @@
           "target": [
             {
               "code": "Patient.gender",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -48,7 +46,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -57,7 +55,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -66,7 +64,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -75,7 +73,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -84,7 +82,7 @@
           "target": [
             {
               "code": "Patient.birthDate",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -93,7 +91,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "equivalence": "equivalent",
+              "relationship": "equivalent",
               "comment": "URI del dominio en slice idDominio."
             }
           ]
@@ -103,7 +101,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         },
@@ -112,22 +110,20 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         }
       ]
     },
     {
-      "source": "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
-      "target": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
       "element": [
         {
           "code": "ModificarIDLocalPersona.DatosRespuesta.mensaje",
           "target": [
             {
               "code": "OperationOutcome.issue",
-              "equivalence": "equivalent"
+              "relationship": "equivalent"
             }
           ]
         }

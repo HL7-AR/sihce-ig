@@ -1,4 +1,4 @@
-# Modelo Lógico - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Modelo Lógico - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
 * **Modelo Lógico**
@@ -54,7 +54,7 @@ Este modelo lógico se utiliza para representar las necesidades del negocio prev
 
 #### Relaciones con FHIR
 
-El correlato FHIR R4 (recurso y elemento) se documenta en el artefacto [**ConceptMap BuscarPersonaModeloAFHIR**](ConceptMap-BuscarPersonaModeloAFHIR.md), alineado con la misma lógica que la [Guía Core Argentina (ejemplo Paciente)](https://diegokaminker.github.io/CoreARIG/ConceptMap-PacienteCoreARModeloAFHIR.html). El modelo lógico de esta operación es [**BuscarPersona**](StructureDefinition-BuscarPersona.md).
+El correlato FHIR R5 (recurso y elemento) se documenta en el artefacto [**ConceptMap BuscarPersonaModeloAFHIR**](ConceptMap-BuscarPersonaModeloAFHIR.md), alineado con la misma lógica que la [Guía Core Argentina (ejemplo Paciente)](https://diegokaminker.github.io/CoreARIG/ConceptMap-PacienteCoreARModeloAFHIR.html). El modelo lógico de esta operación es [**BuscarPersona**](StructureDefinition-BuscarPersona.md).
 
 #### Validaciones
 

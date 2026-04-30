@@ -1,4 +1,4 @@
-# Generalidades - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Generalidades - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
 * **Generalidades**
@@ -74,12 +74,11 @@ El servidor SOLO soporta búsquedas que combinen DNI y sexo juntos:
 
 Los servidores DEBEN soportar buscar un recurso Patient utilizando DNI (Documento Nacional de Identidad) Y sexo de forma obligatoria:
 
-GET [base]/Patient?dni={value}&gender={code}
+| | |
+| :--- | :--- |
+| GET [base]/Patient?identifier={system} | {value}&gender={code} |
 
-Ejemplos:
-
-* GET [base]/Patient?dni=12345678&gender=male
-* GET [base]/Patient?dni=87654321&gender=female
+Con {system}=http://renaper.gob.ar/dni
 
 Nota importante: No se soportan búsquedas por DNI o sexo de forma individual. Ambos parámetros deben estar presentes en la consulta.
 

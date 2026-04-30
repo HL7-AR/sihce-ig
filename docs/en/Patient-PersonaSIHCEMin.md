@@ -1,7 +1,7 @@
-# PersonaSIHCEMin - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# PersonaSIHCEMin - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **PersonaSIHCEMin**
 
 ## Example Patient: PersonaSIHCEMin

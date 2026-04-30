@@ -1,7 +1,7 @@
-# Modelo lógico FederarPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Modelo lógico FederarPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Modelo lógico FederarPersona (FederadorBA)**
 
 ## Logical Model: Modelo lógico FederarPersona (FederadorBA) 
@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/StructureDefinition/FederarPersona | *Version*:1.2.0 |
-| Draft as of 2026-04-29 | *Computable Name*:FederarPersona |
+| Draft as of 2026-04-30 | *Computable Name*:FederarPersona |
 
  
 Federación de una persona con identificador local y validación de datos. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
   "name" : "FederarPersona",
   "title" : "Modelo lógico FederarPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-04-29T17:48:08-03:00",
+  "date" : "2026-04-30T11:00:25-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
     }]
   }],
   "description" : "Federación de una persona con identificador local y validación de datos.",
-  "fhirVersion" : "4.0.1",
+  "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

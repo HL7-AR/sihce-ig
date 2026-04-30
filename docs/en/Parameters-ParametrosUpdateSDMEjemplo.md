@@ -1,7 +1,7 @@
-# Ejemplo Parameters Update SDM - Guía de Implementación SIHCE - FHIR R4 v1.2.0
+# Ejemplo Parameters Update SDM - Guía de Implementación SIHCE - FHIR R5 v1.2.0
 
 * [**Table of Contents**](toc.md)
-* [**Artefactos**](artifacts.md)
+* [**Artifacts Summary**](artifacts.md)
 * **Ejemplo Parameters Update SDM**
 
 ## Example Parameters: Ejemplo Parameters Update SDM
