@@ -1,0 +1,414 @@
+{
+  "info": {
+    "_postman_id": "3142cbc0-1b5f-4c8e-bf15-f15b3e306efa",
+    "name": "SIHCE HML",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "224650",
+    "_collection_link": "https://go.postman.co/collection/224650-3142cbc0-1b5f-4c8e-bf15-f15b3e306efa?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "X-BA Get Patients By identifier and gender",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "client_id",
+            "value": "95e89d88",
+            "type": "text"
+          },
+          {
+            "key": "client_secret",
+            "value": "a7c3be5882e4454ad1eb88c8ecc61c45",
+            "type": "text"
+          },
+          {
+            "key": "X-Road-Client",
+            "value": "DEV/GOB/12345/Cons-ASI-Hml",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api-sihce-hml.gcba.gob.ar/federador-caba/fhir/Patient?identifier=http%3A%2F%2Frenaper.gob.ar%2Fdni%7C24068773&gender=male",
+          "protocol": "https",
+          "host": [
+            "api-sihce-hml",
+            "gcba",
+            "gob",
+            "ar"
+          ],
+          "path": [
+            "federador-caba",
+            "fhir",
+            "Patient"
+          ],
+          "query": [
+            {
+              "key": "identifier",
+              "value": "http%3A%2F%2Frenaper.gob.ar%2Fdni%7C24068773"
+            },
+            {
+              "key": "gender",
+              "value": "male"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "X-BA Post Patient",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "const nombres = [\"Carolina\", \"Juana\", \"María\", \"Andrea\", \"Fabiana\",\"Martina\",\"Karen\",\"Belén\",\"Jesica\",\"Daniela\",\"Sabrina\"];\r",
+              "const segundos = [\"Agustina\", \"Sofía\", \"Josefina\", \"Verónica\", \"Romina\", \"Elena\",\"Micaela\",\"Paula\",\"Paula\",\"Natalia\"];\r",
+              "const apellidos = [\"Gómez\", \"Fernández\", \"Pérez\", \"López\", \"Martínez\", \"Rodríguez\",\"Rodriguez\"];\r",
+              "const segundos_apellidos = [\"Nuñez\", \"Gauna\", \"Libertelli\", \"Vargas\", \"Martinez\", \"Herrera\",\"Vazquez\"];\r",
+              "\r",
+              "const idDominioLocal = [304012,304013,304014,304015,304016,304017,304018,304019,304020,304021,304022,304012,304023,304024,304025,304026,304027,304028,304029,304030,304031,304032,304033,304034,304035,304036]\r",
+              "\r",
+              "function elegirAleatorio(arr) {\r",
+              "    return arr[Math.floor(Math.random() * arr.length)];\r",
+              "}\r",
+              "\r",
+              "pm.environment.set(\"primer_nombre\", elegirAleatorio(nombres));\r",
+              "pm.environment.set(\"segundo_nombre\", elegirAleatorio(segundos));\r",
+              "pm.environment.set(\"primer_apellido\", elegirAleatorio(apellidos));\r",
+              "pm.environment.set(\"segundo_apellido\", elegirAleatorio(segundos_apellidos));\r",
+              "pm.environment.set(\"idDominioLocal\", elegirAleatorio(idDominioLocal))"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "client_id",
+            "value": "95e89d88",
+            "type": "text"
+          },
+          {
+            "key": "client_secret",
+            "value": "a7c3be5882e4454ad1eb88c8ecc61c45",
+            "type": "text"
+          },
+          {
+            "key": "X-Road-Client",
+            "value": "DEV/GOB/12345/Cons-ASI-Hml",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"resourceType\": \"Patient\",\r\n    \"text\" : {\r\n        \"div\" : \"<div>YANINA GABRIELA PALUMBO</div>\",\r\n         \"status\": \"generated\"\r\n    },\r\n    \"identifier\": [\r\n        {\r\n            \"use\": \"secondary\",\r\n            \"type\": {\r\n                \"coding\": [\r\n                    {\r\n                        \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",\r\n                        \"code\": \"MR\"\r\n                    }\r\n                ]\r\n            },\r\n            \"system\": \"https://hl7.org\",\r\n            \"value\": \"{{idDominioLocal}}\"\r\n        },\r\n        {\r\n            \"use\": \"official\",\r\n            \"type\": {\r\n                \"coding\": [\r\n                    {\r\n                        \"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",\r\n                        \"code\": \"NI\"\r\n                    }\r\n                ]\r\n            },\r\n            \"system\": \"http://renaper.gob.ar/dni\",\r\n            \"value\": \"31075635\"\r\n        }\r\n    ],\r\n    \"name\": [\r\n        {\r\n            \"use\": \"official\",\r\n            \"text\": \"YANINA GABRIELA PALUMBO\",\r\n            \"family\": \"PALUMBO\",\r\n            \"given\": [\r\n                \"YANINA GABRIELA\"\r\n            ]\r\n        }\r\n    ],\r\n    \"birthDate\": \"1984-09-25\",\r\n    \"gender\": \"female\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-sihce-hml.gcba.gob.ar/federador-caba/fhir/Patient",
+          "protocol": "https",
+          "host": [
+            "api-sihce-hml",
+            "gcba",
+            "gob",
+            "ar"
+          ],
+          "path": [
+            "federador-caba",
+            "fhir",
+            "Patient"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "X-BA Post Patient Muguerza",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "client_id",
+            "value": "95e89d88",
+            "type": "text"
+          },
+          {
+            "key": "client_secret",
+            "value": "a7c3be5882e4454ad1eb88c8ecc61c45",
+            "type": "text"
+          },
+          {
+            "key": "X-Road-Client",
+            "value": "DEV/GOB/12345/Cons-ASI-Hml",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"resourceType\": \"Patient\",\r\n\t\"text\" : {\r\n        \"div\" : \"<div>PABLO MUGUERZA KAROLYI</div>\",\r\n         \"status\": \"generated\"\r\n    },\r\n    \r\n\t\"identifier\": [\r\n\t\t{\r\n\t\t\t\"use\": \"secondary\",\r\n\t\t\t\"type\": {\r\n\t\t\t\t\"coding\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",\r\n\t\t\t\t\t\t\"code\": \"MR\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"system\": \"https://hl7.org\",\r\n\t\t\t\"value\": \"90000000\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"use\": \"official\",\r\n\t\t\t\"type\": {\r\n\t\t\t\t\"coding\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",\r\n\t\t\t\t\t\t\"code\": \"NI\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"system\": \"http://renaper.gob.ar/dni\",\r\n\t\t\t\"value\": \"24068773\"\r\n\t\t}\r\n\t],\r\n\t\"name\": [\r\n\t\t{\r\n\t\t\t\"use\": \"official\",\r\n\t\t\t\"text\": \"PABLO MUGUERZA KAROLYI\",\r\n\t\t\t\"family\": \"MUGUERZA KAROLYI\",\r\n\t\t\t\"given\": [\r\n\t\t\t\t\"PABLO\"\r\n\t\t\t]\r\n\t\t}\r\n\t],\r\n\t\"gender\": \"male\",\r\n\t\"birthDate\": \"1974-07-01\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-sihce-hml.gcba.gob.ar/federador-caba/fhir/Patient",
+          "protocol": "https",
+          "host": [
+            "api-sihce-hml",
+            "gcba",
+            "gob",
+            "ar"
+          ],
+          "path": [
+            "federador-caba",
+            "fhir",
+            "Patient"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "X-BA Patch Identifier value",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "client_id",
+            "value": "95e89d88",
+            "type": "text"
+          },
+          {
+            "key": "client_secret",
+            "value": "a7c3be5882e4454ad1eb88c8ecc61c45",
+            "type": "text"
+          },
+          {
+            "key": "X-Road-Client",
+            "value": "DEV/GOB/12345/Cons-ASI-Hml",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"resourceType\": \"Parameters\",\r\n\t\"parameter\": [\r\n\t\t{\r\n\t\t\t\"name\": \"old-identifier\",\r\n\t\t\t\"valueIdentifier\": {\r\n\t\t\t\t\"system\": \"https://hl7.org\",\r\n\t\t\t\t\"value\": \"90000000\"\r\n\t\t\t}\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"new-identifier\",\r\n\t\t\t\"valueIdentifier\": {\r\n\t\t\t\t\"system\": \"https://hl7.org\",\r\n\t\t\t\t\"value\": \"90000001\"\r\n\t\t\t}\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"patient\",\r\n\t\t\t\"resource\": {\r\n\t\t\t\t\"resourceType\": \"Patient\",\r\n\t\t\t\t\"text\": {\r\n\t\t\t\t\t\"status\": \"generated\",\r\n\t\t\t\t\t\"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">PABLO MUGUERZA KAROLYI</div>\"\r\n\t\t\t\t},\r\n\t\t\t\t\"identifier\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"use\": \"secondary\",\r\n\t\t\t\t\t\t\"type\": {\r\n\t\t\t\t\t\t\t\"coding\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",\r\n\t\t\t\t\t\t\t\t\t\"code\": \"MR\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\"system\": \"https://hl7.org\",\r\n\t\t\t\t\t\t\"value\": \"90000000\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"use\": \"official\",\r\n\t\t\t\t\t\t\"type\": {\r\n\t\t\t\t\t\t\t\"coding\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",\r\n\t\t\t\t\t\t\t\t\t\"code\": \"NI\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\"system\": \"http://renaper.gob.ar/dni\",\r\n\t\t\t\t\t\t\"value\": \"24068773\"\r\n\t\t\t\t\t}\r\n\t\t\t\t],\r\n\t\t\t\t\"name\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"use\": \"official\",\r\n\t\t\t\t\t\t\"text\": \"PABLO MUGUERZA KAROLYI\",\r\n\t\t\t\t\t\t\"family\": \"MUGUERZA KAROLYI\",\r\n\t\t\t\t\t\t\"given\": [\r\n\t\t\t\t\t\t\t\"PABLO\"\r\n\t\t\t\t\t\t]\r\n\t\t\t\t\t}\r\n\t\t\t\t],\r\n\t\t\t\t\"gender\": \"male\",\r\n\t\t\t\t\"birthDate\": \"1974-07-01\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-sihce-hml.gcba.gob.ar/federador-caba/fhir/Patient/$patch-identifier",
+          "protocol": "https",
+          "host": [
+            "api-sihce-hml",
+            "gcba",
+            "gob",
+            "ar"
+          ],
+          "path": [
+            "federador-caba",
+            "fhir",
+            "Patient",
+            "$patch-identifier"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "X-BA Update SDM",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "client_id",
+            "value": "95e89d88",
+            "type": "text"
+          },
+          {
+            "key": "client_secret",
+            "value": "a7c3be5882e4454ad1eb88c8ecc61c45",
+            "type": "text"
+          },
+          {
+            "key": "X-Road-Client",
+            "value": "DEV/GOB/12345/Cons-ASI-Hml",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"resourceType\": \"Parameters\",\r\n\t\"parameter\": [\r\n\t\t{\r\n\t\t\t\"name\": \"patient\",\r\n\t\t\t\"resource\": {\r\n\t\t\t\t\"resourceType\": \"Patient\",\r\n\t\t\t\t\"text\": {\r\n\t\t\t\t\t\"status\": \"generated\",\r\n\t\t\t\t\t\"div\": \"<div xmlns=\\\"http://www.w3.org/1999/xhtml\\\">PABLO MUGUERZA KAROLYI</div>\"\r\n\t\t\t\t},\r\n\t\t\t\t\"identifier\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"use\": \"secondary\",\r\n\t\t\t\t\t\t\"type\": {\r\n\t\t\t\t\t\t\t\"coding\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",\r\n\t\t\t\t\t\t\t\t\t\"code\": \"MR\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\"system\": \"https://hl7.org\",\r\n\t\t\t\t\t\t\"value\": \"90000001\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"use\": \"official\",\r\n\t\t\t\t\t\t\"type\": {\r\n\t\t\t\t\t\t\t\"coding\": [\r\n\t\t\t\t\t\t\t\t{\r\n\t\t\t\t\t\t\t\t\t\"system\": \"http://terminology.hl7.org/CodeSystem/v2-0203\",\r\n\t\t\t\t\t\t\t\t\t\"code\": \"NI\"\r\n\t\t\t\t\t\t\t\t}\r\n\t\t\t\t\t\t\t]\r\n\t\t\t\t\t\t},\r\n\t\t\t\t\t\t\"system\": \"http://renaper.gob.ar/dni\",\r\n\t\t\t\t\t\t\"value\": \"24068773\"\r\n\t\t\t\t\t}\r\n\t\t\t\t],\r\n\t\t\t\t\"name\": [\r\n\t\t\t\t\t{\r\n\t\t\t\t\t\t\"use\": \"official\",\r\n\t\t\t\t\t\t\"text\": \"PABLO MUGUERZA KAROLYI BALBUENA\",\r\n\t\t\t\t\t\t\"family\": \"MUGUERZA KAROLYI BALBUENA\",\r\n\t\t\t\t\t\t\"given\": [\r\n\t\t\t\t\t\t\t\"PABLO ANDRES\"\r\n\t\t\t\t\t\t]\r\n\t\t\t\t\t}\r\n\t\t\t\t],\r\n\t\t\t\t\"gender\": \"male\",\r\n\t\t\t\t\"birthDate\": \"1974-06-01\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-sihce-hml.gcba.gob.ar/federador-caba/fhir/Patient/$update-sdm",
+          "protocol": "https",
+          "host": [
+            "api-sihce-hml",
+            "gcba",
+            "gob",
+            "ar"
+          ],
+          "path": [
+            "federador-caba",
+            "fhir",
+            "Patient",
+            "$update-sdm"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "X-BA metadata",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "client_id",
+            "value": "95e89d88",
+            "type": "text"
+          },
+          {
+            "key": "client_secret",
+            "value": "a7c3be5882e4454ad1eb88c8ecc61c45",
+            "type": "text"
+          },
+          {
+            "key": "X-Road-Client",
+            "value": "DEV/GOB/12345/Cons-ASI-Hml",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api-sihce-hml.gcba.gob.ar/federador-caba/fhir/Patient?identifier=http%3A%2F%2Frenaper.gob.ar%2Fdni%7C24068773&gender=male",
+          "protocol": "https",
+          "host": [
+            "api-sihce-hml",
+            "gcba",
+            "gob",
+            "ar"
+          ],
+          "path": [
+            "federador-caba",
+            "fhir",
+            "Patient"
+          ],
+          "query": [
+            {
+              "key": "identifier",
+              "value": "http%3A%2F%2Frenaper.gob.ar%2Fdni%7C24068773"
+            },
+            {
+              "key": "gender",
+              "value": "male"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

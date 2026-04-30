@@ -11,13 +11,13 @@
   <name value="GuiaDeImplementacionSIHCE"/>
   <title value="Guía de Implementación SIHCE - FHIR R5"/>
   <status value="draft"/>
-  <date value="2026-04-30T15:35:26-03:00"/>
+  <date value="2026-04-30T18:14:12-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
     <telecom>
       <system value="url"/>
-      <value value="http://sihce.gob.ar/"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
     </telecom>
   </contact>
   <packageId value="SIHCE.fhir.core"/>
@@ -168,6 +168,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/NamingSystemHospitalItalianoFHIR"/>
+      </reference>
+      <name value="NamingSystem URI Hospital Italiano (ejemplo FHIR)"/>
+      <description value="Identificador de dominio de ejemplo usado en instancias de este IG."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/NamingSystemMsgcGCBA"/>
+      </reference>
+      <name value="NamingSystem URI MSGC GCBA (ejemplo)"/>
+      <description value="Sistema de identificadores de ejemplo para Parameters en este IG."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -234,6 +256,28 @@
       <description value="This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)."/>
       <isExample value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/sihce-logical-operation-element-paths"/>
+      </reference>
+      <name value="Rutas de elementos en modelos lógicos de operación SIHCE"/>
+      <description value="Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/sihce-fhir-core-element-paths"/>
+      </reference>
+      <name value="Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE"/>
+      <description value="Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition)."/>
+      <isExample value="false"/>
+    </resource>
     <page>
       <sourceUrl value="toc.html"/>
       <name value="toc.html"/>
@@ -295,6 +339,13 @@
         <code value="releaselabel"/>
       </code>
       <value value="ci-build"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="false"/>
     </parameter>
     <parameter>
       <code>
@@ -552,13 +603,6 @@
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="excludelogbinaryformat"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="tabbed-snapshots"/>
       </code>
       <value value="true"/>
     </parameter>

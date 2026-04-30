@@ -48,7 +48,7 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación)",
@@ -145,18 +145,18 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
     {
       "id" : "Patient.identifier:DNI.type.coding.system",
       "path" : "Patient.identifier.type.coding.system",
-      "fixedUri" : "http://terminology.hl7.org/CodeSystem/v2-0203"
+      "patternUri" : "http://terminology.hl7.org/CodeSystem/v2-0203"
     },
     {
       "id" : "Patient.identifier:DNI.type.coding.code",
       "path" : "Patient.identifier.type.coding.code",
       "min" : 1,
-      "fixedCode" : "NI"
+      "patternCode" : "NI"
     },
     {
       "id" : "Patient.identifier:DNI.system",
       "path" : "Patient.identifier.system",
-      "patternUri" : "http://www.renaper.gob.ar/dni"
+      "patternUri" : "http://renaper.gob.ar/dni"
     },
     {
       "id" : "Patient.identifier:DNI.value",
@@ -194,13 +194,13 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
     {
       "id" : "Patient.identifier:idDominio.type.coding.system",
       "path" : "Patient.identifier.type.coding.system",
-      "fixedUri" : "http://terminology.hl7.org/CodeSystem/v2-0203"
+      "patternUri" : "http://terminology.hl7.org/CodeSystem/v2-0203"
     },
     {
       "id" : "Patient.identifier:idDominio.type.coding.code",
       "path" : "Patient.identifier.type.coding.code",
       "min" : 1,
-      "fixedCode" : "MR"
+      "patternCode" : "MR"
     },
     {
       "id" : "Patient.identifier:idDominio.system",

@@ -6,15 +6,7 @@
 
 ## Example Patient: PersonaSIHCEPatch
 
-Profile: [Paciente SIHCE (PatientXBA)](StructureDefinition-PatientXBA.md)
-
-Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))
-
--------
-
-| | |
-| :--- | :--- |
-| Other Id: | Medical record number/9876543210 (use: secondary, ) |
+Ejemplo de paciente para operaciones de parcheo según PatientXBA.
 
 
 
@@ -35,7 +27,7 @@ Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual iden
         "code" : "NI"
       }]
     },
-    "system" : "http://www.renaper.gob.ar/dni",
+    "system" : "http://renaper.gob.ar/dni",
     "value" : "12345678"
   },
   {

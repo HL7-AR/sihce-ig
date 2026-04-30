@@ -29,6 +29,9 @@
           <profile value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
         </meta>
         <language value="en"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Ejemplo de paciente para operaciones de parcheo según PatientXBA.</p></div>
+        </text>
         <identifier>
           <use value="official"/>
           <type>
@@ -37,7 +40,7 @@
               <code value="NI"/>
             </coding>
           </type>
-          <system value="http://www.renaper.gob.ar/dni"/>
+          <system value="http://renaper.gob.ar/dni"/>
           <value value="12345678"/>
         </identifier>
         <identifier>

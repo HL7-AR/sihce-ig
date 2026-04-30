@@ -41,13 +41,13 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
   "name" : "ModificarSDMPersona",
   "title" : "Modelo lógico ModificarSDMPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-04-30T15:35:26-03:00",
+  "date" : "2026-04-30T18:14:12-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Actualización del SDM de una persona federada; documento inmutable.",
@@ -70,8 +70,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       "definition" : "Actualización del SDM de una persona federada; documento inmutable."
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual",
-      "path" : "ModificarSDMPersona.SDMActual",
+      "id" : "ModificarSDMPersona.sdmActual",
+      "path" : "ModificarSDMPersona.sdmActual",
       "short" : "SDM actual",
       "definition" : "Datos vigentes en FederadorBA.",
       "min" : 1,
@@ -81,8 +81,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual.tipoDocumento",
-      "path" : "ModificarSDMPersona.SDMActual.tipoDocumento",
+      "id" : "ModificarSDMPersona.sdmActual.tipoDocumento",
+      "path" : "ModificarSDMPersona.sdmActual.tipoDocumento",
       "short" : "Tipo de documento",
       "definition" : "Ej. DNI.",
       "min" : 1,
@@ -92,8 +92,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual.documentoIdentificatorio",
-      "path" : "ModificarSDMPersona.SDMActual.documentoIdentificatorio",
+      "id" : "ModificarSDMPersona.sdmActual.documentoIdentificatorio",
+      "path" : "ModificarSDMPersona.sdmActual.documentoIdentificatorio",
       "short" : "Número de documento",
       "definition" : "Valor del documento.",
       "min" : 1,
@@ -103,8 +103,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual.sexo",
-      "path" : "ModificarSDMPersona.SDMActual.sexo",
+      "id" : "ModificarSDMPersona.sdmActual.sexo",
+      "path" : "ModificarSDMPersona.sdmActual.sexo",
       "short" : "Sexo",
       "definition" : "Sexo administrativo.",
       "min" : 1,
@@ -114,8 +114,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual.primerNombre",
-      "path" : "ModificarSDMPersona.SDMActual.primerNombre",
+      "id" : "ModificarSDMPersona.sdmActual.primerNombre",
+      "path" : "ModificarSDMPersona.sdmActual.primerNombre",
       "short" : "Primer nombre",
       "definition" : "Primer nombre.",
       "min" : 1,
@@ -125,8 +125,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual.segundoNombre",
-      "path" : "ModificarSDMPersona.SDMActual.segundoNombre",
+      "id" : "ModificarSDMPersona.sdmActual.segundoNombre",
+      "path" : "ModificarSDMPersona.sdmActual.segundoNombre",
       "short" : "Segundo nombre",
       "definition" : "Segundo nombre.",
       "min" : 0,
@@ -136,8 +136,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual.primerApellido",
-      "path" : "ModificarSDMPersona.SDMActual.primerApellido",
+      "id" : "ModificarSDMPersona.sdmActual.primerApellido",
+      "path" : "ModificarSDMPersona.sdmActual.primerApellido",
       "short" : "Primer apellido",
       "definition" : "Primer apellido.",
       "min" : 1,
@@ -147,8 +147,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual.segundoApellido",
-      "path" : "ModificarSDMPersona.SDMActual.segundoApellido",
+      "id" : "ModificarSDMPersona.sdmActual.segundoApellido",
+      "path" : "ModificarSDMPersona.sdmActual.segundoApellido",
       "short" : "Segundo apellido",
       "definition" : "Segundo apellido.",
       "min" : 0,
@@ -158,8 +158,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual.fechaNacimiento",
-      "path" : "ModificarSDMPersona.SDMActual.fechaNacimiento",
+      "id" : "ModificarSDMPersona.sdmActual.fechaNacimiento",
+      "path" : "ModificarSDMPersona.sdmActual.fechaNacimiento",
       "short" : "Fecha de nacimiento",
       "definition" : "AAAA-MM-DD.",
       "min" : 1,
@@ -169,8 +169,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMActual.fechaDefuncion",
-      "path" : "ModificarSDMPersona.SDMActual.fechaDefuncion",
+      "id" : "ModificarSDMPersona.sdmActual.fechaDefuncion",
+      "path" : "ModificarSDMPersona.sdmActual.fechaDefuncion",
       "short" : "Fecha de defunción",
       "definition" : "Si aplica.",
       "min" : 0,
@@ -180,8 +180,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMNuevo",
-      "path" : "ModificarSDMPersona.SDMNuevo",
+      "id" : "ModificarSDMPersona.sdmNuevo",
+      "path" : "ModificarSDMPersona.sdmNuevo",
       "short" : "SDM nuevo",
       "definition" : "Valores deseados (sin documento).",
       "min" : 1,
@@ -191,8 +191,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMNuevo.sexo",
-      "path" : "ModificarSDMPersona.SDMNuevo.sexo",
+      "id" : "ModificarSDMPersona.sdmNuevo.sexo",
+      "path" : "ModificarSDMPersona.sdmNuevo.sexo",
       "short" : "Sexo",
       "definition" : "Sexo actualizado.",
       "min" : 1,
@@ -202,8 +202,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMNuevo.primerNombre",
-      "path" : "ModificarSDMPersona.SDMNuevo.primerNombre",
+      "id" : "ModificarSDMPersona.sdmNuevo.primerNombre",
+      "path" : "ModificarSDMPersona.sdmNuevo.primerNombre",
       "short" : "Primer nombre",
       "definition" : "Nombre actualizado.",
       "min" : 1,
@@ -213,8 +213,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMNuevo.segundoNombre",
-      "path" : "ModificarSDMPersona.SDMNuevo.segundoNombre",
+      "id" : "ModificarSDMPersona.sdmNuevo.segundoNombre",
+      "path" : "ModificarSDMPersona.sdmNuevo.segundoNombre",
       "short" : "Segundo nombre",
       "definition" : "Segundo nombre actualizado.",
       "min" : 0,
@@ -224,8 +224,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMNuevo.primerApellido",
-      "path" : "ModificarSDMPersona.SDMNuevo.primerApellido",
+      "id" : "ModificarSDMPersona.sdmNuevo.primerApellido",
+      "path" : "ModificarSDMPersona.sdmNuevo.primerApellido",
       "short" : "Primer apellido",
       "definition" : "Apellido actualizado.",
       "min" : 1,
@@ -235,8 +235,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMNuevo.segundoApellido",
-      "path" : "ModificarSDMPersona.SDMNuevo.segundoApellido",
+      "id" : "ModificarSDMPersona.sdmNuevo.segundoApellido",
+      "path" : "ModificarSDMPersona.sdmNuevo.segundoApellido",
       "short" : "Segundo apellido",
       "definition" : "Segundo apellido actualizado.",
       "min" : 0,
@@ -246,8 +246,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMNuevo.fechaNacimiento",
-      "path" : "ModificarSDMPersona.SDMNuevo.fechaNacimiento",
+      "id" : "ModificarSDMPersona.sdmNuevo.fechaNacimiento",
+      "path" : "ModificarSDMPersona.sdmNuevo.fechaNacimiento",
       "short" : "Fecha de nacimiento",
       "definition" : "Fecha actualizada.",
       "min" : 1,
@@ -257,8 +257,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.SDMNuevo.fechaDefuncion",
-      "path" : "ModificarSDMPersona.SDMNuevo.fechaDefuncion",
+      "id" : "ModificarSDMPersona.sdmNuevo.fechaDefuncion",
+      "path" : "ModificarSDMPersona.sdmNuevo.fechaDefuncion",
       "short" : "Fecha de defunción",
       "definition" : "Si aplica.",
       "min" : 0,
@@ -268,8 +268,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.DatosDominio",
-      "path" : "ModificarSDMPersona.DatosDominio",
+      "id" : "ModificarSDMPersona.datosDominio",
+      "path" : "ModificarSDMPersona.datosDominio",
       "short" : "Dominio solicitante",
       "definition" : "Dominio que solicita el cambio.",
       "min" : 1,
@@ -279,8 +279,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.DatosDominio.idDominio",
-      "path" : "ModificarSDMPersona.DatosDominio.idDominio",
+      "id" : "ModificarSDMPersona.datosDominio.idDominio",
+      "path" : "ModificarSDMPersona.datosDominio.idDominio",
       "short" : "URI del dominio",
       "definition" : "Identificador del dominio.",
       "min" : 1,
@@ -290,8 +290,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.DatosDominio.idLocalPersona",
-      "path" : "ModificarSDMPersona.DatosDominio.idLocalPersona",
+      "id" : "ModificarSDMPersona.datosDominio.idLocalPersona",
+      "path" : "ModificarSDMPersona.datosDominio.idLocalPersona",
       "short" : "Id local",
       "definition" : "Identificador local en el dominio.",
       "min" : 1,
@@ -301,8 +301,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.DatosRespuesta",
-      "path" : "ModificarSDMPersona.DatosRespuesta",
+      "id" : "ModificarSDMPersona.datosRespuesta",
+      "path" : "ModificarSDMPersona.datosRespuesta",
       "short" : "Respuesta",
       "definition" : "Resultado de la operación.",
       "min" : 0,
@@ -312,8 +312,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
       }]
     },
     {
-      "id" : "ModificarSDMPersona.DatosRespuesta.mensaje",
-      "path" : "ModificarSDMPersona.DatosRespuesta.mensaje",
+      "id" : "ModificarSDMPersona.datosRespuesta.mensaje",
+      "path" : "ModificarSDMPersona.datosRespuesta.mensaje",
       "short" : "Mensaje",
       "definition" : "Mensaje informativo o de error.",
       "min" : 1,

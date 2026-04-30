@@ -41,7 +41,7 @@ This NamingSystem defines the official identification document issued by RENAPER
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",

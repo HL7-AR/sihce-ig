@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="sihce-logical-operation-element-paths"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem sihce-logical-operation-element-paths</b></p><a name="sihce-logical-operation-element-paths"> </a><a name="hcsihce-logical-operation-element-paths"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosConsulta.tipoDocumento<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosConsulta.46tipoDocumento"> </a></td><td>BuscarPersona datosConsulta tipoDocumento</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosConsulta.documentoIdentificatorio<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosConsulta.46documentoIdentificatorio"> </a></td><td>BuscarPersona datosConsulta documentoIdentificatorio</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosConsulta.sexo<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosConsulta.46sexo"> </a></td><td>BuscarPersona datosConsulta sexo</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosDominio.idLocalPersona<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosDominio.46idLocalPersona"> </a></td><td>BuscarPersona datosDominio idLocalPersona</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosDominio.idDominio<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosDominio.46idDominio"> </a></td><td>BuscarPersona datosDominio idDominio</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosDominio<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosDominio"> </a></td><td>BuscarPersona datosDominio</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosRespuesta.documentoIdentificatorio<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46documentoIdentificatorio"> </a></td><td>BuscarPersona datosRespuesta documentoIdentificatorio</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosRespuesta.primerNombre<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46primerNombre"> </a></td><td>BuscarPersona datosRespuesta primerNombre</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosRespuesta.segundoNombre<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46segundoNombre"> </a></td><td>BuscarPersona datosRespuesta segundoNombre</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosRespuesta.primerApellido<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46primerApellido"> </a></td><td>BuscarPersona datosRespuesta primerApellido</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosRespuesta.segundoApellido<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46segundoApellido"> </a></td><td>BuscarPersona datosRespuesta segundoApellido</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosRespuesta.fechaNacimiento<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46fechaNacimiento"> </a></td><td>BuscarPersona datosRespuesta fechaNacimiento</td></tr><tr><td style="white-space:nowrap">BuscarPersona.datosRespuesta.fechaDefuncion<a name="sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46fechaDefuncion"> </a></td><td>BuscarPersona datosRespuesta fechaDefuncion</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosPersona.tipoDocumento<a name="sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46tipoDocumento"> </a></td><td>FederarPersona datosPersona tipoDocumento</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosPersona.documentoIdentificatorio<a name="sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46documentoIdentificatorio"> </a></td><td>FederarPersona datosPersona documentoIdentificatorio</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosPersona.sexo<a name="sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46sexo"> </a></td><td>FederarPersona datosPersona sexo</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosPersona.primerNombre<a name="sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46primerNombre"> </a></td><td>FederarPersona datosPersona primerNombre</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosPersona.segundoNombre<a name="sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46segundoNombre"> </a></td><td>FederarPersona datosPersona segundoNombre</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosPersona.primerApellido<a name="sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46primerApellido"> </a></td><td>FederarPersona datosPersona primerApellido</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosPersona.segundoApellido<a name="sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46segundoApellido"> </a></td><td>FederarPersona datosPersona segundoApellido</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosPersona.fechaNacimiento<a name="sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46fechaNacimiento"> </a></td><td>FederarPersona datosPersona fechaNacimiento</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosDominio.idLocalPersona<a name="sihce-logical-operation-element-paths-FederarPersona.46datosDominio.46idLocalPersona"> </a></td><td>FederarPersona datosDominio idLocalPersona</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosDominio.idDominio<a name="sihce-logical-operation-element-paths-FederarPersona.46datosDominio.46idDominio"> </a></td><td>FederarPersona datosDominio idDominio</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosDominio<a name="sihce-logical-operation-element-paths-FederarPersona.46datosDominio"> </a></td><td>FederarPersona datosDominio</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosFederacion.idPersonaGlobal<a name="sihce-logical-operation-element-paths-FederarPersona.46datosFederacion.46idPersonaGlobal"> </a></td><td>FederarPersona datosFederacion idPersonaGlobal</td></tr><tr><td style="white-space:nowrap">FederarPersona.datosFederacion.mensaje<a name="sihce-logical-operation-element-paths-FederarPersona.46datosFederacion.46mensaje"> </a></td><td>FederarPersona datosFederacion mensaje</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosPersona.tipoDocumento<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46tipoDocumento"> </a></td><td>ModificarIDLocalPersona datosPersona tipoDocumento</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosPersona.documentoIdentificatorio<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46documentoIdentificatorio"> </a></td><td>ModificarIDLocalPersona datosPersona documentoIdentificatorio</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosPersona.sexo<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46sexo"> </a></td><td>ModificarIDLocalPersona datosPersona sexo</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosPersona.primerNombre<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46primerNombre"> </a></td><td>ModificarIDLocalPersona datosPersona primerNombre</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosPersona.segundoNombre<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46segundoNombre"> </a></td><td>ModificarIDLocalPersona datosPersona segundoNombre</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosPersona.primerApellido<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46primerApellido"> </a></td><td>ModificarIDLocalPersona datosPersona primerApellido</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosPersona.segundoApellido<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46segundoApellido"> </a></td><td>ModificarIDLocalPersona datosPersona segundoApellido</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosPersona.fechaNacimiento<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46fechaNacimiento"> </a></td><td>ModificarIDLocalPersona datosPersona fechaNacimiento</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosModificacion.idDominio<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosModificacion.46idDominio"> </a></td><td>ModificarIDLocalPersona datosModificacion idDominio</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosModificacion.46idLocalPersonaActual"> </a></td><td>ModificarIDLocalPersona datosModificacion idLocalPersonaActual</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosModificacion.46idLocalPersonaNuevo"> </a></td><td>ModificarIDLocalPersona datosModificacion idLocalPersonaNuevo</td></tr><tr><td style="white-space:nowrap">ModificarIDLocalPersona.datosRespuesta.mensaje<a name="sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosRespuesta.46mensaje"> </a></td><td>ModificarIDLocalPersona datosRespuesta mensaje</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmActual.tipoDocumento<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46tipoDocumento"> </a></td><td>ModificarSDMPersona sdmActual tipoDocumento</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmActual.documentoIdentificatorio<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46documentoIdentificatorio"> </a></td><td>ModificarSDMPersona sdmActual documentoIdentificatorio</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmActual.sexo<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46sexo"> </a></td><td>ModificarSDMPersona sdmActual sexo</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmActual.primerNombre<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46primerNombre"> </a></td><td>ModificarSDMPersona sdmActual primerNombre</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmActual.segundoNombre<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46segundoNombre"> </a></td><td>ModificarSDMPersona sdmActual segundoNombre</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmActual.primerApellido<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46primerApellido"> </a></td><td>ModificarSDMPersona sdmActual primerApellido</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmActual.segundoApellido<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46segundoApellido"> </a></td><td>ModificarSDMPersona sdmActual segundoApellido</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmActual.fechaNacimiento<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46fechaNacimiento"> </a></td><td>ModificarSDMPersona sdmActual fechaNacimiento</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmActual.fechaDefuncion<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46fechaDefuncion"> </a></td><td>ModificarSDMPersona sdmActual fechaDefuncion</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmNuevo.sexo<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46sexo"> </a></td><td>ModificarSDMPersona sdmNuevo sexo</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmNuevo.primerNombre<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46primerNombre"> </a></td><td>ModificarSDMPersona sdmNuevo primerNombre</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmNuevo.segundoNombre<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46segundoNombre"> </a></td><td>ModificarSDMPersona sdmNuevo segundoNombre</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmNuevo.primerApellido<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46primerApellido"> </a></td><td>ModificarSDMPersona sdmNuevo primerApellido</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmNuevo.segundoApellido<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46segundoApellido"> </a></td><td>ModificarSDMPersona sdmNuevo segundoApellido</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmNuevo.fechaNacimiento<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46fechaNacimiento"> </a></td><td>ModificarSDMPersona sdmNuevo fechaNacimiento</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.sdmNuevo.fechaDefuncion<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46fechaDefuncion"> </a></td><td>ModificarSDMPersona sdmNuevo fechaDefuncion</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.datosDominio.idDominio<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46datosDominio.46idDominio"> </a></td><td>ModificarSDMPersona datosDominio idDominio</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.datosDominio.idLocalPersona<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46datosDominio.46idLocalPersona"> </a></td><td>ModificarSDMPersona datosDominio idLocalPersona</td></tr><tr><td style="white-space:nowrap">ModificarSDMPersona.datosRespuesta.mensaje<a name="sihce-logical-operation-element-paths-ModificarSDMPersona.46datosRespuesta.46mensaje"> </a></td><td>ModificarSDMPersona datosRespuesta mensaje</td></tr></table></div>
+  </text>
+  <url value="http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"/>
+  <version value="1.2.0"/>
+  <name value="SIHCELogicalOperationElementPaths"/>
+  <title value="Rutas de elementos en modelos lógicos de operación SIHCE"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-04-30T18:14:12-03:00"/>
+  <publisher value="SIHCE Development Team"/>
+  <contact>
+    <name value="SIHCE Development Team"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
+    </telecom>
+  </contact>
+  <description value="Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="57"/>
+  <concept>
+    <code value="BuscarPersona.datosConsulta.tipoDocumento"/>
+    <display value="BuscarPersona datosConsulta tipoDocumento"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosConsulta.documentoIdentificatorio"/>
+    <display value="BuscarPersona datosConsulta documentoIdentificatorio"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosConsulta.sexo"/>
+    <display value="BuscarPersona datosConsulta sexo"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosDominio.idLocalPersona"/>
+    <display value="BuscarPersona datosDominio idLocalPersona"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosDominio.idDominio"/>
+    <display value="BuscarPersona datosDominio idDominio"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosDominio"/>
+    <display value="BuscarPersona datosDominio"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosRespuesta.documentoIdentificatorio"/>
+    <display value="BuscarPersona datosRespuesta documentoIdentificatorio"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosRespuesta.primerNombre"/>
+    <display value="BuscarPersona datosRespuesta primerNombre"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosRespuesta.segundoNombre"/>
+    <display value="BuscarPersona datosRespuesta segundoNombre"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosRespuesta.primerApellido"/>
+    <display value="BuscarPersona datosRespuesta primerApellido"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosRespuesta.segundoApellido"/>
+    <display value="BuscarPersona datosRespuesta segundoApellido"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosRespuesta.fechaNacimiento"/>
+    <display value="BuscarPersona datosRespuesta fechaNacimiento"/>
+  </concept>
+  <concept>
+    <code value="BuscarPersona.datosRespuesta.fechaDefuncion"/>
+    <display value="BuscarPersona datosRespuesta fechaDefuncion"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosPersona.tipoDocumento"/>
+    <display value="FederarPersona datosPersona tipoDocumento"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosPersona.documentoIdentificatorio"/>
+    <display value="FederarPersona datosPersona documentoIdentificatorio"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosPersona.sexo"/>
+    <display value="FederarPersona datosPersona sexo"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosPersona.primerNombre"/>
+    <display value="FederarPersona datosPersona primerNombre"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosPersona.segundoNombre"/>
+    <display value="FederarPersona datosPersona segundoNombre"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosPersona.primerApellido"/>
+    <display value="FederarPersona datosPersona primerApellido"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosPersona.segundoApellido"/>
+    <display value="FederarPersona datosPersona segundoApellido"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosPersona.fechaNacimiento"/>
+    <display value="FederarPersona datosPersona fechaNacimiento"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosDominio.idLocalPersona"/>
+    <display value="FederarPersona datosDominio idLocalPersona"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosDominio.idDominio"/>
+    <display value="FederarPersona datosDominio idDominio"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosDominio"/>
+    <display value="FederarPersona datosDominio"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosFederacion.idPersonaGlobal"/>
+    <display value="FederarPersona datosFederacion idPersonaGlobal"/>
+  </concept>
+  <concept>
+    <code value="FederarPersona.datosFederacion.mensaje"/>
+    <display value="FederarPersona datosFederacion mensaje"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosPersona.tipoDocumento"/>
+    <display value="ModificarIDLocalPersona datosPersona tipoDocumento"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosPersona.documentoIdentificatorio"/>
+    <display value="ModificarIDLocalPersona datosPersona documentoIdentificatorio"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosPersona.sexo"/>
+    <display value="ModificarIDLocalPersona datosPersona sexo"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosPersona.primerNombre"/>
+    <display value="ModificarIDLocalPersona datosPersona primerNombre"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosPersona.segundoNombre"/>
+    <display value="ModificarIDLocalPersona datosPersona segundoNombre"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosPersona.primerApellido"/>
+    <display value="ModificarIDLocalPersona datosPersona primerApellido"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosPersona.segundoApellido"/>
+    <display value="ModificarIDLocalPersona datosPersona segundoApellido"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosPersona.fechaNacimiento"/>
+    <display value="ModificarIDLocalPersona datosPersona fechaNacimiento"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosModificacion.idDominio"/>
+    <display value="ModificarIDLocalPersona datosModificacion idDominio"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual"/>
+    <display value="ModificarIDLocalPersona datosModificacion idLocalPersonaActual"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo"/>
+    <display value="ModificarIDLocalPersona datosModificacion idLocalPersonaNuevo"/>
+  </concept>
+  <concept>
+    <code value="ModificarIDLocalPersona.datosRespuesta.mensaje"/>
+    <display value="ModificarIDLocalPersona datosRespuesta mensaje"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmActual.tipoDocumento"/>
+    <display value="ModificarSDMPersona sdmActual tipoDocumento"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmActual.documentoIdentificatorio"/>
+    <display value="ModificarSDMPersona sdmActual documentoIdentificatorio"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmActual.sexo"/>
+    <display value="ModificarSDMPersona sdmActual sexo"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmActual.primerNombre"/>
+    <display value="ModificarSDMPersona sdmActual primerNombre"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmActual.segundoNombre"/>
+    <display value="ModificarSDMPersona sdmActual segundoNombre"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmActual.primerApellido"/>
+    <display value="ModificarSDMPersona sdmActual primerApellido"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmActual.segundoApellido"/>
+    <display value="ModificarSDMPersona sdmActual segundoApellido"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmActual.fechaNacimiento"/>
+    <display value="ModificarSDMPersona sdmActual fechaNacimiento"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmActual.fechaDefuncion"/>
+    <display value="ModificarSDMPersona sdmActual fechaDefuncion"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmNuevo.sexo"/>
+    <display value="ModificarSDMPersona sdmNuevo sexo"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmNuevo.primerNombre"/>
+    <display value="ModificarSDMPersona sdmNuevo primerNombre"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmNuevo.segundoNombre"/>
+    <display value="ModificarSDMPersona sdmNuevo segundoNombre"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmNuevo.primerApellido"/>
+    <display value="ModificarSDMPersona sdmNuevo primerApellido"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmNuevo.segundoApellido"/>
+    <display value="ModificarSDMPersona sdmNuevo segundoApellido"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmNuevo.fechaNacimiento"/>
+    <display value="ModificarSDMPersona sdmNuevo fechaNacimiento"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.sdmNuevo.fechaDefuncion"/>
+    <display value="ModificarSDMPersona sdmNuevo fechaDefuncion"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.datosDominio.idDominio"/>
+    <display value="ModificarSDMPersona datosDominio idDominio"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.datosDominio.idLocalPersona"/>
+    <display value="ModificarSDMPersona datosDominio idLocalPersona"/>
+  </concept>
+  <concept>
+    <code value="ModificarSDMPersona.datosRespuesta.mensaje"/>
+    <display value="ModificarSDMPersona datosRespuesta mensaje"/>
+  </concept>
+</CodeSystem>

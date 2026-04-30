@@ -207,7 +207,7 @@ system (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identif
 0..1
 uri (http://hl7.org/fhir/R4/datatypes.html#uri)
 The namespace for the identifier value
-Required Pattern: http://www.renaper.gob.ar/dni
+Required Pattern: http://renaper.gob.ar/dni
 
 value (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identifier:DNI.value)
 SΣ
@@ -554,7 +554,7 @@ system (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identif
 0..1
 uri (http://hl7.org/fhir/R4/datatypes.html#uri)
 The namespace for the identifier value
-Required Pattern: http://www.renaper.gob.ar/dni
+Required Pattern: http://renaper.gob.ar/dni
 
 value (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identifier:DNI.value)
 S
@@ -919,7 +919,7 @@ system (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identif
 0..1
 uri (http://hl7.org/fhir/R4/datatypes.html#uri)
 The namespace for the identifier value
-Required Pattern: http://www.renaper.gob.ar/dni
+Required Pattern: http://renaper.gob.ar/dni
 
 value (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identifier:DNI.value)
 SΣ
@@ -1644,7 +1644,7 @@ system (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identif
 0..1
 uri (http://hl7.org/fhir/R4/datatypes.html#uri)
 The namespace for the identifier value
-Required Pattern: http://www.renaper.gob.ar/dni
+Required Pattern: http://renaper.gob.ar/dni
 
 value (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identifier:DNI.value)
 SΣ
@@ -1993,7 +1993,7 @@ system (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identif
 0..1
 uri (http://hl7.org/fhir/R4/datatypes.html#uri)
 The namespace for the identifier value
-Required Pattern: http://www.renaper.gob.ar/dni
+Required Pattern: http://renaper.gob.ar/dni
 
 value (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identifier:DNI.value)
 S
@@ -2360,7 +2360,7 @@ system (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identif
 0..1
 uri (http://hl7.org/fhir/R4/datatypes.html#uri)
 The namespace for the identifier value
-Required Pattern: http://www.renaper.gob.ar/dni
+Required Pattern: http://renaper.gob.ar/dni
 
 value (StructureDefinition-paciente-core-SIHCE-definitions.html#Patient.identifier:DNI.value)
 SΣ

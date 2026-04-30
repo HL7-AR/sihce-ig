@@ -100,7 +100,7 @@ Body (recurso FHIR `Patient`), alineado con la guía:
   "resourceType": "Patient",
   "identifier": [
     {
-      "system": "http://www.renaper.gob.ar/dni",
+      "system": "http://renaper.gob.ar/dni",
       "value": "24366108"
     }
   ],

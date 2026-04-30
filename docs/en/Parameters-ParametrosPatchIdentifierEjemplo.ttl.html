@@ -50,8 +50,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.14"}
-    h3,h4,h5,h6{--heading-prefix:"8.14"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.18"}
+    h3,h4,h5,h6{--heading-prefix:"8.18"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -261,6 +261,9 @@
 <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://sihce.gob.ar/StructureDefinition/PatientXBA&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;http://sihce.gob.ar/StructureDefinition/PatientXBA&gt;         ] )       ] ;
 <a href="http://hl7.org/fhir/R5/resource.html#XPatient.language">fhir:language</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot; ] ;
+<a href="http://hl7.org/fhir/R5/domainresource.html#XPatient.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;Ejemplo de paciente para operaciones de parcheo según PatientXBA.&lt;/p&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]       ] ;
       ( <a href="http://hl7.org/fhir/R5/patient.html#XPatient.identifier">fhir:identifier</a> [
 <a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
 <a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.type">fhir:type</a> [
@@ -270,8 +273,8 @@
 <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://terminology.hl7.org/CodeSystem/v2-0203&gt;             ] ;
 <a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;NI&quot; ]           ] )         ] ;
 <a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://www.renaper.gob.ar/dni&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://www.renaper.gob.ar/dni&gt;         ] ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://renaper.gob.ar/dni&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://renaper.gob.ar/dni&gt;         ] ;
 <a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;12345678&quot; ]       ] [
 <a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;secondary&quot; ] ;
 <a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.type">fhir:type</a> [
@@ -322,9 +325,9 @@
 
 
 
-          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="http://sihce.gob.ar/">SIHCE Development Team</a>.  
+          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
           Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Thu, Apr 30, 2026 15:35-0300">2026-04-30</span>
+          Generated <span title="Thu, Apr 30, 2026 18:14-0300">2026-04-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a> |

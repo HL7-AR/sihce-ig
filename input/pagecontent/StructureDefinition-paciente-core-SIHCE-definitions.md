@@ -446,7 +446,7 @@ Requirements
 
 There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.
 
-Pattern Valuehttp://www.renaper.gob.ar/dni
+Pattern Valuehttp://renaper.gob.ar/dni
 
 ExampleGeneral: http://www.acme.com/identifiers/patient
 
@@ -1394,7 +1394,7 @@ Fixed ValueNI
 
 20. Patient.identifier:DNI.system (StructureDefinition-paciente-core-SIHCE-definitions.html#diff_Patient.identifier:DNI.system)
 
-Pattern Valuehttp://www.renaper.gob.ar/dni
+Pattern Valuehttp://renaper.gob.ar/dni
 
 22. Patient.identifier:DNI.value (StructureDefinition-paciente-core-SIHCE-definitions.html#diff_Patient.identifier:DNI.value)
 
@@ -2263,7 +2263,7 @@ Requirements
 
 There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.
 
-Pattern Valuehttp://www.renaper.gob.ar/dni
+Pattern Valuehttp://renaper.gob.ar/dni
 
 ExampleGeneral: http://www.acme.com/identifiers/patient
 

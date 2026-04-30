@@ -41,13 +41,13 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
   "name" : "BuscarPersona",
   "title" : "Modelo lógico BuscarPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-04-30T15:35:26-03:00",
+  "date" : "2026-04-30T18:14:12-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Solicitud de búsqueda de persona por datos mínimos y respuesta mínima.",
@@ -70,8 +70,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       "definition" : "Solicitud de búsqueda de persona por datos mínimos y respuesta mínima."
     },
     {
-      "id" : "BuscarPersona.DatosConsulta",
-      "path" : "BuscarPersona.DatosConsulta",
+      "id" : "BuscarPersona.datosConsulta",
+      "path" : "BuscarPersona.datosConsulta",
       "short" : "Datos de consulta",
       "definition" : "Información mínima para la búsqueda.",
       "min" : 0,
@@ -81,8 +81,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosConsulta.tipoDocumento",
-      "path" : "BuscarPersona.DatosConsulta.tipoDocumento",
+      "id" : "BuscarPersona.datosConsulta.tipoDocumento",
+      "path" : "BuscarPersona.datosConsulta.tipoDocumento",
       "short" : "Tipo de documento",
       "definition" : "Ej. DNI.",
       "min" : 1,
@@ -92,8 +92,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosConsulta.documentoIdentificatorio",
-      "path" : "BuscarPersona.DatosConsulta.documentoIdentificatorio",
+      "id" : "BuscarPersona.datosConsulta.documentoIdentificatorio",
+      "path" : "BuscarPersona.datosConsulta.documentoIdentificatorio",
       "short" : "Número de documento",
       "definition" : "Valor numérico del documento.",
       "min" : 1,
@@ -103,8 +103,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosConsulta.sexo",
-      "path" : "BuscarPersona.DatosConsulta.sexo",
+      "id" : "BuscarPersona.datosConsulta.sexo",
+      "path" : "BuscarPersona.datosConsulta.sexo",
       "short" : "Sexo",
       "definition" : "Sexo administrativo de la búsqueda.",
       "min" : 1,
@@ -114,8 +114,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosDominio",
-      "path" : "BuscarPersona.DatosDominio",
+      "id" : "BuscarPersona.datosDominio",
+      "path" : "BuscarPersona.datosDominio",
       "short" : "Dominio solicitante",
       "definition" : "Identificación del dominio que consulta.",
       "min" : 0,
@@ -125,8 +125,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosDominio.idLocalPersona",
-      "path" : "BuscarPersona.DatosDominio.idLocalPersona",
+      "id" : "BuscarPersona.datosDominio.idLocalPersona",
+      "path" : "BuscarPersona.datosDominio.idLocalPersona",
       "short" : "Id local",
       "definition" : "Identificador local opcional en el dominio.",
       "min" : 0,
@@ -136,8 +136,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosDominio.idDominio",
-      "path" : "BuscarPersona.DatosDominio.idDominio",
+      "id" : "BuscarPersona.datosDominio.idDominio",
+      "path" : "BuscarPersona.datosDominio.idDominio",
       "short" : "URI del dominio",
       "definition" : "Identificador del dominio.",
       "min" : 1,
@@ -147,8 +147,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosRespuesta",
-      "path" : "BuscarPersona.DatosRespuesta",
+      "id" : "BuscarPersona.datosRespuesta",
+      "path" : "BuscarPersona.datosRespuesta",
       "short" : "Respuesta",
       "definition" : "Datos devueltos si hay coincidencia.",
       "min" : 0,
@@ -158,8 +158,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosRespuesta.documentoIdentificatorio",
-      "path" : "BuscarPersona.DatosRespuesta.documentoIdentificatorio",
+      "id" : "BuscarPersona.datosRespuesta.documentoIdentificatorio",
+      "path" : "BuscarPersona.datosRespuesta.documentoIdentificatorio",
       "short" : "Documento encontrado",
       "definition" : "Documento de la persona encontrada.",
       "min" : 1,
@@ -169,8 +169,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosRespuesta.primerNombre",
-      "path" : "BuscarPersona.DatosRespuesta.primerNombre",
+      "id" : "BuscarPersona.datosRespuesta.primerNombre",
+      "path" : "BuscarPersona.datosRespuesta.primerNombre",
       "short" : "Primer nombre",
       "definition" : "Primer nombre encontrado.",
       "min" : 1,
@@ -180,8 +180,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosRespuesta.segundoNombre",
-      "path" : "BuscarPersona.DatosRespuesta.segundoNombre",
+      "id" : "BuscarPersona.datosRespuesta.segundoNombre",
+      "path" : "BuscarPersona.datosRespuesta.segundoNombre",
       "short" : "Segundo nombre",
       "definition" : "Segundo nombre encontrado.",
       "min" : 0,
@@ -191,8 +191,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosRespuesta.primerApellido",
-      "path" : "BuscarPersona.DatosRespuesta.primerApellido",
+      "id" : "BuscarPersona.datosRespuesta.primerApellido",
+      "path" : "BuscarPersona.datosRespuesta.primerApellido",
       "short" : "Primer apellido",
       "definition" : "Primer apellido encontrado.",
       "min" : 1,
@@ -202,8 +202,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosRespuesta.segundoApellido",
-      "path" : "BuscarPersona.DatosRespuesta.segundoApellido",
+      "id" : "BuscarPersona.datosRespuesta.segundoApellido",
+      "path" : "BuscarPersona.datosRespuesta.segundoApellido",
       "short" : "Segundo apellido",
       "definition" : "Segundo apellido encontrado.",
       "min" : 0,
@@ -213,8 +213,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosRespuesta.fechaNacimiento",
-      "path" : "BuscarPersona.DatosRespuesta.fechaNacimiento",
+      "id" : "BuscarPersona.datosRespuesta.fechaNacimiento",
+      "path" : "BuscarPersona.datosRespuesta.fechaNacimiento",
       "short" : "Fecha de nacimiento",
       "definition" : "Fecha de nacimiento encontrada.",
       "min" : 1,
@@ -224,8 +224,8 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
       }]
     },
     {
-      "id" : "BuscarPersona.DatosRespuesta.fechaDefuncion",
-      "path" : "BuscarPersona.DatosRespuesta.fechaDefuncion",
+      "id" : "BuscarPersona.datosRespuesta.fechaDefuncion",
+      "path" : "BuscarPersona.datosRespuesta.fechaDefuncion",
       "short" : "Fecha de defunción",
       "definition" : "Si aplica.",
       "min" : 0,

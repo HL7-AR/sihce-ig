@@ -50,6 +50,34 @@
     "http://hl7.org/fhir/R5/valueset-name-use.html" : "NameUse"
   },
   {
+    "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
+    "version" : "1.2.0",
+    "status" : "draft",
+    "name" : "SIHCEFhirCoreElementPaths",
+    "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
+    "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
+    "uses" : {
+    },
+    "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
+    "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
+  },
+  {
+    "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "version" : "1.2.0",
+    "status" : "draft",
+    "name" : "SIHCELogicalOperationElementPaths",
+    "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
+    "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
+    "uses" : {
+    },
+    "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
+    "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
+  },
+  {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
     "version" : "3.0.0",
     "status" : "active",

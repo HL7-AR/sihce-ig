@@ -11,13 +11,13 @@
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R5",
   "status" : "draft",
-  "date" : "2026-04-30T15:35:26-03:00",
+  "date" : "2026-04-30T18:14:12-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "packageId" : "SIHCE.fhir.core",
@@ -185,6 +185,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/NamingSystemHospitalItalianoFHIR"
+      },
+      "name" : "NamingSystem URI Hospital Italiano (ejemplo FHIR)",
+      "description" : "Identificador de dominio de ejemplo usado en instancias de este IG.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/NamingSystemMsgcGCBA"
+      },
+      "name" : "NamingSystem URI MSGC GCBA (ejemplo)",
+      "description" : "Sistema de identificadores de ejemplo para Parameters en este IG.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -255,6 +279,30 @@
       "name" : "renaper-dni",
       "description" : "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/sihce-logical-operation-element-paths"
+      },
+      "name" : "Rutas de elementos en modelos lógicos de operación SIHCE",
+      "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/sihce-fhir-core-element-paths"
+      },
+      "name" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
+      "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
+      "isExample" : false
     }],
     "page" : {
       "sourceUrl" : "toc.html",
@@ -317,6 +365,13 @@
         "code" : "releaselabel"
       },
       "value" : "ci-build"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "false"
     },
     {
       "code" : {
@@ -574,13 +629,6 @@
       "code" : {
         "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
         "code" : "excludelogbinaryformat"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "tabbed-snapshots"
       },
       "value" : "true"
     },

@@ -12,7 +12,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap BuscarPersonaModeloAFHIR</b></p><a name=\"BuscarPersonaModeloAFHIR\"> </a><a name=\"hcBuscarPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>BuscarPersona.DatosConsulta.tipoDocumento</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>BuscarPersona.DatosConsulta.documentoIdentificatorio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>BuscarPersona.DatosConsulta.sexo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td><td/></tr><tr><td>BuscarPersona.DatosDominio.idLocalPersona</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td>Slice idDominio del perfil PatientXBA: identificador local en el dominio.</td></tr><tr><td>BuscarPersona.DatosDominio.idDominio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td>Slice idDominio: system = URI del dominio.</td></tr><tr><td>BuscarPersona.DatosRespuesta.documentoIdentificatorio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>BuscarPersona.DatosRespuesta.primerNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>BuscarPersona.DatosRespuesta.segundoNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>BuscarPersona.DatosRespuesta.primerApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>BuscarPersona.DatosRespuesta.segundoApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>BuscarPersona.DatosRespuesta.fechaNacimiento</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td><td/></tr><tr><td>BuscarPersona.DatosRespuesta.fechaDefuncion</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td><td/></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>BuscarPersona.DatosDominio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Organization</td><td>El bloque dominio se correlaciona con el recurso Organization del dominio solicitante cuando se modela el actor aparte del paciente.</td></tr><tr><td>BuscarPersona.DatosDominio.idDominio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Organization.identifier</td><td/></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap BuscarPersonaModeloAFHIR</b></p><a name=\"BuscarPersonaModeloAFHIR\"> </a><a name=\"hcBuscarPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>BuscarPersona.datosConsulta.tipoDocumento (BuscarPersona datosConsulta tipoDocumento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>BuscarPersona.datosConsulta.documentoIdentificatorio (BuscarPersona datosConsulta documentoIdentificatorio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>BuscarPersona.datosConsulta.sexo (BuscarPersona datosConsulta sexo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td><td/></tr><tr><td>BuscarPersona.datosDominio.idLocalPersona (BuscarPersona datosDominio idLocalPersona)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td>Slice idDominio del perfil PatientXBA: identificador local en el dominio.</td></tr><tr><td>BuscarPersona.datosDominio.idDominio (BuscarPersona datosDominio idDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td>Slice idDominio: system = URI del dominio.</td></tr><tr><td>BuscarPersona.datosRespuesta.documentoIdentificatorio (BuscarPersona datosRespuesta documentoIdentificatorio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>BuscarPersona.datosRespuesta.primerNombre (BuscarPersona datosRespuesta primerNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>BuscarPersona.datosRespuesta.segundoNombre (BuscarPersona datosRespuesta segundoNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>BuscarPersona.datosRespuesta.primerApellido (BuscarPersona datosRespuesta primerApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>BuscarPersona.datosRespuesta.segundoApellido (BuscarPersona datosRespuesta segundoApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>BuscarPersona.datosRespuesta.fechaNacimiento (BuscarPersona datosRespuesta fechaNacimiento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td><td/></tr><tr><td>BuscarPersona.datosRespuesta.fechaDefuncion (BuscarPersona datosRespuesta fechaDefuncion)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td><td/></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>BuscarPersona.datosDominio (BuscarPersona datosDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Organization</td><td>El bloque dominio se correlaciona con el recurso Organization del dominio solicitante cuando se modela el actor aparte del paciente.</td></tr><tr><td>BuscarPersona.datosDominio.idDominio (BuscarPersona datosDominio idDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Organization.identifier</td><td/></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR"^^xsd:anyURI ;
@@ -29,97 +29,113 @@
      fhir:name [ fhir:v "SIHCE Development Team" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://sihce.gob.ar/" ]
+       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5)."] ; # 
   fhir:purpose [ fhir:v "Operación de búsqueda; el perfil SIHCE de paciente es Paciente SIHCE (PatientXBA)."] ; # 
   fhir:group ( [
+     fhir:source [
+       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths>
+     ] ;
+     fhir:target [
+       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths>
+     ] ;
      fhir:element ( [
-       fhir:code [ fhir:v "BuscarPersona.DatosConsulta.tipoDocumento" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosConsulta.tipoDocumento" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosConsulta.documentoIdentificatorio" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosConsulta.documentoIdentificatorio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosConsulta.sexo" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosConsulta.sexo" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.gender" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosDominio.idLocalPersona" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosDominio.idLocalPersona" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
          fhir:relationship [ fhir:v "equivalent" ] ;
          fhir:comment [ fhir:v "Slice idDominio del perfil PatientXBA: identificador local en el dominio." ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosDominio.idDominio" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosDominio.idDominio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
          fhir:relationship [ fhir:v "equivalent" ] ;
          fhir:comment [ fhir:v "Slice idDominio: system = URI del dominio." ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosRespuesta.documentoIdentificatorio" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosRespuesta.documentoIdentificatorio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosRespuesta.primerNombre" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosRespuesta.primerNombre" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosRespuesta.segundoNombre" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosRespuesta.segundoNombre" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosRespuesta.primerApellido" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosRespuesta.primerApellido" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosRespuesta.segundoApellido" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosRespuesta.segundoApellido" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosRespuesta.fechaNacimiento" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosRespuesta.fechaNacimiento" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.birthDate" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosRespuesta.fechaDefuncion" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosRespuesta.fechaDefuncion" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.deceased[x]" ] ;
          fhir:relationship [ fhir:v "equivalent" ]
        ] )
      ] )
   ] [
+     fhir:source [
+       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths>
+     ] ;
+     fhir:target [
+       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths>
+     ] ;
      fhir:element ( [
-       fhir:code [ fhir:v "BuscarPersona.DatosDominio" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosDominio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Organization" ] ;
          fhir:relationship [ fhir:v "equivalent" ] ;
          fhir:comment [ fhir:v "El bloque dominio se correlaciona con el recurso Organization del dominio solicitante cuando se modela el actor aparte del paciente." ]
        ] )
      ] [
-       fhir:code [ fhir:v "BuscarPersona.DatosDominio.idDominio" ] ;
+       fhir:code [ fhir:v "BuscarPersona.datosDominio.idDominio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Organization.identifier" ] ;
          fhir:relationship [ fhir:v "equivalent" ]

@@ -34,35 +34,37 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5).",
   "purpose" : "Operación de búsqueda; el perfil SIHCE de paciente es Paciente SIHCE (PatientXBA).",
   "group" : [{
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "BuscarPersona.DatosConsulta.tipoDocumento",
+      "code" : "BuscarPersona.datosConsulta.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "BuscarPersona.DatosConsulta.documentoIdentificatorio",
+      "code" : "BuscarPersona.datosConsulta.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "BuscarPersona.DatosConsulta.sexo",
+      "code" : "BuscarPersona.datosConsulta.sexo",
       "target" : [{
         "code" : "Patient.gender",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "BuscarPersona.DatosDominio.idLocalPersona",
+      "code" : "BuscarPersona.datosDominio.idLocalPersona",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent",
@@ -70,7 +72,7 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
       }]
     },
     {
-      "code" : "BuscarPersona.DatosDominio.idDominio",
+      "code" : "BuscarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent",
@@ -78,49 +80,49 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
       }]
     },
     {
-      "code" : "BuscarPersona.DatosRespuesta.documentoIdentificatorio",
+      "code" : "BuscarPersona.datosRespuesta.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "BuscarPersona.DatosRespuesta.primerNombre",
+      "code" : "BuscarPersona.datosRespuesta.primerNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "BuscarPersona.DatosRespuesta.segundoNombre",
+      "code" : "BuscarPersona.datosRespuesta.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "BuscarPersona.DatosRespuesta.primerApellido",
+      "code" : "BuscarPersona.datosRespuesta.primerApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "BuscarPersona.DatosRespuesta.segundoApellido",
+      "code" : "BuscarPersona.datosRespuesta.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "BuscarPersona.DatosRespuesta.fechaNacimiento",
+      "code" : "BuscarPersona.datosRespuesta.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "BuscarPersona.DatosRespuesta.fechaDefuncion",
+      "code" : "BuscarPersona.datosRespuesta.fechaDefuncion",
       "target" : [{
         "code" : "Patient.deceased[x]",
         "relationship" : "equivalent"
@@ -128,8 +130,10 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
     }]
   },
   {
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "BuscarPersona.DatosDominio",
+      "code" : "BuscarPersona.datosDominio",
       "target" : [{
         "code" : "Organization",
         "relationship" : "equivalent",
@@ -137,7 +141,7 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
       }]
     },
     {
-      "code" : "BuscarPersona.DatosDominio.idDominio",
+      "code" : "BuscarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Organization.identifier",
         "relationship" : "equivalent"

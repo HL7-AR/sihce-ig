@@ -4,7 +4,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap FederarPersonaModeloAFHIR</b></p><a name=\"FederarPersonaModeloAFHIR\"> </a><a name=\"hcFederarPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>FederarPersona.DatosPersona.tipoDocumento</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>FederarPersona.DatosPersona.documentoIdentificatorio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>FederarPersona.DatosPersona.sexo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td><td/></tr><tr><td>FederarPersona.DatosPersona.primerNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>FederarPersona.DatosPersona.segundoNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>FederarPersona.DatosPersona.primerApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>FederarPersona.DatosPersona.segundoApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>FederarPersona.DatosPersona.fechaNacimiento</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td><td/></tr><tr><td>FederarPersona.DatosDominio.idLocalPersona</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>FederarPersona.DatosDominio.idDominio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>FederarPersona.DatosFederacion.idPersonaGlobal</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td>Identificador maestro / global según política del FederadorBA (p. ej. identifier adicional).</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>FederarPersona.DatosDominio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Organization</td></tr><tr><td>FederarPersona.DatosDominio.idDominio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Organization.identifier</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>FederarPersona.DatosFederacion.mensaje</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>OperationOutcome.issue</td><td>Texto informativo o de error en respuesta de operación.</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap FederarPersonaModeloAFHIR</b></p><a name=\"FederarPersonaModeloAFHIR\"> </a><a name=\"hcFederarPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>FederarPersona.datosPersona.tipoDocumento (FederarPersona datosPersona tipoDocumento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>FederarPersona.datosPersona.documentoIdentificatorio (FederarPersona datosPersona documentoIdentificatorio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>FederarPersona.datosPersona.sexo (FederarPersona datosPersona sexo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td><td/></tr><tr><td>FederarPersona.datosPersona.primerNombre (FederarPersona datosPersona primerNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>FederarPersona.datosPersona.segundoNombre (FederarPersona datosPersona segundoNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>FederarPersona.datosPersona.primerApellido (FederarPersona datosPersona primerApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>FederarPersona.datosPersona.segundoApellido (FederarPersona datosPersona segundoApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>FederarPersona.datosPersona.fechaNacimiento (FederarPersona datosPersona fechaNacimiento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td><td/></tr><tr><td>FederarPersona.datosDominio.idLocalPersona (FederarPersona datosDominio idLocalPersona)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>FederarPersona.datosDominio.idDominio (FederarPersona datosDominio idDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>FederarPersona.datosFederacion.idPersonaGlobal (FederarPersona datosFederacion idPersonaGlobal)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td><td>Identificador maestro / global según política del FederadorBA (p. ej. identifier adicional).</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>FederarPersona.datosDominio (FederarPersona datosDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Organization</td></tr><tr><td>FederarPersona.datosDominio.idDominio (FederarPersona datosDominio idDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Organization.identifier</td></tr></table><hr/><p><b>Group 3 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>FederarPersona.datosFederacion.mensaje (FederarPersona datosFederacion mensaje)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>OperationOutcome.issue</td><td>Texto informativo o de error en respuesta de operación.</td></tr></table></div>"
   },
   "url" : "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR",
   "version" : "1.2.0",
@@ -18,84 +18,86 @@
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado.",
   "purpose" : "Federación de persona; resultado incluye id global y mensaje.",
   "group" : [{
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "FederarPersona.DatosPersona.tipoDocumento",
+      "code" : "FederarPersona.datosPersona.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.documentoIdentificatorio",
+      "code" : "FederarPersona.datosPersona.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.sexo",
+      "code" : "FederarPersona.datosPersona.sexo",
       "target" : [{
         "code" : "Patient.gender",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.primerNombre",
+      "code" : "FederarPersona.datosPersona.primerNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.segundoNombre",
+      "code" : "FederarPersona.datosPersona.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.primerApellido",
+      "code" : "FederarPersona.datosPersona.primerApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.segundoApellido",
+      "code" : "FederarPersona.datosPersona.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.fechaNacimiento",
+      "code" : "FederarPersona.datosPersona.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosDominio.idLocalPersona",
+      "code" : "FederarPersona.datosDominio.idLocalPersona",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosDominio.idDominio",
+      "code" : "FederarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosFederacion.idPersonaGlobal",
+      "code" : "FederarPersona.datosFederacion.idPersonaGlobal",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent",
@@ -104,15 +106,17 @@
     }]
   },
   {
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "FederarPersona.DatosDominio",
+      "code" : "FederarPersona.datosDominio",
       "target" : [{
         "code" : "Organization",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosDominio.idDominio",
+      "code" : "FederarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Organization.identifier",
         "relationship" : "equivalent"
@@ -120,8 +124,10 @@
     }]
   },
   {
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "FederarPersona.DatosFederacion.mensaje",
+      "code" : "FederarPersona.datosFederacion.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
         "relationship" : "equivalent",

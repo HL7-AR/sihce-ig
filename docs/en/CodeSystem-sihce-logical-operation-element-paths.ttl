@@ -1,0 +1,213 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sihce-logical-operation-element-paths"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-logical-operation-element-paths</b></p><a name=\"sihce-logical-operation-element-paths\"> </a><a name=\"hcsihce-logical-operation-element-paths\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosConsulta.tipoDocumento<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosConsulta.46tipoDocumento\"> </a></td><td>BuscarPersona datosConsulta tipoDocumento</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosConsulta.documentoIdentificatorio<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosConsulta.46documentoIdentificatorio\"> </a></td><td>BuscarPersona datosConsulta documentoIdentificatorio</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosConsulta.sexo<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosConsulta.46sexo\"> </a></td><td>BuscarPersona datosConsulta sexo</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosDominio.idLocalPersona<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosDominio.46idLocalPersona\"> </a></td><td>BuscarPersona datosDominio idLocalPersona</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosDominio.idDominio<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosDominio.46idDominio\"> </a></td><td>BuscarPersona datosDominio idDominio</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosDominio<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosDominio\"> </a></td><td>BuscarPersona datosDominio</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosRespuesta.documentoIdentificatorio<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46documentoIdentificatorio\"> </a></td><td>BuscarPersona datosRespuesta documentoIdentificatorio</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosRespuesta.primerNombre<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46primerNombre\"> </a></td><td>BuscarPersona datosRespuesta primerNombre</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosRespuesta.segundoNombre<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46segundoNombre\"> </a></td><td>BuscarPersona datosRespuesta segundoNombre</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosRespuesta.primerApellido<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46primerApellido\"> </a></td><td>BuscarPersona datosRespuesta primerApellido</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosRespuesta.segundoApellido<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46segundoApellido\"> </a></td><td>BuscarPersona datosRespuesta segundoApellido</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosRespuesta.fechaNacimiento<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46fechaNacimiento\"> </a></td><td>BuscarPersona datosRespuesta fechaNacimiento</td></tr><tr><td style=\"white-space:nowrap\">BuscarPersona.datosRespuesta.fechaDefuncion<a name=\"sihce-logical-operation-element-paths-BuscarPersona.46datosRespuesta.46fechaDefuncion\"> </a></td><td>BuscarPersona datosRespuesta fechaDefuncion</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosPersona.tipoDocumento<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46tipoDocumento\"> </a></td><td>FederarPersona datosPersona tipoDocumento</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosPersona.documentoIdentificatorio<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46documentoIdentificatorio\"> </a></td><td>FederarPersona datosPersona documentoIdentificatorio</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosPersona.sexo<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46sexo\"> </a></td><td>FederarPersona datosPersona sexo</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosPersona.primerNombre<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46primerNombre\"> </a></td><td>FederarPersona datosPersona primerNombre</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosPersona.segundoNombre<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46segundoNombre\"> </a></td><td>FederarPersona datosPersona segundoNombre</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosPersona.primerApellido<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46primerApellido\"> </a></td><td>FederarPersona datosPersona primerApellido</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosPersona.segundoApellido<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46segundoApellido\"> </a></td><td>FederarPersona datosPersona segundoApellido</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosPersona.fechaNacimiento<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosPersona.46fechaNacimiento\"> </a></td><td>FederarPersona datosPersona fechaNacimiento</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosDominio.idLocalPersona<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosDominio.46idLocalPersona\"> </a></td><td>FederarPersona datosDominio idLocalPersona</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosDominio.idDominio<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosDominio.46idDominio\"> </a></td><td>FederarPersona datosDominio idDominio</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosDominio<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosDominio\"> </a></td><td>FederarPersona datosDominio</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosFederacion.idPersonaGlobal<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosFederacion.46idPersonaGlobal\"> </a></td><td>FederarPersona datosFederacion idPersonaGlobal</td></tr><tr><td style=\"white-space:nowrap\">FederarPersona.datosFederacion.mensaje<a name=\"sihce-logical-operation-element-paths-FederarPersona.46datosFederacion.46mensaje\"> </a></td><td>FederarPersona datosFederacion mensaje</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosPersona.tipoDocumento<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46tipoDocumento\"> </a></td><td>ModificarIDLocalPersona datosPersona tipoDocumento</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosPersona.documentoIdentificatorio<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46documentoIdentificatorio\"> </a></td><td>ModificarIDLocalPersona datosPersona documentoIdentificatorio</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosPersona.sexo<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46sexo\"> </a></td><td>ModificarIDLocalPersona datosPersona sexo</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosPersona.primerNombre<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46primerNombre\"> </a></td><td>ModificarIDLocalPersona datosPersona primerNombre</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosPersona.segundoNombre<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46segundoNombre\"> </a></td><td>ModificarIDLocalPersona datosPersona segundoNombre</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosPersona.primerApellido<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46primerApellido\"> </a></td><td>ModificarIDLocalPersona datosPersona primerApellido</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosPersona.segundoApellido<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46segundoApellido\"> </a></td><td>ModificarIDLocalPersona datosPersona segundoApellido</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosPersona.fechaNacimiento<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosPersona.46fechaNacimiento\"> </a></td><td>ModificarIDLocalPersona datosPersona fechaNacimiento</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosModificacion.idDominio<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosModificacion.46idDominio\"> </a></td><td>ModificarIDLocalPersona datosModificacion idDominio</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosModificacion.46idLocalPersonaActual\"> </a></td><td>ModificarIDLocalPersona datosModificacion idLocalPersonaActual</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosModificacion.46idLocalPersonaNuevo\"> </a></td><td>ModificarIDLocalPersona datosModificacion idLocalPersonaNuevo</td></tr><tr><td style=\"white-space:nowrap\">ModificarIDLocalPersona.datosRespuesta.mensaje<a name=\"sihce-logical-operation-element-paths-ModificarIDLocalPersona.46datosRespuesta.46mensaje\"> </a></td><td>ModificarIDLocalPersona datosRespuesta mensaje</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmActual.tipoDocumento<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46tipoDocumento\"> </a></td><td>ModificarSDMPersona sdmActual tipoDocumento</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmActual.documentoIdentificatorio<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46documentoIdentificatorio\"> </a></td><td>ModificarSDMPersona sdmActual documentoIdentificatorio</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmActual.sexo<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46sexo\"> </a></td><td>ModificarSDMPersona sdmActual sexo</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmActual.primerNombre<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46primerNombre\"> </a></td><td>ModificarSDMPersona sdmActual primerNombre</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmActual.segundoNombre<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46segundoNombre\"> </a></td><td>ModificarSDMPersona sdmActual segundoNombre</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmActual.primerApellido<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46primerApellido\"> </a></td><td>ModificarSDMPersona sdmActual primerApellido</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmActual.segundoApellido<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46segundoApellido\"> </a></td><td>ModificarSDMPersona sdmActual segundoApellido</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmActual.fechaNacimiento<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46fechaNacimiento\"> </a></td><td>ModificarSDMPersona sdmActual fechaNacimiento</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmActual.fechaDefuncion<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmActual.46fechaDefuncion\"> </a></td><td>ModificarSDMPersona sdmActual fechaDefuncion</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmNuevo.sexo<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46sexo\"> </a></td><td>ModificarSDMPersona sdmNuevo sexo</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmNuevo.primerNombre<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46primerNombre\"> </a></td><td>ModificarSDMPersona sdmNuevo primerNombre</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmNuevo.segundoNombre<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46segundoNombre\"> </a></td><td>ModificarSDMPersona sdmNuevo segundoNombre</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmNuevo.primerApellido<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46primerApellido\"> </a></td><td>ModificarSDMPersona sdmNuevo primerApellido</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmNuevo.segundoApellido<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46segundoApellido\"> </a></td><td>ModificarSDMPersona sdmNuevo segundoApellido</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmNuevo.fechaNacimiento<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46fechaNacimiento\"> </a></td><td>ModificarSDMPersona sdmNuevo fechaNacimiento</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.sdmNuevo.fechaDefuncion<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46sdmNuevo.46fechaDefuncion\"> </a></td><td>ModificarSDMPersona sdmNuevo fechaDefuncion</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.datosDominio.idDominio<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46datosDominio.46idDominio\"> </a></td><td>ModificarSDMPersona datosDominio idDominio</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.datosDominio.idLocalPersona<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46datosDominio.46idLocalPersona\"> </a></td><td>ModificarSDMPersona datosDominio idLocalPersona</td></tr><tr><td style=\"white-space:nowrap\">ModificarSDMPersona.datosRespuesta.mensaje<a name=\"sihce-logical-operation-element-paths-ModificarSDMPersona.46datosRespuesta.46mensaje\"> </a></td><td>ModificarSDMPersona datosRespuesta mensaje</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"^^xsd:anyURI ;
+     fhir:l <http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths>
+  ] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:name [ fhir:v "SIHCELogicalOperationElementPaths"] ; # 
+  fhir:title [ fhir:v "Rutas de elementos en modelos lógicos de operación SIHCE"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-30T18:14:12-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SIHCE Development Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "57"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BuscarPersona.datosConsulta.tipoDocumento" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosConsulta tipoDocumento" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosConsulta.documentoIdentificatorio" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosConsulta documentoIdentificatorio" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosConsulta.sexo" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosConsulta sexo" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosDominio.idLocalPersona" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosDominio idLocalPersona" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosDominio.idDominio" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosDominio idDominio" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosDominio" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosDominio" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosRespuesta.documentoIdentificatorio" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosRespuesta documentoIdentificatorio" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosRespuesta.primerNombre" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosRespuesta primerNombre" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosRespuesta.segundoNombre" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosRespuesta segundoNombre" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosRespuesta.primerApellido" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosRespuesta primerApellido" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosRespuesta.segundoApellido" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosRespuesta segundoApellido" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosRespuesta.fechaNacimiento" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosRespuesta fechaNacimiento" ]
+  ] [
+     fhir:code [ fhir:v "BuscarPersona.datosRespuesta.fechaDefuncion" ] ;
+     fhir:display [ fhir:v "BuscarPersona datosRespuesta fechaDefuncion" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosPersona.tipoDocumento" ] ;
+     fhir:display [ fhir:v "FederarPersona datosPersona tipoDocumento" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosPersona.documentoIdentificatorio" ] ;
+     fhir:display [ fhir:v "FederarPersona datosPersona documentoIdentificatorio" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosPersona.sexo" ] ;
+     fhir:display [ fhir:v "FederarPersona datosPersona sexo" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosPersona.primerNombre" ] ;
+     fhir:display [ fhir:v "FederarPersona datosPersona primerNombre" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosPersona.segundoNombre" ] ;
+     fhir:display [ fhir:v "FederarPersona datosPersona segundoNombre" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosPersona.primerApellido" ] ;
+     fhir:display [ fhir:v "FederarPersona datosPersona primerApellido" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosPersona.segundoApellido" ] ;
+     fhir:display [ fhir:v "FederarPersona datosPersona segundoApellido" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosPersona.fechaNacimiento" ] ;
+     fhir:display [ fhir:v "FederarPersona datosPersona fechaNacimiento" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosDominio.idLocalPersona" ] ;
+     fhir:display [ fhir:v "FederarPersona datosDominio idLocalPersona" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosDominio.idDominio" ] ;
+     fhir:display [ fhir:v "FederarPersona datosDominio idDominio" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosDominio" ] ;
+     fhir:display [ fhir:v "FederarPersona datosDominio" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosFederacion.idPersonaGlobal" ] ;
+     fhir:display [ fhir:v "FederarPersona datosFederacion idPersonaGlobal" ]
+  ] [
+     fhir:code [ fhir:v "FederarPersona.datosFederacion.mensaje" ] ;
+     fhir:display [ fhir:v "FederarPersona datosFederacion mensaje" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.tipoDocumento" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosPersona tipoDocumento" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.documentoIdentificatorio" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosPersona documentoIdentificatorio" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.sexo" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosPersona sexo" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.primerNombre" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosPersona primerNombre" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.segundoNombre" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosPersona segundoNombre" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.primerApellido" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosPersona primerApellido" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.segundoApellido" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosPersona segundoApellido" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.fechaNacimiento" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosPersona fechaNacimiento" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosModificacion.idDominio" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosModificacion idDominio" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosModificacion idLocalPersonaActual" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosModificacion idLocalPersonaNuevo" ]
+  ] [
+     fhir:code [ fhir:v "ModificarIDLocalPersona.datosRespuesta.mensaje" ] ;
+     fhir:display [ fhir:v "ModificarIDLocalPersona datosRespuesta mensaje" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.tipoDocumento" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmActual tipoDocumento" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.documentoIdentificatorio" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmActual documentoIdentificatorio" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.sexo" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmActual sexo" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.primerNombre" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmActual primerNombre" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.segundoNombre" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmActual segundoNombre" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.primerApellido" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmActual primerApellido" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.segundoApellido" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmActual segundoApellido" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.fechaNacimiento" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmActual fechaNacimiento" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.fechaDefuncion" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmActual fechaDefuncion" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.sexo" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmNuevo sexo" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.primerNombre" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmNuevo primerNombre" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.segundoNombre" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmNuevo segundoNombre" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.primerApellido" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmNuevo primerApellido" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.segundoApellido" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmNuevo segundoApellido" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.fechaNacimiento" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmNuevo fechaNacimiento" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.fechaDefuncion" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona sdmNuevo fechaDefuncion" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.datosDominio.idDominio" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona datosDominio idDominio" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.datosDominio.idLocalPersona" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona datosDominio idLocalPersona" ]
+  ] [
+     fhir:code [ fhir:v "ModificarSDMPersona.datosRespuesta.mensaje" ] ;
+     fhir:display [ fhir:v "ModificarSDMPersona datosRespuesta mensaje" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

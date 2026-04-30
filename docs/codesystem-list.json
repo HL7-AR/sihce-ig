@@ -1,3 +1,18 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
+    "version" : "1.2.0",
+    "status" : "draft",
+    "name" : "SIHCEFhirCoreElementPaths",
+    "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
+    "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition)."
+  },
+  {
+    "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "version" : "1.2.0",
+    "status" : "draft",
+    "name" : "SIHCELogicalOperationElementPaths",
+    "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
+    "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...)."
+  }]
 }

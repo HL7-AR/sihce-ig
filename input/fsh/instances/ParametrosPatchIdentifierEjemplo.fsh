@@ -9,5 +9,5 @@ Description: "Ejemplo de Parámetros para actualizar identificador local."
 * parameter[newIdentifier].name = "new-identifier"
 * parameter[newIdentifier].valueIdentifier.system = "http://msgc.gcba.gob.ar"
 * parameter[newIdentifier].valueIdentifier.value = "9876543210"
-* parameter[patient].name = "patient"
-* parameter[patient].resource = PersonaSIHCEPatch
+* parameter[patientPayload].name = "patient"
+* parameter[patientPayload].resource = PersonaSIHCEPatch

@@ -47,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
@@ -76,8 +76,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       "definition" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"
     },
     {
-      "id" : "MLPersona.NombreOficial",
-      "path" : "MLPersona.NombreOficial",
+      "id" : "MLPersona.nombreOficial",
+      "path" : "MLPersona.nombreOficial",
       "short" : "Nombre oficial de la persona",
       "definition" : "Nombre oficial de la persona",
       "min" : 1,
@@ -92,8 +92,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.NombreOficial.PrimerNombre",
-      "path" : "MLPersona.NombreOficial.PrimerNombre",
+      "id" : "MLPersona.nombreOficial.primerNombre",
+      "path" : "MLPersona.nombreOficial.primerNombre",
       "short" : "Primer nombre",
       "definition" : "Primer nombre",
       "min" : 1,
@@ -108,8 +108,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.NombreOficial.OtrosNombres",
-      "path" : "MLPersona.NombreOficial.OtrosNombres",
+      "id" : "MLPersona.nombreOficial.otrosNombres",
+      "path" : "MLPersona.nombreOficial.otrosNombres",
       "short" : "Siguientes nombres",
       "definition" : "Siguientes nombres",
       "min" : 0,
@@ -124,8 +124,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.NombreOficial.PrimerApellido",
-      "path" : "MLPersona.NombreOficial.PrimerApellido",
+      "id" : "MLPersona.nombreOficial.primerApellido",
+      "path" : "MLPersona.nombreOficial.primerApellido",
       "short" : "Primer parte del apellido o primer apellido",
       "definition" : "Primer parte del apellido o primer apellido",
       "min" : 1,
@@ -140,8 +140,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.NombreOficial.SegundoApellido",
-      "path" : "MLPersona.NombreOficial.SegundoApellido",
+      "id" : "MLPersona.nombreOficial.segundoApellido",
+      "path" : "MLPersona.nombreOficial.segundoApellido",
       "short" : "Resto del o los apellido(s)",
       "definition" : "Resto del o los apellido(s)",
       "min" : 0,
@@ -156,8 +156,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.NombreSocial",
-      "path" : "MLPersona.NombreSocial",
+      "id" : "MLPersona.nombreSocial",
+      "path" : "MLPersona.nombreSocial",
       "short" : "Nombre o pseudonimo por el cual la persona desea ser identificada",
       "definition" : "Nombre o pseudonimo por el cual la persona desea ser identificada",
       "min" : 0,
@@ -172,8 +172,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.NombreSocial.Nombre",
-      "path" : "MLPersona.NombreSocial.Nombre",
+      "id" : "MLPersona.nombreSocial.nombre",
+      "path" : "MLPersona.nombreSocial.nombre",
       "short" : "Nombre de pila por el cual la persona desea ser identificada",
       "definition" : "Nombre de pila por el cual la persona desea ser identificada",
       "min" : 1,
@@ -188,8 +188,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.IdentificadorUnivoco",
-      "path" : "MLPersona.IdentificadorUnivoco",
+      "id" : "MLPersona.identificadorUnivoco",
+      "path" : "MLPersona.identificadorUnivoco",
       "short" : "Identificador unívoco de la persona",
       "definition" : "DNI + Identificador de dominio local",
       "min" : 2,
@@ -204,8 +204,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.IdentificadorUnivoco.TipoDoc",
-      "path" : "MLPersona.IdentificadorUnivoco.TipoDoc",
+      "id" : "MLPersona.identificadorUnivoco.tipoDoc",
+      "path" : "MLPersona.identificadorUnivoco.tipoDoc",
       "short" : "Que documento se va a usar",
       "definition" : "Que documento se va a usar",
       "min" : 1,
@@ -220,8 +220,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.IdentificadorUnivoco.NroDoc",
-      "path" : "MLPersona.IdentificadorUnivoco.NroDoc",
+      "id" : "MLPersona.identificadorUnivoco.nroDoc",
+      "path" : "MLPersona.identificadorUnivoco.nroDoc",
       "short" : "El valor del numero de DNI por ejemplo",
       "definition" : "El valor del numero de DNI por ejemplo",
       "min" : 1,
@@ -236,8 +236,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.IdentificadorUnivoco.URIDominio",
-      "path" : "MLPersona.IdentificadorUnivoco.URIDominio",
+      "id" : "MLPersona.identificadorUnivoco.uriDominio",
+      "path" : "MLPersona.identificadorUnivoco.uriDominio",
       "short" : "URI del dominio que federó el paciente",
       "definition" : "URI del dominio que federó el paciente",
       "min" : 1,
@@ -252,8 +252,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.IdentificadorUnivoco.idLocal",
-      "path" : "MLPersona.IdentificadorUnivoco.idLocal",
+      "id" : "MLPersona.identificadorUnivoco.idLocal",
+      "path" : "MLPersona.identificadorUnivoco.idLocal",
       "short" : "ID local del paciente en el dominio",
       "definition" : "ID local del paciente en el dominio",
       "min" : 1,
@@ -268,8 +268,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.GeneroAdministrativo",
-      "path" : "MLPersona.GeneroAdministrativo",
+      "id" : "MLPersona.generoAdministrativo",
+      "path" : "MLPersona.generoAdministrativo",
       "short" : "Género de registro administrativo, por ejemplo el que figure en su DNI",
       "definition" : "Género de registro administrativo, por ejemplo el que figure en su DNI",
       "min" : 1,
@@ -284,8 +284,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.FechaNacimiento",
-      "path" : "MLPersona.FechaNacimiento",
+      "id" : "MLPersona.fechaNacimiento",
+      "path" : "MLPersona.fechaNacimiento",
       "short" : "Fecha y hora de nacimiento",
       "definition" : "Fecha y hora de nacimiento",
       "min" : 1,
@@ -300,8 +300,8 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       }]
     },
     {
-      "id" : "MLPersona.Estado",
-      "path" : "MLPersona.Estado",
+      "id" : "MLPersona.estado",
+      "path" : "MLPersona.estado",
       "short" : "Inactivo | Validado | Permanente | Temporal",
       "definition" : "Inactivo | Validado | Permanente | Temporal",
       "min" : 1,

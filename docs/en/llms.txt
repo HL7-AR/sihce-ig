@@ -13,6 +13,11 @@
 
 ## Resources
 
+### CodeSystems
+
+* [Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE](CodeSystem-sihce-fhir-core-element-paths.md)
+* [Rutas de elementos en modelos lógicos de operación SIHCE](CodeSystem-sihce-logical-operation-element-paths.md)
+
 ### Logicals
 
 * [Modelo lógico BuscarPersona (FederadorBA)](StructureDefinition-BuscarPersona.md)
@@ -40,6 +45,8 @@
 
 ### NamingSystems
 
+* [NamingSystem URI Hospital Italiano (ejemplo FHIR)](NamingSystem-NamingSystemHospitalItalianoFHIR.md)
+* [NamingSystem URI MSGC GCBA (ejemplo)](NamingSystem-NamingSystemMsgcGCBA.md)
 * [RenaperDNI](NamingSystem-renaper-dni.md)
 
 ### Examples

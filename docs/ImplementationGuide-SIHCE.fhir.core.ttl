@@ -22,13 +22,13 @@
   fhir:name [ fhir:v "GuiaDeImplementacionSIHCE"] ; # 
   fhir:title [ fhir:v "Guía de Implementación SIHCE - FHIR R5"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-30T15:35:26-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-30T18:14:12-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://sihce.gob.ar/" ]
+       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
      ] )
   ] ) ; # 
   fhir:packageId [ fhir:v "SIHCE.fhir.core"] ; # 
@@ -296,6 +296,42 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR> ;
+         fhir:reference [ fhir:v "NamingSystem/NamingSystemHospitalItalianoFHIR" ]
+       ] ;
+       fhir:name [ fhir:v "NamingSystem URI Hospital Italiano (ejemplo FHIR)" ] ;
+       fhir:description [ fhir:v "Identificador de dominio de ejemplo usado en instancias de este IG." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/NamingSystem/NamingSystemMsgcGCBA> ;
+         fhir:reference [ fhir:v "NamingSystem/NamingSystemMsgcGCBA" ]
+       ] ;
+       fhir:name [ fhir:v "NamingSystem URI MSGC GCBA (ejemplo)" ] ;
+       fhir:description [ fhir:v "Sistema de identificadores de ejemplo para Parameters en este IG." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -403,6 +439,42 @@
        ] ;
        fhir:name [ fhir:v "renaper-dni" ] ;
        fhir:description [ fhir:v "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths> ;
+         fhir:reference [ fhir:v "CodeSystem/sihce-logical-operation-element-paths" ]
+       ] ;
+       fhir:name [ fhir:v "Rutas de elementos en modelos lógicos de operación SIHCE" ] ;
+       fhir:description [ fhir:v "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...)." ] ;
+       fhir:isExample [ fhir:v false ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths> ;
+         fhir:reference [ fhir:v "CodeSystem/sihce-fhir-core-element-paths" ]
+       ] ;
+       fhir:name [ fhir:v "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE" ] ;
+       fhir:description [ fhir:v "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition)." ] ;
        fhir:isExample [ fhir:v false ]
      ] ) ;
      fhir:page [
@@ -521,6 +593,15 @@
          fhir:code [ fhir:v "releaselabel" ]
        ] ;
        fhir:value [ fhir:v "ci-build" ]
+     ] [
+       fhir:code [
+         fhir:system [
+           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
+         ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
      ] [
        fhir:code [
          fhir:system [
@@ -852,15 +933,6 @@
            fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
          ] ;
          fhir:code [ fhir:v "excludelogbinaryformat" ]
-       ] ;
-       fhir:value [ fhir:v "true" ]
-     ] [
-       fhir:code [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/CodeSystem/ig-parameters>
-         ] ;
-         fhir:code [ fhir:v "tabbed-snapshots" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [

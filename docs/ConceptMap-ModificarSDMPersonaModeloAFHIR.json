@@ -3,7 +3,7 @@
   "id" : "ModificarSDMPersonaModeloAFHIR",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ModificarSDMPersonaModeloAFHIR</b></p><a name=\"ModificarSDMPersonaModeloAFHIR\"> </a><a name=\"hcModificarSDMPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.SDMActual.tipoDocumento</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.SDMActual.documentoIdentificatorio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.SDMActual.sexo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.SDMActual.primerNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMActual.segundoNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMActual.primerApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMActual.segundoApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMActual.fechaNacimiento</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.SDMActual.fechaDefuncion</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.sexo</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.primerNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.segundoNombre</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.primerApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.segundoApellido</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.fechaNacimiento</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.SDMNuevo.fechaDefuncion</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.DatosDominio.idDominio</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.DatosDominio.idLocalPersona</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.DatosRespuesta.mensaje</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>OperationOutcome.issue</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ModificarSDMPersonaModeloAFHIR</b></p><a name=\"ModificarSDMPersonaModeloAFHIR\"> </a><a name=\"hcModificarSDMPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.sdmActual.tipoDocumento (ModificarSDMPersona sdmActual tipoDocumento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.sdmActual.documentoIdentificatorio (ModificarSDMPersona sdmActual documentoIdentificatorio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.sdmActual.sexo (ModificarSDMPersona sdmActual sexo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.sdmActual.primerNombre (ModificarSDMPersona sdmActual primerNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.segundoNombre (ModificarSDMPersona sdmActual segundoNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.primerApellido (ModificarSDMPersona sdmActual primerApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.segundoApellido (ModificarSDMPersona sdmActual segundoApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.fechaNacimiento (ModificarSDMPersona sdmActual fechaNacimiento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.sdmActual.fechaDefuncion (ModificarSDMPersona sdmActual fechaDefuncion)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.sexo (ModificarSDMPersona sdmNuevo sexo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.primerNombre (ModificarSDMPersona sdmNuevo primerNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.segundoNombre (ModificarSDMPersona sdmNuevo segundoNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.primerApellido (ModificarSDMPersona sdmNuevo primerApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.segundoApellido (ModificarSDMPersona sdmNuevo segundoApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.fechaNacimiento (ModificarSDMPersona sdmNuevo fechaNacimiento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.fechaDefuncion (ModificarSDMPersona sdmNuevo fechaDefuncion)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.datosDominio.idDominio (ModificarSDMPersona datosDominio idDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.datosDominio.idLocalPersona (ModificarSDMPersona datosDominio idLocalPersona)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.datosRespuesta.mensaje (ModificarSDMPersona datosRespuesta mensaje)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>OperationOutcome.issue</td></tr></table></div>"
   },
   "url" : "http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR",
   "version" : "1.2.0",
@@ -17,133 +17,135 @@
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome.",
   "purpose" : "Actualización de SDM con documento inmutable; correlación con PatientXBA.",
   "group" : [{
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "ModificarSDMPersona.SDMActual.tipoDocumento",
+      "code" : "ModificarSDMPersona.sdmActual.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMActual.documentoIdentificatorio",
+      "code" : "ModificarSDMPersona.sdmActual.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMActual.sexo",
+      "code" : "ModificarSDMPersona.sdmActual.sexo",
       "target" : [{
         "code" : "Patient.gender",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMActual.primerNombre",
+      "code" : "ModificarSDMPersona.sdmActual.primerNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMActual.segundoNombre",
+      "code" : "ModificarSDMPersona.sdmActual.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMActual.primerApellido",
+      "code" : "ModificarSDMPersona.sdmActual.primerApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMActual.segundoApellido",
+      "code" : "ModificarSDMPersona.sdmActual.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMActual.fechaNacimiento",
+      "code" : "ModificarSDMPersona.sdmActual.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMActual.fechaDefuncion",
+      "code" : "ModificarSDMPersona.sdmActual.fechaDefuncion",
       "target" : [{
         "code" : "Patient.deceased[x]",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMNuevo.sexo",
+      "code" : "ModificarSDMPersona.sdmNuevo.sexo",
       "target" : [{
         "code" : "Patient.gender",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMNuevo.primerNombre",
+      "code" : "ModificarSDMPersona.sdmNuevo.primerNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMNuevo.segundoNombre",
+      "code" : "ModificarSDMPersona.sdmNuevo.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMNuevo.primerApellido",
+      "code" : "ModificarSDMPersona.sdmNuevo.primerApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMNuevo.segundoApellido",
+      "code" : "ModificarSDMPersona.sdmNuevo.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMNuevo.fechaNacimiento",
+      "code" : "ModificarSDMPersona.sdmNuevo.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.SDMNuevo.fechaDefuncion",
+      "code" : "ModificarSDMPersona.sdmNuevo.fechaDefuncion",
       "target" : [{
         "code" : "Patient.deceased[x]",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.DatosDominio.idDominio",
+      "code" : "ModificarSDMPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarSDMPersona.DatosDominio.idLocalPersona",
+      "code" : "ModificarSDMPersona.datosDominio.idLocalPersona",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
@@ -151,8 +153,10 @@
     }]
   },
   {
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "ModificarSDMPersona.DatosRespuesta.mensaje",
+      "code" : "ModificarSDMPersona.datosRespuesta.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
         "relationship" : "equivalent"

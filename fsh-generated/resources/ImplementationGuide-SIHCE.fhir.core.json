@@ -13,7 +13,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "http://sihce.gob.ar/"
+          "value": "https://github.com/diegokaminker/sihce-ig"
         }
       ]
     }
@@ -120,6 +120,22 @@
       },
       {
         "reference": {
+          "reference": "NamingSystem/NamingSystemHospitalItalianoFHIR"
+        },
+        "name": "NamingSystem URI Hospital Italiano (ejemplo FHIR)",
+        "description": "Identificador de dominio de ejemplo usado en instancias de este IG.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/NamingSystemMsgcGCBA"
+        },
+        "name": "NamingSystem URI MSGC GCBA (ejemplo)",
+        "description": "Sistema de identificadores de ejemplo para Parameters en este IG.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/PatientXBA"
         },
         "name": "Paciente SIHCE (PatientXBA)",
@@ -170,6 +186,22 @@
         },
         "name": "renaper-dni",
         "description": "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/sihce-logical-operation-element-paths"
+        },
+        "name": "Rutas de elementos en modelos lógicos de operación SIHCE",
+        "description": "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/sihce-fhir-core-element-paths"
+        },
+        "name": "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
+        "description": "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
         "isExample": false
       }
     ],
@@ -237,6 +269,13 @@
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
         "value": "ci-build"
+      },
+      {
+        "code": {
+          "code": "tabbed-snapshots",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "false"
       }
     ]
   }

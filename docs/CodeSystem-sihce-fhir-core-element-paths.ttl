@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sihce-fhir-core-element-paths"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-fhir-core-element-paths</b></p><a name=\"sihce-fhir-core-element-paths\"> </a><a name=\"hcsihce-fhir-core-element-paths\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Patient.identifier<a name=\"sihce-fhir-core-element-paths-Patient.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.name<a name=\"sihce-fhir-core-element-paths-Patient.46name\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.gender<a name=\"sihce-fhir-core-element-paths-Patient.46gender\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.birthDate<a name=\"sihce-fhir-core-element-paths-Patient.46birthDate\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.deceased[x]<a name=\"sihce-fhir-core-element-paths-Patient.46deceased.91x.93\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization<a name=\"sihce-fhir-core-element-paths-Organization\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization.identifier<a name=\"sihce-fhir-core-element-paths-Organization.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OperationOutcome.issue<a name=\"sihce-fhir-core-element-paths-OperationOutcome.46issue\"> </a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"^^xsd:anyURI ;
+     fhir:l <http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths>
+  ] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:name [ fhir:v "SIHCEFhirCoreElementPaths"] ; # 
+  fhir:title [ fhir:v "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-04-30T18:14:12-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SIHCE Development Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Patient.identifier" ] ;
+     fhir:display [ fhir:v "Patient.identifier" ]
+  ] [
+     fhir:code [ fhir:v "Patient.name" ] ;
+     fhir:display [ fhir:v "Patient.name" ]
+  ] [
+     fhir:code [ fhir:v "Patient.gender" ] ;
+     fhir:display [ fhir:v "Patient.gender" ]
+  ] [
+     fhir:code [ fhir:v "Patient.birthDate" ] ;
+     fhir:display [ fhir:v "Patient.birthDate" ]
+  ] [
+     fhir:code [ fhir:v "Patient.deceased[x]" ] ;
+     fhir:display [ fhir:v "Patient.deceased[x]" ]
+  ] [
+     fhir:code [ fhir:v "Organization" ] ;
+     fhir:display [ fhir:v "Organization" ]
+  ] [
+     fhir:code [ fhir:v "Organization.identifier" ] ;
+     fhir:display [ fhir:v "Organization.identifier" ]
+  ] [
+     fhir:code [ fhir:v "OperationOutcome.issue" ] ;
+     fhir:display [ fhir:v "OperationOutcome.issue" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

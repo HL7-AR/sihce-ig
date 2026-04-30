@@ -5,7 +5,7 @@
 
 ## Operaciones
 
-Esta sección documenta las operaciones utilizadas por SIHCE para interoperabilidad X-BA, tomando como fuente la colección de Postman `SIHCE QA.postman_collection.json`.
+Esta sección documenta las operaciones utilizadas por SIHCE para interoperabilidad X-BA, tomando como fuente la colección de Postman `SIHCE QA.postman_collection.json` (actualizada con las mismas rutas y cuerpos descritos aquí). Los ejemplos de **respuesta** de federación y de cambio de identificador local provienen de capturas reales del entorno QA y se incluyen también como archivos JSON en esta guía.
 
 ### Base URL (QA)
 
@@ -39,7 +39,7 @@ Interacción estándar de búsqueda FHIR R5 sobre el recurso `Patient` ([search]
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| `identifier` | Requerido | token (`system|value`o solo`value`si el sistema es implícito) | Identificador del paciente. Ejemplo de sistema nacional:`http://www.renaper.gob.ar/dni`. Ver[NamingSystem renaper-dni](NamingSystem-renaper-dni.md). |
+| `identifier` | Requerido | token (`system|value`o solo`value`si el sistema es implícito) | Identificador del paciente. Ejemplo de sistema nacional:`http://renaper.gob.ar/dni`. Ver[NamingSystem renaper-dni](NamingSystem-renaper-dni.md). |
 | `gender` | Requerido | token (código de[AdministrativeGender](http://hl7.org/fhir/R5/codesystem-administrative-gender.html)) | Género administrativo del paciente (`male`,`female`,`other`,`unknown`). |
 
 Otros parámetros de búsqueda definidos en la especificación base de FHIR para `Patient` pueden estar soportados o no según el despliegue; para esta guía se documentan explícitamente los criterios anteriores por ser los utilizados en los casos de uso de SIHCE.
@@ -47,7 +47,7 @@ Otros parámetros de búsqueda definidos en la especificación base de FHIR para
 #### Request (ejemplo)
 
 ```
-GET /Patient?identifier=http://www.renaper.gob.ar/dni|24068773&gender=male
+GET /Patient?identifier=http://renaper.gob.ar/dni|24068773&gender=male
 
 ```
 
@@ -80,7 +80,7 @@ Content-Type: application/fhir+json
     {
       "use": "official",
       "type": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/v2-0203", "code": "NI" }] },
-      "system": "http://www.renaper.gob.ar/dni",
+      "system": "http://renaper.gob.ar/dni",
       "value": "31075635"
     }
   ],
@@ -90,6 +90,71 @@ Content-Type: application/fhir+json
 }
 
 ```
+
+#### Respuesta (éxito)
+
+En un alta o federación exitosa el servidor devuelve un recurso **`Patient`** en JSON (`Content-Type: application/fhir+json`). El estado HTTP suele ser **`201 Created`** (recurso nuevo) o **`200 OK`** según política del endpoint; puede incluirse cabecera `Location` con el id lógico asignado.
+
+El cuerpo **no cambia el contrato** respecto al perfil **[PatientXBA](StructureDefinition-PatientXBA.md)**: se esperan al menos los identificadores de dominio (tipo MR, uso secundario) y DNI (tipo NI, uso official), nombre oficial, género y fecha de nacimiento. El servidor puede añadir **`text`** narrativo generado.
+
+| | |
+| :--- | :--- |
+| `identifier`(MR) | Identificador local del paciente en el dominio; el`system`y el`value`devueltos son los que el federador registra para ese vínculo dominio–persona (en QA pueden diferir del`system`enviado en el POST de ejemplo). |
+| `identifier`(NI) | DNI oficial RENAPER; debe mantenerse alineado con lo validado en federación. |
+| `name`,`gender`,`birthDate` | Reflejan el SDM almacenado tras la operación. |
+
+**Ejemplo de respuesta (QA)** — copia de referencia en el repositorio: `input/images/ejemplo-respuesta-post-patient-federacion.json` (también `ejemplo_respuesta_post.json` en la raíz del proyecto si lo mantenés allí). El JSON publicado en esta página es el mismo cuerpo:
+
+```
+{
+  "resourceType": "Patient",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PABLO MUGUERZA KAROLYI</div>"
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "https://hl7.org",
+      "value": "90000000"
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI"
+          }
+        ]
+      },
+      "system": "http://renaper.gob.ar/dni",
+      "value": "24068773"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "text": "PABLO MUGUERZA KAROLYI",
+      "family": "MUGUERZA KAROLYI",
+      "given": ["PABLO"]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-07-01"
+}
+
+```
+
+En caso de error, el comportamiento habitual en FHIR es una respuesta con **`OperationOutcome`** (u otro detalle acordado por el proveedor); el código HTTP y el cuerpo dependen del despliegue.
 
 ### Patch de identificador local
 
@@ -119,6 +184,65 @@ Content-Type: application/fhir+json
     { "name": "new-identifier", "valueIdentifier": { "system": "http://msgc.gcba.gob.ar", "value": "9876543210" } },
     { "name": "patient", "resource": { "resourceType": "Patient" } }
   ]
+}
+
+```
+
+#### Respuesta (éxito)
+
+Tras un `$patch-identifier` exitoso la respuesta sigue siendo un **`Patient`** (`application/fhir+json`), alineado con **[PatientXBA](StructureDefinition-PatientXBA.md)**. La forma general coincide con la de la federación: identificador nacional (NI), datos demográficos y, en particular, el identificador de dominio (MR) con el **nuevo** `value` asignado.
+
+| | |
+| :--- | :--- |
+| Identificador MR | Solo cambia el`value`(y eventualmente metadatos asociados) del id local del dominio; el DNI y el resto del SDM permanecen coherentes con el registro previo. |
+
+**Ejemplo de respuesta (QA)** — copia de referencia en el repositorio: `input/images/ejemplo-respuesta-patch-identifier.json` (también `ejemplo_respuesta_iddominio.json` en la raíz). Respecto al ejemplo de federación anterior, el `value` del MR pasa de `90000000` a `90000001`:
+
+```
+{
+  "resourceType": "Patient",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">PABLO MUGUERZA KAROLYI</div>"
+  },
+  "identifier": [
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "https://hl7.org",
+      "value": "90000001"
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "NI"
+          }
+        ]
+      },
+      "system": "http://renaper.gob.ar/dni",
+      "value": "24068773"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "text": "PABLO MUGUERZA KAROLYI",
+      "family": "MUGUERZA KAROLYI",
+      "given": ["PABLO"]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-07-01"
 }
 
 ```
@@ -155,7 +279,7 @@ Content-Type: application/fhir+json
         "resourceType": "Patient",
         "identifier": [
           { "system": "http://msgc.gcba.gob.ar", "value": "304022" },
-          { "system": "http://www.renaper.gob.ar/dni", "value": "31075635" }
+          { "system": "http://renaper.gob.ar/dni", "value": "31075635" }
         ],
         "name": [{ "use": "official", "family": "PALUMBO", "given": ["YANINA GABRIELA"] }],
         "birthDate": "1984-09-25",

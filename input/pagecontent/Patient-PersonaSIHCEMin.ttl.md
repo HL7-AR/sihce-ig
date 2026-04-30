@@ -83,7 +83,7 @@ fhir:type (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type) [
 ( fhir:coding (http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding) [
 fhir:system (http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system) [ fhir:v (http://hl7.org/fhir/R4/datatypes.html#uri) "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
 fhir:code (http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code) [ fhir:v (http://hl7.org/fhir/R4/datatypes.html#code) "NI" ]       ] )     ] ;
-fhir:system (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system) [ fhir:v (http://hl7.org/fhir/R4/datatypes.html#uri) "http://www.renaper.gob.ar/dni"^^xsd:anyURI ] ;
+fhir:system (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system) [ fhir:v (http://hl7.org/fhir/R4/datatypes.html#uri) "http://renaper.gob.ar/dni"^^xsd:anyURI ] ;
 fhir:value (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value) [ fhir:v (http://hl7.org/fhir/R4/datatypes.html#string) "12345678" ]
 ] [
 fhir:use (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use) [ fhir:v (http://hl7.org/fhir/R4/datatypes.html#code) "secondary" ] ;

@@ -39,6 +39,10 @@
       "meta" : {
         "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
       },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Ejemplo de paciente para operaciones de parcheo según PatientXBA.</p></div>"
+      },
       "identifier" : [{
         "use" : "official",
         "type" : {
@@ -47,7 +51,7 @@
             "code" : "NI"
           }]
         },
-        "system" : "http://www.renaper.gob.ar/dni",
+        "system" : "http://renaper.gob.ar/dni",
         "value" : "12345678"
       },
       {

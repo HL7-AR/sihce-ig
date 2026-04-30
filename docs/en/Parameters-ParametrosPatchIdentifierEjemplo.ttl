@@ -48,6 +48,10 @@
          ] )
        ] ;
        fhir:language [ fhir:v "en" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Ejemplo de paciente para operaciones de parcheo según PatientXBA.</p></div>"^^rdf:XMLLiteral ]
+       ] ;
        fhir:identifier ( [
          fhir:use [ fhir:v "official" ] ;
          fhir:type [
@@ -60,8 +64,8 @@
            ] )
          ] ;
          fhir:system [
-           fhir:v "http://www.renaper.gob.ar/dni"^^xsd:anyURI ;
-           fhir:l <http://www.renaper.gob.ar/dni>
+           fhir:v "http://renaper.gob.ar/dni"^^xsd:anyURI ;
+           fhir:l <http://renaper.gob.ar/dni>
          ] ;
          fhir:value [ fhir:v "12345678" ]
        ] [

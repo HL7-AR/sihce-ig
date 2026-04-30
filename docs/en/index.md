@@ -51,3 +51,18 @@ Asimismo, crea el Sistema Integrador de Historias Clínicas Electrónicas (SIHCE
 * Facilitar la interoperabilidad entre los sistemas de salud, mediante el establecimiento de estándares comunes para el intercambio de información clínica.
 * Mejorar la toma de decisiones en salud pública, generando datos estadísticos fiables que respalden la creación de políticas sanitarias basadas en evidencia, siempre respetando la confidencialidad de los pacientes.
 
+### Tablas y declaraciones HL7 (publicación)
+
+Fragmentos generados por el publicador HL7; se incluyen aquí para cumplir con las comprobaciones de la guía.
+
+This publication includes IP covered under the following statements.
+
+* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
+
+* [identifierType](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html): [Parameters/ParametrosPatchIdentifierEjemplo](Parameters-ParametrosPatchIdentifierEjemplo.md), [Parameters/ParametrosUpdateSDMEjemplo](Parameters-ParametrosUpdateSDMEjemplo.md), [Patient/PersonaSIHCEMin](Patient-PersonaSIHCEMin.md) and [Patient/PersonaSIHCEPatch](Patient-PersonaSIHCEPatch.md)
+
+
+
+
+*There are no Global profiles defined*
+

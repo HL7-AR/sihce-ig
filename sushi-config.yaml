@@ -10,7 +10,12 @@ copyrightYear: 2026
 releaseLabel: ci-build
 publisher:
   name: SIHCE Development Team
-  url: http://sihce.gob.ar/
+  # Resolvable URL for link checker (root canonical http://sihce.gob.ar/ is not a browsable page).
+  url: https://github.com/diegokaminker/sihce-ig
+
+parameters:
+  # Avoid duplicate HTML anchors on tabbed snapshot/mappings pages for logical models.
+  tabbed-snapshots: false
 
 pages:
   index.md:

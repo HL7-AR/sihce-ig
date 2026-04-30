@@ -15,7 +15,7 @@ El modelo lógico BuscarPersona representa la solicitud de búsqueda de una pers
 
 #### Elementos del modelo
 
-##### DatosConsulta
+##### datosConsulta
 
 Información mínima requerida para realizar la búsqueda de una persona.
 
@@ -25,7 +25,7 @@ Información mínima requerida para realizar la búsqueda de una persona.
 | documentoIdentificatorio | string | 1..1 | Número del documento de identificación de la persona a buscar. Debe ser numérico (7-9 dígitos). |
 | sexo | string | 1..1 | Sexo de la persona: masculino, femenino. |
 
-##### DatosDominio
+##### datosDominio
 
 Información del dominio que realiza la búsqueda.
 
@@ -34,7 +34,7 @@ Información del dominio que realiza la búsqueda.
 | idLocalPersona | string | 0..1 | Identificador local de la persona en el dominio solicitante. |
 | idDominio | URI | 1..1 | Identificador único del dominio (URI). |
 
-##### DatosRespuesta
+##### datosRespuesta
 
 Datos mínimos devueltos en caso de encontrar una coincidencia.
 
@@ -74,7 +74,7 @@ El modelo lógico FederarPersona representa la operación de federar una persona
 
 #### Elementos del modelo
 
-##### DatosPersona
+##### datosPersona
 
 Información mínima de la persona que se desea federar.
 
@@ -89,7 +89,7 @@ Información mínima de la persona que se desea federar.
 | segundoApellido | string | 0..1 | Segundo apellido de la persona, en caso de existir. |
 | fechaNacimiento | date | 1..1 | Fecha de nacimiento de la persona (Formato AAAA-MM-DD). |
 
-##### DatosDominio
+##### datosDominio
 
 Datos del dominio que solicita la federación.
 
@@ -98,7 +98,7 @@ Datos del dominio que solicita la federación.
 | idLocalPersona | string | 1..1 | Identificador local de la persona en el dominio. |
 | idDominio | URI | 1..1 | Identificador único del dominio (URI). |
 
-##### DatosFederacion
+##### datosFederacion
 
 Resultado del proceso de federación.
 
@@ -132,7 +132,7 @@ El modelo lógico ModificarIDLocalPersona representa la operación de modificar 
 
 #### Elementos del modelo
 
-##### DatosPersona
+##### datosPersona
 
 Información mínima de la persona.
 
@@ -147,7 +147,7 @@ Información mínima de la persona.
 | segundoApellido | string | 0..1 | Segundo apellido de la persona, en caso de existir. |
 | fechaNacimiento | date | 1..1 | Fecha de nacimiento de la persona (Formato AAAA-MM-DD). |
 
-##### DatosModificacion
+##### datosModificacion
 
 Información necesaria para realizar la modificación del ID local.
 
@@ -157,7 +157,7 @@ Información necesaria para realizar la modificación del ID local.
 | idLocalPersonaActual | string | 1..1 | Identificador local actual de la persona en el dominio. |
 | idLocalPersonaNuevo | string | 1..1 | Nuevo identificador local que reemplazará al actual. |
 
-##### DatosRespuesta
+##### datosRespuesta
 
 Resultado del proceso de modificación.
 
@@ -199,7 +199,7 @@ El modelo lógico ModificarSDMPersona representa la operación de modificar los 
 
 #### Elementos del modelo
 
-##### SDMActual
+##### sdmActual
 
 Información mínima de la persona registrada actualmente en el FederadorBA.
 
@@ -215,7 +215,7 @@ Información mínima de la persona registrada actualmente en el FederadorBA.
 | fechaNacimiento | date | 1..1 | Fecha de nacimiento de la persona (Formato AAAA-MM-DD). |
 | fechaDefuncion | date | 0..1 | Fecha de defunción de la persona, en caso de existir (Formato AAAA-MM-DD). |
 
-##### SDMNuevo
+##### sdmNuevo
 
 Datos actualizados que se desean aplicar a la persona (sin modificar documento identificatorio).
 
@@ -229,7 +229,7 @@ Datos actualizados que se desean aplicar a la persona (sin modificar documento i
 | fechaNacimiento | date | 1..1 | Fecha de nacimiento actualizada de la persona (Formato AAAA-MM-DD). |
 | fechaDefuncion | date | 0..1 | Fecha de defunción actualizada de la persona, en caso de existir (Formato AAAA-MM-DD). |
 
-##### DatosDominio
+##### datosDominio
 
 Información del dominio que solicita la modificación.
 
@@ -238,7 +238,7 @@ Información del dominio que solicita la modificación.
 | idDominio | URI | 1..1 | Identificador único del dominio que solicita la modificación (URI). |
 | idLocalPersona | string | 1..1 | Identificador local de la persona en el dominio. |
 
-##### DatosRespuesta
+##### datosRespuesta
 
 Resultado del proceso de modificación.
 

@@ -1,4 +1,18 @@
 [{
+  "id" : "sihce-fhir-core-element-paths",
+  "type" : "CodeSystem",
+  "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
+  "version" : "1.2.0",
+  "name" : "SIHCEFhirCoreElementPaths"
+},
+{
+  "id" : "sihce-logical-operation-element-paths",
+  "type" : "CodeSystem",
+  "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+  "version" : "1.2.0",
+  "name" : "SIHCELogicalOperationElementPaths"
+},
+{
   "id" : "BuscarPersonaModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR",
@@ -32,6 +46,20 @@
   "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
   "version" : "1.2.0",
   "name" : "GuiaDeImplementacionSIHCE"
+},
+{
+  "id" : "NamingSystemHospitalItalianoFHIR",
+  "type" : "NamingSystem",
+  "url" : "http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR",
+  "version" : "1.2.0",
+  "name" : "NamingSystemHospitalItalianoFHIR"
+},
+{
+  "id" : "NamingSystemMsgcGCBA",
+  "type" : "NamingSystem",
+  "url" : "http://sihce.gob.ar/NamingSystem/NamingSystemMsgcGCBA",
+  "version" : "1.2.0",
+  "name" : "NamingSystemMsgcGCBA"
 },
 {
   "id" : "renaper-dni",

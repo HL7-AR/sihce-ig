@@ -80,7 +80,7 @@ Raw json (Patient-PersonaSIHCEMin.json) | Download (Patient-PersonaSIHCEMin.json
 }
 ]
 },
-"system (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system)" : "http://www.renaper.gob.ar/dni",
+"system (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system)" : "http://renaper.gob.ar/dni",
 "value (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value)" : "12345678"
 },
 {

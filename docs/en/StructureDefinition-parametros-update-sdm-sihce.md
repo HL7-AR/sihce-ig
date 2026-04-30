@@ -41,13 +41,13 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-update
   "name" : "ParametrosUpdateSDMSIHCE",
   "title" : "Parametros Update SDM SIHCE",
   "status" : "draft",
-  "date" : "2026-04-30T15:35:26-03:00",
+  "date" : "2026-04-30T18:14:12-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Estructura de Parameters para la operacion $update-sdm de SIHCE.",
@@ -90,19 +90,19 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-update
       "min" : 1
     },
     {
-      "id" : "Parameters.parameter:patient",
+      "id" : "Parameters.parameter:patientPayload",
       "path" : "Parameters.parameter",
-      "sliceName" : "patient",
+      "sliceName" : "patientPayload",
       "min" : 1,
       "max" : "1"
     },
     {
-      "id" : "Parameters.parameter:patient.name",
+      "id" : "Parameters.parameter:patientPayload.name",
       "path" : "Parameters.parameter.name",
       "patternString" : "patient"
     },
     {
-      "id" : "Parameters.parameter:patient.resource",
+      "id" : "Parameters.parameter:patientPayload.resource",
       "path" : "Parameters.parameter.resource",
       "min" : 1,
       "type" : [{

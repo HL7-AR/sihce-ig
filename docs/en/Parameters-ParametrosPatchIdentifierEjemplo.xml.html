@@ -50,8 +50,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.14"}
-    h3,h4,h5,h6{--heading-prefix:"8.14"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.18"}
+    h3,h4,h5,h6{--heading-prefix:"8.18"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -249,6 +249,10 @@
                    <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>=&quot;http://sihce.gob.ar/StructureDefinition/PatientXBA&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R5/resource.html#XPatient.meta">meta</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/resource.html#XPatient.language">language</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/domainresource.html#XPatient.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Ejemplo de paciente para operaciones de parcheo según PatientXBA.&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/<a href="http://hl7.org/fhir/R5/domainresource.html#XPatient.text">text</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/patient.html#XPatient.identifier">identifier</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.use">use</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.type">type</a>&gt;
@@ -257,7 +261,7 @@
               &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;NI&quot;/&gt;
             &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>&gt;
           &lt;/<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.type">type</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://www.renaper.gob.ar/dni&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;http://renaper.gob.ar/dni&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;12345678&quot;/&gt;
         &lt;/<a href="http://hl7.org/fhir/R5/patient.html#XPatient.identifier">identifier</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/patient.html#XPatient.identifier">identifier</a>&gt;
@@ -310,9 +314,9 @@
 
 
 
-          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="http://sihce.gob.ar/">SIHCE Development Team</a>.  
+          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
           Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Thu, Apr 30, 2026 15:35-0300">2026-04-30</span>
+          Generated <span title="Thu, Apr 30, 2026 18:14-0300">2026-04-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a> |

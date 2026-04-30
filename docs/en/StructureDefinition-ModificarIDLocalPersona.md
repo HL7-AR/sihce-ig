@@ -41,13 +41,13 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
   "name" : "ModificarIDLocalPersona",
   "title" : "Modelo lógico ModificarIDLocalPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-04-30T15:35:26-03:00",
+  "date" : "2026-04-30T18:14:12-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Modificación del identificador local de una persona federada.",
@@ -70,8 +70,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       "definition" : "Modificación del identificador local de una persona federada."
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosPersona",
-      "path" : "ModificarIDLocalPersona.DatosPersona",
+      "id" : "ModificarIDLocalPersona.datosPersona",
+      "path" : "ModificarIDLocalPersona.datosPersona",
       "short" : "Persona (SDM)",
       "definition" : "Datos para validar identidad.",
       "min" : 1,
@@ -81,8 +81,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosPersona.tipoDocumento",
-      "path" : "ModificarIDLocalPersona.DatosPersona.tipoDocumento",
+      "id" : "ModificarIDLocalPersona.datosPersona.tipoDocumento",
+      "path" : "ModificarIDLocalPersona.datosPersona.tipoDocumento",
       "short" : "Tipo de documento",
       "definition" : "Ej. DNI.",
       "min" : 1,
@@ -92,8 +92,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio",
-      "path" : "ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio",
+      "id" : "ModificarIDLocalPersona.datosPersona.documentoIdentificatorio",
+      "path" : "ModificarIDLocalPersona.datosPersona.documentoIdentificatorio",
       "short" : "Número de documento",
       "definition" : "Valor del documento.",
       "min" : 1,
@@ -103,8 +103,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosPersona.sexo",
-      "path" : "ModificarIDLocalPersona.DatosPersona.sexo",
+      "id" : "ModificarIDLocalPersona.datosPersona.sexo",
+      "path" : "ModificarIDLocalPersona.datosPersona.sexo",
       "short" : "Sexo",
       "definition" : "Sexo administrativo.",
       "min" : 1,
@@ -114,8 +114,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosPersona.primerNombre",
-      "path" : "ModificarIDLocalPersona.DatosPersona.primerNombre",
+      "id" : "ModificarIDLocalPersona.datosPersona.primerNombre",
+      "path" : "ModificarIDLocalPersona.datosPersona.primerNombre",
       "short" : "Primer nombre",
       "definition" : "Primer nombre.",
       "min" : 1,
@@ -125,8 +125,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosPersona.segundoNombre",
-      "path" : "ModificarIDLocalPersona.DatosPersona.segundoNombre",
+      "id" : "ModificarIDLocalPersona.datosPersona.segundoNombre",
+      "path" : "ModificarIDLocalPersona.datosPersona.segundoNombre",
       "short" : "Segundo nombre",
       "definition" : "Segundo nombre.",
       "min" : 0,
@@ -136,8 +136,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosPersona.primerApellido",
-      "path" : "ModificarIDLocalPersona.DatosPersona.primerApellido",
+      "id" : "ModificarIDLocalPersona.datosPersona.primerApellido",
+      "path" : "ModificarIDLocalPersona.datosPersona.primerApellido",
       "short" : "Primer apellido",
       "definition" : "Primer apellido.",
       "min" : 1,
@@ -147,8 +147,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosPersona.segundoApellido",
-      "path" : "ModificarIDLocalPersona.DatosPersona.segundoApellido",
+      "id" : "ModificarIDLocalPersona.datosPersona.segundoApellido",
+      "path" : "ModificarIDLocalPersona.datosPersona.segundoApellido",
       "short" : "Segundo apellido",
       "definition" : "Segundo apellido.",
       "min" : 0,
@@ -158,8 +158,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosPersona.fechaNacimiento",
-      "path" : "ModificarIDLocalPersona.DatosPersona.fechaNacimiento",
+      "id" : "ModificarIDLocalPersona.datosPersona.fechaNacimiento",
+      "path" : "ModificarIDLocalPersona.datosPersona.fechaNacimiento",
       "short" : "Fecha de nacimiento",
       "definition" : "AAAA-MM-DD.",
       "min" : 1,
@@ -169,8 +169,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosModificacion",
-      "path" : "ModificarIDLocalPersona.DatosModificacion",
+      "id" : "ModificarIDLocalPersona.datosModificacion",
+      "path" : "ModificarIDLocalPersona.datosModificacion",
       "short" : "Modificación de id local",
       "definition" : "Dominio e ids local actual y nuevo.",
       "min" : 1,
@@ -180,8 +180,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosModificacion.idDominio",
-      "path" : "ModificarIDLocalPersona.DatosModificacion.idDominio",
+      "id" : "ModificarIDLocalPersona.datosModificacion.idDominio",
+      "path" : "ModificarIDLocalPersona.datosModificacion.idDominio",
       "short" : "URI del dominio",
       "definition" : "Dominio que solicita el cambio.",
       "min" : 1,
@@ -191,8 +191,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual",
-      "path" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual",
+      "id" : "ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual",
+      "path" : "ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual",
       "short" : "Id local actual",
       "definition" : "Identificador local vigente.",
       "min" : 1,
@@ -202,8 +202,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo",
-      "path" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo",
+      "id" : "ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo",
+      "path" : "ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo",
       "short" : "Id local nuevo",
       "definition" : "Nuevo identificador local.",
       "min" : 1,
@@ -213,8 +213,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosRespuesta",
-      "path" : "ModificarIDLocalPersona.DatosRespuesta",
+      "id" : "ModificarIDLocalPersona.datosRespuesta",
+      "path" : "ModificarIDLocalPersona.datosRespuesta",
       "short" : "Respuesta",
       "definition" : "Resultado de la operación.",
       "min" : 0,
@@ -224,8 +224,8 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
       }]
     },
     {
-      "id" : "ModificarIDLocalPersona.DatosRespuesta.mensaje",
-      "path" : "ModificarIDLocalPersona.DatosRespuesta.mensaje",
+      "id" : "ModificarIDLocalPersona.datosRespuesta.mensaje",
+      "path" : "ModificarIDLocalPersona.datosRespuesta.mensaje",
       "short" : "Mensaje",
       "definition" : "Mensaje informativo o de error.",
       "min" : 1,

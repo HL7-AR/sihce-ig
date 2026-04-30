@@ -1,0 +1,20 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "NamingSystemHospitalItalianoFHIR",
+  "url": "http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR",
+  "title": "NamingSystem URI Hospital Italiano (ejemplo FHIR)",
+  "description": "Identificador de dominio de ejemplo usado en instancias de este IG.",
+  "name": "NamingSystemHospitalItalianoFHIR",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2026-04-30",
+  "publisher": "SIHCE Development Team",
+  "responsible": "Ejemplo de implementación SIHCE IG",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "http://hospitalitaliano.org.ar/fhir",
+      "preferred": true
+    }
+  ]
+}

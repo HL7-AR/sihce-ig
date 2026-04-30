@@ -47,3 +47,11 @@ Asimismo, crea el Sistema Integrador de Historias Clínicas Electrónicas (SIHCE
 - Facilitar la interoperabilidad entre los sistemas de salud, mediante el establecimiento de estándares comunes para el intercambio de información clínica.
 
 - Mejorar la toma de decisiones en salud pública, generando datos estadísticos fiables que respalden la creación de políticas sanitarias basadas en evidencia, siempre respetando la confidencialidad de los pacientes.
+
+### Tablas y declaraciones HL7 (publicación)
+
+Fragmentos generados por el publicador HL7; se incluyen aquí para cumplir con las comprobaciones de la guía.
+
+{% include ip-statements.xhtml %}
+{% include dependency-table.xhtml %}
+{% include globals-table.xhtml %}

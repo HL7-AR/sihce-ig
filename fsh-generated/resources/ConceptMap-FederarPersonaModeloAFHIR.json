@@ -13,9 +13,11 @@
   "publisher": "SIHCE Development Team",
   "group": [
     {
+      "source": "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+      "target": "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
       "element": [
         {
-          "code": "FederarPersona.DatosPersona.tipoDocumento",
+          "code": "FederarPersona.datosPersona.tipoDocumento",
           "target": [
             {
               "code": "Patient.identifier",
@@ -24,7 +26,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosPersona.documentoIdentificatorio",
+          "code": "FederarPersona.datosPersona.documentoIdentificatorio",
           "target": [
             {
               "code": "Patient.identifier",
@@ -33,7 +35,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosPersona.sexo",
+          "code": "FederarPersona.datosPersona.sexo",
           "target": [
             {
               "code": "Patient.gender",
@@ -42,7 +44,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosPersona.primerNombre",
+          "code": "FederarPersona.datosPersona.primerNombre",
           "target": [
             {
               "code": "Patient.name",
@@ -51,7 +53,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosPersona.segundoNombre",
+          "code": "FederarPersona.datosPersona.segundoNombre",
           "target": [
             {
               "code": "Patient.name",
@@ -60,7 +62,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosPersona.primerApellido",
+          "code": "FederarPersona.datosPersona.primerApellido",
           "target": [
             {
               "code": "Patient.name",
@@ -69,7 +71,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosPersona.segundoApellido",
+          "code": "FederarPersona.datosPersona.segundoApellido",
           "target": [
             {
               "code": "Patient.name",
@@ -78,7 +80,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosPersona.fechaNacimiento",
+          "code": "FederarPersona.datosPersona.fechaNacimiento",
           "target": [
             {
               "code": "Patient.birthDate",
@@ -87,7 +89,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosDominio.idLocalPersona",
+          "code": "FederarPersona.datosDominio.idLocalPersona",
           "target": [
             {
               "code": "Patient.identifier",
@@ -96,7 +98,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosDominio.idDominio",
+          "code": "FederarPersona.datosDominio.idDominio",
           "target": [
             {
               "code": "Patient.identifier",
@@ -105,7 +107,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosFederacion.idPersonaGlobal",
+          "code": "FederarPersona.datosFederacion.idPersonaGlobal",
           "target": [
             {
               "code": "Patient.identifier",
@@ -117,9 +119,11 @@
       ]
     },
     {
+      "source": "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+      "target": "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
       "element": [
         {
-          "code": "FederarPersona.DatosDominio",
+          "code": "FederarPersona.datosDominio",
           "target": [
             {
               "code": "Organization",
@@ -128,7 +132,7 @@
           ]
         },
         {
-          "code": "FederarPersona.DatosDominio.idDominio",
+          "code": "FederarPersona.datosDominio.idDominio",
           "target": [
             {
               "code": "Organization.identifier",
@@ -139,9 +143,11 @@
       ]
     },
     {
+      "source": "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+      "target": "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
       "element": [
         {
-          "code": "FederarPersona.DatosFederacion.mensaje",
+          "code": "FederarPersona.datosFederacion.mensaje",
           "target": [
             {
               "code": "OperationOutcome.issue",

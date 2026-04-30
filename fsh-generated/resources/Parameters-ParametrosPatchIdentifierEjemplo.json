@@ -34,7 +34,7 @@
         "identifier": [
           {
             "use": "official",
-            "system": "http://www.renaper.gob.ar/dni",
+            "system": "http://renaper.gob.ar/dni",
             "type": {
               "coding": [
                 {
@@ -69,6 +69,10 @@
             ]
           }
         ],
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Ejemplo de paciente para operaciones de parcheo según PatientXBA.</p></div>"
+        },
         "gender": "male",
         "birthDate": "1939-12-20"
       }

@@ -75,7 +75,7 @@ value (http://hl7.org/fhir/R4/datatypes.html#canonical)="http://sihce.gob.ar/Str
 <code (http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code)value (http://hl7.org/fhir/R4/datatypes.html#code)="NI"/>
 </coding (http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding)>
 </type (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type)>
-<system (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system)value (http://hl7.org/fhir/R4/datatypes.html#uri)="http://www.renaper.gob.ar/dni"/>
+<system (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system)value (http://hl7.org/fhir/R4/datatypes.html#uri)="http://renaper.gob.ar/dni"/>
 <value (http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value)value (http://hl7.org/fhir/R4/datatypes.html#string)="12345678"/>
 </identifier (http://hl7.org/fhir/R4/patient.html#Patient.identifier)>
 <identifier (http://hl7.org/fhir/R4/patient.html#Patient.identifier)>

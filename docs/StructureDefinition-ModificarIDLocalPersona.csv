@@ -10,78 +10,78 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"ModificarIDLocalPersona.DatosPersona","ModificarIDLocalPersona.DatosPersona","","","",1,1,"","","","BackboneElement {[]} {[]}
-","Persona (SDM)","Datos para validar identidad.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosPersona",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"ModificarIDLocalPersona.datosPersona","ModificarIDLocalPersona.datosPersona","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Persona (SDM)","Datos para validar identidad.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosPersona",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ModificarIDLocalPersona.DatosPersona.id","ModificarIDLocalPersona.DatosPersona.id","","","",0,1,"","","","id {[]} {[]}
+"ModificarIDLocalPersona.datosPersona.id","ModificarIDLocalPersona.datosPersona.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
 ","","n/a"
-"ModificarIDLocalPersona.DatosPersona.extension","ModificarIDLocalPersona.DatosPersona.extension","","extensions
+"ModificarIDLocalPersona.datosPersona.extension","ModificarIDLocalPersona.datosPersona.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"ModificarIDLocalPersona.DatosPersona.modifierExtension","ModificarIDLocalPersona.DatosPersona.modifierExtension","","extensions
+"ModificarIDLocalPersona.datosPersona.modifierExtension","ModificarIDLocalPersona.datosPersona.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"ModificarIDLocalPersona.DatosPersona.tipoDocumento","ModificarIDLocalPersona.DatosPersona.tipoDocumento","","","",1,1,"","","","string {[]} {[]}
-","Tipo de documento","Ej. DNI.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosPersona.tipoDocumento",1,1,"",""
-"ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio","ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio","","","",1,1,"","","","string {[]} {[]}
-","Número de documento","Valor del documento.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio",1,1,"",""
-"ModificarIDLocalPersona.DatosPersona.sexo","ModificarIDLocalPersona.DatosPersona.sexo","","","",1,1,"","","","string {[]} {[]}
-","Sexo","Sexo administrativo.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosPersona.sexo",1,1,"",""
-"ModificarIDLocalPersona.DatosPersona.primerNombre","ModificarIDLocalPersona.DatosPersona.primerNombre","","","",1,1,"","","","string {[]} {[]}
-","Primer nombre","Primer nombre.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosPersona.primerNombre",1,1,"",""
-"ModificarIDLocalPersona.DatosPersona.segundoNombre","ModificarIDLocalPersona.DatosPersona.segundoNombre","","","",0,1,"","","","string {[]} {[]}
-","Segundo nombre","Segundo nombre.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosPersona.segundoNombre",0,1,"",""
-"ModificarIDLocalPersona.DatosPersona.primerApellido","ModificarIDLocalPersona.DatosPersona.primerApellido","","","",1,1,"","","","string {[]} {[]}
-","Primer apellido","Primer apellido.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosPersona.primerApellido",1,1,"",""
-"ModificarIDLocalPersona.DatosPersona.segundoApellido","ModificarIDLocalPersona.DatosPersona.segundoApellido","","","",0,1,"","","","string {[]} {[]}
-","Segundo apellido","Segundo apellido.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosPersona.segundoApellido",0,1,"",""
-"ModificarIDLocalPersona.DatosPersona.fechaNacimiento","ModificarIDLocalPersona.DatosPersona.fechaNacimiento","","","",1,1,"","","","date {[]} {[]}
-","Fecha de nacimiento","AAAA-MM-DD.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosPersona.fechaNacimiento",1,1,"",""
-"ModificarIDLocalPersona.DatosModificacion","ModificarIDLocalPersona.DatosModificacion","","","",1,1,"","","","BackboneElement {[]} {[]}
-","Modificación de id local","Dominio e ids local actual y nuevo.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosModificacion",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"ModificarIDLocalPersona.datosPersona.tipoDocumento","ModificarIDLocalPersona.datosPersona.tipoDocumento","","","",1,1,"","","","string {[]} {[]}
+","Tipo de documento","Ej. DNI.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosPersona.tipoDocumento",1,1,"",""
+"ModificarIDLocalPersona.datosPersona.documentoIdentificatorio","ModificarIDLocalPersona.datosPersona.documentoIdentificatorio","","","",1,1,"","","","string {[]} {[]}
+","Número de documento","Valor del documento.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosPersona.documentoIdentificatorio",1,1,"",""
+"ModificarIDLocalPersona.datosPersona.sexo","ModificarIDLocalPersona.datosPersona.sexo","","","",1,1,"","","","string {[]} {[]}
+","Sexo","Sexo administrativo.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosPersona.sexo",1,1,"",""
+"ModificarIDLocalPersona.datosPersona.primerNombre","ModificarIDLocalPersona.datosPersona.primerNombre","","","",1,1,"","","","string {[]} {[]}
+","Primer nombre","Primer nombre.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosPersona.primerNombre",1,1,"",""
+"ModificarIDLocalPersona.datosPersona.segundoNombre","ModificarIDLocalPersona.datosPersona.segundoNombre","","","",0,1,"","","","string {[]} {[]}
+","Segundo nombre","Segundo nombre.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosPersona.segundoNombre",0,1,"",""
+"ModificarIDLocalPersona.datosPersona.primerApellido","ModificarIDLocalPersona.datosPersona.primerApellido","","","",1,1,"","","","string {[]} {[]}
+","Primer apellido","Primer apellido.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosPersona.primerApellido",1,1,"",""
+"ModificarIDLocalPersona.datosPersona.segundoApellido","ModificarIDLocalPersona.datosPersona.segundoApellido","","","",0,1,"","","","string {[]} {[]}
+","Segundo apellido","Segundo apellido.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosPersona.segundoApellido",0,1,"",""
+"ModificarIDLocalPersona.datosPersona.fechaNacimiento","ModificarIDLocalPersona.datosPersona.fechaNacimiento","","","",1,1,"","","","date {[]} {[]}
+","Fecha de nacimiento","AAAA-MM-DD.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosPersona.fechaNacimiento",1,1,"",""
+"ModificarIDLocalPersona.datosModificacion","ModificarIDLocalPersona.datosModificacion","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Modificación de id local","Dominio e ids local actual y nuevo.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosModificacion",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ModificarIDLocalPersona.DatosModificacion.id","ModificarIDLocalPersona.DatosModificacion.id","","","",0,1,"","","","id {[]} {[]}
+"ModificarIDLocalPersona.datosModificacion.id","ModificarIDLocalPersona.datosModificacion.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
 ","","n/a"
-"ModificarIDLocalPersona.DatosModificacion.extension","ModificarIDLocalPersona.DatosModificacion.extension","","extensions
+"ModificarIDLocalPersona.datosModificacion.extension","ModificarIDLocalPersona.datosModificacion.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"ModificarIDLocalPersona.DatosModificacion.modifierExtension","ModificarIDLocalPersona.DatosModificacion.modifierExtension","","extensions
+"ModificarIDLocalPersona.datosModificacion.modifierExtension","ModificarIDLocalPersona.datosModificacion.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"ModificarIDLocalPersona.DatosModificacion.idDominio","ModificarIDLocalPersona.DatosModificacion.idDominio","","","",1,1,"","","","uri {[]} {[]}
-","URI del dominio","Dominio que solicita el cambio.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosModificacion.idDominio",1,1,"",""
-"ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual","ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual","","","",1,1,"","","","string {[]} {[]}
-","Id local actual","Identificador local vigente.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual",1,1,"",""
-"ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo","ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo","","","",1,1,"","","","string {[]} {[]}
-","Id local nuevo","Nuevo identificador local.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo",1,1,"",""
-"ModificarIDLocalPersona.DatosRespuesta","ModificarIDLocalPersona.DatosRespuesta","","","",0,1,"","","","BackboneElement {[]} {[]}
-","Respuesta","Resultado de la operación.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosRespuesta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"ModificarIDLocalPersona.datosModificacion.idDominio","ModificarIDLocalPersona.datosModificacion.idDominio","","","",1,1,"","","","uri {[]} {[]}
+","URI del dominio","Dominio que solicita el cambio.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosModificacion.idDominio",1,1,"",""
+"ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual","ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual","","","",1,1,"","","","string {[]} {[]}
+","Id local actual","Identificador local vigente.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual",1,1,"",""
+"ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo","ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo","","","",1,1,"","","","string {[]} {[]}
+","Id local nuevo","Nuevo identificador local.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo",1,1,"",""
+"ModificarIDLocalPersona.datosRespuesta","ModificarIDLocalPersona.datosRespuesta","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Respuesta","Resultado de la operación.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosRespuesta",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ModificarIDLocalPersona.DatosRespuesta.id","ModificarIDLocalPersona.DatosRespuesta.id","","","",0,1,"","","","id {[]} {[]}
+"ModificarIDLocalPersona.datosRespuesta.id","ModificarIDLocalPersona.datosRespuesta.id","","","",0,1,"","","","id {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
 ","","n/a"
-"ModificarIDLocalPersona.DatosRespuesta.extension","ModificarIDLocalPersona.DatosRespuesta.extension","","extensions
+"ModificarIDLocalPersona.datosRespuesta.extension","ModificarIDLocalPersona.datosRespuesta.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"ModificarIDLocalPersona.DatosRespuesta.modifierExtension","ModificarIDLocalPersona.DatosRespuesta.modifierExtension","","extensions
+"ModificarIDLocalPersona.datosRespuesta.modifierExtension","ModificarIDLocalPersona.datosRespuesta.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R5/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"ModificarIDLocalPersona.DatosRespuesta.mensaje","ModificarIDLocalPersona.DatosRespuesta.mensaje","","","",1,1,"","","","string {[]} {[]}
-","Mensaje","Mensaje informativo o de error.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.DatosRespuesta.mensaje",1,1,"",""
+"ModificarIDLocalPersona.datosRespuesta.mensaje","ModificarIDLocalPersona.datosRespuesta.mensaje","","","",1,1,"","","","string {[]} {[]}
+","Mensaje","Mensaje informativo o de error.","","","","","","","","","",,,,,"",,,,"ModificarIDLocalPersona.datosRespuesta.mensaje",1,1,"",""

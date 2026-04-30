@@ -13,9 +13,11 @@
   "publisher": "SIHCE Development Team",
   "group": [
     {
+      "source": "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+      "target": "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
       "element": [
         {
-          "code": "ModificarIDLocalPersona.DatosPersona.tipoDocumento",
+          "code": "ModificarIDLocalPersona.datosPersona.tipoDocumento",
           "target": [
             {
               "code": "Patient.identifier",
@@ -24,7 +26,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio",
+          "code": "ModificarIDLocalPersona.datosPersona.documentoIdentificatorio",
           "target": [
             {
               "code": "Patient.identifier",
@@ -33,7 +35,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosPersona.sexo",
+          "code": "ModificarIDLocalPersona.datosPersona.sexo",
           "target": [
             {
               "code": "Patient.gender",
@@ -42,7 +44,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosPersona.primerNombre",
+          "code": "ModificarIDLocalPersona.datosPersona.primerNombre",
           "target": [
             {
               "code": "Patient.name",
@@ -51,7 +53,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosPersona.segundoNombre",
+          "code": "ModificarIDLocalPersona.datosPersona.segundoNombre",
           "target": [
             {
               "code": "Patient.name",
@@ -60,7 +62,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosPersona.primerApellido",
+          "code": "ModificarIDLocalPersona.datosPersona.primerApellido",
           "target": [
             {
               "code": "Patient.name",
@@ -69,7 +71,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosPersona.segundoApellido",
+          "code": "ModificarIDLocalPersona.datosPersona.segundoApellido",
           "target": [
             {
               "code": "Patient.name",
@@ -78,7 +80,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosPersona.fechaNacimiento",
+          "code": "ModificarIDLocalPersona.datosPersona.fechaNacimiento",
           "target": [
             {
               "code": "Patient.birthDate",
@@ -87,7 +89,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosModificacion.idDominio",
+          "code": "ModificarIDLocalPersona.datosModificacion.idDominio",
           "target": [
             {
               "code": "Patient.identifier",
@@ -97,7 +99,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual",
+          "code": "ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual",
           "target": [
             {
               "code": "Patient.identifier",
@@ -106,7 +108,7 @@
           ]
         },
         {
-          "code": "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo",
+          "code": "ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo",
           "target": [
             {
               "code": "Patient.identifier",
@@ -117,9 +119,11 @@
       ]
     },
     {
+      "source": "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+      "target": "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
       "element": [
         {
-          "code": "ModificarIDLocalPersona.DatosRespuesta.mensaje",
+          "code": "ModificarIDLocalPersona.datosRespuesta.mensaje",
           "target": [
             {
               "code": "OperationOutcome.issue",

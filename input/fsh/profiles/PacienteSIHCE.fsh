@@ -23,20 +23,18 @@ Description: "Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadron
     idDominio 1..* MS
 * identifier[DNI] ^short = "Documento Nacional de Identidad argentino expedido por RENAPER"
 * identifier[DNI].use = #official
-* identifier[DNI].type 1..
+* identifier[DNI].type 1..1
 * identifier[DNI].type.coding 1..1
-* identifier[DNI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
-* identifier[DNI].type.coding.code 1..
-* identifier[DNI].type.coding.code = #NI (exactly)
-* identifier[DNI].system = "http://www.renaper.gob.ar/dni"
+* identifier[DNI].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[DNI].type.coding.code = #NI
+* identifier[DNI].system = "http://renaper.gob.ar/dni"
 * identifier[DNI].value MS
 * identifier[idDominio] ^short = "Id asignado por algún dominio, clínica, sede, etc"
 * identifier[idDominio].use from IdentifierUse (required)
-* identifier[idDominio].type 1..
+* identifier[idDominio].type 1..1
 * identifier[idDominio].type.coding 1..1
-* identifier[idDominio].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly)
-* identifier[idDominio].type.coding.code 1..
-* identifier[idDominio].type.coding.code = #MR (exactly)
+* identifier[idDominio].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[idDominio].type.coding.code = #MR
 * identifier[idDominio].system ^short = "URI del dominio"
 * identifier[idDominio].value MS
 * identifier[idDominio].value ^short = "id del paciente local del dominio"

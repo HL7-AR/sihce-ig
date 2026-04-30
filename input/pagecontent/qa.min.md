@@ -116,7 +116,7 @@ Organization​.identifier[0]​.system (l11​/c54)warning!!El valor URL 'http:
 
 PathSeverityMessage
 
-Patient.identifier[0].system (l12/c48)warning!!El valor URL 'http://www.renaper.gob.ar/dni' no puede resolverseType_Specific_Checks_DT_URL_Resolve
+Patient.identifier[0].system (l12/c48)warning!!El valor URL 'http://renaper.gob.ar/dni' no puede resolverseType_Specific_Checks_DT_URL_Resolve
 
 Patient.identifier[1].system (l32/c54)warning!!El valor URL 'http://hospitalitaliano.org.ar/fhir' no puede resolverseType_Specific_Checks_DT_URL_Resolve
 
@@ -380,6 +380,6 @@ fsh-generated/resources/StructureDefinition-organization-core-SIHCE.json (Struct
 
 fsh-generated/resources/Organization-DominioSIHCEMin.json (Organization-DominioSIHCEMin.html)!!El valor URL 'http://hospitalitaliano.org.ar/fhir' no puede resolverse
 
-fsh-generated/resources/Patient-PersonaSIHCEMin.json (Patient-PersonaSIHCEMin.html)!!El valor URL 'http://www.renaper.gob.ar/dni' no puede resolverse
+fsh-generated/resources/Patient-PersonaSIHCEMin.json (Patient-PersonaSIHCEMin.html)!!El valor URL 'http://renaper.gob.ar/dni' no puede resolverse
 
 fsh-generated/resources/Patient-PersonaSIHCEMin.json (Patient-PersonaSIHCEMin.html)!!El valor URL 'http://hospitalitaliano.org.ar/fhir' no puede resolverse

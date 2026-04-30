@@ -34,84 +34,86 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado.",
   "purpose" : "Federación de persona; resultado incluye id global y mensaje.",
   "group" : [{
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "FederarPersona.DatosPersona.tipoDocumento",
+      "code" : "FederarPersona.datosPersona.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.documentoIdentificatorio",
+      "code" : "FederarPersona.datosPersona.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.sexo",
+      "code" : "FederarPersona.datosPersona.sexo",
       "target" : [{
         "code" : "Patient.gender",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.primerNombre",
+      "code" : "FederarPersona.datosPersona.primerNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.segundoNombre",
+      "code" : "FederarPersona.datosPersona.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.primerApellido",
+      "code" : "FederarPersona.datosPersona.primerApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.segundoApellido",
+      "code" : "FederarPersona.datosPersona.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosPersona.fechaNacimiento",
+      "code" : "FederarPersona.datosPersona.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosDominio.idLocalPersona",
+      "code" : "FederarPersona.datosDominio.idLocalPersona",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosDominio.idDominio",
+      "code" : "FederarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosFederacion.idPersonaGlobal",
+      "code" : "FederarPersona.datosFederacion.idPersonaGlobal",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent",
@@ -120,15 +122,17 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
     }]
   },
   {
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "FederarPersona.DatosDominio",
+      "code" : "FederarPersona.datosDominio",
       "target" : [{
         "code" : "Organization",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "FederarPersona.DatosDominio.idDominio",
+      "code" : "FederarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Organization.identifier",
         "relationship" : "equivalent"
@@ -136,8 +140,10 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
     }]
   },
   {
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "FederarPersona.DatosFederacion.mensaje",
+      "code" : "FederarPersona.datosFederacion.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
         "relationship" : "equivalent",

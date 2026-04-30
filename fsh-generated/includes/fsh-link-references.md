@@ -9,9 +9,13 @@
 [ModificarSDMPersona]: StructureDefinition-ModificarSDMPersona.html
 [ModificarIDLocalPersonaModeloAFHIR]: ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html
 [ModificarSDMPersonaModeloAFHIR]: ConceptMap-ModificarSDMPersonaModeloAFHIR.html
+[NamingSystemHospitalItalianoFHIR]: NamingSystem-NamingSystemHospitalItalianoFHIR.html
+[NamingSystemMsgcGCBA]: NamingSystem-NamingSystemMsgcGCBA.html
 [PacienteSIHCE]: StructureDefinition-PatientXBA.html
 [ParametrosPatchIdentifierSIHCE]: StructureDefinition-parametros-patch-identifier-sihce.html
 [ParametrosUpdateSDMSIHCE]: StructureDefinition-parametros-update-sdm-sihce.html
 [PersonaSIHCEMin]: Patient-PersonaSIHCEMin.html
 [PersonaSIHCEPatch]: Patient-PersonaSIHCEPatch.html
 [renaper-dni]: NamingSystem-renaper-dni.html
+[SIHCELogicalOperationElementPaths]: CodeSystem-sihce-logical-operation-element-paths.html
+[SIHCEFhirCoreElementPaths]: CodeSystem-sihce-fhir-core-element-paths.html

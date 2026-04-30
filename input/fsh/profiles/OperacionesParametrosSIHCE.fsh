@@ -6,7 +6,7 @@ Description: "Estructura de Parameters para la operacion $patch-identifier de SI
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #closed
-* parameter contains oldIdentifier 1..1 and newIdentifier 1..1 and patient 1..1
+* parameter contains oldIdentifier 1..1 and newIdentifier 1..1 and patientPayload 1..1
 * parameter[oldIdentifier].name = "old-identifier"
 * parameter[oldIdentifier].value[x] only Identifier
 * parameter[oldIdentifier].valueIdentifier 1..1
@@ -17,9 +17,9 @@ Description: "Estructura de Parameters para la operacion $patch-identifier de SI
 * parameter[newIdentifier].valueIdentifier 1..1
 * parameter[newIdentifier].valueIdentifier.system 1..1
 * parameter[newIdentifier].valueIdentifier.value 1..1
-* parameter[patient].name = "patient"
-* parameter[patient].resource 1..1
-* parameter[patient].resource only PacienteSIHCE
+* parameter[patientPayload].name = "patient"
+* parameter[patientPayload].resource 1..1
+* parameter[patientPayload].resource only PacienteSIHCE
 
 Profile: ParametrosUpdateSDMSIHCE
 Parent: Parameters
@@ -29,7 +29,7 @@ Description: "Estructura de Parameters para la operacion $update-sdm de SIHCE."
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #closed
-* parameter contains patient 1..1
-* parameter[patient].name = "patient"
-* parameter[patient].resource 1..1
-* parameter[patient].resource only PacienteSIHCE
+* parameter contains patientPayload 1..1
+* parameter[patientPayload].name = "patient"
+* parameter[patientPayload].resource 1..1
+* parameter[patientPayload].resource only PacienteSIHCE

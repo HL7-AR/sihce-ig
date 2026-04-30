@@ -3,7 +3,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
   <id value="ModificarIDLocalPersonaModeloAFHIR"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap ModificarIDLocalPersonaModeloAFHIR</b></p><a name="ModificarIDLocalPersonaModeloAFHIR"> </a><a name="hcModificarIDLocalPersonaModeloAFHIR"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>ModificarIDLocalPersona.DatosPersona.tipoDocumento</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.sexo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.gender</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.primerNombre</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.segundoNombre</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.primerApellido</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.segundoApellido</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosPersona.fechaNacimiento</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.birthDate</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosModificacion.idDominio</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td>URI del dominio en slice idDominio.</td></tr><tr><td>ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td/></tr></table><hr/><p><b>Group 2 </b>Mapping from <code>unspecified code system</code> to <code>unspecified code system</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarIDLocalPersona.DatosRespuesta.mensaje</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>OperationOutcome.issue</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap ModificarIDLocalPersonaModeloAFHIR</b></p><a name="ModificarIDLocalPersonaModeloAFHIR"> </a><a name="hcModificarIDLocalPersonaModeloAFHIR"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-sihce-logical-operation-element-paths.html">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href="CodeSystem-sihce-fhir-core-element-paths.html">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>ModificarIDLocalPersona.datosPersona.tipoDocumento (ModificarIDLocalPersona datosPersona tipoDocumento)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>ModificarIDLocalPersona.datosPersona.documentoIdentificatorio (ModificarIDLocalPersona datosPersona documentoIdentificatorio)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>ModificarIDLocalPersona.datosPersona.sexo (ModificarIDLocalPersona datosPersona sexo)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.gender</td><td/></tr><tr><td>ModificarIDLocalPersona.datosPersona.primerNombre (ModificarIDLocalPersona datosPersona primerNombre)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.datosPersona.segundoNombre (ModificarIDLocalPersona datosPersona segundoNombre)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.datosPersona.primerApellido (ModificarIDLocalPersona datosPersona primerApellido)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.datosPersona.segundoApellido (ModificarIDLocalPersona datosPersona segundoApellido)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.name</td><td/></tr><tr><td>ModificarIDLocalPersona.datosPersona.fechaNacimiento (ModificarIDLocalPersona datosPersona fechaNacimiento)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.birthDate</td><td/></tr><tr><td>ModificarIDLocalPersona.datosModificacion.idDominio (ModificarIDLocalPersona datosModificacion idDominio)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td>URI del dominio en slice idDominio.</td></tr><tr><td>ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual (ModificarIDLocalPersona datosModificacion idLocalPersonaActual)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td/></tr><tr><td>ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo (ModificarIDLocalPersona datosModificacion idLocalPersonaNuevo)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Patient.identifier</td><td/></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="CodeSystem-sihce-logical-operation-element-paths.html">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href="CodeSystem-sihce-fhir-core-element-paths.html">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarIDLocalPersona.datosRespuesta.mensaje (ModificarIDLocalPersona datosRespuesta mensaje)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>OperationOutcome.issue</td></tr></table></div>
   </text>
   <url value="http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR"/>
   <version value="1.2.0"/>
@@ -17,70 +17,72 @@
     <name value="SIHCE Development Team"/>
     <telecom>
       <system value="url"/>
-      <value value="http://sihce.gob.ar/"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
     </telecom>
   </contact>
   <description value="Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje)."/>
   <purpose value="Cambio de id local manteniendo validación por SDM."/>
   <group>
+    <source value="http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"/>
+    <target value="http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"/>
     <element>
-      <code value="ModificarIDLocalPersona.DatosPersona.tipoDocumento"/>
+      <code value="ModificarIDLocalPersona.datosPersona.tipoDocumento"/>
       <target>
         <code value="Patient.identifier"/>
         <relationship value="equivalent"/>
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio"/>
+      <code value="ModificarIDLocalPersona.datosPersona.documentoIdentificatorio"/>
       <target>
         <code value="Patient.identifier"/>
         <relationship value="equivalent"/>
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosPersona.sexo"/>
+      <code value="ModificarIDLocalPersona.datosPersona.sexo"/>
       <target>
         <code value="Patient.gender"/>
         <relationship value="equivalent"/>
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosPersona.primerNombre"/>
+      <code value="ModificarIDLocalPersona.datosPersona.primerNombre"/>
       <target>
         <code value="Patient.name"/>
         <relationship value="equivalent"/>
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosPersona.segundoNombre"/>
+      <code value="ModificarIDLocalPersona.datosPersona.segundoNombre"/>
       <target>
         <code value="Patient.name"/>
         <relationship value="equivalent"/>
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosPersona.primerApellido"/>
+      <code value="ModificarIDLocalPersona.datosPersona.primerApellido"/>
       <target>
         <code value="Patient.name"/>
         <relationship value="equivalent"/>
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosPersona.segundoApellido"/>
+      <code value="ModificarIDLocalPersona.datosPersona.segundoApellido"/>
       <target>
         <code value="Patient.name"/>
         <relationship value="equivalent"/>
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosPersona.fechaNacimiento"/>
+      <code value="ModificarIDLocalPersona.datosPersona.fechaNacimiento"/>
       <target>
         <code value="Patient.birthDate"/>
         <relationship value="equivalent"/>
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosModificacion.idDominio"/>
+      <code value="ModificarIDLocalPersona.datosModificacion.idDominio"/>
       <target>
         <code value="Patient.identifier"/>
         <relationship value="equivalent"/>
@@ -88,14 +90,14 @@
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual"/>
+      <code value="ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual"/>
       <target>
         <code value="Patient.identifier"/>
         <relationship value="equivalent"/>
       </target>
     </element>
     <element>
-      <code value="ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo"/>
+      <code value="ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo"/>
       <target>
         <code value="Patient.identifier"/>
         <relationship value="equivalent"/>
@@ -103,8 +105,10 @@
     </element>
   </group>
   <group>
+    <source value="http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"/>
+    <target value="http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"/>
     <element>
-      <code value="ModificarIDLocalPersona.DatosRespuesta.mensaje"/>
+      <code value="ModificarIDLocalPersona.datosRespuesta.mensaje"/>
       <target>
         <code value="OperationOutcome.issue"/>
         <relationship value="equivalent"/>

@@ -34,70 +34,72 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).",
   "purpose" : "Cambio de id local manteniendo validación por SDM.",
   "group" : [{
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "ModificarIDLocalPersona.DatosPersona.tipoDocumento",
+      "code" : "ModificarIDLocalPersona.datosPersona.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosPersona.documentoIdentificatorio",
+      "code" : "ModificarIDLocalPersona.datosPersona.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosPersona.sexo",
+      "code" : "ModificarIDLocalPersona.datosPersona.sexo",
       "target" : [{
         "code" : "Patient.gender",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosPersona.primerNombre",
+      "code" : "ModificarIDLocalPersona.datosPersona.primerNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosPersona.segundoNombre",
+      "code" : "ModificarIDLocalPersona.datosPersona.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosPersona.primerApellido",
+      "code" : "ModificarIDLocalPersona.datosPersona.primerApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosPersona.segundoApellido",
+      "code" : "ModificarIDLocalPersona.datosPersona.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosPersona.fechaNacimiento",
+      "code" : "ModificarIDLocalPersona.datosPersona.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosModificacion.idDominio",
+      "code" : "ModificarIDLocalPersona.datosModificacion.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent",
@@ -105,14 +107,14 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaActual",
+      "code" : "ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
       }]
     },
     {
-      "code" : "ModificarIDLocalPersona.DatosModificacion.idLocalPersonaNuevo",
+      "code" : "ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo",
       "target" : [{
         "code" : "Patient.identifier",
         "relationship" : "equivalent"
@@ -120,8 +122,10 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
     }]
   },
   {
+    "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+    "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
     "element" : [{
-      "code" : "ModificarIDLocalPersona.DatosRespuesta.mensaje",
+      "code" : "ModificarIDLocalPersona.datosRespuesta.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
         "relationship" : "equivalent"

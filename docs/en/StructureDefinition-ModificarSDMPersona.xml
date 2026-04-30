@@ -5,29 +5,29 @@
   <language value="en"/>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition ModificarSDMPersona</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona" title="Actualización del SDM de una persona federada; documento inmutable.">ModificarSDMPersona</a><a name="ModificarSDMPersona"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Element">Element</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modelo lógico ModificarSDMPersona (FederadorBA)<br/><br/>Elements defined in Ancestors:<a href="http://hl7.org/fhir/R5/types.html#Element" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">@id</a>, <a href="http://hl7.org/fhir/R5/types.html#Element" title="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.">extension</a></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual" title="Datos vigentes en FederadorBA.">SDMActual</a><a name="ModificarSDMPersona.SDMActual"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">SDM actual</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual.tipoDocumento" title="Ej. DNI.">tipoDocumento</a><a name="ModificarSDMPersona.SDMActual.tipoDocumento"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tipo de documento</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual.documentoIdentificatorio" title="Valor del documento.">documentoIdentificatorio</a><a name="ModificarSDMPersona.SDMActual.documentoIdentificatorio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Número de documento</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual.sexo" title="Sexo administrativo.">sexo</a><a name="ModificarSDMPersona.SDMActual.sexo"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sexo</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual.primerNombre" title="Primer nombre.">primerNombre</a><a name="ModificarSDMPersona.SDMActual.primerNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer nombre</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual.segundoNombre" title="Segundo nombre.">segundoNombre</a><a name="ModificarSDMPersona.SDMActual.segundoNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Segundo nombre</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual.primerApellido" title="Primer apellido.">primerApellido</a><a name="ModificarSDMPersona.SDMActual.primerApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer apellido</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual.segundoApellido" title="Segundo apellido.">segundoApellido</a><a name="ModificarSDMPersona.SDMActual.segundoApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Segundo apellido</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual.fechaNacimiento" title="AAAA-MM-DD.">fechaNacimiento</a><a name="ModificarSDMPersona.SDMActual.fechaNacimiento"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha de nacimiento</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMActual.fechaDefuncion" title="Si aplica.">fechaDefuncion</a><a name="ModificarSDMPersona.SDMActual.fechaDefuncion"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha de defunción</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMNuevo" title="Valores deseados (sin documento).">SDMNuevo</a><a name="ModificarSDMPersona.SDMNuevo"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">SDM nuevo</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMNuevo.sexo" title="Sexo actualizado.">sexo</a><a name="ModificarSDMPersona.SDMNuevo.sexo"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sexo</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMNuevo.primerNombre" title="Nombre actualizado.">primerNombre</a><a name="ModificarSDMPersona.SDMNuevo.primerNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer nombre</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMNuevo.segundoNombre" title="Segundo nombre actualizado.">segundoNombre</a><a name="ModificarSDMPersona.SDMNuevo.segundoNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Segundo nombre</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMNuevo.primerApellido" title="Apellido actualizado.">primerApellido</a><a name="ModificarSDMPersona.SDMNuevo.primerApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer apellido</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMNuevo.segundoApellido" title="Segundo apellido actualizado.">segundoApellido</a><a name="ModificarSDMPersona.SDMNuevo.segundoApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Segundo apellido</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMNuevo.fechaNacimiento" title="Fecha actualizada.">fechaNacimiento</a><a name="ModificarSDMPersona.SDMNuevo.fechaNacimiento"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha de nacimiento</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.SDMNuevo.fechaDefuncion" title="Si aplica.">fechaDefuncion</a><a name="ModificarSDMPersona.SDMNuevo.fechaDefuncion"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha de defunción</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.DatosDominio" title="Dominio que solicita el cambio.">DatosDominio</a><a name="ModificarSDMPersona.DatosDominio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dominio solicitante</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.DatosDominio.idDominio" title="Identificador del dominio.">idDominio</a><a name="ModificarSDMPersona.DatosDominio.idDominio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">URI del dominio</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.DatosDominio.idLocalPersona" title="Identificador local en el dominio.">idLocalPersona</a><a name="ModificarSDMPersona.DatosDominio.idLocalPersona"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Id local</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.DatosRespuesta" title="Resultado de la operación.">DatosRespuesta</a><a name="ModificarSDMPersona.DatosRespuesta"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Respuesta</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.DatosRespuesta.mensaje" title="Mensaje informativo o de error.">mensaje</a><a name="ModificarSDMPersona.DatosRespuesta.mensaje"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Mensaje</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual" title="Datos vigentes en FederadorBA.">sdmActual</a><a name="ModificarSDMPersona.sdmActual"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">SDM actual</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual.tipoDocumento" title="Ej. DNI.">tipoDocumento</a><a name="ModificarSDMPersona.sdmActual.tipoDocumento"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tipo de documento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual.documentoIdentificatorio" title="Valor del documento.">documentoIdentificatorio</a><a name="ModificarSDMPersona.sdmActual.documentoIdentificatorio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Número de documento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual.sexo" title="Sexo administrativo.">sexo</a><a name="ModificarSDMPersona.sdmActual.sexo"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sexo</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual.primerNombre" title="Primer nombre.">primerNombre</a><a name="ModificarSDMPersona.sdmActual.primerNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer nombre</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual.segundoNombre" title="Segundo nombre.">segundoNombre</a><a name="ModificarSDMPersona.sdmActual.segundoNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Segundo nombre</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual.primerApellido" title="Primer apellido.">primerApellido</a><a name="ModificarSDMPersona.sdmActual.primerApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer apellido</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual.segundoApellido" title="Segundo apellido.">segundoApellido</a><a name="ModificarSDMPersona.sdmActual.segundoApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Segundo apellido</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual.fechaNacimiento" title="AAAA-MM-DD.">fechaNacimiento</a><a name="ModificarSDMPersona.sdmActual.fechaNacimiento"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha de nacimiento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmActual.fechaDefuncion" title="Si aplica.">fechaDefuncion</a><a name="ModificarSDMPersona.sdmActual.fechaDefuncion"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha de defunción</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmNuevo" title="Valores deseados (sin documento).">sdmNuevo</a><a name="ModificarSDMPersona.sdmNuevo"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">SDM nuevo</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmNuevo.sexo" title="Sexo actualizado.">sexo</a><a name="ModificarSDMPersona.sdmNuevo.sexo"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sexo</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmNuevo.primerNombre" title="Nombre actualizado.">primerNombre</a><a name="ModificarSDMPersona.sdmNuevo.primerNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer nombre</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmNuevo.segundoNombre" title="Segundo nombre actualizado.">segundoNombre</a><a name="ModificarSDMPersona.sdmNuevo.segundoNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Segundo nombre</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmNuevo.primerApellido" title="Apellido actualizado.">primerApellido</a><a name="ModificarSDMPersona.sdmNuevo.primerApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer apellido</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmNuevo.segundoApellido" title="Segundo apellido actualizado.">segundoApellido</a><a name="ModificarSDMPersona.sdmNuevo.segundoApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Segundo apellido</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmNuevo.fechaNacimiento" title="Fecha actualizada.">fechaNacimiento</a><a name="ModificarSDMPersona.sdmNuevo.fechaNacimiento"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha de nacimiento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.sdmNuevo.fechaDefuncion" title="Si aplica.">fechaDefuncion</a><a name="ModificarSDMPersona.sdmNuevo.fechaDefuncion"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha de defunción</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.datosDominio" title="Dominio que solicita el cambio.">datosDominio</a><a name="ModificarSDMPersona.datosDominio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dominio solicitante</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.datosDominio.idDominio" title="Identificador del dominio.">idDominio</a><a name="ModificarSDMPersona.datosDominio.idDominio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#uri">uri</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">URI del dominio</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.datosDominio.idLocalPersona" title="Identificador local en el dominio.">idLocalPersona</a><a name="ModificarSDMPersona.datosDominio.idLocalPersona"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Id local</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.datosRespuesta" title="Resultado de la operación.">datosRespuesta</a><a name="ModificarSDMPersona.datosRespuesta"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Respuesta</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-ModificarSDMPersona-definitions.html#ModificarSDMPersona.datosRespuesta.mensaje" title="Mensaje informativo o de error.">mensaje</a><a name="ModificarSDMPersona.datosRespuesta.mensaje"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Mensaje</td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona"/>
@@ -35,13 +35,13 @@
   <name value="ModificarSDMPersona"/>
   <title value="Modelo lógico ModificarSDMPersona (FederadorBA)"/>
   <status value="draft"/>
-  <date value="2026-04-30T15:35:26-03:00"/>
+  <date value="2026-04-30T18:14:12-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
     <telecom>
       <system value="url"/>
-      <value value="http://sihce.gob.ar/"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
     </telecom>
   </contact>
   <description value="Actualización del SDM de una persona federada; documento inmutable."/>
@@ -156,14 +156,14 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.SDMActual">
-      <path value="ModificarSDMPersona.SDMActual"/>
+    <element id="ModificarSDMPersona.sdmActual">
+      <path value="ModificarSDMPersona.sdmActual"/>
       <short value="SDM actual"/>
       <definition value="Datos vigentes en FederadorBA."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual"/>
+        <path value="ModificarSDMPersona.sdmActual"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -178,8 +178,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.id">
-      <path value="ModificarSDMPersona.SDMActual.id"/>
+    <element id="ModificarSDMPersona.sdmActual.id">
+      <path value="ModificarSDMPersona.sdmActual.id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
@@ -204,8 +204,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.extension">
-      <path value="ModificarSDMPersona.SDMActual.extension"/>
+    <element id="ModificarSDMPersona.sdmActual.extension">
+      <path value="ModificarSDMPersona.sdmActual.extension"/>
       <slicing>
         <discriminator>
           <type value="value"/>
@@ -250,8 +250,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.modifierExtension">
-      <path value="ModificarSDMPersona.SDMActual.modifierExtension"/>
+    <element id="ModificarSDMPersona.sdmActual.modifierExtension">
+      <path value="ModificarSDMPersona.sdmActual.modifierExtension"/>
       <short value="Extensions that cannot be ignored even if unrecognized"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -291,14 +291,14 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.tipoDocumento">
-      <path value="ModificarSDMPersona.SDMActual.tipoDocumento"/>
+    <element id="ModificarSDMPersona.sdmActual.tipoDocumento">
+      <path value="ModificarSDMPersona.sdmActual.tipoDocumento"/>
       <short value="Tipo de documento"/>
       <definition value="Ej. DNI."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual.tipoDocumento"/>
+        <path value="ModificarSDMPersona.sdmActual.tipoDocumento"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -306,14 +306,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.documentoIdentificatorio">
-      <path value="ModificarSDMPersona.SDMActual.documentoIdentificatorio"/>
+    <element id="ModificarSDMPersona.sdmActual.documentoIdentificatorio">
+      <path value="ModificarSDMPersona.sdmActual.documentoIdentificatorio"/>
       <short value="Número de documento"/>
       <definition value="Valor del documento."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual.documentoIdentificatorio"/>
+        <path value="ModificarSDMPersona.sdmActual.documentoIdentificatorio"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -321,14 +321,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.sexo">
-      <path value="ModificarSDMPersona.SDMActual.sexo"/>
+    <element id="ModificarSDMPersona.sdmActual.sexo">
+      <path value="ModificarSDMPersona.sdmActual.sexo"/>
       <short value="Sexo"/>
       <definition value="Sexo administrativo."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual.sexo"/>
+        <path value="ModificarSDMPersona.sdmActual.sexo"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -336,14 +336,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.primerNombre">
-      <path value="ModificarSDMPersona.SDMActual.primerNombre"/>
+    <element id="ModificarSDMPersona.sdmActual.primerNombre">
+      <path value="ModificarSDMPersona.sdmActual.primerNombre"/>
       <short value="Primer nombre"/>
       <definition value="Primer nombre."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual.primerNombre"/>
+        <path value="ModificarSDMPersona.sdmActual.primerNombre"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -351,14 +351,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.segundoNombre">
-      <path value="ModificarSDMPersona.SDMActual.segundoNombre"/>
+    <element id="ModificarSDMPersona.sdmActual.segundoNombre">
+      <path value="ModificarSDMPersona.sdmActual.segundoNombre"/>
       <short value="Segundo nombre"/>
       <definition value="Segundo nombre."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual.segundoNombre"/>
+        <path value="ModificarSDMPersona.sdmActual.segundoNombre"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -366,14 +366,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.primerApellido">
-      <path value="ModificarSDMPersona.SDMActual.primerApellido"/>
+    <element id="ModificarSDMPersona.sdmActual.primerApellido">
+      <path value="ModificarSDMPersona.sdmActual.primerApellido"/>
       <short value="Primer apellido"/>
       <definition value="Primer apellido."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual.primerApellido"/>
+        <path value="ModificarSDMPersona.sdmActual.primerApellido"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -381,14 +381,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.segundoApellido">
-      <path value="ModificarSDMPersona.SDMActual.segundoApellido"/>
+    <element id="ModificarSDMPersona.sdmActual.segundoApellido">
+      <path value="ModificarSDMPersona.sdmActual.segundoApellido"/>
       <short value="Segundo apellido"/>
       <definition value="Segundo apellido."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual.segundoApellido"/>
+        <path value="ModificarSDMPersona.sdmActual.segundoApellido"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -396,14 +396,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.fechaNacimiento">
-      <path value="ModificarSDMPersona.SDMActual.fechaNacimiento"/>
+    <element id="ModificarSDMPersona.sdmActual.fechaNacimiento">
+      <path value="ModificarSDMPersona.sdmActual.fechaNacimiento"/>
       <short value="Fecha de nacimiento"/>
       <definition value="AAAA-MM-DD."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual.fechaNacimiento"/>
+        <path value="ModificarSDMPersona.sdmActual.fechaNacimiento"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -411,14 +411,14 @@
         <code value="date"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.fechaDefuncion">
-      <path value="ModificarSDMPersona.SDMActual.fechaDefuncion"/>
+    <element id="ModificarSDMPersona.sdmActual.fechaDefuncion">
+      <path value="ModificarSDMPersona.sdmActual.fechaDefuncion"/>
       <short value="Fecha de defunción"/>
       <definition value="Si aplica."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMActual.fechaDefuncion"/>
+        <path value="ModificarSDMPersona.sdmActual.fechaDefuncion"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -426,14 +426,14 @@
         <code value="date"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo">
-      <path value="ModificarSDMPersona.SDMNuevo"/>
+    <element id="ModificarSDMPersona.sdmNuevo">
+      <path value="ModificarSDMPersona.sdmNuevo"/>
       <short value="SDM nuevo"/>
       <definition value="Valores deseados (sin documento)."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMNuevo"/>
+        <path value="ModificarSDMPersona.sdmNuevo"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -448,8 +448,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.id">
-      <path value="ModificarSDMPersona.SDMNuevo.id"/>
+    <element id="ModificarSDMPersona.sdmNuevo.id">
+      <path value="ModificarSDMPersona.sdmNuevo.id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
@@ -474,8 +474,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.extension">
-      <path value="ModificarSDMPersona.SDMNuevo.extension"/>
+    <element id="ModificarSDMPersona.sdmNuevo.extension">
+      <path value="ModificarSDMPersona.sdmNuevo.extension"/>
       <slicing>
         <discriminator>
           <type value="value"/>
@@ -520,8 +520,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.modifierExtension">
-      <path value="ModificarSDMPersona.SDMNuevo.modifierExtension"/>
+    <element id="ModificarSDMPersona.sdmNuevo.modifierExtension">
+      <path value="ModificarSDMPersona.sdmNuevo.modifierExtension"/>
       <short value="Extensions that cannot be ignored even if unrecognized"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -561,14 +561,14 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.sexo">
-      <path value="ModificarSDMPersona.SDMNuevo.sexo"/>
+    <element id="ModificarSDMPersona.sdmNuevo.sexo">
+      <path value="ModificarSDMPersona.sdmNuevo.sexo"/>
       <short value="Sexo"/>
       <definition value="Sexo actualizado."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMNuevo.sexo"/>
+        <path value="ModificarSDMPersona.sdmNuevo.sexo"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -576,14 +576,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.primerNombre">
-      <path value="ModificarSDMPersona.SDMNuevo.primerNombre"/>
+    <element id="ModificarSDMPersona.sdmNuevo.primerNombre">
+      <path value="ModificarSDMPersona.sdmNuevo.primerNombre"/>
       <short value="Primer nombre"/>
       <definition value="Nombre actualizado."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMNuevo.primerNombre"/>
+        <path value="ModificarSDMPersona.sdmNuevo.primerNombre"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -591,14 +591,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.segundoNombre">
-      <path value="ModificarSDMPersona.SDMNuevo.segundoNombre"/>
+    <element id="ModificarSDMPersona.sdmNuevo.segundoNombre">
+      <path value="ModificarSDMPersona.sdmNuevo.segundoNombre"/>
       <short value="Segundo nombre"/>
       <definition value="Segundo nombre actualizado."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMNuevo.segundoNombre"/>
+        <path value="ModificarSDMPersona.sdmNuevo.segundoNombre"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -606,14 +606,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.primerApellido">
-      <path value="ModificarSDMPersona.SDMNuevo.primerApellido"/>
+    <element id="ModificarSDMPersona.sdmNuevo.primerApellido">
+      <path value="ModificarSDMPersona.sdmNuevo.primerApellido"/>
       <short value="Primer apellido"/>
       <definition value="Apellido actualizado."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMNuevo.primerApellido"/>
+        <path value="ModificarSDMPersona.sdmNuevo.primerApellido"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -621,14 +621,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.segundoApellido">
-      <path value="ModificarSDMPersona.SDMNuevo.segundoApellido"/>
+    <element id="ModificarSDMPersona.sdmNuevo.segundoApellido">
+      <path value="ModificarSDMPersona.sdmNuevo.segundoApellido"/>
       <short value="Segundo apellido"/>
       <definition value="Segundo apellido actualizado."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMNuevo.segundoApellido"/>
+        <path value="ModificarSDMPersona.sdmNuevo.segundoApellido"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -636,14 +636,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.fechaNacimiento">
-      <path value="ModificarSDMPersona.SDMNuevo.fechaNacimiento"/>
+    <element id="ModificarSDMPersona.sdmNuevo.fechaNacimiento">
+      <path value="ModificarSDMPersona.sdmNuevo.fechaNacimiento"/>
       <short value="Fecha de nacimiento"/>
       <definition value="Fecha actualizada."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMNuevo.fechaNacimiento"/>
+        <path value="ModificarSDMPersona.sdmNuevo.fechaNacimiento"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -651,14 +651,14 @@
         <code value="date"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.fechaDefuncion">
-      <path value="ModificarSDMPersona.SDMNuevo.fechaDefuncion"/>
+    <element id="ModificarSDMPersona.sdmNuevo.fechaDefuncion">
+      <path value="ModificarSDMPersona.sdmNuevo.fechaDefuncion"/>
       <short value="Fecha de defunción"/>
       <definition value="Si aplica."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.SDMNuevo.fechaDefuncion"/>
+        <path value="ModificarSDMPersona.sdmNuevo.fechaDefuncion"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -666,14 +666,14 @@
         <code value="date"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.DatosDominio">
-      <path value="ModificarSDMPersona.DatosDominio"/>
+    <element id="ModificarSDMPersona.datosDominio">
+      <path value="ModificarSDMPersona.datosDominio"/>
       <short value="Dominio solicitante"/>
       <definition value="Dominio que solicita el cambio."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.DatosDominio"/>
+        <path value="ModificarSDMPersona.datosDominio"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -688,8 +688,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
     </element>
-    <element id="ModificarSDMPersona.DatosDominio.id">
-      <path value="ModificarSDMPersona.DatosDominio.id"/>
+    <element id="ModificarSDMPersona.datosDominio.id">
+      <path value="ModificarSDMPersona.datosDominio.id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
@@ -714,8 +714,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.DatosDominio.extension">
-      <path value="ModificarSDMPersona.DatosDominio.extension"/>
+    <element id="ModificarSDMPersona.datosDominio.extension">
+      <path value="ModificarSDMPersona.datosDominio.extension"/>
       <slicing>
         <discriminator>
           <type value="value"/>
@@ -760,8 +760,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.DatosDominio.modifierExtension">
-      <path value="ModificarSDMPersona.DatosDominio.modifierExtension"/>
+    <element id="ModificarSDMPersona.datosDominio.modifierExtension">
+      <path value="ModificarSDMPersona.datosDominio.modifierExtension"/>
       <short value="Extensions that cannot be ignored even if unrecognized"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -801,14 +801,14 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.DatosDominio.idDominio">
-      <path value="ModificarSDMPersona.DatosDominio.idDominio"/>
+    <element id="ModificarSDMPersona.datosDominio.idDominio">
+      <path value="ModificarSDMPersona.datosDominio.idDominio"/>
       <short value="URI del dominio"/>
       <definition value="Identificador del dominio."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.DatosDominio.idDominio"/>
+        <path value="ModificarSDMPersona.datosDominio.idDominio"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -816,14 +816,14 @@
         <code value="uri"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.DatosDominio.idLocalPersona">
-      <path value="ModificarSDMPersona.DatosDominio.idLocalPersona"/>
+    <element id="ModificarSDMPersona.datosDominio.idLocalPersona">
+      <path value="ModificarSDMPersona.datosDominio.idLocalPersona"/>
       <short value="Id local"/>
       <definition value="Identificador local en el dominio."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.DatosDominio.idLocalPersona"/>
+        <path value="ModificarSDMPersona.datosDominio.idLocalPersona"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -831,14 +831,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.DatosRespuesta">
-      <path value="ModificarSDMPersona.DatosRespuesta"/>
+    <element id="ModificarSDMPersona.datosRespuesta">
+      <path value="ModificarSDMPersona.datosRespuesta"/>
       <short value="Respuesta"/>
       <definition value="Resultado de la operación."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.DatosRespuesta"/>
+        <path value="ModificarSDMPersona.datosRespuesta"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -853,8 +853,8 @@
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
     </element>
-    <element id="ModificarSDMPersona.DatosRespuesta.id">
-      <path value="ModificarSDMPersona.DatosRespuesta.id"/>
+    <element id="ModificarSDMPersona.datosRespuesta.id">
+      <path value="ModificarSDMPersona.datosRespuesta.id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
@@ -879,8 +879,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.DatosRespuesta.extension">
-      <path value="ModificarSDMPersona.DatosRespuesta.extension"/>
+    <element id="ModificarSDMPersona.datosRespuesta.extension">
+      <path value="ModificarSDMPersona.datosRespuesta.extension"/>
       <slicing>
         <discriminator>
           <type value="value"/>
@@ -925,8 +925,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.DatosRespuesta.modifierExtension">
-      <path value="ModificarSDMPersona.DatosRespuesta.modifierExtension"/>
+    <element id="ModificarSDMPersona.datosRespuesta.modifierExtension">
+      <path value="ModificarSDMPersona.datosRespuesta.modifierExtension"/>
       <short value="Extensions that cannot be ignored even if unrecognized"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.&#xA;&#xA;Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
       <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -966,14 +966,14 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="ModificarSDMPersona.DatosRespuesta.mensaje">
-      <path value="ModificarSDMPersona.DatosRespuesta.mensaje"/>
+    <element id="ModificarSDMPersona.datosRespuesta.mensaje">
+      <path value="ModificarSDMPersona.datosRespuesta.mensaje"/>
       <short value="Mensaje"/>
       <definition value="Mensaje informativo o de error."/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="ModificarSDMPersona.DatosRespuesta.mensaje"/>
+        <path value="ModificarSDMPersona.datosRespuesta.mensaje"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -988,8 +988,8 @@
       <short value="Modelo lógico ModificarSDMPersona (FederadorBA)"/>
       <definition value="Actualización del SDM de una persona federada; documento inmutable."/>
     </element>
-    <element id="ModificarSDMPersona.SDMActual">
-      <path value="ModificarSDMPersona.SDMActual"/>
+    <element id="ModificarSDMPersona.sdmActual">
+      <path value="ModificarSDMPersona.sdmActual"/>
       <short value="SDM actual"/>
       <definition value="Datos vigentes en FederadorBA."/>
       <min value="1"/>
@@ -998,8 +998,8 @@
         <code value="BackboneElement"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.tipoDocumento">
-      <path value="ModificarSDMPersona.SDMActual.tipoDocumento"/>
+    <element id="ModificarSDMPersona.sdmActual.tipoDocumento">
+      <path value="ModificarSDMPersona.sdmActual.tipoDocumento"/>
       <short value="Tipo de documento"/>
       <definition value="Ej. DNI."/>
       <min value="1"/>
@@ -1008,8 +1008,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.documentoIdentificatorio">
-      <path value="ModificarSDMPersona.SDMActual.documentoIdentificatorio"/>
+    <element id="ModificarSDMPersona.sdmActual.documentoIdentificatorio">
+      <path value="ModificarSDMPersona.sdmActual.documentoIdentificatorio"/>
       <short value="Número de documento"/>
       <definition value="Valor del documento."/>
       <min value="1"/>
@@ -1018,8 +1018,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.sexo">
-      <path value="ModificarSDMPersona.SDMActual.sexo"/>
+    <element id="ModificarSDMPersona.sdmActual.sexo">
+      <path value="ModificarSDMPersona.sdmActual.sexo"/>
       <short value="Sexo"/>
       <definition value="Sexo administrativo."/>
       <min value="1"/>
@@ -1028,8 +1028,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.primerNombre">
-      <path value="ModificarSDMPersona.SDMActual.primerNombre"/>
+    <element id="ModificarSDMPersona.sdmActual.primerNombre">
+      <path value="ModificarSDMPersona.sdmActual.primerNombre"/>
       <short value="Primer nombre"/>
       <definition value="Primer nombre."/>
       <min value="1"/>
@@ -1038,8 +1038,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.segundoNombre">
-      <path value="ModificarSDMPersona.SDMActual.segundoNombre"/>
+    <element id="ModificarSDMPersona.sdmActual.segundoNombre">
+      <path value="ModificarSDMPersona.sdmActual.segundoNombre"/>
       <short value="Segundo nombre"/>
       <definition value="Segundo nombre."/>
       <min value="0"/>
@@ -1048,8 +1048,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.primerApellido">
-      <path value="ModificarSDMPersona.SDMActual.primerApellido"/>
+    <element id="ModificarSDMPersona.sdmActual.primerApellido">
+      <path value="ModificarSDMPersona.sdmActual.primerApellido"/>
       <short value="Primer apellido"/>
       <definition value="Primer apellido."/>
       <min value="1"/>
@@ -1058,8 +1058,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.segundoApellido">
-      <path value="ModificarSDMPersona.SDMActual.segundoApellido"/>
+    <element id="ModificarSDMPersona.sdmActual.segundoApellido">
+      <path value="ModificarSDMPersona.sdmActual.segundoApellido"/>
       <short value="Segundo apellido"/>
       <definition value="Segundo apellido."/>
       <min value="0"/>
@@ -1068,8 +1068,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.fechaNacimiento">
-      <path value="ModificarSDMPersona.SDMActual.fechaNacimiento"/>
+    <element id="ModificarSDMPersona.sdmActual.fechaNacimiento">
+      <path value="ModificarSDMPersona.sdmActual.fechaNacimiento"/>
       <short value="Fecha de nacimiento"/>
       <definition value="AAAA-MM-DD."/>
       <min value="1"/>
@@ -1078,8 +1078,8 @@
         <code value="date"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMActual.fechaDefuncion">
-      <path value="ModificarSDMPersona.SDMActual.fechaDefuncion"/>
+    <element id="ModificarSDMPersona.sdmActual.fechaDefuncion">
+      <path value="ModificarSDMPersona.sdmActual.fechaDefuncion"/>
       <short value="Fecha de defunción"/>
       <definition value="Si aplica."/>
       <min value="0"/>
@@ -1088,8 +1088,8 @@
         <code value="date"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo">
-      <path value="ModificarSDMPersona.SDMNuevo"/>
+    <element id="ModificarSDMPersona.sdmNuevo">
+      <path value="ModificarSDMPersona.sdmNuevo"/>
       <short value="SDM nuevo"/>
       <definition value="Valores deseados (sin documento)."/>
       <min value="1"/>
@@ -1098,8 +1098,8 @@
         <code value="BackboneElement"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.sexo">
-      <path value="ModificarSDMPersona.SDMNuevo.sexo"/>
+    <element id="ModificarSDMPersona.sdmNuevo.sexo">
+      <path value="ModificarSDMPersona.sdmNuevo.sexo"/>
       <short value="Sexo"/>
       <definition value="Sexo actualizado."/>
       <min value="1"/>
@@ -1108,8 +1108,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.primerNombre">
-      <path value="ModificarSDMPersona.SDMNuevo.primerNombre"/>
+    <element id="ModificarSDMPersona.sdmNuevo.primerNombre">
+      <path value="ModificarSDMPersona.sdmNuevo.primerNombre"/>
       <short value="Primer nombre"/>
       <definition value="Nombre actualizado."/>
       <min value="1"/>
@@ -1118,8 +1118,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.segundoNombre">
-      <path value="ModificarSDMPersona.SDMNuevo.segundoNombre"/>
+    <element id="ModificarSDMPersona.sdmNuevo.segundoNombre">
+      <path value="ModificarSDMPersona.sdmNuevo.segundoNombre"/>
       <short value="Segundo nombre"/>
       <definition value="Segundo nombre actualizado."/>
       <min value="0"/>
@@ -1128,8 +1128,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.primerApellido">
-      <path value="ModificarSDMPersona.SDMNuevo.primerApellido"/>
+    <element id="ModificarSDMPersona.sdmNuevo.primerApellido">
+      <path value="ModificarSDMPersona.sdmNuevo.primerApellido"/>
       <short value="Primer apellido"/>
       <definition value="Apellido actualizado."/>
       <min value="1"/>
@@ -1138,8 +1138,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.segundoApellido">
-      <path value="ModificarSDMPersona.SDMNuevo.segundoApellido"/>
+    <element id="ModificarSDMPersona.sdmNuevo.segundoApellido">
+      <path value="ModificarSDMPersona.sdmNuevo.segundoApellido"/>
       <short value="Segundo apellido"/>
       <definition value="Segundo apellido actualizado."/>
       <min value="0"/>
@@ -1148,8 +1148,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.fechaNacimiento">
-      <path value="ModificarSDMPersona.SDMNuevo.fechaNacimiento"/>
+    <element id="ModificarSDMPersona.sdmNuevo.fechaNacimiento">
+      <path value="ModificarSDMPersona.sdmNuevo.fechaNacimiento"/>
       <short value="Fecha de nacimiento"/>
       <definition value="Fecha actualizada."/>
       <min value="1"/>
@@ -1158,8 +1158,8 @@
         <code value="date"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.SDMNuevo.fechaDefuncion">
-      <path value="ModificarSDMPersona.SDMNuevo.fechaDefuncion"/>
+    <element id="ModificarSDMPersona.sdmNuevo.fechaDefuncion">
+      <path value="ModificarSDMPersona.sdmNuevo.fechaDefuncion"/>
       <short value="Fecha de defunción"/>
       <definition value="Si aplica."/>
       <min value="0"/>
@@ -1168,8 +1168,8 @@
         <code value="date"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.DatosDominio">
-      <path value="ModificarSDMPersona.DatosDominio"/>
+    <element id="ModificarSDMPersona.datosDominio">
+      <path value="ModificarSDMPersona.datosDominio"/>
       <short value="Dominio solicitante"/>
       <definition value="Dominio que solicita el cambio."/>
       <min value="1"/>
@@ -1178,8 +1178,8 @@
         <code value="BackboneElement"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.DatosDominio.idDominio">
-      <path value="ModificarSDMPersona.DatosDominio.idDominio"/>
+    <element id="ModificarSDMPersona.datosDominio.idDominio">
+      <path value="ModificarSDMPersona.datosDominio.idDominio"/>
       <short value="URI del dominio"/>
       <definition value="Identificador del dominio."/>
       <min value="1"/>
@@ -1188,8 +1188,8 @@
         <code value="uri"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.DatosDominio.idLocalPersona">
-      <path value="ModificarSDMPersona.DatosDominio.idLocalPersona"/>
+    <element id="ModificarSDMPersona.datosDominio.idLocalPersona">
+      <path value="ModificarSDMPersona.datosDominio.idLocalPersona"/>
       <short value="Id local"/>
       <definition value="Identificador local en el dominio."/>
       <min value="1"/>
@@ -1198,8 +1198,8 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.DatosRespuesta">
-      <path value="ModificarSDMPersona.DatosRespuesta"/>
+    <element id="ModificarSDMPersona.datosRespuesta">
+      <path value="ModificarSDMPersona.datosRespuesta"/>
       <short value="Respuesta"/>
       <definition value="Resultado de la operación."/>
       <min value="0"/>
@@ -1208,8 +1208,8 @@
         <code value="BackboneElement"/>
       </type>
     </element>
-    <element id="ModificarSDMPersona.DatosRespuesta.mensaje">
-      <path value="ModificarSDMPersona.DatosRespuesta.mensaje"/>
+    <element id="ModificarSDMPersona.datosRespuesta.mensaje">
+      <path value="ModificarSDMPersona.datosRespuesta.mensaje"/>
       <short value="Mensaje"/>
       <definition value="Mensaje informativo o de error."/>
       <min value="1"/>

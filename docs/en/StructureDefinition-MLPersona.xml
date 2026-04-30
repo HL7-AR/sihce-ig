@@ -5,21 +5,21 @@
   <language value="en"/>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition MLPersona</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona" title="Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación">MLPersona</a><a name="MLPersona"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modelo Lógico de Persona para SIHCE</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial" title="Nombre oficial de la persona">NombreOficial</a><a name="MLPersona.NombreOficial"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nombre oficial de la persona</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial.PrimerNombre" title="Primer nombre">PrimerNombre</a><a name="MLPersona.NombreOficial.PrimerNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer nombre</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial.OtrosNombres" title="Siguientes nombres">OtrosNombres</a><a name="MLPersona.NombreOficial.OtrosNombres"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Siguientes nombres<br/></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial.PrimerApellido" title="Primer parte del apellido o primer apellido">PrimerApellido</a><a name="MLPersona.NombreOficial.PrimerApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer parte del apellido o primer apellido</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.NombreOficial.SegundoApellido" title="Resto del o los apellido(s)">SegundoApellido</a><a name="MLPersona.NombreOficial.SegundoApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Resto del o los apellido(s)<br/></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.NombreSocial" title="Nombre o pseudonimo por el cual la persona desea ser identificada">NombreSocial</a><a name="MLPersona.NombreSocial"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nombre o pseudonimo por el cual la persona desea ser identificada<br/></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.NombreSocial.Nombre" title="Nombre de pila por el cual la persona desea ser identificada">Nombre</a><a name="MLPersona.NombreSocial.Nombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nombre de pila por el cual la persona desea ser identificada</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco" title="DNI + Identificador de dominio local">IdentificadorUnivoco</a><a name="MLPersona.IdentificadorUnivoco"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificador unívoco de la persona<br/></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco.TipoDoc" title="Que documento se va a usar">TipoDoc</a><a name="MLPersona.IdentificadorUnivoco.TipoDoc"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Que documento se va a usar</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco.NroDoc" title="El valor del numero de DNI por ejemplo">NroDoc</a><a name="MLPersona.IdentificadorUnivoco.NroDoc"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">El valor del numero de DNI por ejemplo</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco.URIDominio" title="URI del dominio que federó el paciente">URIDominio</a><a name="MLPersona.IdentificadorUnivoco.URIDominio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">URI del dominio que federó el paciente</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.IdentificadorUnivoco.idLocal" title="ID local del paciente en el dominio">idLocal</a><a name="MLPersona.IdentificadorUnivoco.idLocal"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ID local del paciente en el dominio</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.GeneroAdministrativo" title="Género de registro administrativo, por ejemplo el que figure en su DNI">GeneroAdministrativo</a><a name="MLPersona.GeneroAdministrativo"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Género de registro administrativo, por ejemplo el que figure en su DNI</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.FechaNacimiento" title="Fecha y hora de nacimiento">FechaNacimiento</a><a name="MLPersona.FechaNacimiento"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha y hora de nacimiento</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.Estado" title="Inactivo | Validado | Permanente | Temporal">Estado</a><a name="MLPersona.Estado"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Inactivo | Validado | Permanente | Temporal</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.nombreOficial" title="Nombre oficial de la persona">nombreOficial</a><a name="MLPersona.nombreOficial"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nombre oficial de la persona</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.nombreOficial.primerNombre" title="Primer nombre">primerNombre</a><a name="MLPersona.nombreOficial.primerNombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer nombre</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.nombreOficial.otrosNombres" title="Siguientes nombres">otrosNombres</a><a name="MLPersona.nombreOficial.otrosNombres"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Siguientes nombres<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.nombreOficial.primerApellido" title="Primer parte del apellido o primer apellido">primerApellido</a><a name="MLPersona.nombreOficial.primerApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Primer parte del apellido o primer apellido</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.nombreOficial.segundoApellido" title="Resto del o los apellido(s)">segundoApellido</a><a name="MLPersona.nombreOficial.segundoApellido"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Resto del o los apellido(s)<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.nombreSocial" title="Nombre o pseudonimo por el cual la persona desea ser identificada">nombreSocial</a><a name="MLPersona.nombreSocial"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#HumanName">HumanName</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nombre o pseudonimo por el cual la persona desea ser identificada<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.nombreSocial.nombre" title="Nombre de pila por el cual la persona desea ser identificada">nombre</a><a name="MLPersona.nombreSocial.nombre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nombre de pila por el cual la persona desea ser identificada</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.identificadorUnivoco" title="DNI + Identificador de dominio local">identificadorUnivoco</a><a name="MLPersona.identificadorUnivoco"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificador unívoco de la persona<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.identificadorUnivoco.tipoDoc" title="Que documento se va a usar">tipoDoc</a><a name="MLPersona.identificadorUnivoco.tipoDoc"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Que documento se va a usar</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.identificadorUnivoco.nroDoc" title="El valor del numero de DNI por ejemplo">nroDoc</a><a name="MLPersona.identificadorUnivoco.nroDoc"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">El valor del numero de DNI por ejemplo</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.identificadorUnivoco.uriDominio" title="URI del dominio que federó el paciente">uriDominio</a><a name="MLPersona.identificadorUnivoco.uriDominio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">URI del dominio que federó el paciente</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.identificadorUnivoco.idLocal" title="ID local del paciente en el dominio">idLocal</a><a name="MLPersona.identificadorUnivoco.idLocal"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">ID local del paciente en el dominio</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.generoAdministrativo" title="Género de registro administrativo, por ejemplo el que figure en su DNI">generoAdministrativo</a><a name="MLPersona.generoAdministrativo"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Género de registro administrativo, por ejemplo el que figure en su DNI</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.fechaNacimiento" title="Fecha y hora de nacimiento">fechaNacimiento</a><a name="MLPersona.fechaNacimiento"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha y hora de nacimiento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-MLPersona-definitions.html#MLPersona.estado" title="Inactivo | Validado | Permanente | Temporal">estado</a><a name="MLPersona.estado"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Inactivo | Validado | Permanente | Temporal</td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://sihce.gob.ar/StructureDefinition/MLPersona"/>
@@ -33,7 +33,7 @@
     <name value="SIHCE Development Team"/>
     <telecom>
       <system value="url"/>
-      <value value="http://sihce.gob.ar/"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
     </telecom>
   </contact>
   <description value="Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"/>
@@ -75,14 +75,14 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial">
-      <path value="MLPersona.NombreOficial"/>
+    <element id="MLPersona.nombreOficial">
+      <path value="MLPersona.nombreOficial"/>
       <short value="Nombre oficial de la persona"/>
       <definition value="Nombre oficial de la persona"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.NombreOficial"/>
+        <path value="MLPersona.nombreOficial"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -102,8 +102,8 @@
         <comment value="Nombre oficial mapeado al name slice oficial"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.id">
-      <path value="MLPersona.NombreOficial.id"/>
+    <element id="MLPersona.nombreOficial.id">
+      <path value="MLPersona.nombreOficial.id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
@@ -128,8 +128,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.extension">
-      <path value="MLPersona.NombreOficial.extension"/>
+    <element id="MLPersona.nombreOficial.extension">
+      <path value="MLPersona.nombreOficial.extension"/>
       <slicing>
         <discriminator>
           <type value="value"/>
@@ -174,8 +174,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.use">
-      <path value="MLPersona.NombreOficial.use"/>
+    <element id="MLPersona.nombreOficial.use">
+      <path value="MLPersona.nombreOficial.use"/>
       <short value="usual | official | temp | nickname | anonymous | old | maiden"/>
       <definition value="Identifies the purpose for this name."/>
       <comment value="Applications can assume that a name is current unless it explicitly says that it is temporary or old."/>
@@ -224,8 +224,8 @@
         <map value="./NamePurpose"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.text">
-      <path value="MLPersona.NombreOficial.text"/>
+    <element id="MLPersona.nombreOficial.text">
+      <path value="MLPersona.nombreOficial.text"/>
       <short value="Text representation of the full name"/>
       <definition value="Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts."/>
       <comment value="Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part."/>
@@ -258,8 +258,8 @@
         <map value="./formatted"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.family">
-      <path value="MLPersona.NombreOficial.family"/>
+    <element id="MLPersona.nombreOficial.family">
+      <path value="MLPersona.nombreOficial.family"/>
       <short value="Family name (often called 'Surname')"/>
       <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
       <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)."/>
@@ -296,8 +296,8 @@
         <map value="./FamilyName"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.given">
-      <path value="MLPersona.NombreOficial.given"/>
+    <element id="MLPersona.nombreOficial.given">
+      <path value="MLPersona.nombreOficial.given"/>
       <short value="Given names (not always 'first'). Includes middle names"/>
       <definition value="Given name."/>
       <comment value="If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called &quot;first name&quot; since given names do not always come first."/>
@@ -336,8 +336,8 @@
         <map value="./GivenNames"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.prefix">
-      <path value="MLPersona.NombreOficial.prefix"/>
+    <element id="MLPersona.nombreOficial.prefix">
+      <path value="MLPersona.nombreOficial.prefix"/>
       <short value="Parts that come before the name"/>
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."/>
       <min value="0"/>
@@ -373,8 +373,8 @@
         <map value="./TitleCode"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.suffix">
-      <path value="MLPersona.NombreOficial.suffix"/>
+    <element id="MLPersona.nombreOficial.suffix">
+      <path value="MLPersona.nombreOficial.suffix"/>
       <short value="Parts that come after the name"/>
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name."/>
       <min value="0"/>
@@ -406,8 +406,8 @@
         <map value="./part[partType = SFX]"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.period">
-      <path value="MLPersona.NombreOficial.period"/>
+    <element id="MLPersona.nombreOficial.period">
+      <path value="MLPersona.nombreOficial.period"/>
       <short value="Time period when name was/is in use"/>
       <definition value="Indicates the period of time when this name was valid for the named person."/>
       <requirements value="Allows names to be placed in historical context."/>
@@ -443,14 +443,14 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.PrimerNombre">
-      <path value="MLPersona.NombreOficial.PrimerNombre"/>
+    <element id="MLPersona.nombreOficial.primerNombre">
+      <path value="MLPersona.nombreOficial.primerNombre"/>
       <short value="Primer nombre"/>
       <definition value="Primer nombre"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.NombreOficial.PrimerNombre"/>
+        <path value="MLPersona.nombreOficial.primerNombre"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -463,14 +463,14 @@
         <comment value="Primer nombre al primer elemento de given"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.OtrosNombres">
-      <path value="MLPersona.NombreOficial.OtrosNombres"/>
+    <element id="MLPersona.nombreOficial.otrosNombres">
+      <path value="MLPersona.nombreOficial.otrosNombres"/>
       <short value="Siguientes nombres"/>
       <definition value="Siguientes nombres"/>
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="MLPersona.NombreOficial.OtrosNombres"/>
+        <path value="MLPersona.nombreOficial.otrosNombres"/>
         <min value="0"/>
         <max value="*"/>
       </base>
@@ -483,14 +483,14 @@
         <comment value="Otros nombres a los siguientes elementos de given"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.PrimerApellido">
-      <path value="MLPersona.NombreOficial.PrimerApellido"/>
+    <element id="MLPersona.nombreOficial.primerApellido">
+      <path value="MLPersona.nombreOficial.primerApellido"/>
       <short value="Primer parte del apellido o primer apellido"/>
       <definition value="Primer parte del apellido o primer apellido"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.NombreOficial.PrimerApellido"/>
+        <path value="MLPersona.nombreOficial.primerApellido"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -503,14 +503,14 @@
         <comment value="Primer apellido a la extensión primerApellido"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.SegundoApellido">
-      <path value="MLPersona.NombreOficial.SegundoApellido"/>
+    <element id="MLPersona.nombreOficial.segundoApellido">
+      <path value="MLPersona.nombreOficial.segundoApellido"/>
       <short value="Resto del o los apellido(s)"/>
       <definition value="Resto del o los apellido(s)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="MLPersona.NombreOficial.SegundoApellido"/>
+        <path value="MLPersona.nombreOficial.segundoApellido"/>
         <min value="0"/>
         <max value="*"/>
       </base>
@@ -523,14 +523,14 @@
         <comment value="Segundo apellido a la extensión segundoApellido"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial">
-      <path value="MLPersona.NombreSocial"/>
+    <element id="MLPersona.nombreSocial">
+      <path value="MLPersona.nombreSocial"/>
       <short value="Nombre o pseudonimo por el cual la persona desea ser identificada"/>
       <definition value="Nombre o pseudonimo por el cual la persona desea ser identificada"/>
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="MLPersona.NombreSocial"/>
+        <path value="MLPersona.nombreSocial"/>
         <min value="0"/>
         <max value="*"/>
       </base>
@@ -550,8 +550,8 @@
         <comment value="Nombre social mapeado al name slice social"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.id">
-      <path value="MLPersona.NombreSocial.id"/>
+    <element id="MLPersona.nombreSocial.id">
+      <path value="MLPersona.nombreSocial.id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
@@ -576,8 +576,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.extension">
-      <path value="MLPersona.NombreSocial.extension"/>
+    <element id="MLPersona.nombreSocial.extension">
+      <path value="MLPersona.nombreSocial.extension"/>
       <slicing>
         <discriminator>
           <type value="value"/>
@@ -622,8 +622,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.use">
-      <path value="MLPersona.NombreSocial.use"/>
+    <element id="MLPersona.nombreSocial.use">
+      <path value="MLPersona.nombreSocial.use"/>
       <short value="usual | official | temp | nickname | anonymous | old | maiden"/>
       <definition value="Identifies the purpose for this name."/>
       <comment value="Applications can assume that a name is current unless it explicitly says that it is temporary or old."/>
@@ -672,8 +672,8 @@
         <map value="./NamePurpose"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.text">
-      <path value="MLPersona.NombreSocial.text"/>
+    <element id="MLPersona.nombreSocial.text">
+      <path value="MLPersona.nombreSocial.text"/>
       <short value="Text representation of the full name"/>
       <definition value="Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts."/>
       <comment value="Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part."/>
@@ -706,8 +706,8 @@
         <map value="./formatted"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.family">
-      <path value="MLPersona.NombreSocial.family"/>
+    <element id="MLPersona.nombreSocial.family">
+      <path value="MLPersona.nombreSocial.family"/>
       <short value="Family name (often called 'Surname')"/>
       <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
       <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)."/>
@@ -744,8 +744,8 @@
         <map value="./FamilyName"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.given">
-      <path value="MLPersona.NombreSocial.given"/>
+    <element id="MLPersona.nombreSocial.given">
+      <path value="MLPersona.nombreSocial.given"/>
       <short value="Given names (not always 'first'). Includes middle names"/>
       <definition value="Given name."/>
       <comment value="If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called &quot;first name&quot; since given names do not always come first."/>
@@ -784,8 +784,8 @@
         <map value="./GivenNames"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.prefix">
-      <path value="MLPersona.NombreSocial.prefix"/>
+    <element id="MLPersona.nombreSocial.prefix">
+      <path value="MLPersona.nombreSocial.prefix"/>
       <short value="Parts that come before the name"/>
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."/>
       <min value="0"/>
@@ -821,8 +821,8 @@
         <map value="./TitleCode"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.suffix">
-      <path value="MLPersona.NombreSocial.suffix"/>
+    <element id="MLPersona.nombreSocial.suffix">
+      <path value="MLPersona.nombreSocial.suffix"/>
       <short value="Parts that come after the name"/>
       <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name."/>
       <min value="0"/>
@@ -854,8 +854,8 @@
         <map value="./part[partType = SFX]"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.period">
-      <path value="MLPersona.NombreSocial.period"/>
+    <element id="MLPersona.nombreSocial.period">
+      <path value="MLPersona.nombreSocial.period"/>
       <short value="Time period when name was/is in use"/>
       <definition value="Indicates the period of time when this name was valid for the named person."/>
       <requirements value="Allows names to be placed in historical context."/>
@@ -891,14 +891,14 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.Nombre">
-      <path value="MLPersona.NombreSocial.Nombre"/>
+    <element id="MLPersona.nombreSocial.nombre">
+      <path value="MLPersona.nombreSocial.nombre"/>
       <short value="Nombre de pila por el cual la persona desea ser identificada"/>
       <definition value="Nombre de pila por el cual la persona desea ser identificada"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.NombreSocial.Nombre"/>
+        <path value="MLPersona.nombreSocial.nombre"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -911,14 +911,14 @@
         <comment value="Nombre social al given del name slice social"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco">
-      <path value="MLPersona.IdentificadorUnivoco"/>
+    <element id="MLPersona.identificadorUnivoco">
+      <path value="MLPersona.identificadorUnivoco"/>
       <short value="Identificador unívoco de la persona"/>
       <definition value="DNI + Identificador de dominio local"/>
       <min value="2"/>
       <max value="*"/>
       <base>
-        <path value="MLPersona.IdentificadorUnivoco"/>
+        <path value="MLPersona.identificadorUnivoco"/>
         <min value="2"/>
         <max value="*"/>
       </base>
@@ -945,8 +945,8 @@
         <comment value="Identificadores únicos del modelo lógico"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.id">
-      <path value="MLPersona.IdentificadorUnivoco.id"/>
+    <element id="MLPersona.identificadorUnivoco.id">
+      <path value="MLPersona.identificadorUnivoco.id"/>
       <representation value="xmlAttr"/>
       <short value="Unique id for inter-element referencing"/>
       <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
@@ -971,8 +971,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.extension">
-      <path value="MLPersona.IdentificadorUnivoco.extension"/>
+    <element id="MLPersona.identificadorUnivoco.extension">
+      <path value="MLPersona.identificadorUnivoco.extension"/>
       <slicing>
         <discriminator>
           <type value="value"/>
@@ -1017,8 +1017,8 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.use">
-      <path value="MLPersona.IdentificadorUnivoco.use"/>
+    <element id="MLPersona.identificadorUnivoco.use">
+      <path value="MLPersona.identificadorUnivoco.use"/>
       <short value="usual | official | temp | secondary | old (If known)"/>
       <definition value="The purpose of this identifier."/>
       <comment value="Applications can assume that an identifier is permanent unless it explicitly says that it is temporary."/>
@@ -1063,8 +1063,8 @@
         <map value="Role.code or implied by context"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.type">
-      <path value="MLPersona.IdentificadorUnivoco.type"/>
+    <element id="MLPersona.identificadorUnivoco.type">
+      <path value="MLPersona.identificadorUnivoco.type"/>
       <short value="Description of identifier"/>
       <definition value="A coded type for the identifier that can be used to determine which identifier to use for a specific purpose."/>
       <comment value="This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type."/>
@@ -1111,8 +1111,8 @@
         <map value="Role.code or implied by context"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.system">
-      <path value="MLPersona.IdentificadorUnivoco.system"/>
+    <element id="MLPersona.identificadorUnivoco.system">
+      <path value="MLPersona.identificadorUnivoco.system"/>
       <short value="The namespace for the identifier value"/>
       <definition value="Establishes the namespace for the value - that is, an absolute URL that describes a set values that are unique."/>
       <comment value="Identifier.system is always case sensitive."/>
@@ -1153,8 +1153,8 @@
         <map value="./IdentifierType"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.value">
-      <path value="MLPersona.IdentificadorUnivoco.value"/>
+    <element id="MLPersona.identificadorUnivoco.value">
+      <path value="MLPersona.identificadorUnivoco.value"/>
       <short value="The value that is unique"/>
       <definition value="The portion of the identifier typically relevant to the user and which is unique within the context of the system."/>
       <comment value="If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [http://hl7.org/fhir/StructureDefinition/rendered-value](http://hl7.org/fhir/extensions/StructureDefinition-rendered-value.html)). Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe."/>
@@ -1195,8 +1195,8 @@
         <map value="./Value"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.period">
-      <path value="MLPersona.IdentificadorUnivoco.period"/>
+    <element id="MLPersona.identificadorUnivoco.period">
+      <path value="MLPersona.identificadorUnivoco.period"/>
       <short value="Time period when id is/was valid for use"/>
       <definition value="Time period during which identifier is/was valid for use."/>
       <min value="0"/>
@@ -1231,8 +1231,8 @@
         <map value="./StartDate and ./EndDate"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.assigner">
-      <path value="MLPersona.IdentificadorUnivoco.assigner"/>
+    <element id="MLPersona.identificadorUnivoco.assigner">
+      <path value="MLPersona.identificadorUnivoco.assigner"/>
       <short value="Organization that issued id (may be just text)"/>
       <definition value="Organization that issued/manages the identifier."/>
       <comment value="The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization."/>
@@ -1269,14 +1269,14 @@
         <map value="./IdentifierIssuingAuthority"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.TipoDoc">
-      <path value="MLPersona.IdentificadorUnivoco.TipoDoc"/>
+    <element id="MLPersona.identificadorUnivoco.tipoDoc">
+      <path value="MLPersona.identificadorUnivoco.tipoDoc"/>
       <short value="Que documento se va a usar"/>
       <definition value="Que documento se va a usar"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.IdentificadorUnivoco.TipoDoc"/>
+        <path value="MLPersona.identificadorUnivoco.tipoDoc"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -1289,14 +1289,14 @@
         <comment value="Tipo de documento al DNI identifier"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.NroDoc">
-      <path value="MLPersona.IdentificadorUnivoco.NroDoc"/>
+    <element id="MLPersona.identificadorUnivoco.nroDoc">
+      <path value="MLPersona.identificadorUnivoco.nroDoc"/>
       <short value="El valor del numero de DNI por ejemplo"/>
       <definition value="El valor del numero de DNI por ejemplo"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.IdentificadorUnivoco.NroDoc"/>
+        <path value="MLPersona.identificadorUnivoco.nroDoc"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -1309,14 +1309,14 @@
         <comment value="Número de documento al value del DNI"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.URIDominio">
-      <path value="MLPersona.IdentificadorUnivoco.URIDominio"/>
+    <element id="MLPersona.identificadorUnivoco.uriDominio">
+      <path value="MLPersona.identificadorUnivoco.uriDominio"/>
       <short value="URI del dominio que federó el paciente"/>
       <definition value="URI del dominio que federó el paciente"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.IdentificadorUnivoco.URIDominio"/>
+        <path value="MLPersona.identificadorUnivoco.uriDominio"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -1329,14 +1329,14 @@
         <comment value="URI del dominio al system del identifier"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.idLocal">
-      <path value="MLPersona.IdentificadorUnivoco.idLocal"/>
+    <element id="MLPersona.identificadorUnivoco.idLocal">
+      <path value="MLPersona.identificadorUnivoco.idLocal"/>
       <short value="ID local del paciente en el dominio"/>
       <definition value="ID local del paciente en el dominio"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.IdentificadorUnivoco.idLocal"/>
+        <path value="MLPersona.identificadorUnivoco.idLocal"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -1349,14 +1349,14 @@
         <comment value="ID local al value del identifier de dominio"/>
       </mapping>
     </element>
-    <element id="MLPersona.GeneroAdministrativo">
-      <path value="MLPersona.GeneroAdministrativo"/>
+    <element id="MLPersona.generoAdministrativo">
+      <path value="MLPersona.generoAdministrativo"/>
       <short value="Género de registro administrativo, por ejemplo el que figure en su DNI"/>
       <definition value="Género de registro administrativo, por ejemplo el que figure en su DNI"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.GeneroAdministrativo"/>
+        <path value="MLPersona.generoAdministrativo"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -1369,14 +1369,14 @@
         <comment value="Género administrativo al gender de Patient"/>
       </mapping>
     </element>
-    <element id="MLPersona.FechaNacimiento">
-      <path value="MLPersona.FechaNacimiento"/>
+    <element id="MLPersona.fechaNacimiento">
+      <path value="MLPersona.fechaNacimiento"/>
       <short value="Fecha y hora de nacimiento"/>
       <definition value="Fecha y hora de nacimiento"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.FechaNacimiento"/>
+        <path value="MLPersona.fechaNacimiento"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -1389,14 +1389,14 @@
         <comment value="Fecha de nacimiento al birthDate"/>
       </mapping>
     </element>
-    <element id="MLPersona.Estado">
-      <path value="MLPersona.Estado"/>
+    <element id="MLPersona.estado">
+      <path value="MLPersona.estado"/>
       <short value="Inactivo | Validado | Permanente | Temporal"/>
       <definition value="Inactivo | Validado | Permanente | Temporal"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="MLPersona.Estado"/>
+        <path value="MLPersona.estado"/>
         <min value="1"/>
         <max value="1"/>
       </base>
@@ -1416,8 +1416,8 @@
       <short value="Modelo Lógico de Persona para SIHCE"/>
       <definition value="Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"/>
     </element>
-    <element id="MLPersona.NombreOficial">
-      <path value="MLPersona.NombreOficial"/>
+    <element id="MLPersona.nombreOficial">
+      <path value="MLPersona.nombreOficial"/>
       <short value="Nombre oficial de la persona"/>
       <definition value="Nombre oficial de la persona"/>
       <min value="1"/>
@@ -1431,8 +1431,8 @@
         <comment value="Nombre oficial mapeado al name slice oficial"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.PrimerNombre">
-      <path value="MLPersona.NombreOficial.PrimerNombre"/>
+    <element id="MLPersona.nombreOficial.primerNombre">
+      <path value="MLPersona.nombreOficial.primerNombre"/>
       <short value="Primer nombre"/>
       <definition value="Primer nombre"/>
       <min value="1"/>
@@ -1446,8 +1446,8 @@
         <comment value="Primer nombre al primer elemento de given"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.OtrosNombres">
-      <path value="MLPersona.NombreOficial.OtrosNombres"/>
+    <element id="MLPersona.nombreOficial.otrosNombres">
+      <path value="MLPersona.nombreOficial.otrosNombres"/>
       <short value="Siguientes nombres"/>
       <definition value="Siguientes nombres"/>
       <min value="0"/>
@@ -1461,8 +1461,8 @@
         <comment value="Otros nombres a los siguientes elementos de given"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.PrimerApellido">
-      <path value="MLPersona.NombreOficial.PrimerApellido"/>
+    <element id="MLPersona.nombreOficial.primerApellido">
+      <path value="MLPersona.nombreOficial.primerApellido"/>
       <short value="Primer parte del apellido o primer apellido"/>
       <definition value="Primer parte del apellido o primer apellido"/>
       <min value="1"/>
@@ -1476,8 +1476,8 @@
         <comment value="Primer apellido a la extensión primerApellido"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreOficial.SegundoApellido">
-      <path value="MLPersona.NombreOficial.SegundoApellido"/>
+    <element id="MLPersona.nombreOficial.segundoApellido">
+      <path value="MLPersona.nombreOficial.segundoApellido"/>
       <short value="Resto del o los apellido(s)"/>
       <definition value="Resto del o los apellido(s)"/>
       <min value="0"/>
@@ -1491,8 +1491,8 @@
         <comment value="Segundo apellido a la extensión segundoApellido"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial">
-      <path value="MLPersona.NombreSocial"/>
+    <element id="MLPersona.nombreSocial">
+      <path value="MLPersona.nombreSocial"/>
       <short value="Nombre o pseudonimo por el cual la persona desea ser identificada"/>
       <definition value="Nombre o pseudonimo por el cual la persona desea ser identificada"/>
       <min value="0"/>
@@ -1506,8 +1506,8 @@
         <comment value="Nombre social mapeado al name slice social"/>
       </mapping>
     </element>
-    <element id="MLPersona.NombreSocial.Nombre">
-      <path value="MLPersona.NombreSocial.Nombre"/>
+    <element id="MLPersona.nombreSocial.nombre">
+      <path value="MLPersona.nombreSocial.nombre"/>
       <short value="Nombre de pila por el cual la persona desea ser identificada"/>
       <definition value="Nombre de pila por el cual la persona desea ser identificada"/>
       <min value="1"/>
@@ -1521,8 +1521,8 @@
         <comment value="Nombre social al given del name slice social"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco">
-      <path value="MLPersona.IdentificadorUnivoco"/>
+    <element id="MLPersona.identificadorUnivoco">
+      <path value="MLPersona.identificadorUnivoco"/>
       <short value="Identificador unívoco de la persona"/>
       <definition value="DNI + Identificador de dominio local"/>
       <min value="2"/>
@@ -1536,8 +1536,8 @@
         <comment value="Identificadores únicos del modelo lógico"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.TipoDoc">
-      <path value="MLPersona.IdentificadorUnivoco.TipoDoc"/>
+    <element id="MLPersona.identificadorUnivoco.tipoDoc">
+      <path value="MLPersona.identificadorUnivoco.tipoDoc"/>
       <short value="Que documento se va a usar"/>
       <definition value="Que documento se va a usar"/>
       <min value="1"/>
@@ -1551,8 +1551,8 @@
         <comment value="Tipo de documento al DNI identifier"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.NroDoc">
-      <path value="MLPersona.IdentificadorUnivoco.NroDoc"/>
+    <element id="MLPersona.identificadorUnivoco.nroDoc">
+      <path value="MLPersona.identificadorUnivoco.nroDoc"/>
       <short value="El valor del numero de DNI por ejemplo"/>
       <definition value="El valor del numero de DNI por ejemplo"/>
       <min value="1"/>
@@ -1566,8 +1566,8 @@
         <comment value="Número de documento al value del DNI"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.URIDominio">
-      <path value="MLPersona.IdentificadorUnivoco.URIDominio"/>
+    <element id="MLPersona.identificadorUnivoco.uriDominio">
+      <path value="MLPersona.identificadorUnivoco.uriDominio"/>
       <short value="URI del dominio que federó el paciente"/>
       <definition value="URI del dominio que federó el paciente"/>
       <min value="1"/>
@@ -1581,8 +1581,8 @@
         <comment value="URI del dominio al system del identifier"/>
       </mapping>
     </element>
-    <element id="MLPersona.IdentificadorUnivoco.idLocal">
-      <path value="MLPersona.IdentificadorUnivoco.idLocal"/>
+    <element id="MLPersona.identificadorUnivoco.idLocal">
+      <path value="MLPersona.identificadorUnivoco.idLocal"/>
       <short value="ID local del paciente en el dominio"/>
       <definition value="ID local del paciente en el dominio"/>
       <min value="1"/>
@@ -1596,8 +1596,8 @@
         <comment value="ID local al value del identifier de dominio"/>
       </mapping>
     </element>
-    <element id="MLPersona.GeneroAdministrativo">
-      <path value="MLPersona.GeneroAdministrativo"/>
+    <element id="MLPersona.generoAdministrativo">
+      <path value="MLPersona.generoAdministrativo"/>
       <short value="Género de registro administrativo, por ejemplo el que figure en su DNI"/>
       <definition value="Género de registro administrativo, por ejemplo el que figure en su DNI"/>
       <min value="1"/>
@@ -1611,8 +1611,8 @@
         <comment value="Género administrativo al gender de Patient"/>
       </mapping>
     </element>
-    <element id="MLPersona.FechaNacimiento">
-      <path value="MLPersona.FechaNacimiento"/>
+    <element id="MLPersona.fechaNacimiento">
+      <path value="MLPersona.fechaNacimiento"/>
       <short value="Fecha y hora de nacimiento"/>
       <definition value="Fecha y hora de nacimiento"/>
       <min value="1"/>
@@ -1626,8 +1626,8 @@
         <comment value="Fecha de nacimiento al birthDate"/>
       </mapping>
     </element>
-    <element id="MLPersona.Estado">
-      <path value="MLPersona.Estado"/>
+    <element id="MLPersona.estado">
+      <path value="MLPersona.estado"/>
       <short value="Inactivo | Validado | Permanente | Temporal"/>
       <definition value="Inactivo | Validado | Permanente | Temporal"/>
       <min value="1"/>

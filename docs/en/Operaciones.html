@@ -192,7 +192,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <!-- Basado en SIHCE QA.postman_collection.json -->
 
-<p>Esta sección documenta las operaciones utilizadas por SIHCE para interoperabilidad X-BA, tomando como fuente la colección de Postman <code class="language-plaintext highlighter-rouge">SIHCE QA.postman_collection.json</code>.</p>
+<p>Esta sección documenta las operaciones utilizadas por SIHCE para interoperabilidad X-BA, tomando como fuente la colección de Postman <code class="language-plaintext highlighter-rouge">SIHCE QA.postman_collection.json</code> (actualizada con las mismas rutas y cuerpos descritos aquí). Los ejemplos de <strong>respuesta</strong> de federación y de cambio de identificador local provienen de capturas reales del entorno QA y se incluyen también como archivos JSON en esta guía.</p>
 
 <h3 id="base-url-qa">Base URL (QA)</h3>
 
@@ -248,7 +248,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
       <td>Requerido</td>
       <td>token (<code class="language-plaintext highlighter-rouge">system|value</code> o solo <code class="language-plaintext highlighter-rouge">value</code> si el sistema es implícito)</td>
-      <td>Identificador del paciente. Ejemplo de sistema nacional: <code class="language-plaintext highlighter-rouge">http://www.renaper.gob.ar/dni</code>. Ver <a href="NamingSystem-renaper-dni.html">NamingSystem renaper-dni</a>.</td>
+      <td>Identificador del paciente. Ejemplo de sistema nacional: <code class="language-plaintext highlighter-rouge">http://renaper.gob.ar/dni</code>. Ver <a href="NamingSystem-renaper-dni.html">NamingSystem renaper-dni</a>.</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">gender</code></td>
@@ -263,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="request-ejemplo">Request (ejemplo)</h4>
 
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Patient?identifier=http://www.renaper.gob.ar/dni|24068773&amp;gender=male
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Patient?identifier=http://renaper.gob.ar/dni|24068773&amp;gender=male
 </span></code></pre></div></div>
 
 <h4 id="respuesta-esperada">Respuesta esperada</h4>
@@ -293,7 +293,7 @@ Content-Type: application/fhir+json
     </span><span class="p">{</span><span class="w">
       </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NI"</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.renaper.gob.ar/dni"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://renaper.gob.ar/dni"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31075635"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
@@ -302,6 +302,86 @@ Content-Type: application/fhir+json
   </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"female"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
+
+<h4 id="respuesta-éxito">Respuesta (éxito)</h4>
+
+<p>En un alta o federación exitosa el servidor devuelve un recurso <strong><code class="language-plaintext highlighter-rouge">Patient</code></strong> en JSON (<code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+json</code>). El estado HTTP suele ser <strong><code class="language-plaintext highlighter-rouge">201 Created</code></strong> (recurso nuevo) o <strong><code class="language-plaintext highlighter-rouge">200 OK</code></strong> según política del endpoint; puede incluirse cabecera <code class="language-plaintext highlighter-rouge">Location</code> con el id lógico asignado.</p>
+
+<p>El cuerpo <strong>no cambia el contrato</strong> respecto al perfil <strong><a href="StructureDefinition-PatientXBA.html">PatientXBA</a></strong>: se esperan al menos los identificadores de dominio (tipo MR, uso secundario) y DNI (tipo NI, uso official), nombre oficial, género y fecha de nacimiento. El servidor puede añadir <strong><code class="language-plaintext highlighter-rouge">text</code></strong> narrativo generado.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento</th>
+      <th>Notas para el cliente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code> (MR)</td>
+      <td>Identificador local del paciente en el dominio; el <code class="language-plaintext highlighter-rouge">system</code> y el <code class="language-plaintext highlighter-rouge">value</code> devueltos son los que el federador registra para ese vínculo dominio–persona (en QA pueden diferir del <code class="language-plaintext highlighter-rouge">system</code> enviado en el POST de ejemplo).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code> (NI)</td>
+      <td>DNI oficial RENAPER; debe mantenerse alineado con lo validado en federación.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">gender</code>, <code class="language-plaintext highlighter-rouge">birthDate</code></td>
+      <td>Reflejan el SDM almacenado tras la operación.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ejemplo de respuesta (QA)</strong> — copia de referencia en el repositorio: <code class="language-plaintext highlighter-rouge">input/images/ejemplo-respuesta-post-patient-federacion.json</code> (también <code class="language-plaintext highlighter-rouge">ejemplo_respuesta_post.json</code> en la raíz del proyecto si lo mantenés allí). El JSON publicado en esta página es el mismo cuerpo:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"generated"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"div"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;div xmlns=</span><span class="se">\"</span><span class="s2">http://www.w3.org/1999/xhtml</span><span class="se">\"</span><span class="s2">&gt;PABLO MUGUERZA KAROLYI&lt;/div&gt;"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"secondary"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MR"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hl7.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"90000000"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NI"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://renaper.gob.ar/dni"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24068773"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PABLO MUGUERZA KAROLYI"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MUGUERZA KAROLYI"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"PABLO"</span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"male"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1974-07-01"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>En caso de error, el comportamiento habitual en FHIR es una respuesta con <strong><code class="language-plaintext highlighter-rouge">OperationOutcome</code></strong> (u otro detalle acordado por el proveedor); el código HTTP y el cuerpo dependen del despliegue.</p>
 
 <p><a id="op-patch-identifier"></a></p>
 <h3 id="patch-de-identificador-local">Patch de identificador local</h3>
@@ -357,6 +437,74 @@ Content-Type: application/fhir+json
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
+<h4 id="respuesta-éxito-1">Respuesta (éxito)</h4>
+
+<p>Tras un <code class="language-plaintext highlighter-rouge">$patch-identifier</code> exitoso la respuesta sigue siendo un <strong><code class="language-plaintext highlighter-rouge">Patient</code></strong> (<code class="language-plaintext highlighter-rouge">application/fhir+json</code>), alineado con <strong><a href="StructureDefinition-PatientXBA.html">PatientXBA</a></strong>. La forma general coincide con la de la federación: identificador nacional (NI), datos demográficos y, en particular, el identificador de dominio (MR) con el <strong>nuevo</strong> <code class="language-plaintext highlighter-rouge">value</code> asignado.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Diferencia respecto a <code class="language-plaintext highlighter-rouge">POST /Patient</code></th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Identificador MR</td>
+      <td>Solo cambia el <code class="language-plaintext highlighter-rouge">value</code> (y eventualmente metadatos asociados) del id local del dominio; el DNI y el resto del SDM permanecen coherentes con el registro previo.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Ejemplo de respuesta (QA)</strong> — copia de referencia en el repositorio: <code class="language-plaintext highlighter-rouge">input/images/ejemplo-respuesta-patch-identifier.json</code> (también <code class="language-plaintext highlighter-rouge">ejemplo_respuesta_iddominio.json</code> en la raíz). Respecto al ejemplo de federación anterior, el <code class="language-plaintext highlighter-rouge">value</code> del MR pasa de <code class="language-plaintext highlighter-rouge">90000000</code> a <code class="language-plaintext highlighter-rouge">90000001</code>:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"generated"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"div"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;div xmlns=</span><span class="se">\"</span><span class="s2">http://www.w3.org/1999/xhtml</span><span class="se">\"</span><span class="s2">&gt;PABLO MUGUERZA KAROLYI&lt;/div&gt;"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"secondary"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MR"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hl7.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"90000001"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NI"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://renaper.gob.ar/dni"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24068773"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PABLO MUGUERZA KAROLYI"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MUGUERZA KAROLYI"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"PABLO"</span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"male"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1974-07-01"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
 <h4 id="ejemplo-publicado">Ejemplo publicado</h4>
 
 <ul>
@@ -404,7 +552,7 @@ Content-Type: application/fhir+json
         </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
           </span><span class="p">{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://msgc.gcba.gob.ar"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"304022"</span><span class="w"> </span><span class="p">},</span><span class="w">
-          </span><span class="p">{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.renaper.gob.ar/dni"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31075635"</span><span class="w"> </span><span class="p">}</span><span class="w">
+          </span><span class="p">{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://renaper.gob.ar/dni"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31075635"</span><span class="w"> </span><span class="p">}</span><span class="w">
         </span><span class="p">],</span><span class="w">
         </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w"> </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PALUMBO"</span><span class="p">,</span><span class="w"> </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"YANINA GABRIELA"</span><span class="p">]</span><span class="w"> </span><span class="p">}],</span><span class="w">
         </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1984-09-25"</span><span class="p">,</span><span class="w">
@@ -444,9 +592,9 @@ Content-Type: application/fhir+json
 
 
 
-          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="http://sihce.gob.ar/">SIHCE Development Team</a>.  
+          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
           Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Thu, Apr 30, 2026 15:35-0300">2026-04-30</span>
+          Generated <span title="Thu, Apr 30, 2026 18:14-0300">2026-04-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a> |

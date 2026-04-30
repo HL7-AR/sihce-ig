@@ -41,13 +41,13 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
   "name" : "FederarPersona",
   "title" : "Modelo lógico FederarPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-04-30T15:35:26-03:00",
+  "date" : "2026-04-30T18:14:12-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://sihce.gob.ar/"
+      "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
   "description" : "Federación de una persona con identificador local y validación de datos.",
@@ -70,8 +70,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       "definition" : "Federación de una persona con identificador local y validación de datos."
     },
     {
-      "id" : "FederarPersona.DatosPersona",
-      "path" : "FederarPersona.DatosPersona",
+      "id" : "FederarPersona.datosPersona",
+      "path" : "FederarPersona.datosPersona",
       "short" : "Persona a federar",
       "definition" : "SDM mínimo de la persona.",
       "min" : 1,
@@ -81,8 +81,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosPersona.tipoDocumento",
-      "path" : "FederarPersona.DatosPersona.tipoDocumento",
+      "id" : "FederarPersona.datosPersona.tipoDocumento",
+      "path" : "FederarPersona.datosPersona.tipoDocumento",
       "short" : "Tipo de documento",
       "definition" : "Ej. DNI.",
       "min" : 1,
@@ -92,8 +92,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosPersona.documentoIdentificatorio",
-      "path" : "FederarPersona.DatosPersona.documentoIdentificatorio",
+      "id" : "FederarPersona.datosPersona.documentoIdentificatorio",
+      "path" : "FederarPersona.datosPersona.documentoIdentificatorio",
       "short" : "Número de documento",
       "definition" : "Valor del documento.",
       "min" : 1,
@@ -103,8 +103,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosPersona.sexo",
-      "path" : "FederarPersona.DatosPersona.sexo",
+      "id" : "FederarPersona.datosPersona.sexo",
+      "path" : "FederarPersona.datosPersona.sexo",
       "short" : "Sexo",
       "definition" : "Sexo administrativo.",
       "min" : 1,
@@ -114,8 +114,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosPersona.primerNombre",
-      "path" : "FederarPersona.DatosPersona.primerNombre",
+      "id" : "FederarPersona.datosPersona.primerNombre",
+      "path" : "FederarPersona.datosPersona.primerNombre",
       "short" : "Primer nombre",
       "definition" : "Primer nombre.",
       "min" : 1,
@@ -125,8 +125,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosPersona.segundoNombre",
-      "path" : "FederarPersona.DatosPersona.segundoNombre",
+      "id" : "FederarPersona.datosPersona.segundoNombre",
+      "path" : "FederarPersona.datosPersona.segundoNombre",
       "short" : "Segundo nombre",
       "definition" : "Segundo nombre.",
       "min" : 0,
@@ -136,8 +136,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosPersona.primerApellido",
-      "path" : "FederarPersona.DatosPersona.primerApellido",
+      "id" : "FederarPersona.datosPersona.primerApellido",
+      "path" : "FederarPersona.datosPersona.primerApellido",
       "short" : "Primer apellido",
       "definition" : "Primer apellido.",
       "min" : 1,
@@ -147,8 +147,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosPersona.segundoApellido",
-      "path" : "FederarPersona.DatosPersona.segundoApellido",
+      "id" : "FederarPersona.datosPersona.segundoApellido",
+      "path" : "FederarPersona.datosPersona.segundoApellido",
       "short" : "Segundo apellido",
       "definition" : "Segundo apellido.",
       "min" : 0,
@@ -158,8 +158,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosPersona.fechaNacimiento",
-      "path" : "FederarPersona.DatosPersona.fechaNacimiento",
+      "id" : "FederarPersona.datosPersona.fechaNacimiento",
+      "path" : "FederarPersona.datosPersona.fechaNacimiento",
       "short" : "Fecha de nacimiento",
       "definition" : "AAAA-MM-DD.",
       "min" : 1,
@@ -169,8 +169,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosDominio",
-      "path" : "FederarPersona.DatosDominio",
+      "id" : "FederarPersona.datosDominio",
+      "path" : "FederarPersona.datosDominio",
       "short" : "Dominio solicitante",
       "definition" : "Dominio que solicita la federación.",
       "min" : 1,
@@ -180,8 +180,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosDominio.idLocalPersona",
-      "path" : "FederarPersona.DatosDominio.idLocalPersona",
+      "id" : "FederarPersona.datosDominio.idLocalPersona",
+      "path" : "FederarPersona.datosDominio.idLocalPersona",
       "short" : "Id local",
       "definition" : "Identificador local en el dominio.",
       "min" : 1,
@@ -191,8 +191,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosDominio.idDominio",
-      "path" : "FederarPersona.DatosDominio.idDominio",
+      "id" : "FederarPersona.datosDominio.idDominio",
+      "path" : "FederarPersona.datosDominio.idDominio",
       "short" : "URI del dominio",
       "definition" : "Identificador del dominio.",
       "min" : 1,
@@ -202,8 +202,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosFederacion",
-      "path" : "FederarPersona.DatosFederacion",
+      "id" : "FederarPersona.datosFederacion",
+      "path" : "FederarPersona.datosFederacion",
       "short" : "Resultado",
       "definition" : "Resultado de la federación.",
       "min" : 0,
@@ -213,8 +213,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosFederacion.idPersonaGlobal",
-      "path" : "FederarPersona.DatosFederacion.idPersonaGlobal",
+      "id" : "FederarPersona.datosFederacion.idPersonaGlobal",
+      "path" : "FederarPersona.datosFederacion.idPersonaGlobal",
       "short" : "Id persona global",
       "definition" : "Identificador maestro en FederadorBA.",
       "min" : 0,
@@ -224,8 +224,8 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
       }]
     },
     {
-      "id" : "FederarPersona.DatosFederacion.mensaje",
-      "path" : "FederarPersona.DatosFederacion.mensaje",
+      "id" : "FederarPersona.datosFederacion.mensaje",
+      "path" : "FederarPersona.datosFederacion.mensaje",
       "short" : "Mensaje",
       "definition" : "Mensaje informativo o de error.",
       "min" : 1,

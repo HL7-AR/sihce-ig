@@ -7,7 +7,7 @@
   </meta>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient PersonaSIHCEMin</b></p><a name="PersonaSIHCEMin"> </a><a name="hcPersonaSIHCEMin"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PatientXBA.html">Paciente SIHCE (PatientXBA)</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3">Medical record number/23 (use: secondary, )</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Ejemplo de paciente según el perfil Paciente SIHCE (PatientXBA).</p></div>
   </text>
   <identifier>
     <use value="official"/>
@@ -17,7 +17,7 @@
         <code value="NI"/>
       </coding>
     </type>
-    <system value="http://www.renaper.gob.ar/dni"/>
+    <system value="http://renaper.gob.ar/dni"/>
     <value value="12345678"/>
   </identifier>
   <identifier>

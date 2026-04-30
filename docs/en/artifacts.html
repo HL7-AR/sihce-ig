@@ -181,13 +181,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Naming Systems</a>
+         <a href="#3">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#4">Terminology: Concept Maps</a>
+         <a href="#4">Terminology: Naming Systems</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -308,11 +311,67 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="3"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-sihce-fhir-core-element-paths.html"
+                  title="CodeSystem/sihce-fhir-core-element-paths">
+                  <span title="CodeSystem/sihce-fhir-core-element-paths">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-sihce-logical-operation-element-paths.html"
+                  title="CodeSystem/sihce-logical-operation-element-paths">
+                  <span title="CodeSystem/sihce-logical-operation-element-paths">Rutas de elementos en modelos lógicos de operación SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento…).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
    <h3>Terminology: Naming Systems </h3>
     <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-NamingSystemHospitalItalianoFHIR.html"
+                  title="NamingSystem/NamingSystemHospitalItalianoFHIR">
+                  <span title="NamingSystem/NamingSystemHospitalItalianoFHIR">NamingSystem URI Hospital Italiano (ejemplo FHIR)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identificador de dominio de ejemplo usado en instancias de este IG.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-NamingSystemMsgcGCBA.html"
+                  title="NamingSystem/NamingSystemMsgcGCBA">
+                  <span title="NamingSystem/NamingSystemMsgcGCBA">NamingSystem URI MSGC GCBA (ejemplo)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sistema de identificadores de ejemplo para Parameters en este IG.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="NamingSystem-renaper-dni.html" title="NamingSystem/renaper-dni">
@@ -326,7 +385,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Concept Maps </h3>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
 <table class="grid">
@@ -382,7 +441,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -458,9 +517,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="http://sihce.gob.ar/">SIHCE Development Team</a>.  
+          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
           Package SIHCE.fhir.core#1.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Thu, Apr 30, 2026 15:35-0300">2026-04-30</span>
+          Generated <span title="Thu, Apr 30, 2026 18:14-0300">2026-04-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a> |

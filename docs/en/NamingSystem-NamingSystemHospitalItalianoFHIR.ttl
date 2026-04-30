@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR> a fhir:NamingSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NamingSystemHospitalItalianoFHIR"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem NamingSystemHospitalItalianoFHIR</b></p><a name=\"NamingSystemHospitalItalianoFHIR\"> </a><a name=\"hcNamingSystemHospitalItalianoFHIR\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR</td></tr><tr><td>Version</td><td>1.2.0</td></tr><tr><td>Name</td><td>NamingSystemHospitalItalianoFHIR</td></tr><tr><td>Title</td><td>NamingSystem URI Hospital Italiano (ejemplo FHIR)</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identificador de dominio de ejemplo usado en instancias de este IG.</p>\n</div></td></tr><tr><td>Publisher</td><td>SIHCE Development Team</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://hospitalitaliano.org.ar/fhir</td><td>true</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR"^^xsd:anyURI ;
+     fhir:l <http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR>
+  ] ; # 
+  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:name [ fhir:v "NamingSystemHospitalItalianoFHIR"] ; # 
+  fhir:title [ fhir:v "NamingSystem URI Hospital Italiano (ejemplo FHIR)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "identifier"] ; # 
+  fhir:date [ fhir:v "2026-04-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SIHCE Development Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:responsible [ fhir:v "Ejemplo de implementación SIHCE IG"] ; # 
+  fhir:description [ fhir:v "Identificador de dominio de ejemplo usado en instancias de este IG."] ; # 
+  fhir:uniqueId ( [
+     fhir:type [ fhir:v "uri" ] ;
+     fhir:value [ fhir:v "http://hospitalitaliano.org.ar/fhir" ] ;
+     fhir:preferred [ fhir:v true ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

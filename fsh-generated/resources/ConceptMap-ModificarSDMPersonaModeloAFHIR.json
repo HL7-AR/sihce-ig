@@ -13,9 +13,11 @@
   "publisher": "SIHCE Development Team",
   "group": [
     {
+      "source": "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+      "target": "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
       "element": [
         {
-          "code": "ModificarSDMPersona.SDMActual.tipoDocumento",
+          "code": "ModificarSDMPersona.sdmActual.tipoDocumento",
           "target": [
             {
               "code": "Patient.identifier",
@@ -24,7 +26,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMActual.documentoIdentificatorio",
+          "code": "ModificarSDMPersona.sdmActual.documentoIdentificatorio",
           "target": [
             {
               "code": "Patient.identifier",
@@ -33,7 +35,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMActual.sexo",
+          "code": "ModificarSDMPersona.sdmActual.sexo",
           "target": [
             {
               "code": "Patient.gender",
@@ -42,7 +44,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMActual.primerNombre",
+          "code": "ModificarSDMPersona.sdmActual.primerNombre",
           "target": [
             {
               "code": "Patient.name",
@@ -51,7 +53,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMActual.segundoNombre",
+          "code": "ModificarSDMPersona.sdmActual.segundoNombre",
           "target": [
             {
               "code": "Patient.name",
@@ -60,7 +62,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMActual.primerApellido",
+          "code": "ModificarSDMPersona.sdmActual.primerApellido",
           "target": [
             {
               "code": "Patient.name",
@@ -69,7 +71,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMActual.segundoApellido",
+          "code": "ModificarSDMPersona.sdmActual.segundoApellido",
           "target": [
             {
               "code": "Patient.name",
@@ -78,7 +80,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMActual.fechaNacimiento",
+          "code": "ModificarSDMPersona.sdmActual.fechaNacimiento",
           "target": [
             {
               "code": "Patient.birthDate",
@@ -87,7 +89,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMActual.fechaDefuncion",
+          "code": "ModificarSDMPersona.sdmActual.fechaDefuncion",
           "target": [
             {
               "code": "Patient.deceased[x]",
@@ -96,7 +98,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMNuevo.sexo",
+          "code": "ModificarSDMPersona.sdmNuevo.sexo",
           "target": [
             {
               "code": "Patient.gender",
@@ -105,7 +107,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMNuevo.primerNombre",
+          "code": "ModificarSDMPersona.sdmNuevo.primerNombre",
           "target": [
             {
               "code": "Patient.name",
@@ -114,7 +116,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMNuevo.segundoNombre",
+          "code": "ModificarSDMPersona.sdmNuevo.segundoNombre",
           "target": [
             {
               "code": "Patient.name",
@@ -123,7 +125,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMNuevo.primerApellido",
+          "code": "ModificarSDMPersona.sdmNuevo.primerApellido",
           "target": [
             {
               "code": "Patient.name",
@@ -132,7 +134,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMNuevo.segundoApellido",
+          "code": "ModificarSDMPersona.sdmNuevo.segundoApellido",
           "target": [
             {
               "code": "Patient.name",
@@ -141,7 +143,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMNuevo.fechaNacimiento",
+          "code": "ModificarSDMPersona.sdmNuevo.fechaNacimiento",
           "target": [
             {
               "code": "Patient.birthDate",
@@ -150,7 +152,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.SDMNuevo.fechaDefuncion",
+          "code": "ModificarSDMPersona.sdmNuevo.fechaDefuncion",
           "target": [
             {
               "code": "Patient.deceased[x]",
@@ -159,7 +161,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.DatosDominio.idDominio",
+          "code": "ModificarSDMPersona.datosDominio.idDominio",
           "target": [
             {
               "code": "Patient.identifier",
@@ -168,7 +170,7 @@
           ]
         },
         {
-          "code": "ModificarSDMPersona.DatosDominio.idLocalPersona",
+          "code": "ModificarSDMPersona.datosDominio.idLocalPersona",
           "target": [
             {
               "code": "Patient.identifier",
@@ -179,9 +181,11 @@
       ]
     },
     {
+      "source": "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
+      "target": "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
       "element": [
         {
-          "code": "ModificarSDMPersona.DatosRespuesta.mensaje",
+          "code": "ModificarSDMPersona.datosRespuesta.mensaje",
           "target": [
             {
               "code": "OperationOutcome.issue",

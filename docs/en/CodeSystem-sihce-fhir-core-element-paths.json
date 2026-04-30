@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "sihce-fhir-core-element-paths",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-fhir-core-element-paths</b></p><a name=\"sihce-fhir-core-element-paths\"> </a><a name=\"hcsihce-fhir-core-element-paths\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Patient.identifier<a name=\"sihce-fhir-core-element-paths-Patient.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.name<a name=\"sihce-fhir-core-element-paths-Patient.46name\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.gender<a name=\"sihce-fhir-core-element-paths-Patient.46gender\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.birthDate<a name=\"sihce-fhir-core-element-paths-Patient.46birthDate\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.deceased[x]<a name=\"sihce-fhir-core-element-paths-Patient.46deceased.91x.93\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization<a name=\"sihce-fhir-core-element-paths-Organization\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization.identifier<a name=\"sihce-fhir-core-element-paths-Organization.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OperationOutcome.issue<a name=\"sihce-fhir-core-element-paths-OperationOutcome.46issue\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
+  "version" : "1.2.0",
+  "name" : "SIHCEFhirCoreElementPaths",
+  "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-04-30T18:14:12-03:00",
+  "publisher" : "SIHCE Development Team",
+  "contact" : [{
+    "name" : "SIHCE Development Team",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/diegokaminker/sihce-ig"
+    }]
+  }],
+  "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "Patient.identifier",
+    "display" : "Patient.identifier"
+  },
+  {
+    "code" : "Patient.name",
+    "display" : "Patient.name"
+  },
+  {
+    "code" : "Patient.gender",
+    "display" : "Patient.gender"
+  },
+  {
+    "code" : "Patient.birthDate",
+    "display" : "Patient.birthDate"
+  },
+  {
+    "code" : "Patient.deceased[x]",
+    "display" : "Patient.deceased[x]"
+  },
+  {
+    "code" : "Organization",
+    "display" : "Organization"
+  },
+  {
+    "code" : "Organization.identifier",
+    "display" : "Organization.identifier"
+  },
+  {
+    "code" : "OperationOutcome.issue",
+    "display" : "OperationOutcome.issue"
+  }]
+}
