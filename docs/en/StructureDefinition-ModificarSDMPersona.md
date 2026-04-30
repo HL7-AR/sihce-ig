@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
   "name" : "ModificarSDMPersona",
   "title" : "Modelo lógico ModificarSDMPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-04-30T18:14:12-03:00",
+  "date" : "2026-04-30T18:21:28-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-30T18:14:12-03:00",
+  "date" : "2026-04-30T18:21:28-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

@@ -102,7 +102,7 @@ El cuerpo **no cambia el contrato** respecto al perfil **[PatientXBA](StructureD
 | `identifier` (NI) | DNI oficial RENAPER; debe mantenerse alineado con lo validado en federación. |
 | `name`, `gender`, `birthDate` | Reflejan el SDM almacenado tras la operación. |
 
-**Ejemplo de respuesta (QA)** — copia de referencia en el repositorio: `input/images/ejemplo-respuesta-post-patient-federacion.json` (también `ejemplo_respuesta_post.json` en la raíz del proyecto si lo mantenés allí). El JSON publicado en esta página es el mismo cuerpo:
+**Ejemplo de respuesta (QA):**
 
 ```json
 {
@@ -193,7 +193,7 @@ Tras un `$patch-identifier` exitoso la respuesta sigue siendo un **`Patient`** (
 |--------------------------------------|-------------|
 | Identificador MR | Solo cambia el `value` (y eventualmente metadatos asociados) del id local del dominio; el DNI y el resto del SDM permanecen coherentes con el registro previo. |
 
-**Ejemplo de respuesta (QA)** — copia de referencia en el repositorio: `input/images/ejemplo-respuesta-patch-identifier.json` (también `ejemplo_respuesta_iddominio.json` en la raíz). Respecto al ejemplo de federación anterior, el `value` del MR pasa de `90000000` a `90000001`:
+**Ejemplo de respuesta (QA):**
 
 ```json
 {
