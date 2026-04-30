@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "GuiaDeImplementacionSIHCE"] ; # 
   fhir:title [ fhir:v "Guía de Implementación SIHCE - FHIR R5"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-30T11:00:25-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-30T15:35:26-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;
@@ -116,7 +116,7 @@
          fhir:reference [ fhir:v "Parameters/ParametrosPatchIdentifierEjemplo" ]
        ] ;
        fhir:name [ fhir:v "Ejemplo Parameters Patch Identifier" ] ;
-       fhir:description [ fhir:v "Ejemplo de Parameters para actualizar identificador local." ] ;
+       fhir:description [ fhir:v "Ejemplo de Parámetros para actualizar identificador local." ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"^^xsd:anyURI ;
@@ -138,7 +138,7 @@
          fhir:reference [ fhir:v "Parameters/ParametrosUpdateSDMEjemplo" ]
        ] ;
        fhir:name [ fhir:v "Ejemplo Parameters Update SDM" ] ;
-       fhir:description [ fhir:v "Ejemplo de Parameters para actualizacion de SDM." ] ;
+       fhir:description [ fhir:v "Ejemplo de Parametros para actualizacion de SDM." ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"^^xsd:anyURI ;
@@ -358,6 +358,7 @@
          fhir:reference [ fhir:v "Patient/PersonaSIHCEMin" ]
        ] ;
        fhir:name [ fhir:v "PersonaSIHCEMin" ] ;
+       fhir:description [ fhir:v "Ejemplo de Recurso Paciente con Set de Datos Minimos" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://sihce.gob.ar/StructureDefinition/PatientXBA"^^xsd:anyURI ;
@@ -379,6 +380,7 @@
          fhir:reference [ fhir:v "Patient/PersonaSIHCEPatch" ]
        ] ;
        fhir:name [ fhir:v "PersonaSIHCEPatch" ] ;
+       fhir:description [ fhir:v "Ejemplo de Recurso Paciente para Patch de Datos Minimos" ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://sihce.gob.ar/StructureDefinition/PatientXBA"^^xsd:anyURI ;

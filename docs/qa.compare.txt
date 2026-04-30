@@ -1,10 +1,10 @@
 GuiaDeImplementacionSIHCE : Validation Results
 =========================================
 
-err = 0, warn = 277, info = 15
+err = 0, warn = 275, info = 15
 $--
 Generated $--. FHIR version $-- for SIHCE.fhir.core#$-- (canonical = http://sihce.gob.ar)
- Build Errors : 0 / 137 / 0
+ Build Errors : 0 / 135 / 0
  /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ConceptMap-BuscarPersonaModeloAFHIR : 0 / 4 / 1
  /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ConceptMap-FederarPersonaModeloAFHIR : 0 / 6 / 1
  /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/ConceptMap-ModificarIDLocalPersonaModeloAFHIR : 0 / 4 / 1
@@ -25,8 +25,6 @@ Generated $--. FHIR version $-- for SIHCE.fhir.core#$-- (canonical = http://sihc
  /Users/diego/Dropbox/AI_EDUCATION/bus-caba/security/SIHCE-IG-SRC/fsh-generated/resources/StructureDefinition-parametros-update-sdm-sihce : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PersonaSIHCEMin.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/PersonaSIHCEPatch.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: en/Aspectos-Generales.html#/html/body/div/div/div/p/a at Line 346, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/CasosDeUso.html#/html/body/div/div/div/p/a at Line 283, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/ConceptMap-BuscarPersonaModeloAFHIR-testing.html#/html/body/div/div/div/p/a at Line 273, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
@@ -61,7 +59,7 @@ WARNING: en/NamingSystem-renaper-dni.html#/html/body/div/div/div/p/a at Line 299
 WARNING: en/NamingSystem-renaper-dni.json.html#/html/body/div/div/div/p/a at Line 310, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/NamingSystem-renaper-dni.ttl.html#/html/body/div/div/div/p/a at Line 323, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/NamingSystem-renaper-dni.xml.html#/html/body/div/div/div/p/a at Line 304, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
-WARNING: en/Operaciones.html#/html/body/div/div/div/p/a at Line 452, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
+WARNING: en/Operaciones.html#/html/body/div/div/div/p/a at Line 447, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/Parameters-ParametrosPatchIdentifierEjemplo.change.history.html#/html/body/div/div/div/p/a at Line 233, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/Parameters-ParametrosPatchIdentifierEjemplo.html#/html/body/div/div/div/p/a at Line 247, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions
 WARNING: en/Parameters-ParametrosPatchIdentifierEjemplo.json.html#/html/body/div/div/div/p/a at Line 326, column 22: The link 'http://sihce.gob.ar/' for "SIHCE Development Team" is a canonical link and is therefore unsafe with regard to versions

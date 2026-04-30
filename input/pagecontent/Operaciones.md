@@ -168,6 +168,3 @@ Content-Type: application/fhir+json
 
 - [Parámetros update SDM - ejemplo](Parameters-ParametrosUpdateSDMEjemplo.html)
 
-### Referencia
-
-Colección utilizada: `SIHCE QA.postman_collection.json`.

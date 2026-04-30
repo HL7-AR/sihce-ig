@@ -6,8 +6,8 @@ ConceptMap-ModificarSDMPersonaModeloAFHIR.json              ModificarSDMPersonaM
 NamingSystem-renaper-dni.json                               renaper-dni                         Instance  instances/renaper-dni.fsh                          1 - 20
 Parameters-ParametrosPatchIdentifierEjemplo.json            ParametrosPatchIdentifierEjemplo    Instance  instances/ParametrosPatchIdentifierEjemplo.fsh     1 - 13
 Parameters-ParametrosUpdateSDMEjemplo.json                  ParametrosUpdateSDMEjemplo          Instance  instances/ParametrosUpdateSDMEjemplo.fsh           1 - 7
-Patient-PersonaSIHCEMin.json                                PersonaSIHCEMin                     Instance  instances/PersonaSIHCEMin.fsh                      1 - 17
-Patient-PersonaSIHCEPatch.json                              PersonaSIHCEPatch                   Instance  instances/PersonaSIHCEPatch.fsh                    1 - 17
+Patient-PersonaSIHCEMin.json                                PersonaSIHCEMin                     Instance  instances/PersonaSIHCEMin.fsh                      1 - 18
+Patient-PersonaSIHCEPatch.json                              PersonaSIHCEPatch                   Instance  instances/PersonaSIHCEPatch.fsh                    1 - 18
 StructureDefinition-BuscarPersona.json                      BuscarPersona                       Logical   logicals/LogicalBuscarPersona.fsh                  1 - 22
 StructureDefinition-FederarPersona.json                     FederarPersona                      Logical   logicals/LogicalFederarPersona.fsh                 1 - 22
 StructureDefinition-MLPersona.json                          MLPersona                           Logical   logicals/MLPersona.fsh                             1 - 31

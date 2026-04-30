@@ -1,6 +1,7 @@
 Instance: PersonaSIHCEMin
 InstanceOf: PacienteSIHCE
 Usage: #example
+Description: "Ejemplo de Recurso Paciente con Set de Datos Minimos"
 * identifier[DNI].use = #official
 * identifier[DNI].type = $v2-0203#NI
 * identifier[DNI].system = "http://www.renaper.gob.ar/dni"

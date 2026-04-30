@@ -54,8 +54,8 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [ Ejemplo Parameters Patch Identifier  ](Parameters-ParametrosPatchIdentifierEjemplo.md) | Ejemplo de Parameters para actualizar identificador local. |
-| [ Ejemplo Parameters Update SDM  ](Parameters-ParametrosUpdateSDMEjemplo.md) | Ejemplo de Parameters para actualizacion de SDM. |
-| [ PersonaSIHCEMin  ](Patient-PersonaSIHCEMin.md) |  |
-| [ PersonaSIHCEPatch  ](Patient-PersonaSIHCEPatch.md) |  |
+| [ Ejemplo Parameters Patch Identifier  ](Parameters-ParametrosPatchIdentifierEjemplo.md) | Ejemplo de Parámetros para actualizar identificador local. |
+| [ Ejemplo Parameters Update SDM  ](Parameters-ParametrosUpdateSDMEjemplo.md) | Ejemplo de Parametros para actualizacion de SDM. |
+| [ PersonaSIHCEMin  ](Patient-PersonaSIHCEMin.md) | Ejemplo de Recurso Paciente con Set de Datos Minimos |
+| [ PersonaSIHCEPatch  ](Patient-PersonaSIHCEPatch.md) | Ejemplo de Recurso Paciente para Patch de Datos Minimos |
 

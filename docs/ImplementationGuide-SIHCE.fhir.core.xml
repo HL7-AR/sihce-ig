@@ -11,7 +11,7 @@
   <name value="GuiaDeImplementacionSIHCE"/>
   <title value="Guía de Implementación SIHCE - FHIR R5"/>
   <status value="draft"/>
-  <date value="2026-04-30T11:00:25-03:00"/>
+  <date value="2026-04-30T15:35:26-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -62,7 +62,7 @@
         <reference value="Parameters/ParametrosPatchIdentifierEjemplo"/>
       </reference>
       <name value="Ejemplo Parameters Patch Identifier"/>
-      <description value="Ejemplo de Parameters para actualizar identificador local."/>
+      <description value="Ejemplo de Parámetros para actualizar identificador local."/>
       <isExample value="true"/>
       <profile value="http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"/>
     </resource>
@@ -74,7 +74,7 @@
         <reference value="Parameters/ParametrosUpdateSDMEjemplo"/>
       </reference>
       <name value="Ejemplo Parameters Update SDM"/>
-      <description value="Ejemplo de Parameters para actualizacion de SDM."/>
+      <description value="Ejemplo de Parametros para actualizacion de SDM."/>
       <isExample value="true"/>
       <profile value="http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"/>
     </resource>
@@ -207,6 +207,7 @@
         <reference value="Patient/PersonaSIHCEMin"/>
       </reference>
       <name value="PersonaSIHCEMin"/>
+      <description value="Ejemplo de Recurso Paciente con Set de Datos Minimos"/>
       <isExample value="true"/>
       <profile value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
     </resource>
@@ -218,6 +219,7 @@
         <reference value="Patient/PersonaSIHCEPatch"/>
       </reference>
       <name value="PersonaSIHCEPatch"/>
+      <description value="Ejemplo de Recurso Paciente para Patch de Datos Minimos"/>
       <isExample value="true"/>
       <profile value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
     </resource>
