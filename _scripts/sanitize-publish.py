@@ -4,6 +4,8 @@ Post-process IG Publisher output before public sync (GitHub Pages / QA GCABA).
 
 - Removes absolute filesystem paths leaked into HTML (Publisher QA / dependency tables).
 - Upgrades navigable http:// links to https:// in HTML attributes only (not JSON/XML).
+- Strips build boilerplate HTML comments (Auto-converted from …).
+- Removes public QA report footer link (qa.html is not published).
 """
 
 from __future__ import annotations
@@ -36,6 +38,16 @@ ABS_PATH_IN_URL_RE = re.compile(
 
 LEAK_RE = re.compile(r"/(?:Users|home)/[^\s\"'<>]+")
 
+AUTO_CONVERTED_COMMENT_RE = re.compile(
+    r"<!--\s*Auto-converted from [^>]*?-->\s*",
+    re.IGNORECASE,
+)
+
+QA_FOOTER_LINK_RE = re.compile(
+    r'\s*\|\s*<a\s[^>]*href="\.\./qa\.html"[^>]*>.*?</a>',
+    re.IGNORECASE | re.DOTALL,
+)
+
 
 def to_https(url: str) -> str:
     for prefix in HTTPS_PREFIXES:
@@ -51,6 +63,8 @@ def sanitize_html(text: str) -> str:
 
     text = ATTR_URL_RE.sub(attr_repl, text)
     text = ABS_PATH_IN_URL_RE.sub(r"url(\1)", text)
+    text = AUTO_CONVERTED_COMMENT_RE.sub("", text)
+    text = QA_FOOTER_LINK_RE.sub("", text)
     return text
 
 
