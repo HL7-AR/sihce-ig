@@ -20,6 +20,7 @@ Estas medidas afectan **solo al sitio HTML estático** (`output/` → `docs/`), 
 | 0002 | jQuery 3.7.0 | `_upgrade-publish-assets.sh` → **3.7.1** |
 | 0003 | jQuery UI 1.11.1 | `_upgrade-publish-assets.sh` → **1.13.2** (+ CSS asociado) |
 | 0004 | Bootstrap 3.4.1 | JS actualizado dentro de la rama **3.4.1**; `bootstrap-fhir.css` HL7 **no se reemplaza** (estilos propios del IG). Migrar a Bootstrap 5 implicaría reescribir la plantilla HL7. |
+| — | Mermaid.js 10.9.1 (plantilla HL7) | `_upgrade-publish-assets.sh` → **10.9.6** (parches CVE-2024-45801, CVE-2025-54881, CVE-2026-41148/41149). `mermaid-init.js` ya usa `securityLevel: 'sandbox'`. |
 | 0005 | Nginx 1.27 | **Fuera del repo**: actualizar versión homologada en el servidor que sirve QA/producción. |
 | 0006 | Rutas absolutas en HTML | `_scripts/sanitize-publish.py` corrige `background-image: url(/Users/...)`; se **eliminan** del sitio público los informes QA. |
 | 0007 | Enlaces `http://` | HTTPS en atributos `href`/`src`/`action` de HTML; enlaces markdown de spec en `Operaciones.md`. |
@@ -44,7 +45,7 @@ _genonce.sh  →  Publisher  →  output/
 |---------|---------|
 | `_genonce.sh` | Build IG + invoca saneamiento antes del sync a `docs/` |
 | `_sanitize-publish.sh` | Orquestación del post-proceso de publicación |
-| `_upgrade-publish-assets.sh` | Descarga versiones pinneadas de jQuery, jQuery UI, Bootstrap JS, Prism |
+| `_upgrade-publish-assets.sh` | Descarga versiones pinneadas de jQuery, jQuery UI, Bootstrap JS, Prism, Mermaid |
 | `_scripts/sanitize-publish.py` | Sanea HTML: rutas absolutas + HTTPS navegable |
 
 ### Artefactos excluidos del sitio público
@@ -68,7 +69,8 @@ rg '/Users/|/home/' docs --glob '*.html' || echo 'OK: sin rutas absolutas'
 # No debe haber http:// en href/src de páginas (excepto si se añaden dominios nuevos)
 rg 'href=["'\'']http://' docs --glob '*.html' | rg -v 'xmlns' || echo 'OK: sin http en href'
 
-# Versiones de librerías
+# Versiones de librerías (tamaño estable de mermaid.min.js pinneado como mermaid.js)
+wc -c docs/assets/js/mermaid.js   # 10.9.6 ≈ 3337508 bytes
 head -1 docs/assets/js/jquery.js docs/assets/css/prism.css
 ```
 

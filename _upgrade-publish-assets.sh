@@ -12,6 +12,7 @@ JQUERY_VER="3.7.1"
 JQUERY_UI_VER="1.13.2"
 BOOTSTRAP_VER="3.4.1"
 PRISM_VER="1.29.0"
+MERMAID_VER="10.9.6"
 
 fetch() {
   local url="$1"
@@ -40,7 +41,9 @@ install_assets() {
   fetch "https://cdn.jsdelivr.net/npm/prismjs@${PRISM_VER}/prism.js" "${base}/js/prism.js"
   fetch "https://cdn.jsdelivr.net/npm/prismjs@${PRISM_VER}/themes/prism.css" "${base}/css/prism.css"
 
-  echo "Assets upgraded under ${base} (jQuery ${JQUERY_VER}, jQuery UI ${JQUERY_UI_VER}, Bootstrap ${BOOTSTRAP_VER}, Prism ${PRISM_VER})"
+  fetch "https://cdn.jsdelivr.net/npm/mermaid@${MERMAID_VER}/dist/mermaid.min.js" "${base}/js/mermaid.js"
+
+  echo "Assets upgraded under ${base} (jQuery ${JQUERY_VER}, jQuery UI ${JQUERY_UI_VER}, Bootstrap ${BOOTSTRAP_VER}, Prism ${PRISM_VER}, Mermaid ${MERMAID_VER})"
 }
 
 install_assets "${TEMPLATE_ASSETS}"
