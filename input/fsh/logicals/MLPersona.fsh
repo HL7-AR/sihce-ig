@@ -8,7 +8,7 @@ Description: "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e
 * ^publisher = "SIHCE Development Team"
 * ^contact.name = "SIHCE Development Team"
 * ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org.ar"
+* ^contact.telecom.value = "https://hl7.org.ar"
 * ^jurisdiction.coding.system = "urn:iso:std:iso:3166"
 * ^jurisdiction.coding.code = #AR
 * ^jurisdiction.coding.display = "Argentina"

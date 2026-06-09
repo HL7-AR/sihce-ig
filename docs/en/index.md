@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:1.2.0 |
-| Draft as of 2026-04-30 | *Computable Name*:GuiaDeImplementacionSIHCE |
+| Draft as of 2026-06-09 | *Computable Name*:GuiaDeImplementacionSIHCE |
 
 # Sistema Integrador de Historias Clínicas Electrónicas
 

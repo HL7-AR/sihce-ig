@@ -15,6 +15,7 @@
 * **Artefactos** / **TOC**: contenido duplicado del menú eliminado; retirados perfil y ejemplo de Organization.
 * Menú: **Tabla de contenidos** como primer ítem; enlace a informe QA retirado del menú y del pie.
 * Plantilla local: cabecera con enlace a [Ciudad de Buenos Aires](https://buenosaires.gob.ar/inicio/) y [HL7 Argentina](https://www.hl7.org.ar/).
+* **Publicación segura (AP1166 / ASI)**: post-proceso `_sanitize-publish.sh` (exclusión de QA interno, saneamiento de rutas absolutas, HTTPS en enlaces HTML); actualización de assets JS en `_upgrade-publish-assets.sh`; documentación en `SEGURIDAD-PUBLICACION.md`.
 
 ### Versión 0.1.7
 

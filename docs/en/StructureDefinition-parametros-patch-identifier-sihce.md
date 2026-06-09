@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce | *Version*:1.2.0 |
-| Draft as of 2026-04-30 | *Computable Name*:ParametrosPatchIdentifierSIHCE |
+| Draft as of 2026-06-09 | *Computable Name*:ParametrosPatchIdentifierSIHCE |
 
  
 Estructura de Parameters para la operacion $patch-identifier de SIHCE. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-patch-
   "name" : "ParametrosPatchIdentifierSIHCE",
   "title" : "Parametros Patch Identifier SIHCE",
   "status" : "draft",
-  "date" : "2026-04-30T18:21:28-03:00",
+  "date" : "2026-06-09T15:34:40-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

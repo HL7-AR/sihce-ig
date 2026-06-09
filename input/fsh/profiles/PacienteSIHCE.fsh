@@ -9,7 +9,7 @@ Description: "Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadron
 * ^publisher = "SIHCE Development Team"
 * ^contact.name = "SIHCE Development Team"
 * ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org.ar"
+* ^contact.telecom.value = "https://hl7.org.ar"
 * ^jurisdiction = urn:iso:std:iso:3166#AR "Argentina"
 * id ^short = "Id lógico de recurso asignado por el servidor FHIR"
 * language = #es-AR

@@ -32,6 +32,7 @@ fi
 
 # GitHub Pages serves from /docs on the default branch
 if [ "$status" -eq 0 ] && [ -d output ]; then
+	bash _sanitize-publish.sh
 	mkdir -p docs
 	rsync -a --delete output/ docs/
 	echo "Synced output/ -> docs/ for GitHub Pages."

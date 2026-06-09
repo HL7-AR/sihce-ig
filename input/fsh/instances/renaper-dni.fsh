@@ -12,7 +12,7 @@ Usage: #definition
 * publisher = "SIHCE Development Team"
 * contact.name = "SIHCE Development Team"
 * contact.telecom.system = #url
-* contact.telecom.value = "http://hl7.org.ar"
+* contact.telecom.value = "https://hl7.org.ar"
 * description = "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)."
 * jurisdiction = urn:iso:std:iso:3166#AR "Argentina"
 * uniqueId.type = #uri

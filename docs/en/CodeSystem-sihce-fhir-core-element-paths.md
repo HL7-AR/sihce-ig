@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths | *Version*:1.2.0 |
-| Draft as of 2026-04-30 | *Computable Name*:SIHCEFhirCoreElementPaths |
+| Draft as of 2026-06-09 | *Computable Name*:SIHCEFhirCoreElementPaths |
 
  
 Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition). 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-30T18:21:28-03:00",
+  "date" : "2026-06-09T15:34:40-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

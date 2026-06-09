@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona | *Version*:1.2.0 |
-| Draft as of 2026-04-30 | *Computable Name*:ModificarSDMPersona |
+| Draft as of 2026-06-09 | *Computable Name*:ModificarSDMPersona |
 
  
 Actualización del SDM de una persona federada; documento inmutable. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
   "name" : "ModificarSDMPersona",
   "title" : "Modelo lógico ModificarSDMPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-04-30T18:21:28-03:00",
+  "date" : "2026-06-09T15:34:40-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
