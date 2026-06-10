@@ -96,13 +96,13 @@
 {% if dir=="rtl" %}
               {% include fragment-language.html lang=include.lang %}
 {% endif %}
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button" aria-expanded="false" aria-controls="ig-navbar-menu">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
             <a class="navbar-brand hidden" href="{{site.data.fhir.path}}index.html">FHIR</a>
-            <div class="nav-collapse collapse navbar-inverse-collapse">
+            <div id="ig-navbar-menu" class="nav-collapse collapse navbar-inverse-collapse">
               {% include {{ include.lang }}/menu.xml %}
             </div>  <!-- /.nav-collapse -->
 {% if dir=="ltr" %}

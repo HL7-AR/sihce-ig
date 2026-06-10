@@ -10,7 +10,6 @@ OUTPUT_ASSETS="${1:-${ROOT}/output/assets}"
 
 JQUERY_VER="3.7.1"
 JQUERY_UI_VER="1.13.2"
-BOOTSTRAP_VER="3.4.1"
 PRISM_VER="1.29.0"
 MERMAID_VER="10.9.6"
 
@@ -35,15 +34,22 @@ install_assets() {
   fetch "https://code.jquery.com/ui/${JQUERY_UI_VER}/themes/base/jquery-ui.min.css" "${base}/css/jquery-ui.css"
   cp "${base}/css/jquery-ui.css" "${base}/css/jquery-ui.structure.min.css"
 
-  fetch "https://cdn.jsdelivr.net/npm/bootstrap@${BOOTSTRAP_VER}/dist/js/bootstrap.min.js" "${base}/js/bootstrap.min.js"
-  # bootstrap-fhir.css is HL7-branded; do not replace with stock Bootstrap CSS.
+  # Navbar collapse + clipboard (template sources). bootstrap-fhir.css stays HL7 Bootstrap 3 CSS only.
+  if [ "${base}" != "${TEMPLATE_ASSETS}" ]; then
+    if [ -f "${TEMPLATE_ASSETS}/js/ig-navbar.js" ]; then
+      cp "${TEMPLATE_ASSETS}/js/ig-navbar.js" "${base}/js/ig-navbar.js"
+    fi
+    if [ -f "${TEMPLATE_ASSETS}/js/clipboard-btn.js" ]; then
+      cp "${TEMPLATE_ASSETS}/js/clipboard-btn.js" "${base}/js/clipboard-btn.js"
+    fi
+  fi
 
   fetch "https://cdn.jsdelivr.net/npm/prismjs@${PRISM_VER}/prism.js" "${base}/js/prism.js"
   fetch "https://cdn.jsdelivr.net/npm/prismjs@${PRISM_VER}/themes/prism.css" "${base}/css/prism.css"
 
   fetch "https://cdn.jsdelivr.net/npm/mermaid@${MERMAID_VER}/dist/mermaid.min.js" "${base}/js/mermaid.js"
 
-  echo "Assets upgraded under ${base} (jQuery ${JQUERY_VER}, jQuery UI ${JQUERY_UI_VER}, Bootstrap ${BOOTSTRAP_VER}, Prism ${PRISM_VER}, Mermaid ${MERMAID_VER})"
+  echo "Assets upgraded under ${base} (jQuery ${JQUERY_VER}, jQuery UI ${JQUERY_UI_VER}, Prism ${PRISM_VER}, Mermaid ${MERMAID_VER}, ig-navbar.js)"
 }
 
 install_assets "${TEMPLATE_ASSETS}"

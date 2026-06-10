@@ -14,6 +14,9 @@ fi
 echo "Upgrading publish assets..."
 bash "${ROOT}/_upgrade-publish-assets.sh" "${OUTPUT}/assets"
 
+echo "Removing Bootstrap JS (replaced by ig-navbar.js)..."
+find "${OUTPUT}" -path '*/assets/js/bootstrap.min.js' -type f -delete 2>/dev/null || true
+
 echo "Removing internal QA / build artifacts from public output..."
 QA_PATTERNS=(
   "qa.html"
@@ -44,6 +47,7 @@ python3 "${ROOT}/_scripts/sanitize-publish.py" "${OUTPUT}"
 # Mirror sanitize to en/assets if present
 if [ -d "${OUTPUT}/en/assets" ]; then
   bash "${ROOT}/_upgrade-publish-assets.sh" "${OUTPUT}/en/assets"
+  find "${OUTPUT}/en" -path '*/assets/js/bootstrap.min.js' -type f -delete 2>/dev/null || true
 fi
 
 echo "Publish sanitization complete."

@@ -6,6 +6,7 @@ Post-process IG Publisher output before public sync (GitHub Pages / QA GCABA).
 - Upgrades navigable http:// links to https:// in HTML attributes only (not JSON/XML).
 - Strips build boilerplate HTML comments (Auto-converted from …).
 - Removes public QA report footer link (qa.html is not published).
+- Replaces bootstrap.min.js script tags with ig-navbar.js (Bootstrap CSS only via bootstrap-fhir.css).
 """
 
 from __future__ import annotations
@@ -48,6 +49,11 @@ QA_FOOTER_LINK_RE = re.compile(
     re.IGNORECASE | re.DOTALL,
 )
 
+BOOTSTRAP_SCRIPT_RE = re.compile(
+    r'(<script[^>]*src="[^"]*/?)bootstrap\.min\.js("[^>]*>\s*</script>)',
+    re.IGNORECASE,
+)
+
 
 def to_https(url: str) -> str:
     for prefix in HTTPS_PREFIXES:
@@ -65,6 +71,7 @@ def sanitize_html(text: str) -> str:
     text = ABS_PATH_IN_URL_RE.sub(r"url(\1)", text)
     text = AUTO_CONVERTED_COMMENT_RE.sub("", text)
     text = QA_FOOTER_LINK_RE.sub("", text)
+    text = BOOTSTRAP_SCRIPT_RE.sub(r"\1ig-navbar.js\2", text)
     return text
 
 
@@ -119,6 +126,26 @@ def main() -> int:
         print("WARNING: http:// still present in href/src (review manually):", file=sys.stderr)
         for item in http_nav[:10]:
             print(f"  - {item}", file=sys.stderr)
+
+    bootstrap_js = list(root.rglob("bootstrap.min.js"))
+    if bootstrap_js:
+        print("ERROR: bootstrap.min.js must not be published (use ig-navbar.js):", file=sys.stderr)
+        for path in bootstrap_js[:20]:
+            print(f"  - {path.relative_to(root)}", file=sys.stderr)
+        return 1
+
+    bootstrap_refs = []
+    bootstrap_ref_re = re.compile(r"bootstrap\.min\.js", re.I)
+    for path in html_files:
+        if path.name.startswith("qa"):
+            continue
+        if bootstrap_ref_re.search(path.read_text(encoding="utf-8", errors="replace")):
+            bootstrap_refs.append(str(path.relative_to(root)))
+    if bootstrap_refs:
+        print("ERROR: HTML still references bootstrap.min.js:", file=sys.stderr)
+        for item in bootstrap_refs[:20]:
+            print(f"  - {item}", file=sys.stderr)
+        return 1
 
     return 0
 

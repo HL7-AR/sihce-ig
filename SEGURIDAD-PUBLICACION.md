@@ -19,7 +19,7 @@ Estas medidas afectan **solo al sitio HTML estático** (`output/` → `docs/`), 
 | 0001 | PrismJS 1.21.0 | `_upgrade-publish-assets.sh` → **1.29.0** en `template/content/assets` y `output/assets` |
 | 0002 | jQuery 3.7.0 | `_upgrade-publish-assets.sh` → **3.7.1** |
 | 0003 | jQuery UI 1.11.1 | `_upgrade-publish-assets.sh` → **1.13.2** (+ CSS asociado) |
-| 0004 | Bootstrap 3.4.1 | JS actualizado dentro de la rama **3.4.1**; `bootstrap-fhir.css` HL7 **no se reemplaza** (estilos propios del IG). Migrar a Bootstrap 5 implicaría reescribir la plantilla HL7. |
+| 0004 | Bootstrap 3.4.1 | **CSS** HL7 (`bootstrap-fhir.css`) se mantiene. **JS** de Bootstrap eliminado: `ig-navbar.js` (colapso del menú) + `clipboard-btn.js` sin tooltips Bootstrap. No se publica `bootstrap.min.js`. |
 | — | Mermaid.js 10.9.1 (plantilla HL7) | `_upgrade-publish-assets.sh` → **10.9.6** (parches CVE-2024-45801, CVE-2025-54881, CVE-2026-41148/41149). `mermaid-init.js` ya usa `securityLevel: 'sandbox'`. |
 | 0005 | Nginx 1.27 | **Fuera del repo**: actualizar versión homologada en el servidor que sirve QA/producción. |
 | 0006 | Rutas absolutas en HTML | `_scripts/sanitize-publish.py` corrige `background-image: url(/Users/...)`; se **eliminan** del sitio público los informes QA. |
@@ -33,7 +33,7 @@ _genonce.sh  →  Publisher  →  output/
                 ↓
          _sanitize-publish.sh
            1. _upgrade-publish-assets.sh
-           2. Borrar artefactos internos (qa*.html, qa.json, …)
+           2. Borrar bootstrap.min.js e informes QA internos
            3. _scripts/sanitize-publish.py
                 ↓
          rsync output/ → docs/
@@ -45,8 +45,8 @@ _genonce.sh  →  Publisher  →  output/
 |---------|---------|
 | `_genonce.sh` | Build IG + invoca saneamiento antes del sync a `docs/` |
 | `_sanitize-publish.sh` | Orquestación del post-proceso de publicación |
-| `_upgrade-publish-assets.sh` | Descarga versiones pinneadas de jQuery, jQuery UI, Bootstrap JS, Prism, Mermaid |
-| `_scripts/sanitize-publish.py` | Sanea HTML: rutas absolutas + HTTPS navegable |
+| `_upgrade-publish-assets.sh` | Descarga jQuery, jQuery UI, Prism, Mermaid; copia `ig-navbar.js` y `clipboard-btn.js` |
+| `_scripts/sanitize-publish.py` | Sanea HTML: rutas absolutas, HTTPS navegable, comentarios build, script ig-navbar |
 
 ### Artefactos excluidos del sitio público
 
@@ -71,6 +71,8 @@ rg 'href=["'\'']http://' docs --glob '*.html' | rg -v 'xmlns' || echo 'OK: sin h
 
 # Versiones de librerías (tamaño estable de mermaid.min.js pinneado como mermaid.js)
 wc -c docs/assets/js/mermaid.js   # 10.9.6 ≈ 3337508 bytes
+test ! -f docs/assets/js/bootstrap.min.js && echo 'OK: sin bootstrap.min.js'
+test -f docs/assets/js/ig-navbar.js && echo 'OK: ig-navbar.js presente'
 head -1 docs/assets/js/jquery.js docs/assets/css/prism.css
 ```
 
