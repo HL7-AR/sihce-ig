@@ -24,31 +24,61 @@
     "http://hl7.org/fhir/R5/valueset-identifier-use.html" : "IdentifierUse"
   },
   {
+    "url" : "http://hl7.org/fhir/sid/icd-10",
+    "version" : "2019-covid-expanded",
+    "status" : "active",
+    "name" : "ICD_10_EN",
+    "title" : "ICD-10-EN",
+    "description" : "International Statistical Classification of Diseases and Related Health Problems 10th Revision",
+    "uses" : {
+    },
+    "ValueSet-sihce-epicrisis-diagnosis-code-vs.html" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "2.82",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : null,
+    "description" : "This is a place holder for the code system which is fully supported through internal means (not by this code system)",
+    "uses" : {
+    },
+    "ValueSet-sihce-epicrisis-section-vs.html" : "Secciones LOINC de epicrisis SIHCE",
+    "ValueSet-sihce-clinical-document-type-vs.html" : "Tipos de documento clínico SIHCE",
+    "ValueSet-sihce-lab-observation-code-vs.html" : "Analitos de laboratorio SIHCE (LOINC)"
+  },
+  {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
-    "version" : "1.2.0",
+    "version" : "1.3.0",
     "status" : "draft",
     "name" : "SIHCEFhirCoreElementPaths",
     "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
     "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
     "uses" : {
     },
-    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
+    "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR",
+    "ConceptMap-InformeLaboratorioModeloAFHIR.html" : "InformeLaboratorio: modelo lógico a FHIR",
     "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
     "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
-    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR"
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-    "version" : "1.2.0",
+    "version" : "1.3.0",
     "status" : "draft",
     "name" : "SIHCELogicalOperationElementPaths",
     "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
     "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
     "uses" : {
     },
-    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
+    "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR",
+    "ConceptMap-InformeLaboratorioModeloAFHIR.html" : "InformeLaboratorio: modelo lógico a FHIR",
     "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
     "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
-    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR"
   }]
 }

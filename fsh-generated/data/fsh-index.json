@@ -4,8 +4,8 @@
     "fshName": "SIHCEFhirCoreElementPaths",
     "fshType": "CodeSystem",
     "fshFile": "codesystems/SIHCEConceptMapSupport.fsh",
-    "startLine": 69,
-    "endLine": 86
+    "startLine": 87,
+    "endLine": 120
   },
   {
     "outputFile": "CodeSystem-sihce-logical-operation-element-paths.json",
@@ -13,7 +13,15 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/SIHCEConceptMapSupport.fsh",
     "startLine": 1,
-    "endLine": 67
+    "endLine": 85
+  },
+  {
+    "outputFile": "Composition-CompositionEpicrisisNivel2.json",
+    "fshName": "CompositionEpicrisisNivel2",
+    "fshType": "Instance",
+    "fshFile": "instances/DocumentReferenceEpicrisisEjemplos.fsh",
+    "startLine": 33,
+    "endLine": 53
   },
   {
     "outputFile": "ConceptMap-BuscarPersonaModeloAFHIR.json",
@@ -24,12 +32,36 @@
     "endLine": 64
   },
   {
+    "outputFile": "ConceptMap-DocumentoClinicoModeloAFHIR.json",
+    "fshName": "DocumentoClinicoModeloAFHIR",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/ConceptMapDocumentoClinico.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
+    "outputFile": "ConceptMap-EpicrisisModeloAFHIR.json",
+    "fshName": "EpicrisisModeloAFHIR",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/ConceptMapDocumentoClinico.fsh",
+    "startLine": 43,
+    "endLine": 62
+  },
+  {
     "outputFile": "ConceptMap-FederarPersonaModeloAFHIR.json",
     "fshName": "FederarPersonaModeloAFHIR",
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapFederarPersona.fsh",
     "startLine": 1,
     "endLine": 63
+  },
+  {
+    "outputFile": "ConceptMap-InformeLaboratorioModeloAFHIR.json",
+    "fshName": "InformeLaboratorioModeloAFHIR",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/ConceptMapDocumentoClinico.fsh",
+    "startLine": 64,
+    "endLine": 96
   },
   {
     "outputFile": "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.json",
@@ -46,6 +78,54 @@
     "fshFile": "conceptmaps/ConceptMapModificarSDMPersona.fsh",
     "startLine": 1,
     "endLine": 74
+  },
+  {
+    "outputFile": "DiagnosticReport-DiagnosticReportInformeLabNivel1.json",
+    "fshName": "DiagnosticReportInformeLabNivel1",
+    "fshType": "Instance",
+    "fshFile": "instances/InformeLaboratorioEjemplos.fsh",
+    "startLine": 19,
+    "endLine": 31
+  },
+  {
+    "outputFile": "DiagnosticReport-DiagnosticReportInformeLabNivel2.json",
+    "fshName": "DiagnosticReportInformeLabNivel2",
+    "fshType": "Instance",
+    "fshFile": "instances/InformeLaboratorioEjemplos.fsh",
+    "startLine": 79,
+    "endLine": 91
+  },
+  {
+    "outputFile": "DocumentReference-DocumentReferenceEpicrisisNivel1.json",
+    "fshName": "DocumentReferenceEpicrisisNivel1",
+    "fshType": "Instance",
+    "fshFile": "instances/DocumentReferenceEpicrisisEjemplos.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "DocumentReference-DocumentReferenceEpicrisisNivel2.json",
+    "fshName": "DocumentReferenceEpicrisisNivel2",
+    "fshType": "Instance",
+    "fshFile": "instances/DocumentReferenceEpicrisisEjemplos.fsh",
+    "startLine": 19,
+    "endLine": 31
+  },
+  {
+    "outputFile": "DocumentReference-DocumentReferenceInformeLabNivel1.json",
+    "fshName": "DocumentReferenceInformeLabNivel1",
+    "fshType": "Instance",
+    "fshFile": "instances/InformeLaboratorioEjemplos.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "DocumentReference-DocumentReferenceInformeLabNivel2.json",
+    "fshName": "DocumentReferenceInformeLabNivel2",
+    "fshType": "Instance",
+    "fshFile": "instances/InformeLaboratorioEjemplos.fsh",
+    "startLine": 33,
+    "endLine": 45
   },
   {
     "outputFile": "NamingSystem-NamingSystemHospitalItalianoFHIR.json",
@@ -70,6 +150,38 @@
     "fshFile": "instances/renaper-dni.fsh",
     "startLine": 1,
     "endLine": 20
+  },
+  {
+    "outputFile": "NamingSystem-sihce-persona-global.json",
+    "fshName": "sihce-persona-global",
+    "fshType": "Instance",
+    "fshFile": "instances/NamingSystemSihcePersonaGlobal.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "Observation-ObservationGluInformeLabNivel2.json",
+    "fshName": "ObservationGluInformeLabNivel2",
+    "fshType": "Instance",
+    "fshFile": "instances/InformeLaboratorioEjemplos.fsh",
+    "startLine": 47,
+    "endLine": 62
+  },
+  {
+    "outputFile": "Observation-ObservationUreaInformeLabNivel2.json",
+    "fshName": "ObservationUreaInformeLabNivel2",
+    "fshType": "Instance",
+    "fshFile": "instances/InformeLaboratorioEjemplos.fsh",
+    "startLine": 64,
+    "endLine": 77
+  },
+  {
+    "outputFile": "Organization-lab-central-ejemplo.json",
+    "fshName": "lab-central-ejemplo",
+    "fshType": "Instance",
+    "fshFile": "instances/InformeLaboratorioEjemplos.fsh",
+    "startLine": 93,
+    "endLine": 99
   },
   {
     "outputFile": "Parameters-ParametrosPatchIdentifierEjemplo.json",
@@ -112,6 +224,54 @@
     "endLine": 22
   },
   {
+    "outputFile": "StructureDefinition-CompositionEpicrisisSIHCE.json",
+    "fshName": "CompositionEpicrisisSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
+    "startLine": 31,
+    "endLine": 105
+  },
+  {
+    "outputFile": "StructureDefinition-ConditionEpicrisisSIHCE.json",
+    "fshName": "ConditionEpicrisisSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-DiagnosticReportLaboratorioSIHCE.json",
+    "fshName": "DiagnosticReportLaboratorioSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/InformeLaboratorioSIHCE.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "StructureDefinition-DocumentReferenceSIHCE.json",
+    "fshName": "DocumentReferenceSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
+    "startLine": 107,
+    "endLine": 146
+  },
+  {
+    "outputFile": "StructureDefinition-DocumentoClinico.json",
+    "fshName": "DocumentoClinico",
+    "fshType": "Logical",
+    "fshFile": "logicals/LogicalDocumentoClinico.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-Epicrisis.json",
+    "fshName": "Epicrisis",
+    "fshType": "Logical",
+    "fshFile": "logicals/LogicalDocumentoClinico.fsh",
+    "startLine": 20,
+    "endLine": 31
+  },
+  {
     "outputFile": "StructureDefinition-FederarPersona.json",
     "fshName": "FederarPersona",
     "fshType": "Logical",
@@ -120,12 +280,28 @@
     "endLine": 22
   },
   {
+    "outputFile": "StructureDefinition-InformeLaboratorio.json",
+    "fshName": "InformeLaboratorio",
+    "fshType": "Logical",
+    "fshFile": "logicals/LogicalInformeLaboratorio.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
     "outputFile": "StructureDefinition-MLPersona.json",
     "fshName": "MLPersona",
     "fshType": "Logical",
     "fshFile": "logicals/MLPersona.fsh",
     "startLine": 1,
     "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-MedicationStatementEpicrisisSIHCE.json",
+    "fshName": "MedicationStatementEpicrisisSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
+    "startLine": 17,
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-ModificarIDLocalPersona.json",
@@ -142,6 +318,14 @@
     "fshFile": "logicals/LogicalModificarSDMPersona.fsh",
     "startLine": 1,
     "endLine": 30
+  },
+  {
+    "outputFile": "StructureDefinition-ObservationLaboratorioSIHCE.json",
+    "fshName": "ObservationLaboratorioSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/InformeLaboratorioSIHCE.fsh",
+    "startLine": 37,
+    "endLine": 60
   },
   {
     "outputFile": "StructureDefinition-PatientXBA.json",
@@ -166,5 +350,45 @@
     "fshFile": "profiles/OperacionesParametrosSIHCE.fsh",
     "startLine": 24,
     "endLine": 35
+  },
+  {
+    "outputFile": "ValueSet-sihce-clinical-document-type-vs.json",
+    "fshName": "SIHCEClinicalDocumentTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-sihce-document-content-type-vs.json",
+    "fshName": "SIHCEDocumentContentTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
+    "startLine": 12,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-sihce-epicrisis-diagnosis-code-vs.json",
+    "fshName": "SIHCEEpicrisisDiagnosisCodeVS",
+    "fshType": "ValueSet",
+    "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
+    "startLine": 46,
+    "endLine": 55
+  },
+  {
+    "outputFile": "ValueSet-sihce-epicrisis-section-vs.json",
+    "fshName": "SIHCEEpicrisisSectionVS",
+    "fshType": "ValueSet",
+    "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
+    "startLine": 24,
+    "endLine": 44
+  },
+  {
+    "outputFile": "ValueSet-sihce-lab-observation-code-vs.json",
+    "fshName": "SIHCELabObservationCodeVS",
+    "fshType": "ValueSet",
+    "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
+    "startLine": 57,
+    "endLine": 69
   }
 ]

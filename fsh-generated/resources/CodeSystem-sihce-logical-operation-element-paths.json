@@ -235,10 +235,82 @@
     {
       "code": "ModificarSDMPersona.datosRespuesta.mensaje",
       "display": "ModificarSDMPersona datosRespuesta mensaje"
+    },
+    {
+      "code": "DocumentoClinico.datosDocumento.idDocumentoDominio",
+      "display": "DocumentoClinico datosDocumento idDocumentoDominio"
+    },
+    {
+      "code": "DocumentoClinico.datosDocumento.uriSistemaId",
+      "display": "DocumentoClinico datosDocumento uriSistemaId"
+    },
+    {
+      "code": "DocumentoClinico.datosDocumento.tipoDocumento",
+      "display": "DocumentoClinico datosDocumento tipoDocumento"
+    },
+    {
+      "code": "DocumentoClinico.datosDocumento.fecha",
+      "display": "DocumentoClinico datosDocumento fecha"
+    },
+    {
+      "code": "DocumentoClinico.datosDocumento.urlContenido",
+      "display": "DocumentoClinico datosDocumento urlContenido"
+    },
+    {
+      "code": "DocumentoClinico.datosDocumento.tipoContenido",
+      "display": "DocumentoClinico datosDocumento tipoContenido"
+    },
+    {
+      "code": "DocumentoClinico.datosDocumento.idPersonaGlobal",
+      "display": "DocumentoClinico datosDocumento idPersonaGlobal"
+    },
+    {
+      "code": "DocumentoClinico.datosDominio.idDominio",
+      "display": "DocumentoClinico datosDominio idDominio"
+    },
+    {
+      "code": "DocumentoClinico.datosDominio.nombreCustodio",
+      "display": "DocumentoClinico datosDominio nombreCustodio"
+    },
+    {
+      "code": "Epicrisis.nivelMadurez",
+      "display": "Epicrisis nivelMadurez"
+    },
+    {
+      "code": "Epicrisis.seccion.codigoLoinc",
+      "display": "Epicrisis seccion codigoLoinc"
+    },
+    {
+      "code": "Epicrisis.seccion.texto",
+      "display": "Epicrisis seccion texto"
+    },
+    {
+      "code": "Epicrisis.seccion.codificado",
+      "display": "Epicrisis seccion codificado"
+    },
+    {
+      "code": "InformeLaboratorio.nivelMadurez",
+      "display": "InformeLaboratorio nivelMadurez"
+    },
+    {
+      "code": "InformeLaboratorio.resultado.codigoAnalito",
+      "display": "InformeLaboratorio resultado codigoAnalito"
+    },
+    {
+      "code": "InformeLaboratorio.resultado.valor",
+      "display": "InformeLaboratorio resultado valor"
+    },
+    {
+      "code": "InformeLaboratorio.resultado.unidad",
+      "display": "InformeLaboratorio resultado unidad"
+    },
+    {
+      "code": "InformeLaboratorio.resultado.interpretacion",
+      "display": "InformeLaboratorio resultado interpretacion"
     }
   ],
   "version": "1.2.0",
   "experimental": false,
   "caseSensitive": true,
-  "count": 57
+  "count": 75
 }

@@ -1,5 +1,29 @@
 {
   "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-adherence",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "MedicationStatementAdherenceCodes",
+    "title" : "MedicationStatement Adherence Codes",
+    "description" : "MedicationStatement Adherence Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1981"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-medication-statement-adherence.html" : "MedicationStatement Adherence Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "MedicationStatementStatusCodes",
+    "title" : "MedicationStatement Status Codes",
+    "description" : "MedicationStatement Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1980"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-medication-statement-status.html" : "MedicationStatement Status Codes"
+  },
+  {
     "url" : "http://hl7.org/fhir/administrative-gender",
     "version" : "5.0.0",
     "status" : "active",
@@ -10,6 +34,86 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R5/valueset-administrative-gender.html" : "AdministrativeGender"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-attestation-mode",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "CompositionAttestationMode",
+    "title" : "Composition Attestation Mode",
+    "description" : "The way in which a person authenticated a composition.",
+    "oids" : ["2.16.840.1.113883.4.642.1.234",
+    "2.16.840.1.113883.4.642.4.239",
+    "2.16.840.1.113883.4.642.2.120"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-composition-attestation-mode.html" : "Composition Attestation Mode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "CompositionStatus",
+    "title" : "Composition Status",
+    "description" : "The workflow/clinical status of the composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.242",
+    "2.16.840.1.113883.4.642.2.123",
+    "2.16.840.1.113883.4.642.1.237"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-composition-status.html" : "Composition Status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/diagnostic-report-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "DiagnosticReportStatus",
+    "title" : "Diagnostic Report Status",
+    "description" : "The status of the diagnostic report.",
+    "oids" : ["2.16.840.1.113883.4.642.2.118",
+    "2.16.840.1.113883.4.642.4.236",
+    "2.16.840.1.113883.4.642.1.231"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-diagnostic-report-status.html" : "Diagnostic Report Status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-reference-status",
+    "version" : "5.0.0",
+    "status" : "draft",
+    "name" : "DocumentReferenceStatus",
+    "title" : "DocumentReferenceStatus",
+    "description" : "The status of the document reference.",
+    "oids" : ["2.16.840.1.113883.4.642.4.8"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-relationship-type",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "DocumentRelationshipType",
+    "title" : "Document Relationship Type",
+    "description" : "The type of relationship between documents.",
+    "oids" : ["2.16.840.1.113883.4.642.4.245",
+    "2.16.840.1.113883.4.642.2.133",
+    "2.16.840.1.113883.4.642.1.240"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-document-relationship-type.html" : "Document Relationship Type"
+  },
+  {
+    "url" : "http://hl7.org/fhir/fhir-types",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "FHIRTypes",
+    "title" : "All FHIR Types",
+    "description" : "One of the types defined as part of this version of FHIR.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1802"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
   },
   {
     "url" : "http://hl7.org/fhir/identifier-use",
@@ -50,32 +154,260 @@
     "http://hl7.org/fhir/R5/valueset-name-use.html" : "NameUse"
   },
   {
+    "url" : "http://hl7.org/fhir/observation-referencerange-normalvalue",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ObservationReferenceRangeNormalValue",
+    "title" : "ObservationreferenceRangeNormalValue",
+    "description" : "Codes that describe the normal value in the reference range.",
+    "oids" : ["2.16.840.1.113883.4.642.4.2099"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-observation-referencerange-normalvalue.html" : "Observation Reference Range Normal Value Codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/observation-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ObservationStatus",
+    "title" : "Observation Status",
+    "description" : "Codes providing the status of an observation.",
+    "oids" : ["2.16.840.1.113883.4.642.4.401",
+    "2.16.840.1.113883.4.642.1.388",
+    "2.16.840.1.113883.4.642.2.219"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-observation-status.html" : "Observation Status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/observation-triggeredbytype",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "TriggeredBytype",
+    "title" : "triggered Bytype",
+    "description" : "Codes providing the triggeredBy type of observation.",
+    "oids" : ["2.16.840.1.113883.4.642.4.2098"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-observation-triggeredbytype.html" : "triggered Bytype"
+  },
+  {
+    "url" : "http://hl7.org/fhir/quantity-comparator",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "oids" : ["2.16.840.1.113883.4.642.4.60"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-quantity-comparator.html" : "QuantityComparator"
+  },
+  {
+    "url" : "http://hl7.org/fhir/sid/icd-10",
+    "version" : "2019-covid-expanded",
+    "status" : "active",
+    "name" : "ICD_10_EN",
+    "title" : "ICD-10-EN",
+    "description" : "International Statistical Classification of Diseases and Related Health Problems 10th Revision",
+    "uses" : {
+    },
+    "ValueSet-sihce-epicrisis-diagnosis-code-vs.html" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "2.82",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : null,
+    "description" : "This is a place holder for the code system which is fully supported through internal means (not by this code system)",
+    "uses" : {
+    },
+    "ValueSet-sihce-epicrisis-section-vs.html" : "Secciones LOINC de epicrisis SIHCE",
+    "http://hl7.org/fhir/R5/valueset-referenced-item-category.html" : "Referenced Item Category Value Set",
+    "ValueSet-sihce-clinical-document-type-vs.html" : "Tipos de documento clínico SIHCE",
+    "ValueSet-sihce-lab-observation-code-vs.html" : "Analitos de laboratorio SIHCE (LOINC)",
+    "http://hl7.org/fhir/R5/valueset-observation-codes.html" : "LOINC Codes",
+    "http://hl7.org/fhir/R5/valueset-doc-section-codes.html" : "Document Section Codes",
+    "http://hl7.org/fhir/R5/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "http://hl7.org/fhir/R5/valueset-report-codes.html" : "LOINC Diagnostic Report Codes"
+  },
+  {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
-    "version" : "1.2.0",
+    "version" : "1.3.0",
     "status" : "draft",
     "name" : "SIHCEFhirCoreElementPaths",
     "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
     "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
     "uses" : {
     },
-    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
+    "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR",
+    "ConceptMap-InformeLaboratorioModeloAFHIR.html" : "InformeLaboratorio: modelo lógico a FHIR",
     "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
     "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
-    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR"
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-    "version" : "1.2.0",
+    "version" : "1.3.0",
     "status" : "draft",
     "name" : "SIHCELogicalOperationElementPaths",
     "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
     "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
     "uses" : {
     },
-    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
+    "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR",
+    "ConceptMap-InformeLaboratorioModeloAFHIR.html" : "InformeLaboratorio: modelo lógico a FHIR",
     "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
     "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
-    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ConditionCategoryCodes",
+    "title" : "Condition Category Codes",
+    "description" : "Preferred value set for Condition Categories.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-condition-category.html" : "Condition Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "ConditionVerificationStatus",
+    "title" : "ConditionVerificationStatus",
+    "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1075"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-condition-ver-status.html" : "Condition Verification Status"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "DataAbsentReason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-data-absent-reason.html" : "Data Absent Reason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "SecurityRoleType",
+    "title" : "Security Role Type",
+    "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-participation-role-type.html" : "Participation Role Type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-list-empty-reason.html" : "List Empty Reasons"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ListOrderCodes",
+    "title" : "List Order Codes",
+    "description" : "Base values for the order of item lists in resources.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-list-order.html" : "List Order Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/media-category",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "DigitalMediaCategory",
+    "title" : "Digital Media Category",
+    "description" : "Codes for high level media types - whether the media is an image, video, or audio.",
+    "oids" : ["2.16.840.1.113883.4.642.1.326"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-referenced-item-category.html" : "Referenced Item Category Value Set"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-admin-location",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationRequest_Administration_Location_Codes",
+    "title" : "Medication request  administration  location  codes",
+    "description" : "MedicationRequest Administration Location Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.0"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-medicationrequest-admin-location.html" : "medicationRequest Administration Location Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-observation-category.html" : "Observation Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ObservationReferenceRangeMeaningCodes",
+    "title" : "Observation Reference Range Meaning Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1124"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "DiagnosticServiceSectionId",
+    "title" : "diagnosticServiceSectionId",
+    "description" : "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
+    "oids" : ["2.16.840.1.113883.18.29"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -102,6 +434,42 @@
     "http://hl7.org/fhir/R5/valueset-identifier-type.html" : "Identifier Type Codes"
   },
   {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0936",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ObservationType",
+    "title" : "observationType",
+    "description" : "HL7-defined code system of concepts specifying types of observations to enable systems to distinguish between observations sent along with an order, versus observations sent as the result to an order. Used in HL7 Version 2.x messaging in the OBX segment.",
+    "oids" : ["2.16.840.1.113883.18.439"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.2.0/ValueSet-v2-0936.html" : "hl7VS-VS-observationType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version" : "10.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "oids" : ["2.16.840.1.113883.5.4"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.2.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes",
+    "version" : "4.1.0",
+    "status" : "active",
+    "name" : "HL7DocumentFormatCodes",
+    "title" : "HL7 Document Format Codes",
+    "description" : "This codeSystem contains codes which specify the technical format of a document. Each code provides sufficient information to allow any potential document consumer to know if it will be able to process the document. The codes are sufficiently specific to ensure processing/display by identifying a document encoding, structure and template. For example, formatCodes can be used in the FHIR DocumentReference resource to characterize the document being referenced.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1407"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.2.0/ValueSet-v3-HL7FormatCodes.html" : "HL7 ValueSet of Format Codes for use with Document Sharing"
+  },
+  {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
     "version" : "4.0.0",
     "status" : "active",
@@ -124,5 +492,17 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ObservationInterpretation",
+    "title" : "ObservationInterpretation",
+    "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+    "oids" : ["2.16.840.1.113883.5.83"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R5/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
   }]
 }

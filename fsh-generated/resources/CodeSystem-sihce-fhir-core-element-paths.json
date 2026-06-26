@@ -39,10 +39,74 @@
     {
       "code": "OperationOutcome.issue",
       "display": "OperationOutcome.issue"
+    },
+    {
+      "code": "DocumentReference.identifier",
+      "display": "DocumentReference.identifier"
+    },
+    {
+      "code": "DocumentReference.type",
+      "display": "DocumentReference.type"
+    },
+    {
+      "code": "DocumentReference.subject",
+      "display": "DocumentReference.subject"
+    },
+    {
+      "code": "DocumentReference.date",
+      "display": "DocumentReference.date"
+    },
+    {
+      "code": "DocumentReference.content",
+      "display": "DocumentReference.content"
+    },
+    {
+      "code": "DocumentReference.custodian",
+      "display": "DocumentReference.custodian"
+    },
+    {
+      "code": "Composition.section",
+      "display": "Composition.section"
+    },
+    {
+      "code": "Condition.code",
+      "display": "Condition.code"
+    },
+    {
+      "code": "MedicationStatement.medication",
+      "display": "MedicationStatement.medication"
+    },
+    {
+      "code": "DiagnosticReport.code",
+      "display": "DiagnosticReport.code"
+    },
+    {
+      "code": "DiagnosticReport.subject",
+      "display": "DiagnosticReport.subject"
+    },
+    {
+      "code": "DiagnosticReport.issued",
+      "display": "DiagnosticReport.issued"
+    },
+    {
+      "code": "DiagnosticReport.presentedForm",
+      "display": "DiagnosticReport.presentedForm"
+    },
+    {
+      "code": "DiagnosticReport.result",
+      "display": "DiagnosticReport.result"
+    },
+    {
+      "code": "Observation.code",
+      "display": "Observation.code"
+    },
+    {
+      "code": "Observation.value[x]",
+      "display": "Observation.value[x]"
     }
   ],
   "version": "1.2.0",
   "experimental": false,
   "caseSensitive": true,
-  "count": 8
+  "count": 24
 }

@@ -1,0 +1,145 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SIHCEEpicrisisSectionVS",
+  "id": "sihce-epicrisis-section-vs",
+  "title": "Secciones LOINC de epicrisis SIHCE",
+  "description": "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales).",
+  "url": "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
+  "version": "1.3.0",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "48765-2"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "78375-3"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "75311-1"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "8648-8"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "18776-5"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "42347-5"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "42346-7"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "46239-0"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "8653-8"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "11493-4"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "10184-0"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "47519-4"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "11450-4"
+          }
+        ]
+      }
+    ]
+  }
+}

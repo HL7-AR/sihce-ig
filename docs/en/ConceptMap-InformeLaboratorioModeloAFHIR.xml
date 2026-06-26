@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="InformeLaboratorioModeloAFHIR"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap InformeLaboratorioModeloAFHIR</b></p><a name="InformeLaboratorioModeloAFHIR"> </a><a name="hcInformeLaboratorioModeloAFHIR"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-sihce-logical-operation-element-paths.html">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href="CodeSystem-sihce-fhir-core-element-paths.html">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>DocumentoClinico.datosDocumento.tipoDocumento (DocumentoClinico datosDocumento tipoDocumento)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.type</td><td/></tr><tr><td>DocumentoClinico.datosDocumento.idPersonaGlobal (DocumentoClinico datosDocumento idPersonaGlobal)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.subject</td><td/></tr><tr><td>DocumentoClinico.datosDocumento.urlContenido (DocumentoClinico datosDocumento urlContenido)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.content</td><td/></tr><tr><td>InformeLaboratorio.nivelMadurez (InformeLaboratorio nivelMadurez)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to" title="related-to">is related to</a></td><td>DiagnosticReport.result</td><td>Nivel 1: sin result; nivel 2: con Observation en result.</td></tr><tr><td>InformeLaboratorio.resultado.codigoAnalito (InformeLaboratorio resultado codigoAnalito)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.code</td><td/></tr><tr><td>InformeLaboratorio.resultado.valor (InformeLaboratorio resultado valor)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Observation.value[x]</td><td/></tr></table></div>
+  </text>
+  <url value="http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR"/>
+  <version value="1.3.0"/>
+  <name value="InformeLaboratorioModeloAFHIR"/>
+  <title value="InformeLaboratorio: modelo lógico a FHIR"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-06-09"/>
+  <publisher value="SIHCE Development Team"/>
+  <contact>
+    <name value="SIHCE Development Team"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
+    </telecom>
+  </contact>
+  <description value="Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport."/>
+  <group>
+    <source value="http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"/>
+    <target value="http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"/>
+    <element>
+      <code value="DocumentoClinico.datosDocumento.tipoDocumento"/>
+      <target>
+        <code value="DocumentReference.type"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DocumentoClinico.datosDocumento.idPersonaGlobal"/>
+      <target>
+        <code value="DocumentReference.subject"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DocumentoClinico.datosDocumento.urlContenido"/>
+      <target>
+        <code value="DocumentReference.content"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InformeLaboratorio.nivelMadurez"/>
+      <target>
+        <code value="DiagnosticReport.result"/>
+        <relationship value="related-to"/>
+        <comment value="Nivel 1: sin result; nivel 2: con Observation en result."/>
+      </target>
+    </element>
+    <element>
+      <code value="InformeLaboratorio.resultado.codigoAnalito"/>
+      <target>
+        <code value="Observation.code"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="InformeLaboratorio.resultado.valor"/>
+      <target>
+        <code value="Observation.value[x]"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

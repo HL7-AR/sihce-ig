@@ -3,15 +3,15 @@
   "id" : "sihce-fhir-core-element-paths",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-fhir-core-element-paths</b></p><a name=\"sihce-fhir-core-element-paths\"> </a><a name=\"hcsihce-fhir-core-element-paths\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Patient.identifier<a name=\"sihce-fhir-core-element-paths-Patient.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.name<a name=\"sihce-fhir-core-element-paths-Patient.46name\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.gender<a name=\"sihce-fhir-core-element-paths-Patient.46gender\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.birthDate<a name=\"sihce-fhir-core-element-paths-Patient.46birthDate\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.deceased[x]<a name=\"sihce-fhir-core-element-paths-Patient.46deceased.91x.93\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization<a name=\"sihce-fhir-core-element-paths-Organization\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization.identifier<a name=\"sihce-fhir-core-element-paths-Organization.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OperationOutcome.issue<a name=\"sihce-fhir-core-element-paths-OperationOutcome.46issue\"> </a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-fhir-core-element-paths</b></p><a name=\"sihce-fhir-core-element-paths\"> </a><a name=\"hcsihce-fhir-core-element-paths\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Patient.identifier<a name=\"sihce-fhir-core-element-paths-Patient.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.name<a name=\"sihce-fhir-core-element-paths-Patient.46name\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.gender<a name=\"sihce-fhir-core-element-paths-Patient.46gender\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.birthDate<a name=\"sihce-fhir-core-element-paths-Patient.46birthDate\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.deceased[x]<a name=\"sihce-fhir-core-element-paths-Patient.46deceased.91x.93\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization<a name=\"sihce-fhir-core-element-paths-Organization\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization.identifier<a name=\"sihce-fhir-core-element-paths-Organization.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OperationOutcome.issue<a name=\"sihce-fhir-core-element-paths-OperationOutcome.46issue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.identifier<a name=\"sihce-fhir-core-element-paths-DocumentReference.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.type<a name=\"sihce-fhir-core-element-paths-DocumentReference.46type\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.subject<a name=\"sihce-fhir-core-element-paths-DocumentReference.46subject\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.date<a name=\"sihce-fhir-core-element-paths-DocumentReference.46date\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.content<a name=\"sihce-fhir-core-element-paths-DocumentReference.46content\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.custodian<a name=\"sihce-fhir-core-element-paths-DocumentReference.46custodian\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Composition.section<a name=\"sihce-fhir-core-element-paths-Composition.46section\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Condition.code<a name=\"sihce-fhir-core-element-paths-Condition.46code\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MedicationStatement.medication<a name=\"sihce-fhir-core-element-paths-MedicationStatement.46medication\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.code<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46code\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.subject<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46subject\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.issued<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46issued\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.presentedForm<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46presentedForm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.result<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46result\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Observation.code<a name=\"sihce-fhir-core-element-paths-Observation.46code\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Observation.value[x]<a name=\"sihce-fhir-core-element-paths-Observation.46value.91x.93\"> </a></td></tr></table></div>"
   },
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
-  "version" : "1.2.0",
+  "version" : "1.3.0",
   "name" : "SIHCEFhirCoreElementPaths",
   "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-09T15:34:40-03:00",
+  "date" : "2026-06-26T18:01:23-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -23,7 +23,7 @@
   "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 8,
+  "count" : 24,
   "concept" : [{
     "code" : "Patient.identifier",
     "display" : "Patient.identifier"
@@ -55,5 +55,69 @@
   {
     "code" : "OperationOutcome.issue",
     "display" : "OperationOutcome.issue"
+  },
+  {
+    "code" : "DocumentReference.identifier",
+    "display" : "DocumentReference.identifier"
+  },
+  {
+    "code" : "DocumentReference.type",
+    "display" : "DocumentReference.type"
+  },
+  {
+    "code" : "DocumentReference.subject",
+    "display" : "DocumentReference.subject"
+  },
+  {
+    "code" : "DocumentReference.date",
+    "display" : "DocumentReference.date"
+  },
+  {
+    "code" : "DocumentReference.content",
+    "display" : "DocumentReference.content"
+  },
+  {
+    "code" : "DocumentReference.custodian",
+    "display" : "DocumentReference.custodian"
+  },
+  {
+    "code" : "Composition.section",
+    "display" : "Composition.section"
+  },
+  {
+    "code" : "Condition.code",
+    "display" : "Condition.code"
+  },
+  {
+    "code" : "MedicationStatement.medication",
+    "display" : "MedicationStatement.medication"
+  },
+  {
+    "code" : "DiagnosticReport.code",
+    "display" : "DiagnosticReport.code"
+  },
+  {
+    "code" : "DiagnosticReport.subject",
+    "display" : "DiagnosticReport.subject"
+  },
+  {
+    "code" : "DiagnosticReport.issued",
+    "display" : "DiagnosticReport.issued"
+  },
+  {
+    "code" : "DiagnosticReport.presentedForm",
+    "display" : "DiagnosticReport.presentedForm"
+  },
+  {
+    "code" : "DiagnosticReport.result",
+    "display" : "DiagnosticReport.result"
+  },
+  {
+    "code" : "Observation.code",
+    "display" : "Observation.code"
+  },
+  {
+    "code" : "Observation.value[x]",
+    "display" : "Observation.value[x]"
   }]
 }

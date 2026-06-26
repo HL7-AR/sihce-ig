@@ -1,0 +1,122 @@
+# Condición clínica epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.3.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Condición clínica epicrisis SIHCE**
+
+## Resource Profile: Condición clínica epicrisis SIHCE 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE | *Version*:1.3.0 |
+| Draft as of 2026-06-09 | *Computable Name*:ConditionEpicrisisSIHCE |
+
+ 
+Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina). 
+
+**Usages:**
+
+* Refer to this Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/ConditionEpicrisisSIHCE)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots, and their representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-ConditionEpicrisisSIHCE.csv), [Excel](../StructureDefinition-ConditionEpicrisisSIHCE.xlsx), [Schematron](../StructureDefinition-ConditionEpicrisisSIHCE.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "ConditionEpicrisisSIHCE",
+  "url" : "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE",
+  "version" : "1.3.0",
+  "name" : "ConditionEpicrisisSIHCE",
+  "title" : "Condición clínica epicrisis SIHCE",
+  "status" : "draft",
+  "date" : "2026-06-09T00:00:00-03:00",
+  "publisher" : "SIHCE Development Team",
+  "contact" : [{
+    "name" : "SIHCE Development Team",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/diegokaminker/sihce-ig"
+    }]
+  }],
+  "description" : "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 V2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Condition",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Condition",
+      "path" : "Condition"
+    },
+    {
+      "id" : "Condition.clinicalStatus",
+      "path" : "Condition.clinicalStatus",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Condition.verificationStatus",
+      "path" : "Condition.verificationStatus",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Condition.code",
+      "path" : "Condition.code",
+      "min" : 1,
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"
+      }
+    },
+    {
+      "id" : "Condition.subject",
+      "path" : "Condition.subject",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mustSupport" : true
+    }]
+  }
+}
+
+```

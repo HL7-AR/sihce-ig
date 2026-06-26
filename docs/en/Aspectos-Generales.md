@@ -1,4 +1,4 @@
-# Generalidades - Guía de Implementación SIHCE - FHIR R5 v1.2.0
+# Generalidades - Guía de Implementación SIHCE - FHIR R5 v1.3.0
 
 * [**Table of Contents**](toc.md)
 * **Generalidades**

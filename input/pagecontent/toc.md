@@ -28,3 +28,33 @@
 8.7 [Parámetros patch identifier - ejemplo](Parameters-ParametrosPatchIdentifierEjemplo.html)
 
 8.8 [Parámetros update SDM - ejemplo](Parameters-ParametrosUpdateSDMEjemplo.html)
+
+8.9 [Referencia a documento clínico SIHCE](StructureDefinition-DocumentReferenceSIHCE.html)
+
+8.10 [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisisSIHCE.html)
+
+8.11 [Condición epicrisis SIHCE](StructureDefinition-ConditionEpicrisisSIHCE.html)
+
+8.12 [Medicación al alta epicrisis SIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.html)
+
+8.13 [sihce-persona-global](NamingSystem-sihce-persona-global.html)
+
+8.14 [DocumentReference epicrisis nivel 1](DocumentReference-DocumentReferenceEpicrisisNivel1.html)
+
+8.15 [Composition epicrisis nivel 2](Composition-CompositionEpicrisisNivel2.html)
+
+8.16 [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.html)
+
+8.17 [Observación de laboratorio SIHCE](StructureDefinition-ObservationLaboratorioSIHCE.html)
+
+8.18 [DocumentReference informe laboratorio nivel 1](DocumentReference-DocumentReferenceInformeLabNivel1.html)
+
+8.19 [DiagnosticReport informe laboratorio nivel 1](DiagnosticReport-DiagnosticReportInformeLabNivel1.html)
+
+8.20 [DocumentReference informe laboratorio nivel 2](DocumentReference-DocumentReferenceInformeLabNivel2.html)
+
+8.21 [DiagnosticReport informe laboratorio nivel 2](DiagnosticReport-DiagnosticReportInformeLabNivel2.html)
+
+8.22 [Observación glucemia informe laboratorio](Observation-ObservationGluInformeLabNivel2.html)
+
+8.23 [Observación urea informe laboratorio](Observation-ObservationUreaInformeLabNivel2.html)

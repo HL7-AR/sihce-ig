@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/ValueSet/sihce-document-content-type-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sihce-document-content-type-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-document-content-type-vs</b></p><a name=\"sihce-document-content-type-vs\"> </a><a name=\"hcsihce-document-content-type-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://terminology.hl7.org/CodeSystem/mimetypes</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = application/pdf</li><li>Include codes from<code>http://terminology.hl7.org/CodeSystem/mimetypes</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = application/xml</li><li>Include codes from<code>http://terminology.hl7.org/CodeSystem/mimetypes</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = application/fhir+json</li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://sihce.gob.ar/ValueSet/sihce-document-content-type"^^xsd:anyURI ;
+     fhir:l <http://sihce.gob.ar/ValueSet/sihce-document-content-type>
+  ] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:name [ fhir:v "SIHCEDocumentContentTypeVS"] ; # 
+  fhir:title [ fhir:v "Tipos MIME de contenido documental SIHCE"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-06-26T18:01:23-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SIHCE Development Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Formatos admitidos en DocumentReference.content.attachment.contentType."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/mimetypes"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/mimetypes>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "code" ] ;
+         fhir:op [ fhir:v "=" ] ;
+         fhir:value [ fhir:v "application/pdf" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/mimetypes"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/mimetypes>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "code" ] ;
+         fhir:op [ fhir:v "=" ] ;
+         fhir:value [ fhir:v "application/xml" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/mimetypes"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/mimetypes>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "code" ] ;
+         fhir:op [ fhir:v "=" ] ;
+         fhir:value [ fhir:v "application/fhir+json" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

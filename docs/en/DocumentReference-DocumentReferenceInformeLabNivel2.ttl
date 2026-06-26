@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/DocumentReference/DocumentReferenceInformeLabNivel2> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DocumentReferenceInformeLabNivel2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceInformeLabNivel2</b></p><a name=\"DocumentReferenceInformeLabNivel2\"> </a><a name=\"hcDocumentReferenceInformeLabNivel2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReferenceSIHCE.html\">Referencia a documento clínico SIHCE</a></p></div><p><b>identifier</b>: <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0110</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span></p><p><b>subject</b>: <a href=\"Patient/987654321\">Patient/987654321</a></p><p><b>date</b>: 2026-06-19 16:10:00-0300</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0110\">https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0110</a></td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://laboratorio.ejemplo.gob.ar/informe"^^xsd:anyURI ;
+       fhir:l <http://laboratorio.ejemplo.gob.ar/informe>
+     ] ;
+     fhir:value [ fhir:v "LAB-2026-0110" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:11502-2 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "11502-2" ] ;
+       fhir:display [ fhir:v "Laboratory report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://sihce.gob.ar/Patient/987654321> ;
+     fhir:reference [ fhir:v "Patient/987654321" ]
+  ] ; # 
+  fhir:date [ fhir:v "2026-06-19T16:10:00-03:00"^^xsd:dateTime] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/fhir+json" ] ;
+       fhir:url [
+         fhir:v "https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0110"^^xsd:anyURI ;
+         fhir:l <https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0110>
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -334,3 +334,106 @@ El modelo incluye las siguientes validaciones:
 - SDM actual no coincidente: Se informa que los datos actuales no coinciden con la persona registrada.
 - Datos ya actualizados: Se informa que los datos ya se encontraban actualizados en el FederadorBA.
 - Éxito: Se actualizan los datos del SDM (incluyendo fecha de óbito si estuviera disponible) y se informa que la operación fue exitosa.
+
+### DocumentoClinico
+
+#### Descripción general
+
+Modelo lógico genérico para registrar un documento clínico en el índice SIHCE. El dominio emisor conserva el contenido (binario o composición) en su infraestructura; SIHCE almacena metadatos y la URL de acceso.
+
+#### Elementos del modelo
+
+##### datosDocumento
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>idDocumentoDominio</td><td>string</td><td>1..1</td><td>Identificador del documento asignado por el dominio emisor.</td></tr>
+    <tr><td>uriSistemaId</td><td>URI</td><td>1..1</td><td>URI o NamingSystem del dominio para el identificador del documento.</td></tr>
+    <tr><td>tipoDocumento</td><td>code</td><td>1..1</td><td>Código LOINC del tipo (p. ej. <code>18842-5</code> epicrisis).</td></tr>
+    <tr><td>fecha</td><td>dateTime</td><td>1..1</td><td>Fecha del documento.</td></tr>
+    <tr><td>urlContenido</td><td>URI</td><td>1..1</td><td>URL en el dominio al Binary o Composition.</td></tr>
+    <tr><td>tipoContenido</td><td>code</td><td>0..1</td><td>MIME: <code>application/pdf</code>, <code>application/xml</code> o <code>application/fhir+json</code>.</td></tr>
+    <tr><td>idPersonaGlobal</td><td>string</td><td>1..1</td><td>Identificador SIHCE de la persona (<a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>).</td></tr>
+  </tbody>
+</table>
+
+##### datosDominio
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>idDominio</td><td>URI</td><td>1..1</td><td>URI del dominio emisor.</td></tr>
+    <tr><td>nombreCustodio</td><td>string</td><td>0..1</td><td>Organización custodia del documento.</td></tr>
+  </tbody>
+</table>
+
+#### Relaciones con FHIR
+
+Ver [ConceptMap DocumentoClinicoModeloAFHIR](ConceptMap-DocumentoClinicoModeloAFHIR.html) y el perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.html).
+
+### Epicrisis
+
+#### Descripción general
+
+Caso particular de DocumentoClinico (LOINC `18842-5`) con tres niveles de madurez: (1) binario PDF/XML, (2) Composition con secciones narrativas, (3) Composition con secciones codificadas.
+
+#### Secciones (Composition)
+
+<table>
+  <thead>
+    <tr><th>LOINC</th><th>Sección</th><th>Obligatoria</th><th>Codificada (nivel 3)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>48765-2</td><td>Alergias y reacciones adversas</td><td>Sí</td><td>No (texto)</td></tr>
+    <tr><td>78375-3</td><td>Diagnóstico de alta</td><td>Sí</td><td>Sí (Condition)</td></tr>
+    <tr><td>75311-1</td><td>Medicamentos al alta</td><td>Sí</td><td>Sí (MedicationStatement)</td></tr>
+    <tr><td>8648-8</td><td>Evolución hospitalaria</td><td>Sí</td><td>No</td></tr>
+    <tr><td>18776-5</td><td>Plan de tratamiento</td><td>Sí</td><td>No</td></tr>
+    <tr><td>42347-5</td><td>Diagnóstico de admisión</td><td>Opcional</td><td>Sí (Condition)</td></tr>
+    <tr><td>42346-7</td><td>Medicamentos al ingreso</td><td>Opcional</td><td>No</td></tr>
+    <tr><td>46239-0</td><td>Motivo de consulta</td><td>Opcional</td><td>Sí (Condition)</td></tr>
+    <tr><td>8653-8</td><td>Instrucciones al alta</td><td>Opcional</td><td>No</td></tr>
+    <tr><td>11493-4</td><td>Resumen de estudios al alta</td><td>Opcional</td><td>No</td></tr>
+    <tr><td>10184-0</td><td>Hallazgos físicos al alta</td><td>Opcional</td><td>No</td></tr>
+    <tr><td>47519-4</td><td>Historial de procedimientos</td><td>Opcional</td><td>No</td></tr>
+    <tr><td>11450-4</td><td>Lista de problemas activos</td><td>Opcional</td><td>No</td></tr>
+  </tbody>
+</table>
+
+Terminología nivel 3: ICD-10 y SNOMED CT edición Argentina ([ValueSet sihce-epicrisis-diagnosis-code](ValueSet-sihce-epicrisis-diagnosis-code-vs.html)).
+
+#### Relaciones con FHIR
+
+Ver [ConceptMap EpicrisisModeloAFHIR](ConceptMap-EpicrisisModeloAFHIR.html), [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.html), [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.html) y [MedicationStatementEpicrisisSIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.html).
+
+### InformeLaboratorio
+
+#### Descripción general
+
+Caso particular de DocumentoClinico (LOINC `11502-2`) con dos niveles de madurez: (1) PDF en `DiagnosticReport.presentedForm` sin observaciones codificadas; (2) mismo PDF más `result` con [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.html) (LOINC, valor cuantitativo, interpretación).
+
+#### Elementos del modelo (nivel 2)
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>nivelMadurez</td><td>code</td><td>1..1</td><td><code>1</code> = solo PDF; <code>2</code> = PDF + observaciones.</td></tr>
+    <tr><td>resultado.codigoAnalito</td><td>code</td><td>1..1</td><td>LOINC (p. ej. <code>2345-7</code> glucemia, <code>3094-0</code> urea).</td></tr>
+    <tr><td>resultado.valor</td><td>string</td><td>1..1</td><td>Valor del resultado.</td></tr>
+    <tr><td>resultado.unidad</td><td>string</td><td>0..1</td><td>Unidad UCUM.</td></tr>
+    <tr><td>resultado.interpretacion</td><td>code</td><td>0..1</td><td>H / L / N (v3-ObservationInterpretation).</td></tr>
+  </tbody>
+</table>
+
+Terminología analitos: [ValueSet sihce-lab-observation-code](ValueSet-sihce-lab-observation-code-vs.html).
+
+#### Relaciones con FHIR
+
+Ver [ConceptMap InformeLaboratorioModeloAFHIR](ConceptMap-InformeLaboratorioModeloAFHIR.html), [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.html) y [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.html).

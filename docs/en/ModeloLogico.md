@@ -1,4 +1,4 @@
-# Modelo Lógico - Guía de Implementación SIHCE - FHIR R5 v1.2.0
+# Modelo Lógico - Guía de Implementación SIHCE - FHIR R5 v1.3.0
 
 * [**Table of Contents**](toc.md)
 * **Modelo Lógico**
@@ -274,4 +274,87 @@ El modelo incluye las siguientes validaciones:
 * SDM actual no coincidente: Se informa que los datos actuales no coinciden con la persona registrada.
 * Datos ya actualizados: Se informa que los datos ya se encontraban actualizados en el FederadorBA.
 * Éxito: Se actualizan los datos del SDM (incluyendo fecha de óbito si estuviera disponible) y se informa que la operación fue exitosa.
+
+### DocumentoClinico
+
+#### Descripción general
+
+Modelo lógico genérico para registrar un documento clínico en el índice SIHCE. El dominio emisor conserva el contenido (binario o composición) en su infraestructura; SIHCE almacena metadatos y la URL de acceso.
+
+#### Elementos del modelo
+
+##### datosDocumento
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| idDocumentoDominio | string | 1..1 | Identificador del documento asignado por el dominio emisor. |
+| uriSistemaId | URI | 1..1 | URI o NamingSystem del dominio para el identificador del documento. |
+| tipoDocumento | code | 1..1 | Código LOINC del tipo (p. ej.`18842-5`epicrisis). |
+| fecha | dateTime | 1..1 | Fecha del documento. |
+| urlContenido | URI | 1..1 | URL en el dominio al Binary o Composition. |
+| tipoContenido | code | 0..1 | MIME:`application/pdf`,`application/xml`o`application/fhir+json`. |
+| idPersonaGlobal | string | 1..1 | Identificador SIHCE de la persona ([NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.md)). |
+
+##### datosDominio
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| idDominio | URI | 1..1 | URI del dominio emisor. |
+| nombreCustodio | string | 0..1 | Organización custodia del documento. |
+
+#### Relaciones con FHIR
+
+Ver [ConceptMap DocumentoClinicoModeloAFHIR](ConceptMap-DocumentoClinicoModeloAFHIR.md) y el perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md).
+
+### Epicrisis
+
+#### Descripción general
+
+Caso particular de DocumentoClinico (LOINC `18842-5`) con tres niveles de madurez: (1) binario PDF/XML, (2) Composition con secciones narrativas, (3) Composition con secciones codificadas.
+
+#### Secciones (Composition)
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| 48765-2 | Alergias y reacciones adversas | Sí | No (texto) |
+| 78375-3 | Diagnóstico de alta | Sí | Sí (Condition) |
+| 75311-1 | Medicamentos al alta | Sí | Sí (MedicationStatement) |
+| 8648-8 | Evolución hospitalaria | Sí | No |
+| 18776-5 | Plan de tratamiento | Sí | No |
+| 42347-5 | Diagnóstico de admisión | Opcional | Sí (Condition) |
+| 42346-7 | Medicamentos al ingreso | Opcional | No |
+| 46239-0 | Motivo de consulta | Opcional | Sí (Condition) |
+| 8653-8 | Instrucciones al alta | Opcional | No |
+| 11493-4 | Resumen de estudios al alta | Opcional | No |
+| 10184-0 | Hallazgos físicos al alta | Opcional | No |
+| 47519-4 | Historial de procedimientos | Opcional | No |
+| 11450-4 | Lista de problemas activos | Opcional | No |
+
+Terminología nivel 3: ICD-10 y SNOMED CT edición Argentina ([ValueSet sihce-epicrisis-diagnosis-code](ValueSet-sihce-epicrisis-diagnosis-code-vs.md)).
+
+#### Relaciones con FHIR
+
+Ver [ConceptMap EpicrisisModeloAFHIR](ConceptMap-EpicrisisModeloAFHIR.md), [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md), [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md) y [MedicationStatementEpicrisisSIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.md).
+
+### InformeLaboratorio
+
+#### Descripción general
+
+Caso particular de DocumentoClinico (LOINC `11502-2`) con dos niveles de madurez: (1) PDF en `DiagnosticReport.presentedForm` sin observaciones codificadas; (2) mismo PDF más `result` con [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md) (LOINC, valor cuantitativo, interpretación).
+
+#### Elementos del modelo (nivel 2)
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| nivelMadurez | code | 1..1 | `1`= solo PDF;`2`= PDF + observaciones. |
+| resultado.codigoAnalito | code | 1..1 | LOINC (p. ej.`2345-7`glucemia,`3094-0`urea). |
+| resultado.valor | string | 1..1 | Valor del resultado. |
+| resultado.unidad | string | 0..1 | Unidad UCUM. |
+| resultado.interpretacion | code | 0..1 | H / L / N (v3-ObservationInterpretation). |
+
+Terminología analitos: [ValueSet sihce-lab-observation-code](ValueSet-sihce-lab-observation-code-vs.md).
+
+#### Relaciones con FHIR
+
+Ver [ConceptMap InformeLaboratorioModeloAFHIR](ConceptMap-InformeLaboratorioModeloAFHIR.md), [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) y [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md).
 

@@ -1,9 +1,17 @@
-# Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.2.0
+# Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.3.0
 
 * [**Table of Contents**](toc.md)
 * **Historial de Cambios**
 
 ## Historial de Cambios
+
+### Versión 1.3.0
+
+* **Documentos clínicos**: perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md), operaciones POST/GET documentadas en [Operaciones](Operaciones.md).
+* **Epicrisis**: modelos lógicos DocumentoClinico y Epicrisis; perfiles [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md), [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md) y [MedicationStatementEpicrisisSIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.md); niveles 1–3 (binario, narrativo, codificado).
+* **Informe de laboratorio**: modelo lógico InformeLaboratorio; perfiles [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) y [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md); niveles 1–2 (PDF en `presentedForm`; PDF + observaciones LOINC en `result`).
+* [NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.md) para `idPersonaGlobal`.
+* Casos de uso y diagramas de secuencia para registro y consulta de epicrisis en [Casos de Uso](CasosDeUso.md).
 
 ### Versión 1.2.0
 

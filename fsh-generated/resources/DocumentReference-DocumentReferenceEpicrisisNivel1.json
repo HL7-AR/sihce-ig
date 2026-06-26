@@ -1,0 +1,45 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "DocumentReferenceEpicrisisNivel1",
+  "meta": {
+    "profile": [
+      "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "18842-5",
+        "display": "Discharge summary"
+      }
+    ]
+  },
+  "status": "current",
+  "subject": {
+    "reference": "Patient/987654321"
+  },
+  "identifier": [
+    {
+      "system": "http://hospitalitaliano.org.ar/fhir/documento",
+      "value": "EP-2026-0042"
+    }
+  ],
+  "date": "2026-06-08T14:30:00-03:00",
+  "custodian": {
+    "identifier": {
+      "system": "http://hospitalitaliano.org.ar/fhir",
+      "value": "hospital-italiano"
+    },
+    "display": "Hospital Italiano de Buenos Aires"
+  },
+  "content": [
+    {
+      "attachment": {
+        "url": "https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042",
+        "contentType": "application/pdf",
+        "title": "Epicrisis EP-2026-0042"
+      }
+    }
+  ]
+}

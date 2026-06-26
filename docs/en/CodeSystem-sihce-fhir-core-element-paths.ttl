@@ -12,18 +12,18 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-fhir-core-element-paths</b></p><a name=\"sihce-fhir-core-element-paths\"> </a><a name=\"hcsihce-fhir-core-element-paths\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Patient.identifier<a name=\"sihce-fhir-core-element-paths-Patient.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.name<a name=\"sihce-fhir-core-element-paths-Patient.46name\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.gender<a name=\"sihce-fhir-core-element-paths-Patient.46gender\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.birthDate<a name=\"sihce-fhir-core-element-paths-Patient.46birthDate\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.deceased[x]<a name=\"sihce-fhir-core-element-paths-Patient.46deceased.91x.93\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization<a name=\"sihce-fhir-core-element-paths-Organization\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization.identifier<a name=\"sihce-fhir-core-element-paths-Organization.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OperationOutcome.issue<a name=\"sihce-fhir-core-element-paths-OperationOutcome.46issue\"> </a></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-fhir-core-element-paths</b></p><a name=\"sihce-fhir-core-element-paths\"> </a><a name=\"hcsihce-fhir-core-element-paths\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Patient.identifier<a name=\"sihce-fhir-core-element-paths-Patient.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.name<a name=\"sihce-fhir-core-element-paths-Patient.46name\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.gender<a name=\"sihce-fhir-core-element-paths-Patient.46gender\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.birthDate<a name=\"sihce-fhir-core-element-paths-Patient.46birthDate\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Patient.deceased[x]<a name=\"sihce-fhir-core-element-paths-Patient.46deceased.91x.93\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization<a name=\"sihce-fhir-core-element-paths-Organization\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Organization.identifier<a name=\"sihce-fhir-core-element-paths-Organization.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">OperationOutcome.issue<a name=\"sihce-fhir-core-element-paths-OperationOutcome.46issue\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.identifier<a name=\"sihce-fhir-core-element-paths-DocumentReference.46identifier\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.type<a name=\"sihce-fhir-core-element-paths-DocumentReference.46type\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.subject<a name=\"sihce-fhir-core-element-paths-DocumentReference.46subject\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.date<a name=\"sihce-fhir-core-element-paths-DocumentReference.46date\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.content<a name=\"sihce-fhir-core-element-paths-DocumentReference.46content\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DocumentReference.custodian<a name=\"sihce-fhir-core-element-paths-DocumentReference.46custodian\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Composition.section<a name=\"sihce-fhir-core-element-paths-Composition.46section\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Condition.code<a name=\"sihce-fhir-core-element-paths-Condition.46code\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MedicationStatement.medication<a name=\"sihce-fhir-core-element-paths-MedicationStatement.46medication\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.code<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46code\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.subject<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46subject\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.issued<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46issued\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.presentedForm<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46presentedForm\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DiagnosticReport.result<a name=\"sihce-fhir-core-element-paths-DiagnosticReport.46result\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Observation.code<a name=\"sihce-fhir-core-element-paths-Observation.46code\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Observation.value[x]<a name=\"sihce-fhir-core-element-paths-Observation.46value.91x.93\"> </a></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths>
   ] ; # 
-  fhir:version [ fhir:v "1.2.0"] ; # 
+  fhir:version [ fhir:v "1.3.0"] ; # 
   fhir:name [ fhir:v "SIHCEFhirCoreElementPaths"] ; # 
   fhir:title [ fhir:v "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-09T15:34:40-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-26T18:01:23-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;
@@ -35,7 +35,7 @@
   fhir:description [ fhir:v "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition)."] ; # 
   fhir:caseSensitive [ fhir:v true] ; # 
   fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:count [ fhir:v "24"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "Patient.identifier" ] ;
      fhir:display [ fhir:v "Patient.identifier" ]
@@ -60,6 +60,54 @@
   ] [
      fhir:code [ fhir:v "OperationOutcome.issue" ] ;
      fhir:display [ fhir:v "OperationOutcome.issue" ]
+  ] [
+     fhir:code [ fhir:v "DocumentReference.identifier" ] ;
+     fhir:display [ fhir:v "DocumentReference.identifier" ]
+  ] [
+     fhir:code [ fhir:v "DocumentReference.type" ] ;
+     fhir:display [ fhir:v "DocumentReference.type" ]
+  ] [
+     fhir:code [ fhir:v "DocumentReference.subject" ] ;
+     fhir:display [ fhir:v "DocumentReference.subject" ]
+  ] [
+     fhir:code [ fhir:v "DocumentReference.date" ] ;
+     fhir:display [ fhir:v "DocumentReference.date" ]
+  ] [
+     fhir:code [ fhir:v "DocumentReference.content" ] ;
+     fhir:display [ fhir:v "DocumentReference.content" ]
+  ] [
+     fhir:code [ fhir:v "DocumentReference.custodian" ] ;
+     fhir:display [ fhir:v "DocumentReference.custodian" ]
+  ] [
+     fhir:code [ fhir:v "Composition.section" ] ;
+     fhir:display [ fhir:v "Composition.section" ]
+  ] [
+     fhir:code [ fhir:v "Condition.code" ] ;
+     fhir:display [ fhir:v "Condition.code" ]
+  ] [
+     fhir:code [ fhir:v "MedicationStatement.medication" ] ;
+     fhir:display [ fhir:v "MedicationStatement.medication" ]
+  ] [
+     fhir:code [ fhir:v "DiagnosticReport.code" ] ;
+     fhir:display [ fhir:v "DiagnosticReport.code" ]
+  ] [
+     fhir:code [ fhir:v "DiagnosticReport.subject" ] ;
+     fhir:display [ fhir:v "DiagnosticReport.subject" ]
+  ] [
+     fhir:code [ fhir:v "DiagnosticReport.issued" ] ;
+     fhir:display [ fhir:v "DiagnosticReport.issued" ]
+  ] [
+     fhir:code [ fhir:v "DiagnosticReport.presentedForm" ] ;
+     fhir:display [ fhir:v "DiagnosticReport.presentedForm" ]
+  ] [
+     fhir:code [ fhir:v "DiagnosticReport.result" ] ;
+     fhir:display [ fhir:v "DiagnosticReport.result" ]
+  ] [
+     fhir:code [ fhir:v "Observation.code" ] ;
+     fhir:display [ fhir:v "Observation.code" ]
+  ] [
+     fhir:code [ fhir:v "Observation.value[x]" ] ;
+     fhir:display [ fhir:v "Observation.value[x]" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

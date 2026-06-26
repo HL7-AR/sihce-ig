@@ -1,4 +1,4 @@
-# Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.2.0
+# Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.3.0
 
 * [**Table of Contents**](toc.md)
 * **Operaciones**
@@ -30,6 +30,8 @@ En todas las operaciones de la colección se envían estos headers:
 | Alta/Federación de paciente | POST | `/Patient` | Envía un recurso`Patient`conforme al perfil[PatientXBA](StructureDefinition-PatientXBA.md). |
 | Actualización de identificador local | POST | `/Patient/$patch-identifier` | Actualiza el identificador local usando`Parameters`. |
 | Actualización de SDM | POST | `/Patient/$update-sdm` | Actualiza datos mínimos del paciente mediante operación FHIR personalizada. |
+| Registro de documento clínico | POST | `/DocumentReference` | Indexa un documento clínico (p. ej. epicrisis) conforme al perfil[DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md). |
+| Consulta de documentos clínicos | GET | `/DocumentReference?patient={idPersonaGlobal}&type=&date=&status=` | Busca referencias documentales por paciente SIHCE y filtros opcionales. |
 
 ### Búsqueda por identificador y género
 
@@ -294,4 +296,105 @@ Content-Type: application/fhir+json
 #### Ejemplo publicado
 
 * [Parámetros update SDM - ejemplo](Parameters-ParametrosUpdateSDMEjemplo.md)
+
+### Registro de documento clínico (DocumentReference)
+
+Un dominio emisor registra en SIHCE los **metadatos** del documento mediante `POST /DocumentReference`. El contenido (PDF, XML o `Composition`) permanece en una **URL del dominio** referenciada en `content.attachment.url`. SIHCE **no** consume esas URLs vía X-BA; otros dominios sí pueden hacerlo.
+
+Epicrisis es un caso particular con tipo LOINC **`18842-5`** (**Discharge summary**). Ver perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md) y [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md) para niveles 2 y 3.
+
+El **informe de laboratorio** usa LOINC **`11502-2`** (**Laboratory report**). La URL en `content.attachment.url` apunta a un [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) en el dominio emisor; el PDF va en `DiagnosticReport.presentedForm` y, en nivel 2, las observaciones codificadas en `result`.
+
+#### Request
+
+```
+POST /DocumentReference
+Content-Type: application/fhir+json
+
+```
+
+```
+{
+  "resourceType": "DocumentReference",
+  "meta": {
+    "profile": ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
+  },
+  "status": "current",
+  "type": {
+    "coding": [{
+      "system": "http://loinc.org",
+      "code": "18842-5",
+      "display": "Discharge summary"
+    }]
+  },
+  "subject": {
+    "reference": "Patient/987654321"
+  },
+  "identifier": [{
+    "system": "http://hospitalitaliano.org.ar/fhir/documento",
+    "value": "EP-2026-0042"
+  }],
+  "date": "2026-06-08T14:30:00-03:00",
+  "custodian": {
+    "identifier": {
+      "system": "http://hospitalitaliano.org.ar/fhir",
+      "value": "hospital-italiano"
+    },
+    "display": "Hospital Italiano de Buenos Aires"
+  },
+  "content": [{
+    "attachment": {
+      "url": "https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042",
+      "contentType": "application/pdf",
+      "title": "Epicrisis EP-2026-0042"
+    }
+  }]
+}
+
+```
+
+| | |
+| :--- | :--- |
+| `subject.reference` | `Patient/{idPersonaGlobal}`— identificador SIHCE ([NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.md)). |
+| `identifier` | Id del documento asignado por el**dominio**(`system`= URI/NamingSystem del dominio). |
+| `content.attachment.url` | URL absoluta al**Binary**(epicrisis nivel 1),**Composition**(epicrisis 2–3) o**DiagnosticReport**(informe laboratorio) en el dominio emisor. |
+| `content.attachment.contentType` | `application/pdf`,`application/xml`(binario),`application/fhir+json`(Composition o DiagnosticReport). |
+
+#### Respuesta (éxito)
+
+`201 Created` con cabecera **`Location`** apuntando al `DocumentReference` creado en SIHCE y cuerpo con el recurso indexado (incluye id lógico asignado por SIHCE).
+
+#### Ejemplos publicados
+
+* [DocumentReference epicrisis nivel 1 (PDF)](DocumentReference-DocumentReferenceEpicrisisNivel1.md)
+* [DocumentReference epicrisis nivel 2 (Composition)](DocumentReference-DocumentReferenceEpicrisisNivel2.md)
+* [Composition epicrisis nivel 2 (narrativa)](Composition-CompositionEpicrisisNivel2.md)
+* [DocumentReference informe laboratorio nivel 1](DocumentReference-DocumentReferenceInformeLabNivel1.md)
+* [DiagnosticReport informe laboratorio nivel 1 (solo PDF)](DiagnosticReport-DiagnosticReportInformeLabNivel1.md)
+* [DocumentReference informe laboratorio nivel 2](DocumentReference-DocumentReferenceInformeLabNivel2.md)
+* [DiagnosticReport informe laboratorio nivel 2 (PDF + observaciones)](DiagnosticReport-DiagnosticReportInformeLabNivel2.md)
+
+### Consulta de documentos clínicos
+
+Búsqueda FHIR R5 sobre `DocumentReference` ([search](https://hl7.org/fhir/R5/documentreference.html#search)).
+
+#### Parámetros de búsqueda
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| `patient` | Requerido | reference | `idPersonaGlobal`como id lógico:`Patient/{idPersonaGlobal}`. Ver[NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.md). |
+| `type` | Opcional | token | Tipo LOINC (`\|18842-5`epicrisis,`\|11502-2`informe de laboratorio). |
+| `date` | Opcional | date | Fecha del documento (`DocumentReference.date`). |
+| `status` | Opcional | token | `current`,`superseded`,`entered-in-error`, etc. |
+
+#### Request (ejemplo)
+
+```
+GET /DocumentReference?patient=987654321&type=http://loinc.org|18842-5&status=current
+
+```
+
+#### Respuesta esperada
+
+`200 OK` con un [Bundle](https://hl7.org/fhir/R5/bundle.html) tipo `searchset` de recursos `DocumentReference`. El consumidor obtiene el contenido siguiendo `content.attachment.url` hacia el dominio emisor (vía X-BA).
 

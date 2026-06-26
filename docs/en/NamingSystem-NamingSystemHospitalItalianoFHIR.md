@@ -1,4 +1,4 @@
-# NamingSystem URI Hospital Italiano (ejemplo FHIR) - Guía de Implementación SIHCE - FHIR R5 v1.2.0
+# NamingSystem URI Hospital Italiano (ejemplo FHIR) - Guía de Implementación SIHCE - FHIR R5 v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR | *Version*:1.2.0 |
+| *Official URL*:http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR | *Version*:1.3.0 |
 | Active as of 2026-04-30 | *Computable Name*:NamingSystemHospitalItalianoFHIR |
 
  
@@ -23,7 +23,7 @@ Identificador de dominio de ejemplo usado en instancias de este IG.
   "resourceType" : "NamingSystem",
   "id" : "NamingSystemHospitalItalianoFHIR",
   "url" : "http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR",
-  "version" : "1.2.0",
+  "version" : "1.3.0",
   "name" : "NamingSystemHospitalItalianoFHIR",
   "title" : "NamingSystem URI Hospital Italiano (ejemplo FHIR)",
   "status" : "active",

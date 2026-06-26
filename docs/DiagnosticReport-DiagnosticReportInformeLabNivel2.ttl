@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/DiagnosticReport/DiagnosticReportInformeLabNivel2> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DiagnosticReportInformeLabNivel2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel2</b></p><a name=\"DiagnosticReportInformeLabNivel2\"> </a><a name=\"hcDiagnosticReportInformeLabNivel2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReportLaboratorioSIHCE.html\">Informe de laboratorio SIHCE</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Reported</td><td>2026-06-19 16:10:00-0300</td></tr><tr><td>Identifier</td><td> <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0110</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-ObservationGluInformeLabNivel2.html\"><span title=\"Codes:{http://loinc.org 2345-7}\">Glucose [Mass/volume] in Serum or Plasma</span></a></td><td>72 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>82 mg/dL - 117 mg/dL</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2026-06-19 15:28:00-0300</td></tr><tr><td><a href=\"Observation-ObservationUreaInformeLabNivel2.html\"><span title=\"Codes:{http://loinc.org 3094-0}\">Urea [Mass/volume] in Serum or Plasma</span></a></td><td>24 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>&lt;50 mg/dL</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2026-06-19 15:28:00-0300</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "http://laboratorio.ejemplo.gob.ar/informe"^^xsd:anyURI ;
+       fhir:l <http://laboratorio.ejemplo.gob.ar/informe>
+     ] ;
+     fhir:value [ fhir:v "LAB-2026-0110" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0074>
+       ] ;
+       fhir:code [ fhir:v "LAB" ] ;
+       fhir:display [ fhir:v "Laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11502-2 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "11502-2" ] ;
+       fhir:display [ fhir:v "Laboratory report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://sihce.gob.ar/Patient/987654321> ;
+     fhir:reference [ fhir:v "Patient/987654321" ]
+  ] ; # 
+  fhir:issued [ fhir:v "2026-06-19T16:10:00-03:00"^^xsd:dateTime] ; # 
+  fhir:result ( [
+     fhir:l <http://sihce.gob.ar/Observation/ObservationGluInformeLabNivel2> ;
+     fhir:reference [ fhir:v "Observation/ObservationGluInformeLabNivel2" ]
+  ] [
+     fhir:l <http://sihce.gob.ar/Observation/ObservationUreaInformeLabNivel2> ;
+     fhir:reference [ fhir:v "Observation/ObservationUreaInformeLabNivel2" ]
+  ] ) ; # 
+  fhir:presentedForm ( [
+     fhir:contentType [ fhir:v "application/pdf" ] ;
+     fhir:url [
+       fhir:v "https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0110.pdf"^^xsd:anyURI ;
+       fhir:l <https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0110.pdf>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

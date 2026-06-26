@@ -1,3 +1,11 @@
+### Versión 1.3.0
+
+- **Documentos clínicos**: perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.html), operaciones POST/GET documentadas en [Operaciones](Operaciones.html).
+- **Epicrisis**: modelos lógicos DocumentoClinico y Epicrisis; perfiles [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.html), [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.html) y [MedicationStatementEpicrisisSIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.html); niveles 1–3 (binario, narrativo, codificado).
+- **Informe de laboratorio**: modelo lógico InformeLaboratorio; perfiles [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.html) y [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.html); niveles 1–2 (PDF en `presentedForm`; PDF + observaciones LOINC en `result`).
+- [NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.html) para `idPersonaGlobal`.
+- Casos de uso y diagramas de secuencia para registro y consulta de epicrisis en [Casos de Uso](CasosDeUso.html).
+
 ### Versión 1.2.0
 
 - Título de la guía unificado a **Guía de Implementación SIHCE - FHIR R5**; versión de paquete **1.2.0**.

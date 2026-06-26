@@ -1,0 +1,43 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "DiagnosticReportInformeLabNivel1",
+  "meta" : {
+    "profile" : ["http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel1</b></p><a name=\"DiagnosticReportInformeLabNivel1\"> </a><a name=\"hcDiagnosticReportInformeLabNivel1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReportLaboratorioSIHCE.html\">Informe de laboratorio SIHCE</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Reported</td><td>2026-06-19 15:55:00-0300</td></tr><tr><td>Performer</td><td> <a href=\"Organization-lab-central-ejemplo.html\">Organization Laboratorio Central Ejemplo</a></td></tr><tr><td>Identifier</td><td> <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0042</td></tr></table><p><b>Report Details</b></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://laboratorio.ejemplo.gob.ar/informe",
+    "value" : "LAB-2026-0042"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "LAB",
+      "display" : "Laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11502-2",
+      "display" : "Laboratory report"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/987654321"
+  },
+  "issued" : "2026-06-19T15:55:00-03:00",
+  "performer" : [{
+    "reference" : "Organization/lab-central-ejemplo"
+  }],
+  "presentedForm" : [{
+    "contentType" : "application/pdf",
+    "url" : "https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf",
+    "title" : "Informe LAB-2026-0042"
+  }]
+}

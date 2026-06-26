@@ -1,0 +1,63 @@
+{
+  "resourceType": "Composition",
+  "id": "CompositionEpicrisisNivel2",
+  "meta": {
+    "profile": [
+      "http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"
+    ]
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "18842-5",
+        "system": "http://loinc.org",
+        "display": "Discharge summary"
+      }
+    ]
+  },
+  "subject": [
+    {
+      "reference": "Patient/987654321"
+    }
+  ],
+  "date": "2026-06-08T16:00:00-03:00",
+  "author": [
+    {
+      "reference": "Organization/hospital-italiano-ejemplo"
+    }
+  ],
+  "title": "Epicrisis de hospitalización",
+  "section": [
+    {
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Sin alergias medicamentosas conocidas.</p></div>"
+      }
+    },
+    {
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad, resuelta.</p></div>"
+      }
+    },
+    {
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Amoxicilina 500 mg VO c/8h por 5 días.</p></div>"
+      }
+    },
+    {
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Evolución favorable con antibiótico IV, paso a VO al alta.</p></div>"
+      }
+    },
+    {
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Control ambulatorio en 7 días. Reposo relativo.</p></div>"
+      }
+    }
+  ]
+}

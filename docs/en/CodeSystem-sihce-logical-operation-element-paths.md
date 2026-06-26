@@ -1,4 +1,4 @@
-# Rutas de elementos en modelos lógicos de operación SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.2.0
+# Rutas de elementos en modelos lógicos de operación SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths | *Version*:1.2.0 |
-| Draft as of 2026-06-09 | *Computable Name*:SIHCELogicalOperationElementPaths |
+| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths | *Version*:1.3.0 |
+| Draft as of 2026-06-26 | *Computable Name*:SIHCELogicalOperationElementPaths |
 
  
 Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento…). 
@@ -31,12 +31,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "sihce-logical-operation-element-paths",
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-  "version" : "1.2.0",
+  "version" : "1.3.0",
   "name" : "SIHCELogicalOperationElementPaths",
   "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-09T15:34:40-03:00",
+  "date" : "2026-06-26T18:01:23-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -48,7 +48,7 @@ This Code system is referenced in the definition of the following value sets:
   "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 57,
+  "count" : 75,
   "concept" : [{
     "code" : "BuscarPersona.datosConsulta.tipoDocumento",
     "display" : "BuscarPersona datosConsulta tipoDocumento"
@@ -276,6 +276,78 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "ModificarSDMPersona.datosRespuesta.mensaje",
     "display" : "ModificarSDMPersona datosRespuesta mensaje"
+  },
+  {
+    "code" : "DocumentoClinico.datosDocumento.idDocumentoDominio",
+    "display" : "DocumentoClinico datosDocumento idDocumentoDominio"
+  },
+  {
+    "code" : "DocumentoClinico.datosDocumento.uriSistemaId",
+    "display" : "DocumentoClinico datosDocumento uriSistemaId"
+  },
+  {
+    "code" : "DocumentoClinico.datosDocumento.tipoDocumento",
+    "display" : "DocumentoClinico datosDocumento tipoDocumento"
+  },
+  {
+    "code" : "DocumentoClinico.datosDocumento.fecha",
+    "display" : "DocumentoClinico datosDocumento fecha"
+  },
+  {
+    "code" : "DocumentoClinico.datosDocumento.urlContenido",
+    "display" : "DocumentoClinico datosDocumento urlContenido"
+  },
+  {
+    "code" : "DocumentoClinico.datosDocumento.tipoContenido",
+    "display" : "DocumentoClinico datosDocumento tipoContenido"
+  },
+  {
+    "code" : "DocumentoClinico.datosDocumento.idPersonaGlobal",
+    "display" : "DocumentoClinico datosDocumento idPersonaGlobal"
+  },
+  {
+    "code" : "DocumentoClinico.datosDominio.idDominio",
+    "display" : "DocumentoClinico datosDominio idDominio"
+  },
+  {
+    "code" : "DocumentoClinico.datosDominio.nombreCustodio",
+    "display" : "DocumentoClinico datosDominio nombreCustodio"
+  },
+  {
+    "code" : "Epicrisis.nivelMadurez",
+    "display" : "Epicrisis nivelMadurez"
+  },
+  {
+    "code" : "Epicrisis.seccion.codigoLoinc",
+    "display" : "Epicrisis seccion codigoLoinc"
+  },
+  {
+    "code" : "Epicrisis.seccion.texto",
+    "display" : "Epicrisis seccion texto"
+  },
+  {
+    "code" : "Epicrisis.seccion.codificado",
+    "display" : "Epicrisis seccion codificado"
+  },
+  {
+    "code" : "InformeLaboratorio.nivelMadurez",
+    "display" : "InformeLaboratorio nivelMadurez"
+  },
+  {
+    "code" : "InformeLaboratorio.resultado.codigoAnalito",
+    "display" : "InformeLaboratorio resultado codigoAnalito"
+  },
+  {
+    "code" : "InformeLaboratorio.resultado.valor",
+    "display" : "InformeLaboratorio resultado valor"
+  },
+  {
+    "code" : "InformeLaboratorio.resultado.unidad",
+    "display" : "InformeLaboratorio resultado unidad"
+  },
+  {
+    "code" : "InformeLaboratorio.resultado.interpretacion",
+    "display" : "InformeLaboratorio resultado interpretacion"
   }]
 }
 

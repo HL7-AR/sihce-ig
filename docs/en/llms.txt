@@ -1,4 +1,4 @@
-# SIHCE.fhir.core#1.2.0: Guía de Implementación SIHCE - FHIR R5(en)
+# SIHCE.fhir.core#1.3.0: Guía de Implementación SIHCE - FHIR R5(en)
 
 ## Pages
 
@@ -18,16 +18,33 @@
 * [Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE](CodeSystem-sihce-fhir-core-element-paths.md)
 * [Rutas de elementos en modelos lógicos de operación SIHCE](CodeSystem-sihce-logical-operation-element-paths.md)
 
+### ValueSets
+
+* [Tipos de documento clínico SIHCE](ValueSet-sihce-clinical-document-type-vs.md)
+* [Tipos MIME de contenido documental SIHCE](ValueSet-sihce-document-content-type-vs.md)
+* [Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)](ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
+* [Secciones LOINC de epicrisis SIHCE](ValueSet-sihce-epicrisis-section-vs.md)
+* [Analitos de laboratorio SIHCE (LOINC)](ValueSet-sihce-lab-observation-code-vs.md)
+
 ### Logicals
 
 * [Modelo lógico BuscarPersona (FederadorBA)](StructureDefinition-BuscarPersona.md)
+* [Modelo lógico DocumentoClinico (SIHCE)](StructureDefinition-DocumentoClinico.md)
+* [Modelo lógico Epicrisis (SIHCE)](StructureDefinition-Epicrisis.md)
 * [Modelo lógico FederarPersona (FederadorBA)](StructureDefinition-FederarPersona.md)
+* [Modelo lógico Informe de Laboratorio (SIHCE)](StructureDefinition-InformeLaboratorio.md)
 * [Modelo Lógico de Persona para SIHCE](StructureDefinition-MLPersona.md)
 * [Modelo lógico ModificarIDLocalPersona (FederadorBA)](StructureDefinition-ModificarIDLocalPersona.md)
 * [Modelo lógico ModificarSDMPersona (FederadorBA)](StructureDefinition-ModificarSDMPersona.md)
 
 ### Resource Profiles
 
+* [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)
+* [Condición clínica epicrisis SIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md)
+* [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
+* [Referencia a documento clínico SIHCE](StructureDefinition-DocumentReferenceSIHCE.md)
+* [Medicación al alta epicrisis SIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.md)
+* [Observación de laboratorio SIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md)
 * [Paciente SIHCE (PatientXBA)](StructureDefinition-PatientXBA.md)
 * [Parametros Patch Identifier SIHCE](StructureDefinition-parametros-patch-identifier-sihce.md)
 * [Parametros Update SDM SIHCE](StructureDefinition-parametros-update-sdm-sihce.md)
@@ -35,7 +52,10 @@
 ### ConceptMaps
 
 * [BuscarPersona: modelo lógico a FHIR](ConceptMap-BuscarPersonaModeloAFHIR.md)
+* [DocumentoClinico: modelo lógico a FHIR](ConceptMap-DocumentoClinicoModeloAFHIR.md)
+* [Epicrisis: modelo lógico a FHIR](ConceptMap-EpicrisisModeloAFHIR.md)
 * [FederarPersona: modelo lógico a FHIR](ConceptMap-FederarPersonaModeloAFHIR.md)
+* [InformeLaboratorio: modelo lógico a FHIR](ConceptMap-InformeLaboratorioModeloAFHIR.md)
 * [ModificarIDLocalPersona: modelo lógico a FHIR](ConceptMap-ModificarIDLocalPersonaModeloAFHIR.md)
 * [ModificarSDMPersona: modelo lógico a FHIR](ConceptMap-ModificarSDMPersonaModeloAFHIR.md)
 
@@ -48,9 +68,20 @@
 * [NamingSystem URI Hospital Italiano (ejemplo FHIR)](NamingSystem-NamingSystemHospitalItalianoFHIR.md)
 * [NamingSystem URI MSGC GCBA (ejemplo)](NamingSystem-NamingSystemMsgcGCBA.md)
 * [RenaperDNI](NamingSystem-renaper-dni.md)
+* [NamingSystem idPersonaGlobal SIHCE](NamingSystem-sihce-persona-global.md)
 
 ### Examples
 
+* [Epicrisis de hospitalización (Composition)](Composition-CompositionEpicrisisNivel2.md)
+* [DiagnosticReportInformeLabNivel1 (DiagnosticReport)](DiagnosticReport-DiagnosticReportInformeLabNivel1.md)
+* [DiagnosticReportInformeLabNivel2 (DiagnosticReport)](DiagnosticReport-DiagnosticReportInformeLabNivel2.md)
+* [DocumentReferenceEpicrisisNivel1 (DocumentReference)](DocumentReference-DocumentReferenceEpicrisisNivel1.md)
+* [DocumentReferenceEpicrisisNivel2 (DocumentReference)](DocumentReference-DocumentReferenceEpicrisisNivel2.md)
+* [DocumentReferenceInformeLabNivel1 (DocumentReference)](DocumentReference-DocumentReferenceInformeLabNivel1.md)
+* [DocumentReferenceInformeLabNivel2 (DocumentReference)](DocumentReference-DocumentReferenceInformeLabNivel2.md)
+* [ObservationGluInformeLabNivel2 (Observation)](Observation-ObservationGluInformeLabNivel2.md)
+* [ObservationUreaInformeLabNivel2 (Observation)](Observation-ObservationUreaInformeLabNivel2.md)
+* [Laboratorio Central Ejemplo (Organization)](Organization-lab-central-ejemplo.md)
 * [ParametrosPatchIdentifierEjemplo (Parameters)](Parameters-ParametrosPatchIdentifierEjemplo.md)
 * [ParametrosUpdateSDMEjemplo (Parameters)](Parameters-ParametrosUpdateSDMEjemplo.md)
 * [PersonaSIHCEMin (Patient)](Patient-PersonaSIHCEMin.md)

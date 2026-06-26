@@ -10,11 +10,11 @@
   "id" : "SIHCE.fhir.core",
   "language" : "en",
   "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
-  "version" : "1.2.0",
+  "version" : "1.3.0",
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R5",
   "status" : "draft",
-  "date" : "2026-06-09T15:34:40-03:00",
+  "date" : "2026-06-26T18:01:23-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -34,7 +34,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "7.1.0"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",
@@ -54,6 +54,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sihce-lab-observation-code-vs"
+      },
+      "name" : "Analitos de laboratorio SIHCE (LOINC)",
+      "description" : "Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
       }],
       "reference" : {
@@ -61,6 +73,54 @@
       },
       "name" : "BuscarPersona: modelo lógico a FHIR",
       "description" : "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CompositionEpicrisisSIHCE"
+      },
+      "name" : "Composición epicrisis SIHCE",
+      "description" : "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ConditionEpicrisisSIHCE"
+      },
+      "name" : "Condición clínica epicrisis SIHCE",
+      "description" : "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sihce-epicrisis-diagnosis-code-vs"
+      },
+      "name" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
+      "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/DocumentoClinicoModeloAFHIR"
+      },
+      "name" : "DocumentoClinico: modelo lógico a FHIR",
+      "description" : "Mapeo del registro de documento clínico a DocumentReference SIHCE.",
       "isExample" : false
     },
     {
@@ -92,6 +152,57 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/DocumentReferenceEpicrisisNivel1"
+      },
+      "name" : "Epicrisis nivel 1 — PDF en dominio",
+      "description" : "DocumentReference con enlace a PDF hospedado en el dominio emisor. idPersonaGlobal = 987654321.",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/DocumentReferenceEpicrisisNivel2"
+      },
+      "name" : "Epicrisis nivel 2 — enlace a Composition",
+      "description" : "DocumentReference con URL a Composition narrativa en el dominio.",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/CompositionEpicrisisNivel2"
+      },
+      "name" : "Epicrisis nivel 2 — secciones narrativas",
+      "description" : "Composition con las cinco secciones obligatorias en texto (nivel 2).",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/EpicrisisModeloAFHIR"
+      },
+      "name" : "Epicrisis: modelo lógico a FHIR",
+      "description" : "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
       }],
       "reference" : {
@@ -99,6 +210,117 @@
       },
       "name" : "FederarPersona: modelo lógico a FHIR",
       "description" : "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ObservationGluInformeLabNivel2"
+      },
+      "name" : "Glucemia — informe laboratorio nivel 2",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiagnosticReportLaboratorioSIHCE"
+      },
+      "name" : "Informe de laboratorio SIHCE",
+      "description" : "DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/DiagnosticReportInformeLabNivel1"
+      },
+      "name" : "Informe laboratorio nivel 1 — DiagnosticReport con PDF",
+      "description" : "Solo presentedForm (PDF); sin entradas en result (nivel 1).",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/DocumentReferenceInformeLabNivel1"
+      },
+      "name" : "Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)",
+      "description" : "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas.",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/DiagnosticReportInformeLabNivel2"
+      },
+      "name" : "Informe laboratorio nivel 2 — PDF + glucemia y urea",
+      "description" : "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC referenciadas en result.",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/DocumentReferenceInformeLabNivel2"
+      },
+      "name" : "Informe laboratorio nivel 2 — PDF y observaciones",
+      "description" : "Índice SIHCE; URL a DiagnosticReport con presentedForm y result codificados.",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/InformeLaboratorioModeloAFHIR"
+      },
+      "name" : "InformeLaboratorio: modelo lógico a FHIR",
+      "description" : "Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/lab-central-ejemplo"
+      },
+      "name" : "Laboratorio Central Ejemplo",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MedicationStatementEpicrisisSIHCE"
+      },
+      "name" : "Medicación al alta epicrisis SIHCE",
+      "description" : "Medicamento declarado en la sección de medicamentos al alta (nivel 3).",
       "isExample" : false
     },
     {
@@ -131,10 +353,46 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/DocumentoClinico"
+      },
+      "name" : "Modelo lógico DocumentoClinico (SIHCE)",
+      "description" : "Registro e indexación de un documento clínico emitido por un dominio en SIHCE.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Epicrisis"
+      },
+      "name" : "Modelo lógico Epicrisis (SIHCE)",
+      "description" : "Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/FederarPersona"
       },
       "name" : "Modelo lógico FederarPersona (FederadorBA)",
       "description" : "Federación de una persona con identificador local y validación de datos.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/InformeLaboratorio"
+      },
+      "name" : "Modelo lógico Informe de Laboratorio (SIHCE)",
+      "description" : "Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio.",
       "isExample" : false
     },
     {
@@ -191,6 +449,18 @@
         "valueString" : "NamingSystem"
       }],
       "reference" : {
+        "reference" : "NamingSystem/sihce-persona-global"
+      },
+      "name" : "NamingSystem idPersonaGlobal SIHCE",
+      "description" : "Identificador maestro de persona asignado por SIHCE tras la federación (idPersonaGlobal).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
         "reference" : "NamingSystem/NamingSystemHospitalItalianoFHIR"
       },
       "name" : "NamingSystem URI Hospital Italiano (ejemplo FHIR)",
@@ -207,6 +477,18 @@
       },
       "name" : "NamingSystem URI MSGC GCBA (ejemplo)",
       "description" : "Sistema de identificadores de ejemplo para Parameters en este IG.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ObservationLaboratorioSIHCE"
+      },
+      "name" : "Observación de laboratorio SIHCE",
+      "description" : "Resultado analítico codificado (LOINC) asociado a un informe de laboratorio nivel 2.",
       "isExample" : false
     },
     {
@@ -274,6 +556,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DocumentReferenceSIHCE"
+      },
+      "name" : "Referencia a documento clínico SIHCE",
+      "description" : "Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE; el contenido (Binary o Composition) se accede mediante content.attachment.url hospedada en el dominio. SIHCE no consume esas URLs vía X-BA.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "NamingSystem"
       }],
       "reference" : {
@@ -306,6 +600,54 @@
       "name" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
       "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sihce-epicrisis-section-vs"
+      },
+      "name" : "Secciones LOINC de epicrisis SIHCE",
+      "description" : "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sihce-clinical-document-type-vs"
+      },
+      "name" : "Tipos de documento clínico SIHCE",
+      "description" : "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sihce-document-content-type-vs"
+      },
+      "name" : "Tipos MIME de contenido documental SIHCE",
+      "description" : "Formatos admitidos en DocumentReference.content.attachment.contentType.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ObservationUreaInformeLabNivel2"
+      },
+      "name" : "Urea — informe laboratorio nivel 2",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"]
     }],
     "page" : {
       "sourceUrl" : "toc.html",

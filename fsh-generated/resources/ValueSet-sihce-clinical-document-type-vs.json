@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SIHCEClinicalDocumentTypeVS",
+  "id": "sihce-clinical-document-type-vs",
+  "title": "Tipos de documento clínico SIHCE",
+  "description": "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC).",
+  "url": "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
+  "version": "1.3.0",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "18842-5"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "11502-2"
+          }
+        ]
+      }
+    ]
+  }
+}

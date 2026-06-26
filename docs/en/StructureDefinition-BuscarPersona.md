@@ -1,4 +1,4 @@
-# Modelo lógico BuscarPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R5 v1.2.0
+# Modelo lógico BuscarPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R5 v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/BuscarPersona | *Version*:1.2.0 |
-| Draft as of 2026-06-09 | *Computable Name*:BuscarPersona |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/BuscarPersona | *Version*:1.3.0 |
+| Draft as of 2026-06-26 | *Computable Name*:BuscarPersona |
 
  
 Solicitud de búsqueda de persona por datos mínimos y respuesta mínima. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
   "resourceType" : "StructureDefinition",
   "id" : "BuscarPersona",
   "url" : "http://sihce.gob.ar/StructureDefinition/BuscarPersona",
-  "version" : "1.2.0",
+  "version" : "1.3.0",
   "name" : "BuscarPersona",
   "title" : "Modelo lógico BuscarPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-06-09T15:34:40-03:00",
+  "date" : "2026-06-26T18:01:23-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

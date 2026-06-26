@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="sihce-fhir-core-element-paths"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem sihce-fhir-core-element-paths</b></p><a name="sihce-fhir-core-element-paths"> </a><a name="hcsihce-fhir-core-element-paths"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Patient.identifier<a name="sihce-fhir-core-element-paths-Patient.46identifier"> </a></td></tr><tr><td style="white-space:nowrap">Patient.name<a name="sihce-fhir-core-element-paths-Patient.46name"> </a></td></tr><tr><td style="white-space:nowrap">Patient.gender<a name="sihce-fhir-core-element-paths-Patient.46gender"> </a></td></tr><tr><td style="white-space:nowrap">Patient.birthDate<a name="sihce-fhir-core-element-paths-Patient.46birthDate"> </a></td></tr><tr><td style="white-space:nowrap">Patient.deceased[x]<a name="sihce-fhir-core-element-paths-Patient.46deceased.91x.93"> </a></td></tr><tr><td style="white-space:nowrap">Organization<a name="sihce-fhir-core-element-paths-Organization"> </a></td></tr><tr><td style="white-space:nowrap">Organization.identifier<a name="sihce-fhir-core-element-paths-Organization.46identifier"> </a></td></tr><tr><td style="white-space:nowrap">OperationOutcome.issue<a name="sihce-fhir-core-element-paths-OperationOutcome.46issue"> </a></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem sihce-fhir-core-element-paths</b></p><a name="sihce-fhir-core-element-paths"> </a><a name="hcsihce-fhir-core-element-paths"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Patient.identifier<a name="sihce-fhir-core-element-paths-Patient.46identifier"> </a></td></tr><tr><td style="white-space:nowrap">Patient.name<a name="sihce-fhir-core-element-paths-Patient.46name"> </a></td></tr><tr><td style="white-space:nowrap">Patient.gender<a name="sihce-fhir-core-element-paths-Patient.46gender"> </a></td></tr><tr><td style="white-space:nowrap">Patient.birthDate<a name="sihce-fhir-core-element-paths-Patient.46birthDate"> </a></td></tr><tr><td style="white-space:nowrap">Patient.deceased[x]<a name="sihce-fhir-core-element-paths-Patient.46deceased.91x.93"> </a></td></tr><tr><td style="white-space:nowrap">Organization<a name="sihce-fhir-core-element-paths-Organization"> </a></td></tr><tr><td style="white-space:nowrap">Organization.identifier<a name="sihce-fhir-core-element-paths-Organization.46identifier"> </a></td></tr><tr><td style="white-space:nowrap">OperationOutcome.issue<a name="sihce-fhir-core-element-paths-OperationOutcome.46issue"> </a></td></tr><tr><td style="white-space:nowrap">DocumentReference.identifier<a name="sihce-fhir-core-element-paths-DocumentReference.46identifier"> </a></td></tr><tr><td style="white-space:nowrap">DocumentReference.type<a name="sihce-fhir-core-element-paths-DocumentReference.46type"> </a></td></tr><tr><td style="white-space:nowrap">DocumentReference.subject<a name="sihce-fhir-core-element-paths-DocumentReference.46subject"> </a></td></tr><tr><td style="white-space:nowrap">DocumentReference.date<a name="sihce-fhir-core-element-paths-DocumentReference.46date"> </a></td></tr><tr><td style="white-space:nowrap">DocumentReference.content<a name="sihce-fhir-core-element-paths-DocumentReference.46content"> </a></td></tr><tr><td style="white-space:nowrap">DocumentReference.custodian<a name="sihce-fhir-core-element-paths-DocumentReference.46custodian"> </a></td></tr><tr><td style="white-space:nowrap">Composition.section<a name="sihce-fhir-core-element-paths-Composition.46section"> </a></td></tr><tr><td style="white-space:nowrap">Condition.code<a name="sihce-fhir-core-element-paths-Condition.46code"> </a></td></tr><tr><td style="white-space:nowrap">MedicationStatement.medication<a name="sihce-fhir-core-element-paths-MedicationStatement.46medication"> </a></td></tr><tr><td style="white-space:nowrap">DiagnosticReport.code<a name="sihce-fhir-core-element-paths-DiagnosticReport.46code"> </a></td></tr><tr><td style="white-space:nowrap">DiagnosticReport.subject<a name="sihce-fhir-core-element-paths-DiagnosticReport.46subject"> </a></td></tr><tr><td style="white-space:nowrap">DiagnosticReport.issued<a name="sihce-fhir-core-element-paths-DiagnosticReport.46issued"> </a></td></tr><tr><td style="white-space:nowrap">DiagnosticReport.presentedForm<a name="sihce-fhir-core-element-paths-DiagnosticReport.46presentedForm"> </a></td></tr><tr><td style="white-space:nowrap">DiagnosticReport.result<a name="sihce-fhir-core-element-paths-DiagnosticReport.46result"> </a></td></tr><tr><td style="white-space:nowrap">Observation.code<a name="sihce-fhir-core-element-paths-Observation.46code"> </a></td></tr><tr><td style="white-space:nowrap">Observation.value[x]<a name="sihce-fhir-core-element-paths-Observation.46value.91x.93"> </a></td></tr></table></div>
   </text>
   <url value="http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"/>
-  <version value="1.2.0"/>
+  <version value="1.3.0"/>
   <name value="SIHCEFhirCoreElementPaths"/>
   <title value="Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-06-09T15:34:40-03:00"/>
+  <date value="2026-06-26T18:01:23-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -23,7 +23,7 @@
   <description value="Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition)."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
-  <count value="8"/>
+  <count value="24"/>
   <concept>
     <code value="Patient.identifier"/>
     <display value="Patient.identifier"/>
@@ -55,5 +55,69 @@
   <concept>
     <code value="OperationOutcome.issue"/>
     <display value="OperationOutcome.issue"/>
+  </concept>
+  <concept>
+    <code value="DocumentReference.identifier"/>
+    <display value="DocumentReference.identifier"/>
+  </concept>
+  <concept>
+    <code value="DocumentReference.type"/>
+    <display value="DocumentReference.type"/>
+  </concept>
+  <concept>
+    <code value="DocumentReference.subject"/>
+    <display value="DocumentReference.subject"/>
+  </concept>
+  <concept>
+    <code value="DocumentReference.date"/>
+    <display value="DocumentReference.date"/>
+  </concept>
+  <concept>
+    <code value="DocumentReference.content"/>
+    <display value="DocumentReference.content"/>
+  </concept>
+  <concept>
+    <code value="DocumentReference.custodian"/>
+    <display value="DocumentReference.custodian"/>
+  </concept>
+  <concept>
+    <code value="Composition.section"/>
+    <display value="Composition.section"/>
+  </concept>
+  <concept>
+    <code value="Condition.code"/>
+    <display value="Condition.code"/>
+  </concept>
+  <concept>
+    <code value="MedicationStatement.medication"/>
+    <display value="MedicationStatement.medication"/>
+  </concept>
+  <concept>
+    <code value="DiagnosticReport.code"/>
+    <display value="DiagnosticReport.code"/>
+  </concept>
+  <concept>
+    <code value="DiagnosticReport.subject"/>
+    <display value="DiagnosticReport.subject"/>
+  </concept>
+  <concept>
+    <code value="DiagnosticReport.issued"/>
+    <display value="DiagnosticReport.issued"/>
+  </concept>
+  <concept>
+    <code value="DiagnosticReport.presentedForm"/>
+    <display value="DiagnosticReport.presentedForm"/>
+  </concept>
+  <concept>
+    <code value="DiagnosticReport.result"/>
+    <display value="DiagnosticReport.result"/>
+  </concept>
+  <concept>
+    <code value="Observation.code"/>
+    <display value="Observation.code"/>
+  </concept>
+  <concept>
+    <code value="Observation.value[x]"/>
+    <display value="Observation.value[x]"/>
   </concept>
 </CodeSystem>

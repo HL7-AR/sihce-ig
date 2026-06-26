@@ -1,4 +1,4 @@
-# FederarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.2.0
+# FederarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.3.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR | *Version*:1.2.0 |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR | *Version*:1.3.0 |
 | Draft as of 2026-04-29 | *Computable Name*:FederarPersonaModeloAFHIR |
 
  
@@ -23,7 +23,7 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
   "resourceType" : "ConceptMap",
   "id" : "FederarPersonaModeloAFHIR",
   "url" : "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR",
-  "version" : "1.2.0",
+  "version" : "1.3.0",
   "name" : "FederarPersonaModeloAFHIR",
   "title" : "FederarPersona: modelo lógico a FHIR",
   "status" : "draft",

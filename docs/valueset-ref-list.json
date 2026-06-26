@@ -26,5 +26,63 @@
     "uses" : {
     },
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
+  },
+  {
+    "url" : "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
+    "version" : "1.3.0",
+    "status" : "draft",
+    "name" : "SIHCEClinicalDocumentTypeVS",
+    "title" : "Tipos de documento clínico SIHCE",
+    "description" : "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC).",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
+  },
+  {
+    "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
+    "version" : "1.3.0",
+    "status" : "draft",
+    "name" : "SIHCEDocumentContentTypeVS",
+    "title" : "Tipos MIME de contenido documental SIHCE",
+    "description" : "Formatos admitidos en DocumentReference.content.attachment.contentType.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/mimetypes"],
+    "uses" : {
+    },
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
+    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE"
+  },
+  {
+    "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
+    "version" : "1.3.0",
+    "status" : "draft",
+    "name" : "SIHCEEpicrisisDiagnosisCodeVS",
+    "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
+    "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3).",
+    "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE"
+  },
+  {
+    "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
+    "version" : "1.3.0",
+    "status" : "draft",
+    "name" : "SIHCEEpicrisisSectionVS",
+    "title" : "Secciones LOINC de epicrisis SIHCE",
+    "description" : "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales).",
+    "systems" : ["http://loinc.org"]
+  },
+  {
+    "url" : "http://sihce.gob.ar/ValueSet/sihce-lab-observation-code",
+    "version" : "1.3.0",
+    "status" : "draft",
+    "name" : "SIHCELabObservationCodeVS",
+    "title" : "Analitos de laboratorio SIHCE (LOINC)",
+    "description" : "Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2.",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
   }]
 }

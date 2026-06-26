@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Organization",
+  "id" : "lab-central-ejemplo",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization lab-central-ejemplo</b></p><a name=\"lab-central-ejemplo\"> </a><a name=\"hclab-central-ejemplo\"> </a><p><b>identifier</b>: <code>http://laboratorio.ejemplo.gob.ar</code>/lab-central</p><p><b>name</b>: Laboratorio Central Ejemplo</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://laboratorio.ejemplo.gob.ar",
+    "value" : "lab-central"
+  }],
+  "name" : "Laboratorio Central Ejemplo"
+}

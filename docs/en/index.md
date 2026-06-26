@@ -1,4 +1,4 @@
-# Inicio - Guía de Implementación SIHCE - FHIR R5 v1.2.0
+# Inicio - Guía de Implementación SIHCE - FHIR R5 v1.3.0
 
 * [**Table of Contents**](toc.md)
 * **Inicio**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:1.2.0 |
-| Draft as of 2026-06-09 | *Computable Name*:GuiaDeImplementacionSIHCE |
+| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:1.3.0 |
+| Draft as of 2026-06-26 | *Computable Name*:GuiaDeImplementacionSIHCE |
 
 # Sistema Integrador de Historias Clínicas Electrónicas
 
@@ -57,9 +57,22 @@ Fragmentos generados por el publicador HL7; se incluyen aquí para cumplir con l
 
 This publication includes IP covered under the following statements.
 
+* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+
+* [LOINC](http://tx.fhir.org/r5/ValueSet/x-loinc2.82): [Composition/CompositionEpicrisisNivel2](Composition-CompositionEpicrisisNivel2.md), [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)... Show 14 more, [DiagnosticReport/DiagnosticReportInformeLabNivel1](DiagnosticReport-DiagnosticReportInformeLabNivel1.md), [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md), [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md), [DocumentReference/DocumentReferenceEpicrisisNivel1](DocumentReference-DocumentReferenceEpicrisisNivel1.md), [DocumentReference/DocumentReferenceEpicrisisNivel2](DocumentReference-DocumentReferenceEpicrisisNivel2.md), [DocumentReference/DocumentReferenceInformeLabNivel1](DocumentReference-DocumentReferenceInformeLabNivel1.md), [DocumentReference/DocumentReferenceInformeLabNivel2](DocumentReference-DocumentReferenceInformeLabNivel2.md), [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md), [Observation/ObservationGluInformeLabNivel2](Observation-ObservationGluInformeLabNivel2.md), [Observation/ObservationUreaInformeLabNivel2](Observation-ObservationUreaInformeLabNivel2.md), [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md), [SIHCEClinicalDocumentTypeVS](ValueSet-sihce-clinical-document-type-vs.md), [SIHCEEpicrisisSectionVS](ValueSet-sihce-epicrisis-section-vs.md) and [SIHCELabObservationCodeVS](ValueSet-sihce-lab-observation-code-vs.md)
+
+
+* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
+
+* SNOMED Clinical Terms&reg; (SNOMED CT&reg;): [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md) and [SIHCEEpicrisisDiagnosisCodeVS](ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
+
+
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [identifierType](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html): [Parameters/ParametrosPatchIdentifierEjemplo](Parameters-ParametrosPatchIdentifierEjemplo.md), [Parameters/ParametrosUpdateSDMEjemplo](Parameters-ParametrosUpdateSDMEjemplo.md), [Patient/PersonaSIHCEMin](Patient-PersonaSIHCEMin.md) and [Patient/PersonaSIHCEPatch](Patient-PersonaSIHCEPatch.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html): [Observation/ObservationGluInformeLabNivel2](Observation-ObservationGluInformeLabNivel2.md), [Observation/ObservationUreaInformeLabNivel2](Observation-ObservationUreaInformeLabNivel2.md) and [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md)
+* [diagnosticServiceSectionId](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0074.html): [DiagnosticReport/DiagnosticReportInformeLabNivel1](DiagnosticReport-DiagnosticReportInformeLabNivel1.md), [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md) and [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
+* [identifierType](http://terminology.hl7.org/7.2.0/CodeSystem-v2-0203.html): [Parameters/ParametrosPatchIdentifierEjemplo](Parameters-ParametrosPatchIdentifierEjemplo.md), [Parameters/ParametrosUpdateSDMEjemplo](Parameters-ParametrosUpdateSDMEjemplo.md), [Patient/PersonaSIHCEMin](Patient-PersonaSIHCEMin.md) and [Patient/PersonaSIHCEPatch](Patient-PersonaSIHCEPatch.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.2.0/CodeSystem-v3-ObservationInterpretation.html): [Observation/ObservationGluInformeLabNivel2](Observation-ObservationGluInformeLabNivel2.md) and [Observation/ObservationUreaInformeLabNivel2](Observation-ObservationUreaInformeLabNivel2.md)
 
 
 
