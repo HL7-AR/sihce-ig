@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code | *Version*:1.3.0 |
-| Draft as of 2026-06-26 | *Computable Name*:SIHCEEpicrisisDiagnosisCodeVS |
+| Draft as of 2026-07-13 | *Computable Name*:SIHCEEpicrisisDiagnosisCodeVS |
 
  
-Códigos de Condition en secciones codificadas de epicrisis (nivel 3). 
+Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación. 
 
  **References** 
 
@@ -24,7 +24,7 @@ Códigos de Condition en secciones codificadas de epicrisis (nivel 3).
 
 ### Expansion
 
-This value set cannot be expanded because of the way it is defined - it has an infinite number of members
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -44,7 +44,7 @@ This value set cannot be expanded because of the way it is defined - it has an i
   "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-26T18:01:23-03:00",
+  "date" : "2026-07-13T17:31:20-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -53,13 +53,23 @@ This value set cannot be expanded because of the way it is defined - it has an i
       "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
-  "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3).",
+  "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.",
   "compose" : {
     "include" : [{
-      "system" : "http://hl7.org/fhir/sid/icd-10"
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "filter" : [{
+        "property" : "code",
+        "op" : "=",
+        "value" : "J18.9"
+      }]
     },
     {
-      "system" : "http://snomed.info/sct"
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "code",
+        "op" : "=",
+        "value" : "233604007"
+      }]
     }]
   }
 }

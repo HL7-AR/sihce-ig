@@ -1,14 +1,15 @@
 #!/bin/bash
 publisher_jar=publisher.jar
 input_cache_path=./input-cache/
-# Use online terminology server by default (required for some R5 validations).
-# Set FHIR_OFFLINE_TX=1 to force offline mode when needed.
-txoption=""
+# R5 publish requires an online terminology server for ValueSet narratives (LOINC, ICD-10, etc.).
+# FHIR_OFFLINE_TX=1 is not supported for this IG and will NPE during "Generating Narratives".
+txoption="-tx https://tx.fhir.org/r5"
 if [ "${FHIR_OFFLINE_TX:-0}" = "1" ]; then
-	txoption="-tx n/a"
-	echo "Running without tx support: $txoption"
+	echo "ERROR: FHIR_OFFLINE_TX=1 is not supported for this IG (ValueSet narratives need tx.fhir.org)."
+	echo "Run ./_genonce.sh without that variable."
+	exit 1
 else
-	echo "Running with default terminology server configuration"
+	echo "Running with terminology server: $txoption"
 fi
 
 export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8"

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/StructureDefinition/InformeLaboratorio | *Version*:1.3.0 |
-| Draft as of 2026-06-26 | *Computable Name*:InformeLaboratorio |
+| Draft as of 2026-07-13 | *Computable Name*:InformeLaboratorio |
 
  
 Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-InformeLaboratori
   "name" : "InformeLaboratorio",
   "title" : "Modelo lógico Informe de Laboratorio (SIHCE)",
   "status" : "draft",
-  "date" : "2026-06-26T18:01:23-03:00",
+  "date" : "2026-07-13T17:31:20-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

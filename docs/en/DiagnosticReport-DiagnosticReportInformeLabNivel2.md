@@ -12,22 +12,72 @@ Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLabo
 
 | | |
 | :--- | :--- |
-| Subject | Unable to get Patient Details |
+| Subject | Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, )) |
 | Reported | 2026-06-19 16:10:00-0300 |
 | Identifier | `http://laboratorio.ejemplo.gob.ar/informe`/LAB-2026-0110 |
 
 **Report Details**
 
-* **Code**: [Glucose [Mass/volume] in Serum or Plasma](Observation-ObservationGluInformeLabNivel2.md)
+* **Code**: [Glucose [Mass/volume] in Serum or Plasma](#hcDiagnosticReportInformeLabNivel2/obs-glu)
   * **Value**: 72 mg/dL (Details: UCUM codemg/dL = 'mg/dL')
   * **Reference Range**: 82 mg/dL - 117 mg/dL
   * **Flags**: Final,Low
   * **When For**: 2026-06-19 15:28:00-0300
-* **Code**: [Urea [Mass/volume] in Serum or Plasma](Observation-ObservationUreaInformeLabNivel2.md)
+* **Code**: [Urea [Mass/volume] in Serum or Plasma](#hcDiagnosticReportInformeLabNivel2/obs-ure)
   * **Value**: 24 mg/dL (Details: UCUM codemg/dL = 'mg/dL')
   * **Reference Range**: <50 mg/dL
   * **Flags**: Final,Normal
   * **When For**: 2026-06-19 15:28:00-0300
+
+-------
+
+Profile: [Observación de laboratorio SIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md)
+
+**status**: Final
+
+**category**: Laboratory
+
+**code**: Glucose [Mass/volume] in Serum or Plasma
+
+**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))](Patient-PersonaSIHCEMin.md)
+
+**effective**: 2026-06-19 15:28:00-0300
+
+**value**: 72 mg/dL (Details: UCUM codemg/dL = 'mg/dL')
+
+**interpretation**: Low
+
+### ReferenceRanges
+
+| | | |
+| :--- | :--- | :--- |
+| - | **Low** | **High** |
+| * | 82 mg/dL | 117 mg/dL |
+
+-------
+
+Profile: [Observación de laboratorio SIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md)
+
+**status**: Final
+
+**category**: Laboratory
+
+**code**: Urea [Mass/volume] in Serum or Plasma
+
+**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))](Patient-PersonaSIHCEMin.md)
+
+**effective**: 2026-06-19 15:28:00-0300
+
+**value**: 24 mg/dL (Details: UCUM codemg/dL = 'mg/dL')
+
+**interpretation**: Normal
+
+### ReferenceRanges
+
+| | |
+| :--- | :--- |
+| - | **High** |
+| * | 50 mg/dL |
 
 
 
@@ -40,6 +90,100 @@ Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLabo
   "meta" : {
     "profile" : ["http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"]
   },
+  "contained" : [{
+    "resourceType" : "Observation",
+    "id" : "obs-glu",
+    "meta" : {
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"]
+    },
+    "status" : "final",
+    "category" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code" : "laboratory",
+        "display" : "Laboratory"
+      }]
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "2345-7",
+        "display" : "Glucose [Mass/volume] in Serum or Plasma"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/PersonaSIHCEMin"
+    },
+    "effectiveDateTime" : "2026-06-19T15:28:00-03:00",
+    "valueQuantity" : {
+      "value" : 72,
+      "unit" : "mg/dL",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg/dL"
+    },
+    "interpretation" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code" : "L",
+        "display" : "Low"
+      }]
+    }],
+    "referenceRange" : [{
+      "low" : {
+        "value" : 82,
+        "unit" : "mg/dL"
+      },
+      "high" : {
+        "value" : 117,
+        "unit" : "mg/dL"
+      }
+    }]
+  },
+  {
+    "resourceType" : "Observation",
+    "id" : "obs-ure",
+    "meta" : {
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"]
+    },
+    "status" : "final",
+    "category" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code" : "laboratory",
+        "display" : "Laboratory"
+      }]
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "3094-0",
+        "display" : "Urea [Mass/volume] in Serum or Plasma"
+      }]
+    },
+    "subject" : {
+      "reference" : "Patient/PersonaSIHCEMin"
+    },
+    "effectiveDateTime" : "2026-06-19T15:28:00-03:00",
+    "valueQuantity" : {
+      "value" : 24,
+      "unit" : "mg/dL",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg/dL"
+    },
+    "interpretation" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "code" : "N",
+        "display" : "Normal"
+      }]
+    }],
+    "referenceRange" : [{
+      "high" : {
+        "value" : 50,
+        "unit" : "mg/dL"
+      }
+    }]
+  }],
   "identifier" : [{
     "system" : "http://laboratorio.ejemplo.gob.ar/informe",
     "value" : "LAB-2026-0110"
@@ -60,14 +204,14 @@ Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLabo
     }]
   },
   "subject" : {
-    "reference" : "Patient/987654321"
+    "reference" : "Patient/PersonaSIHCEMin"
   },
   "issued" : "2026-06-19T16:10:00-03:00",
   "result" : [{
-    "reference" : "Observation/ObservationGluInformeLabNivel2"
+    "reference" : "#obs-glu"
   },
   {
-    "reference" : "Observation/ObservationUreaInformeLabNivel2"
+    "reference" : "#obs-ure"
   }],
   "presentedForm" : [{
     "contentType" : "application/pdf",

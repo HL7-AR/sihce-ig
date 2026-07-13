@@ -11,7 +11,6 @@
 [CompositionEpicrisisNivel2]: Composition-CompositionEpicrisisNivel2.html
 [EpicrisisModeloAFHIR]: ConceptMap-EpicrisisModeloAFHIR.html
 [FederarPersonaModeloAFHIR]: ConceptMap-FederarPersonaModeloAFHIR.html
-[ObservationGluInformeLabNivel2]: Observation-ObservationGluInformeLabNivel2.html
 [DiagnosticReportLaboratorioSIHCE]: StructureDefinition-DiagnosticReportLaboratorioSIHCE.html
 [DiagnosticReportInformeLabNivel1]: DiagnosticReport-DiagnosticReportInformeLabNivel1.html
 [DocumentReferenceInformeLabNivel1]: DocumentReference-DocumentReferenceInformeLabNivel1.html
@@ -46,4 +45,3 @@
 [SIHCEEpicrisisSectionVS]: ValueSet-sihce-epicrisis-section-vs.html
 [SIHCEClinicalDocumentTypeVS]: ValueSet-sihce-clinical-document-type-vs.html
 [SIHCEDocumentContentTypeVS]: ValueSet-sihce-document-content-type-vs.html
-[ObservationUreaInformeLabNivel2]: Observation-ObservationUreaInformeLabNivel2.html

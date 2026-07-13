@@ -10,7 +10,7 @@ ConceptMap-InformeLaboratorioModeloAFHIR.json               InformeLaboratorioMo
 ConceptMap-ModificarIDLocalPersonaModeloAFHIR.json          ModificarIDLocalPersonaModeloAFHIR  Instance    conceptmaps/ConceptMapModificarIDLocalPersona.fsh  1 - 54
 ConceptMap-ModificarSDMPersonaModeloAFHIR.json              ModificarSDMPersonaModeloAFHIR      Instance    conceptmaps/ConceptMapModificarSDMPersona.fsh      1 - 74
 DiagnosticReport-DiagnosticReportInformeLabNivel1.json      DiagnosticReportInformeLabNivel1    Instance    instances/InformeLaboratorioEjemplos.fsh           19 - 31
-DiagnosticReport-DiagnosticReportInformeLabNivel2.json      DiagnosticReportInformeLabNivel2    Instance    instances/InformeLaboratorioEjemplos.fsh           79 - 91
+DiagnosticReport-DiagnosticReportInformeLabNivel2.json      DiagnosticReportInformeLabNivel2    Instance    instances/InformeLaboratorioEjemplos.fsh           81 - 95
 DocumentReference-DocumentReferenceEpicrisisNivel1.json     DocumentReferenceEpicrisisNivel1    Instance    instances/DocumentReferenceEpicrisisEjemplos.fsh   1 - 17
 DocumentReference-DocumentReferenceEpicrisisNivel2.json     DocumentReferenceEpicrisisNivel2    Instance    instances/DocumentReferenceEpicrisisEjemplos.fsh   19 - 31
 DocumentReference-DocumentReferenceInformeLabNivel1.json    DocumentReferenceInformeLabNivel1   Instance    instances/InformeLaboratorioEjemplos.fsh           1 - 17
@@ -19,9 +19,7 @@ NamingSystem-NamingSystemHospitalItalianoFHIR.json          NamingSystemHospital
 NamingSystem-NamingSystemMsgcGCBA.json                      NamingSystemMsgcGCBA                Instance    instances/NamingSystemMsgcGCBA.fsh                 1 - 14
 NamingSystem-renaper-dni.json                               renaper-dni                         Instance    instances/renaper-dni.fsh                          1 - 20
 NamingSystem-sihce-persona-global.json                      sihce-persona-global                Instance    instances/NamingSystemSihcePersonaGlobal.fsh       1 - 22
-Observation-ObservationGluInformeLabNivel2.json             ObservationGluInformeLabNivel2      Instance    instances/InformeLaboratorioEjemplos.fsh           47 - 62
-Observation-ObservationUreaInformeLabNivel2.json            ObservationUreaInformeLabNivel2     Instance    instances/InformeLaboratorioEjemplos.fsh           64 - 77
-Organization-lab-central-ejemplo.json                       lab-central-ejemplo                 Instance    instances/InformeLaboratorioEjemplos.fsh           93 - 99
+Organization-lab-central-ejemplo.json                       lab-central-ejemplo                 Instance    instances/InformeLaboratorioEjemplos.fsh           97 - 103
 Parameters-ParametrosPatchIdentifierEjemplo.json            ParametrosPatchIdentifierEjemplo    Instance    instances/ParametrosPatchIdentifierEjemplo.fsh     1 - 13
 Parameters-ParametrosUpdateSDMEjemplo.json                  ParametrosUpdateSDMEjemplo          Instance    instances/ParametrosUpdateSDMEjemplo.fsh           1 - 7
 Patient-PersonaSIHCEMin.json                                PersonaSIHCEMin                     Instance    instances/PersonaSIHCEMin.fsh                      1 - 20

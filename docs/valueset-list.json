@@ -23,7 +23,7 @@
     "status" : "draft",
     "name" : "SIHCEEpicrisisDiagnosisCodeVS",
     "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
-    "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3).",
+    "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.",
     "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"]
   },
   {

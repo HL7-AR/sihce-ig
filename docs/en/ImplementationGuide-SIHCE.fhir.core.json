@@ -11,7 +11,7 @@
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R5",
   "status" : "draft",
-  "date" : "2026-06-26T18:01:23-03:00",
+  "date" : "2026-07-13T17:31:20-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -105,7 +105,7 @@
         "reference" : "ValueSet/sihce-epicrisis-diagnosis-code-vs"
       },
       "name" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
-      "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3).",
+      "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.",
       "isExample" : false
     },
     {
@@ -155,7 +155,7 @@
         "reference" : "DocumentReference/DocumentReferenceEpicrisisNivel1"
       },
       "name" : "Epicrisis nivel 1 — PDF en dominio",
-      "description" : "DocumentReference con enlace a PDF hospedado en el dominio emisor. idPersonaGlobal = 987654321.",
+      "description" : "DocumentReference con enlace a PDF hospedado en el dominio emisor. Paciente: PersonaSIHCEMin.",
       "isExample" : true,
       "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
     },
@@ -212,18 +212,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ObservationGluInformeLabNivel2"
-      },
-      "name" : "Glucemia — informe laboratorio nivel 2",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -255,7 +243,7 @@
         "reference" : "DocumentReference/DocumentReferenceInformeLabNivel1"
       },
       "name" : "Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)",
-      "description" : "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas.",
+      "description" : "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.html).",
       "isExample" : true,
       "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
     },
@@ -268,7 +256,7 @@
         "reference" : "DiagnosticReport/DiagnosticReportInformeLabNivel2"
       },
       "name" : "Informe laboratorio nivel 2 — PDF + glucemia y urea",
-      "description" : "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC referenciadas en result.",
+      "description" : "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result.",
       "isExample" : true,
       "profile" : ["http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"]
     },
@@ -281,7 +269,7 @@
         "reference" : "DocumentReference/DocumentReferenceInformeLabNivel2"
       },
       "name" : "Informe laboratorio nivel 2 — PDF y observaciones",
-      "description" : "Índice SIHCE; URL a DiagnosticReport con presentedForm y result codificados.",
+      "description" : "Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result.",
       "isExample" : true,
       "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
     },
@@ -633,18 +621,6 @@
       "name" : "Tipos MIME de contenido documental SIHCE",
       "description" : "Formatos admitidos en DocumentReference.content.attachment.contentType.",
       "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ObservationUreaInformeLabNivel2"
-      },
-      "name" : "Urea — informe laboratorio nivel 2",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"]
     }],
     "page" : {
       "sourceUrl" : "toc.html",

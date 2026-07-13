@@ -12,7 +12,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-epicrisis-diagnosis-code-vs</b></p><a name=\"sihce-epicrisis-diagnosis-code-vs\"> </a><a name=\"hcsihce-epicrisis-diagnosis-code-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://tx.fhir.org/r5\"><code>http://hl7.org/fhir/sid/icd-10</code></a><span style=\"opacity: 0.5\" title=\"Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used\"> version ⏿2019-covid-expanded</span></li><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-epicrisis-diagnosis-code-vs</b></p><a name=\"sihce-epicrisis-diagnosis-code-vs\"> </a><a name=\"hcsihce-epicrisis-diagnosis-code-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://tx.fhir.org/r5\"><code>http://hl7.org/fhir/sid/icd-10</code></a><span style=\"opacity: 0.5\" title=\"Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used\"> version ⏿2019-covid-expanded</span> where code  = <a href=\"http://tx.fhir.org/r5/ValueSet/icd10-2019#icd10-2019-J18.469\">J18.9</a></li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 233604007</li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"^^xsd:anyURI ;
@@ -23,7 +23,7 @@
   fhir:title [ fhir:v "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-26T18:01:23-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-07-13T17:31:20-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;
@@ -32,18 +32,28 @@
        fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Códigos de Condition en secciones codificadas de epicrisis (nivel 3)."] ; # 
+  fhir:description [ fhir:v "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [
          fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ;
          fhir:l <http://hl7.org/fhir/sid/icd-10>
-       ]
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "code" ] ;
+         fhir:op [ fhir:v "=" ] ;
+         fhir:value [ fhir:v "J18.9" ]
+       ] )
      ] [
        fhir:system [
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
-       ]
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "code" ] ;
+         fhir:op [ fhir:v "=" ] ;
+         fhir:value [ fhir:v "233604007" ]
+       ] )
      ] )
   ] . # 
 

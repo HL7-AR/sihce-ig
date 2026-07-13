@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths | *Version*:1.3.0 |
-| Draft as of 2026-06-26 | *Computable Name*:SIHCELogicalOperationElementPaths |
+| Draft as of 2026-07-13 | *Computable Name*:SIHCELogicalOperationElementPaths |
 
  
 Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento…). 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-26T18:01:23-03:00",
+  "date" : "2026-07-13T17:31:20-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

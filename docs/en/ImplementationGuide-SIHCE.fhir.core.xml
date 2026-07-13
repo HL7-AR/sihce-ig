@@ -11,7 +11,7 @@
   <name value="GuiaDeImplementacionSIHCE"/>
   <title value="Guía de Implementación SIHCE - FHIR R5"/>
   <status value="draft"/>
-  <date value="2026-06-26T18:01:23-03:00"/>
+  <date value="2026-07-13T17:31:20-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -95,7 +95,7 @@
         <reference value="ValueSet/sihce-epicrisis-diagnosis-code-vs"/>
       </reference>
       <name value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"/>
-      <description value="Códigos de Condition en secciones codificadas de epicrisis (nivel 3)."/>
+      <description value="Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -141,7 +141,7 @@
         <reference value="DocumentReference/DocumentReferenceEpicrisisNivel1"/>
       </reference>
       <name value="Epicrisis nivel 1 — PDF en dominio"/>
-      <description value="DocumentReference con enlace a PDF hospedado en el dominio emisor. idPersonaGlobal = 987654321."/>
+      <description value="DocumentReference con enlace a PDF hospedado en el dominio emisor. Paciente: PersonaSIHCEMin."/>
       <isExample value="true"/>
       <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
     </resource>
@@ -193,17 +193,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationGluInformeLabNivel2"/>
-      </reference>
-      <name value="Glucemia — informe laboratorio nivel 2"/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -233,7 +222,7 @@
         <reference value="DocumentReference/DocumentReferenceInformeLabNivel1"/>
       </reference>
       <name value="Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)"/>
-      <description value="Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas."/>
+      <description value="Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.html)."/>
       <isExample value="true"/>
       <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
     </resource>
@@ -245,7 +234,7 @@
         <reference value="DiagnosticReport/DiagnosticReportInformeLabNivel2"/>
       </reference>
       <name value="Informe laboratorio nivel 2 — PDF + glucemia y urea"/>
-      <description value="Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC referenciadas en result."/>
+      <description value="Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result."/>
       <isExample value="true"/>
       <profile value="http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"/>
     </resource>
@@ -257,7 +246,7 @@
         <reference value="DocumentReference/DocumentReferenceInformeLabNivel2"/>
       </reference>
       <name value="Informe laboratorio nivel 2 — PDF y observaciones"/>
-      <description value="Índice SIHCE; URL a DiagnosticReport con presentedForm y result codificados."/>
+      <description value="Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result."/>
       <isExample value="true"/>
       <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
     </resource>
@@ -580,17 +569,6 @@
       <name value="Tipos MIME de contenido documental SIHCE"/>
       <description value="Formatos admitidos en DocumentReference.content.attachment.contentType."/>
       <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ObservationUreaInformeLabNivel2"/>
-      </reference>
-      <name value="Urea — informe laboratorio nivel 2"/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"/>
     </resource>
     <page>
       <sourceUrl value="toc.html"/>

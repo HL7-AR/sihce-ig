@@ -2,10 +2,10 @@ Instance: DocumentReferenceInformeLabNivel1
 InstanceOf: DocumentReferenceSIHCE
 Usage: #example
 Title: "Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)"
-Description: "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas."
+Description: "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.html)."
 * status = #current
 * type = http://loinc.org#11502-2 "Laboratory report"
-* subject = Reference(Patient/987654321)
+* subject = Reference(PersonaSIHCEMin)
 * identifier[0].system = "http://laboratorio.ejemplo.gob.ar/informe"
 * identifier[0].value = "LAB-2026-0042"
 * date = "2026-06-19T15:55:00-03:00"
@@ -23,7 +23,7 @@ Title: "Informe laboratorio nivel 1 — DiagnosticReport con PDF"
 Description: "Solo presentedForm (PDF); sin entradas en result (nivel 1)."
 * identifier[0].system = "http://laboratorio.ejemplo.gob.ar/informe"
 * identifier[0].value = "LAB-2026-0042"
-* subject = Reference(Patient/987654321)
+* subject = Reference(PersonaSIHCEMin)
 * issued = "2026-06-19T15:55:00-03:00"
 * performer = Reference(Organization/lab-central-ejemplo)
 * presentedForm[0].contentType = #application/pdf
@@ -34,10 +34,10 @@ Instance: DocumentReferenceInformeLabNivel2
 InstanceOf: DocumentReferenceSIHCE
 Usage: #example
 Title: "Informe laboratorio nivel 2 — PDF y observaciones"
-Description: "Índice SIHCE; URL a DiagnosticReport con presentedForm y result codificados."
+Description: "Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result."
 * status = #current
 * type = http://loinc.org#11502-2 "Laboratory report"
-* subject = Reference(Patient/987654321)
+* subject = Reference(PersonaSIHCEMin)
 * identifier[0].system = "http://laboratorio.ejemplo.gob.ar/informe"
 * identifier[0].value = "LAB-2026-0110"
 * date = "2026-06-19T16:10:00-03:00"
@@ -46,9 +46,10 @@ Description: "Índice SIHCE; URL a DiagnosticReport con presentedForm y result c
 
 Instance: ObservationGluInformeLabNivel2
 InstanceOf: ObservationLaboratorioSIHCE
-Usage: #example
-Title: "Glucemia — informe laboratorio nivel 2"
-* subject = Reference(Patient/987654321)
+Usage: #inline
+Title: "Glucemia — contenida en informe laboratorio nivel 2"
+* id = "obs-glu"
+* subject = Reference(PersonaSIHCEMin)
 * effectiveDateTime = "2026-06-19T15:28:00-03:00"
 * code = http://loinc.org#2345-7 "Glucose [Mass/volume] in Serum or Plasma"
 * valueQuantity.value = 72
@@ -63,9 +64,10 @@ Title: "Glucemia — informe laboratorio nivel 2"
 
 Instance: ObservationUreaInformeLabNivel2
 InstanceOf: ObservationLaboratorioSIHCE
-Usage: #example
-Title: "Urea — informe laboratorio nivel 2"
-* subject = Reference(Patient/987654321)
+Usage: #inline
+Title: "Urea — contenida en informe laboratorio nivel 2"
+* id = "obs-ure"
+* subject = Reference(PersonaSIHCEMin)
 * effectiveDateTime = "2026-06-19T15:28:00-03:00"
 * code = http://loinc.org#3094-0 "Urea [Mass/volume] in Serum or Plasma"
 * valueQuantity.value = 24
@@ -80,15 +82,17 @@ Instance: DiagnosticReportInformeLabNivel2
 InstanceOf: DiagnosticReportLaboratorioSIHCE
 Usage: #example
 Title: "Informe laboratorio nivel 2 — PDF + glucemia y urea"
-Description: "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC referenciadas en result."
+Description: "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result."
 * identifier[0].system = "http://laboratorio.ejemplo.gob.ar/informe"
 * identifier[0].value = "LAB-2026-0110"
-* subject = Reference(Patient/987654321)
+* subject = Reference(PersonaSIHCEMin)
 * issued = "2026-06-19T16:10:00-03:00"
 * presentedForm[0].contentType = #application/pdf
 * presentedForm[0].url = "https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0110.pdf"
-* result[0] = Reference(ObservationGluInformeLabNivel2)
-* result[1] = Reference(ObservationUreaInformeLabNivel2)
+* contained[+] = ObservationGluInformeLabNivel2
+* contained[+] = ObservationUreaInformeLabNivel2
+* result[0].reference = "#obs-glu"
+* result[1].reference = "#obs-ure"
 
 Instance: lab-central-ejemplo
 InstanceOf: Organization

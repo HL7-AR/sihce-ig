@@ -34,7 +34,7 @@
     }
   ],
   "subject": {
-    "reference": "Patient/987654321"
+    "reference": "Patient/PersonaSIHCEMin"
   },
   "issued": "2026-06-19T16:10:00-03:00",
   "presentedForm": [
@@ -43,12 +43,136 @@
       "url": "https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0110.pdf"
     }
   ],
-  "result": [
+  "contained": [
     {
-      "reference": "Observation/ObservationGluInformeLabNivel2"
+      "resourceType": "Observation",
+      "id": "obs-glu",
+      "meta": {
+        "profile": [
+          "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"
+        ]
+      },
+      "status": "final",
+      "category": [
+        {
+          "coding": [
+            {
+              "code": "laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+              "display": "Laboratory"
+            }
+          ]
+        }
+      ],
+      "valueQuantity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 72,
+        "unit": "mg/dL",
+        "code": "mg/dL"
+      },
+      "subject": {
+        "reference": "Patient/PersonaSIHCEMin"
+      },
+      "effectiveDateTime": "2026-06-19T15:28:00-03:00",
+      "code": {
+        "coding": [
+          {
+            "code": "2345-7",
+            "system": "http://loinc.org",
+            "display": "Glucose [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "code": "L",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "display": "Low"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "low": {
+            "value": 82,
+            "unit": "mg/dL"
+          },
+          "high": {
+            "value": 117,
+            "unit": "mg/dL"
+          }
+        }
+      ]
     },
     {
-      "reference": "Observation/ObservationUreaInformeLabNivel2"
+      "resourceType": "Observation",
+      "id": "obs-ure",
+      "meta": {
+        "profile": [
+          "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"
+        ]
+      },
+      "status": "final",
+      "category": [
+        {
+          "coding": [
+            {
+              "code": "laboratory",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+              "display": "Laboratory"
+            }
+          ]
+        }
+      ],
+      "valueQuantity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 24,
+        "unit": "mg/dL",
+        "code": "mg/dL"
+      },
+      "subject": {
+        "reference": "Patient/PersonaSIHCEMin"
+      },
+      "effectiveDateTime": "2026-06-19T15:28:00-03:00",
+      "code": {
+        "coding": [
+          {
+            "code": "3094-0",
+            "system": "http://loinc.org",
+            "display": "Urea [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "code": "N",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "display": "Normal"
+            }
+          ]
+        }
+      ],
+      "referenceRange": [
+        {
+          "high": {
+            "value": 50,
+            "unit": "mg/dL"
+          }
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "reference": "#obs-glu"
+    },
+    {
+      "reference": "#obs-ure"
     }
   ]
 }

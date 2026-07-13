@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/StructureDefinition/BuscarPersona | *Version*:1.3.0 |
-| Draft as of 2026-06-26 | *Computable Name*:BuscarPersona |
+| Draft as of 2026-07-13 | *Computable Name*:BuscarPersona |
 
  
 Solicitud de búsqueda de persona por datos mínimos y respuesta mínima. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-BuscarPersona.csv
   "name" : "BuscarPersona",
   "title" : "Modelo lógico BuscarPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-06-26T18:01:23-03:00",
+  "date" : "2026-07-13T17:31:20-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

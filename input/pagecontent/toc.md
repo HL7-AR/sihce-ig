@@ -54,7 +54,3 @@
 8.20 [DocumentReference informe laboratorio nivel 2](DocumentReference-DocumentReferenceInformeLabNivel2.html)
 
 8.21 [DiagnosticReport informe laboratorio nivel 2](DiagnosticReport-DiagnosticReportInformeLabNivel2.html)
-
-8.22 [Observación glucemia informe laboratorio](Observation-ObservationGluInformeLabNivel2.html)
-
-8.23 [Observación urea informe laboratorio](Observation-ObservationUreaInformeLabNivel2.html)

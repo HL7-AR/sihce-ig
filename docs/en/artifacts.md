@@ -45,7 +45,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | | |
 | :--- | :--- |
 | [ Analitos de laboratorio SIHCE (LOINC)  ](ValueSet-sihce-lab-observation-code-vs.md) | Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2. |
-| [ Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)  ](ValueSet-sihce-epicrisis-diagnosis-code-vs.md) | Códigos de Condition en secciones codificadas de epicrisis (nivel 3). |
+| [ Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)  ](ValueSet-sihce-epicrisis-diagnosis-code-vs.md) | Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación. |
 | [ Secciones LOINC de epicrisis SIHCE  ](ValueSet-sihce-epicrisis-section-vs.md) | Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales). |
 | [ Tipos MIME de contenido documental SIHCE  ](ValueSet-sihce-document-content-type-vs.md) | Formatos admitidos en DocumentReference.content.attachment.contentType. |
 | [ Tipos de documento clínico SIHCE  ](ValueSet-sihce-clinical-document-type-vs.md) | Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC). |
@@ -92,16 +92,14 @@ These are example instances that show what data produced and consumed by systems
 | :--- | :--- |
 | [ Ejemplo Parameters Patch Identifier  ](Parameters-ParametrosPatchIdentifierEjemplo.md) | Ejemplo de Parámetros para actualizar identificador local. |
 | [ Ejemplo Parameters Update SDM  ](Parameters-ParametrosUpdateSDMEjemplo.md) | Ejemplo de Parametros para actualizacion de SDM. |
-| [ Epicrisis nivel 1 — PDF en dominio  ](DocumentReference-DocumentReferenceEpicrisisNivel1.md) | DocumentReference con enlace a PDF hospedado en el dominio emisor. idPersonaGlobal = 987654321. |
+| [ Epicrisis nivel 1 — PDF en dominio  ](DocumentReference-DocumentReferenceEpicrisisNivel1.md) | DocumentReference con enlace a PDF hospedado en el dominio emisor. Paciente: PersonaSIHCEMin. |
 | [ Epicrisis nivel 2 — enlace a Composition  ](DocumentReference-DocumentReferenceEpicrisisNivel2.md) | DocumentReference con URL a Composition narrativa en el dominio. |
 | [ Epicrisis nivel 2 — secciones narrativas  ](Composition-CompositionEpicrisisNivel2.md) | Composition con las cinco secciones obligatorias en texto (nivel 2). |
-| [ Glucemia — informe laboratorio nivel 2  ](Observation-ObservationGluInformeLabNivel2.md) |  |
 | [ Informe laboratorio nivel 1 — DiagnosticReport con PDF  ](DiagnosticReport-DiagnosticReportInformeLabNivel1.md) | Solo presentedForm (PDF); sin entradas en result (nivel 1). |
-| [ Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)  ](DocumentReference-DocumentReferenceInformeLabNivel1.md) | Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. |
-| [ Informe laboratorio nivel 2 — PDF + glucemia y urea  ](DiagnosticReport-DiagnosticReportInformeLabNivel2.md) | Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC referenciadas en result. |
-| [ Informe laboratorio nivel 2 — PDF y observaciones  ](DocumentReference-DocumentReferenceInformeLabNivel2.md) | Índice SIHCE; URL a DiagnosticReport con presentedForm y result codificados. |
+| [ Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)  ](DocumentReference-DocumentReferenceInformeLabNivel1.md) | Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.md). |
+| [ Informe laboratorio nivel 2 — PDF + glucemia y urea  ](DiagnosticReport-DiagnosticReportInformeLabNivel2.md) | Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result. |
+| [ Informe laboratorio nivel 2 — PDF y observaciones  ](DocumentReference-DocumentReferenceInformeLabNivel2.md) | Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result. |
 | [ Laboratorio Central Ejemplo  ](Organization-lab-central-ejemplo.md) |  |
 | [ PersonaSIHCEMin  ](Patient-PersonaSIHCEMin.md) | Ejemplo de Recurso Paciente con Set de Datos Minimos |
 | [ PersonaSIHCEPatch  ](Patient-PersonaSIHCEPatch.md) | Ejemplo de Recurso Paciente para Patch de Datos Minimos |
-| [ Urea — informe laboratorio nivel 2  ](Observation-ObservationUreaInformeLabNivel2.md) |  |
 

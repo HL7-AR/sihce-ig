@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/ValueSet/sihce-document-content-type | *Version*:1.3.0 |
-| Draft as of 2026-06-26 | *Computable Name*:SIHCEDocumentContentTypeVS |
+| Draft as of 2026-07-13 | *Computable Name*:SIHCEDocumentContentTypeVS |
 
  
 Formatos admitidos en DocumentReference.content.attachment.contentType. 
@@ -45,7 +45,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "Tipos MIME de contenido documental SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-26T18:01:23-03:00",
+  "date" : "2026-07-13T17:31:20-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

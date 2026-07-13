@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "GuiaDeImplementacionSIHCE"] ; # 
   fhir:title [ fhir:v "Guía de Implementación SIHCE - FHIR R5"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-26T18:01:23-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-07-13T17:31:20-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;
@@ -170,7 +170,7 @@
          fhir:reference [ fhir:v "ValueSet/sihce-epicrisis-diagnosis-code-vs" ]
        ] ;
        fhir:name [ fhir:v "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)" ] ;
-       fhir:description [ fhir:v "Códigos de Condition en secciones codificadas de epicrisis (nivel 3)." ] ;
+       fhir:description [ fhir:v "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -250,7 +250,7 @@
          fhir:reference [ fhir:v "DocumentReference/DocumentReferenceEpicrisisNivel1" ]
        ] ;
        fhir:name [ fhir:v "Epicrisis nivel 1 — PDF en dominio" ] ;
-       fhir:description [ fhir:v "DocumentReference con enlace a PDF hospedado en el dominio emisor. idPersonaGlobal = 987654321." ] ;
+       fhir:description [ fhir:v "DocumentReference con enlace a PDF hospedado en el dominio emisor. Paciente: PersonaSIHCEMin." ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"^^xsd:anyURI ;
@@ -344,27 +344,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://sihce.gob.ar/Observation/ObservationGluInformeLabNivel2> ;
-         fhir:reference [ fhir:v "Observation/ObservationGluInformeLabNivel2" ]
-       ] ;
-       fhir:name [ fhir:v "Glucemia — informe laboratorio nivel 2" ] ;
-       fhir:isExample [ fhir:v true ] ;
-       fhir:profile ( [
-         fhir:v "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"^^xsd:anyURI ;
-         fhir:l <http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -413,7 +392,7 @@
          fhir:reference [ fhir:v "DocumentReference/DocumentReferenceInformeLabNivel1" ]
        ] ;
        fhir:name [ fhir:v "Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)" ] ;
-       fhir:description [ fhir:v "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas." ] ;
+       fhir:description [ fhir:v "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.html)." ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"^^xsd:anyURI ;
@@ -435,7 +414,7 @@
          fhir:reference [ fhir:v "DiagnosticReport/DiagnosticReportInformeLabNivel2" ]
        ] ;
        fhir:name [ fhir:v "Informe laboratorio nivel 2 — PDF + glucemia y urea" ] ;
-       fhir:description [ fhir:v "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC referenciadas en result." ] ;
+       fhir:description [ fhir:v "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result." ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"^^xsd:anyURI ;
@@ -457,7 +436,7 @@
          fhir:reference [ fhir:v "DocumentReference/DocumentReferenceInformeLabNivel2" ]
        ] ;
        fhir:name [ fhir:v "Informe laboratorio nivel 2 — PDF y observaciones" ] ;
-       fhir:description [ fhir:v "Índice SIHCE; URL a DiagnosticReport con presentedForm y result codificados." ] ;
+       fhir:description [ fhir:v "Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result." ] ;
        fhir:isExample [ fhir:v true ] ;
        fhir:profile ( [
          fhir:v "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"^^xsd:anyURI ;
@@ -992,27 +971,6 @@
        fhir:name [ fhir:v "Tipos MIME de contenido documental SIHCE" ] ;
        fhir:description [ fhir:v "Formatos admitidos en DocumentReference.content.attachment.contentType." ] ;
        fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "Observation"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://sihce.gob.ar/Observation/ObservationUreaInformeLabNivel2> ;
-         fhir:reference [ fhir:v "Observation/ObservationUreaInformeLabNivel2" ]
-       ] ;
-       fhir:name [ fhir:v "Urea — informe laboratorio nivel 2" ] ;
-       fhir:isExample [ fhir:v true ] ;
-       fhir:profile ( [
-         fhir:v "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"^^xsd:anyURI ;
-         fhir:l <http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE>
-       ] )
      ] ) ;
      fhir:page [
        fhir:source [

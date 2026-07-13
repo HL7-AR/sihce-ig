@@ -2,10 +2,10 @@ Instance: DocumentReferenceEpicrisisNivel1
 InstanceOf: DocumentReferenceSIHCE
 Usage: #example
 Title: "Epicrisis nivel 1 — PDF en dominio"
-Description: "DocumentReference con enlace a PDF hospedado en el dominio emisor. idPersonaGlobal = 987654321."
+Description: "DocumentReference con enlace a PDF hospedado en el dominio emisor. Paciente: PersonaSIHCEMin."
 * status = #current
 * type = http://loinc.org#18842-5 "Discharge summary"
-* subject = Reference(Patient/987654321)
+* subject = Reference(PersonaSIHCEMin)
 * identifier[0].system = "http://hospitalitaliano.org.ar/fhir/documento"
 * identifier[0].value = "EP-2026-0042"
 * date = "2026-06-08T14:30:00-03:00"
@@ -23,7 +23,7 @@ Title: "Epicrisis nivel 2 — enlace a Composition"
 Description: "DocumentReference con URL a Composition narrativa en el dominio."
 * status = #current
 * type = http://loinc.org#18842-5 "Discharge summary"
-* subject = Reference(Patient/987654321)
+* subject = Reference(PersonaSIHCEMin)
 * identifier[0].system = "http://msgc.gcba.gob.ar/documento"
 * identifier[0].value = "MSG-EP-2026-0100"
 * date = "2026-06-08T16:00:00-03:00"
@@ -37,7 +37,7 @@ Title: "Epicrisis nivel 2 — secciones narrativas"
 Description: "Composition con las cinco secciones obligatorias en texto (nivel 2)."
 * status = #final
 * type = http://loinc.org#18842-5 "Discharge summary"
-* subject = Reference(Patient/987654321)
+* subject = Reference(PersonaSIHCEMin)
 * date = "2026-06-08T16:00:00-03:00"
 * author = Reference(Organization/hospital-italiano-ejemplo)
 * title = "Epicrisis de hospitalización"

@@ -46,13 +46,13 @@ Description: "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales)
 ValueSet: SIHCEEpicrisisDiagnosisCodeVS
 Id: sihce-epicrisis-diagnosis-code-vs
 Title: "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"
-Description: "Códigos de Condition en secciones codificadas de epicrisis (nivel 3)."
+Description: "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación."
 * ^url = "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"
 * ^version = "1.3.0"
 * ^status = #draft
 * ^experimental = false
-* include codes from system http://hl7.org/fhir/sid/icd-10
-* include codes from system http://snomed.info/sct
+* include codes from system http://hl7.org/fhir/sid/icd-10 where code = #J18.9
+* include codes from system http://snomed.info/sct where code = #233604007
 
 ValueSet: SIHCELabObservationCodeVS
 Id: sihce-lab-observation-code-vs

@@ -18,8 +18,143 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel2</b></p><a name=\"DiagnosticReportInformeLabNivel2\"> </a><a name=\"hcDiagnosticReportInformeLabNivel2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReportLaboratorioSIHCE.html\">Informe de laboratorio SIHCE</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Reported</td><td>2026-06-19 16:10:00-0300</td></tr><tr><td>Identifier</td><td> <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0110</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-ObservationGluInformeLabNivel2.html\"><span title=\"Codes:{http://loinc.org 2345-7}\">Glucose [Mass/volume] in Serum or Plasma</span></a></td><td>72 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>82 mg/dL - 117 mg/dL</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2026-06-19 15:28:00-0300</td></tr><tr><td><a href=\"Observation-ObservationUreaInformeLabNivel2.html\"><span title=\"Codes:{http://loinc.org 3094-0}\">Urea [Mass/volume] in Serum or Plasma</span></a></td><td>24 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>&lt;50 mg/dL</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2026-06-19 15:28:00-0300</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel2</b></p><a name=\"DiagnosticReportInformeLabNivel2\"> </a><a name=\"hcDiagnosticReportInformeLabNivel2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReportLaboratorioSIHCE.html\">Informe de laboratorio SIHCE</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</td></tr><tr><td>Reported</td><td>2026-06-19 16:10:00-0300</td></tr><tr><td>Identifier</td><td> <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0110</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"#hcDiagnosticReportInformeLabNivel2/obs-glu\"><span title=\"Codes:{http://loinc.org 2345-7}\">Glucose [Mass/volume] in Serum or Plasma</span></a></td><td>72 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>82 mg/dL - 117 mg/dL</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></td><td>2026-06-19 15:28:00-0300</td></tr><tr><td><a href=\"#hcDiagnosticReportInformeLabNivel2/obs-ure\"><span title=\"Codes:{http://loinc.org 3094-0}\">Urea [Mass/volume] in Serum or Plasma</span></a></td><td>24 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>&lt;50 mg/dL</td><td>Final, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></td><td>2026-06-19 15:28:00-0300</td></tr></table><hr/><p class=\"res-header-id\"><b>Observation #obs-glu</b></p><a name=\"DiagnosticReportInformeLabNivel2/obs-glu\"> </a><a name=\"hcDiagnosticReportInformeLabNivel2/obs-glu\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLaboratorioSIHCE.html\">Observación de laboratorio SIHCE</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 2345-7}\">Glucose [Mass/volume] in Serum or Plasma</span></p><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>effective</b>: 2026-06-19 15:28:00-0300</p><p><b>value</b>: 72 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}\">Low</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>82 mg/dL</td><td>117 mg/dL</td></tr></table><hr/><p class=\"res-header-id\"><b>Observation #obs-ure</b></p><a name=\"DiagnosticReportInformeLabNivel2/obs-ure\"> </a><a name=\"hcDiagnosticReportInformeLabNivel2/obs-ure\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLaboratorioSIHCE.html\">Observación de laboratorio SIHCE</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 3094-0}\">Urea [Mass/volume] in Serum or Plasma</span></p><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>effective</b>: 2026-06-19 15:28:00-0300</p><p><b>value</b>: 24 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>High</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg/dL</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
+  fhir:contained ( [
+     a fhir:Observation ;
+     fhir:id [ fhir:v "obs-glu" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"^^xsd:anyURI ;
+         fhir:l <http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE>
+       ] )
+     ] ;
+     fhir:status [ fhir:v "final" ] ;
+     fhir:category ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+         ] ;
+         fhir:code [ fhir:v "laboratory" ] ;
+         fhir:display [ fhir:v "Laboratory" ]
+       ] )
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:2345-7 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "2345-7" ] ;
+         fhir:display [ fhir:v "Glucose [Mass/volume] in Serum or Plasma" ]
+       ] )
+     ] ;
+     fhir:subject [
+       fhir:l <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
+       fhir:reference [ fhir:v "Patient/PersonaSIHCEMin" ]
+     ] ;
+     fhir:effective [
+       a fhir:DateTime ;
+       fhir:v "2026-06-19T15:28:00-03:00"^^xsd:dateTime
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "72"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dL" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mg/dL" ]
+     ] ;
+     fhir:interpretation ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
+         ] ;
+         fhir:code [ fhir:v "L" ] ;
+         fhir:display [ fhir:v "Low" ]
+       ] )
+     ] ) ;
+     fhir:referenceRange ( [
+       fhir:low [
+         fhir:value [ fhir:v "82"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg/dL" ]
+       ] ;
+       fhir:high [
+         fhir:value [ fhir:v "117"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg/dL" ]
+       ]
+     ] )
+  ] [
+     a fhir:Observation ;
+     fhir:id [ fhir:v "obs-ure" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"^^xsd:anyURI ;
+         fhir:l <http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE>
+       ] )
+     ] ;
+     fhir:status [ fhir:v "final" ] ;
+     fhir:category ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+         ] ;
+         fhir:code [ fhir:v "laboratory" ] ;
+         fhir:display [ fhir:v "Laboratory" ]
+       ] )
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:3094-0 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "3094-0" ] ;
+         fhir:display [ fhir:v "Urea [Mass/volume] in Serum or Plasma" ]
+       ] )
+     ] ;
+     fhir:subject [
+       fhir:l <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
+       fhir:reference [ fhir:v "Patient/PersonaSIHCEMin" ]
+     ] ;
+     fhir:effective [
+       a fhir:DateTime ;
+       fhir:v "2026-06-19T15:28:00-03:00"^^xsd:dateTime
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "24"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dL" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mg/dL" ]
+     ] ;
+     fhir:interpretation ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation>
+         ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "Normal" ]
+       ] )
+     ] ) ;
+     fhir:referenceRange ( [
+       fhir:high [
+         fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg/dL" ]
+       ]
+     ] )
+  ] ) ; # 
   fhir:identifier ( [
      fhir:system [
        fhir:v "http://laboratorio.ejemplo.gob.ar/informe"^^xsd:anyURI ;
@@ -50,16 +185,16 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <http://sihce.gob.ar/Patient/987654321> ;
-     fhir:reference [ fhir:v "Patient/987654321" ]
+     fhir:l <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
+     fhir:reference [ fhir:v "Patient/PersonaSIHCEMin" ]
   ] ; # 
   fhir:issued [ fhir:v "2026-06-19T16:10:00-03:00"^^xsd:dateTime] ; # 
   fhir:result ( [
-     fhir:l <http://sihce.gob.ar/Observation/ObservationGluInformeLabNivel2> ;
-     fhir:reference [ fhir:v "Observation/ObservationGluInformeLabNivel2" ]
+     fhir:l <#obs-glu> ;
+     fhir:reference [ fhir:v "#obs-glu" ]
   ] [
-     fhir:l <http://sihce.gob.ar/Observation/ObservationUreaInformeLabNivel2> ;
-     fhir:reference [ fhir:v "Observation/ObservationUreaInformeLabNivel2" ]
+     fhir:l <#obs-ure> ;
+     fhir:reference [ fhir:v "#obs-ure" ]
   ] ) ; # 
   fhir:presentedForm ( [
      fhir:contentType [ fhir:v "application/pdf" ] ;

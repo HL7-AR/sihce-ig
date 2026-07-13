@@ -12,7 +12,7 @@ Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLabo
 
 | | |
 | :--- | :--- |
-| Subject | Unable to get Patient Details |
+| Subject | Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, )) |
 | Reported | 2026-06-19 15:55:00-0300 |
 | Performer | [Organization Laboratorio Central Ejemplo](Organization-lab-central-ejemplo.md) |
 | Identifier | `http://laboratorio.ejemplo.gob.ar/informe`/LAB-2026-0042 |
@@ -50,7 +50,7 @@ Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLabo
     }]
   },
   "subject" : {
-    "reference" : "Patient/987654321"
+    "reference" : "Patient/PersonaSIHCEMin"
   },
   "issued" : "2026-06-19T15:55:00-03:00",
   "performer" : [{

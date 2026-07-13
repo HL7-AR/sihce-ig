@@ -7,7 +7,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceInformeLabNivel2</b></p><a name=\"DocumentReferenceInformeLabNivel2\"> </a><a name=\"hcDocumentReferenceInformeLabNivel2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReferenceSIHCE.html\">Referencia a documento clínico SIHCE</a></p></div><p><b>identifier</b>: <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0110</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span></p><p><b>subject</b>: <a href=\"Patient/987654321\">Patient/987654321</a></p><p><b>date</b>: 2026-06-19 16:10:00-0300</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0110\">https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0110</a></td></tr></table></blockquote></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceInformeLabNivel2</b></p><a name=\"DocumentReferenceInformeLabNivel2\"> </a><a name=\"hcDocumentReferenceInformeLabNivel2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReferenceSIHCE.html\">Referencia a documento clínico SIHCE</a></p></div><p><b>identifier</b>: <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0110</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span></p><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>date</b>: 2026-06-19 16:10:00-0300</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0110\">https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0110</a></td></tr></table></blockquote></div>"
   },
   "identifier" : [{
     "system" : "http://laboratorio.ejemplo.gob.ar/informe",
@@ -22,7 +22,7 @@
     }]
   },
   "subject" : {
-    "reference" : "Patient/987654321"
+    "reference" : "Patient/PersonaSIHCEMin"
   },
   "date" : "2026-06-19T16:10:00-03:00",
   "content" : [{

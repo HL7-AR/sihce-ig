@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="sihce-epicrisis-diagnosis-code-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-epicrisis-diagnosis-code-vs</b></p><a name="sihce-epicrisis-diagnosis-code-vs"> </a><a name="hcsihce-epicrisis-diagnosis-code-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://tx.fhir.org/r5"><code>http://hl7.org/fhir/sid/icd-10</code></a><span style="opacity: 0.5" title="Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used"> version ⏿2019-covid-expanded</span></li><li>Include all codes defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-epicrisis-diagnosis-code-vs</b></p><a name="sihce-epicrisis-diagnosis-code-vs"> </a><a name="hcsihce-epicrisis-diagnosis-code-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://tx.fhir.org/r5"><code>http://hl7.org/fhir/sid/icd-10</code></a><span style="opacity: 0.5" title="Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used"> version ⏿2019-covid-expanded</span> where code  = <a href="http://tx.fhir.org/r5/ValueSet/icd10-2019#icd10-2019-J18.469">J18.9</a></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 233604007</li></ul></div>
   </text>
   <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"/>
   <version value="1.3.0"/>
@@ -11,7 +11,7 @@
   <title value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-06-26T18:01:23-03:00"/>
+  <date value="2026-07-13T17:31:20-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -20,13 +20,23 @@
       <value value="https://github.com/diegokaminker/sihce-ig"/>
     </telecom>
   </contact>
-  <description value="Códigos de Condition en secciones codificadas de epicrisis (nivel 3)."/>
+  <description value="Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación."/>
   <compose>
     <include>
       <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <filter>
+        <property value="code"/>
+        <op value="="/>
+        <value value="J18.9"/>
+      </filter>
     </include>
     <include>
       <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="code"/>
+        <op value="="/>
+        <value value="233604007"/>
+      </filter>
     </include>
   </compose>
 </ValueSet>

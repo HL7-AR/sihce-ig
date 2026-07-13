@@ -39,15 +39,15 @@
     "sources" : ["2.16.840.1.113883.4.642.3.21"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
     "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE",
     "StructureDefinition-parametros-update-sdm-sihce.html" : "Parametros Update SDM SIHCE",
-    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
+    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
     "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE",
-    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE"
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -65,9 +65,9 @@
     "2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
+    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
     "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE",
-    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE"
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -117,8 +117,8 @@
     "2.16.840.1.113883.4.642.2.115"],
     "uses" : {
     },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
-    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE"
+    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
+    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -136,8 +136,8 @@
     "2.16.840.1.113883.4.642.2.120"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -155,8 +155,8 @@
     "2.16.840.1.113883.4.642.3.241"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -410,11 +410,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
-    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
-    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE"
+    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
+    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -428,11 +428,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
-    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
-    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE"
+    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
+    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -448,15 +448,15 @@
     "2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
     "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE",
     "StructureDefinition-parametros-update-sdm-sihce.html" : "Parametros Update SDM SIHCE",
-    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
+    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
     "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE",
-    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE"
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -791,8 +791,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.3275"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -859,9 +859,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
     "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-label-examples",
@@ -901,8 +901,8 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/mimetypes"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE"
+    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
@@ -910,7 +910,7 @@
     "status" : "draft",
     "name" : "SIHCEEpicrisisDiagnosisCodeVS",
     "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
-    "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3).",
+    "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.",
     "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"],
     "uses" : {
     },
@@ -961,8 +961,8 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes",

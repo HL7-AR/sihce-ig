@@ -6,8 +6,104 @@
     <profile value="http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel2</b></p><a name="DiagnosticReportInformeLabNivel2"> </a><a name="hcDiagnosticReportInformeLabNivel2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">Informe de laboratorio SIHCE</a></p></div><h2><span title="Codes:{http://loinc.org 11502-2}">Laboratory report</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td>Unable to get Patient Details</td></tr><tr><td>Reported</td><td>2026-06-19 16:10:00-0300</td></tr><tr><td>Identifier</td><td> <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0110</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href="Observation-ObservationGluInformeLabNivel2.html"><span title="Codes:{http://loinc.org 2345-7}">Glucose [Mass/volume] in Serum or Plasma</span></a></td><td>72 mg/dL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>82 mg/dL - 117 mg/dL</td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}">Low</span></td><td>2026-06-19 15:28:00-0300</td></tr><tr><td><a href="Observation-ObservationUreaInformeLabNivel2.html"><span title="Codes:{http://loinc.org 3094-0}">Urea [Mass/volume] in Serum or Plasma</span></a></td><td>24 mg/dL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>&lt;50 mg/dL</td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td><td>2026-06-19 15:28:00-0300</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel2</b></p><a name="DiagnosticReportInformeLabNivel2"> </a><a name="hcDiagnosticReportInformeLabNivel2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">Informe de laboratorio SIHCE</a></p></div><h2><span title="Codes:{http://loinc.org 11502-2}">Laboratory report</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td>Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</td></tr><tr><td>Reported</td><td>2026-06-19 16:10:00-0300</td></tr><tr><td>Identifier</td><td> <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0110</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Reference Range</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href="#hcDiagnosticReportInformeLabNivel2/obs-glu"><span title="Codes:{http://loinc.org 2345-7}">Glucose [Mass/volume] in Serum or Plasma</span></a></td><td>72 mg/dL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>82 mg/dL - 117 mg/dL</td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}">Low</span></td><td>2026-06-19 15:28:00-0300</td></tr><tr><td><a href="#hcDiagnosticReportInformeLabNivel2/obs-ure"><span title="Codes:{http://loinc.org 3094-0}">Urea [Mass/volume] in Serum or Plasma</span></a></td><td>24 mg/dL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>&lt;50 mg/dL</td><td>Final, <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></td><td>2026-06-19 15:28:00-0300</td></tr></table><hr/><p class="res-header-id"><b>Observation #obs-glu</b></p><a name="DiagnosticReportInformeLabNivel2/obs-glu"> </a><a name="hcDiagnosticReportInformeLabNivel2/obs-glu"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLaboratorioSIHCE.html">Observación de laboratorio SIHCE</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 2345-7}">Glucose [Mass/volume] in Serum or Plasma</span></p><p><b>subject</b>: <a href="Patient-PersonaSIHCEMin.html">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>effective</b>: 2026-06-19 15:28:00-0300</p><p><b>value</b>: 72 mg/dL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dL = 'mg/dL')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation L}">Low</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Low</b></td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>82 mg/dL</td><td>117 mg/dL</td></tr></table><hr/><p class="res-header-id"><b>Observation #obs-ure</b></p><a name="DiagnosticReportInformeLabNivel2/obs-ure"> </a><a name="hcDiagnosticReportInformeLabNivel2/obs-ure"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationLaboratorioSIHCE.html">Observación de laboratorio SIHCE</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 3094-0}">Urea [Mass/volume] in Serum or Plasma</span></p><p><b>subject</b>: <a href="Patient-PersonaSIHCEMin.html">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>effective</b>: 2026-06-19 15:28:00-0300</p><p><b>value</b>: 24 mg/dL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg/dL = 'mg/dL')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}">Normal</span></p><h3>ReferenceRanges</h3><table class="grid"><tr><td style="display: none">-</td><td><b>High</b></td></tr><tr><td style="display: none">*</td><td>50 mg/dL</td></tr></table></div>
   </text>
+  <contained>
+    <Observation>
+      <id value="obs-glu"/>
+      <meta>
+        <profile value="http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"/>
+      </meta>
+      <status value="final"/>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="2345-7"/>
+          <display value="Glucose [Mass/volume] in Serum or Plasma"/>
+        </coding>
+      </code>
+      <subject>
+        <reference value="Patient/PersonaSIHCEMin"/>
+      </subject>
+      <effectiveDateTime value="2026-06-19T15:28:00-03:00"/>
+      <valueQuantity>
+        <value value="72"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="L"/>
+          <display value="Low"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <low>
+          <value value="82"/>
+          <unit value="mg/dL"/>
+        </low>
+        <high>
+          <value value="117"/>
+          <unit value="mg/dL"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
+  <contained>
+    <Observation>
+      <id value="obs-ure"/>
+      <meta>
+        <profile value="http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"/>
+      </meta>
+      <status value="final"/>
+      <category>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+          <code value="laboratory"/>
+          <display value="Laboratory"/>
+        </coding>
+      </category>
+      <code>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="3094-0"/>
+          <display value="Urea [Mass/volume] in Serum or Plasma"/>
+        </coding>
+      </code>
+      <subject>
+        <reference value="Patient/PersonaSIHCEMin"/>
+      </subject>
+      <effectiveDateTime value="2026-06-19T15:28:00-03:00"/>
+      <valueQuantity>
+        <value value="24"/>
+        <unit value="mg/dL"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg/dL"/>
+      </valueQuantity>
+      <interpretation>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+          <code value="N"/>
+          <display value="Normal"/>
+        </coding>
+      </interpretation>
+      <referenceRange>
+        <high>
+          <value value="50"/>
+          <unit value="mg/dL"/>
+        </high>
+      </referenceRange>
+    </Observation>
+  </contained>
   <identifier>
     <system value="http://laboratorio.ejemplo.gob.ar/informe"/>
     <value value="LAB-2026-0110"/>
@@ -28,14 +124,14 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/987654321"/>
+    <reference value="Patient/PersonaSIHCEMin"/>
   </subject>
   <issued value="2026-06-19T16:10:00-03:00"/>
   <result>
-    <reference value="Observation/ObservationGluInformeLabNivel2"/>
+    <reference value="#obs-glu"/>
   </result>
   <result>
-    <reference value="Observation/ObservationUreaInformeLabNivel2"/>
+    <reference value="#obs-ure"/>
   </result>
   <presentedForm>
     <contentType value="application/pdf"/>

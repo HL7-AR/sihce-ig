@@ -17,7 +17,6 @@ Resultado analítico codificado (LOINC) asociado a un informe de laboratorio niv
 **Usages:**
 
 * Refer to this Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
-* Examples for this Profile: [Observation/ObservationGluInformeLabNivel2](Observation-ObservationGluInformeLabNivel2.md) and [Observation/ObservationUreaInformeLabNivel2](Observation-ObservationUreaInformeLabNivel2.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/ObservationLaboratorioSIHCE)
 

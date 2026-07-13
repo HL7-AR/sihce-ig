@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/ValueSet/sihce-epicrisis-section | *Version*:1.3.0 |
-| Draft as of 2026-06-26 | *Computable Name*:SIHCEEpicrisisSectionVS |
+| Draft as of 2026-07-13 | *Computable Name*:SIHCEEpicrisisSectionVS |
 
  
 Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales). 
@@ -23,6 +23,8 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
  
 
 ### Expansion
+
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -42,7 +44,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Secciones LOINC de epicrisis SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-26T18:01:23-03:00",
+  "date" : "2026-07-13T17:31:20-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

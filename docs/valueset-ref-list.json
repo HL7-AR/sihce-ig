@@ -49,8 +49,8 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/mimetypes"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE"
+    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
@@ -58,7 +58,7 @@
     "status" : "draft",
     "name" : "SIHCEEpicrisisDiagnosisCodeVS",
     "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
-    "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3).",
+    "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.",
     "systems" : ["http://hl7.org/fhir/sid/icd-10", "http://snomed.info/sct"],
     "uses" : {
     },

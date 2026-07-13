@@ -14,7 +14,7 @@ Profile: [Referencia a documento clínico SIHCE](StructureDefinition-DocumentRef
 
 **type**: Discharge summary
 
-**subject**: [Patient/987654321](Patient/987654321)
+**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))](Patient-PersonaSIHCEMin.md)
 
 **date**: 2026-06-08 16:00:00-0300
 
@@ -52,7 +52,7 @@ Profile: [Referencia a documento clínico SIHCE](StructureDefinition-DocumentRef
     }]
   },
   "subject" : {
-    "reference" : "Patient/987654321"
+    "reference" : "Patient/PersonaSIHCEMin"
   },
   "date" : "2026-06-08T16:00:00-03:00",
   "content" : [{

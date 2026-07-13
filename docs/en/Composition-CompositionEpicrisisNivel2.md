@@ -38,7 +38,7 @@ Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisis
     }]
   },
   "subject" : [{
-    "reference" : "Patient/987654321"
+    "reference" : "Patient/PersonaSIHCEMin"
   }],
   "date" : "2026-06-08T16:00:00-03:00",
   "author" : [{

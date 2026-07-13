@@ -227,7 +227,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>Actualización de identificador local</td><td>POST</td><td><code>/Patient/$patch-identifier</code></td><td>Actualiza el identificador local usando <code>Parameters</code>.</td></tr>
     <tr><td>Actualización de SDM</td><td>POST</td><td><code>/Patient/$update-sdm</code></td><td>Actualiza datos mínimos del paciente mediante operación FHIR personalizada.</td></tr>
     <tr><td>Registro de documento clínico</td><td>POST</td><td><code>/DocumentReference</code></td><td>Indexa un documento clínico (p. ej. epicrisis) conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>.</td></tr>
-    <tr><td>Consulta de documentos clínicos</td><td>GET</td><td><code>/DocumentReference?patient={idPersonaGlobal}&amp;type=&amp;date=&amp;status=</code></td><td>Busca referencias documentales por paciente SIHCE y filtros opcionales.</td></tr>
+    <tr><td>Consulta de documentos clínicos</td><td>GET</td><td><code>/DocumentReference?patient.identifier={system|value}&amp;type=&amp;date=&amp;status=</code></td><td>Busca referencias documentales por identificador de paciente y filtros opcionales.</td></tr>
   </tbody>
 </table>
 
@@ -576,11 +576,38 @@ Content-Type: application/fhir+json
 <p><a id="op-documento-registro"></a></p>
 <h3 id="registro-de-documento-clínico-documentreference">Registro de documento clínico (DocumentReference)</h3>
 
-<p>Un dominio emisor registra en SIHCE los <strong>metadatos</strong> del documento mediante <code class="language-plaintext highlighter-rouge">POST /DocumentReference</code>. El contenido (PDF, XML o <code class="language-plaintext highlighter-rouge">Composition</code>) permanece en una <strong>URL del dominio</strong> referenciada en <code class="language-plaintext highlighter-rouge">content.attachment.url</code>. SIHCE <strong>no</strong> consume esas URLs vía X-BA; otros dominios sí pueden hacerlo.</p>
+<p>Un dominio emisor registra en SIHCE los <strong>metadatos</strong> del documento mediante <code class="language-plaintext highlighter-rouge">POST /DocumentReference</code> (capacidad de <strong>registro documental</strong> de SIHCE). El intercambio transita el <strong>Canal X-BA</strong>. El contenido clínico <strong>no</strong> se envía en el cuerpo del POST: permanece en el dominio emisor y se referencia con <code class="language-plaintext highlighter-rouge">content.attachment.url</code>. SIHCE <strong>no</strong> consume esas URLs; otros dominios sí pueden hacerlo, también vía Canal X-BA.</p>
 
-<p>Epicrisis es un caso particular con tipo LOINC <strong><code class="language-plaintext highlighter-rouge">18842-5</code></strong> (<em>Discharge summary</em>). Ver perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a> y <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a> para niveles 2 y 3.</p>
+<p><strong>Modelo único:</strong> todo documento clínico indexado en SIHCE es un <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>. Los tipos se distinguen por LOINC en <code class="language-plaintext highlighter-rouge">DocumentReference.type</code>:</p>
 
-<p>El <strong>informe de laboratorio</strong> usa LOINC <strong><code class="language-plaintext highlighter-rouge">11502-2</code></strong> (<em>Laboratory report</em>). La URL en <code class="language-plaintext highlighter-rouge">content.attachment.url</code> apunta a un <a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">DiagnosticReportLaboratorioSIHCE</a> en el dominio emisor; el PDF va en <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code> y, en nivel 2, las observaciones codificadas en <code class="language-plaintext highlighter-rouge">result</code>.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>LOINC</th>
+      <th>Qué hay detrás de <code class="language-plaintext highlighter-rouge">content.attachment.url</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Documento genérico / índice</td>
+      <td>según tipo</td>
+      <td>Recurso o binario en el dominio</td>
+    </tr>
+    <tr>
+      <td><strong>Epicrisis</strong> (caso especial)</td>
+      <td><code class="language-plaintext highlighter-rouge">18842-5</code></td>
+      <td>Nivel 1: Binary PDF/XML. Niveles 2–3: <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a></td>
+    </tr>
+    <tr>
+      <td><strong>Informe de laboratorio</strong> (caso especial)</td>
+      <td><code class="language-plaintext highlighter-rouge">11502-2</code></td>
+      <td><a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">DiagnosticReportLaboratorioSIHCE</a> (<code class="language-plaintext highlighter-rouge">contentType</code> = <code class="language-plaintext highlighter-rouge">application/fhir+json</code>). El PDF va en <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code>; en nivel 2, las observaciones en <code class="language-plaintext highlighter-rouge">result</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>El POST de abajo es un ejemplo de epicrisis nivel 1 (URL a PDF). Para laboratorio, el mismo <code class="language-plaintext highlighter-rouge">DocumentReference</code> usa <code class="language-plaintext highlighter-rouge">type</code> = <code class="language-plaintext highlighter-rouge">11502-2</code> y <code class="language-plaintext highlighter-rouge">content.attachment.url</code> apunta al <strong>DiagnosticReport</strong> (ver <a href="DocumentReference-DocumentReferenceInformeLabNivel1.html">DocumentReferenceInformeLabNivel1</a>).</p>
 
 <h4 id="request-1">Request</h4>
 
@@ -602,7 +629,7 @@ Content-Type: application/fhir+json
     </span><span class="p">}]</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/987654321"</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
     </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hospitalitaliano.org.ar/fhir/documento"</span><span class="p">,</span><span class="w">
@@ -626,6 +653,39 @@ Content-Type: application/fhir+json
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
+<p>Ejemplo equivalente para <strong>informe de laboratorio</strong> (índice → DiagnosticReport por URL):</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11502-2"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Laboratory report"</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://laboratorio.ejemplo.gob.ar/informe"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LAB-2026-0042"</span><span class="w">
+  </span><span class="p">}],</span><span class="w">
+  </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-06-19T15:55:00-03:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0042"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/fhir+json"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Informe LAB-2026-0042"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
 <table>
   <thead>
     <tr>
@@ -635,8 +695,12 @@ Content-Type: application/fhir+json
   </thead>
   <tbody>
     <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>LOINC del documento (<code class="language-plaintext highlighter-rouge">18842-5</code> epicrisis, <code class="language-plaintext highlighter-rouge">11502-2</code> laboratorio, u otros del <a href="ValueSet-sihce-clinical-document-type-vs.html">ValueSet</a>).</td>
+    </tr>
+    <tr>
       <td><code class="language-plaintext highlighter-rouge">subject.reference</code></td>
-      <td><code class="language-plaintext highlighter-rouge">Patient/{idPersonaGlobal}</code> — identificador SIHCE (<a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>).</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient/{idPersonaGlobal}</code> — identificador SIHCE (<a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>). En los ejemplos publicados se usa <a href="Patient-PersonaSIHCEMin.html">PersonaSIHCEMin</a>.</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
@@ -644,11 +708,11 @@ Content-Type: application/fhir+json
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content.attachment.url</code></td>
-      <td>URL absoluta al <strong>Binary</strong> (epicrisis nivel 1), <strong>Composition</strong> (epicrisis 2–3) o <strong>DiagnosticReport</strong> (informe laboratorio) en el dominio emisor.</td>
+      <td>URL absoluta al contenido en el dominio: Binary/Composition (epicrisis) o <strong>DiagnosticReport</strong> (laboratorio).</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content.attachment.contentType</code></td>
-      <td><code class="language-plaintext highlighter-rouge">application/pdf</code>, <code class="language-plaintext highlighter-rouge">application/xml</code> (binario), <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition o DiagnosticReport).</td>
+      <td><code class="language-plaintext highlighter-rouge">application/pdf</code> / <code class="language-plaintext highlighter-rouge">application/xml</code> (binario) o <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition o DiagnosticReport).</td>
     </tr>
   </tbody>
 </table>
@@ -672,7 +736,7 @@ Content-Type: application/fhir+json
 <p><a id="op-documento-consulta"></a></p>
 <h3 id="consulta-de-documentos-clínicos">Consulta de documentos clínicos</h3>
 
-<p>Búsqueda FHIR R5 sobre <code class="language-plaintext highlighter-rouge">DocumentReference</code> (<a href="https://hl7.org/fhir/R5/documentreference.html#search">search</a>).</p>
+<p>Búsqueda FHIR R5 sobre <code class="language-plaintext highlighter-rouge">DocumentReference</code> (<a href="https://hl7.org/fhir/R5/documentreference.html#search">search</a>). El índice lo responde la capacidad de <strong>registro documental</strong> de SIHCE. La solicitud viaja por el <strong>Canal X-BA</strong> (capa de seguridad); no hay un “federador” aparte para documentos.</p>
 
 <h4 id="parámetros-de-búsqueda-1">Parámetros de búsqueda</h4>
 
@@ -687,10 +751,10 @@ Content-Type: application/fhir+json
   </thead>
   <tbody>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">patient</code></td>
+      <td><code class="language-plaintext highlighter-rouge">patient.identifier</code></td>
       <td>Requerido</td>
-      <td>reference</td>
-      <td><code class="language-plaintext highlighter-rouge">idPersonaGlobal</code> como id lógico: <code class="language-plaintext highlighter-rouge">Patient/{idPersonaGlobal}</code>. Ver <a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>.</td>
+      <td>token (<code class="language-plaintext highlighter-rouge">system\|value</code>)</td>
+      <td>Identificador del paciente referenciado en <code class="language-plaintext highlighter-rouge">DocumentReference.subject</code> (p. ej. <code class="language-plaintext highlighter-rouge">http://sihce.gob.ar/persona\|{idPersonaGlobal}</code> o DNI RENAPER). Ver <a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a> y <a href="NamingSystem-renaper-dni.html">NamingSystem renaper-dni</a>.</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">type</code></td>
@@ -715,12 +779,12 @@ Content-Type: application/fhir+json
 
 <h4 id="request-ejemplo-3">Request (ejemplo)</h4>
 
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /DocumentReference?patient=987654321&amp;type=http://loinc.org|18842-5&amp;status=current
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /DocumentReference?patient.identifier=http://sihce.gob.ar/persona|987654321&amp;type=http://loinc.org|18842-5&amp;status=current
 </span></code></pre></div></div>
 
 <h4 id="respuesta-esperada-1">Respuesta esperada</h4>
 
-<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="https://hl7.org/fhir/R5/bundle.html">Bundle</a> tipo <code class="language-plaintext highlighter-rouge">searchset</code> de recursos <code class="language-plaintext highlighter-rouge">DocumentReference</code>. El consumidor obtiene el contenido siguiendo <code class="language-plaintext highlighter-rouge">content.attachment.url</code> hacia el dominio emisor (vía X-BA).</p>
+<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="https://hl7.org/fhir/R5/bundle.html">Bundle</a> tipo <code class="language-plaintext highlighter-rouge">searchset</code> de recursos <code class="language-plaintext highlighter-rouge">DocumentReference</code>. Para obtener el contenido clínico (Binary, Composition o DiagnosticReport), el consumidor sigue <code class="language-plaintext highlighter-rouge">content.attachment.url</code> hacia el <strong>dominio emisor</strong>, también a través del <strong>Canal X-BA</strong>.</p>
 
 
 
@@ -747,7 +811,7 @@ Content-Type: application/fhir+json
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
           Package SIHCE.fhir.core#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Fri, Jun 26, 2026 18:01-0300">2026-06-26</span>
+          Generated <span title="Mon, Jul 13, 2026 17:31-0300">2026-07-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
