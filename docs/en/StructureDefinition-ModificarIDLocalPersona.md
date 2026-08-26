@@ -1,4 +1,4 @@
-# Modelo lógico ModificarIDLocalPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R5 v1.3.0
+# Modelo lógico ModificarIDLocalPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R5 v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona | *Version*:1.3.0 |
-| Draft as of 2026-07-13 | *Computable Name*:ModificarIDLocalPersona |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona | *Version*:1.4.0 |
+| Draft as of 2026-08-26 | *Computable Name*:ModificarIDLocalPersona |
 
  
 Modificación del identificador local de una persona federada. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarIDLocalP
   "resourceType" : "StructureDefinition",
   "id" : "ModificarIDLocalPersona",
   "url" : "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "ModificarIDLocalPersona",
   "title" : "Modelo lógico ModificarIDLocalPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-07-13T17:31:20-03:00",
+  "date" : "2026-08-26T18:52:04-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

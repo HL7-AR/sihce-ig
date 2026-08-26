@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/CodeSystem/sihce-privacy-level> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sihce-privacy-level"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-privacy-level</b></p><a name=\"sihce-privacy-level\"> </a><a name=\"hcsihce-privacy-level\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/privacy-level</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">normal<a name=\"sihce-privacy-level-normal\"> </a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td></tr><tr><td style=\"white-space:nowrap\">confidential<a name=\"sihce-privacy-level-confidential\"> </a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://sihce.gob.ar/CodeSystem/privacy-level"^^xsd:anyURI ;
+     fhir:l <http://sihce.gob.ar/CodeSystem/privacy-level>
+  ] ; # 
+  fhir:version [ fhir:v "1.4.0"] ; # 
+  fhir:name [ fhir:v "SIHCEPrivacyLevelCS"] ; # 
+  fhir:title [ fhir:v "Niveles de privacidad SIHCE"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-08-26T18:52:04-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SIHCE Development Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "normal" ] ;
+     fhir:display [ fhir:v "Normal" ] ;
+     fhir:definition [ fhir:v "Acceso a documentos sin etiqueta de confidencialidad elevada." ]
+  ] [
+     fhir:code [ fhir:v "confidential" ] ;
+     fhir:display [ fhir:v "Confidencial" ] ;
+     fhir:definition [ fhir:v "Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

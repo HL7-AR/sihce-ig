@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="ConsentOptInGeneralSIHCE"/>
+  <meta>
+    <profile value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Consent ConsentOptInGeneralSIHCE</b></p><a name="ConsentOptInGeneralSIHCE"> </a><a name="hcConsentOptInGeneralSIHCE"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ConsentSIHCE.html">Consentimiento de paciente SIHCE</a></p></div><h2>Participants</h2><table class="grid"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title="Who the consent applies to">Patient</td><td><a href="Patient-PersonaSIHCEMin.html">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></td></tr></table><p>The subject has given their consent.</p></div>
+  </text>
+  <status value="active"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consent-category"/>
+      <code value="healthcare"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/PersonaSIHCEMin"/>
+  </subject>
+  <date value="2026-08-26"/>
+  <decision value="permit"/>
+</Consent>

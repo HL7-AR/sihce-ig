@@ -1,4 +1,4 @@
-# Tipos MIME de contenido documental SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.3.0
+# Tipos MIME de contenido documental SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-document-content-type | *Version*:1.3.0 |
-| Draft as of 2026-07-13 | *Computable Name*:SIHCEDocumentContentTypeVS |
+| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-document-content-type | *Version*:1.4.0 |
+| Draft as of 2026-08-26 | *Computable Name*:SIHCEDocumentContentTypeVS |
 
  
 Formatos admitidos en DocumentReference.content.attachment.contentType. 
@@ -40,12 +40,12 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "sihce-document-content-type-vs",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "SIHCEDocumentContentTypeVS",
   "title" : "Tipos MIME de contenido documental SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-13T17:31:20-03:00",
+  "date" : "2026-08-26T18:52:04-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

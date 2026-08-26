@@ -1,7 +1,15 @@
 {
   "codeSystems" : [{
+    "url" : "http://sihce.gob.ar/CodeSystem/privacy-level",
+    "version" : "1.4.0",
+    "status" : "draft",
+    "name" : "SIHCEPrivacyLevelCS",
+    "title" : "Niveles de privacidad SIHCE",
+    "description" : "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3)."
+  },
+  {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
-    "version" : "1.3.0",
+    "version" : "1.4.0",
     "status" : "draft",
     "name" : "SIHCEFhirCoreElementPaths",
     "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
@@ -9,7 +17,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-    "version" : "1.3.0",
+    "version" : "1.4.0",
     "status" : "draft",
     "name" : "SIHCELogicalOperationElementPaths",
     "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",

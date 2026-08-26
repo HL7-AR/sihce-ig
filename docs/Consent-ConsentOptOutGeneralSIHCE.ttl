@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/Consent/ConsentOptOutGeneralSIHCE> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConsentOptOutGeneralSIHCE"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/StructureDefinition/ConsentSIHCE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Consent ConsentOptOutGeneralSIHCE</b></p><a name=\"ConsentOptOutGeneralSIHCE\"> </a><a name=\"hcConsentOptOutGeneralSIHCE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConsentSIHCE.html\">Consentimiento de paciente SIHCE</a></p></div><h2>Participants</h2><table class=\"grid\"><tr><td><b>Role</b></td><td><b>Details</b></td></tr><tr><td title=\"Who the consent applies to\">Patient</td><td><a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></td></tr></table><p>The subject has NOT given their consent.</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/consent-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/consent-category>
+       ] ;
+       fhir:code [ fhir:v "healthcare" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:l <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
+     fhir:reference [ fhir:v "Patient/PersonaSIHCEMin" ]
+  ] ; # 
+  fhir:date [ fhir:v "2026-08-27"^^xsd:date] ; # 
+  fhir:decision [ fhir:v "deny"] . # 
+
+# -------------------------------------------------------------------------------------
+

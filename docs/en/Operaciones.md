@@ -1,4 +1,4 @@
-# Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.3.0
+# Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.4.0
 
 * [**Table of Contents**](toc.md)
 * **Operaciones**
@@ -30,8 +30,12 @@ En todas las operaciones de la colección se envían estos headers:
 | Alta/Federación de paciente | POST | `/Patient` | Envía un recurso`Patient`conforme al perfil[PatientXBA](StructureDefinition-PatientXBA.md). |
 | Actualización de identificador local | POST | `/Patient/$patch-identifier` | Actualiza el identificador local usando`Parameters`. |
 | Actualización de SDM | POST | `/Patient/$update-sdm` | Actualiza datos mínimos del paciente mediante operación FHIR personalizada. |
-| Registro de documento clínico | POST | `/DocumentReference` | Indexa un documento clínico (p. ej. epicrisis) conforme al perfil[DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md). |
-| Consulta de documentos clínicos | GET | `/DocumentReference?patient.identifier={system|value}&type=&date=&status=` | Busca referencias documentales por identificador de paciente y filtros opcionales. |
+| Registro de documento clínico | POST | `/DocumentReference` | Indexa un documento clínico conforme al perfil[DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md). |
+| Consulta de documentos clínicos | GET | `/DocumentReference?patient.identifier={system|value}&type=&date=&status=` | Lista el índice (URLs temporarias); requiere[Consent](#op-consentimiento)activo. |
+| Canje de URL documental | POST | `/DocumentReference/$get_binary_id` | Obtiene URL real en el emisor y token de acceso al contenido. |
+| Registro de consentimiento | POST | `/Consent` | Registra preferencias de privacidad del paciente ([ConsentSIHCE](StructureDefinition-ConsentSIHCE.md)). |
+| Consulta de consentimiento | GET | `/Consent?subject.identifier={system|value}&status=active` | Consulta el consentimiento vigente del paciente. |
+| Actualización de consentimiento | PUT | `/Consent/{id}` | Nueva versión (opt-out, ampliación por hospital o nivel). |
 
 ### Búsqueda por identificador y género
 
@@ -418,13 +422,21 @@ Ejemplo equivalente para **informe de laboratorio** (índice → DiagnosticRepor
 
 ### Consulta de documentos clínicos
 
-Búsqueda FHIR R5 sobre `DocumentReference` ([search](https://hl7.org/fhir/R5/documentreference.html#search)). El índice lo responde la capacidad de **registro documental** de SIHCE. La solicitud viaja por el **Canal X-BA** (capa de seguridad); no hay un “federador” aparte para documentos.
+Búsqueda FHIR R5 sobre `DocumentReference` ([search](https://hl7.org/fhir/R5/documentreference.html#search)). El índice lo responde la capacidad de **registro documental** de SIHCE. La solicitud viaja por el **Canal X-BA**.
+
+**Prerrequisito:** SIHCE evalúa el [`Consent`](StructureDefinition-ConsentSIHCE.md) activo del paciente antes de devolver resultados. Sin consentimiento → **403 Forbidden**. Ver [Registro de consentimiento](#op-consentimiento).
+
+**Respuesta:** SIHCE **no** devuelve la URL real del emisor en `content.attachment.url`; en su lugar entrega una **URL temporaria opaca** que debe canjearse con [`$get_binary_id`](#op-documento-get-binary-id).
+
+#### Contexto del hospital solicitante
+
+SIHCE identifica al **hospital consumidor** (Organization dentro del dominio autenticado) a partir del contexto de la solicitud autenticada en Canal X-BA — p. ej. identificador de organización en el token o metadatos del cliente. Ese hospital debe coincidir con un `actor` autorizado en el Consent cuando está desplegada la etapa 2 o 3.
 
 #### Parámetros de búsqueda
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| `patient.identifier` | Requerido | token (`system\|value`) | Identificador del paciente referenciado en`DocumentReference.subject`(p. ej.`http://sihce.gob.ar/persona\|{idPersonaGlobal}`o DNI RENAPER). Ver[NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.md)y[NamingSystem renaper-dni](NamingSystem-renaper-dni.md). |
+| `patient.identifier` | Requerido | token (`system\|value`) | Identificador del paciente en`DocumentReference.subject`(p. ej.`http://sihce.gob.ar/persona\|{idPersonaGlobal}`). Ver[NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.md). |
 | `type` | Opcional | token | Tipo LOINC (`\|18842-5`epicrisis,`\|11502-2`informe de laboratorio). |
 | `date` | Opcional | date | Fecha del documento (`DocumentReference.date`). |
 | `status` | Opcional | token | `current`,`superseded`,`entered-in-error`, etc. |
@@ -433,10 +445,191 @@ Búsqueda FHIR R5 sobre `DocumentReference` ([search](https://hl7.org/fhir/R5/do
 
 ```
 GET /DocumentReference?patient.identifier=http://sihce.gob.ar/persona|987654321&type=http://loinc.org|18842-5&status=current
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+Accept: application/fhir+json
+
+```
+
+Claims JWT recomendados para acceso documental (además de autenticación de dominio):
+
+```
+{
+  "patient_identifier": "987654321",
+  "organization_identifier": "hospital-central-88392",
+  "organization_domain": "http://msgc.gcba.gob.ar",
+  "intent_reason": "Tratamiento"
+}
 
 ```
 
 #### Respuesta esperada
 
-`200 OK` con un [Bundle](https://hl7.org/fhir/R5/bundle.html) tipo `searchset` de recursos `DocumentReference`. Para obtener el contenido clínico (Binary, Composition o DiagnosticReport), el consumidor sigue `content.attachment.url` hacia el **dominio emisor**, también a través del **Canal X-BA**.
+`200 OK` con un [Bundle](https://hl7.org/fhir/R5/bundle.html) tipo `searchset`. Cada `DocumentReference` incluye `content.attachment.url` con **URL temporaria** de SIHCE (no la URL del dominio emisor). SIHCE filtra entradas según el nivel de privacidad otorgado al hospital (`normal` / `confidential`).
+
+Fragmento de ejemplo:
+
+```
+{
+  "resourceType": "DocumentReference",
+  "id": "dr-epi-001",
+  "status": "current",
+  "content": [{
+    "attachment": {
+      "contentType": "application/pdf",
+      "url": "https://sihce.ba.ar/r5/opaque/doc-access/a8f3c2e1-9b44-4c1a-b7e0-11aa22bb33cc",
+      "title": "Epicrisis (acceso mediado)"
+    }
+  }]
+}
+
+```
+
+#### Errores
+
+| | |
+| :--- | :--- |
+| Sin Consent activo | 403 |
+| Opt-out general | 403 |
+| Hospital no autorizado (etapa 2/3) | 403 |
+| Dominio no autenticado | 401 |
+
+SIHCE genera **`AuditEvent`** por cada consulta (éxito o denegación).
+
+### Canje de URL documental (DocumentReference/$get_binary_id)
+
+Intercambia la URL temporaria recibida en el índice por la **URL real** en el dominio emisor y un **token de acceso** al documento. El contenido clínico **no** transita por SIHCE; el consumidor usa la URL y el token en un GET al **dominio emisor** (Fase C en [Casos de Uso](CasosDeUso.md)).
+
+SIHCE **revalida** Consent y nivel de privacidad vs `DocumentReference.securityLabel` antes de emitir el token.
+
+#### Request
+
+```
+POST /DocumentReference/$get_binary_id
+Content-Type: application/fhir+json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+
+```
+
+Perfil de entrada: [ParametrosGetBinaryIdSIHCE](StructureDefinition-parametros-get-binary-id-sihce.md).
+
+```
+{
+  "resourceType": "Parameters",
+  "meta": {
+    "profile": ["http://sihce.gob.ar/StructureDefinition/parametros-get-binary-id-sihce"]
+  },
+  "parameter": [{
+    "name": "url",
+    "valueUrl": "https://sihce.ba.ar/r5/opaque/doc-access/a8f3c2e1-9b44-4c1a-b7e0-11aa22bb33cc"
+  }]
+}
+
+```
+
+#### Respuesta (éxito)
+
+`200 OK`. Perfil de salida: [ParametrosGetBinaryIdResponseSIHCE](StructureDefinition-parametros-get-binary-id-response-sihce.md).
+
+```
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    { "name": "url", "valueUrl": "https://emisor.hospitalcentral.org/fhir/Binary/bin-epi-77821" },
+    { "name": "access_token", "valueString": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9..." },
+    { "name": "expires_in", "valueInteger": 300 }
+  ]
+}
+
+```
+
+#### Obtención del contenido (dominio emisor)
+
+```
+GET /Binary/bin-epi-77821
+Host: emisor.hospitalcentral.org
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+
+```
+
+El emisor valida el token emitido por SIHCE y entrega el recurso (`Binary`, `Composition`, `DiagnosticReport`, etc.) o un `OperationOutcome`.
+
+### Registro de consentimiento (POST /Consent)
+
+Cualquier **dominio autenticado** puede registrar las preferencias de privacidad del paciente. No se exige rol de profesional clínico (puede registrar personal administrativo). Cuerpo conforme al perfil [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md).
+
+**Default operativo:** sin Consent activo, SIHCE **deniega** el acceso al índice documental.
+
+#### Etapas de madurez
+
+| | | |
+| :--- | :--- | :--- |
+| 1 | Opt-in / opt-out**general**(`decision`=`permit`|`deny`) | MVP |
+| 2 | Opt-in por**hospital**(`provision`+`actor`Organization) | Incremento |
+| 3 | Hospital +**nivel de privacidad**(`provision.securityLabel`:`normal`|`confidential`,**obligatorio y explícito**) | Completo |
+
+**Reglas:**
+
+* Opt-out general (`decision` = `deny`) **anula** autorizaciones previas.
+* Un opt-in posterior **solo habilita** lo declarado en la nueva versión.
+* Vigencia hasta **revocación**; cada PUT/POST crea **versión** (`meta.versionId`).
+* Hospital = `Organization` **dentro** del dominio: `identifier.system` = `{uri-dominio}/Organization`, `identifier.value` = id local. Ver [NamingSystem Organization hospital MSGC (ejemplo)](NamingSystem-NamingSystemOrganizationHospitalMsgc.md).
+
+#### Niveles de privacidad (etapa 3)
+
+| | |
+| :--- | :--- |
+| `normal` | Sin etiqueta confidential elevada |
+| `confidential` | Normal**más**documentos con`DocumentReference.securityLabel`confidential |
+
+Terminología: [CodeSystem privacy-level](CodeSystem-sihce-privacy-level.md), [ValueSet sihce-privacy-level](ValueSet-sihce-privacy-level-vs.md).
+
+#### Request — etapa 1 (opt-in general)
+
+```
+POST /Consent
+Content-Type: application/fhir+json
+
+```
+
+```
+{
+  "resourceType": "Consent",
+  "meta": { "profile": ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"] },
+  "status": "active",
+  "category": [{ "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/consent-category", "code": "healthcare" }] }],
+  "subject": { "reference": "Patient/PersonaSIHCEMin" },
+  "date": "2026-08-26",
+  "decision": "permit"
+}
+
+```
+
+#### Request — etapa 3 (hospital + confidential)
+
+Ver [ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfidentialSIHCE.md).
+
+#### Respuesta (éxito)
+
+`201 Created` con cabecera **`Location`** y cuerpo con el `Consent` versionado. SIHCE genera **`AuditEvent`**.
+
+#### Consulta (GET /Consent)
+
+```
+GET /Consent?subject.identifier=http://sihce.gob.ar/persona|987654321&status=active
+
+```
+
+Historial: `GET /Consent/{id}/_history`.
+
+#### Actualización / revocación (PUT /Consent/{id})
+
+Nueva versión del recurso (p. ej. opt-out). Ejemplo: [ConsentOptOutGeneralSIHCE](Consent-ConsentOptOutGeneralSIHCE.md).
+
+#### Ejemplos publicados
+
+* [Consent opt-in general (etapa 1)](Consent-ConsentOptInGeneralSIHCE.md)
+* [Consent opt-out general](Consent-ConsentOptOutGeneralSIHCE.md)
+* [Consent opt-in por hospital (etapa 2)](Consent-ConsentOptInHospitalSIHCE.md)
+* [Consent hospital + nivel normal (etapa 3)](Consent-ConsentOptInHospitalNormalSIHCE.md)
+* [Consent hospital + nivel confidential (etapa 3)](Consent-ConsentOptInHospitalConfidentialSIHCE.md)
 

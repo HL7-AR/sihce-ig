@@ -1,4 +1,4 @@
-# SIHCE.fhir.core#1.3.0: Guía de Implementación SIHCE - FHIR R5(en)
+# SIHCE.fhir.core#1.4.0: Guía de Implementación SIHCE - FHIR R5(en)
 
 ## Pages
 
@@ -17,6 +17,7 @@
 
 * [Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE](en/CodeSystem-sihce-fhir-core-element-paths.md)
 * [Rutas de elementos en modelos lógicos de operación SIHCE](en/CodeSystem-sihce-logical-operation-element-paths.md)
+* [Niveles de privacidad SIHCE](en/CodeSystem-sihce-privacy-level.md)
 
 ### ValueSets
 
@@ -25,10 +26,12 @@
 * [Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)](en/ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
 * [Secciones LOINC de epicrisis SIHCE](en/ValueSet-sihce-epicrisis-section-vs.md)
 * [Analitos de laboratorio SIHCE (LOINC)](en/ValueSet-sihce-lab-observation-code-vs.md)
+* [Niveles de privacidad SIHCE](en/ValueSet-sihce-privacy-level-vs.md)
 
 ### Logicals
 
 * [Modelo lógico BuscarPersona (FederadorBA)](en/StructureDefinition-BuscarPersona.md)
+* [Modelo lógico Consentimiento (SIHCE)](en/StructureDefinition-Consentimiento.md)
 * [Modelo lógico DocumentoClinico (SIHCE)](en/StructureDefinition-DocumentoClinico.md)
 * [Modelo lógico Epicrisis (SIHCE)](en/StructureDefinition-Epicrisis.md)
 * [Modelo lógico FederarPersona (FederadorBA)](en/StructureDefinition-FederarPersona.md)
@@ -41,17 +44,21 @@
 
 * [Composición epicrisis SIHCE](en/StructureDefinition-CompositionEpicrisisSIHCE.md)
 * [Condición clínica epicrisis SIHCE](en/StructureDefinition-ConditionEpicrisisSIHCE.md)
+* [Consentimiento de paciente SIHCE](en/StructureDefinition-ConsentSIHCE.md)
 * [Informe de laboratorio SIHCE](en/StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
 * [Referencia a documento clínico SIHCE](en/StructureDefinition-DocumentReferenceSIHCE.md)
 * [Medicación al alta epicrisis SIHCE](en/StructureDefinition-MedicationStatementEpicrisisSIHCE.md)
 * [Observación de laboratorio SIHCE](en/StructureDefinition-ObservationLaboratorioSIHCE.md)
 * [Paciente SIHCE (PatientXBA)](en/StructureDefinition-PatientXBA.md)
+* [Respuesta DocumentReference/$get_binary_id SIHCE](en/StructureDefinition-parametros-get-binary-id-response-sihce.md)
+* [Parámetros DocumentReference/$get_binary_id SIHCE](en/StructureDefinition-parametros-get-binary-id-sihce.md)
 * [Parametros Patch Identifier SIHCE](en/StructureDefinition-parametros-patch-identifier-sihce.md)
 * [Parametros Update SDM SIHCE](en/StructureDefinition-parametros-update-sdm-sihce.md)
 
 ### ConceptMaps
 
 * [BuscarPersona: modelo lógico a FHIR](en/ConceptMap-BuscarPersonaModeloAFHIR.md)
+* [Consentimiento: modelo lógico a FHIR](en/ConceptMap-ConsentimientoModeloAFHIR.md)
 * [DocumentoClinico: modelo lógico a FHIR](en/ConceptMap-DocumentoClinicoModeloAFHIR.md)
 * [Epicrisis: modelo lógico a FHIR](en/ConceptMap-EpicrisisModeloAFHIR.md)
 * [FederarPersona: modelo lógico a FHIR](en/ConceptMap-FederarPersonaModeloAFHIR.md)
@@ -67,12 +74,18 @@
 
 * [NamingSystem URI Hospital Italiano (ejemplo FHIR)](en/NamingSystem-NamingSystemHospitalItalianoFHIR.md)
 * [NamingSystem URI MSGC GCBA (ejemplo)](en/NamingSystem-NamingSystemMsgcGCBA.md)
+* [NamingSystem Organization hospital (dominio MSGC, ejemplo)](en/NamingSystem-NamingSystemOrganizationHospitalMsgc.md)
 * [RenaperDNI](en/NamingSystem-renaper-dni.md)
 * [NamingSystem idPersonaGlobal SIHCE](en/NamingSystem-sihce-persona-global.md)
 
 ### Examples
 
 * [Epicrisis de hospitalización (Composition)](en/Composition-CompositionEpicrisisNivel2.md)
+* [ConsentOptInGeneralSIHCE (Consent)](en/Consent-ConsentOptInGeneralSIHCE.md)
+* [ConsentOptInHospitalConfidentialSIHCE (Consent)](en/Consent-ConsentOptInHospitalConfidentialSIHCE.md)
+* [ConsentOptInHospitalNormalSIHCE (Consent)](en/Consent-ConsentOptInHospitalNormalSIHCE.md)
+* [ConsentOptInHospitalSIHCE (Consent)](en/Consent-ConsentOptInHospitalSIHCE.md)
+* [ConsentOptOutGeneralSIHCE (Consent)](en/Consent-ConsentOptOutGeneralSIHCE.md)
 * [DiagnosticReportInformeLabNivel1 (DiagnosticReport)](en/DiagnosticReport-DiagnosticReportInformeLabNivel1.md)
 * [DiagnosticReportInformeLabNivel2 (DiagnosticReport)](en/DiagnosticReport-DiagnosticReportInformeLabNivel2.md)
 * [DocumentReferenceEpicrisisNivel1 (DocumentReference)](en/DocumentReference-DocumentReferenceEpicrisisNivel1.md)

@@ -10,11 +10,11 @@
   "id" : "SIHCE.fhir.core",
   "language" : "en",
   "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R5",
   "status" : "draft",
-  "date" : "2026-07-13T17:31:20-03:00",
+  "date" : "2026-08-26T18:52:04-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -34,7 +34,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7ext",
@@ -97,6 +97,95 @@
       },
       "name" : "Condición clínica epicrisis SIHCE",
       "description" : "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ConsentSIHCE"
+      },
+      "name" : "Consentimiento de paciente SIHCE",
+      "description" : "Preferencias de privacidad del paciente en la red SIHCE (FHIR R5). Etapa 1: decision permit/deny (opt-in/out general). Etapa 2: provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentOptInHospitalConfidentialSIHCE"
+      },
+      "name" : "Consentimiento hospital + nivel confidential (etapa 3)",
+      "description" : "Hospital Central autorizado también para documentos confidential.",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentOptInHospitalNormalSIHCE"
+      },
+      "name" : "Consentimiento hospital + nivel normal (etapa 3)",
+      "description" : "Hospital Central autorizado con nivel normal explícito.",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentOptInGeneralSIHCE"
+      },
+      "name" : "Consentimiento opt-in general (etapa 1)",
+      "description" : "Paciente autoriza participación general en la red SIHCE.",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentOptInHospitalSIHCE"
+      },
+      "name" : "Consentimiento opt-in por hospital (etapa 2)",
+      "description" : "Opt-in general con autorización explícita al Hospital Central (dominio MSGC).",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentOptOutGeneralSIHCE"
+      },
+      "name" : "Consentimiento opt-out general",
+      "description" : "Paciente revoca toda participación; anula autorizaciones previas.",
+      "isExample" : true,
+      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/ConsentimientoModeloAFHIR"
+      },
+      "name" : "Consentimiento: modelo lógico a FHIR",
+      "description" : "Mapeo del registro de consentimiento del paciente a Consent SIHCE.",
       "isExample" : false
     },
     {
@@ -329,6 +418,18 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/Consentimiento"
+      },
+      "name" : "Modelo lógico Consentimiento (SIHCE)",
+      "description" : "Registro de preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez: opt-in/out general, opt-in por hospital, hospital + nivel de privacidad.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/MLPersona"
       },
       "name" : "Modelo Lógico de Persona para SIHCE",
@@ -449,6 +550,18 @@
         "valueString" : "NamingSystem"
       }],
       "reference" : {
+        "reference" : "NamingSystem/NamingSystemOrganizationHospitalMsgc"
+      },
+      "name" : "NamingSystem Organization hospital (dominio MSGC, ejemplo)",
+      "description" : "Patrón de identificación de hospitales dentro de un dominio SIHCE: system = {uri-dominio}/Organization, value = id local del hospital.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
         "reference" : "NamingSystem/NamingSystemHospitalItalianoFHIR"
       },
       "name" : "NamingSystem URI Hospital Italiano (ejemplo FHIR)",
@@ -465,6 +578,30 @@
       },
       "name" : "NamingSystem URI MSGC GCBA (ejemplo)",
       "description" : "Sistema de identificadores de ejemplo para Parameters en este IG.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sihce-privacy-level-vs"
+      },
+      "name" : "Niveles de privacidad SIHCE",
+      "description" : "Niveles admitidos en Consent.provision.securityLabel (etapa 3).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/sihce-privacy-level"
+      },
+      "name" : "Niveles de privacidad SIHCE",
+      "description" : "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3).",
       "isExample" : false
     },
     {
@@ -518,6 +655,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/parametros-get-binary-id-sihce"
+      },
+      "name" : "Parámetros DocumentReference/$get_binary_id SIHCE",
+      "description" : "Entrada de la operación que canjea una URL temporaria del índice por la URL real en el dominio emisor y un token de acceso al documento.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -550,7 +699,7 @@
         "reference" : "StructureDefinition/DocumentReferenceSIHCE"
       },
       "name" : "Referencia a documento clínico SIHCE",
-      "description" : "Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE; el contenido (Binary o Composition) se accede mediante content.attachment.url hospedada en el dominio. SIHCE no consume esas URLs vía X-BA.",
+      "description" : "Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE con la URL real en content.attachment.url; en consultas GET, SIHCE devuelve URLs temporarias enmascaradas. El contenido se obtiene vía DocumentReference/$get_binary_id y GET al dominio emisor. SIHCE valida Consent antes de listar o canjear.",
       "isExample" : false
     },
     {
@@ -563,6 +712,18 @@
       },
       "name" : "renaper-dni",
       "description" : "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/parametros-get-binary-id-response-sihce"
+      },
+      "name" : "Respuesta DocumentReference/$get_binary_id SIHCE",
+      "description" : "URL real del contenido en el dominio emisor, token de acceso y vigencia opcional.",
       "isExample" : false
     },
     {

@@ -1,4 +1,4 @@
-# Informe laboratorio nivel 2 — PDF y observaciones - Guía de Implementación SIHCE - FHIR R5 v1.3.0
+# Informe laboratorio nivel 2 — PDF y observaciones - Guía de Implementación SIHCE - FHIR R5 v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

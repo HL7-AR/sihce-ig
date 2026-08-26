@@ -17,7 +17,7 @@
      fhir:v "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR>
   ] ; # 
-  fhir:version [ fhir:v "1.3.0"] ; # 
+  fhir:version [ fhir:v "1.4.0"] ; # 
   fhir:name [ fhir:v "EpicrisisModeloAFHIR"] ; # 
   fhir:title [ fhir:v "Epicrisis: modelo lógico a FHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

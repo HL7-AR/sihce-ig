@@ -1,6 +1,6 @@
 {
   "package": "SIHCE.fhir.core",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "fhirVersion": "5.0.0",
   "extensions": [],
   "profiles": {
@@ -14,6 +14,12 @@
       {
         "url": "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE",
         "title": "Condición clínica epicrisis SIHCE"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE",
+        "title": "Consentimiento de paciente SIHCE"
       }
     ],
     "DiagnosticReport": [
@@ -47,6 +53,14 @@
       }
     ],
     "Parameters": [
+      {
+        "url": "http://sihce.gob.ar/StructureDefinition/parametros-get-binary-id-response-sihce",
+        "title": "Respuesta DocumentReference/$get_binary_id SIHCE"
+      },
+      {
+        "url": "http://sihce.gob.ar/StructureDefinition/parametros-get-binary-id-sihce",
+        "title": "Parámetros DocumentReference/$get_binary_id SIHCE"
+      },
       {
         "url": "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce",
         "title": "Parametros Patch Identifier SIHCE"

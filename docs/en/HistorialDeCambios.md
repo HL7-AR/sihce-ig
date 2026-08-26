@@ -1,9 +1,16 @@
-# Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.3.0
+# Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.4.0
 
 * [**Table of Contents**](toc.md)
 * **Historial de Cambios**
 
 ## Historial de Cambios
+
+### Versión 1.4.0
+
+* **Consentimiento**: perfil [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md); operaciones POST/GET/PUT documentadas en [Operaciones](Operaciones.md#op-consentimiento); modelo lógico Consentimiento; [ConceptMap ConsentimientoModeloAFHIR](ConceptMap-ConsentimientoModeloAFHIR.md); CodeSystem/ValueSet [privacy-level](CodeSystem-sihce-privacy-level.md); cinco ejemplos por etapa.
+* **Acceso documental mediado**: consulta de índice con URLs temporarias; operación [DocumentReference/$get_binary_id](Operaciones.md#op-documento-get-binary-id); perfiles [ParametrosGetBinaryIdSIHCE](StructureDefinition-parametros-get-binary-id-sihce.md) y respuesta; SIHCE evalúa Consent antes de listar y canjear.
+* **NamingSystem** patrón `{dominio-uri}/Organization` para hospitales ([ejemplo MSGC](NamingSystem-NamingSystemOrganizationHospitalMsgc.md)).
+* Diagramas actualizados en [Casos de Uso](CasosDeUso.md) (consentimiento + consulta documental en tres fases).
 
 ### Versión 1.3.0
 

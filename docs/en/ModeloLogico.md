@@ -1,4 +1,4 @@
-# Modelo Lógico - Guía de Implementación SIHCE - FHIR R5 v1.3.0
+# Modelo Lógico - Guía de Implementación SIHCE - FHIR R5 v1.4.0
 
 * [**Table of Contents**](toc.md)
 * **Modelo Lógico**
@@ -357,4 +357,38 @@ Terminología analitos: [ValueSet sihce-lab-observation-code](ValueSet-sihce-lab
 #### Relaciones con FHIR
 
 Ver [ConceptMap InformeLaboratorioModeloAFHIR](ConceptMap-InformeLaboratorioModeloAFHIR.md), [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) y [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md).
+
+### Consentimiento
+
+#### Descripción general
+
+Modelo lógico para registrar las preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez desplegables de forma incremental. Sin consentimiento activo, SIHCE deniega el acceso al índice documental.
+
+#### Elementos del modelo
+
+##### datosPaciente
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| idPersonaGlobal | string | 1..1 | Identificador SIHCE de la persona ([NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.md)). |
+
+##### datosConsentimiento
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| participacionGeneral | code | 1..1 | `permit`(opt-in) o`deny`(opt-out; anula autorizaciones previas). |
+| fechaRegistro | dateTime | 1..1 | Fecha y hora del registro o actualización. |
+
+##### autorizacionHospital (etapas 2 y 3)
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| uriDominio | URI | 1..1 | URI base del dominio (p. ej.`http://msgc.gcba.gob.ar`). |
+| idHospital | string | 1..1 | Identificador local del hospital (`{uriDominio}/Organization`+ value). |
+| nombreHospital | string | 0..1 | Nombre legible del establecimiento. |
+| nivelPrivacidad | code | 0..1 | `normal`o`confidential`. Obligatorio y explícito en etapa 3. |
+
+#### Relaciones con FHIR
+
+Ver [ConceptMap ConsentimientoModeloAFHIR](ConceptMap-ConsentimientoModeloAFHIR.md) y el perfil [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md).
 

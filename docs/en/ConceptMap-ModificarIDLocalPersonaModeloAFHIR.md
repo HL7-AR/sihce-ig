@@ -1,4 +1,4 @@
-# ModificarIDLocalPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.3.0
+# ModificarIDLocalPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.4.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR | *Version*:1.3.0 |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR | *Version*:1.4.0 |
 | Draft as of 2026-04-29 | *Computable Name*:ModificarIDLocalPersonaModeloAFHIR |
 
  
@@ -23,7 +23,7 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
   "resourceType" : "ConceptMap",
   "id" : "ModificarIDLocalPersonaModeloAFHIR",
   "url" : "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR",
-  "version" : "1.3.0",
+  "version" : "1.4.0",
   "name" : "ModificarIDLocalPersonaModeloAFHIR",
   "title" : "ModificarIDLocalPersona: modelo lógico a FHIR",
   "status" : "draft",

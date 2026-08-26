@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Guía de Implementación SIHCE - FHIR R5 v1.3.0</title>
+    <title>Artifacts Summary - Guía de Implementación SIHCE - FHIR R5 v1.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
             <br/>
-            <span style="display:inline-block;">1.3.0 - 
+            <span style="display:inline-block;">1.4.0 - 
 
 
             </span>
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -229,6 +229,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Solicitud de búsqueda de persona por datos mínimos y respuesta mínima.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Consentimiento.html"
+                  title="StructureDefinition/Consentimiento">
+                  <span title="StructureDefinition/Consentimiento">Modelo lógico Consentimiento (SIHCE)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Registro de preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez: opt-in/out general, opt-in por hospital, hospital + nivel de privacidad.</p>
 </td>
          </tr>
          <tr>
@@ -337,6 +349,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ConsentSIHCE.html"
+                  title="StructureDefinition/ConsentSIHCE">
+                  <span title="StructureDefinition/ConsentSIHCE">Consentimiento de paciente SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Preferencias de privacidad del paciente en la red SIHCE (FHIR R5). Etapa 1: decision permit/deny (opt-in/out general). Etapa 2: provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html"
                   title="StructureDefinition/DiagnosticReportLaboratorioSIHCE">
                   <span title="StructureDefinition/DiagnosticReportLaboratorioSIHCE">Informe de laboratorio SIHCE
@@ -409,6 +433,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-parametros-get-binary-id-sihce.html"
+                  title="StructureDefinition/parametros-get-binary-id-sihce">
+                  <span title="StructureDefinition/parametros-get-binary-id-sihce">Parámetros DocumentReference/$get_binary_id SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Entrada de la operación que canjea una URL temporaria del índice por la URL real en el dominio emisor y un token de acceso al documento.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-DocumentReferenceSIHCE.html"
                   title="StructureDefinition/DocumentReferenceSIHCE">
                   <span title="StructureDefinition/DocumentReferenceSIHCE">Referencia a documento clínico SIHCE
@@ -416,7 +452,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE; el contenido (Binary o Composition) se accede mediante content.attachment.url hospedada en el dominio. SIHCE no consume esas URLs vía X-BA.</p>
+<p>Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE con la URL real en content.attachment.url; en consultas GET, SIHCE devuelve URLs temporarias enmascaradas. El contenido se obtiene vía DocumentReference/$get_binary_id y GET al dominio emisor. SIHCE valida Consent antes de listar o canjear.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-parametros-get-binary-id-response-sihce.html"
+                  title="StructureDefinition/parametros-get-binary-id-response-sihce">
+                  <span title="StructureDefinition/parametros-get-binary-id-response-sihce">Respuesta DocumentReference/$get_binary_id SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>URL real del contenido en el dominio emisor, token de acceso y vigencia opcional.</p>
 </td>
          </tr>
       </tbody>
@@ -449,6 +497,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-sihce-privacy-level-vs.html"
+                  title="ValueSet/sihce-privacy-level-vs">
+                  <span title="ValueSet/sihce-privacy-level-vs">Niveles de privacidad SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Niveles admitidos en Consent.provision.securityLabel (etapa 3).</p>
 </td>
          </tr>
          <tr>
@@ -497,6 +557,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-sihce-privacy-level.html"
+                  title="CodeSystem/sihce-privacy-level">
+                  <span title="CodeSystem/sihce-privacy-level">Niveles de privacidad SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-sihce-fhir-core-element-paths.html"
                   title="CodeSystem/sihce-fhir-core-element-paths">
                   <span title="CodeSystem/sihce-fhir-core-element-paths">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE
@@ -527,6 +599,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-NamingSystemOrganizationHospitalMsgc.html"
+                  title="NamingSystem/NamingSystemOrganizationHospitalMsgc">
+                  <span title="NamingSystem/NamingSystemOrganizationHospitalMsgc">NamingSystem Organization hospital (dominio MSGC, ejemplo)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Patrón de identificación de hospitales dentro de un dominio SIHCE: system = {uri-dominio}/Organization, value = id local del hospital.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="NamingSystem-NamingSystemHospitalItalianoFHIR.html"
@@ -592,6 +676,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-ConsentimientoModeloAFHIR.html"
+                  title="ConceptMap/ConsentimientoModeloAFHIR">
+                  <span title="ConceptMap/ConsentimientoModeloAFHIR">Consentimiento: modelo lógico a FHIR
+</span>
+               </a>
+            </td>
+            <td>
+<p>Mapeo del registro de consentimiento del paciente a Consent SIHCE.</p>
 </td>
          </tr>
          <tr>
@@ -674,6 +770,66 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentOptInHospitalConfidentialSIHCE.html"
+                  title="Consent/ConsentOptInHospitalConfidentialSIHCE">
+                  <span title="Consent/ConsentOptInHospitalConfidentialSIHCE">Consentimiento hospital + nivel confidential (etapa 3)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Hospital Central autorizado también para documentos confidential.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentOptInHospitalNormalSIHCE.html"
+                  title="Consent/ConsentOptInHospitalNormalSIHCE">
+                  <span title="Consent/ConsentOptInHospitalNormalSIHCE">Consentimiento hospital + nivel normal (etapa 3)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Hospital Central autorizado con nivel normal explícito.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentOptInGeneralSIHCE.html"
+                  title="Consent/ConsentOptInGeneralSIHCE">
+                  <span title="Consent/ConsentOptInGeneralSIHCE">Consentimiento opt-in general (etapa 1)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Paciente autoriza participación general en la red SIHCE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentOptInHospitalSIHCE.html"
+                  title="Consent/ConsentOptInHospitalSIHCE">
+                  <span title="Consent/ConsentOptInHospitalSIHCE">Consentimiento opt-in por hospital (etapa 2)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Opt-in general con autorización explícita al Hospital Central (dominio MSGC).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentOptOutGeneralSIHCE.html"
+                  title="Consent/ConsentOptOutGeneralSIHCE">
+                  <span title="Consent/ConsentOptOutGeneralSIHCE">Consentimiento opt-out general
+</span>
+               </a>
+            </td>
+            <td>
+<p>Paciente revoca toda participación; anula autorizaciones previas.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-ParametrosPatchIdentifierEjemplo.html"
@@ -841,8 +997,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Mon, Jul 13, 2026 17:31-0300">2026-07-13</span>
+          Package SIHCE.fhir.core#1.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Generated <span title="Wed, Aug 26, 2026 18:52-0300">2026-08-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

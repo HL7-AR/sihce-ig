@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Modelo Lógico - Guía de Implementación SIHCE - FHIR R5 v1.3.0</title>
+    <title>Modelo Lógico - Guía de Implementación SIHCE - FHIR R5 v1.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
             <br/>
-            <span style="display:inline-block;">1.3.0 - 
+            <span style="display:inline-block;">1.4.0 - 
 
 
             </span>
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Modelo Lógico</h2>
   
 
@@ -187,6 +187,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#documentoclinico" id="markdown-toc-documentoclinico">DocumentoClinico</a></li>
   <li><a href="#epicrisis" id="markdown-toc-epicrisis">Epicrisis</a></li>
   <li><a href="#informelaboratorio" id="markdown-toc-informelaboratorio">InformeLaboratorio</a></li>
+  <li><a href="#consentimiento" id="markdown-toc-consentimiento">Consentimiento</a></li>
 </ul>
 
 </div>
@@ -642,6 +643,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Ver <a href="ConceptMap-InformeLaboratorioModeloAFHIR.html">ConceptMap InformeLaboratorioModeloAFHIR</a>, <a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">DiagnosticReportLaboratorioSIHCE</a> y <a href="StructureDefinition-ObservationLaboratorioSIHCE.html">ObservationLaboratorioSIHCE</a>.</p>
 
+<h3 id="consentimiento">Consentimiento</h3>
+
+<h4 id="descripción-general-7">Descripción general</h4>
+
+<p>Modelo lógico para registrar las preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez desplegables de forma incremental. Sin consentimiento activo, SIHCE deniega el acceso al índice documental.</p>
+
+<h4 id="elementos-del-modelo-5">Elementos del modelo</h4>
+
+<h5 id="datospaciente">datosPaciente</h5>
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>idPersonaGlobal</td><td>string</td><td>1..1</td><td>Identificador SIHCE de la persona (<a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>).</td></tr>
+  </tbody>
+</table>
+
+<h5 id="datosconsentimiento">datosConsentimiento</h5>
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>participacionGeneral</td><td>code</td><td>1..1</td><td><code>permit</code> (opt-in) o <code>deny</code> (opt-out; anula autorizaciones previas).</td></tr>
+    <tr><td>fechaRegistro</td><td>dateTime</td><td>1..1</td><td>Fecha y hora del registro o actualización.</td></tr>
+  </tbody>
+</table>
+
+<h5 id="autorizacionhospital-etapas-2-y-3">autorizacionHospital (etapas 2 y 3)</h5>
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>uriDominio</td><td>URI</td><td>1..1</td><td>URI base del dominio (p. ej. <code>http://msgc.gcba.gob.ar</code>).</td></tr>
+    <tr><td>idHospital</td><td>string</td><td>1..1</td><td>Identificador local del hospital (<code>{uriDominio}/Organization</code> + value).</td></tr>
+    <tr><td>nombreHospital</td><td>string</td><td>0..1</td><td>Nombre legible del establecimiento.</td></tr>
+    <tr><td>nivelPrivacidad</td><td>code</td><td>0..1</td><td><code>normal</code> o <code>confidential</code>. Obligatorio y explícito en etapa 3.</td></tr>
+  </tbody>
+</table>
+
+<h4 id="relaciones-con-fhir-7">Relaciones con FHIR</h4>
+
+<p>Ver <a href="ConceptMap-ConsentimientoModeloAFHIR.html">ConceptMap ConsentimientoModeloAFHIR</a> y el perfil <a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>.</p>
+
 
 
 
@@ -666,8 +716,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Mon, Jul 13, 2026 17:31-0300">2026-07-13</span>
+          Package SIHCE.fhir.core#1.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Generated <span title="Wed, Aug 26, 2026 18:52-0300">2026-08-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
