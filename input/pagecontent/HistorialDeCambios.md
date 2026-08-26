@@ -1,3 +1,10 @@
+### Versión 1.4.0
+
+- **Consentimiento**: perfil [ConsentSIHCE](StructureDefinition-ConsentSIHCE.html); operaciones POST/GET/PUT documentadas en [Operaciones](Operaciones.html#op-consentimiento); modelo lógico Consentimiento; [ConceptMap ConsentimientoModeloAFHIR](ConceptMap-ConsentimientoModeloAFHIR.html); CodeSystem/ValueSet [privacy-level](CodeSystem-sihce-privacy-level.html); cinco ejemplos por etapa.
+- **Acceso documental mediado**: consulta de índice con URLs temporarias; operación [DocumentReference/$get_binary_id](Operaciones.html#op-documento-get-binary-id); perfiles [ParametrosGetBinaryIdSIHCE](StructureDefinition-parametros-get-binary-id-sihce.html) y respuesta; SIHCE evalúa Consent antes de listar y canjear.
+- **NamingSystem** patrón `{dominio-uri}/Organization` para hospitales ([ejemplo MSGC](NamingSystem-NamingSystemOrganizationHospitalMsgc.html)).
+- Diagramas actualizados en [Casos de Uso](CasosDeUso.html) (consentimiento + consulta documental en tres fases).
+
 ### Versión 1.3.0
 
 - **Documentos clínicos**: perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.html), operaciones POST/GET documentadas en [Operaciones](Operaciones.html).

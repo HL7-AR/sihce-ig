@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SIHCEPrivacyLevelCS",
+  "id": "sihce-privacy-level",
+  "title": "Niveles de privacidad SIHCE",
+  "description": "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3).",
+  "url": "http://sihce.gob.ar/CodeSystem/privacy-level",
+  "concept": [
+    {
+      "code": "normal",
+      "display": "Normal",
+      "definition": "Acceso a documentos sin etiqueta de confidencialidad elevada."
+    },
+    {
+      "code": "confidential",
+      "display": "Confidencial",
+      "definition": "Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel."
+    }
+  ],
+  "version": "1.4.0",
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 2
+}

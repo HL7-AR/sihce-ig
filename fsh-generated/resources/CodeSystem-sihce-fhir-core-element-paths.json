@@ -103,10 +103,26 @@
     {
       "code": "Observation.value[x]",
       "display": "Observation.value[x]"
+    },
+    {
+      "code": "Consent.subject",
+      "display": "Consent.subject"
+    },
+    {
+      "code": "Consent.date",
+      "display": "Consent.date"
+    },
+    {
+      "code": "Consent.decision",
+      "display": "Consent.decision"
+    },
+    {
+      "code": "Consent.provision",
+      "display": "Consent.provision"
     }
   ],
   "version": "1.2.0",
   "experimental": false,
   "caseSensitive": true,
-  "count": 24
+  "count": 28
 }

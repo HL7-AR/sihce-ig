@@ -83,6 +83,13 @@ Description: "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.
 * #"InformeLaboratorio.resultado.valor" "InformeLaboratorio resultado valor"
 * #"InformeLaboratorio.resultado.unidad" "InformeLaboratorio resultado unidad"
 * #"InformeLaboratorio.resultado.interpretacion" "InformeLaboratorio resultado interpretacion"
+* #"Consentimiento.datosPaciente.idPersonaGlobal" "Consentimiento datosPaciente idPersonaGlobal"
+* #"Consentimiento.datosConsentimiento.participacionGeneral" "Consentimiento datosConsentimiento participacionGeneral"
+* #"Consentimiento.datosConsentimiento.fechaRegistro" "Consentimiento datosConsentimiento fechaRegistro"
+* #"Consentimiento.autorizacionHospital.uriDominio" "Consentimiento autorizacionHospital uriDominio"
+* #"Consentimiento.autorizacionHospital.idHospital" "Consentimiento autorizacionHospital idHospital"
+* #"Consentimiento.autorizacionHospital.nombreHospital" "Consentimiento autorizacionHospital nombreHospital"
+* #"Consentimiento.autorizacionHospital.nivelPrivacidad" "Consentimiento autorizacionHospital nivelPrivacidad"
 
 CodeSystem: SIHCEFhirCoreElementPaths
 Id: sihce-fhir-core-element-paths
@@ -118,3 +125,7 @@ Description: "Códigos de correlación con Patient, Organization y OperationOutc
 * #"DiagnosticReport.result" "DiagnosticReport.result"
 * #"Observation.code" "Observation.code"
 * #"Observation.value[x]" "Observation.value[x]"
+* #"Consent.subject" "Consent.subject"
+* #"Consent.date" "Consent.date"
+* #"Consent.decision" "Consent.decision"
+* #"Consent.provision" "Consent.provision"

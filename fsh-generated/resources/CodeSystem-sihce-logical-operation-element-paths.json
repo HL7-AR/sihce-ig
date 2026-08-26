@@ -307,10 +307,38 @@
     {
       "code": "InformeLaboratorio.resultado.interpretacion",
       "display": "InformeLaboratorio resultado interpretacion"
+    },
+    {
+      "code": "Consentimiento.datosPaciente.idPersonaGlobal",
+      "display": "Consentimiento datosPaciente idPersonaGlobal"
+    },
+    {
+      "code": "Consentimiento.datosConsentimiento.participacionGeneral",
+      "display": "Consentimiento datosConsentimiento participacionGeneral"
+    },
+    {
+      "code": "Consentimiento.datosConsentimiento.fechaRegistro",
+      "display": "Consentimiento datosConsentimiento fechaRegistro"
+    },
+    {
+      "code": "Consentimiento.autorizacionHospital.uriDominio",
+      "display": "Consentimiento autorizacionHospital uriDominio"
+    },
+    {
+      "code": "Consentimiento.autorizacionHospital.idHospital",
+      "display": "Consentimiento autorizacionHospital idHospital"
+    },
+    {
+      "code": "Consentimiento.autorizacionHospital.nombreHospital",
+      "display": "Consentimiento autorizacionHospital nombreHospital"
+    },
+    {
+      "code": "Consentimiento.autorizacionHospital.nivelPrivacidad",
+      "display": "Consentimiento autorizacionHospital nivelPrivacidad"
     }
   ],
   "version": "1.2.0",
   "experimental": false,
   "caseSensitive": true,
-  "count": 75
+  "count": 82
 }

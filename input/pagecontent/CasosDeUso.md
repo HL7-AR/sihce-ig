@@ -2,7 +2,7 @@ Estos son los principales casos de uso e interacciones entre dominios y **SIHCE*
 
 **Canal X-BA** es la capa de seguridad (servidores de seguridad / ruta acordada): **todo** intercambio FHIR entre organizaciones transita por ese canal. No es un actor de negocio.
 
-**SIHCE** expone capacidades de negocio (p. ej. federación de personas, registro y consulta del índice documental). El “federador” no es un sistema aparte: es la funcionalidad de SIHCE sobre `Patient`.
+**SIHCE** expone capacidades de negocio (federación de personas, **consentimiento**, registro y consulta del índice documental). El “federador” no es un sistema aparte: es la funcionalidad de SIHCE sobre `Patient`.
 
 ## Vista general (intercambio)
 
@@ -15,7 +15,7 @@ flowchart LR
     XR[Servidores de seguridad]
   end
   subgraph Proveedor["SIHCE"]
-    FHIR[API FHIR Patient y DocumentReference]
+    FHIR[API FHIR Patient, Consent y DocumentReference]
   end
   CAPP -->|"Persona, documentos, contenido"| XR
   XR --> FHIR
@@ -23,7 +23,37 @@ flowchart LR
   XR --> CAPP
 ```
 
-Todo mensaje entre dominio y SIHCE (y entre dominios, p. ej. al resolver `content.attachment.url`) viaja por el **Canal X-BA**. SIHCE responde según la operación: federación de persona, registro documental o consulta del índice.
+Todo mensaje entre dominio y SIHCE (y entre dominios al obtener contenido documental) viaja por el **Canal X-BA**. SIHCE responde según la operación: federación de persona, **consentimiento**, registro documental o consulta del índice (URLs temporarias + canje).
+
+## Consentimiento
+
+Preferencias de privacidad del paciente en la red SIHCE. **Default:** sin consentimiento activo, el acceso al índice documental se **deniega**. Cualquier dominio autenticado puede registrar el consentimiento (incluido personal administrativo).
+
+Operaciones: [Registro, consulta y PUT](Operaciones.html#op-consentimiento). Perfil: [ConsentSIHCE](StructureDefinition-ConsentSIHCE.html).
+
+### Registro de consentimiento
+
+```mermaid
+sequenceDiagram
+  participant D as Dominio
+  participant X as Canal X-BA
+  participant S as SIHCE
+  D->>X: POST /Consent (ConsentSIHCE)
+  X->>S: Reenvía solicitud
+  S->>S: Persiste versión + AuditEvent
+  S-->>X: 201 Created + Location
+  X-->>D: 201 Created
+```
+
+Etapas de madurez (despliegue incremental):
+
+| Etapa | Qué registra |
+|-------|----------------|
+| 1 | Opt-in / opt-out **general** |
+| 2 | Opt-in por **hospital** (Organization en el dominio) |
+| 3 | Hospital + nivel **`normal`** o **`confidential`** (explícito) |
+
+Opt-out general anula todo; un opt-in posterior solo habilita lo declarado en la nueva versión.
 
 ## Persona
 
@@ -109,19 +139,26 @@ sequenceDiagram
 
 ### Consulta de epicrisis por paciente
 
-Operación relacionada: [Consulta de documentos clínicos](Operaciones.html#op-documento-consulta). El índice lo responde SIHCE; el contenido clínico lo entrega el dominio emisor. Ambos tramos usan Canal X-BA.
+Operaciones: [Consulta de documentos](Operaciones.html#op-documento-consulta), [Canje `$get_binary_id`](Operaciones.html#op-documento-get-binary-id). SIHCE evalúa **Consent** antes de listar; devuelve URLs temporarias; el contenido lo entrega el dominio emisor con token emitido por SIHCE.
 
 ```mermaid
 sequenceDiagram
+  autonumber
   participant C as DominioConsumidor
   participant X as Canal X-BA
   participant S as SIHCE
   participant E as DominioEmisor
-  C->>X: GET /DocumentReference por patient.identifier y tipo 18842-5
+  C->>X: GET /DocumentReference (patient.identifier, tipo 18842-5)
   X->>S: Reenvía solicitud
-  S-->>X: 200 Bundle (DocumentReference)
-  X-->>C: 200 Bundle (DocumentReference)
-  C->>X: GET content.attachment.url
+  S->>S: Evalúa Consent + filtra por privacidad
+  S-->>X: 200 Bundle (URLs temporarias)
+  X-->>C: 200 Bundle
+  C->>X: POST DocumentReference/$get_binary_id
+  X->>S: Reenvía operación
+  S->>S: Revalida Consent + emite token
+  S-->>X: Parameters (url real + access_token)
+  X-->>C: Parameters
+  C->>X: GET url real + Authorization token
   X->>E: Reenvía solicitud
   E-->>X: Binary o Composition
   X-->>C: Binary o Composition
@@ -160,20 +197,26 @@ Niveles de madurez informe de laboratorio:
 
 ### Consulta de informes de laboratorio por paciente
 
-Operación relacionada: [Consulta de documentos clínicos](Operaciones.html#op-documento-consulta). El índice lo responde SIHCE; el DiagnosticReport lo entrega el dominio emisor. Ambos tramos usan Canal X-BA.
+Operaciones: [Consulta de documentos](Operaciones.html#op-documento-consulta), [Canje `$get_binary_id`](Operaciones.html#op-documento-get-binary-id). Mismo patrón que epicrisis: Consent en SIHCE, URLs temporarias, token al emisor.
 
 ```mermaid
 sequenceDiagram
+  autonumber
   participant C as DominioConsumidor
   participant X as Canal X-BA
   participant S as SIHCE
   participant E as DominioEmisor
-  C->>X: GET /DocumentReference por patient.identifier y tipo 11502-2
+  C->>X: GET /DocumentReference (patient.identifier, tipo 11502-2)
   X->>S: Reenvía solicitud
-  S-->>X: 200 Bundle (DocumentReference)
-  X-->>C: 200 Bundle (DocumentReference)
-  C->>X: GET content.attachment.url
+  S->>S: Evalúa Consent + filtra por privacidad
+  S-->>X: 200 Bundle (URLs temporarias)
+  X-->>C: 200 Bundle
+  C->>X: POST DocumentReference/$get_binary_id
+  X->>S: Reenvía operación
+  S-->>X: Parameters (url DiagnosticReport + token)
+  X-->>C: Parameters
+  C->>X: GET DiagnosticReport + token
   X->>E: Reenvía solicitud
-  E-->>X: DiagnosticReport (PDF y observations)
-  X-->>C: DiagnosticReport (PDF y observations)
+  E-->>X: DiagnosticReport
+  X-->>C: DiagnosticReport
 ```

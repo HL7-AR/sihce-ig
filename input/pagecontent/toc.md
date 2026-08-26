@@ -54,3 +54,15 @@
 8.20 [DocumentReference informe laboratorio nivel 2](DocumentReference-DocumentReferenceInformeLabNivel2.html)
 
 8.21 [DiagnosticReport informe laboratorio nivel 2](DiagnosticReport-DiagnosticReportInformeLabNivel2.html)
+
+8.22 [Consentimiento SIHCE](StructureDefinition-ConsentSIHCE.html)
+
+8.23 [CodeSystem privacy-level](CodeSystem-sihce-privacy-level.html)
+
+8.24 [NamingSystem Organization hospital (ejemplo MSGC)](NamingSystem-NamingSystemOrganizationHospitalMsgc.html)
+
+8.25 [Parámetros $get_binary_id](StructureDefinition-parametros-get-binary-id-sihce.html)
+
+8.26 [Consent opt-in general (etapa 1)](Consent-ConsentOptInGeneralSIHCE.html)
+
+8.27 [Consent opt-in hospital + confidential (etapa 3)](Consent-ConsentOptInHospitalConfidentialSIHCE.html)

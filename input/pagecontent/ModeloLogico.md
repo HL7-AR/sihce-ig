@@ -437,3 +437,52 @@ Terminología analitos: [ValueSet sihce-lab-observation-code](ValueSet-sihce-lab
 #### Relaciones con FHIR
 
 Ver [ConceptMap InformeLaboratorioModeloAFHIR](ConceptMap-InformeLaboratorioModeloAFHIR.html), [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.html) y [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.html).
+
+### Consentimiento
+
+#### Descripción general
+
+Modelo lógico para registrar las preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez desplegables de forma incremental. Sin consentimiento activo, SIHCE deniega el acceso al índice documental.
+
+#### Elementos del modelo
+
+##### datosPaciente
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>idPersonaGlobal</td><td>string</td><td>1..1</td><td>Identificador SIHCE de la persona (<a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>).</td></tr>
+  </tbody>
+</table>
+
+##### datosConsentimiento
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>participacionGeneral</td><td>code</td><td>1..1</td><td><code>permit</code> (opt-in) o <code>deny</code> (opt-out; anula autorizaciones previas).</td></tr>
+    <tr><td>fechaRegistro</td><td>dateTime</td><td>1..1</td><td>Fecha y hora del registro o actualización.</td></tr>
+  </tbody>
+</table>
+
+##### autorizacionHospital (etapas 2 y 3)
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>uriDominio</td><td>URI</td><td>1..1</td><td>URI base del dominio (p. ej. <code>http://msgc.gcba.gob.ar</code>).</td></tr>
+    <tr><td>idHospital</td><td>string</td><td>1..1</td><td>Identificador local del hospital (<code>{uriDominio}/Organization</code> + value).</td></tr>
+    <tr><td>nombreHospital</td><td>string</td><td>0..1</td><td>Nombre legible del establecimiento.</td></tr>
+    <tr><td>nivelPrivacidad</td><td>code</td><td>0..1</td><td><code>normal</code> o <code>confidential</code>. Obligatorio y explícito en etapa 3.</td></tr>
+  </tbody>
+</table>
+
+#### Relaciones con FHIR
+
+Ver [ConceptMap ConsentimientoModeloAFHIR](ConceptMap-ConsentimientoModeloAFHIR.html) y el perfil [ConsentSIHCE](StructureDefinition-ConsentSIHCE.html).

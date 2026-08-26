@@ -108,7 +108,7 @@ Profile: DocumentReferenceSIHCE
 Parent: DocumentReference
 Id: DocumentReferenceSIHCE
 Title: "Referencia a documento clínico SIHCE"
-Description: "Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE; el contenido (Binary o Composition) se accede mediante content.attachment.url hospedada en el dominio. SIHCE no consume esas URLs vía X-BA."
+Description: "Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE con la URL real en content.attachment.url; en consultas GET, SIHCE devuelve URLs temporarias enmascaradas. El contenido se obtiene vía DocumentReference/$get_binary_id y GET al dominio emisor. SIHCE valida Consent antes de listar o canjear."
 * ^version = "1.3.0"
 * ^status = #draft
 * ^date = "2026-06-09T00:00:00-03:00"
@@ -140,7 +140,7 @@ Description: "Índice federado de documentos clínicos. El dominio emisor regist
 * content 1..* MS
 * content.attachment 1..1 MS
 * content.attachment.url 1..1 MS
-* content.attachment.url ^short = "URL del Binary o Composition en el dominio emisor"
+* content.attachment.url ^short = "En POST: URL real en el dominio emisor. En GET (índice): URL temporaria opaca generada por SIHCE."
 * content.attachment.contentType 1..1 MS
 * content.attachment.contentType from SIHCEDocumentContentTypeVS (required)
 * content.attachment.contentType ^short = "application/pdf o application/xml (binario); application/fhir+json si la URL apunta a Composition"

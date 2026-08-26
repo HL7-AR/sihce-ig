@@ -1,0 +1,25 @@
+{
+  "resourceType": "Consent",
+  "id": "ConsentOptInGeneralSIHCE",
+  "meta": {
+    "profile": [
+      "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"
+    ]
+  },
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/consent-category",
+          "code": "healthcare"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/PersonaSIHCEMin"
+  },
+  "date": "2026-08-26",
+  "decision": "permit"
+}

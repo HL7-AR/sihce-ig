@@ -8,7 +8,7 @@
   "status": "draft",
   "date": "2026-06-09T00:00:00-03:00",
   "publisher": "SIHCE Development Team",
-  "description": "Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE; el contenido (Binary o Composition) se accede mediante content.attachment.url hospedada en el dominio. SIHCE no consume esas URLs vía X-BA.",
+  "description": "Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE con la URL real en content.attachment.url; en consultas GET, SIHCE devuelve URLs temporarias enmascaradas. El contenido se obtiene vía DocumentReference/$get_binary_id y GET al dominio emisor. SIHCE valida Consent antes de listar o canjear.",
   "jurisdiction": [
     {
       "coding": [
@@ -147,7 +147,7 @@
       {
         "id": "DocumentReference.content.attachment.url",
         "path": "DocumentReference.content.attachment.url",
-        "short": "URL del Binary o Composition en el dominio emisor",
+        "short": "En POST: URL real en el dominio emisor. En GET (índice): URL temporaria opaca generada por SIHCE.",
         "min": 1,
         "mustSupport": true
       }

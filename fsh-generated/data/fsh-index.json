@@ -4,8 +4,8 @@
     "fshName": "SIHCEFhirCoreElementPaths",
     "fshType": "CodeSystem",
     "fshFile": "codesystems/SIHCEConceptMapSupport.fsh",
-    "startLine": 87,
-    "endLine": 120
+    "startLine": 94,
+    "endLine": 131
   },
   {
     "outputFile": "CodeSystem-sihce-logical-operation-element-paths.json",
@@ -13,7 +13,15 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/SIHCEConceptMapSupport.fsh",
     "startLine": 1,
-    "endLine": 85
+    "endLine": 92
+  },
+  {
+    "outputFile": "CodeSystem-sihce-privacy-level.json",
+    "fshName": "SIHCEPrivacyLevelCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/SIHCEConsentTerminology.fsh",
+    "startLine": 1,
+    "endLine": 12
   },
   {
     "outputFile": "Composition-CompositionEpicrisisNivel2.json",
@@ -30,6 +38,14 @@
     "fshFile": "conceptmaps/ConceptMapBuscarPersona.fsh",
     "startLine": 1,
     "endLine": 64
+  },
+  {
+    "outputFile": "ConceptMap-ConsentimientoModeloAFHIR.json",
+    "fshName": "ConsentimientoModeloAFHIR",
+    "fshType": "Instance",
+    "fshFile": "conceptmaps/ConceptMapConsentimiento.fsh",
+    "startLine": 1,
+    "endLine": 36
   },
   {
     "outputFile": "ConceptMap-DocumentoClinicoModeloAFHIR.json",
@@ -78,6 +94,46 @@
     "fshFile": "conceptmaps/ConceptMapModificarSDMPersona.fsh",
     "startLine": 1,
     "endLine": 74
+  },
+  {
+    "outputFile": "Consent-ConsentOptInGeneralSIHCE.json",
+    "fshName": "ConsentOptInGeneralSIHCE",
+    "fshType": "Instance",
+    "fshFile": "instances/ConsentEjemplos.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Consent-ConsentOptInHospitalConfidentialSIHCE.json",
+    "fshName": "ConsentOptInHospitalConfidentialSIHCE",
+    "fshType": "Instance",
+    "fshFile": "instances/ConsentEjemplos.fsh",
+    "startLine": 58,
+    "endLine": 73
+  },
+  {
+    "outputFile": "Consent-ConsentOptInHospitalNormalSIHCE.json",
+    "fshName": "ConsentOptInHospitalNormalSIHCE",
+    "fshType": "Instance",
+    "fshFile": "instances/ConsentEjemplos.fsh",
+    "startLine": 41,
+    "endLine": 56
+  },
+  {
+    "outputFile": "Consent-ConsentOptInHospitalSIHCE.json",
+    "fshName": "ConsentOptInHospitalSIHCE",
+    "fshType": "Instance",
+    "fshFile": "instances/ConsentEjemplos.fsh",
+    "startLine": 25,
+    "endLine": 39
+  },
+  {
+    "outputFile": "Consent-ConsentOptOutGeneralSIHCE.json",
+    "fshName": "ConsentOptOutGeneralSIHCE",
+    "fshType": "Instance",
+    "fshFile": "instances/ConsentEjemplos.fsh",
+    "startLine": 13,
+    "endLine": 23
   },
   {
     "outputFile": "DiagnosticReport-DiagnosticReportInformeLabNivel1.json",
@@ -140,6 +196,14 @@
     "fshName": "NamingSystemMsgcGCBA",
     "fshType": "Instance",
     "fshFile": "instances/NamingSystemMsgcGCBA.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "NamingSystem-NamingSystemOrganizationHospitalMsgc.json",
+    "fshName": "NamingSystemOrganizationHospitalMsgc",
+    "fshType": "Instance",
+    "fshFile": "instances/NamingSystemOrganizationHospital.fsh",
     "startLine": 1,
     "endLine": 14
   },
@@ -222,6 +286,22 @@
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
     "startLine": 1,
     "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-ConsentSIHCE.json",
+    "fshName": "ConsentSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/ConsentSIHCE.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-Consentimiento.json",
+    "fshName": "Consentimiento",
+    "fshType": "Logical",
+    "fshFile": "logicals/LogicalConsentimiento.fsh",
+    "startLine": 1,
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-DiagnosticReportLaboratorioSIHCE.json",
@@ -320,6 +400,22 @@
     "endLine": 74
   },
   {
+    "outputFile": "StructureDefinition-parametros-get-binary-id-response-sihce.json",
+    "fshName": "ParametrosGetBinaryIdResponseSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/OperacionesParametrosSIHCE.fsh",
+    "startLine": 50,
+    "endLine": 67
+  },
+  {
+    "outputFile": "StructureDefinition-parametros-get-binary-id-sihce.json",
+    "fshName": "ParametrosGetBinaryIdSIHCE",
+    "fshType": "Profile",
+    "fshFile": "profiles/OperacionesParametrosSIHCE.fsh",
+    "startLine": 37,
+    "endLine": 48
+  },
+  {
     "outputFile": "StructureDefinition-parametros-patch-identifier-sihce.json",
     "fshName": "ParametrosPatchIdentifierSIHCE",
     "fshType": "Profile",
@@ -374,5 +470,13 @@
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
     "startLine": 57,
     "endLine": 69
+  },
+  {
+    "outputFile": "ValueSet-sihce-privacy-level-vs.json",
+    "fshName": "SIHCEPrivacyLevelVS",
+    "fshType": "ValueSet",
+    "fshFile": "codesystems/SIHCEConsentTerminology.fsh",
+    "startLine": 14,
+    "endLine": 22
   }
 ]
