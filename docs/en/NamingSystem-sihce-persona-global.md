@@ -1,4 +1,4 @@
-# NamingSystem idPersonaGlobal SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# NamingSystem idPersonaGlobal SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/NamingSystem/sihce-persona-global | *Version*:1.4.0 |
+| *Official URL*:http://sihce.gob.ar/NamingSystem/sihce-persona-global | *Version*:1.5.0 |
 | Active as of 2026-06-09 | *Computable Name*:SihcePersonaGlobal |
 
  
@@ -31,7 +31,7 @@ Identificador global de persona en SIHCE (idPersonaGlobal). Se utiliza como id l
     "valueString" : "1.3.0"
   }],
   "url" : "http://sihce.gob.ar/NamingSystem/sihce-persona-global",
-  "version" : "1.4.0",
+  "version" : "1.5.0",
   "name" : "SihcePersonaGlobal",
   "title" : "NamingSystem idPersonaGlobal SIHCE",
   "status" : "active",

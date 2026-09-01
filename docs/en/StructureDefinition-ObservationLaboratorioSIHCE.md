@@ -1,4 +1,4 @@
-# Observación de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Observación de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE | *Version*:1.4.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE | *Version*:1.5.0 |
 | Draft as of 2026-06-09 | *Computable Name*:ObservationLaboratorioSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-ObservationLabora
   "resourceType" : "StructureDefinition",
   "id" : "ObservationLaboratorioSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE",
-  "version" : "1.4.0",
+  "version" : "1.5.0",
   "name" : "ObservationLaboratorioSIHCE",
   "title" : "Observación de laboratorio SIHCE",
   "status" : "draft",

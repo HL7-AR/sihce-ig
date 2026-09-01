@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b70a5d64-e59c-40fe-afe3-b5ae5f4a367b",
+  "id" : "0a811e42-ff7b-4868-98cd-0d6d3c7ea826",
   "meta" : {
-    "lastUpdated" : "2026-08-26T18:52:04.699-03:00"
+    "lastUpdated" : "2026-09-01T17:36:42.198-03:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,18 +11,18 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sihce-privacy-level.html\">codesystem Niveles de privacidad SIHCE v1.4.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/privacy-level|1.4.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-normal\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-normal\">normal</a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.4.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.4.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-confidential\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-confidential\">confidential</a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.4.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.4.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sihce-privacy-level.html\">codesystem Niveles de privacidad SIHCE v1.5.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/privacy-level|1.5.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-normal\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-normal\">normal</a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.5.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.5.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-confidential\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-confidential\">confidential</a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.5.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.5.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
-      "version" : "1.4.0",
+      "version" : "1.5.0",
       "name" : "SIHCEPrivacyLevelVS",
       "title" : "Niveles de privacidad SIHCE",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-08-26T18:52:04-03:00",
+      "date" : "2026-09-01T17:36:42-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ca6c97ba-9ade-41f2-962d-d9491df69360",
-        "timestamp" : "2026-08-26T19:57:03-03:00",
+        "identifier" : "urn:uuid:f04df862-999f-479e-9414-e08cdf1ee05e",
+        "timestamp" : "2026-09-01T20:02:26-03:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -43,7 +43,7 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://sihce.gob.ar/CodeSystem/privacy-level|1.4.0"
+          "valueUri" : "http://sihce.gob.ar/CodeSystem/privacy-level|1.5.0"
         }],
         "contains" : [{
           "system" : "http://sihce.gob.ar/CodeSystem/privacy-level",
@@ -64,18 +64,18 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sihce-privacy-level.html\">codesystem Niveles de privacidad SIHCE v1.4.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/privacy-level|1.4.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-normal\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-normal\">normal</a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.4.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.4.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-confidential\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-confidential\">confidential</a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.4.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.4.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sihce-privacy-level.html\">codesystem Niveles de privacidad SIHCE v1.5.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/privacy-level|1.5.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-normal\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-normal\">normal</a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.5.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.5.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-confidential\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-confidential\">confidential</a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.5.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.5.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
-      "version" : "1.4.0",
+      "version" : "1.5.0",
       "name" : "SIHCEPrivacyLevelVS",
       "title" : "Niveles de privacidad SIHCE",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-08-26T18:52:04-03:00",
+      "date" : "2026-09-01T17:36:42-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ca6c97ba-9ade-41f2-962d-d9491df69360",
-        "timestamp" : "2026-08-26T19:57:03-03:00",
+        "identifier" : "urn:uuid:f04df862-999f-479e-9414-e08cdf1ee05e",
+        "timestamp" : "2026-09-01T20:02:26-03:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -96,7 +96,7 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://sihce.gob.ar/CodeSystem/privacy-level|1.4.0"
+          "valueUri" : "http://sihce.gob.ar/CodeSystem/privacy-level|1.5.0"
         }],
         "contains" : [{
           "system" : "http://sihce.gob.ar/CodeSystem/privacy-level",

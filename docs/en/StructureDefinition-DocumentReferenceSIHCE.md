@@ -1,4 +1,4 @@
-# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:1.4.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:1.5.0 |
 | Draft as of 2026-06-09 | *Computable Name*:DocumentReferenceSIHCE |
 
  
-Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE con la URL real en content.attachment.url; en consultas GET, SIHCE devuelve URLs temporarias enmascaradas. El contenido se obtiene vía DocumentReference/$get_binary_id y GET al dominio emisor. SIHCE valida Consent antes de listar o canjear. 
+Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio. 
 
 **Usages:**
 
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
   "resourceType" : "StructureDefinition",
   "id" : "DocumentReferenceSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE",
-  "version" : "1.4.0",
+  "version" : "1.5.0",
   "name" : "DocumentReferenceSIHCE",
   "title" : "Referencia a documento clínico SIHCE",
   "status" : "draft",
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
       "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
-  "description" : "Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE con la URL real en content.attachment.url; en consultas GET, SIHCE devuelve URLs temporarias enmascaradas. El contenido se obtiene vía DocumentReference/$get_binary_id y GET al dominio emisor. SIHCE valida Consent antes de listar o canjear.",
+  "description" : "Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "workflow",
@@ -212,7 +212,7 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
     {
       "id" : "DocumentReference.content.attachment.url",
       "path" : "DocumentReference.content.attachment.url",
-      "short" : "En POST: URL real en el dominio emisor. En GET (índice): URL temporaria opaca generada por SIHCE.",
+      "short" : "En POST: URL real en el dominio emisor. En GET (índice): URL del Proxy Central SIHCE (/Proxy/Binary/{id}).",
       "min" : 1,
       "mustSupport" : true
     }]

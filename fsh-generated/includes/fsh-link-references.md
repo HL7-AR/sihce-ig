@@ -47,12 +47,10 @@
 [PacienteSIHCE]: StructureDefinition-PatientXBA.html
 [ParametrosPatchIdentifierSIHCE]: StructureDefinition-parametros-patch-identifier-sihce.html
 [ParametrosUpdateSDMSIHCE]: StructureDefinition-parametros-update-sdm-sihce.html
-[ParametrosGetBinaryIdSIHCE]: StructureDefinition-parametros-get-binary-id-sihce.html
 [PersonaSIHCEMin]: Patient-PersonaSIHCEMin.html
 [PersonaSIHCEPatch]: Patient-PersonaSIHCEPatch.html
 [DocumentReferenceSIHCE]: StructureDefinition-DocumentReferenceSIHCE.html
 [renaper-dni]: NamingSystem-renaper-dni.html
-[ParametrosGetBinaryIdResponseSIHCE]: StructureDefinition-parametros-get-binary-id-response-sihce.html
 [SIHCELogicalOperationElementPaths]: CodeSystem-sihce-logical-operation-element-paths.html
 [SIHCEFhirCoreElementPaths]: CodeSystem-sihce-fhir-core-element-paths.html
 [SIHCEEpicrisisSectionVS]: ValueSet-sihce-epicrisis-section-vs.html

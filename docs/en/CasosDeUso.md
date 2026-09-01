@@ -1,4 +1,4 @@
-# Casos de Uso - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Casos de Uso - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * **Casos de Uso**
@@ -31,7 +31,7 @@ flowchart LR
 
 ```
 
-Todo mensaje entre dominio y SIHCE (y entre dominios al obtener contenido documental) viaja por el **Canal X-BA**. SIHCE responde según la operación: federación de persona, **consentimiento**, registro documental o consulta del índice (URLs temporarias + canje).
+Todo mensaje entre dominio y SIHCE viaja por el **Canal X-BA**. SIHCE responde según la operación: federación de persona, **consentimiento (MCC)**, registro documental, búsqueda ITI-67 o descarga ITI-68 vía **Proxy Central**.
 
 ## Consentimiento
 
@@ -153,29 +153,27 @@ sequenceDiagram
 
 ### Consulta de epicrisis por paciente
 
-Operaciones: [Consulta de documentos](Operaciones.md#op-documento-consulta), [Canje `$get_binary_id`](Operaciones.md#op-documento-get-binary-id). SIHCE evalúa **Consent** antes de listar; devuelve URLs temporarias; el contenido lo entrega el dominio emisor con token emitido por SIHCE.
+Operaciones: [Búsqueda ITI-67](Operaciones.md#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones.md#op-documento-proxy). SIHCE evalúa **Consent (MCC)** en la búsqueda; la URL del índice apunta al Proxy Central; la descarga es un GET estándar con proxy pass al hospital custodio.
 
 ```
 sequenceDiagram
   autonumber
-  participant C as DominioConsumidor
+  participant C as Hospital solicitante
   participant X as Canal X-BA
-  participant S as SIHCE
-  participant E as DominioEmisor
-  C->>X: GET /DocumentReference (patient.identifier, tipo 18842-5)
+  participant S as SIHCE Core
+  participant E as Hospital custodio
+  C->>X: GET /DocumentReference (ITI-67)
   X->>S: Reenvía solicitud
-  S->>S: Evalúa Consent + filtra por privacidad
-  S-->>X: 200 Bundle (URLs temporarias)
+  S->>S: MCC: evalúa Consent + privacidad
+  S-->>X: 200 Bundle (URLs Proxy Central)
   X-->>C: 200 Bundle
-  C->>X: POST DocumentReference/$get_binary_id
-  X->>S: Reenvía operación
-  S->>S: Revalida Consent + emite token
-  S-->>X: Parameters (url real + access_token)
-  X-->>C: Parameters
-  C->>X: GET url real + Authorization token
-  X->>E: Reenvía solicitud
-  E-->>X: Binary o Composition
-  X-->>C: Binary o Composition
+  C->>X: GET /Proxy/Binary/{id} (ITI-68)
+  X->>S: Reenvía GET
+  S->>S: Revalida Consent (MCC)
+  S->>E: Proxy pass (streaming)
+  E-->>S: bytes del documento
+  S-->>X: 200 Binary o Composition
+  X-->>C: 200 documento
 
 ```
 
@@ -213,28 +211,26 @@ Niveles de madurez informe de laboratorio:
 
 ### Consulta de informes de laboratorio por paciente
 
-Operaciones: [Consulta de documentos](Operaciones.md#op-documento-consulta), [Canje `$get_binary_id`](Operaciones.md#op-documento-get-binary-id). Mismo patrón que epicrisis: Consent en SIHCE, URLs temporarias, token al emisor.
+Operaciones: [Búsqueda ITI-67](Operaciones.md#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones.md#op-documento-proxy). Mismo patrón que epicrisis: Consent en MCC, URL del Proxy Central, proxy pass al DiagnosticReport en el custodio.
 
 ```
 sequenceDiagram
   autonumber
-  participant C as DominioConsumidor
+  participant C as Hospital solicitante
   participant X as Canal X-BA
-  participant S as SIHCE
-  participant E as DominioEmisor
-  C->>X: GET /DocumentReference (patient.identifier, tipo 11502-2)
+  participant S as SIHCE Core
+  participant E as Hospital custodio
+  C->>X: GET /DocumentReference (tipo 11502-2)
   X->>S: Reenvía solicitud
-  S->>S: Evalúa Consent + filtra por privacidad
-  S-->>X: 200 Bundle (URLs temporarias)
+  S->>S: MCC: evalúa Consent
+  S-->>X: 200 Bundle (URLs Proxy Central)
   X-->>C: 200 Bundle
-  C->>X: POST DocumentReference/$get_binary_id
-  X->>S: Reenvía operación
-  S-->>X: Parameters (url DiagnosticReport + token)
-  X-->>C: Parameters
-  C->>X: GET DiagnosticReport + token
-  X->>E: Reenvía solicitud
-  E-->>X: DiagnosticReport
-  X-->>C: DiagnosticReport
+  C->>X: GET /Proxy/Binary/{id}
+  X->>S: Reenvía GET
+  S->>E: Proxy pass
+  E-->>S: DiagnosticReport
+  S-->>X: 200 DiagnosticReport
+  X-->>C: 200 DiagnosticReport
 
 ```
 

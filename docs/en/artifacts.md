@@ -1,4 +1,4 @@
-# Artifacts Summary - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Artifacts Summary - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -38,9 +38,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ Paciente SIHCE (PatientXBA)  ](StructureDefinition-PatientXBA.md) | Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación) |
 | [ Parametros Patch Identifier SIHCE  ](StructureDefinition-parametros-patch-identifier-sihce.md) | Estructura de Parameters para la operacion $patch-identifier de SIHCE. |
 | [ Parametros Update SDM SIHCE  ](StructureDefinition-parametros-update-sdm-sihce.md) | Estructura de Parameters para la operacion $update-sdm de SIHCE. |
-| [ Parámetros DocumentReference/$get_binary_id SIHCE  ](StructureDefinition-parametros-get-binary-id-sihce.md) | Entrada de la operación que canjea una URL temporaria del índice por la URL real en el dominio emisor y un token de acceso al documento. |
-| [ Referencia a documento clínico SIHCE  ](StructureDefinition-DocumentReferenceSIHCE.md) | Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE con la URL real en content.attachment.url; en consultas GET, SIHCE devuelve URLs temporarias enmascaradas. El contenido se obtiene vía DocumentReference/$get_binary_id y GET al dominio emisor. SIHCE valida Consent antes de listar o canjear. |
-| [ Respuesta DocumentReference/$get_binary_id SIHCE  ](StructureDefinition-parametros-get-binary-id-response-sihce.md) | URL real del contenido en el dominio emisor, token de acceso y vigencia opcional. |
+| [ Referencia a documento clínico SIHCE  ](StructureDefinition-DocumentReferenceSIHCE.md) | Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio. |
 
 ### Terminology: Value Sets 
 

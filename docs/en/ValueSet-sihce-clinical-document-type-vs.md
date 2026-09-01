@@ -1,4 +1,4 @@
-# Tipos de documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Tipos de documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-clinical-document-type | *Version*:1.4.0 |
-| Draft as of 2026-08-26 | *Computable Name*:SIHCEClinicalDocumentTypeVS |
+| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-clinical-document-type | *Version*:1.5.0 |
+| Draft as of 2026-09-01 | *Computable Name*:SIHCEClinicalDocumentTypeVS |
 
  
 Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC). 
@@ -39,12 +39,12 @@ No Expansion for this valueset (Unknown Code System)
   "resourceType" : "ValueSet",
   "id" : "sihce-clinical-document-type-vs",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
-  "version" : "1.4.0",
+  "version" : "1.5.0",
   "name" : "SIHCEClinicalDocumentTypeVS",
   "title" : "Tipos de documento clínico SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-26T18:52:04-03:00",
+  "date" : "2026-09-01T17:36:42-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

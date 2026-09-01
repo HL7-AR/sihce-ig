@@ -7,11 +7,11 @@
     <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide SIHCE.fhir.core</b></p><a name="SIHCE.fhir.core"> </a><a name="hcSIHCE.fhir.core"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>GuiaDeImplementacionSIHCE</h2><p>The official URL for this implementation guide is: </p><pre>http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core</pre></div>
   </text>
   <url value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core"/>
-  <version value="1.4.0"/>
+  <version value="1.5.0"/>
   <name value="GuiaDeImplementacionSIHCE"/>
   <title value="Guía de Implementación SIHCE - FHIR R5"/>
   <status value="draft"/>
-  <date value="2026-08-26T18:52:04-03:00"/>
+  <date value="2026-09-01T17:36:42-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -597,17 +597,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/parametros-get-binary-id-sihce"/>
-      </reference>
-      <name value="Parámetros DocumentReference/$get_binary_id SIHCE"/>
-      <description value="Entrada de la operación que canjea una URL temporaria del índice por la URL real en el dominio emisor y un token de acceso al documento."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -638,7 +627,7 @@
         <reference value="StructureDefinition/DocumentReferenceSIHCE"/>
       </reference>
       <name value="Referencia a documento clínico SIHCE"/>
-      <description value="Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE con la URL real en content.attachment.url; en consultas GET, SIHCE devuelve URLs temporarias enmascaradas. El contenido se obtiene vía DocumentReference/$get_binary_id y GET al dominio emisor. SIHCE valida Consent antes de listar o canjear."/>
+      <description value="Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -650,17 +639,6 @@
       </reference>
       <name value="renaper-dni"/>
       <description value="This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/parametros-get-binary-id-response-sihce"/>
-      </reference>
-      <name value="Respuesta DocumentReference/$get_binary_id SIHCE"/>
-      <description value="URL real del contenido en el dominio emisor, token de acceso y vigencia opcional."/>
       <isExample value="false"/>
     </resource>
     <resource>

@@ -1,4 +1,4 @@
-# Medicación al alta epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Medicación al alta epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE | *Version*:1.4.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE | *Version*:1.5.0 |
 | Draft as of 2026-06-09 | *Computable Name*:MedicationStatementEpicrisisSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationStateme
   "resourceType" : "StructureDefinition",
   "id" : "MedicationStatementEpicrisisSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE",
-  "version" : "1.4.0",
+  "version" : "1.5.0",
   "name" : "MedicationStatementEpicrisisSIHCE",
   "title" : "Medicación al alta epicrisis SIHCE",
   "status" : "draft",

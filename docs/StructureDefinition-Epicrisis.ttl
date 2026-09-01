@@ -17,11 +17,11 @@
      fhir:v "http://sihce.gob.ar/StructureDefinition/Epicrisis"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/StructureDefinition/Epicrisis>
   ] ; # 
-  fhir:version [ fhir:v "1.4.0"] ; # 
+  fhir:version [ fhir:v "1.5.0"] ; # 
   fhir:name [ fhir:v "Epicrisis"] ; # 
   fhir:title [ fhir:v "Modelo lógico Epicrisis (SIHCE)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-08-26T18:52:04-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-01T17:36:42-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;
@@ -59,7 +59,7 @@
        ] ;
        fhir:value [
          a fhir:String ;
-         fhir:v "1.4.0"
+         fhir:v "1.5.0"
        ]
      ] ) ;
      fhir:element ( [

@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Casos de Uso - Guía de Implementación SIHCE - FHIR R5 v1.4.0</title>
+    <title>Casos de Uso - Guía de Implementación SIHCE - FHIR R5 v1.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
             <br/>
-            <span style="display:inline-block;">1.4.0 - 
+            <span style="display:inline-block;">1.5.0 - 
 
 
             </span>
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Casos de Uso</h2>
   
 
@@ -226,7 +226,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   XR --&gt; CAPP
 </code></pre>
 
-<p>Todo mensaje entre dominio y SIHCE (y entre dominios al obtener contenido documental) viaja por el <strong>Canal X-BA</strong>. SIHCE responde según la operación: federación de persona, <strong>consentimiento</strong>, registro documental o consulta del índice (URLs temporarias + canje).</p>
+<p>Todo mensaje entre dominio y SIHCE viaja por el <strong>Canal X-BA</strong>. SIHCE responde según la operación: federación de persona, <strong>consentimiento (MCC)</strong>, registro documental, búsqueda ITI-67 o descarga ITI-68 vía <strong>Proxy Central</strong>.</p>
 
 <h2 id="consentimiento">Consentimiento</h2>
 
@@ -353,28 +353,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="consulta-de-epicrisis-por-paciente">Consulta de epicrisis por paciente</h3>
 
-<p>Operaciones: <a href="Operaciones.html#op-documento-consulta">Consulta de documentos</a>, <a href="Operaciones.html#op-documento-get-binary-id">Canje <code class="language-plaintext highlighter-rouge">$get_binary_id</code></a>. SIHCE evalúa <strong>Consent</strong> antes de listar; devuelve URLs temporarias; el contenido lo entrega el dominio emisor con token emitido por SIHCE.</p>
+<p>Operaciones: <a href="Operaciones.html#op-documento-consulta">Búsqueda ITI-67</a>, <a href="Operaciones.html#op-documento-proxy">Descarga ITI-68 vía Proxy</a>. SIHCE evalúa <strong>Consent (MCC)</strong> en la búsqueda; la URL del índice apunta al Proxy Central; la descarga es un GET estándar con proxy pass al hospital custodio.</p>
 
 <pre><code class="language-mermaid">sequenceDiagram
   autonumber
-  participant C as DominioConsumidor
+  participant C as Hospital solicitante
   participant X as Canal X-BA
-  participant S as SIHCE
-  participant E as DominioEmisor
-  C-&gt;&gt;X: GET /DocumentReference (patient.identifier, tipo 18842-5)
+  participant S as SIHCE Core
+  participant E as Hospital custodio
+  C-&gt;&gt;X: GET /DocumentReference (ITI-67)
   X-&gt;&gt;S: Reenvía solicitud
-  S-&gt;&gt;S: Evalúa Consent + filtra por privacidad
-  S--&gt;&gt;X: 200 Bundle (URLs temporarias)
+  S-&gt;&gt;S: MCC: evalúa Consent + privacidad
+  S--&gt;&gt;X: 200 Bundle (URLs Proxy Central)
   X--&gt;&gt;C: 200 Bundle
-  C-&gt;&gt;X: POST DocumentReference/$get_binary_id
-  X-&gt;&gt;S: Reenvía operación
-  S-&gt;&gt;S: Revalida Consent + emite token
-  S--&gt;&gt;X: Parameters (url real + access_token)
-  X--&gt;&gt;C: Parameters
-  C-&gt;&gt;X: GET url real + Authorization token
-  X-&gt;&gt;E: Reenvía solicitud
-  E--&gt;&gt;X: Binary o Composition
-  X--&gt;&gt;C: Binary o Composition
+  C-&gt;&gt;X: GET /Proxy/Binary/{id} (ITI-68)
+  X-&gt;&gt;S: Reenvía GET
+  S-&gt;&gt;S: Revalida Consent (MCC)
+  S-&gt;&gt;E: Proxy pass (streaming)
+  E--&gt;&gt;S: bytes del documento
+  S--&gt;&gt;X: 200 Binary o Composition
+  X--&gt;&gt;C: 200 documento
 </code></pre>
 
 <p>Niveles de madurez epicrisis:</p>
@@ -440,27 +438,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="consulta-de-informes-de-laboratorio-por-paciente">Consulta de informes de laboratorio por paciente</h3>
 
-<p>Operaciones: <a href="Operaciones.html#op-documento-consulta">Consulta de documentos</a>, <a href="Operaciones.html#op-documento-get-binary-id">Canje <code class="language-plaintext highlighter-rouge">$get_binary_id</code></a>. Mismo patrón que epicrisis: Consent en SIHCE, URLs temporarias, token al emisor.</p>
+<p>Operaciones: <a href="Operaciones.html#op-documento-consulta">Búsqueda ITI-67</a>, <a href="Operaciones.html#op-documento-proxy">Descarga ITI-68 vía Proxy</a>. Mismo patrón que epicrisis: Consent en MCC, URL del Proxy Central, proxy pass al DiagnosticReport en el custodio.</p>
 
 <pre><code class="language-mermaid">sequenceDiagram
   autonumber
-  participant C as DominioConsumidor
+  participant C as Hospital solicitante
   participant X as Canal X-BA
-  participant S as SIHCE
-  participant E as DominioEmisor
-  C-&gt;&gt;X: GET /DocumentReference (patient.identifier, tipo 11502-2)
+  participant S as SIHCE Core
+  participant E as Hospital custodio
+  C-&gt;&gt;X: GET /DocumentReference (tipo 11502-2)
   X-&gt;&gt;S: Reenvía solicitud
-  S-&gt;&gt;S: Evalúa Consent + filtra por privacidad
-  S--&gt;&gt;X: 200 Bundle (URLs temporarias)
+  S-&gt;&gt;S: MCC: evalúa Consent
+  S--&gt;&gt;X: 200 Bundle (URLs Proxy Central)
   X--&gt;&gt;C: 200 Bundle
-  C-&gt;&gt;X: POST DocumentReference/$get_binary_id
-  X-&gt;&gt;S: Reenvía operación
-  S--&gt;&gt;X: Parameters (url DiagnosticReport + token)
-  X--&gt;&gt;C: Parameters
-  C-&gt;&gt;X: GET DiagnosticReport + token
-  X-&gt;&gt;E: Reenvía solicitud
-  E--&gt;&gt;X: DiagnosticReport
-  X--&gt;&gt;C: DiagnosticReport
+  C-&gt;&gt;X: GET /Proxy/Binary/{id}
+  X-&gt;&gt;S: Reenvía GET
+  S-&gt;&gt;E: Proxy pass
+  E--&gt;&gt;S: DiagnosticReport
+  S--&gt;&gt;X: 200 DiagnosticReport
+  X--&gt;&gt;C: 200 DiagnosticReport
 </code></pre>
 
 
@@ -487,8 +483,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Wed, Aug 26, 2026 18:52-0300">2026-08-26</span>
+          Package SIHCE.fhir.core#1.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Generated <span title="Tue, Sep 1, 2026 17:36-0300">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

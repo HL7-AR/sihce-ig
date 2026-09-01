@@ -1,14 +1,21 @@
-# Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * **Historial de Cambios**
 
 ## Historial de Cambios
 
+### Versión 1.5.0
+
+* **Acceso documental integrado (Proxy Central):** orquestación centralizada con proxy pass sincrónico; búsqueda ITI-67 devuelve URLs `https://api.sihce.salud.buenosaires.gob.ar/Proxy/Binary/{id}`; descarga ITI-68 vía `GET /Proxy/Binary/{id}`.
+* **MCC:** evaluación de consentimiento centralizada en búsqueda y descarga.
+* Eliminado el diseño P2P de canje (`$get_binary_id`) y sus perfiles asociados (solo usado en discusión interna).
+* Diagramas actualizados en [Casos de Uso](CasosDeUso.md) (dos fases: búsqueda + proxy).
+
 ### Versión 1.4.0
 
 * **Consentimiento**: perfil [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md); operaciones POST/GET/PUT documentadas en [Operaciones](Operaciones.md#op-consentimiento); modelo lógico Consentimiento; [ConceptMap ConsentimientoModeloAFHIR](ConceptMap-ConsentimientoModeloAFHIR.md); CodeSystem/ValueSet [privacy-level](CodeSystem-sihce-privacy-level.md); cinco ejemplos por etapa.
-* **Acceso documental mediado**: consulta de índice con URLs temporarias; operación [DocumentReference/$get_binary_id](Operaciones.md#op-documento-get-binary-id); perfiles [ParametrosGetBinaryIdSIHCE](StructureDefinition-parametros-get-binary-id-sihce.md) y respuesta; SIHCE evalúa Consent antes de listar y canjear.
+* **Acceso documental mediado (diseño pre-proxy, retirado en v1.5.0):** consulta con URLs enmascaradas y canje propietario; reemplazado por Proxy Central.
 * **NamingSystem** patrón `{dominio-uri}/Organization` para hospitales ([ejemplo MSGC](NamingSystem-NamingSystemOrganizationHospitalMsgc.md)).
 * Diagramas actualizados en [Casos de Uso](CasosDeUso.md) (consentimiento + consulta documental en tres fases).
 

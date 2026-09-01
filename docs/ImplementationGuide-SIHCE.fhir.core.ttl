@@ -18,11 +18,11 @@
      fhir:v "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core>
   ] ; # 
-  fhir:version [ fhir:v "1.4.0"] ; # 
+  fhir:version [ fhir:v "1.5.0"] ; # 
   fhir:name [ fhir:v "GuiaDeImplementacionSIHCE"] ; # 
   fhir:title [ fhir:v "Guía de Implementación SIHCE - FHIR R5"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-08-26T18:52:04-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-01T17:36:42-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;
@@ -1027,24 +1027,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://sihce.gob.ar/StructureDefinition/parametros-get-binary-id-sihce> ;
-         fhir:reference [ fhir:v "StructureDefinition/parametros-get-binary-id-sihce" ]
-       ] ;
-       fhir:name [ fhir:v "Parámetros DocumentReference/$get_binary_id SIHCE" ] ;
-       fhir:description [ fhir:v "Entrada de la operación que canjea una URL temporaria del índice por la URL real en el dominio emisor y un token de acceso al documento." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "Patient"
          ]
        ] ) ;
@@ -1097,7 +1079,7 @@
          fhir:reference [ fhir:v "StructureDefinition/DocumentReferenceSIHCE" ]
        ] ;
        fhir:name [ fhir:v "Referencia a documento clínico SIHCE" ] ;
-       fhir:description [ fhir:v "Índice federado de documentos clínicos. El dominio emisor registra metadatos en SIHCE con la URL real en content.attachment.url; en consultas GET, SIHCE devuelve URLs temporarias enmascaradas. El contenido se obtiene vía DocumentReference/$get_binary_id y GET al dominio emisor. SIHCE valida Consent antes de listar o canjear." ] ;
+       fhir:description [ fhir:v "Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [
@@ -1116,24 +1098,6 @@
        ] ;
        fhir:name [ fhir:v "renaper-dni" ] ;
        fhir:description [ fhir:v "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)." ] ;
-       fhir:isExample [ fhir:v false ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://sihce.gob.ar/StructureDefinition/parametros-get-binary-id-response-sihce> ;
-         fhir:reference [ fhir:v "StructureDefinition/parametros-get-binary-id-response-sihce" ]
-       ] ;
-       fhir:name [ fhir:v "Respuesta DocumentReference/$get_binary_id SIHCE" ] ;
-       fhir:description [ fhir:v "URL real del contenido en el dominio emisor, token de acceso y vigencia opcional." ] ;
        fhir:isExample [ fhir:v false ]
      ] [
        fhir:extension ( [

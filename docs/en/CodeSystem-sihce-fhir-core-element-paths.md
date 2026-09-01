@@ -1,4 +1,4 @@
-# Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths | *Version*:1.4.0 |
-| Draft as of 2026-08-26 | *Computable Name*:SIHCEFhirCoreElementPaths |
+| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths | *Version*:1.5.0 |
+| Draft as of 2026-09-01 | *Computable Name*:SIHCEFhirCoreElementPaths |
 
  
 Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition). 
@@ -31,12 +31,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "sihce-fhir-core-element-paths",
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
-  "version" : "1.4.0",
+  "version" : "1.5.0",
   "name" : "SIHCEFhirCoreElementPaths",
   "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-26T18:52:04-03:00",
+  "date" : "2026-09-01T17:36:42-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

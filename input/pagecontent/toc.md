@@ -61,7 +61,7 @@
 
 8.24 [NamingSystem Organization hospital (ejemplo MSGC)](NamingSystem-NamingSystemOrganizationHospitalMsgc.html)
 
-8.25 [Parámetros $get_binary_id](StructureDefinition-parametros-get-binary-id-sihce.html)
+8.25 [Descarga vía Proxy Central (ITI-68)](Operaciones.html#op-documento-proxy)
 
 8.26 [Consent opt-in general (etapa 1)](Consent-ConsentOptInGeneralSIHCE.html)
 

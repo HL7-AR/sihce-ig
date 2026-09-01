@@ -1,4 +1,4 @@
-# Modelo lógico ModificarSDMPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Modelo lógico ModificarSDMPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona | *Version*:1.4.0 |
-| Draft as of 2026-08-26 | *Computable Name*:ModificarSDMPersona |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona | *Version*:1.5.0 |
+| Draft as of 2026-09-01 | *Computable Name*:ModificarSDMPersona |
 
  
 Actualización del SDM de una persona federada; documento inmutable. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](../StructureDefinition-ModificarSDMPerso
   "resourceType" : "StructureDefinition",
   "id" : "ModificarSDMPersona",
   "url" : "http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona",
-  "version" : "1.4.0",
+  "version" : "1.5.0",
   "name" : "ModificarSDMPersona",
   "title" : "Modelo lógico ModificarSDMPersona (FederadorBA)",
   "status" : "draft",
-  "date" : "2026-08-26T18:52:04-03:00",
+  "date" : "2026-09-01T17:36:42-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

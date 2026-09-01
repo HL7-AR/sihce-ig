@@ -1,7 +1,7 @@
 # Consentimiento de paciente en SIHCE
 
 **Estado:** integrado en la IG v1.4.0 — ver [Operaciones](../input/pagecontent/Operaciones.md#op-consentimiento) y [ConsentSIHCE](../docs/StructureDefinition-ConsentSIHCE.html). Este archivo conserva el detalle de diseño.  
-**Alcance:** registro, consulta y revocación de preferencias de privacidad del paciente en el bus SIHCE; **enforcement** en SIHCE al acceder al índice documental ([flujo de documentos](flujo_documentos.md)).  
+**Alcance:** registro, consulta y revocación de preferencias de privacidad del paciente en el bus SIHCE; **enforcement** en SIHCE al acceder al índice y al proxy documental ([flujo integrado](integrado/flujo_documentos_integrado.md)).  
 **Recurso FHIR:** [`Consent`](https://hl7.org/fhir/R5/consent.html) (R5), perfil SIHCE a definir.
 
 ---
@@ -21,7 +21,7 @@
 | Niveles de privacidad | **`normal`** y **`confidential`**; **`normal` debe enviarse explícitamente** |
 | Operaciones | **`POST`**, **`GET`**, **`PUT`** (revocación / actualización) |
 | Historial | **Versionado** (`meta.versionId`); vigencia **hasta revocación** |
-| Enforcement | **SIHCE** valida consentimiento en lista y canje de documentos |
+| Enforcement | **SIHCE (MCC)** valida consentimiento en búsqueda ITI-67 y descarga ITI-68 vía Proxy Central |
 | Auditoría | **`AuditEvent`** en cada POST (y PUT) |
 **Nota FHIR R5:** el recurso `Consent` usa `subject` (no `patient`), `date` (no `dateTime`) y `decision` (`permit`/`deny`) en lugar de `provision.type` en la raíz. Ver ejemplos en la IG.
 
@@ -96,7 +96,7 @@ sequenceDiagram
 
 ## 5. Diagrama — enforcement en acceso a documentos
 
-SIHCE evalúa consentimiento **antes** de devolver lista o canjear URL (ver [flujo_documentos.md](flujo_documentos.md)).
+SIHCE evalúa consentimiento en el **MCC** antes de devolver el índice (ITI-67) y antes del proxy pass (ITI-68). Ver [flujo integrado](integrado/flujo_documentos_integrado.md).
 
 ```mermaid
 sequenceDiagram
@@ -120,7 +120,7 @@ sequenceDiagram
   X-->>C: Respuesta
 ```
 
-La misma evaluación se repite en **`DocumentReference/$get_binary_id`**: si el documento concreto excede el nivel autorizado, SIHCE responde **403**.
+La misma evaluación se repite en **`GET /Proxy/Binary/{id}`**: si el documento excede el nivel autorizado, SIHCE responde **403**.
 
 ---
 
@@ -379,7 +379,7 @@ GET /Consent/consent-987654321/_history
 | Paciente inexistente | 404 / 422 | Según validación de negocio |
 | Dominio no autenticado | 401 | Canal X-BA |
 | Estructura inválida (falta `normal`, hospital sin id, etc.) | 422 | `OperationOutcome` |
-| Acceso documental sin consentimiento | 403 | En GET `DocumentReference` / `$get_binary_id` |
+| Acceso documental sin consentimiento | 403 | En GET `DocumentReference` / `GET /Proxy/Binary/{id}` |
 
 Ejemplo — acceso denegado por falta de consentimiento:
 
@@ -408,15 +408,14 @@ En cada **POST** y **PUT** exitoso (o fallido, según política), SIHCE genera *
 
 ---
 
-## 12. Integración con flujo de documentos
+## 12. Integración con flujo de documentos (Proxy Central)
 
-Este consentimiento es **prerrequisito** del [flujo de acceso a documentos](flujo_documentos.md) (vía principal de diseño):
+El consentimiento es prerrequisito del [flujo integrado](integrado/flujo_documentos_integrado.md):
 
-| Fase documentos | Control de consentimiento |
-|-----------------|---------------------------|
-| A — `GET DocumentReference` | SIHCE filtra o deniega según etapa desplegada |
-| B — `$get_binary_id` | SIHCE revalida nivel vs `securityLabel` del documento |
-| C — GET al emisor | Token de documento solo emitido si A/B pasaron consentimiento |
+| Fase | Control MCC |
+|------|-------------|
+| ITI-67 — `GET DocumentReference` | SIHCE filtra o deniega según etapa desplegada |
+| ITI-68 — `GET /Proxy/Binary/{id}` | SIHCE revalida nivel vs `securityLabel` antes del proxy pass |
 
 ---
 
@@ -443,7 +442,7 @@ Este consentimiento es **prerrequisito** del [flujo de acceso a documentos](fluj
 
 ## 15. Referencias
 
-- [Flujo de acceso a documentos](flujo_documentos.md)
+- [Flujo integrado de documentos](integrado/flujo_documentos_integrado.md)
 - [FHIR R5 Consent](https://hl7.org/fhir/R5/consent.html)
 - [FHIR Consent Scope](http://terminology.hl7.org/CodeSystem/consentscope)
 - [FHIR Consent Category](http://terminology.hl7.org/CodeSystem/consent-category)

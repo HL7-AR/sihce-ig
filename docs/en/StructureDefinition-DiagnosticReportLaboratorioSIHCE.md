@@ -1,4 +1,4 @@
-# Informe de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Informe de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE | *Version*:1.4.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE | *Version*:1.5.0 |
 | Draft as of 2026-06-09 | *Computable Name*:DiagnosticReportLaboratorioSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-DiagnosticReportL
   "resourceType" : "StructureDefinition",
   "id" : "DiagnosticReportLaboratorioSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE",
-  "version" : "1.4.0",
+  "version" : "1.5.0",
   "name" : "DiagnosticReportLaboratorioSIHCE",
   "title" : "Informe de laboratorio SIHCE",
   "status" : "draft",

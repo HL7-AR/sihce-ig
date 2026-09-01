@@ -29,8 +29,8 @@ En todas las operaciones de la colección se envían estos headers:
     <tr><td>Actualización de identificador local</td><td>POST</td><td><code>/Patient/$patch-identifier</code></td><td>Actualiza el identificador local usando <code>Parameters</code>.</td></tr>
     <tr><td>Actualización de SDM</td><td>POST</td><td><code>/Patient/$update-sdm</code></td><td>Actualiza datos mínimos del paciente mediante operación FHIR personalizada.</td></tr>
     <tr><td>Registro de documento clínico</td><td>POST</td><td><code>/DocumentReference</code></td><td>Indexa un documento clínico conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>.</td></tr>
-    <tr><td>Consulta de documentos clínicos</td><td>GET</td><td><code>/DocumentReference?patient.identifier={system|value}&amp;type=&amp;date=&amp;status=</code></td><td>Lista el índice (URLs temporarias); requiere <a href="#op-consentimiento">Consent</a> activo.</td></tr>
-    <tr><td>Canje de URL documental</td><td>POST</td><td><code>/DocumentReference/$get_binary_id</code></td><td>Obtiene URL real en el emisor y token de acceso al contenido.</td></tr>
+    <tr><td>Consulta de documentos clínicos</td><td>GET</td><td><code>/DocumentReference?patient.identifier={system|value}&amp;type=&amp;date=&amp;status=</code></td><td>Búsqueda ITI-67; URLs del <a href="#op-documento-proxy">Proxy Central</a>; requiere <a href="#op-consentimiento">Consent</a> (MCC).</td></tr>
+    <tr><td>Descarga de documento</td><td>GET</td><td><code>/Proxy/Binary/{id}</code></td><td>Recuperación ITI-68 vía proxy pass sincrónico de SIHCE.</td></tr>
     <tr><td>Registro de consentimiento</td><td>POST</td><td><code>/Consent</code></td><td>Registra preferencias de privacidad del paciente (<a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>).</td></tr>
     <tr><td>Consulta de consentimiento</td><td>GET</td><td><code>/Consent?subject.identifier={system|value}&amp;status=active</code></td><td>Consulta el consentimiento vigente del paciente.</td></tr>
     <tr><td>Actualización de consentimiento</td><td>PUT</td><td><code>/Consent/{id}</code></td><td>Nueva versión (opt-out, ampliación por hospital o nivel).</td></tr>
@@ -414,13 +414,13 @@ Ejemplo equivalente para **informe de laboratorio** (índice → DiagnosticRepor
 - [DiagnosticReport informe laboratorio nivel 2 (PDF + observaciones)](DiagnosticReport-DiagnosticReportInformeLabNivel2.html)
 
 <a id="op-documento-consulta"></a>
-### Consulta de documentos clínicos
+### Consulta de documentos clínicos (ITI-67)
 
-Búsqueda FHIR R5 sobre `DocumentReference` ([search](https://hl7.org/fhir/R5/documentreference.html#search)). El índice lo responde la capacidad de **registro documental** de SIHCE. La solicitud viaja por el **Canal X-BA**.
+Búsqueda FHIR R5 sobre `DocumentReference` ([search](https://hl7.org/fhir/R5/documentreference.html#search)). Corresponde a **ITI-67** (query de metadatos documentales en el índice central). El índice lo responde la capacidad de **registro documental** de SIHCE. La solicitud viaja por el **Canal X-BA**.
 
-**Prerrequisito:** SIHCE evalúa el [`Consent`](StructureDefinition-ConsentSIHCE.html) activo del paciente antes de devolver resultados. Sin consentimiento → **403 Forbidden**. Ver [Registro de consentimiento](#op-consentimiento).
+**Prerrequisito:** SIHCE Core evalúa el consentimiento del paciente en el **Motor Central de Consentimientos (MCC)** — recurso [`Consent`](StructureDefinition-ConsentSIHCE.html) persistido en SIHCE. Sin consentimiento activo (ALLOW) → **403 Forbidden**. Ver [Registro de consentimiento](#op-consentimiento).
 
-**Respuesta:** SIHCE **no** devuelve la URL real del emisor en `content.attachment.url`; en su lugar entrega una **URL temporaria opaca** que debe canjearse con [`$get_binary_id`](#op-documento-get-binary-id).
+**Respuesta:** SIHCE **no** devuelve la URL real del hospital custodio. En `content.attachment.url` entrega la ruta del **Proxy Central** (consumible con GET estándar en la [descarga ITI-68](#op-documento-proxy)), p. ej. `https://api.sihce.salud.buenosaires.gob.ar/Proxy/Binary/doc-99`.
 
 #### Contexto del hospital solicitante
 
@@ -456,7 +456,7 @@ Claims JWT recomendados para acceso documental (además de autenticación de dom
 
 #### Respuesta esperada
 
-`200 OK` con un [Bundle](https://hl7.org/fhir/R5/bundle.html) tipo `searchset`. Cada `DocumentReference` incluye `content.attachment.url` con **URL temporaria** de SIHCE (no la URL del dominio emisor). SIHCE filtra entradas según el nivel de privacidad otorgado al hospital (`normal` / `confidential`).
+`200 OK` con un [Bundle](https://hl7.org/fhir/R5/bundle.html) tipo `searchset`. Cada `DocumentReference` incluye `content.attachment.url` con la **URL del Proxy Central** (no la URL del hospital custodio). SIHCE filtra entradas según el nivel de privacidad otorgado al hospital (`normal` / `confidential`).
 
 Fragmento de ejemplo:
 
@@ -468,8 +468,8 @@ Fragmento de ejemplo:
   "content": [{
     "attachment": {
       "contentType": "application/pdf",
-      "url": "https://sihce.ba.ar/r5/opaque/doc-access/a8f3c2e1-9b44-4c1a-b7e0-11aa22bb33cc",
-      "title": "Epicrisis (acceso mediado)"
+      "url": "https://api.sihce.salud.buenosaires.gob.ar/Proxy/Binary/doc-99",
+      "title": "Epicrisis"
     }
   }]
 }
@@ -486,60 +486,52 @@ Fragmento de ejemplo:
 
 SIHCE genera **`AuditEvent`** por cada consulta (éxito o denegación).
 
-<a id="op-documento-get-binary-id"></a>
-### Canje de URL documental (`DocumentReference/$get_binary_id`)
+<a id="op-documento-proxy"></a>
+### Descarga de documento vía Proxy Central (ITI-68)
 
-Intercambia la URL temporaria recibida en el índice por la **URL real** en el dominio emisor y un **token de acceso** al documento. El contenido clínico **no** transita por SIHCE; el consumidor usa la URL y el token en un GET al **dominio emisor** (Fase C en [Casos de Uso](CasosDeUso.html)).
+Para obtener el contenido clínico, el hospital solicitante ejecuta un **GET HTTP estándar** contra la URL devuelta en la búsqueda (Fase 1). No se requiere operación propietaria de canje.
 
-SIHCE **revalida** Consent y nivel de privacidad vs `DocumentReference.securityLabel` antes de emitir el token.
+Corresponde a **ITI-68** (Retrieve Document): SIHCE Core actúa como **proxy inverso sincrónico** — intercepta la petición, revalida consentimiento en el MCC, resuelve la URL real del hospital custodio desde el índice y ejecuta **proxy pass** (streaming de bytes **sin persistencia en disco** en el núcleo central), propagando la identidad del solicitante de extremo a extremo.
 
 #### Request
 
 ```http
-POST /DocumentReference/$get_binary_id
-Content-Type: application/fhir+json
+GET /Proxy/Binary/doc-99
+Host: api.sihce.salud.buenosaires.gob.ar
 Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+Accept: application/pdf
 ```
 
-Perfil de entrada: [ParametrosGetBinaryIdSIHCE](StructureDefinition-parametros-get-binary-id-sihce.html).
-
-```json
-{
-  "resourceType": "Parameters",
-  "meta": {
-    "profile": ["http://sihce.gob.ar/StructureDefinition/parametros-get-binary-id-sihce"]
-  },
-  "parameter": [{
-    "name": "url",
-    "valueUrl": "https://sihce.ba.ar/r5/opaque/doc-access/a8f3c2e1-9b44-4c1a-b7e0-11aa22bb33cc"
-  }]
-}
-```
+| Elemento | Descripción |
+|----------|-------------|
+| `{id}` | Identificador opaco del documento en el índice SIHCE (p. ej. `doc-99`). |
+| `Authorization` | JWT del dominio/profesional solicitante (mismo contexto que la búsqueda). |
+| `Accept` | MIME esperado (`application/pdf`, `application/fhir+json`, etc.). |
 
 #### Respuesta (éxito)
 
-`200 OK`. Perfil de salida: [ParametrosGetBinaryIdResponseSIHCE](StructureDefinition-parametros-get-binary-id-response-sihce.html).
+`200 OK` con el cuerpo del documento:
 
-```json
-{
-  "resourceType": "Parameters",
-  "parameter": [
-    { "name": "url", "valueUrl": "https://emisor.hospitalcentral.org/fhir/Binary/bin-epi-77821" },
-    { "name": "access_token", "valueString": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9..." },
-    { "name": "expires_in", "valueInteger": 300 }
-  ]
-}
-```
+- Nivel 1 epicrisis: `application/pdf` (Binary)
+- Nivel 2+: `application/fhir+json` (Composition o DiagnosticReport)
+- Informe laboratorio: PDF o DiagnosticReport según nivel
 
-#### Obtención del contenido (dominio emisor)
+#### Errores
 
-```http
-GET /Binary/bin-epi-77821
-Host: emisor.hospitalcentral.org
-Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
-```
+| Situación | HTTP |
+|-----------|------|
+| Consentimiento denegado en MCC | 403 |
+| Documento inexistente en índice | 404 |
+| Hospital custodio no disponible | 502 / 504 |
+| Dominio no autenticado | 401 |
 
-El emisor valida el token emitido por SIHCE y entrega el recurso (`Binary`, `Composition`, `DiagnosticReport`, etc.) o un `OperationOutcome`.
+SIHCE genera **`AuditEvent`** por cada descarga (éxito o denegación).
+
+#### Ventajas
+
+- **Plug & play** IHE MHD: cualquier visor compatible con GET puede integrarse.
+- **Menor latencia:** un solo GET por documento, sin pasos intermedios de canje.
+- **Orquestación centralizada:** el solicitante no contacta directamente al hospital custodio.
 
 <a id="op-consentimiento"></a>
 ### Registro de consentimiento (`POST /Consent`)

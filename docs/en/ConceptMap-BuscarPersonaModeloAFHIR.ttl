@@ -18,7 +18,7 @@
      fhir:v "http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR>
   ] ; # 
-  fhir:version [ fhir:v "1.4.0"] ; # 
+  fhir:version [ fhir:v "1.5.0"] ; # 
   fhir:name [ fhir:v "BuscarPersonaModeloAFHIR"] ; # 
   fhir:title [ fhir:v "BuscarPersona: modelo lógico a FHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

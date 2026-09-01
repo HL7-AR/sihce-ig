@@ -17,7 +17,7 @@
      fhir:v "http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR>
   ] ; # 
-  fhir:version [ fhir:v "1.4.0"] ; # 
+  fhir:version [ fhir:v "1.5.0"] ; # 
   fhir:name [ fhir:v "ModificarSDMPersonaModeloAFHIR"] ; # 
   fhir:title [ fhir:v "ModificarSDMPersona: modelo lógico a FHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

@@ -1,4 +1,4 @@
-# Rutas de elementos en modelos lógicos de operación SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.4.0
+# Rutas de elementos en modelos lógicos de operación SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths | *Version*:1.4.0 |
-| Draft as of 2026-08-26 | *Computable Name*:SIHCELogicalOperationElementPaths |
+| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths | *Version*:1.5.0 |
+| Draft as of 2026-09-01 | *Computable Name*:SIHCELogicalOperationElementPaths |
 
  
 Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento…). 
@@ -31,12 +31,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "sihce-logical-operation-element-paths",
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-  "version" : "1.4.0",
+  "version" : "1.5.0",
   "name" : "SIHCELogicalOperationElementPaths",
   "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-26T18:52:04-03:00",
+  "date" : "2026-09-01T17:36:42-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
