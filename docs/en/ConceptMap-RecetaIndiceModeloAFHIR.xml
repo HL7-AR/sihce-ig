@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="RecetaIndiceModeloAFHIR"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap RecetaIndiceModeloAFHIR</b></p><a name="RecetaIndiceModeloAFHIR"> </a><a name="hcRecetaIndiceModeloAFHIR"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-sihce-logical-operation-element-paths.html">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href="CodeSystem-sihce-fhir-core-element-paths.html">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>RecetaIndice.datosReceta.cuir (RecetaIndice datosReceta cuir)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.identifier</td></tr><tr><td>RecetaIndice.datosReceta.cuilPaciente (RecetaIndice datosReceta cuilPaciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.subject</td></tr><tr><td>RecetaIndice.datosReceta.idPersonaGlobal (RecetaIndice datosReceta idPersonaGlobal)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.subject</td></tr><tr><td>RecetaIndice.datosReceta.estado (RecetaIndice datosReceta estado)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.extension</td></tr><tr><td>RecetaIndice.datosReceta.fechaEmision (RecetaIndice datosReceta fechaEmision)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.date</td></tr><tr><td>RecetaIndice.datosReceta.urlContenido (RecetaIndice datosReceta urlContenido)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.content</td></tr><tr><td>RecetaIndice.datosPrescriptor.idDominio (RecetaIndice datosPrescriptor idDominio)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.custodian</td></tr><tr><td>RecetaIndice.datosPrescriptor.idEfector (RecetaIndice datosPrescriptor idEfector)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.custodian</td></tr><tr><td>RecetaIndice.repositorioDelegado (RecetaIndice repositorioDelegado)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.extension</td></tr></table></div>
+  </text>
+  <url value="http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR"/>
+  <version value="1.6.0"/>
+  <name value="RecetaIndiceModeloAFHIR"/>
+  <title value="RecetaIndice: modelo lógico a FHIR"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-09-15"/>
+  <publisher value="SIHCE Development Team"/>
+  <contact>
+    <name value="SIHCE Development Team"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
+    </telecom>
+  </contact>
+  <description value="Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest."/>
+  <group>
+    <source value="http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"/>
+    <target value="http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"/>
+    <element>
+      <code value="RecetaIndice.datosReceta.cuir"/>
+      <target>
+        <code value="DocumentReference.identifier"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RecetaIndice.datosReceta.cuilPaciente"/>
+      <target>
+        <code value="DocumentReference.subject"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RecetaIndice.datosReceta.idPersonaGlobal"/>
+      <target>
+        <code value="DocumentReference.subject"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RecetaIndice.datosReceta.estado"/>
+      <target>
+        <code value="DocumentReference.extension"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RecetaIndice.datosReceta.fechaEmision"/>
+      <target>
+        <code value="DocumentReference.date"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RecetaIndice.datosReceta.urlContenido"/>
+      <target>
+        <code value="DocumentReference.content"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RecetaIndice.datosPrescriptor.idDominio"/>
+      <target>
+        <code value="DocumentReference.custodian"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RecetaIndice.datosPrescriptor.idEfector"/>
+      <target>
+        <code value="DocumentReference.custodian"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="RecetaIndice.repositorioDelegado"/>
+      <target>
+        <code value="DocumentReference.extension"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

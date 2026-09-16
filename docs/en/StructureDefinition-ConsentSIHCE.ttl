@@ -18,7 +18,7 @@
      fhir:v "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/StructureDefinition/ConsentSIHCE>
   ] ; # 
-  fhir:version [ fhir:v "1.5.0"] ; # 
+  fhir:version [ fhir:v "1.6.0"] ; # 
   fhir:name [ fhir:v "ConsentSIHCE"] ; # 
   fhir:title [ fhir:v "Consentimiento de paciente SIHCE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

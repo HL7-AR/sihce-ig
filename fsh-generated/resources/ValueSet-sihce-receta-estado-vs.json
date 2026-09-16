@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SIHCERecetaEstadoVS",
+  "id": "sihce-receta-estado-vs",
+  "title": "Estados de receta SIHCE",
+  "description": "Estados admitidos en el índice de DocumentReferenceRecetaSIHCE.",
+  "url": "http://sihce.gob.ar/ValueSet/sihce-receta-estado",
+  "version": "1.6.0",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://sihce.gob.ar/CodeSystem/sihce-receta-estado"
+      }
+    ]
+  }
+}

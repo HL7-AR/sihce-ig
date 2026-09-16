@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="sihce-receta-estado"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem sihce-receta-estado</b></p><a name="sihce-receta-estado"> </a><a name="hcsihce-receta-estado"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">vigente<a name="sihce-receta-estado-vigente"> </a></td><td>Vigente</td><td>Receta emitida y disponible para dispensa.</td></tr><tr><td style="white-space:nowrap">dispensada<a name="sihce-receta-estado-dispensada"> </a></td><td>Dispensada</td><td>Receta ya dispensada (anti-quema: no puede volver a dispensarse).</td></tr><tr><td style="white-space:nowrap">anulada<a name="sihce-receta-estado-anulada"> </a></td><td>Anulada</td><td>Receta anulada por el prescriptor o por política.</td></tr></table></div>
+  </text>
+  <url value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>
+  <version value="1.6.0"/>
+  <name value="SIHCERecetaEstadoCS"/>
+  <title value="Estado de receta en índice SIHCE"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-09-16T14:49:36-03:00"/>
+  <publisher value="SIHCE Development Team"/>
+  <contact>
+    <name value="SIHCE Development Team"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
+    </telecom>
+  </contact>
+  <description value="Estados del índice de receta electrónica (mecanismo anti-quema)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="vigente"/>
+    <display value="Vigente"/>
+    <definition value="Receta emitida y disponible para dispensa."/>
+  </concept>
+  <concept>
+    <code value="dispensada"/>
+    <display value="Dispensada"/>
+    <definition value="Receta ya dispensada (anti-quema: no puede volver a dispensarse)."/>
+  </concept>
+  <concept>
+    <code value="anulada"/>
+    <display value="Anulada"/>
+    <definition value="Receta anulada por el prescriptor o por política."/>
+  </concept>
+</CodeSystem>

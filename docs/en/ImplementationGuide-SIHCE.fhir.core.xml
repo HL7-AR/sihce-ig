@@ -7,11 +7,11 @@
     <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide SIHCE.fhir.core</b></p><a name="SIHCE.fhir.core"> </a><a name="hcSIHCE.fhir.core"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>GuiaDeImplementacionSIHCE</h2><p>The official URL for this implementation guide is: </p><pre>http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core</pre></div>
   </text>
   <url value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core"/>
-  <version value="1.5.0"/>
+  <version value="1.6.0"/>
   <name value="GuiaDeImplementacionSIHCE"/>
   <title value="Guía de Implementación SIHCE - FHIR R5"/>
   <status value="draft"/>
-  <date value="2026-09-01T17:36:42-03:00"/>
+  <date value="2026-09-16T14:49:36-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -182,6 +182,40 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MedicationDispenseRecetaSIHCE"/>
+      </reference>
+      <name value="Dispensa de receta SIHCE"/>
+      <description value="Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationDispense"/>
+      </extension>
+      <reference>
+        <reference value="MedicationDispense/MedicationDispenseRecetaEjemplo"/>
+      </reference>
+      <name value="Dispensa de receta — farmacia privada"/>
+      <description value="Evento de dispensa notificado a SIHCE (anti-quema)."/>
+      <isExample value="true"/>
+      <profile value="http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/DispensaRecetaModeloAFHIR"/>
+      </reference>
+      <name value="DispensaReceta: modelo lógico a FHIR"/>
+      <description value="Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
@@ -260,6 +294,39 @@
       </reference>
       <name value="Epicrisis: modelo lógico a FHIR"/>
       <description value="Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-receta-estado"/>
+      </reference>
+      <name value="Estado de receta en índice SIHCE"/>
+      <description value="Estado vigente/dispensada/anulada del índice de receta (anti-quema)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/sihce-receta-estado"/>
+      </reference>
+      <name value="Estado de receta en índice SIHCE"/>
+      <description value="Estados del índice de receta electrónica (mecanismo anti-quema)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sihce-receta-estado-vs"/>
+      </reference>
+      <name value="Estados de receta SIHCE"/>
+      <description value="Estados admitidos en el índice de DocumentReferenceRecetaSIHCE."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -366,6 +433,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo"/>
+      </reference>
+      <name value="MedicationRequest receta SIGEHOS"/>
+      <description value="Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 / caso 3-1a)."/>
+      <isExample value="true"/>
+      <profile value="http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -395,6 +474,17 @@
       </reference>
       <name value="Modelo Lógico de Persona para SIHCE"/>
       <description value="Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DispensaReceta"/>
+      </reference>
+      <name value="Modelo lógico DispensaReceta (SIHCE)"/>
+      <description value="Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -465,6 +555,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RecetaIndice"/>
+      </reference>
+      <name value="Modelo lógico RecetaIndice (SIHCE)"/>
+      <description value="Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
@@ -483,6 +584,28 @@
       </reference>
       <name value="ModificarSDMPersona: modelo lógico a FHIR"/>
       <description value="Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/sihce-cuil"/>
+      </reference>
+      <name value="NamingSystem CUIL (paciente)"/>
+      <description value="Clave Única de Identificación Laboral (CUIL) del paciente, usada en búsqueda de recetas."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/sihce-cuir"/>
+      </reference>
+      <name value="NamingSystem CUIR (código único de receta)"/>
+      <description value="Identificador único de receta electrónica (CUIR) en el ecosistema SIHCE / CPE."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -624,6 +747,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/MedicationRequestRecetaSIHCE"/>
+      </reference>
+      <name value="Receta MedicationRequest SIHCE"/>
+      <description value="Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/RecetaIndiceModeloAFHIR"/>
+      </reference>
+      <name value="RecetaIndice: modelo lógico a FHIR"/>
+      <description value="Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DocumentReferenceSIHCE"/>
       </reference>
       <name value="Referencia a documento clínico SIHCE"/>
@@ -639,6 +784,17 @@
       </reference>
       <name value="renaper-dni"/>
       <description value="This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/extension-receta-repositorio-delegado"/>
+      </reference>
+      <name value="Repositorio delegado en SIHCE"/>
+      <description value="Marca el caso excepcional en que SIHCE almacena el MedicationRequest (caso de uso 3, variante 1b)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -679,6 +835,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/sihce-receta-document-type-vs"/>
+      </reference>
+      <name value="Tipo documental de receta SIHCE"/>
+      <description value="LOINC para índice de receta electrónica."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/sihce-clinical-document-type-vs"/>
       </reference>
       <name value="Tipos de documento clínico SIHCE"/>
@@ -695,6 +862,41 @@
       <name value="Tipos MIME de contenido documental SIHCE"/>
       <description value="Formatos admitidos en DocumentReference.content.attachment.contentType."/>
       <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DocumentReferenceRecetaSIHCE"/>
+      </reference>
+      <name value="Índice de receta electrónica SIHCE"/>
+      <description value="Metadatos de receta en el índice SIHCE (CUIR, paciente, efector, estado). El MedicationRequest permanece en el repositorio de origen; SIHCE actúa como broker/proxy salvo repositorio delegado (caso 3/1b)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS"/>
+      </reference>
+      <name value="Índice receta vigente — SIGEHOS (caso 2)"/>
+      <description value="Metadatos de receta emitida en SIGEHOS; contenido en repositorio SIGEHOS."/>
+      <isExample value="true"/>
+      <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/DocumentReferenceRecetaDelegadaSIHCE"/>
+      </reference>
+      <name value="Índice receta — repositorio delegado SIHCE (caso 3 / 1b)"/>
+      <description value="Caso excepcional: SIHCE almacena el MedicationRequest; no hay URL de dominio de origen."/>
+      <isExample value="true"/>
+      <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"/>
     </resource>
     <page>
       <sourceUrl value="toc.html"/>

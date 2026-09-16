@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SIHCERecetaDocumentTypeVS",
+  "id": "sihce-receta-document-type-vs",
+  "title": "Tipo documental de receta SIHCE",
+  "description": "LOINC para índice de receta electrónica.",
+  "url": "http://sihce.gob.ar/ValueSet/sihce-receta-document-type",
+  "version": "1.6.0",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "filter": [
+          {
+            "property": "code",
+            "op": "=",
+            "value": "57833-6"
+          }
+        ]
+      }
+    ]
+  }
+}

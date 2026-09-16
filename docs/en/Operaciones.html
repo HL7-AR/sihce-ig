@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.5.0</title>
+    <title>Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
             <br/>
-            <span style="display:inline-block;">1.5.0 - 
+            <span style="display:inline-block;">1.6.0 - 
 
 
             </span>
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Operaciones</h2>
   
 
@@ -190,6 +190,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#registro-de-documento-clínico-documentreference" id="markdown-toc-registro-de-documento-clínico-documentreference">Registro de documento clínico (DocumentReference)</a></li>
   <li><a href="#consulta-de-documentos-clínicos-iti-67" id="markdown-toc-consulta-de-documentos-clínicos-iti-67">Consulta de documentos clínicos (ITI-67)</a></li>
   <li><a href="#descarga-de-documento-vía-proxy-central-iti-68" id="markdown-toc-descarga-de-documento-vía-proxy-central-iti-68">Descarga de documento vía Proxy Central (ITI-68)</a></li>
+  <li><a href="#indexación-de-receta-emitida" id="markdown-toc-indexación-de-receta-emitida">Indexación de receta emitida</a></li>
+  <li><a href="#consulta-de-recetas" id="markdown-toc-consulta-de-recetas">Consulta de recetas</a></li>
+  <li><a href="#obtención-del-detalle-de-receta" id="markdown-toc-obtención-del-detalle-de-receta">Obtención del detalle de receta</a></li>
+  <li><a href="#notificación-de-dispensa" id="markdown-toc-notificación-de-dispensa">Notificación de dispensa</a></li>
   <li><a href="#registro-de-consentimiento-post-consent" id="markdown-toc-registro-de-consentimiento-post-consent">Registro de consentimiento (<code class="language-plaintext highlighter-rouge">POST /Consent</code>)</a></li>
 </ul>
 
@@ -231,6 +235,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>Registro de documento clínico</td><td>POST</td><td><code>/DocumentReference</code></td><td>Indexa un documento clínico conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>.</td></tr>
     <tr><td>Consulta de documentos clínicos</td><td>GET</td><td><code>/DocumentReference?patient.identifier={system|value}&amp;type=&amp;date=&amp;status=</code></td><td>Búsqueda ITI-67; URLs del <a href="#op-documento-proxy">Proxy Central</a>; requiere <a href="#op-consentimiento">Consent</a> (MCC).</td></tr>
     <tr><td>Descarga de documento</td><td>GET</td><td><code>/Proxy/Binary/{id}</code></td><td>Recuperación ITI-68 vía proxy pass sincrónico de SIHCE.</td></tr>
+    <tr><td>Indexación de receta emitida</td><td>POST</td><td><code>/DocumentReference</code></td><td>Índice de receta (CUIR, estado vigente) conforme a <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>.</td></tr>
+    <tr><td>Consulta de recetas</td><td>GET</td><td><code>/DocumentReference?identifier={CUIR}&amp;type=57833-6</code> o <code>patient.identifier={CUIL}</code></td><td>Búsqueda en índice de recetas por CUIR o CUIL.</td></tr>
+    <tr><td>Obtención de detalle de receta</td><td>GET</td><td><code>/Proxy/MedicationRequest/{id}</code></td><td>Broker/proxy hacia el repositorio de origen (o lectura local si repositorio delegado).</td></tr>
+    <tr><td>Notificación de dispensa</td><td>POST</td><td><code>/MedicationDispense</code></td><td>Evento de dispensa (<a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>); actualiza índice a dispensada.</td></tr>
     <tr><td>Registro de consentimiento</td><td>POST</td><td><code>/Consent</code></td><td>Registra preferencias de privacidad del paciente (<a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>).</td></tr>
     <tr><td>Consulta de consentimiento</td><td>GET</td><td><code>/Consent?subject.identifier={system|value}&amp;status=active</code></td><td>Consulta el consentimiento vigente del paciente.</td></tr>
     <tr><td>Actualización de consentimiento</td><td>PUT</td><td><code>/Consent/{id}</code></td><td>Nueva versión (opt-out, ampliación por hospital o nivel).</td></tr>
@@ -946,6 +954,107 @@ Accept: application/pdf
   <li><strong>Orquestación centralizada:</strong> el solicitante no contacta directamente al hospital custodio.</li>
 </ul>
 
+<p><a id="op-receta-index"></a></p>
+<h3 id="indexación-de-receta-emitida">Indexación de receta emitida</h3>
+
+<p>El repositorio de origen (SIGEHOS o prestador privado) notifica a SIHCE el evento <strong>“receta emitida”</strong> con <strong>solo metadatos</strong> (CUIR, CUIL/paciente, efector, estado <code class="language-plaintext highlighter-rouge">vigente</code>). El <code class="language-plaintext highlighter-rouge">MedicationRequest</code> <strong>no</strong> viaja en este POST (salvo el caso excepcional de <a href="#op-receta-proxy">repositorio delegado</a>).</p>
+
+<p>Cuerpo conforme a <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>. Tipo LOINC <code class="language-plaintext highlighter-rouge">57833-6</code>. Identificador CUIR: <a href="NamingSystem-sihce-cuir.html">NamingSystem sihce-cuir</a>.</p>
+
+<h4 id="request-ejemplo--caso-2--caso-3-1a">Request (ejemplo — caso 2 / caso 3-1a)</h4>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /DocumentReference
+Content-Type: application/fhir+json
+</span></code></pre></div></div>
+
+<p>Ver <a href="DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.html">DocumentReferenceRecetaVigenteSIGEHOS</a>.</p>
+
+<h4 id="respuesta">Respuesta</h4>
+
+<p><code class="language-plaintext highlighter-rouge">201 Created</code> + <code class="language-plaintext highlighter-rouge">Location</code>. SIHCE genera <code class="language-plaintext highlighter-rouge">AuditEvent</code>.</p>
+
+<p><a id="op-receta-consulta"></a></p>
+<h3 id="consulta-de-recetas">Consulta de recetas</h3>
+
+<p>Búsqueda sobre el índice de recetas. Criterios típicos:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parámetro</th>
+      <th>Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
+      <td>CUIR (<code class="language-plaintext highlighter-rouge">http://sihce.gob.ar/cuir\|{valor}</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient.identifier</code></td>
+      <td>CUIL (<code class="language-plaintext highlighter-rouge">http://sihce.gob.ar/cuil\|{valor}</code>) o idPersonaGlobal</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td><code class="language-plaintext highlighter-rouge">http://loinc.org\|57833-6</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td><code class="language-plaintext highlighter-rouge">current</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /DocumentReference?identifier=http://sihce.gob.ar/cuir|CUIR-2026-000123&amp;type=http://loinc.org|57833-6
+</span></code></pre></div></div>
+
+<p>o</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /DocumentReference?patient.identifier=http://sihce.gob.ar/cuil|20123456789&amp;type=http://loinc.org|57833-6
+</span></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">200 OK</code> Bundle <code class="language-plaintext highlighter-rouge">searchset</code>. Si el estado del índice es <code class="language-plaintext highlighter-rouge">dispensada</code>, la farmacia no debe proceder (anti-quema).</p>
+
+<p><a id="op-receta-proxy"></a></p>
+<h3 id="obtención-del-detalle-de-receta">Obtención del detalle de receta</h3>
+
+<p>SIHCE actúa como <strong>broker</strong>:</p>
+
+<ol>
+  <li>Resuelve el índice (<code class="language-plaintext highlighter-rouge">DocumentReferenceRecetaSIHCE</code>).</li>
+  <li>Si <code class="language-plaintext highlighter-rouge">repositorioDelegado=false</code>, hace <strong>proxy pass</strong> hacia la URL del repositorio de origen (SIGEHOS / prestador) y <strong>no</strong> persiste el contenido.</li>
+  <li>Si <code class="language-plaintext highlighter-rouge">repositorioDelegado=true</code> (caso 3 / 1b, excepcional), entrega el <code class="language-plaintext highlighter-rouge">MedicationRequest</code> almacenado en SIHCE.</li>
+</ol>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Proxy/MedicationRequest/mr-CUIR-2026-000123
+Authorization: Bearer ...
+Accept: application/fhir+json
+</span></code></pre></div></div>
+
+<p>Perfil de contenido: <a href="StructureDefinition-MedicationRequestRecetaSIHCE.html">MedicationRequestRecetaSIHCE</a>.</p>
+
+<p><a id="op-receta-dispensa"></a></p>
+<h3 id="notificación-de-dispensa">Notificación de dispensa</h3>
+
+<p>La farmacia (aplicativo Opción B) notifica la dispensa. SIHCE:</p>
+
+<ol>
+  <li>Valida que el índice esté en estado <code class="language-plaintext highlighter-rouge">vigente</code>.</li>
+  <li>Persiste el evento (<a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>).</li>
+  <li>Actualiza el índice a estado <code class="language-plaintext highlighter-rouge">dispensada</code> (anti-quema).</li>
+  <li>Propaga el cierre al repositorio de origen (SIGEHOS / prestador) cuando no es repositorio delegado.</li>
+</ol>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /MedicationDispense
+Content-Type: application/fhir+json
+</span></code></pre></div></div>
+
+<p>Ver <a href="MedicationDispense-MedicationDispenseRecetaEjemplo.html">MedicationDispenseRecetaEjemplo</a>.</p>
+
+<h4 id="respuesta-1">Respuesta</h4>
+
+<p><code class="language-plaintext highlighter-rouge">201 Created</code>. SIHCE genera <code class="language-plaintext highlighter-rouge">AuditEvent</code> y actualiza el <code class="language-plaintext highlighter-rouge">DocumentReference</code> de índice.</p>
+
 <p><a id="op-consentimiento"></a></p>
 <h3 id="registro-de-consentimiento-post-consent">Registro de consentimiento (<code class="language-plaintext highlighter-rouge">POST /Consent</code>)</h3>
 
@@ -1084,8 +1193,8 @@ Content-Type: application/fhir+json
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Tue, Sep 1, 2026 17:36-0300">2026-09-01</span>
+          Package SIHCE.fhir.core#1.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Generated <span title="Wed, Sep 16, 2026 14:49-0300">2026-09-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

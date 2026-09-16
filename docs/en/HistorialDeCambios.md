@@ -1,9 +1,16 @@
-# Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.5.0
+# Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.6.0
 
 * [**Table of Contents**](toc.md)
 * **Historial de Cambios**
 
 ## Historial de Cambios
+
+### Versión 1.6.0
+
+* **Receta electrónica (CPE):** casos de uso 2 (SIGEHOS → farmacia privada) y 3 (privado → farmacia, con/sin repositorio delegado).
+* Modelos lógicos [RecetaIndice](StructureDefinition-RecetaIndice.md) y [DispensaReceta](StructureDefinition-DispensaReceta.md); perfiles [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md), [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.md), [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.md).
+* NamingSystems [CUIR](NamingSystem-sihce-cuir.md) / [CUIL](NamingSystem-sihce-cuil.md); CodeSystem/ValueSet estado de receta; operaciones de índice, consulta, proxy y dispensa en [Operaciones](Operaciones.md#op-receta-index).
+* Diagramas en [Casos de Uso](CasosDeUso.md).
 
 ### Versión 1.5.0
 

@@ -17,7 +17,7 @@
      fhir:v "http://sihce.gob.ar/ConceptMap/ConsentimientoModeloAFHIR"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ConceptMap/ConsentimientoModeloAFHIR>
   ] ; # 
-  fhir:version [ fhir:v "1.5.0"] ; # 
+  fhir:version [ fhir:v "1.6.0"] ; # 
   fhir:name [ fhir:v "ConsentimientoModeloAFHIR"] ; # 
   fhir:title [ fhir:v "Consentimiento: modelo lógico a FHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

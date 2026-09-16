@@ -18,7 +18,7 @@
      fhir:v "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE>
   ] ; # 
-  fhir:version [ fhir:v "1.5.0"] ; # 
+  fhir:version [ fhir:v "1.6.0"] ; # 
   fhir:name [ fhir:v "MedicationStatementEpicrisisSIHCE"] ; # 
   fhir:title [ fhir:v "Medicación al alta epicrisis SIHCE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

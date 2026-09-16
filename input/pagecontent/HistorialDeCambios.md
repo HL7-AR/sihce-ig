@@ -1,3 +1,10 @@
+### Versión 1.6.0
+
+- **Receta electrónica (CPE):** casos de uso 2 (SIGEHOS → farmacia privada) y 3 (privado → farmacia, con/sin repositorio delegado).
+- Modelos lógicos [RecetaIndice](StructureDefinition-RecetaIndice.html) y [DispensaReceta](StructureDefinition-DispensaReceta.html); perfiles [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.html), [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.html), [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.html).
+- NamingSystems [CUIR](NamingSystem-sihce-cuir.html) / [CUIL](NamingSystem-sihce-cuil.html); CodeSystem/ValueSet estado de receta; operaciones de índice, consulta, proxy y dispensa en [Operaciones](Operaciones.html#op-receta-index).
+- Diagramas en [Casos de Uso](CasosDeUso.html).
+
 ### Versión 1.5.0
 
 - **Acceso documental integrado (Proxy Central):** orquestación centralizada con proxy pass sincrónico; búsqueda ITI-67 devuelve URLs `https://api.sihce.salud.buenosaires.gob.ar/Proxy/Binary/{id}`; descarga ITI-68 vía `GET /Proxy/Binary/{id}`.

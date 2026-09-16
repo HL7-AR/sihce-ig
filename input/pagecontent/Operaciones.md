@@ -31,6 +31,10 @@ En todas las operaciones de la colección se envían estos headers:
     <tr><td>Registro de documento clínico</td><td>POST</td><td><code>/DocumentReference</code></td><td>Indexa un documento clínico conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>.</td></tr>
     <tr><td>Consulta de documentos clínicos</td><td>GET</td><td><code>/DocumentReference?patient.identifier={system|value}&amp;type=&amp;date=&amp;status=</code></td><td>Búsqueda ITI-67; URLs del <a href="#op-documento-proxy">Proxy Central</a>; requiere <a href="#op-consentimiento">Consent</a> (MCC).</td></tr>
     <tr><td>Descarga de documento</td><td>GET</td><td><code>/Proxy/Binary/{id}</code></td><td>Recuperación ITI-68 vía proxy pass sincrónico de SIHCE.</td></tr>
+    <tr><td>Indexación de receta emitida</td><td>POST</td><td><code>/DocumentReference</code></td><td>Índice de receta (CUIR, estado vigente) conforme a <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>.</td></tr>
+    <tr><td>Consulta de recetas</td><td>GET</td><td><code>/DocumentReference?identifier={CUIR}&amp;type=57833-6</code> o <code>patient.identifier={CUIL}</code></td><td>Búsqueda en índice de recetas por CUIR o CUIL.</td></tr>
+    <tr><td>Obtención de detalle de receta</td><td>GET</td><td><code>/Proxy/MedicationRequest/{id}</code></td><td>Broker/proxy hacia el repositorio de origen (o lectura local si repositorio delegado).</td></tr>
+    <tr><td>Notificación de dispensa</td><td>POST</td><td><code>/MedicationDispense</code></td><td>Evento de dispensa (<a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>); actualiza índice a dispensada.</td></tr>
     <tr><td>Registro de consentimiento</td><td>POST</td><td><code>/Consent</code></td><td>Registra preferencias de privacidad del paciente (<a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>).</td></tr>
     <tr><td>Consulta de consentimiento</td><td>GET</td><td><code>/Consent?subject.identifier={system|value}&amp;status=active</code></td><td>Consulta el consentimiento vigente del paciente.</td></tr>
     <tr><td>Actualización de consentimiento</td><td>PUT</td><td><code>/Consent/{id}</code></td><td>Nueva versión (opt-out, ampliación por hospital o nivel).</td></tr>
@@ -532,6 +536,88 @@ SIHCE genera **`AuditEvent`** por cada descarga (éxito o denegación).
 - **Plug & play** IHE MHD: cualquier visor compatible con GET puede integrarse.
 - **Menor latencia:** un solo GET por documento, sin pasos intermedios de canje.
 - **Orquestación centralizada:** el solicitante no contacta directamente al hospital custodio.
+
+<a id="op-receta-index"></a>
+### Indexación de receta emitida
+
+El repositorio de origen (SIGEHOS o prestador privado) notifica a SIHCE el evento **“receta emitida”** con **solo metadatos** (CUIR, CUIL/paciente, efector, estado `vigente`). El `MedicationRequest` **no** viaja en este POST (salvo el caso excepcional de [repositorio delegado](#op-receta-proxy)).
+
+Cuerpo conforme a [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.html). Tipo LOINC `57833-6`. Identificador CUIR: [NamingSystem sihce-cuir](NamingSystem-sihce-cuir.html).
+
+#### Request (ejemplo — caso 2 / caso 3-1a)
+
+```http
+POST /DocumentReference
+Content-Type: application/fhir+json
+```
+
+Ver [DocumentReferenceRecetaVigenteSIGEHOS](DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.html).
+
+#### Respuesta
+
+`201 Created` + `Location`. SIHCE genera `AuditEvent`.
+
+<a id="op-receta-consulta"></a>
+### Consulta de recetas
+
+Búsqueda sobre el índice de recetas. Criterios típicos:
+
+| Parámetro | Uso |
+|-----------|-----|
+| `identifier` | CUIR (`http://sihce.gob.ar/cuir\|{valor}`) |
+| `patient.identifier` | CUIL (`http://sihce.gob.ar/cuil\|{valor}`) o idPersonaGlobal |
+| `type` | `http://loinc.org\|57833-6` |
+| `status` | `current` |
+
+```http
+GET /DocumentReference?identifier=http://sihce.gob.ar/cuir|CUIR-2026-000123&type=http://loinc.org|57833-6
+```
+
+o
+
+```http
+GET /DocumentReference?patient.identifier=http://sihce.gob.ar/cuil|20123456789&type=http://loinc.org|57833-6
+```
+
+`200 OK` Bundle `searchset`. Si el estado del índice es `dispensada`, la farmacia no debe proceder (anti-quema).
+
+<a id="op-receta-proxy"></a>
+### Obtención del detalle de receta
+
+SIHCE actúa como **broker**:
+
+1. Resuelve el índice (`DocumentReferenceRecetaSIHCE`).
+2. Si `repositorioDelegado=false`, hace **proxy pass** hacia la URL del repositorio de origen (SIGEHOS / prestador) y **no** persiste el contenido.
+3. Si `repositorioDelegado=true` (caso 3 / 1b, excepcional), entrega el `MedicationRequest` almacenado en SIHCE.
+
+```http
+GET /Proxy/MedicationRequest/mr-CUIR-2026-000123
+Authorization: Bearer ...
+Accept: application/fhir+json
+```
+
+Perfil de contenido: [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.html).
+
+<a id="op-receta-dispensa"></a>
+### Notificación de dispensa
+
+La farmacia (aplicativo Opción B) notifica la dispensa. SIHCE:
+
+1. Valida que el índice esté en estado `vigente`.
+2. Persiste el evento ([MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.html)).
+3. Actualiza el índice a estado `dispensada` (anti-quema).
+4. Propaga el cierre al repositorio de origen (SIGEHOS / prestador) cuando no es repositorio delegado.
+
+```http
+POST /MedicationDispense
+Content-Type: application/fhir+json
+```
+
+Ver [MedicationDispenseRecetaEjemplo](MedicationDispense-MedicationDispenseRecetaEjemplo.html).
+
+#### Respuesta
+
+`201 Created`. SIHCE genera `AuditEvent` y actualiza el `DocumentReference` de índice.
 
 <a id="op-consentimiento"></a>
 ### Registro de consentimiento (`POST /Consent`)

@@ -1,4 +1,4 @@
-# Rutas de elementos en modelos lógicos de operación SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
+# Rutas de elementos en modelos lógicos de operación SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths | *Version*:1.5.0 |
-| Draft as of 2026-09-01 | *Computable Name*:SIHCELogicalOperationElementPaths |
+| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths | *Version*:1.6.0 |
+| Draft as of 2026-09-16 | *Computable Name*:SIHCELogicalOperationElementPaths |
 
  
 Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento…). 
@@ -31,12 +31,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "sihce-logical-operation-element-paths",
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "SIHCELogicalOperationElementPaths",
   "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-01T17:36:42-03:00",
+  "date" : "2026-09-16T14:49:36-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -48,7 +48,7 @@ This Code system is referenced in the definition of the following value sets:
   "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 82,
+  "count" : 96,
   "concept" : [{
     "code" : "BuscarPersona.datosConsulta.tipoDocumento",
     "display" : "BuscarPersona datosConsulta tipoDocumento"
@@ -376,6 +376,62 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "Consentimiento.autorizacionHospital.nivelPrivacidad",
     "display" : "Consentimiento autorizacionHospital nivelPrivacidad"
+  },
+  {
+    "code" : "RecetaIndice.datosReceta.cuir",
+    "display" : "RecetaIndice datosReceta cuir"
+  },
+  {
+    "code" : "RecetaIndice.datosReceta.cuilPaciente",
+    "display" : "RecetaIndice datosReceta cuilPaciente"
+  },
+  {
+    "code" : "RecetaIndice.datosReceta.idPersonaGlobal",
+    "display" : "RecetaIndice datosReceta idPersonaGlobal"
+  },
+  {
+    "code" : "RecetaIndice.datosReceta.estado",
+    "display" : "RecetaIndice datosReceta estado"
+  },
+  {
+    "code" : "RecetaIndice.datosReceta.fechaEmision",
+    "display" : "RecetaIndice datosReceta fechaEmision"
+  },
+  {
+    "code" : "RecetaIndice.datosReceta.urlContenido",
+    "display" : "RecetaIndice datosReceta urlContenido"
+  },
+  {
+    "code" : "RecetaIndice.datosPrescriptor.idDominio",
+    "display" : "RecetaIndice datosPrescriptor idDominio"
+  },
+  {
+    "code" : "RecetaIndice.datosPrescriptor.idEfector",
+    "display" : "RecetaIndice datosPrescriptor idEfector"
+  },
+  {
+    "code" : "RecetaIndice.repositorioDelegado",
+    "display" : "RecetaIndice repositorioDelegado"
+  },
+  {
+    "code" : "DispensaReceta.cuir",
+    "display" : "DispensaReceta cuir"
+  },
+  {
+    "code" : "DispensaReceta.cuilPaciente",
+    "display" : "DispensaReceta cuilPaciente"
+  },
+  {
+    "code" : "DispensaReceta.fechaDispensa",
+    "display" : "DispensaReceta fechaDispensa"
+  },
+  {
+    "code" : "DispensaReceta.idFarmacia",
+    "display" : "DispensaReceta idFarmacia"
+  },
+  {
+    "code" : "DispensaReceta.nombreFarmacia",
+    "display" : "DispensaReceta nombreFarmacia"
   }]
 }
 

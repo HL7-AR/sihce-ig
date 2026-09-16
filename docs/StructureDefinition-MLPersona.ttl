@@ -17,7 +17,7 @@
      fhir:v "http://sihce.gob.ar/StructureDefinition/MLPersona"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/StructureDefinition/MLPersona>
   ] ; # 
-  fhir:version [ fhir:v "1.5.0"] ; # 
+  fhir:version [ fhir:v "1.6.0"] ; # 
   fhir:name [ fhir:v "MLPersona"] ; # 
   fhir:title [ fhir:v "Modelo Lógico de Persona para SIHCE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

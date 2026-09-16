@@ -1,0 +1,51 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "DocumentReferenceRecetaDelegadaSIHCE",
+  "meta": {
+    "profile": [
+      "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"
+    ]
+  },
+  "status": "current",
+  "extension": [
+    {
+      "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-estado",
+      "valueCode": "vigente"
+    },
+    {
+      "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado",
+      "valueBoolean": true
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/fhir+json",
+        "url": "https://api.sihce.salud.buenosaires.gob.ar/fhir/MedicationRequest/mr-CUIR-2026-000456",
+        "title": "Receta delegada CUIR-2026-000456"
+      }
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "57833-6",
+        "system": "http://loinc.org",
+        "display": "Prescription for medication"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonaSIHCEMin"
+  },
+  "identifier": [
+    {
+      "system": "http://sihce.gob.ar/cuir",
+      "value": "CUIR-2026-000456"
+    }
+  ],
+  "date": "2026-09-12T09:00:00-03:00",
+  "custodian": {
+    "display": "Prescriptor privado adherido (sin repositorio propio)"
+  }
+}

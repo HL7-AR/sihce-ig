@@ -17,7 +17,7 @@
      fhir:v "http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR>
   ] ; # 
-  fhir:version [ fhir:v "1.5.0"] ; # 
+  fhir:version [ fhir:v "1.6.0"] ; # 
   fhir:name [ fhir:v "DocumentoClinicoModeloAFHIR"] ; # 
   fhir:title [ fhir:v "DocumentoClinico: modelo lógico a FHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 

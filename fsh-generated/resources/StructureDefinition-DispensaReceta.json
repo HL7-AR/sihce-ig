@@ -1,0 +1,104 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DispensaReceta",
+  "url": "http://sihce.gob.ar/StructureDefinition/DispensaReceta",
+  "version": "1.6.0",
+  "name": "DispensaReceta",
+  "title": "Modelo lógico DispensaReceta (SIHCE)",
+  "status": "draft",
+  "description": "Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde.",
+  "fhirVersion": "5.0.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://sihce.gob.ar/StructureDefinition/DispensaReceta",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "DispensaReceta",
+        "path": "DispensaReceta",
+        "short": "Modelo lógico DispensaReceta (SIHCE)",
+        "definition": "Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde."
+      },
+      {
+        "id": "DispensaReceta.cuir",
+        "path": "DispensaReceta.cuir",
+        "short": "CUIR",
+        "definition": "Receta dispensada.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DispensaReceta.cuilPaciente",
+        "path": "DispensaReceta.cuilPaciente",
+        "short": "CUIL paciente",
+        "definition": "Paciente.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DispensaReceta.fechaDispensa",
+        "path": "DispensaReceta.fechaDispensa",
+        "short": "Fecha dispensa",
+        "definition": "Momento de la dispensa.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "DispensaReceta.idFarmacia",
+        "path": "DispensaReceta.idFarmacia",
+        "short": "Id farmacia",
+        "definition": "Identificador de la farmacia dispensadora.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DispensaReceta.nombreFarmacia",
+        "path": "DispensaReceta.nombreFarmacia",
+        "short": "Nombre farmacia",
+        "definition": "Nombre legible.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DispensaReceta.idDominioFarmacia",
+        "path": "DispensaReceta.idDominioFarmacia",
+        "short": "URI dominio farmacia",
+        "definition": "Dominio del aplicativo de dispensa (Opción B).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      }
+    ]
+  }
+}

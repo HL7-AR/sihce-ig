@@ -1,4 +1,4 @@
-# Consentimiento de paciente SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
+# Consentimiento de paciente SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/ConsentSIHCE | *Version*:1.5.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/ConsentSIHCE | *Version*:1.6.0 |
 | Draft as of 2026-08-26 | *Computable Name*:ConsentSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-ConsentSIHCE.csv)
   "resourceType" : "StructureDefinition",
   "id" : "ConsentSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "ConsentSIHCE",
   "title" : "Consentimiento de paciente SIHCE",
   "status" : "draft",

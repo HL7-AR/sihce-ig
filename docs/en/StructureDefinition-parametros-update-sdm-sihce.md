@@ -1,4 +1,4 @@
-# Parametros Update SDM SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
+# Parametros Update SDM SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce | *Version*:1.5.0 |
-| Draft as of 2026-09-01 | *Computable Name*:ParametrosUpdateSDMSIHCE |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce | *Version*:1.6.0 |
+| Draft as of 2026-09-16 | *Computable Name*:ParametrosUpdateSDMSIHCE |
 
  
 Estructura de Parameters para la operacion $update-sdm de SIHCE. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-update
   "resourceType" : "StructureDefinition",
   "id" : "parametros-update-sdm-sihce",
   "url" : "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "ParametrosUpdateSDMSIHCE",
   "title" : "Parametros Update SDM SIHCE",
   "status" : "draft",
-  "date" : "2026-09-01T17:36:42-03:00",
+  "date" : "2026-09-16T14:49:36-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

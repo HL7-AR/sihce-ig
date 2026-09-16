@@ -1,0 +1,46 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "DocumentReferenceRecetaDelegadaSIHCE",
+  "meta" : {
+    "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceRecetaDelegadaSIHCE</b></p><a name=\"DocumentReferenceRecetaDelegadaSIHCE\"> </a><a name=\"hcDocumentReferenceRecetaDelegadaSIHCE\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReferenceRecetaSIHCE.html\">Índice de receta electrónica SIHCE</a></p></div><p><b>Estado de receta en índice SIHCE</b>: vigente</p><p><b>Repositorio delegado en SIHCE</b>: true</p><p><b>identifier</b>: <a href=\"NamingSystem-sihce-cuir.html\" title=\"Código Único de Identificación de Receta (CUIR). Se usa como DocumentReference.identifier y MedicationRequest.identifier.\">NamingSystem CUIR (código único de receta)</a>/CUIR-2026-000456</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 57833-6}\">Prescription for medication</span></p><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>date</b>: 2026-09-12 09:00:00-0300</p><p><b>custodian</b>: Prescriptor privado adherido (sin repositorio propio)</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>application/fhir+json</td><td><a href=\"https://api.sihce.salud.buenosaires.gob.ar/fhir/MedicationRequest/mr-CUIR-2026-000456\">https://api.sihce.salud.buenosaires.gob.ar/fhir/MedicationRequest/mr-CUIR-2026-000456</a></td><td>Receta delegada CUIR-2026-000456</td></tr></table></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://sihce.gob.ar/StructureDefinition/extension-receta-estado",
+    "valueCode" : "vigente"
+  },
+  {
+    "url" : "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado",
+    "valueBoolean" : true
+  }],
+  "identifier" : [{
+    "system" : "http://sihce.gob.ar/cuir",
+    "value" : "CUIR-2026-000456"
+  }],
+  "status" : "current",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "57833-6",
+      "display" : "Prescription for medication"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PersonaSIHCEMin"
+  },
+  "date" : "2026-09-12T09:00:00-03:00",
+  "custodian" : {
+    "display" : "Prescriptor privado adherido (sin repositorio propio)"
+  },
+  "content" : [{
+    "attachment" : {
+      "contentType" : "application/fhir+json",
+      "url" : "https://api.sihce.salud.buenosaires.gob.ar/fhir/MedicationRequest/mr-CUIR-2026-000456",
+      "title" : "Receta delegada CUIR-2026-000456"
+    }
+  }]
+}

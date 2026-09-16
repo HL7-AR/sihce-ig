@@ -7,12 +7,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-document-content-type-vs</b></p><a name=\"sihce-document-content-type-vs\"> </a><a name=\"hcsihce-document-content-type-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://terminology.hl7.org/CodeSystem/mimetypes</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = application/pdf</li><li>Include codes from<code>http://terminology.hl7.org/CodeSystem/mimetypes</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = application/xml</li><li>Include codes from<code>http://terminology.hl7.org/CodeSystem/mimetypes</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = application/fhir+json</li></ul></div>"
   },
   "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "SIHCEDocumentContentTypeVS",
   "title" : "Tipos MIME de contenido documental SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-01T17:36:42-03:00",
+  "date" : "2026-09-16T14:49:36-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

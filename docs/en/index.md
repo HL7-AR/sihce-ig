@@ -1,4 +1,4 @@
-# Inicio - Guía de Implementación SIHCE - FHIR R5 v1.5.0
+# Inicio - Guía de Implementación SIHCE - FHIR R5 v1.6.0
 
 * [**Table of Contents**](toc.md)
 * **Inicio**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:1.5.0 |
-| Draft as of 2026-09-01 | *Computable Name*:GuiaDeImplementacionSIHCE |
+| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:1.6.0 |
+| Draft as of 2026-09-16 | *Computable Name*:GuiaDeImplementacionSIHCE |
 
 # Sistema Integrador de Historias Clínicas Electrónicas
 
@@ -59,7 +59,7 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://tx.fhir.org/r5/ValueSet/x-loinc2.82): [Composition/CompositionEpicrisisNivel2](Composition-CompositionEpicrisisNivel2.md), [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)... Show 12 more, [DiagnosticReport/DiagnosticReportInformeLabNivel1](DiagnosticReport-DiagnosticReportInformeLabNivel1.md), [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md), [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md), [DocumentReference/DocumentReferenceEpicrisisNivel1](DocumentReference-DocumentReferenceEpicrisisNivel1.md), [DocumentReference/DocumentReferenceEpicrisisNivel2](DocumentReference-DocumentReferenceEpicrisisNivel2.md), [DocumentReference/DocumentReferenceInformeLabNivel1](DocumentReference-DocumentReferenceInformeLabNivel1.md), [DocumentReference/DocumentReferenceInformeLabNivel2](DocumentReference-DocumentReferenceInformeLabNivel2.md), [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md), [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md), [SIHCEClinicalDocumentTypeVS](ValueSet-sihce-clinical-document-type-vs.md), [SIHCEEpicrisisSectionVS](ValueSet-sihce-epicrisis-section-vs.md) and [SIHCELabObservationCodeVS](ValueSet-sihce-lab-observation-code-vs.md)
+* [LOINC](http://tx.fhir.org/r5/ValueSet/x-loinc2.82): [Composition/CompositionEpicrisisNivel2](Composition-CompositionEpicrisisNivel2.md), [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)... Show 16 more, [DiagnosticReport/DiagnosticReportInformeLabNivel1](DiagnosticReport-DiagnosticReportInformeLabNivel1.md), [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md), [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md), [DocumentReference/DocumentReferenceEpicrisisNivel1](DocumentReference-DocumentReferenceEpicrisisNivel1.md), [DocumentReference/DocumentReferenceEpicrisisNivel2](DocumentReference-DocumentReferenceEpicrisisNivel2.md), [DocumentReference/DocumentReferenceInformeLabNivel1](DocumentReference-DocumentReferenceInformeLabNivel1.md), [DocumentReference/DocumentReferenceInformeLabNivel2](DocumentReference-DocumentReferenceInformeLabNivel2.md), [DocumentReference/DocumentReferenceRecetaDelegadaSIHCE](DocumentReference-DocumentReferenceRecetaDelegadaSIHCE.md), [DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS](DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.md), [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md), [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md), [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md), [SIHCEClinicalDocumentTypeVS](ValueSet-sihce-clinical-document-type-vs.md), [SIHCEEpicrisisSectionVS](ValueSet-sihce-epicrisis-section-vs.md), [SIHCELabObservationCodeVS](ValueSet-sihce-lab-observation-code-vs.md) and [SIHCERecetaDocumentTypeVS](ValueSet-sihce-receta-document-type-vs.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).

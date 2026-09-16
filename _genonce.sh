@@ -1,13 +1,13 @@
 #!/bin/bash
 publisher_jar=publisher.jar
 input_cache_path=./input-cache/
-# R5 publish requires an online terminology server for ValueSet narratives (LOINC, ICD-10, etc.).
-# FHIR_OFFLINE_TX=1 is not supported for this IG and will NPE during "Generating Narratives".
+# Default: online TX for ValueSet narratives (LOINC, ICD-10, etc.).
+# FHIR_OFFLINE_TX=1 uses -tx n/a (faster; may weaken VS expansion / narratives).
 txoption="-tx https://tx.fhir.org/r5"
 if [ "${FHIR_OFFLINE_TX:-0}" = "1" ]; then
-	echo "ERROR: FHIR_OFFLINE_TX=1 is not supported for this IG (ValueSet narratives need tx.fhir.org)."
-	echo "Run ./_genonce.sh without that variable."
-	exit 1
+	echo "WARNING: FHIR_OFFLINE_TX=1 — running without terminology server (-tx n/a)."
+	echo "Use this only for diagnostics; expansions/narratives may be incomplete."
+	txoption="-tx n/a"
 else
 	echo "Running with terminology server: $txoption"
 fi

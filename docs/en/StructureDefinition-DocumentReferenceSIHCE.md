@@ -1,4 +1,4 @@
-# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
+# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:1.5.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:1.6.0 |
 | Draft as of 2026-06-09 | *Computable Name*:DocumentReferenceSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
   "resourceType" : "StructureDefinition",
   "id" : "DocumentReferenceSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "DocumentReferenceSIHCE",
   "title" : "Referencia a documento clínico SIHCE",
   "status" : "draft",

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0a811e42-ff7b-4868-98cd-0d6d3c7ea826"/>
+  <id value="55bc1f92-d4da-40c5-b183-06436474d219"/>
   <meta>
-    <lastUpdated value="2026-09-01T17:36:42.198-03:00"/>
+    <lastUpdated value="2026-09-16T14:49:36.068-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,9 +15,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v1.5.0 (CodeSystem)</a>
+              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v1.6.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|1.5.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|1.6.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -54,12 +54,12 @@
                 <td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.5.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.5.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -75,12 +75,12 @@
                 <td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.5.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.5.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -88,15 +88,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-privacy-level"/>
-        <version value="1.5.0"/>
+        <version value="1.6.0"/>
         <name value="SIHCEPrivacyLevelVS"/>
         <title value="Niveles de privacidad SIHCE"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-01T17:36:42-03:00"/>
+        <date value="2026-09-16T14:49:36-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:f04df862-999f-479e-9414-e08cdf1ee05e"/>
-          <timestamp value="2026-09-01T20:02:26-03:00"/>
+          <identifier value="urn:uuid:87bb3cab-a163-4bd0-a8ae-2b3f50ab3481"/>
+          <timestamp value="2026-09-16T14:52:48-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -117,7 +117,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://sihce.gob.ar/CodeSystem/privacy-level|1.5.0"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/privacy-level|1.6.0"/>
           </parameter>
           <contains>
             <system value="http://sihce.gob.ar/CodeSystem/privacy-level"/>
@@ -142,9 +142,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v1.5.0 (CodeSystem)</a>
+              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v1.6.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|1.5.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|1.6.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -181,12 +181,12 @@
                 <td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.5.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.5.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -202,12 +202,12 @@
                 <td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.5.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.5.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -215,15 +215,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-privacy-level"/>
-        <version value="1.5.0"/>
+        <version value="1.6.0"/>
         <name value="SIHCEPrivacyLevelVS"/>
         <title value="Niveles de privacidad SIHCE"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-01T17:36:42-03:00"/>
+        <date value="2026-09-16T14:49:36-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:f04df862-999f-479e-9414-e08cdf1ee05e"/>
-          <timestamp value="2026-09-01T20:02:26-03:00"/>
+          <identifier value="urn:uuid:87bb3cab-a163-4bd0-a8ae-2b3f50ab3481"/>
+          <timestamp value="2026-09-16T14:52:48-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -244,7 +244,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://sihce.gob.ar/CodeSystem/privacy-level|1.5.0"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/privacy-level|1.6.0"/>
           </parameter>
           <contains>
             <system value="http://sihce.gob.ar/CodeSystem/privacy-level"/>
@@ -255,6 +255,312 @@
             <system value="http://sihce.gob.ar/CodeSystem/privacy-level"/>
             <code value="confidential"/>
             <display value="Confidencial"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-receta-estado"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-sihce-receta-estado.html">codesystem Estado de receta en índice SIHCE v1.6.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|1.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-receta-estado-vigente"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-receta-estado.html#sihce-receta-estado-vigente">vigente</a>
+                </td>
+                <td>Vigente</td>
+                <td>Receta emitida y disponible para dispensa.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;vigente&quot;, &quot;display&quot;: &quot;Vigente&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;vigente&quot;&gt;&lt;display value=&quot;Vigente&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-receta-estado-dispensada"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-receta-estado.html#sihce-receta-estado-dispensada">dispensada</a>
+                </td>
+                <td>Dispensada</td>
+                <td>Receta ya dispensada (anti-quema: no puede volver a dispensarse).</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;dispensada&quot;, &quot;display&quot;: &quot;Dispensada&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;dispensada&quot;&gt;&lt;display value=&quot;Dispensada&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-receta-estado-anulada"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-receta-estado.html#sihce-receta-estado-anulada">anulada</a>
+                </td>
+                <td>Anulada</td>
+                <td>Receta anulada por el prescriptor o por política.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;anulada&quot;, &quot;display&quot;: &quot;Anulada&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;anulada&quot;&gt;&lt;display value=&quot;Anulada&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-receta-estado"/>
+        <version value="1.6.0"/>
+        <name value="SIHCERecetaEstadoVS"/>
+        <title value="Estados de receta SIHCE"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-09-16T14:49:36-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:4126d222-2e25-44c8-9a1f-d7ad90733374"/>
+          <timestamp value="2026-09-16T14:52:49-03:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|1.6.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>
+            <code value="vigente"/>
+            <display value="Vigente"/>
+          </contains>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>
+            <code value="dispensada"/>
+            <display value="Dispensada"/>
+          </contains>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>
+            <code value="anulada"/>
+            <display value="Anulada"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-receta-estado"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-sihce-receta-estado.html">codesystem Estado de receta en índice SIHCE v1.6.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|1.6.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-receta-estado-vigente"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-receta-estado.html#sihce-receta-estado-vigente">vigente</a>
+                </td>
+                <td>Vigente</td>
+                <td>Receta emitida y disponible para dispensa.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;vigente&quot;, &quot;display&quot;: &quot;Vigente&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;vigente&quot;&gt;&lt;display value=&quot;Vigente&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-receta-estado-dispensada"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-receta-estado.html#sihce-receta-estado-dispensada">dispensada</a>
+                </td>
+                <td>Dispensada</td>
+                <td>Receta ya dispensada (anti-quema: no puede volver a dispensarse).</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;dispensada&quot;, &quot;display&quot;: &quot;Dispensada&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;dispensada&quot;&gt;&lt;display value=&quot;Dispensada&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-receta-estado-anulada"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-receta-estado.html#sihce-receta-estado-anulada">anulada</a>
+                </td>
+                <td>Anulada</td>
+                <td>Receta anulada por el prescriptor o por política.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;1.6.0&quot;, &quot;code&quot;: &quot;anulada&quot;, &quot;display&quot;: &quot;Anulada&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;1.6.0&quot;&gt;&lt;code value=&quot;anulada&quot;&gt;&lt;display value=&quot;Anulada&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-receta-estado"/>
+        <version value="1.6.0"/>
+        <name value="SIHCERecetaEstadoVS"/>
+        <title value="Estados de receta SIHCE"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2026-09-16T14:49:36-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:4126d222-2e25-44c8-9a1f-d7ad90733374"/>
+          <timestamp value="2026-09-16T14:52:49-03:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|1.6.0"/>
+          </parameter>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>
+            <code value="vigente"/>
+            <display value="Vigente"/>
+          </contains>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>
+            <code value="dispensada"/>
+            <display value="Dispensada"/>
+          </contains>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>
+            <code value="anulada"/>
+            <display value="Anulada"/>
           </contains>
         </expansion>
       </ValueSet>

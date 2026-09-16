@@ -119,10 +119,30 @@
     {
       "code": "Consent.provision",
       "display": "Consent.provision"
+    },
+    {
+      "code": "DocumentReference.extension",
+      "display": "DocumentReference.extension"
+    },
+    {
+      "code": "MedicationDispense.authorizingPrescription",
+      "display": "MedicationDispense.authorizingPrescription"
+    },
+    {
+      "code": "MedicationDispense.subject",
+      "display": "MedicationDispense.subject"
+    },
+    {
+      "code": "MedicationDispense.whenHandedOver",
+      "display": "MedicationDispense.whenHandedOver"
+    },
+    {
+      "code": "MedicationDispense.performer",
+      "display": "MedicationDispense.performer"
     }
   ],
   "version": "1.2.0",
   "experimental": false,
   "caseSensitive": true,
-  "count": 28
+  "count": 33
 }

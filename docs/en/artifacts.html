@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Guía de Implementación SIHCE - FHIR R5 v1.5.0</title>
+    <title>Artifacts Summary - Guía de Implementación SIHCE - FHIR R5 v1.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
             <br/>
-            <span style="display:inline-block;">1.5.0 - 
+            <span style="display:inline-block;">1.6.0 - 
 
 
             </span>
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -181,19 +181,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#5">Terminology: Naming Systems</a>
+         <a href="#5">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#6">Terminology: Concept Maps</a>
+         <a href="#6">Terminology: Naming Systems</a>
       </li>
       <li>
-         <a href="#7">Example: Example Instances</a>
+         <a href="#7">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -241,6 +244,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Registro de preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez: opt-in/out general, opt-in por hospital, hospital + nivel de privacidad.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DispensaReceta.html"
+                  title="StructureDefinition/DispensaReceta">
+                  <span title="StructureDefinition/DispensaReceta">Modelo lógico DispensaReceta (SIHCE)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde.</p>
 </td>
          </tr>
          <tr>
@@ -315,6 +330,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Actualización del SDM de una persona federada; documento inmutable.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RecetaIndice.html"
+                  title="StructureDefinition/RecetaIndice">
+                  <span title="StructureDefinition/RecetaIndice">Modelo lógico RecetaIndice (SIHCE)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="2"> </a>
@@ -357,6 +384,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Preferencias de privacidad del paciente en la red SIHCE (FHIR R5). Etapa 1: decision permit/deny (opt-in/out general). Etapa 2: provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html"
+                  title="StructureDefinition/MedicationDispenseRecetaSIHCE">
+                  <span title="StructureDefinition/MedicationDispenseRecetaSIHCE">Dispensa de receta SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen.</p>
 </td>
          </tr>
          <tr>
@@ -433,6 +472,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-MedicationRequestRecetaSIHCE.html"
+                  title="StructureDefinition/MedicationRequestRecetaSIHCE">
+                  <span title="StructureDefinition/MedicationRequestRecetaSIHCE">Receta MedicationRequest SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-DocumentReferenceSIHCE.html"
                   title="StructureDefinition/DocumentReferenceSIHCE">
                   <span title="StructureDefinition/DocumentReferenceSIHCE">Referencia a documento clínico SIHCE
@@ -443,9 +494,53 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html"
+                  title="StructureDefinition/DocumentReferenceRecetaSIHCE">
+                  <span title="StructureDefinition/DocumentReferenceRecetaSIHCE">Índice de receta electrónica SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Metadatos de receta en el índice SIHCE (CUIR, paciente, efector, estado). El MedicationRequest permanece en el repositorio de origen; SIHCE actúa como broker/proxy salvo repositorio delegado (caso 3/1b).</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-extension-receta-estado.html"
+                  title="StructureDefinition/extension-receta-estado">
+                  <span title="StructureDefinition/extension-receta-estado">Estado de receta en índice SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Estado vigente/dispensada/anulada del índice de receta (anti-quema).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-extension-receta-repositorio-delegado.html"
+                  title="StructureDefinition/extension-receta-repositorio-delegado">
+                  <span title="StructureDefinition/extension-receta-repositorio-delegado">Repositorio delegado en SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Marca el caso excepcional en que SIHCE almacena el MedicationRequest (caso de uso 3, variante 1b).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -477,6 +572,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-sihce-receta-estado-vs.html"
+                  title="ValueSet/sihce-receta-estado-vs">
+                  <span title="ValueSet/sihce-receta-estado-vs">Estados de receta SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Estados admitidos en el índice de DocumentReferenceRecetaSIHCE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-sihce-privacy-level-vs.html"
                   title="ValueSet/sihce-privacy-level-vs">
                   <span title="ValueSet/sihce-privacy-level-vs">Niveles de privacidad SIHCE
@@ -497,6 +604,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-sihce-receta-document-type-vs.html"
+                  title="ValueSet/sihce-receta-document-type-vs">
+                  <span title="ValueSet/sihce-receta-document-type-vs">Tipo documental de receta SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>LOINC para índice de receta electrónica.</p>
 </td>
          </tr>
          <tr>
@@ -525,12 +644,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-sihce-receta-estado.html"
+                  title="CodeSystem/sihce-receta-estado">
+                  <span title="CodeSystem/sihce-receta-estado">Estado de receta en índice SIHCE
+</span>
+               </a>
+            </td>
+            <td>
+<p>Estados del índice de receta electrónica (mecanismo anti-quema).</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-sihce-privacy-level.html"
@@ -569,12 +700,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Naming Systems </h3>
     <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-sihce-cuil.html" title="NamingSystem/sihce-cuil">
+                  <span title="NamingSystem/sihce-cuil">NamingSystem CUIL (paciente)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Clave Única de Identificación Laboral (CUIL) del paciente, usada en búsqueda de recetas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-sihce-cuir.html" title="NamingSystem/sihce-cuir">
+                  <span title="NamingSystem/sihce-cuir">NamingSystem CUIR (código único de receta)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identificador único de receta electrónica (CUIR) en el ecosistema SIHCE / CPE.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="NamingSystem-NamingSystemOrganizationHospitalMsgc.html"
@@ -636,7 +789,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Concept Maps </h3>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
 <table class="grid">
@@ -664,6 +817,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Mapeo del registro de consentimiento del paciente a Consent SIHCE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-DispensaRecetaModeloAFHIR.html"
+                  title="ConceptMap/DispensaRecetaModeloAFHIR">
+                  <span title="ConceptMap/DispensaRecetaModeloAFHIR">DispensaReceta: modelo lógico a FHIR
+</span>
+               </a>
+            </td>
+            <td>
+<p>Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE.</p>
 </td>
          </tr>
          <tr>
@@ -738,9 +903,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-RecetaIndiceModeloAFHIR.html"
+                  title="ConceptMap/RecetaIndiceModeloAFHIR">
+                  <span title="ConceptMap/RecetaIndiceModeloAFHIR">RecetaIndice: modelo lógico a FHIR
+</span>
+               </a>
+            </td>
+            <td>
+<p>Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest.</p>
+</td>
+         </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -804,6 +981,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Paciente revoca toda participación; anula autorizaciones previas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationDispense-MedicationDispenseRecetaEjemplo.html"
+                  title="MedicationDispense/MedicationDispenseRecetaEjemplo">
+                  <span title="MedicationDispense/MedicationDispenseRecetaEjemplo">Dispensa de receta — farmacia privada
+</span>
+               </a>
+            </td>
+            <td>
+<p>Evento de dispensa notificado a SIHCE (anti-quema).</p>
 </td>
          </tr>
          <tr>
@@ -928,6 +1117,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.html"
+                  title="MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo">
+                  <span title="MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo">MedicationRequest receta SIGEHOS
+</span>
+               </a>
+            </td>
+            <td>
+<p>Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 / caso 3-1a).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Patient-PersonaSIHCEMin.html" title="Patient/PersonaSIHCEMin">
                   <span title="Patient/PersonaSIHCEMin">PersonaSIHCEMin
 </span>
@@ -946,6 +1147,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Ejemplo de Recurso Paciente para Patch de Datos Minimos</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.html"
+                  title="DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS">
+                  <span title="DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS">Índice receta vigente — SIGEHOS (caso 2)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Metadatos de receta emitida en SIGEHOS; contenido en repositorio SIGEHOS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-DocumentReferenceRecetaDelegadaSIHCE.html"
+                  title="DocumentReference/DocumentReferenceRecetaDelegadaSIHCE">
+                  <span title="DocumentReference/DocumentReferenceRecetaDelegadaSIHCE">Índice receta — repositorio delegado SIHCE (caso 3 / 1b)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Caso excepcional: SIHCE almacena el MedicationRequest; no hay URL de dominio de origen.</p>
 </td>
          </tr>
       </tbody>
@@ -973,8 +1198,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Tue, Sep 1, 2026 17:36-0300">2026-09-01</span>
+          Package SIHCE.fhir.core#1.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Generated <span title="Wed, Sep 16, 2026 14:49-0300">2026-09-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

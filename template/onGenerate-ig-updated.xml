@@ -18,11 +18,11 @@
       </div>
    </text>
    <url value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core"/>
-   <version value="1.5.0"/>
+   <version value="1.6.0"/>
    <name value="GuiaDeImplementacionSIHCE"/>
    <title value="Guía de Implementación SIHCE - FHIR R5"/>
    <status value="draft"/>
-   <date value="2026-09-01T17:36:42-03:00"/>
+   <date value="2026-09-16T14:49:36-03:00"/>
    <publisher value="SIHCE Development Team"/>
    <contact>
       <name value="SIHCE Development Team"/>
@@ -56,6 +56,7 @@
       </extension>
       <grouping id="-str-logicalmodel" name="LogicalModel"/>
       <grouping id="-str-profile" name="ResourceProfile"/>
+      <grouping id="-str-extension" name="Extension"/>
       <grouping id="-term-valueset" name="ValueSet"/>
       <grouping id="-term-codesystem" name="CodeSystem"/>
       <grouping id="-term-namingsystem" name="NamingSystem"/>
@@ -112,6 +113,24 @@
          </reference>
          <name value="Modelo lógico Consentimiento (SIHCE)"/>
          <description value="Registro de preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez: opt-in/out general, opt-in por hospital, hospital + nivel de privacidad."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-DispensaReceta.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/DispensaReceta"/>
+         </reference>
+         <name value="Modelo lógico DispensaReceta (SIHCE)"/>
+         <description value="Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-logicalmodel"/>
       </resource>
@@ -228,6 +247,24 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-RecetaIndice.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/RecetaIndice"/>
+         </reference>
+         <name value="Modelo lógico RecetaIndice (SIHCE)"/>
+         <description value="Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -274,6 +311,24 @@
          </reference>
          <name value="Consentimiento de paciente SIHCE"/>
          <description value="Preferencias de privacidad del paciente en la red SIHCE (FHIR R5). Etapa 1: decision permit/deny (opt-in/out general). Etapa 2: provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MedicationDispenseRecetaSIHCE.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MedicationDispenseRecetaSIHCE"/>
+         </reference>
+         <name value="Dispensa de receta SIHCE"/>
+         <description value="Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -393,6 +448,24 @@
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-MedicationRequestRecetaSIHCE.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/MedicationRequestRecetaSIHCE"/>
+         </reference>
+         <name value="Receta MedicationRequest SIHCE"/>
+         <description value="Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="StructureDefinition-DocumentReferenceSIHCE.html"/>
          </extension>
          <reference>
@@ -402,6 +475,60 @@
          <description value="Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-DocumentReferenceRecetaSIHCE.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/DocumentReferenceRecetaSIHCE"/>
+         </reference>
+         <name value="Índice de receta electrónica SIHCE"/>
+         <description value="Metadatos de receta en el índice SIHCE (CUIR, paciente, efector, estado). El MedicationRequest permanece en el repositorio de origen; SIHCE actúa como broker/proxy salvo repositorio delegado (caso 3/1b)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-extension-receta-estado.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/extension-receta-estado"/>
+         </reference>
+         <name value="Estado de receta en índice SIHCE"/>
+         <description value="Estado vigente/dispensada/anulada del índice de receta (anti-quema)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-extension-receta-repositorio-delegado.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/extension-receta-repositorio-delegado"/>
+         </reference>
+         <name value="Repositorio delegado en SIHCE"/>
+         <description value="Marca el caso excepcional en que SIHCE almacena el MedicationRequest (caso de uso 3, variante 1b)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -436,6 +563,24 @@
          </reference>
          <name value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"/>
          <description value="Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-sihce-receta-estado-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/sihce-receta-estado-vs"/>
+         </reference>
+         <name value="Estados de receta SIHCE"/>
+         <description value="Estados admitidos en el índice de DocumentReferenceRecetaSIHCE."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -483,6 +628,24 @@
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-sihce-receta-document-type-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/sihce-receta-document-type-vs"/>
+         </reference>
+         <name value="Tipo documental de receta SIHCE"/>
+         <description value="LOINC para índice de receta electrónica."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ValueSet-sihce-document-content-type-vs.html"/>
          </extension>
          <reference>
@@ -510,6 +673,24 @@
          <description value="Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC)."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-sihce-receta-estado.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/sihce-receta-estado"/>
+         </reference>
+         <name value="Estado de receta en índice SIHCE"/>
+         <description value="Estados del índice de receta electrónica (mecanismo anti-quema)."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -564,6 +745,42 @@
          <description value="Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...)."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="NamingSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="NamingSystem-sihce-cuil.html"/>
+         </extension>
+         <reference>
+            <reference value="NamingSystem/sihce-cuil"/>
+         </reference>
+         <name value="NamingSystem CUIL (paciente)"/>
+         <description value="Clave Única de Identificación Laboral (CUIL) del paciente, usada en búsqueda de recetas."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-namingsystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="NamingSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="NamingSystem-sihce-cuir.html"/>
+         </extension>
+         <reference>
+            <reference value="NamingSystem/sihce-cuir"/>
+         </reference>
+         <name value="NamingSystem CUIR (código único de receta)"/>
+         <description value="Identificador único de receta electrónica (CUIR) en el ecosistema SIHCE / CPE."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-namingsystem"/>
       </resource>
       <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
@@ -699,6 +916,24 @@
             <valueString value="ConceptMap"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-DispensaRecetaModeloAFHIR.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/DispensaRecetaModeloAFHIR"/>
+         </reference>
+         <name value="DispensaReceta: modelo lógico a FHIR"/>
+         <description value="Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
             <valueUri value="ConceptMap-DocumentoClinicoModeloAFHIR.html"/>
          </extension>
          <reference>
@@ -804,6 +1039,24 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ConceptMap"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ConceptMap-RecetaIndiceModeloAFHIR.html"/>
+         </extension>
+         <reference>
+            <reference value="ConceptMap/RecetaIndiceModeloAFHIR"/>
+         </reference>
+         <name value="RecetaIndice: modelo lógico a FHIR"/>
+         <description value="Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-map-conceptmap"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Consent"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -887,6 +1140,24 @@
          <name value="Consentimiento opt-out general"/>
          <description value="Paciente revoca toda participación; anula autorizaciones previas."/>
          <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="MedicationDispense"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="MedicationDispense-MedicationDispenseRecetaEjemplo.html"/>
+         </extension>
+         <reference>
+            <reference value="MedicationDispense/MedicationDispenseRecetaEjemplo"/>
+         </reference>
+         <name value="Dispensa de receta — farmacia privada"/>
+         <description value="Evento de dispensa notificado a SIHCE (anti-quema)."/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -1073,6 +1344,24 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="MedicationRequest"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.html"/>
+         </extension>
+         <reference>
+            <reference value="MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo"/>
+         </reference>
+         <name value="MedicationRequest receta SIGEHOS"/>
+         <description value="Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 / caso 3-1a)."/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Patient"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -1102,6 +1391,42 @@
          <name value="PersonaSIHCEPatch"/>
          <description value="Ejemplo de Recurso Paciente para Patch de Datos Minimos"/>
          <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="DocumentReference"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.html"/>
+         </extension>
+         <reference>
+            <reference value="DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS"/>
+         </reference>
+         <name value="Índice receta vigente — SIGEHOS (caso 2)"/>
+         <description value="Metadatos de receta emitida en SIGEHOS; contenido en repositorio SIGEHOS."/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="DocumentReference"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="DocumentReference-DocumentReferenceRecetaDelegadaSIHCE.html"/>
+         </extension>
+         <reference>
+            <reference value="DocumentReference/DocumentReferenceRecetaDelegadaSIHCE"/>
+         </reference>
+         <name value="Índice receta — repositorio delegado SIHCE (caso 3 / 1b)"/>
+         <description value="Caso excepcional: SIHCE almacena el MedicationRequest; no hay URL de dominio de origen."/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -1196,6 +1521,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-DispensaReceta.html"/>
+               <title value="Modelo lógico DispensaReceta (SIHCE)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-DocumentoClinico.html"/>
                <title value="Modelo lógico DocumentoClinico (SIHCE)"/>
                <generation value="generated"/>
@@ -1226,6 +1556,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-RecetaIndice.html"/>
+               <title value="Modelo lógico RecetaIndice (SIHCE)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-CompositionEpicrisisSIHCE.html"/>
                <title value="Composición epicrisis SIHCE"/>
                <generation value="generated"/>
@@ -1238,6 +1573,11 @@
             <page>
                <nameUrl value="StructureDefinition-ConsentSIHCE.html"/>
                <title value="Consentimiento de paciente SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-MedicationDispenseRecetaSIHCE.html"/>
+               <title value="Dispensa de receta SIHCE"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1271,8 +1611,28 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-MedicationRequestRecetaSIHCE.html"/>
+               <title value="Receta MedicationRequest SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-DocumentReferenceSIHCE.html"/>
                <title value="Referencia a documento clínico SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-DocumentReferenceRecetaSIHCE.html"/>
+               <title value="Índice de receta electrónica SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-extension-receta-estado.html"/>
+               <title value="Estado de receta en índice SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-extension-receta-repositorio-delegado.html"/>
+               <title value="Repositorio delegado en SIHCE"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1286,6 +1646,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-sihce-receta-estado-vs.html"/>
+               <title value="Estados de receta SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-sihce-privacy-level-vs.html"/>
                <title value="Niveles de privacidad SIHCE"/>
                <generation value="generated"/>
@@ -1296,6 +1661,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-sihce-receta-document-type-vs.html"/>
+               <title value="Tipo documental de receta SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-sihce-clinical-document-type-vs.html"/>
                <title value="Tipos de documento clínico SIHCE"/>
                <generation value="generated"/>
@@ -1303,6 +1673,11 @@
             <page>
                <nameUrl value="ValueSet-sihce-document-content-type-vs.html"/>
                <title value="Tipos MIME de contenido documental SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-sihce-receta-estado.html"/>
+               <title value="Estado de receta en índice SIHCE"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1318,6 +1693,16 @@
             <page>
                <nameUrl value="CodeSystem-sihce-fhir-core-element-paths.html"/>
                <title value="Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="NamingSystem-sihce-cuil.html"/>
+               <title value="NamingSystem CUIL (paciente)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="NamingSystem-sihce-cuir.html"/>
+               <title value="NamingSystem CUIR (código único de receta)"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1356,6 +1741,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ConceptMap-DispensaRecetaModeloAFHIR.html"/>
+               <title value="DispensaReceta: modelo lógico a FHIR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ConceptMap-DocumentoClinicoModeloAFHIR.html"/>
                <title value="DocumentoClinico: modelo lógico a FHIR"/>
                <generation value="generated"/>
@@ -1386,6 +1776,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ConceptMap-RecetaIndiceModeloAFHIR.html"/>
+               <title value="RecetaIndice: modelo lógico a FHIR"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Consent-ConsentOptInHospitalConfidentialSIHCE.html"/>
                <title value="Consentimiento hospital + nivel confidential (etapa 3)"/>
                <generation value="generated"/>
@@ -1408,6 +1803,11 @@
             <page>
                <nameUrl value="Consent-ConsentOptOutGeneralSIHCE.html"/>
                <title value="Consentimiento opt-out general"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="MedicationDispense-MedicationDispenseRecetaEjemplo.html"/>
+               <title value="Dispensa de receta — farmacia privada"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1461,6 +1861,11 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.html"/>
+               <title value="MedicationRequest receta SIGEHOS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Patient-PersonaSIHCEMin.html"/>
                <title value="PersonaSIHCEMin"/>
                <generation value="generated"/>
@@ -1468,6 +1873,16 @@
             <page>
                <nameUrl value="Patient-PersonaSIHCEPatch.html"/>
                <title value="PersonaSIHCEPatch"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.html"/>
+               <title value="Índice receta vigente — SIGEHOS (caso 2)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="DocumentReference-DocumentReferenceRecetaDelegadaSIHCE.html"/>
+               <title value="Índice receta — repositorio delegado SIHCE (caso 3 / 1b)"/>
                <generation value="generated"/>
             </page>
          </page>

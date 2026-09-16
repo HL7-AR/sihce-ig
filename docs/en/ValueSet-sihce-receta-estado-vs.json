@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "sihce-receta-estado-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-receta-estado-vs</b></p><a name=\"sihce-receta-estado-vs\"> </a><a name=\"hcsihce-receta-estado-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-receta-estado.html\"><code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.6.0</span></li></ul></div>"
+  },
+  "url" : "http://sihce.gob.ar/ValueSet/sihce-receta-estado",
+  "version" : "1.6.0",
+  "name" : "SIHCERecetaEstadoVS",
+  "title" : "Estados de receta SIHCE",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-09-16T14:49:36-03:00",
+  "publisher" : "SIHCE Development Team",
+  "contact" : [{
+    "name" : "SIHCE Development Team",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/diegokaminker/sihce-ig"
+    }]
+  }],
+  "description" : "Estados admitidos en el índice de DocumentReferenceRecetaSIHCE.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://sihce.gob.ar/CodeSystem/sihce-receta-estado"
+    }]
+  }
+}

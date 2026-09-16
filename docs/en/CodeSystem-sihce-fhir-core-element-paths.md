@@ -1,4 +1,4 @@
-# Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.5.0
+# Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths | *Version*:1.5.0 |
-| Draft as of 2026-09-01 | *Computable Name*:SIHCEFhirCoreElementPaths |
+| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths | *Version*:1.6.0 |
+| Draft as of 2026-09-16 | *Computable Name*:SIHCEFhirCoreElementPaths |
 
  
 Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition). 
@@ -31,12 +31,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "sihce-fhir-core-element-paths",
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
-  "version" : "1.5.0",
+  "version" : "1.6.0",
   "name" : "SIHCEFhirCoreElementPaths",
   "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-01T17:36:42-03:00",
+  "date" : "2026-09-16T14:49:36-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -48,7 +48,7 @@ This Code system is referenced in the definition of the following value sets:
   "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 28,
+  "count" : 33,
   "concept" : [{
     "code" : "Patient.identifier",
     "display" : "Patient.identifier"
@@ -160,6 +160,26 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "Consent.provision",
     "display" : "Consent.provision"
+  },
+  {
+    "code" : "DocumentReference.extension",
+    "display" : "DocumentReference.extension"
+  },
+  {
+    "code" : "MedicationDispense.authorizingPrescription",
+    "display" : "MedicationDispense.authorizingPrescription"
+  },
+  {
+    "code" : "MedicationDispense.subject",
+    "display" : "MedicationDispense.subject"
+  },
+  {
+    "code" : "MedicationDispense.whenHandedOver",
+    "display" : "MedicationDispense.whenHandedOver"
+  },
+  {
+    "code" : "MedicationDispense.performer",
+    "display" : "MedicationDispense.performer"
   }]
 }
 

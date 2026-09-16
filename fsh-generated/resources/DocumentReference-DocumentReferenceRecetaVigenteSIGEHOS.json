@@ -1,0 +1,55 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "DocumentReferenceRecetaVigenteSIGEHOS",
+  "meta": {
+    "profile": [
+      "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"
+    ]
+  },
+  "status": "current",
+  "extension": [
+    {
+      "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-estado",
+      "valueCode": "vigente"
+    },
+    {
+      "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado",
+      "valueBoolean": false
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/fhir+json",
+        "url": "https://sigehos.gcba.gob.ar/fhir/MedicationRequest/mr-CUIR-2026-000123",
+        "title": "Receta CUIR-2026-000123"
+      }
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "57833-6",
+        "system": "http://loinc.org",
+        "display": "Prescription for medication"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonaSIHCEMin"
+  },
+  "identifier": [
+    {
+      "system": "http://sihce.gob.ar/cuir",
+      "value": "CUIR-2026-000123"
+    }
+  ],
+  "date": "2026-09-10T11:30:00-03:00",
+  "custodian": {
+    "identifier": {
+      "system": "http://sigehos.gcba.gob.ar",
+      "value": "efector-hospital-ramos-mejia"
+    },
+    "display": "Hospital Ramos Mejía (SIGEHOS)"
+  }
+}

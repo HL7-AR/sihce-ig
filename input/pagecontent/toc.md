@@ -66,3 +66,17 @@
 8.26 [Consent opt-in general (etapa 1)](Consent-ConsentOptInGeneralSIHCE.html)
 
 8.27 [Consent opt-in hospital + confidential (etapa 3)](Consent-ConsentOptInHospitalConfidentialSIHCE.html)
+
+8.28 [Índice de receta SIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.html)
+
+8.29 [MedicationRequest receta SIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.html)
+
+8.30 [MedicationDispense receta SIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.html)
+
+8.31 [NamingSystem CUIR](NamingSystem-sihce-cuir.html)
+
+8.32 [NamingSystem CUIL](NamingSystem-sihce-cuil.html)
+
+8.33 [Índice receta vigente SIGEHOS (ejemplo)](DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.html)
+
+8.34 [Dispensa receta (ejemplo)](MedicationDispense-MedicationDispenseRecetaEjemplo.html)

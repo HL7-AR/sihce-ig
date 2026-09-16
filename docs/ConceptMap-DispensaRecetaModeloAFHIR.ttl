@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DispensaRecetaModeloAFHIR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap DispensaRecetaModeloAFHIR</b></p><a name=\"DispensaRecetaModeloAFHIR\"> </a><a name=\"hcDispensaRecetaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>DispensaReceta.cuir (DispensaReceta cuir)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationDispense.authorizingPrescription</td></tr><tr><td>DispensaReceta.cuilPaciente (DispensaReceta cuilPaciente)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationDispense.subject</td></tr><tr><td>DispensaReceta.fechaDispensa (DispensaReceta fechaDispensa)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationDispense.whenHandedOver</td></tr><tr><td>DispensaReceta.idFarmacia (DispensaReceta idFarmacia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationDispense.performer</td></tr><tr><td>DispensaReceta.nombreFarmacia (DispensaReceta nombreFarmacia)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MedicationDispense.performer</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR"^^xsd:anyURI ;
+     fhir:l <http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR>
+  ] ; # 
+  fhir:version [ fhir:v "1.6.0"] ; # 
+  fhir:name [ fhir:v "DispensaRecetaModeloAFHIR"] ; # 
+  fhir:title [ fhir:v "DispensaReceta: modelo lógico a FHIR"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SIHCE Development Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE."] ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths>
+     ] ;
+     fhir:target [
+       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"^^xsd:anyURI ;
+       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "DispensaReceta.cuir" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "MedicationDispense.authorizingPrescription" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DispensaReceta.cuilPaciente" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "MedicationDispense.subject" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DispensaReceta.fechaDispensa" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "MedicationDispense.whenHandedOver" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DispensaReceta.idFarmacia" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "MedicationDispense.performer" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DispensaReceta.nombreFarmacia" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "MedicationDispense.performer" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

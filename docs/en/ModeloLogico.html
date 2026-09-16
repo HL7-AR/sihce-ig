@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Modelo Lógico - Guía de Implementación SIHCE - FHIR R5 v1.5.0</title>
+    <title>Modelo Lógico - Guía de Implementación SIHCE - FHIR R5 v1.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
             <br/>
-            <span style="display:inline-block;">1.5.0 - 
+            <span style="display:inline-block;">1.6.0 - 
 
 
             </span>
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Modelo Lógico</h2>
   
 
@@ -188,6 +188,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#epicrisis" id="markdown-toc-epicrisis">Epicrisis</a></li>
   <li><a href="#informelaboratorio" id="markdown-toc-informelaboratorio">InformeLaboratorio</a></li>
   <li><a href="#consentimiento" id="markdown-toc-consentimiento">Consentimiento</a></li>
+  <li><a href="#recetaindice" id="markdown-toc-recetaindice">RecetaIndice</a></li>
+  <li><a href="#dispensareceta" id="markdown-toc-dispensareceta">DispensaReceta</a></li>
 </ul>
 
 </div>
@@ -692,6 +694,94 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Ver <a href="ConceptMap-ConsentimientoModeloAFHIR.html">ConceptMap ConsentimientoModeloAFHIR</a> y el perfil <a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>.</p>
 
+<h3 id="recetaindice">RecetaIndice</h3>
+
+<h4 id="descripción-general-8">Descripción general</h4>
+
+<p>Metadatos de receta electrónica indexados en SIHCE. El contenido clínico (<code class="language-plaintext highlighter-rouge">MedicationRequest</code>) permanece en el repositorio de origen (SIGEHOS o prestador privado), salvo el caso excepcional de <strong>repositorio delegado</strong> en SIHCE (caso de uso 3 / variante 1b).</p>
+
+<h4 id="elementos-del-modelo-6">Elementos del modelo</h4>
+
+<h5 id="datosreceta">datosReceta</h5>
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>cuir</td><td>string</td><td>1..1</td><td>Código único de receta (<a href="NamingSystem-sihce-cuir.html">NamingSystem sihce-cuir</a>).</td></tr>
+    <tr><td>cuilPaciente</td><td>string</td><td>1..1</td><td>CUIL del paciente (<a href="NamingSystem-sihce-cuil.html">NamingSystem sihce-cuil</a>).</td></tr>
+    <tr><td>idPersonaGlobal</td><td>string</td><td>0..1</td><td>idPersonaGlobal SIHCE si ya está federado.</td></tr>
+    <tr><td>estado</td><td>code</td><td>1..1</td><td><code>vigente</code> \| <code>dispensada</code> \| <code>anulada</code> (anti-quema).</td></tr>
+    <tr><td>fechaEmision</td><td>dateTime</td><td>1..1</td><td>Fecha/hora de emisión.</td></tr>
+    <tr><td>urlContenido</td><td>URI</td><td>1..1</td><td>URL del MedicationRequest en el origen, o en SIHCE si repositorio delegado.</td></tr>
+  </tbody>
+</table>
+
+<h5 id="datosprescriptor">datosPrescriptor</h5>
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>idDominio</td><td>URI</td><td>1..1</td><td>URI del dominio emisor (SIGEHOS, prestador, etc.).</td></tr>
+    <tr><td>idEfector</td><td>string</td><td>0..1</td><td>Identificador del establecimiento / prestador.</td></tr>
+    <tr><td>nombreEfector</td><td>string</td><td>0..1</td><td>Nombre legible.</td></tr>
+  </tbody>
+</table>
+
+<h5 id="repositoriodelegado">repositorioDelegado</h5>
+
+<table>
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Tipo</th>
+      <th>Cardinalidad</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>repositorioDelegado</td>
+      <td>boolean</td>
+      <td>0..1</td>
+      <td><code class="language-plaintext highlighter-rouge">true</code> solo en caso 3 / 1b (contenido en SIHCE).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="relaciones-con-fhir-8">Relaciones con FHIR</h4>
+
+<p>Ver <a href="ConceptMap-RecetaIndiceModeloAFHIR.html">ConceptMap RecetaIndiceModeloAFHIR</a>, <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a> y <a href="StructureDefinition-MedicationRequestRecetaSIHCE.html">MedicationRequestRecetaSIHCE</a>.</p>
+
+<h3 id="dispensareceta">DispensaReceta</h3>
+
+<h4 id="descripción-general-9">Descripción general</h4>
+
+<p>Evento de dispensa notificado por la farmacia (aplicativo Opción B). Actualiza el índice a <code class="language-plaintext highlighter-rouge">dispensada</code> y propaga el cierre al repositorio de origen cuando corresponde.</p>
+
+<h4 id="elementos-del-modelo-7">Elementos del modelo</h4>
+
+<table>
+  <thead>
+    <tr><th>Campo</th><th>Tipo</th><th>Cardinalidad</th><th>Descripción</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>cuir</td><td>string</td><td>1..1</td><td>CUIR de la receta dispensada.</td></tr>
+    <tr><td>cuilPaciente</td><td>string</td><td>1..1</td><td>CUIL del paciente.</td></tr>
+    <tr><td>fechaDispensa</td><td>dateTime</td><td>1..1</td><td>Momento de la dispensa.</td></tr>
+    <tr><td>idFarmacia</td><td>string</td><td>1..1</td><td>Identificador de la farmacia.</td></tr>
+    <tr><td>nombreFarmacia</td><td>string</td><td>0..1</td><td>Nombre legible.</td></tr>
+    <tr><td>idDominioFarmacia</td><td>URI</td><td>0..1</td><td>Dominio del aplicativo de dispensa.</td></tr>
+  </tbody>
+</table>
+
+<h4 id="relaciones-con-fhir-9">Relaciones con FHIR</h4>
+
+<p>Ver <a href="ConceptMap-DispensaRecetaModeloAFHIR.html">ConceptMap DispensaRecetaModeloAFHIR</a> y <a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>.</p>
+
 
 
 
@@ -716,8 +806,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Tue, Sep 1, 2026 17:36-0300">2026-09-01</span>
+          Package SIHCE.fhir.core#1.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
+          Generated <span title="Wed, Sep 16, 2026 14:49-0300">2026-09-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

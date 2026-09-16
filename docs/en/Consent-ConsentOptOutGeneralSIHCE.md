@@ -1,4 +1,4 @@
-# Consentimiento opt-out general - Guía de Implementación SIHCE - FHIR R5 v1.5.0
+# Consentimiento opt-out general - Guía de Implementación SIHCE - FHIR R5 v1.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

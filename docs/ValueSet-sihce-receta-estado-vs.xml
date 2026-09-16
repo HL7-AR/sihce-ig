@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sihce-receta-estado-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-receta-estado-vs</b></p><a name="sihce-receta-estado-vs"> </a><a name="hcsihce-receta-estado-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-sihce-receta-estado.html"><code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.6.0</span></li></ul></div>
+  </text>
+  <url value="http://sihce.gob.ar/ValueSet/sihce-receta-estado"/>
+  <version value="1.6.0"/>
+  <name value="SIHCERecetaEstadoVS"/>
+  <title value="Estados de receta SIHCE"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-09-16T14:49:36-03:00"/>
+  <publisher value="SIHCE Development Team"/>
+  <contact>
+    <name value="SIHCE Development Team"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
+    </telecom>
+  </contact>
+  <description value="Estados admitidos en el índice de DocumentReferenceRecetaSIHCE."/>
+  <compose>
+    <include>
+      <system value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>
+    </include>
+  </compose>
+</ValueSet>

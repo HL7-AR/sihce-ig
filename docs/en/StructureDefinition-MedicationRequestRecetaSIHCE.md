@@ -1,0 +1,153 @@
+# Receta MedicationRequest SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Receta MedicationRequest SIHCE**
+
+## Resource Profile: Receta MedicationRequest SIHCE 
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE | *Version*:1.6.0 |
+| Draft as of 2026-09-15 | *Computable Name*:MedicationRequestRecetaSIHCE |
+
+ 
+Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción). 
+
+**Usages:**
+
+* Examples for this Profile: [MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo](MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/MedicationRequestRecetaSIHCE)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots, and their representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-MedicationRequestRecetaSIHCE.csv), [Excel](../StructureDefinition-MedicationRequestRecetaSIHCE.xlsx), [Schematron](../StructureDefinition-MedicationRequestRecetaSIHCE.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "MedicationRequestRecetaSIHCE",
+  "url" : "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE",
+  "version" : "1.6.0",
+  "name" : "MedicationRequestRecetaSIHCE",
+  "title" : "Receta MedicationRequest SIHCE",
+  "status" : "draft",
+  "date" : "2026-09-15T00:00:00-03:00",
+  "publisher" : "SIHCE Development Team",
+  "contact" : [{
+    "name" : "SIHCE Development Team",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/diegokaminker/sihce-ig"
+    }]
+  }],
+  "description" : "Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción).",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "script10.6",
+    "uri" : "http://ncpdp.org/SCRIPT10_6",
+    "name" : "Mapping to NCPDP SCRIPT 10.6"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 V2 Mapping"
+  }],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "MedicationRequest",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "MedicationRequest",
+      "path" : "MedicationRequest"
+    },
+    {
+      "id" : "MedicationRequest.identifier",
+      "path" : "MedicationRequest.identifier",
+      "short" : "CUIR",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.identifier.system",
+      "path" : "MedicationRequest.identifier.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.identifier.value",
+      "path" : "MedicationRequest.identifier.value",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.status",
+      "path" : "MedicationRequest.status",
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.intent",
+      "path" : "MedicationRequest.intent",
+      "patternCode" : "order",
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.medication",
+      "path" : "MedicationRequest.medication",
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.subject",
+      "path" : "MedicationRequest.subject",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.authoredOn",
+      "path" : "MedicationRequest.authoredOn",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.requester",
+      "path" : "MedicationRequest.requester",
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.dosageInstruction",
+      "path" : "MedicationRequest.dosageInstruction",
+      "mustSupport" : true
+    }]
+  }
+}
+
+```

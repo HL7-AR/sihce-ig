@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/NamingSystem/sihce-cuir> a fhir:NamingSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sihce-cuir"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem sihce-cuir</b></p><a name=\"sihce-cuir\"> </a><a name=\"hcsihce-cuir\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://sihce.gob.ar/NamingSystem/sihce-cuir</td></tr><tr><td>Version</td><td>1.6.0</td></tr><tr><td>Name</td><td>SihceCuir</td></tr><tr><td>Title</td><td>NamingSystem CUIR (código único de receta)</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Código Único de Identificación de Receta (CUIR). Se usa como DocumentReference.identifier y MedicationRequest.identifier.</p>\n</div></td></tr><tr><td>Publisher</td><td>SIHCE Development Team</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://sihce.gob.ar/cuir</td><td>true</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://sihce.gob.ar/NamingSystem/sihce-cuir"^^xsd:anyURI ;
+     fhir:l <http://sihce.gob.ar/NamingSystem/sihce-cuir>
+  ] ; # 
+  fhir:version [ fhir:v "1.6.0"] ; # 
+  fhir:name [ fhir:v "SihceCuir"] ; # 
+  fhir:title [ fhir:v "NamingSystem CUIR (código único de receta)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "identifier"] ; # 
+  fhir:date [ fhir:v "2026-09-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SIHCE Development Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Código Único de Identificación de Receta (CUIR). Se usa como DocumentReference.identifier y MedicationRequest.identifier."] ; # 
+  fhir:uniqueId ( [
+     fhir:type [ fhir:v "uri" ] ;
+     fhir:value [ fhir:v "http://sihce.gob.ar/cuir" ] ;
+     fhir:preferred [ fhir:v true ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

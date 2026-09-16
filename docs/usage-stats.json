@@ -1,8 +1,23 @@
 {
   "package": "SIHCE.fhir.core",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "fhirVersion": "5.0.0",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-estado",
+      "title": "Estado de receta en índice SIHCE",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado",
+      "title": "Repositorio delegado en SIHCE",
+      "types": [
+        "boolean"
+      ]
+    }
+  ],
   "profiles": {
     "Composition": [
       {
@@ -30,8 +45,24 @@
     ],
     "DocumentReference": [
       {
+        "url": "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE",
+        "title": "Índice de receta electrónica SIHCE"
+      },
+      {
         "url": "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE",
         "title": "Referencia a documento clínico SIHCE"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE",
+        "title": "Dispensa de receta SIHCE"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE",
+        "title": "Receta MedicationRequest SIHCE"
       }
     ],
     "MedicationStatement": [
@@ -94,6 +125,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
+      "StructureDefinition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/binding-definition": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -108,6 +142,12 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "http://sihce.gob.ar/StructureDefinition/extension-receta-estado": [
+      "DocumentReference"
+    ],
+    "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado": [
+      "DocumentReference"
     ]
   }
 }

@@ -7,12 +7,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-epicrisis-diagnosis-code-vs</b></p><a name="sihce-epicrisis-diagnosis-code-vs"> </a><a name="hcsihce-epicrisis-diagnosis-code-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://tx.fhir.org/r5"><code>http://hl7.org/fhir/sid/icd-10</code></a><span style="opacity: 0.5" title="Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used"> version ⏿2019-covid-expanded</span> where code  = <a href="http://tx.fhir.org/r5/ValueSet/icd10-2019#icd10-2019-J18.469">J18.9</a></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 233604007</li></ul></div>
   </text>
   <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"/>
-  <version value="1.5.0"/>
+  <version value="1.6.0"/>
   <name value="SIHCEEpicrisisDiagnosisCodeVS"/>
   <title value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-09-01T17:36:42-03:00"/>
+  <date value="2026-09-16T14:49:36-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>

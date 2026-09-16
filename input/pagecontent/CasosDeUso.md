@@ -2,7 +2,7 @@ Estos son los principales casos de uso e interacciones entre dominios y **SIHCE*
 
 **Canal X-BA** es la capa de seguridad (servidores de seguridad / ruta acordada): **todo** intercambio FHIR entre organizaciones transita por ese canal. No es un actor de negocio.
 
-**SIHCE** expone capacidades de negocio (federación de personas, **consentimiento**, registro y consulta del índice documental). El “federador” no es un sistema aparte: es la funcionalidad de SIHCE sobre `Patient`.
+**SIHCE** expone capacidades de negocio (federación de personas, **consentimiento**, registro/consulta documental, **índice y broker de recetas electrónicas**). El “federador” no es un sistema aparte: es la funcionalidad de SIHCE sobre `Patient`.
 
 ## Vista general (intercambio)
 
@@ -15,9 +15,9 @@ flowchart LR
     XR[Servidores de seguridad]
   end
   subgraph Proveedor["SIHCE"]
-    FHIR[API FHIR Patient, Consent y DocumentReference]
+    FHIR[API FHIR Patient, Consent, DocumentReference, Receta]
   end
-  CAPP -->|"Persona, documentos, contenido"| XR
+  CAPP -->|"Persona, documentos, recetas, contenido"| XR
   XR --> FHIR
   FHIR --> XR
   XR --> CAPP
@@ -215,4 +215,111 @@ sequenceDiagram
   E-->>S: DiagnosticReport
   S-->>X: 200 DiagnosticReport
   X-->>C: 200 DiagnosticReport
+```
+
+## Receta electrónica (CPE)
+
+Indexación y orquestación de recetas en SIHCE. El contenido clínico (`MedicationRequest`) permanece en el repositorio de origen; SIHCE indexa metadatos (CUIR, paciente, efector, estado) y actúa como **broker** hacia la farmacia. La dispensa actualiza el índice (anti-quema) y se propaga al origen.
+
+**Actores comunes:** SIHCE (orquestador/índice), farmacia privada (aplicativo de dispensa — Opción B), repositorio de origen (SIGEHOS o prestador privado — Opción A = API FHIR consultable por SIHCE).
+
+| Opción | Qué es |
+|--------|--------|
+| **A** | Repositorio de origen expone API FHIR para que SIHCE haga *pull* bajo demanda (sin duplicar dato). |
+| **B** | Aplicativo de dispensa de la farmacia (Farmalink/RCTA u otro) que consume la API SIHCE. |
+
+A y B **no compiten**: A es condición técnica para que B obtenga el detalle vía broker SIHCE.
+
+Operaciones: [Indexación](Operaciones.html#op-receta-index), [Consulta](Operaciones.html#op-receta-consulta), [Proxy detalle](Operaciones.html#op-receta-proxy), [Dispensa](Operaciones.html#op-receta-dispensa). Perfiles: [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.html), [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.html), [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.html).
+
+### Caso 2 — Público (SIGEHOS) → CPE → Farmacia privada
+
+**Actores:** Prescriptor público (efector SIGEHOS), paciente (cobertura pública), SIGEHOS (repositorio), SIHCE, farmacia privada.
+
+**Precondición:** Paciente con CUIR/CUIL; efector conectado a SIGEHOS.
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant M as Prescriptor SIGEHOS
+  participant R as SIGEHOS (repo)
+  participant X as Canal X-BA
+  participant S as SIHCE
+  participant F as Farmacia (Opción B)
+  M->>R: Genera MedicationRequest (CUIR)
+  R->>R: Persiste receta
+  R->>X: POST DocumentReference (metadatos vigentes)
+  X->>S: Indexa CUIR/CUIL/efector
+  S-->>X: 201 Created
+  X-->>R: 201 Created
+  F->>X: GET DocumentReference?identifier=CUIR o CUIL
+  X->>S: Consulta índice
+  S-->>X: 200 Bundle (estado vigente)
+  X-->>F: 200 Bundle
+  F->>X: GET /Proxy/MedicationRequest/{id}
+  X->>S: Broker
+  S->>R: Pull MedicationRequest
+  R-->>S: MedicationRequest
+  S-->>X: 200 (sin persistir)
+  X-->>F: 200 MedicationRequest
+  F->>X: POST MedicationDispense
+  X->>S: Notifica dispensa
+  S->>S: Índice → dispensada (anti-quema)
+  S->>R: Propaga cierre a HCE pública
+  S-->>X: 201 Created
+  X-->>F: 201 Created
+```
+
+### Caso 3 — Privado (Recetario) → CPE → Farmacia privada
+
+**Actores:** Prescriptor privado, paciente, repositorio del prestador (si existe) **o** SIHCE como repositorio delegado (excepción), SIHCE orquestador, farmacia privada.
+
+**Precondición:** Paciente con CUIR/CUIL; prescriptor adherido a la red SIHCE.
+
+**Bifurcación en emisión:**
+
+| Variante | Comportamiento |
+|----------|----------------|
+| **1a** — Prestador con repositorio propio | Mismo patrón que caso 2: índice en SIHCE + contenido en el prestador. |
+| **1b** — Sin sistema propio (excepción) | `MedicationRequest` se persiste en SIHCE (`repositorioDelegado=true`); auditable y acotado. |
+
+```mermaid
+sequenceDiagram
+  autonumber
+  participant M as Prescriptor privado
+  participant P as Repo prestador (1a)
+  participant X as Canal X-BA
+  participant S as SIHCE
+  participant F as Farmacia (Opción B)
+  alt 1a — con repositorio propio
+    M->>P: Genera y guarda MedicationRequest
+    P->>X: POST DocumentReference (índice)
+    X->>S: Indexa
+  else 1b — repositorio delegado (excepción)
+    M->>X: POST MedicationRequest + DocumentReference
+    X->>S: Persiste contenido + índice (delegado)
+  end
+  S-->>X: 201 Created
+  X-->>M: 201 Created
+  F->>X: GET DocumentReference (CUIR/CUIL)
+  X->>S: Consulta índice
+  S-->>X: 200 Bundle
+  X-->>F: 200 Bundle
+  F->>X: GET /Proxy/MedicationRequest/{id}
+  X->>S: Resuelve origen
+  alt 1a
+    S->>P: Broker pull
+    P-->>S: MedicationRequest
+  else 1b
+    S->>S: Lee repositorio delegado
+  end
+  S-->>X: 200 MedicationRequest
+  X-->>F: 200
+  F->>X: POST MedicationDispense
+  X->>S: Dispensa + anti-quema
+  opt 1a
+    S->>P: Propaga cierre
+  end
+  S-->>X: 201 Created
+  X-->>F: 201 Created
 ```

@@ -1,0 +1,30 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "sihce-cuir",
+  "url": "http://sihce.gob.ar/NamingSystem/sihce-cuir",
+  "title": "NamingSystem CUIR (código único de receta)",
+  "description": "Código Único de Identificación de Receta (CUIR). Se usa como DocumentReference.identifier y MedicationRequest.identifier.",
+  "name": "SihceCuir",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2026-09-15",
+  "publisher": "SIHCE Development Team",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "AR",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Argentina"
+        }
+      ]
+    }
+  ],
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "http://sihce.gob.ar/cuir",
+      "preferred": true
+    }
+  ]
+}
