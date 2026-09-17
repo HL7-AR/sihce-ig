@@ -3,7 +3,9 @@ publisher_jar=publisher.jar
 input_cache_path=./input-cache/
 # Default: online TX for ValueSet narratives (LOINC, ICD-10, etc.).
 # FHIR_OFFLINE_TX=1 uses -tx n/a (faster; may weaken VS expansion / narratives).
-txoption="-tx https://tx.fhir.org/r4"
+# Default online TX. Use /r5 even for this R4 IG: publisher + tx-registry
+# interoperates across versions; -tx .../r4 can mis-resolve to /r5/r4/metadata.
+txoption="-tx https://tx.fhir.org/r5"
 if [ "${FHIR_OFFLINE_TX:-0}" = "1" ]; then
 	echo "WARNING: FHIR_OFFLINE_TX=1 — running without terminology server (-tx n/a)."
 	echo "Use this only for diagnostics; expansions/narratives may be incomplete."
