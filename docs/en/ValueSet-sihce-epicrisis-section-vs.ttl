@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,164 +7,155 @@
 
 <http://sihce.gob.ar/ValueSet/sihce-epicrisis-section-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "sihce-epicrisis-section-vs"] ; # 
-  fhir:language [ fhir:v "en"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-epicrisis-section-vs</b></p><a name=\"sihce-epicrisis-section-vs\"> </a><a name=\"hcsihce-epicrisis-section-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 48765-2</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 78375-3</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 75311-1</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 8648-8</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 18776-5</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 42347-5</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 42346-7</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 46239-0</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 8653-8</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 11493-4</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 10184-0</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 47519-4</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 11450-4</li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section"^^xsd:anyURI ;
-     fhir:l <http://sihce.gob.ar/ValueSet/sihce-epicrisis-section>
-  ] ; # 
-  fhir:version [ fhir:v "2.0.0"] ; # 
-  fhir:name [ fhir:v "SIHCEEpicrisisSectionVS"] ; # 
-  fhir:title [ fhir:v "Secciones LOINC de epicrisis SIHCE"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-09-17T09:51:31-03:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "SIHCE Development Team" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales)."] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "48765-2" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "78375-3" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "75311-1" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "8648-8" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "18776-5" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "42347-5" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "42346-7" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "46239-0" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "8653-8" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "11493-4" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "10184-0" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "47519-4" ]
-       ] )
-     ] [
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:filter ( [
-         fhir:property [ fhir:v "code" ] ;
-         fhir:op [ fhir:v "=" ] ;
-         fhir:value [ fhir:v "11450-4" ]
-       ] )
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "sihce-epicrisis-section-vs"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-epicrisis-section-vs</b></p><a name=\"sihce-epicrisis-section-vs\"> </a><a name=\"hcsihce-epicrisis-section-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 48765-2 (Allergies and adverse reactions Document)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 78375-3 (Discharge diagnosis Narrative)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 75311-1 (Discharge medications note)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 8648-8 (Hospital course note)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 18776-5 (Plan of care note)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 42347-5 (Admission diagnosis (narrative))</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 42346-7 (Medications on admission (narrative))</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 46239-0 (Chief complaint+Reason for visit Narrative)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 8653-8 (Hospital Discharge instructions)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 11493-4 (Hospital discharge studies summary Narrative)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 10184-0 (Hospital discharge physical findings Narrative)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 47519-4 (History of Procedures Document)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 11450-4 (Problem list - Reported)</li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section"] ;
+  fhir:ValueSet.version [ fhir:value "2.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "SIHCEEpicrisisSectionVS"] ;
+  fhir:ValueSet.title [ fhir:value "Secciones LOINC de epicrisis SIHCE"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-09-17T12:17:38-03:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "SIHCE Development Team"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "SIHCE Development Team" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales)."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "48765-2" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "78375-3" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "75311-1" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "8648-8" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "18776-5" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "42347-5" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "42346-7" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "46239-0" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "8653-8" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "11493-4" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "10184-0" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "47519-4" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index -1 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "11450-4" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/ValueSet/sihce-epicrisis-section-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

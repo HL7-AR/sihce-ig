@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <https://loinc.org/rdf/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -9,61 +8,58 @@
 
 <http://sihce.gob.ar/DocumentReference/DocumentReferenceEpicrisisNivel1> a fhir:DocumentReference ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "DocumentReferenceEpicrisisNivel1"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceEpicrisisNivel1</b></p><a name=\"DocumentReferenceEpicrisisNivel1\"> </a><a name=\"hcDocumentReferenceEpicrisisNivel1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReferenceSIHCE.html\">Referencia a documento clínico SIHCE</a></p></div><p><b>identifier</b>: <code>http://hospitalitaliano.org.ar/fhir/documento</code>/EP-2026-0042</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18842-5}\">Discharge summary</span></p><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>date</b>: 2026-06-08 14:30:00-0300</p><p><b>custodian</b>: Hospital Italiano de Buenos Aires (Identifier: <a href=\"NamingSystem-NamingSystemHospitalItalianoFHIR.html\" title=\"Identificador de dominio de ejemplo usado en instancias de este IG.\">NamingSystemHospitalItalianoFHIR</a>/hospital-italiano)</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042\">https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042</a></td><td>Epicrisis EP-2026-0042</td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [
-       fhir:v "http://hospitalitaliano.org.ar/fhir/documento"^^xsd:anyURI ;
-       fhir:l <http://hospitalitaliano.org.ar/fhir/documento>
-     ] ;
-     fhir:value [ fhir:v "EP-2026-0042" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "current"] ; # 
-  fhir:type [
-     fhir:coding ( [
-       a loinc:18842-5 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:code [ fhir:v "18842-5" ] ;
-       fhir:display [ fhir:v "Discharge summary" ]
-     ] )
-  ] ; # 
-  fhir:subject [
-     fhir:l <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
-     fhir:reference [ fhir:v "Patient/PersonaSIHCEMin" ]
-  ] ; # 
-  fhir:date [ fhir:v "2026-06-08T14:30:00-03:00"^^xsd:dateTime] ; # 
-  fhir:custodian [
-     fhir:identifier [
-       fhir:system [
-         fhir:v "http://hospitalitaliano.org.ar/fhir"^^xsd:anyURI ;
-         fhir:l <http://hospitalitaliano.org.ar/fhir>
-       ] ;
-       fhir:value [ fhir:v "hospital-italiano" ]
-     ] ;
-     fhir:display [ fhir:v "Hospital Italiano de Buenos Aires" ]
-  ] ; # 
-  fhir:content ( [
-     fhir:attachment [
-       fhir:contentType [ fhir:v "application/pdf" ] ;
-       fhir:url [
-         fhir:v "https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042"^^xsd:anyURI ;
-         fhir:l <https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042>
-       ] ;
-       fhir:title [ fhir:v "Epicrisis EP-2026-0042" ]
+  fhir:Resource.id [ fhir:value "DocumentReferenceEpicrisisNivel1"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE" ;
+       fhir:index 0 ;
+       fhir:link <http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE>
      ]
-  ] ) . # 
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference DocumentReferenceEpicrisisNivel1</b></p><a name=\"DocumentReferenceEpicrisisNivel1\"> </a><a name=\"hcDocumentReferenceEpicrisisNivel1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DocumentReferenceSIHCE.html\">Referencia a documento clínico SIHCE</a></p></div><p><b>identifier</b>: <code>http://hospitalitaliano.org.ar/fhir/documento</code>/EP-2026-0042</p><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18842-5}\">Discharge summary</span></p><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>date</b>: 2026-06-08 14:30:00-0300</p><p><b>custodian</b>: Hospital Italiano de Buenos Aires (Identifier: <a href=\"NamingSystem-NamingSystemHospitalItalianoFHIR.html\" title=\"Identificador de dominio de ejemplo usado en instancias de este IG.\">NamingSystemHospitalItalianoFHIR</a>/hospital-italiano)</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042\">https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042</a></td><td>Epicrisis EP-2026-0042</td></tr></table></blockquote></div>"
+  ] ;
+  fhir:DocumentReference.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://hospitalitaliano.org.ar/fhir/documento" ] ;
+     fhir:Identifier.value [ fhir:value "EP-2026-0042" ]
+  ] ;
+  fhir:DocumentReference.status [ fhir:value "current"] ;
+  fhir:DocumentReference.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:18842-5 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "18842-5" ] ;
+       fhir:Coding.display [ fhir:value "Discharge summary" ]
+     ]
+  ] ;
+  fhir:DocumentReference.subject [
+     fhir:link <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
+     fhir:Reference.reference [ fhir:value "Patient/PersonaSIHCEMin" ]
+  ] ;
+  fhir:DocumentReference.date [ fhir:value "2026-06-08T14:30:00-03:00"^^xsd:dateTime] ;
+  fhir:DocumentReference.custodian [
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://hospitalitaliano.org.ar/fhir" ] ;
+       fhir:Identifier.value [ fhir:value "hospital-italiano" ]
+     ] ;
+     fhir:Reference.display [ fhir:value "Hospital Italiano de Buenos Aires" ]
+  ] ;
+  fhir:DocumentReference.content [
+     fhir:index 0 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "application/pdf" ] ;
+       fhir:Attachment.url [ fhir:value "https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042" ] ;
+       fhir:Attachment.title [ fhir:value "Epicrisis EP-2026-0042" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/DocumentReference/DocumentReferenceEpicrisisNivel1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

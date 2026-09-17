@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,46 +7,53 @@
 
 <http://sihce.gob.ar/CodeSystem/sihce-receta-estado> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "sihce-receta-estado"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-receta-estado</b></p><a name=\"sihce-receta-estado\"> </a><a name=\"hcsihce-receta-estado\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vigente<a name=\"sihce-receta-estado-vigente\"> </a></td><td>Vigente</td><td>Receta emitida y disponible para dispensa.</td></tr><tr><td style=\"white-space:nowrap\">dispensada<a name=\"sihce-receta-estado-dispensada\"> </a></td><td>Dispensada</td><td>Receta ya dispensada (anti-quema: no puede volver a dispensarse).</td></tr><tr><td style=\"white-space:nowrap\">anulada<a name=\"sihce-receta-estado-anulada\"> </a></td><td>Anulada</td><td>Receta anulada por el prescriptor o por política.</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "http://sihce.gob.ar/CodeSystem/sihce-receta-estado"^^xsd:anyURI ;
-     fhir:l <http://sihce.gob.ar/CodeSystem/sihce-receta-estado>
-  ] ; # 
-  fhir:version [ fhir:v "2.0.0"] ; # 
-  fhir:name [ fhir:v "SIHCERecetaEstadoCS"] ; # 
-  fhir:title [ fhir:v "Estado de receta en índice SIHCE"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-09-17T09:51:31-03:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "SIHCE Development Team" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Estados del índice de receta electrónica (mecanismo anti-quema)."] ; # 
-  fhir:caseSensitive [ fhir:v true] ; # 
-  fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
-  fhir:concept ( [
-     fhir:code [ fhir:v "vigente" ] ;
-     fhir:display [ fhir:v "Vigente" ] ;
-     fhir:definition [ fhir:v "Receta emitida y disponible para dispensa." ]
-  ] [
-     fhir:code [ fhir:v "dispensada" ] ;
-     fhir:display [ fhir:v "Dispensada" ] ;
-     fhir:definition [ fhir:v "Receta ya dispensada (anti-quema: no puede volver a dispensarse)." ]
-  ] [
-     fhir:code [ fhir:v "anulada" ] ;
-     fhir:display [ fhir:v "Anulada" ] ;
-     fhir:definition [ fhir:v "Receta anulada por el prescriptor o por política." ]
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "sihce-receta-estado"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-receta-estado</b></p><a name=\"sihce-receta-estado\"> </a><a name=\"hcsihce-receta-estado\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vigente<a name=\"sihce-receta-estado-vigente\"> </a></td><td>Vigente</td><td>Receta emitida y disponible para dispensa.</td></tr><tr><td style=\"white-space:nowrap\">dispensada<a name=\"sihce-receta-estado-dispensada\"> </a></td><td>Dispensada</td><td>Receta ya dispensada (anti-quema: no puede volver a dispensarse).</td></tr><tr><td style=\"white-space:nowrap\">anulada<a name=\"sihce-receta-estado-anulada\"> </a></td><td>Anulada</td><td>Receta anulada por el prescriptor o por política.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-receta-estado"] ;
+  fhir:CodeSystem.version [ fhir:value "2.0.0"] ;
+  fhir:CodeSystem.name [ fhir:value "SIHCERecetaEstadoCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Estado de receta en índice SIHCE"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-09-17T12:17:38-03:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "SIHCE Development Team"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "SIHCE Development Team" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Estados del índice de receta electrónica (mecanismo anti-quema)."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vigente" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vigente" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Receta emitida y disponible para dispensa." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dispensada" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dispensada" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Receta ya dispensada (anti-quema: no puede volver a dispensarse)." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "anulada" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Anulada" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Receta anulada por el prescriptor o por política." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/CodeSystem/sihce-receta-estado.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

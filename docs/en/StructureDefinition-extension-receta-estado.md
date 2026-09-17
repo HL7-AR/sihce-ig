@@ -22,7 +22,7 @@ Estado vigente/dispensada/anulada del índice de receta (anti-quema).
 * Use this Extension: [Índice de receta electrónica SIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md)
 * Examples for this Extension: [DocumentReference/DocumentReferenceRecetaDelegadaSIHCE](DocumentReference-DocumentReferenceRecetaDelegadaSIHCE.md) and [DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS](DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/extension-receta-estado)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-extension-receta-estado.json)
 
 ### Formal Views of Extension Content
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-extension-receta-
   "name" : "ExtensionRecetaEstado",
   "title" : "Estado de receta en índice SIHCE",
   "status" : "draft",
-  "date" : "2026-09-17T09:51:31-03:00",
+  "date" : "2026-09-17T12:17:38-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

@@ -18,7 +18,7 @@ Registro e indexación de un documento clínico emitido por un dominio en SIHCE.
 
 * Derived from this Logical Model: [Modelo lógico Epicrisis (SIHCE)](StructureDefinition-Epicrisis.md) and [Modelo lógico Informe de Laboratorio (SIHCE)](StructureDefinition-InformeLaboratorio.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/DocumentoClinico)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-DocumentoClinico.json)
 
 ### Formal Views of Profile Content
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentoClinico.
   "name" : "DocumentoClinico",
   "title" : "Modelo lógico DocumentoClinico (SIHCE)",
   "status" : "draft",
-  "date" : "2026-09-17T09:51:31-03:00",
+  "date" : "2026-09-17T12:17:38-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

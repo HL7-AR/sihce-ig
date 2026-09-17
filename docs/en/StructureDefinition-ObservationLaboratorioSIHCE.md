@@ -18,7 +18,7 @@ Resultado analítico codificado (LOINC) asociado a un informe de laboratorio niv
 
 * Refer to this Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/ObservationLaboratorioSIHCE)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-ObservationLaboratorioSIHCE.json)
 
 ### Formal Views of Profile Content
 

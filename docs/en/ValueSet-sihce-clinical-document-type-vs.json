@@ -4,7 +4,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-clinical-document-type-vs</b></p><a name=\"sihce-clinical-document-type-vs\"> </a><a name=\"hcsihce-clinical-document-type-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 18842-5</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 11502-2</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-clinical-document-type-vs</b></p><a name=\"sihce-clinical-document-type-vs\"> </a><a name=\"hcsihce-clinical-document-type-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 18842-5 (Discharge summary)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 11502-2 (Laboratory report)</li></ul></div>"
   },
   "url" : "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
   "version" : "2.0.0",
@@ -12,7 +12,7 @@
   "title" : "Tipos de documento clínico SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T09:51:31-03:00",
+  "date" : "2026-09-17T12:17:38-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

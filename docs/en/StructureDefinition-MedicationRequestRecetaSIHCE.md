@@ -18,7 +18,7 @@ Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador)
 
 * Examples for this Profile: [MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo](MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/MedicationRequestRecetaSIHCE)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-MedicationRequestRecetaSIHCE.json)
 
 ### Formal Views of Profile Content
 

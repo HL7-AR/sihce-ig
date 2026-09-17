@@ -18,7 +18,7 @@ Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT ed
 
 * Refer to this Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/ConditionEpicrisisSIHCE)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-ConditionEpicrisisSIHCE.json)
 
 ### Formal Views of Profile Content
 

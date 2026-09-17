@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <https://loinc.org/rdf/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -9,63 +8,63 @@
 
 <http://sihce.gob.ar/DiagnosticReport/DiagnosticReportInformeLabNivel1> a fhir:DiagnosticReport ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "DiagnosticReportInformeLabNivel1"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel1</b></p><a name=\"DiagnosticReportInformeLabNivel1\"> </a><a name=\"hcDiagnosticReportInformeLabNivel1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReportLaboratorioSIHCE.html\">Informe de laboratorio SIHCE</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</td></tr><tr><td>Reported</td><td>2026-06-19 15:55:00-0300</td></tr><tr><td>Performer</td><td> <a href=\"Organization-lab-central-ejemplo.html\">Organization Laboratorio Central Ejemplo</a></td></tr><tr><td>Identifier</td><td> <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0042</td></tr></table><p><b>Report Details</b></p></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [
-       fhir:v "http://laboratorio.ejemplo.gob.ar/informe"^^xsd:anyURI ;
-       fhir:l <http://laboratorio.ejemplo.gob.ar/informe>
-     ] ;
-     fhir:value [ fhir:v "LAB-2026-0042" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "final"] ; # 
-  fhir:category ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0074"^^xsd:anyURI ;
-         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0074>
-       ] ;
-       fhir:code [ fhir:v "LAB" ] ;
-       fhir:display [ fhir:v "Laboratory" ]
-     ] )
-  ] ) ; # 
-  fhir:code [
-     fhir:coding ( [
+  fhir:Resource.id [ fhir:value "DiagnosticReportInformeLabNivel1"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE" ;
+       fhir:index 0 ;
+       fhir:link <http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel1</b></p><a name=\"DiagnosticReportInformeLabNivel1\"> </a><a name=\"hcDiagnosticReportInformeLabNivel1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiagnosticReportLaboratorioSIHCE.html\">Informe de laboratorio SIHCE</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\">Laboratory</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</td></tr><tr><td>Reported</td><td>2026-06-19 15:55:00-0300</td></tr><tr><td>Performer</td><td> <a href=\"Organization-lab-central-ejemplo.html\">Organization Laboratorio Central Ejemplo</a></td></tr><tr><td>Identifier</td><td> <code>http://laboratorio.ejemplo.gob.ar/informe</code>/LAB-2026-0042</td></tr><tr><td>Presented Form</td><td> application/pdf @ <a href=\"https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf\">https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf <img src=\"external.png\" alt=\"icon\" style=\"vertical-align: baseline\"/></a></td></tr></table><p><b>Report Details</b></p></div>"
+  ] ;
+  fhir:DiagnosticReport.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://laboratorio.ejemplo.gob.ar/informe" ] ;
+     fhir:Identifier.value [ fhir:value "LAB-2026-0042" ]
+  ] ;
+  fhir:DiagnosticReport.status [ fhir:value "final"] ;
+  fhir:DiagnosticReport.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ] ;
+       fhir:Coding.code [ fhir:value "LAB" ] ;
+       fhir:Coding.display [ fhir:value "Laboratory" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
        a loinc:11502-2 ;
-       fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
-       ] ;
-       fhir:code [ fhir:v "11502-2" ] ;
-       fhir:display [ fhir:v "Laboratory report" ]
-     ] )
-  ] ; # 
-  fhir:subject [
-     fhir:l <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
-     fhir:reference [ fhir:v "Patient/PersonaSIHCEMin" ]
-  ] ; # 
-  fhir:issued [ fhir:v "2026-06-19T15:55:00-03:00"^^xsd:dateTime] ; # 
-  fhir:performer ( [
-     fhir:l <http://sihce.gob.ar/Organization/lab-central-ejemplo> ;
-     fhir:reference [ fhir:v "Organization/lab-central-ejemplo" ]
-  ] ) ; # 
-  fhir:presentedForm ( [
-     fhir:contentType [ fhir:v "application/pdf" ] ;
-     fhir:url [
-       fhir:v "https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf"^^xsd:anyURI ;
-       fhir:l <https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf>
-     ] ;
-     fhir:title [ fhir:v "Informe LAB-2026-0042" ]
-  ] ) . # 
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11502-2" ] ;
+       fhir:Coding.display [ fhir:value "Laboratory report" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.subject [
+     fhir:link <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
+     fhir:Reference.reference [ fhir:value "Patient/PersonaSIHCEMin" ]
+  ] ;
+  fhir:DiagnosticReport.issued [ fhir:value "2026-06-19T15:55:00-03:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.performer [
+     fhir:index 0 ;
+     fhir:link <http://sihce.gob.ar/Organization/lab-central-ejemplo> ;
+     fhir:Reference.reference [ fhir:value "Organization/lab-central-ejemplo" ]
+  ] ;
+  fhir:DiagnosticReport.presentedForm [
+     fhir:index 0 ;
+     fhir:Attachment.contentType [ fhir:value "application/pdf" ] ;
+     fhir:Attachment.url [ fhir:value "https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf" ] ;
+     fhir:Attachment.title [ fhir:value "Informe LAB-2026-0042" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/DiagnosticReport/DiagnosticReportInformeLabNivel1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

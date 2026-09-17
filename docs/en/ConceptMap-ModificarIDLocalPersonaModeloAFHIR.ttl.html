@@ -238,105 +238,152 @@
   <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # - resource -------------------------------------------------------------------
 
- a fhir:ConceptMap ;
+&lt;http://hl7.org/fhir/ConceptMap/ModificarIDLocalPersonaModeloAFHIR&gt; a fhir:ConceptMap ;
   <a href="https://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.id">fhir:id</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ModificarIDLocalPersonaModeloAFHIR&quot;] ; # 
-  <a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.language">fhir:language</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en&quot;] ; # 
-  <a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">fhir:text</a> [
-<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="https://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap ModificarIDLocalPersonaModeloAFHIR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ModificarIDLocalPersonaModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcModificarIDLocalPersonaModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;p&gt;Mapping from (not specified) to (not specified)&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1 &lt;/b&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.tipoDocumento (ModificarIDLocalPersona datosPersona tipoDocumento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.documentoIdentificatorio (ModificarIDLocalPersona datosPersona documentoIdentificatorio)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.sexo (ModificarIDLocalPersona datosPersona sexo)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.gender&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.primerNombre (ModificarIDLocalPersona datosPersona primerNombre)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.segundoNombre (ModificarIDLocalPersona datosPersona segundoNombre)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.primerApellido (ModificarIDLocalPersona datosPersona primerApellido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.segundoApellido (ModificarIDLocalPersona datosPersona segundoApellido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.fechaNacimiento (ModificarIDLocalPersona datosPersona fechaNacimiento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.birthDate&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosModificacion.idDominio (ModificarIDLocalPersona datosModificacion idDominio)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td&gt;URI del dominio en slice idDominio.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual (ModificarIDLocalPersona datosModificacion idLocalPersonaActual)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo (ModificarIDLocalPersona datosModificacion idLocalPersonaNuevo)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 2 &lt;/b&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosRespuesta.mensaje (ModificarIDLocalPersona datosRespuesta mensaje)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;OperationOutcome.issue&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
-  ] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">fhir:url</a> [
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR&quot;^^xsd:anyURI ;
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR&gt;
-  ] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">fhir:version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2.0.0&quot;] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ModificarIDLocalPersonaModeloAFHIR&quot;] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">fhir:title</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ModificarIDLocalPersona: modelo lógico a FHIR&quot;] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">fhir:experimental</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-04-29&quot;^^xsd:date] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">fhir:publisher</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot;] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">fhir:contact</a> ( [
-<a href="https://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot; ] ;
-    ( <a href="https://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
-<a href="https://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="https://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://github.com/diegokaminker/sihce-ig&quot; ]     ] )
-  ] ) ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.description">fhir:description</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).&quot;] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.purpose">fhir:purpose</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Cambio de id local manteniendo validación por SDM.&quot;] ; # 
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">fhir:group</a> ( [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">fhir:source</a> [
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&quot;^^xsd:anyURI ;
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&gt;     ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&quot;^^xsd:anyURI ;
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&gt;     ] ;
-    ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">fhir:element</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosPersona.tipoDocumento&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.identifier&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosPersona.documentoIdentificatorio&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.identifier&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosPersona.sexo&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.gender&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosPersona.primerNombre&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.name&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosPersona.segundoNombre&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.name&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosPersona.primerApellido&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.name&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosPersona.segundoApellido&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.name&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosPersona.fechaNacimiento&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.birthDate&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosModificacion.idDominio&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.identifier&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">fhir:comment</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;URI del dominio en slice idDominio.&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.identifier&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.identifier&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] )
-  ] [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">fhir:source</a> [
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&quot;^^xsd:anyURI ;
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&gt;     ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&quot;^^xsd:anyURI ;
-<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&gt;     ] ;
-    ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">fhir:element</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ModificarIDLocalPersona.datosRespuesta.mensaje&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;OperationOutcome.issue&quot; ] ;
-<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] )
-  ] ) . # 
+  <a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.id">fhir:Resource.id</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ModificarIDLocalPersonaModeloAFHIR&quot;] ;
+  <a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.language">fhir:Resource.language</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
+  <a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">fhir:DomainResource.text</a> [
+     <a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap ModificarIDLocalPersonaModeloAFHIR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ModificarIDLocalPersonaModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcModificarIDLocalPersonaModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;p&gt;This mapping does not specify any particular context of use.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1 &lt;/b&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.tipoDocumento (ModificarIDLocalPersona datosPersona tipoDocumento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.documentoIdentificatorio (ModificarIDLocalPersona datosPersona documentoIdentificatorio)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.sexo (ModificarIDLocalPersona datosPersona sexo)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.gender&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.primerNombre (ModificarIDLocalPersona datosPersona primerNombre)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.segundoNombre (ModificarIDLocalPersona datosPersona segundoNombre)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.primerApellido (ModificarIDLocalPersona datosPersona primerApellido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.segundoApellido (ModificarIDLocalPersona datosPersona segundoApellido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosPersona.fechaNacimiento (ModificarIDLocalPersona datosPersona fechaNacimiento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.birthDate&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosModificacion.idDominio (ModificarIDLocalPersona datosModificacion idDominio)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td&gt;URI del dominio en slice idDominio.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual (ModificarIDLocalPersona datosModificacion idLocalPersonaActual)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo (ModificarIDLocalPersona datosModificacion idLocalPersonaNuevo)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 2 &lt;/b&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarIDLocalPersona.datosRespuesta.mensaje (ModificarIDLocalPersona datosRespuesta mensaje)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;OperationOutcome.issue&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">fhir:ConceptMap.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">fhir:ConceptMap.version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.0.0&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">fhir:ConceptMap.name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ModificarIDLocalPersonaModeloAFHIR&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">fhir:ConceptMap.title</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ModificarIDLocalPersona: modelo lógico a FHIR&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">fhir:ConceptMap.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">fhir:ConceptMap.experimental</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:ConceptMap.date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-04-29&quot;^^xsd:date] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">fhir:ConceptMap.publisher</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SIHCE Development Team&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">fhir:ConceptMap.contact</a> [
+     <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="https://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SIHCE Development Team&quot; ] ;
+     <a href="https://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://github.com/diegokaminker/sihce-ig&quot; ]
+     ]
+  ] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.description">fhir:ConceptMap.description</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.purpose">fhir:ConceptMap.purpose</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Cambio de id local manteniendo validación por SDM.&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">fhir:ConceptMap.group</a> [
+     <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">fhir:ConceptMap.group.source</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&quot; ] ;
+     <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">fhir:ConceptMap.group.target</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&quot; ] ;
+     <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">fhir:ConceptMap.group.element</a> [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosPersona.tipoDocumento&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.identifier&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosPersona.documentoIdentificatorio&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.identifier&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosPersona.sexo&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.gender&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosPersona.primerNombre&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.name&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosPersona.segundoNombre&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.name&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosPersona.primerApellido&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.name&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosPersona.segundoApellido&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.name&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosPersona.fechaNacimiento&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.birthDate&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosModificacion.idDominio&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.identifier&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">fhir:ConceptMap.group.element.target.comment</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;URI del dominio en slice idDominio.&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.identifier&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ], [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Patient.identifier&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ]
+  ], [
+     <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">fhir:ConceptMap.group.source</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&quot; ] ;
+     <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">fhir:ConceptMap.group.target</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&quot; ] ;
+     <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">fhir:ConceptMap.group.element</a> [
+       <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:ConceptMap.group.element.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;ModificarIDLocalPersona.datosRespuesta.mensaje&quot; ] ;
+       <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:ConceptMap.group.element.target</a> [
+         <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:ConceptMap.group.element.target.code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;OperationOutcome.issue&quot; ] ;
+         <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:ConceptMap.group.element.target.equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;equivalent&quot; ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+&lt;http://hl7.org/fhir/ConceptMap/ModificarIDLocalPersonaModeloAFHIR.ttl&gt; a owl:Ontology ;
+  owl:imports fhir:fhir.ttl ;
+  owl:versionIRI &lt;http://build.fhir.org/ConceptMap/ModificarIDLocalPersonaModeloAFHIR.ttl&gt; .
 
 </code></pre>
 
@@ -369,7 +416,7 @@
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
           Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 17, 2026 09:51-0300">2026-09-17</span>
+          Generated <span title="Thu, Sep 17, 2026 12:17-0300">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

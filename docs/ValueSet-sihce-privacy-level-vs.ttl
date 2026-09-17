@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,38 +7,40 @@
 
 <http://sihce.gob.ar/ValueSet/sihce-privacy-level-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "sihce-privacy-level-vs"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-privacy-level-vs</b></p><a name=\"sihce-privacy-level-vs\"> </a><a name=\"hcsihce-privacy-level-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-privacy-level.html\"><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.0.0</span></li></ul></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "http://sihce.gob.ar/ValueSet/sihce-privacy-level"^^xsd:anyURI ;
-     fhir:l <http://sihce.gob.ar/ValueSet/sihce-privacy-level>
-  ] ; # 
-  fhir:version [ fhir:v "2.0.0"] ; # 
-  fhir:name [ fhir:v "SIHCEPrivacyLevelVS"] ; # 
-  fhir:title [ fhir:v "Niveles de privacidad SIHCE"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-09-17T09:51:31-03:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "SIHCE Development Team" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Niveles admitidos en Consent.provision.securityLabel (etapa 3)."] ; # 
-  fhir:compose [
-     fhir:include ( [
-       fhir:system [
-         fhir:v "http://sihce.gob.ar/CodeSystem/privacy-level"^^xsd:anyURI ;
-         fhir:l <http://sihce.gob.ar/CodeSystem/privacy-level>
-       ]
-     ] )
-  ] . # 
+  fhir:Resource.id [ fhir:value "sihce-privacy-level-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-privacy-level-vs</b></p><a name=\"sihce-privacy-level-vs\"> </a><a name=\"hcsihce-privacy-level-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-privacy-level.html\"><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.0.0</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://sihce.gob.ar/ValueSet/sihce-privacy-level"] ;
+  fhir:ValueSet.version [ fhir:value "2.0.0"] ;
+  fhir:ValueSet.name [ fhir:value "SIHCEPrivacyLevelVS"] ;
+  fhir:ValueSet.title [ fhir:value "Niveles de privacidad SIHCE"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-09-17T12:17:38-03:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "SIHCE Development Team"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "SIHCE Development Team" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Niveles admitidos en Consent.provision.securityLabel (etapa 3)."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://sihce.gob.ar/CodeSystem/privacy-level" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/ValueSet/sihce-privacy-level-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

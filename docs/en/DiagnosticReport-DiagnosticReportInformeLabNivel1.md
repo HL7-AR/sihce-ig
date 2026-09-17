@@ -16,6 +16,7 @@ Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLabo
 | Reported | 2026-06-19 15:55:00-0300 |
 | Performer | [Organization Laboratorio Central Ejemplo](Organization-lab-central-ejemplo.md) |
 | Identifier | `http://laboratorio.ejemplo.gob.ar/informe`/LAB-2026-0042 |
+| Presented Form | application/pdf @[https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf ![](external.png)](https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf) |
 
 **Report Details**
 

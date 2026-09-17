@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,19 +7,22 @@
 
 <http://sihce.gob.ar/Organization/lab-central-ejemplo> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "lab-central-ejemplo"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization lab-central-ejemplo</b></p><a name=\"lab-central-ejemplo\"> </a><a name=\"hclab-central-ejemplo\"> </a><p><b>identifier</b>: <code>http://laboratorio.ejemplo.gob.ar</code>/lab-central</p><p><b>name</b>: Laboratorio Central Ejemplo</p></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [
-       fhir:v "http://laboratorio.ejemplo.gob.ar"^^xsd:anyURI ;
-       fhir:l <http://laboratorio.ejemplo.gob.ar>
-     ] ;
-     fhir:value [ fhir:v "lab-central" ]
-  ] ) ; # 
-  fhir:name [ fhir:v "Laboratorio Central Ejemplo"] . # 
+  fhir:Resource.id [ fhir:value "lab-central-ejemplo"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization lab-central-ejemplo</b></p><a name=\"lab-central-ejemplo\"> </a><a name=\"hclab-central-ejemplo\"> </a><p><b>identifier</b>: <code>http://laboratorio.ejemplo.gob.ar</code>/lab-central</p><p><b>name</b>: Laboratorio Central Ejemplo</p></div>"
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://laboratorio.ejemplo.gob.ar" ] ;
+     fhir:Identifier.value [ fhir:value "lab-central" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Laboratorio Central Ejemplo"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/Organization/lab-central-ejemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

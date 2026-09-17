@@ -18,7 +18,7 @@ Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Di
 
 * Examples for this Profile: [MedicationDispense/MedicationDispenseRecetaEjemplo](MedicationDispense-MedicationDispenseRecetaEjemplo.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/MedicationDispenseRecetaSIHCE)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-MedicationDispenseRecetaSIHCE.json)
 
 ### Formal Views of Profile Content
 

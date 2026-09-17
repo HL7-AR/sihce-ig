@@ -15,6 +15,7 @@ Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLabo
 | Subject | Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, )) |
 | Reported | 2026-06-19 16:10:00-0300 |
 | Identifier | `http://laboratorio.ejemplo.gob.ar/informe`/LAB-2026-0110 |
+| Presented Form | application/pdf @[https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0110.pdf ![](external.png)](https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0110.pdf) |
 
 **Report Details**
 
@@ -22,12 +23,12 @@ Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLabo
   * **Value**: 72 mg/dL (Details: UCUM codemg/dL = 'mg/dL')
   * **Reference Range**: 82 mg/dL - 117 mg/dL
   * **Flags**: Final,Low
-  * **When For**: 2026-06-19 15:28:00-0300
+  * **Relevant Time**: 2026-06-19 15:28:00-0300
 * **Code**: [Urea [Mass/volume] in Serum or Plasma](#hcDiagnosticReportInformeLabNivel2/obs-ure)
   * **Value**: 24 mg/dL (Details: UCUM codemg/dL = 'mg/dL')
   * **Reference Range**: <50 mg/dL
   * **Flags**: Final,Normal
-  * **When For**: 2026-06-19 15:28:00-0300
+  * **Relevant Time**: 2026-06-19 15:28:00-0300
 
 -------
 

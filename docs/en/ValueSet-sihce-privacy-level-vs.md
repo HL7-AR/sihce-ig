@@ -42,7 +42,7 @@ Niveles admitidos en Consent.provision.securityLabel (etapa 3).
   "title" : "Niveles de privacidad SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T09:51:31-03:00",
+  "date" : "2026-09-17T12:17:38-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

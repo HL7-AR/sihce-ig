@@ -16,9 +16,9 @@ Modelo L√≥gico de Persona para SIHCE con foco en empadronamiento e identificaci√
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* This Logical Model is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/MLPersona)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-MLPersona.json)
 
 ### Formal Views of Profile Content
 

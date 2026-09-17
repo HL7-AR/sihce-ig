@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,166 +7,198 @@
 
 <http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR> a fhir:ConceptMap ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ModificarSDMPersonaModeloAFHIR"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ModificarSDMPersonaModeloAFHIR</b></p><a name=\"ModificarSDMPersonaModeloAFHIR\"> </a><a name=\"hcModificarSDMPersonaModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.sdmActual.tipoDocumento (ModificarSDMPersona sdmActual tipoDocumento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.sdmActual.documentoIdentificatorio (ModificarSDMPersona sdmActual documentoIdentificatorio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.sdmActual.sexo (ModificarSDMPersona sdmActual sexo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.sdmActual.primerNombre (ModificarSDMPersona sdmActual primerNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.segundoNombre (ModificarSDMPersona sdmActual segundoNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.primerApellido (ModificarSDMPersona sdmActual primerApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.segundoApellido (ModificarSDMPersona sdmActual segundoApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.fechaNacimiento (ModificarSDMPersona sdmActual fechaNacimiento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.sdmActual.fechaDefuncion (ModificarSDMPersona sdmActual fechaDefuncion)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.sexo (ModificarSDMPersona sdmNuevo sexo)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.primerNombre (ModificarSDMPersona sdmNuevo primerNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.segundoNombre (ModificarSDMPersona sdmNuevo segundoNombre)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.primerApellido (ModificarSDMPersona sdmNuevo primerApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.segundoApellido (ModificarSDMPersona sdmNuevo segundoApellido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.fechaNacimiento (ModificarSDMPersona sdmNuevo fechaNacimiento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.fechaDefuncion (ModificarSDMPersona sdmNuevo fechaDefuncion)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.datosDominio.idDominio (ModificarSDMPersona datosDominio idDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.datosDominio.idLocalPersona (ModificarSDMPersona datosDominio idLocalPersona)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.datosRespuesta.mensaje (ModificarSDMPersona datosRespuesta mensaje)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>OperationOutcome.issue</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR"^^xsd:anyURI ;
-     fhir:l <http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR>
-  ] ; # 
-  fhir:version [ fhir:v "2.0.0"] ; # 
-  fhir:name [ fhir:v "ModificarSDMPersonaModeloAFHIR"] ; # 
-  fhir:title [ fhir:v "ModificarSDMPersona: modelo lógico a FHIR"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2026-04-29"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "SIHCE Development Team" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome."] ; # 
-  fhir:purpose [ fhir:v "Actualización de SDM con documento inmutable; correlación con PatientXBA."] ; # 
-  fhir:group ( [
-     fhir:source [
-       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths>
-     ] ;
-     fhir:target [
-       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths>
-     ] ;
-     fhir:element ( [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.tipoDocumento" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.documentoIdentificatorio" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.sexo" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.gender" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.primerNombre" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.segundoNombre" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.primerApellido" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.segundoApellido" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.fechaNacimiento" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.birthDate" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmActual.fechaDefuncion" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.deceased[x]" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.sexo" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.gender" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.primerNombre" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.segundoNombre" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.primerApellido" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.segundoApellido" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.fechaNacimiento" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.birthDate" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.sdmNuevo.fechaDefuncion" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.deceased[x]" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.datosDominio.idDominio" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "ModificarSDMPersona.datosDominio.idLocalPersona" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] )
-  ] [
-     fhir:source [
-       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths>
-     ] ;
-     fhir:target [
-       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths>
-     ] ;
-     fhir:element ( [
-       fhir:code [ fhir:v "ModificarSDMPersona.datosRespuesta.mensaje" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "OperationOutcome.issue" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] )
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "ModificarSDMPersonaModeloAFHIR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ModificarSDMPersonaModeloAFHIR</b></p><a name=\"ModificarSDMPersonaModeloAFHIR\"> </a><a name=\"hcModificarSDMPersonaModeloAFHIR\"> </a><p>This mapping does not specify any particular context of use.</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.sdmActual.tipoDocumento (ModificarSDMPersona sdmActual tipoDocumento)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.sdmActual.documentoIdentificatorio (ModificarSDMPersona sdmActual documentoIdentificatorio)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.sdmActual.sexo (ModificarSDMPersona sdmActual sexo)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.sdmActual.primerNombre (ModificarSDMPersona sdmActual primerNombre)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.segundoNombre (ModificarSDMPersona sdmActual segundoNombre)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.primerApellido (ModificarSDMPersona sdmActual primerApellido)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.segundoApellido (ModificarSDMPersona sdmActual segundoApellido)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmActual.fechaNacimiento (ModificarSDMPersona sdmActual fechaNacimiento)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.sdmActual.fechaDefuncion (ModificarSDMPersona sdmActual fechaDefuncion)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.sexo (ModificarSDMPersona sdmNuevo sexo)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.gender</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.primerNombre (ModificarSDMPersona sdmNuevo primerNombre)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.segundoNombre (ModificarSDMPersona sdmNuevo segundoNombre)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.primerApellido (ModificarSDMPersona sdmNuevo primerApellido)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.segundoApellido (ModificarSDMPersona sdmNuevo segundoApellido)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.name</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.fechaNacimiento (ModificarSDMPersona sdmNuevo fechaNacimiento)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.birthDate</td></tr><tr><td>ModificarSDMPersona.sdmNuevo.fechaDefuncion (ModificarSDMPersona sdmNuevo fechaDefuncion)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.deceased[x]</td></tr><tr><td>ModificarSDMPersona.datosDominio.idDominio (ModificarSDMPersona datosDominio idDominio)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr><tr><td>ModificarSDMPersona.datosDominio.idLocalPersona (ModificarSDMPersona datosDominio idLocalPersona)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Patient.identifier</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>ModificarSDMPersona.datosRespuesta.mensaje (ModificarSDMPersona datosRespuesta mensaje)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>OperationOutcome.issue</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR"] ;
+  fhir:ConceptMap.version [ fhir:value "2.0.0"] ;
+  fhir:ConceptMap.name [ fhir:value "ModificarSDMPersonaModeloAFHIR"] ;
+  fhir:ConceptMap.title [ fhir:value "ModificarSDMPersona: modelo lógico a FHIR"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-04-29"^^xsd:date] ;
+  fhir:ConceptMap.publisher [ fhir:value "SIHCE Development Team"] ;
+  fhir:ConceptMap.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "SIHCE Development Team" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
+     ]
+  ] ;
+  fhir:ConceptMap.description [ fhir:value "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome."] ;
+  fhir:ConceptMap.purpose [ fhir:value "Actualización de SDM con documento inmutable; correlación con PatientXBA."] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmActual.tipoDocumento" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.identifier" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmActual.documentoIdentificatorio" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.identifier" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmActual.sexo" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.gender" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmActual.primerNombre" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.name" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmActual.segundoNombre" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.name" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmActual.primerApellido" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.name" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmActual.segundoApellido" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.name" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmActual.fechaNacimiento" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.birthDate" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmActual.fechaDefuncion" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.deceased[x]" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 9 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmNuevo.sexo" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.gender" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 10 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmNuevo.primerNombre" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.name" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 11 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmNuevo.segundoNombre" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.name" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 12 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmNuevo.primerApellido" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.name" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 13 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmNuevo.segundoApellido" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.name" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 14 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmNuevo.fechaNacimiento" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.birthDate" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 15 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.sdmNuevo.fechaDefuncion" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.deceased[x]" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 16 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.datosDominio.idDominio" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.identifier" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 17 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.datosDominio.idLocalPersona" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "Patient.identifier" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ConceptMap.group.source [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "ModificarSDMPersona.datosRespuesta.mensaje" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "OperationOutcome.issue" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

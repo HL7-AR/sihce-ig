@@ -25,8 +25,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
+    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE",
+    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -477,13 +477,13 @@
     "uses" : {
     },
     "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE",
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
-    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
     "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
     "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE",
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
     "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
+    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -498,13 +498,13 @@
     "uses" : {
     },
     "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE",
-    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
     "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
     "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE",
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
     "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
+    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -518,19 +518,19 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
     "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE",
     "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE",
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE",
-    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
-    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
-    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
     "StructureDefinition-parametros-update-sdm-sihce.html" : "Parametros Update SDM SIHCE",
-    "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE"
+    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
+    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE",
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
+    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE",
+    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
+    "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE",
+    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -630,8 +630,8 @@
     "uses" : {
     },
     "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE",
-    "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE",
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE"
+    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE",
+    "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medication-statement-category",
@@ -813,8 +813,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.65"],
     "uses" : {
     },
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
-    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE"
+    "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -1012,10 +1012,10 @@
     "uses" : {
     },
     "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
     "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
+    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1034,8 +1034,8 @@
     "uses" : {
     },
     "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
+    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-role-type",

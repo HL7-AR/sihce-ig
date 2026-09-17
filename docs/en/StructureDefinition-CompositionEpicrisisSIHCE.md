@@ -18,7 +18,7 @@ Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligato
 
 * Examples for this Profile: [Composition/CompositionEpicrisisNivel2](Composition-CompositionEpicrisisNivel2.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/CompositionEpicrisisSIHCE)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-CompositionEpicrisisSIHCE.json)
 
 ### Formal Views of Profile Content
 

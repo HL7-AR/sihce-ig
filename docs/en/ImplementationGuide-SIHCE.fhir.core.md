@@ -14,7 +14,7 @@
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R4",
   "status" : "draft",
-  "date" : "2026-09-17T09:51:31-03:00",
+  "date" : "2026-09-17T12:17:38-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -627,6 +627,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-sihce-lab-observation-code-vs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/sihce-lab-observation-code-vs"
@@ -639,6 +643,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-BuscarPersonaModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/BuscarPersonaModeloAFHIR"
@@ -651,6 +659,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-CompositionEpicrisisSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/CompositionEpicrisisSIHCE"
@@ -663,6 +675,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ConditionEpicrisisSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConditionEpicrisisSIHCE"
@@ -675,6 +691,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ConsentSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsentSIHCE"
@@ -687,6 +707,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Consent-ConsentOptInHospitalConfidentialSIHCE.html"
       }],
       "reference" : {
         "reference" : "Consent/ConsentOptInHospitalConfidentialSIHCE"
@@ -699,6 +723,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Consent-ConsentOptInHospitalNormalSIHCE.html"
       }],
       "reference" : {
         "reference" : "Consent/ConsentOptInHospitalNormalSIHCE"
@@ -711,6 +739,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Consent-ConsentOptInGeneralSIHCE.html"
       }],
       "reference" : {
         "reference" : "Consent/ConsentOptInGeneralSIHCE"
@@ -723,6 +755,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Consent-ConsentOptInHospitalSIHCE.html"
       }],
       "reference" : {
         "reference" : "Consent/ConsentOptInHospitalSIHCE"
@@ -735,6 +771,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Consent-ConsentOptOutGeneralSIHCE.html"
       }],
       "reference" : {
         "reference" : "Consent/ConsentOptOutGeneralSIHCE"
@@ -747,6 +787,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-ConsentimientoModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/ConsentimientoModeloAFHIR"
@@ -759,6 +803,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-sihce-epicrisis-diagnosis-code-vs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/sihce-epicrisis-diagnosis-code-vs"
@@ -771,6 +819,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-MedicationDispenseRecetaSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/MedicationDispenseRecetaSIHCE"
@@ -783,6 +835,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MedicationDispense"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "MedicationDispense-MedicationDispenseRecetaEjemplo.html"
       }],
       "reference" : {
         "reference" : "MedicationDispense/MedicationDispenseRecetaEjemplo"
@@ -795,6 +851,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-DispensaRecetaModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/DispensaRecetaModeloAFHIR"
@@ -807,6 +867,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-DocumentoClinicoModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/DocumentoClinicoModeloAFHIR"
@@ -819,6 +883,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-ParametrosPatchIdentifierEjemplo.html"
       }],
       "reference" : {
         "reference" : "Parameters/ParametrosPatchIdentifierEjemplo"
@@ -831,6 +899,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-ParametrosUpdateSDMEjemplo.html"
       }],
       "reference" : {
         "reference" : "Parameters/ParametrosUpdateSDMEjemplo"
@@ -843,6 +915,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-DocumentReferenceEpicrisisNivel1.html"
       }],
       "reference" : {
         "reference" : "DocumentReference/DocumentReferenceEpicrisisNivel1"
@@ -855,6 +931,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-DocumentReferenceEpicrisisNivel2.html"
       }],
       "reference" : {
         "reference" : "DocumentReference/DocumentReferenceEpicrisisNivel2"
@@ -867,6 +947,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Composition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Composition-CompositionEpicrisisNivel2.html"
       }],
       "reference" : {
         "reference" : "Composition/CompositionEpicrisisNivel2"
@@ -879,6 +963,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-EpicrisisModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/EpicrisisModeloAFHIR"
@@ -891,6 +979,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-extension-receta-estado.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/extension-receta-estado"
@@ -903,6 +995,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-sihce-receta-estado.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/sihce-receta-estado"
@@ -915,6 +1011,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-sihce-receta-estado-vs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/sihce-receta-estado-vs"
@@ -927,6 +1027,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-FederarPersonaModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/FederarPersonaModeloAFHIR"
@@ -939,6 +1043,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/DiagnosticReportLaboratorioSIHCE"
@@ -951,6 +1059,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DiagnosticReport"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DiagnosticReport-DiagnosticReportInformeLabNivel1.html"
       }],
       "reference" : {
         "reference" : "DiagnosticReport/DiagnosticReportInformeLabNivel1"
@@ -963,6 +1075,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-DocumentReferenceInformeLabNivel1.html"
       }],
       "reference" : {
         "reference" : "DocumentReference/DocumentReferenceInformeLabNivel1"
@@ -975,6 +1091,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DiagnosticReport"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DiagnosticReport-DiagnosticReportInformeLabNivel2.html"
       }],
       "reference" : {
         "reference" : "DiagnosticReport/DiagnosticReportInformeLabNivel2"
@@ -987,6 +1107,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-DocumentReferenceInformeLabNivel2.html"
       }],
       "reference" : {
         "reference" : "DocumentReference/DocumentReferenceInformeLabNivel2"
@@ -999,6 +1123,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-InformeLaboratorioModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/InformeLaboratorioModeloAFHIR"
@@ -1011,6 +1139,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-lab-central-ejemplo.html"
       }],
       "reference" : {
         "reference" : "Organization/lab-central-ejemplo"
@@ -1022,6 +1154,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-MedicationStatementEpicrisisSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/MedicationStatementEpicrisisSIHCE"
@@ -1034,6 +1170,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MedicationRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.html"
       }],
       "reference" : {
         "reference" : "MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo"
@@ -1046,6 +1186,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-BuscarPersona.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/BuscarPersona"
@@ -1058,6 +1202,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Consentimiento.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Consentimiento"
@@ -1070,6 +1218,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-MLPersona.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/MLPersona"
@@ -1082,6 +1234,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DispensaReceta.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/DispensaReceta"
@@ -1094,6 +1250,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DocumentoClinico.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/DocumentoClinico"
@@ -1106,6 +1266,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Epicrisis.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Epicrisis"
@@ -1118,6 +1282,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-FederarPersona.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/FederarPersona"
@@ -1130,6 +1298,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-InformeLaboratorio.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/InformeLaboratorio"
@@ -1142,6 +1314,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ModificarIDLocalPersona.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ModificarIDLocalPersona"
@@ -1154,6 +1330,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ModificarSDMPersona.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ModificarSDMPersona"
@@ -1166,6 +1346,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-RecetaIndice.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/RecetaIndice"
@@ -1178,6 +1362,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/ModificarIDLocalPersonaModeloAFHIR"
@@ -1190,6 +1378,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-ModificarSDMPersonaModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/ModificarSDMPersonaModeloAFHIR"
@@ -1202,6 +1394,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-sihce-cuil.html"
       }],
       "reference" : {
         "reference" : "NamingSystem/sihce-cuil"
@@ -1214,6 +1410,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-sihce-cuir.html"
       }],
       "reference" : {
         "reference" : "NamingSystem/sihce-cuir"
@@ -1226,6 +1426,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-sihce-persona-global.html"
       }],
       "reference" : {
         "reference" : "NamingSystem/sihce-persona-global"
@@ -1238,6 +1442,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-NamingSystemOrganizationHospitalMsgc.html"
       }],
       "reference" : {
         "reference" : "NamingSystem/NamingSystemOrganizationHospitalMsgc"
@@ -1250,6 +1458,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-NamingSystemHospitalItalianoFHIR.html"
       }],
       "reference" : {
         "reference" : "NamingSystem/NamingSystemHospitalItalianoFHIR"
@@ -1262,6 +1474,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-NamingSystemMsgcGCBA.html"
       }],
       "reference" : {
         "reference" : "NamingSystem/NamingSystemMsgcGCBA"
@@ -1274,6 +1490,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-sihce-privacy-level-vs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/sihce-privacy-level-vs"
@@ -1286,6 +1506,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-sihce-privacy-level.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/sihce-privacy-level"
@@ -1298,6 +1522,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-ObservationLaboratorioSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ObservationLaboratorioSIHCE"
@@ -1310,6 +1538,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-PatientXBA.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/PatientXBA"
@@ -1322,6 +1554,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-parametros-patch-identifier-sihce.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/parametros-patch-identifier-sihce"
@@ -1334,6 +1570,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-parametros-update-sdm-sihce.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/parametros-update-sdm-sihce"
@@ -1346,6 +1586,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-PersonaSIHCEMin.html"
       }],
       "reference" : {
         "reference" : "Patient/PersonaSIHCEMin"
@@ -1358,6 +1602,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-PersonaSIHCEPatch.html"
       }],
       "reference" : {
         "reference" : "Patient/PersonaSIHCEPatch"
@@ -1370,6 +1618,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-MedicationRequestRecetaSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/MedicationRequestRecetaSIHCE"
@@ -1382,6 +1634,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ConceptMap-RecetaIndiceModeloAFHIR.html"
       }],
       "reference" : {
         "reference" : "ConceptMap/RecetaIndiceModeloAFHIR"
@@ -1394,6 +1650,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DocumentReferenceSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/DocumentReferenceSIHCE"
@@ -1406,6 +1666,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-renaper-dni.html"
       }],
       "reference" : {
         "reference" : "NamingSystem/renaper-dni"
@@ -1418,6 +1682,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-extension-receta-repositorio-delegado.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/extension-receta-repositorio-delegado"
@@ -1430,6 +1698,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-sihce-logical-operation-element-paths.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/sihce-logical-operation-element-paths"
@@ -1442,6 +1714,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-sihce-fhir-core-element-paths.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/sihce-fhir-core-element-paths"
@@ -1454,6 +1730,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-sihce-epicrisis-section-vs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/sihce-epicrisis-section-vs"
@@ -1466,6 +1746,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-sihce-receta-document-type-vs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/sihce-receta-document-type-vs"
@@ -1478,6 +1762,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-sihce-clinical-document-type-vs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/sihce-clinical-document-type-vs"
@@ -1490,6 +1778,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-sihce-document-content-type-vs.html"
       }],
       "reference" : {
         "reference" : "ValueSet/sihce-document-content-type-vs"
@@ -1502,6 +1794,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-DocumentReferenceRecetaSIHCE.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/DocumentReferenceRecetaSIHCE"
@@ -1514,6 +1810,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.html"
       }],
       "reference" : {
         "reference" : "DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS"
@@ -1526,6 +1826,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-DocumentReferenceRecetaDelegadaSIHCE.html"
       }],
       "reference" : {
         "reference" : "DocumentReference/DocumentReferenceRecetaDelegadaSIHCE"

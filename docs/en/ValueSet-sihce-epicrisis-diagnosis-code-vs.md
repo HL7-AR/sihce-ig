@@ -24,7 +24,7 @@ Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding e
 
 ### Expansion
 
-No Expansion for this valueset (not supported by Publication Tooling)
+No Expansion for this valueset (Unknown Code System)
 
 -------
 
@@ -44,7 +44,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T09:51:31-03:00",
+  "date" : "2026-09-17T12:17:38-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

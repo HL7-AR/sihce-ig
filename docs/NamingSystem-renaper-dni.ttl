@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,49 +7,46 @@
 
 <http://sihce.gob.ar/NamingSystem/renaper-dni> a fhir:NamingSystem ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "renaper-dni"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem renaper-dni</b></p><a name=\"renaper-dni\"> </a><a name=\"hcrenaper-dni\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://sihce.gob.ar/NamingSystem/renaper-dni</td></tr><tr><td>Version</td><td>2.0.0</td></tr><tr><td>Name</td><td>RenaperDNI</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).</p>\n</div></td></tr><tr><td>Publisher</td><td>SIHCE Development Team</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://renaper.gob.ar/dni</td><td>true</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url>
-     ] ;
-     fhir:value [
-       a fhir:Uri ;
-       fhir:v "http://sihce.gob.ar/NamingSystem/renaper-dni"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/NamingSystem/renaper-dni>
+  fhir:Resource.id [ fhir:value "renaper-dni"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem renaper-dni</b></p><a name=\"renaper-dni\"> </a><a name=\"hcrenaper-dni\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://sihce.gob.ar/NamingSystem/renaper-dni</td></tr><tr><td>Version</td><td>2.0.0</td></tr><tr><td>Name</td><td>RenaperDNI</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).</p>\n</div></td></tr><tr><td>Publisher</td><td>SIHCE Development Team</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://renaper.gob.ar/dni</td><td>true</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://sihce.gob.ar/NamingSystem/renaper-dni" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version" ] ;
+     fhir:Extension.valueString [ fhir:value "2.0.0" ]
+  ] ;
+  fhir:NamingSystem.name [ fhir:value "RenaperDNI"] ;
+  fhir:NamingSystem.status [ fhir:value "active"] ;
+  fhir:NamingSystem.kind [ fhir:value "identifier"] ;
+  fhir:NamingSystem.date [ fhir:value "2025-07-01"^^xsd:date] ;
+  fhir:NamingSystem.publisher [ fhir:value "SIHCE Development Team"] ;
+  fhir:NamingSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "SIHCE Development Team" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
      ]
-  ] [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version>
-     ] ;
-     fhir:value [
-       a fhir:String ;
-       fhir:v "2.0.0"
-     ]
-  ] ) ; # 
-  fhir:name [ fhir:v "RenaperDNI"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:kind [ fhir:v "identifier"] ; # 
-  fhir:date [ fhir:v "2025-07-01"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "SIHCE Development Team" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)."] ; # 
-  fhir:uniqueId ( [
-     fhir:type [ fhir:v "uri" ] ;
-     fhir:value [ fhir:v "http://renaper.gob.ar/dni" ] ;
-     fhir:preferred [ fhir:v true ]
-  ] ) . # 
+  ] ;
+  fhir:NamingSystem.description [ fhir:value "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)."] ;
+  fhir:NamingSystem.uniqueId [
+     fhir:index 0 ;
+     fhir:NamingSystem.uniqueId.type [ fhir:value "uri" ] ;
+     fhir:NamingSystem.uniqueId.value [ fhir:value "http://renaper.gob.ar/dni" ] ;
+     fhir:NamingSystem.uniqueId.preferred [ fhir:value "true"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/NamingSystem/renaper-dni.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

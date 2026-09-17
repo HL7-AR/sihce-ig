@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,95 +7,112 @@
 
 <http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR> a fhir:ConceptMap ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "DocumentoClinicoModeloAFHIR"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap DocumentoClinicoModeloAFHIR</b></p><a name=\"DocumentoClinicoModeloAFHIR\"> </a><a name=\"hcDocumentoClinicoModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>DocumentoClinico.datosDocumento.idDocumentoDominio (DocumentoClinico datosDocumento idDocumentoDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.identifier</td></tr><tr><td>DocumentoClinico.datosDocumento.uriSistemaId (DocumentoClinico datosDocumento uriSistemaId)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.identifier</td></tr><tr><td>DocumentoClinico.datosDocumento.tipoDocumento (DocumentoClinico datosDocumento tipoDocumento)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.type</td></tr><tr><td>DocumentoClinico.datosDocumento.fecha (DocumentoClinico datosDocumento fecha)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.date</td></tr><tr><td>DocumentoClinico.datosDocumento.urlContenido (DocumentoClinico datosDocumento urlContenido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content</td></tr><tr><td>DocumentoClinico.datosDocumento.tipoContenido (DocumentoClinico datosDocumento tipoContenido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content</td></tr><tr><td>DocumentoClinico.datosDocumento.idPersonaGlobal (DocumentoClinico datosDocumento idPersonaGlobal)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.subject</td></tr><tr><td>DocumentoClinico.datosDominio.idDominio (DocumentoClinico datosDominio idDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.custodian</td></tr><tr><td>DocumentoClinico.datosDominio.nombreCustodio (DocumentoClinico datosDominio nombreCustodio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.custodian</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [
-     fhir:v "http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR"^^xsd:anyURI ;
-     fhir:l <http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR>
-  ] ; # 
-  fhir:version [ fhir:v "2.0.0"] ; # 
-  fhir:name [ fhir:v "DocumentoClinicoModeloAFHIR"] ; # 
-  fhir:title [ fhir:v "DocumentoClinico: modelo lógico a FHIR"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2026-06-09"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "SIHCE Development Team" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://github.com/diegokaminker/sihce-ig" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Mapeo del registro de documento clínico a DocumentReference SIHCE."] ; # 
-  fhir:group ( [
-     fhir:source [
-       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths>
-     ] ;
-     fhir:target [
-       fhir:v "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths>
-     ] ;
-     fhir:element ( [
-       fhir:code [ fhir:v "DocumentoClinico.datosDocumento.idDocumentoDominio" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "DocumentReference.identifier" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "DocumentoClinico.datosDocumento.uriSistemaId" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "DocumentReference.identifier" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "DocumentoClinico.datosDocumento.tipoDocumento" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "DocumentReference.type" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "DocumentoClinico.datosDocumento.fecha" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "DocumentReference.date" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "DocumentoClinico.datosDocumento.urlContenido" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "DocumentReference.content" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "DocumentoClinico.datosDocumento.tipoContenido" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "DocumentReference.content" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "DocumentoClinico.datosDocumento.idPersonaGlobal" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "DocumentReference.subject" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "DocumentoClinico.datosDominio.idDominio" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "DocumentReference.custodian" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] [
-       fhir:code [ fhir:v "DocumentoClinico.datosDominio.nombreCustodio" ] ;
-       fhir:target ( [
-         fhir:code [ fhir:v "DocumentReference.custodian" ] ;
-         fhir:equivalence [ fhir:v "equivalent" ]
-       ] )
-     ] )
-  ] ) . # 
+  fhir:Resource.id [ fhir:value "DocumentoClinicoModeloAFHIR"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap DocumentoClinicoModeloAFHIR</b></p><a name=\"DocumentoClinicoModeloAFHIR\"> </a><a name=\"hcDocumentoClinicoModeloAFHIR\"> </a><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>DocumentoClinico.datosDocumento.idDocumentoDominio (DocumentoClinico datosDocumento idDocumentoDominio)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.identifier</td></tr><tr><td>DocumentoClinico.datosDocumento.uriSistemaId (DocumentoClinico datosDocumento uriSistemaId)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.identifier</td></tr><tr><td>DocumentoClinico.datosDocumento.tipoDocumento (DocumentoClinico datosDocumento tipoDocumento)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.type</td></tr><tr><td>DocumentoClinico.datosDocumento.fecha (DocumentoClinico datosDocumento fecha)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.date</td></tr><tr><td>DocumentoClinico.datosDocumento.urlContenido (DocumentoClinico datosDocumento urlContenido)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content</td></tr><tr><td>DocumentoClinico.datosDocumento.tipoContenido (DocumentoClinico datosDocumento tipoContenido)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content</td></tr><tr><td>DocumentoClinico.datosDocumento.idPersonaGlobal (DocumentoClinico datosDocumento idPersonaGlobal)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.subject</td></tr><tr><td>DocumentoClinico.datosDominio.idDominio (DocumentoClinico datosDominio idDominio)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.custodian</td></tr><tr><td>DocumentoClinico.datosDominio.nombreCustodio (DocumentoClinico datosDominio nombreCustodio)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.custodian</td></tr></table></div>"
+  ] ;
+  fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR"] ;
+  fhir:ConceptMap.version [ fhir:value "2.0.0"] ;
+  fhir:ConceptMap.name [ fhir:value "DocumentoClinicoModeloAFHIR"] ;
+  fhir:ConceptMap.title [ fhir:value "DocumentoClinico: modelo lógico a FHIR"] ;
+  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ConceptMap.date [ fhir:value "2026-06-09"^^xsd:date] ;
+  fhir:ConceptMap.publisher [ fhir:value "SIHCE Development Team"] ;
+  fhir:ConceptMap.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "SIHCE Development Team" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
+     ]
+  ] ;
+  fhir:ConceptMap.description [ fhir:value "Mapeo del registro de documento clínico a DocumentReference SIHCE."] ;
+  fhir:ConceptMap.group [
+     fhir:index 0 ;
+     fhir:ConceptMap.group.source [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths" ] ;
+     fhir:ConceptMap.group.target [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths" ] ;
+     fhir:ConceptMap.group.element [
+       fhir:index 0 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DocumentoClinico.datosDocumento.idDocumentoDominio" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DocumentReference.identifier" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DocumentoClinico.datosDocumento.uriSistemaId" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DocumentReference.identifier" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DocumentoClinico.datosDocumento.tipoDocumento" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DocumentReference.type" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DocumentoClinico.datosDocumento.fecha" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DocumentReference.date" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 4 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DocumentoClinico.datosDocumento.urlContenido" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DocumentReference.content" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 5 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DocumentoClinico.datosDocumento.tipoContenido" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DocumentReference.content" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 6 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DocumentoClinico.datosDocumento.idPersonaGlobal" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DocumentReference.subject" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 7 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DocumentoClinico.datosDominio.idDominio" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DocumentReference.custodian" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 8 ;
+       fhir:ConceptMap.group.element.code [ fhir:value "DocumentoClinico.datosDominio.nombreCustodio" ] ;
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0 ;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "DocumentReference.custodian" ] ;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

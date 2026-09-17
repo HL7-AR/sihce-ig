@@ -18,7 +18,7 @@ DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: 
 
 * Examples for this Profile: [DiagnosticReport/DiagnosticReportInformeLabNivel1](DiagnosticReport-DiagnosticReportInformeLabNivel1.md) and [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/DiagnosticReportLaboratorioSIHCE)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-DiagnosticReportLaboratorioSIHCE.json)
 
 ### Formal Views of Profile Content
 

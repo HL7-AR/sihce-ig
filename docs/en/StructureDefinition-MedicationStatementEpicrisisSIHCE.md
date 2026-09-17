@@ -18,7 +18,7 @@ Medicamento declarado en la sección de medicamentos al alta (nivel 3).
 
 * Refer to this Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/MedicationStatementEpicrisisSIHCE)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-MedicationStatementEpicrisisSIHCE.json)
 
 ### Formal Views of Profile Content
 

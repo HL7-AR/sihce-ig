@@ -16,7 +16,7 @@ Estados del índice de receta electrónica (mecanismo anti-quema).
 
 This Code system is referenced in the definition of the following value sets:
 
-* [SIHCERecetaEstadoVS](ValueSet-sihce-receta-estado-vs.md)
+* [Estados de receta SIHCE](ValueSet-sihce-receta-estado-vs.md)
 
 -------
 
@@ -36,7 +36,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "Estado de receta en índice SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T09:51:31-03:00",
+  "date" : "2026-09-17T12:17:38-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

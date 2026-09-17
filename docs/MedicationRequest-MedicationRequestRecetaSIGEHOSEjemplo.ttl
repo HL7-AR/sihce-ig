@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,49 +7,51 @@
 
 <http://sihce.gob.ar/MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo> a fhir:MedicationRequest ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "MedicationRequestRecetaSIGEHOSEjemplo"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest MedicationRequestRecetaSIGEHOSEjemplo</b></p><a name=\"MedicationRequestRecetaSIGEHOSEjemplo\"> </a><a name=\"hcMedicationRequestRecetaSIGEHOSEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationRequestRecetaSIHCE.html\">Receta MedicationRequest SIHCE</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-sihce-cuir.html\" title=\"Código Único de Identificación de Receta (CUIR). Se usa como DocumentReference.identifier y MedicationRequest.identifier.\">SihceCuir</a>/CUIR-2026-000123</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 197361}\">Amoxicilina 500 mg cápsulas</span></p><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>authoredOn</b>: 2026-09-10 11:30:00-0300</p><p><b>requester</b>: Dr. Juan Pérez — Hospital Ramos Mejía</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>1 cápsula cada 8 horas durante 7 días</td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:identifier ( [
-     fhir:system [
-       fhir:v "http://sihce.gob.ar/cuir"^^xsd:anyURI ;
-       fhir:l <http://sihce.gob.ar/cuir>
+  fhir:Resource.id [ fhir:value "MedicationRequestRecetaSIGEHOSEjemplo"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE" ;
+       fhir:index 0 ;
+       fhir:link <http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest MedicationRequestRecetaSIGEHOSEjemplo</b></p><a name=\"MedicationRequestRecetaSIGEHOSEjemplo\"> </a><a name=\"hcMedicationRequestRecetaSIGEHOSEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationRequestRecetaSIHCE.html\">Receta MedicationRequest SIHCE</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-sihce-cuir.html\" title=\"Código Único de Identificación de Receta (CUIR). Se usa como DocumentReference.identifier y MedicationRequest.identifier.\">SihceCuir</a>/CUIR-2026-000123</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 197361}\">Amoxicilina 500 mg cápsulas</span></p><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>authoredOn</b>: 2026-09-10 11:30:00-0300</p><p><b>requester</b>: Dr. Juan Pérez — Hospital Ramos Mejía</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>1 cápsula cada 8 horas durante 7 días</td></tr></table></div>"
+  ] ;
+  fhir:MedicationRequest.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://sihce.gob.ar/cuir" ] ;
+     fhir:Identifier.value [ fhir:value "CUIR-2026-000123" ]
+  ] ;
+  fhir:MedicationRequest.status [ fhir:value "active"] ;
+  fhir:MedicationRequest.intent [ fhir:value "order"] ;
+  fhir:MedicationRequest.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm" ] ;
+       fhir:Coding.code [ fhir:value "197361" ] ;
+       fhir:Coding.display [ fhir:value "Amoxicillin 500 MG Oral Capsule" ]
      ] ;
-     fhir:value [ fhir:v "CUIR-2026-000123" ]
-  ] ) ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:intent [ fhir:v "order"] ; # 
-  fhir:medication [
-     a fhir:CodeableConcept ;
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
-         fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
-       ] ;
-       fhir:code [ fhir:v "197361" ] ;
-       fhir:display [ fhir:v "Amoxicillin 500 MG Oral Capsule" ]
-     ] ) ;
-     fhir:text [ fhir:v "Amoxicilina 500 mg cápsulas" ]
-  ] ; # 
-  fhir:subject [
-     fhir:l <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
-     fhir:reference [ fhir:v "Patient/PersonaSIHCEMin" ]
-  ] ; # 
-  fhir:authoredOn [ fhir:v "2026-09-10T11:30:00-03:00"^^xsd:dateTime] ; # 
-  fhir:requester [
-     fhir:display [ fhir:v "Dr. Juan Pérez — Hospital Ramos Mejía" ]
-  ] ; # 
-  fhir:dosageInstruction ( [
-     fhir:text [ fhir:v "1 cápsula cada 8 horas durante 7 días" ]
-  ] ) . # 
+     fhir:CodeableConcept.text [ fhir:value "Amoxicilina 500 mg cápsulas" ]
+  ] ;
+  fhir:MedicationRequest.subject [
+     fhir:link <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
+     fhir:Reference.reference [ fhir:value "Patient/PersonaSIHCEMin" ]
+  ] ;
+  fhir:MedicationRequest.authoredOn [ fhir:value "2026-09-10T11:30:00-03:00"^^xsd:dateTime] ;
+  fhir:MedicationRequest.requester [
+     fhir:Reference.display [ fhir:value "Dr. Juan Pérez — Hospital Ramos Mejía" ]
+  ] ;
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "1 cápsula cada 8 horas durante 7 días" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

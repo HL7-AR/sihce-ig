@@ -19,7 +19,7 @@ Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y fede
 * Use this Profile: [Parametros Patch Identifier SIHCE](StructureDefinition-parametros-patch-identifier-sihce.md) and [Parametros Update SDM SIHCE](StructureDefinition-parametros-update-sdm-sihce.md)
 * Examples for this Profile: [Patient/PersonaSIHCEMin](Patient-PersonaSIHCEMin.md) and [Patient/PersonaSIHCEPatch](Patient-PersonaSIHCEPatch.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/SIHCE.fhir.core|current/StructureDefinition/PatientXBA)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-PatientXBA.json)
 
 ### Formal Views of Profile Content
 
