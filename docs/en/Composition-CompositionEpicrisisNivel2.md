@@ -1,4 +1,4 @@
-# Epicrisis nivel 2 — secciones narrativas - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Epicrisis nivel 2 — secciones narrativas - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -37,9 +37,9 @@ Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisis
       "display" : "Discharge summary"
     }]
   },
-  "subject" : [{
+  "subject" : {
     "reference" : "Patient/PersonaSIHCEMin"
-  }],
+  },
   "date" : "2026-06-08T16:00:00-03:00",
   "author" : [{
     "reference" : "Organization/hospital-italiano-ejemplo"

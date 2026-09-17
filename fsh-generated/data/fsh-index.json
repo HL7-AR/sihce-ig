@@ -125,39 +125,39 @@
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 12
   },
   {
     "outputFile": "Consent-ConsentOptInHospitalConfidentialSIHCE.json",
     "fshName": "ConsentOptInHospitalConfidentialSIHCE",
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
-    "startLine": 58,
-    "endLine": 73
+    "startLine": 64,
+    "endLine": 81
   },
   {
     "outputFile": "Consent-ConsentOptInHospitalNormalSIHCE.json",
     "fshName": "ConsentOptInHospitalNormalSIHCE",
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
-    "startLine": 41,
-    "endLine": 56
+    "startLine": 45,
+    "endLine": 62
   },
   {
     "outputFile": "Consent-ConsentOptInHospitalSIHCE.json",
     "fshName": "ConsentOptInHospitalSIHCE",
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
-    "startLine": 25,
-    "endLine": 39
+    "startLine": 27,
+    "endLine": 43
   },
   {
     "outputFile": "Consent-ConsentOptOutGeneralSIHCE.json",
     "fshName": "ConsentOptOutGeneralSIHCE",
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
-    "startLine": 13,
-    "endLine": 23
+    "startLine": 14,
+    "endLine": 25
   },
   {
     "outputFile": "DiagnosticReport-DiagnosticReportInformeLabNivel1.json",
@@ -348,8 +348,8 @@
     "fshName": "CompositionEpicrisisSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
-    "startLine": 31,
-    "endLine": 105
+    "startLine": 32,
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-ConditionEpicrisisSIHCE.json",
@@ -365,7 +365,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/ConsentSIHCE.fsh",
     "startLine": 1,
-    "endLine": 38
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-Consentimiento.json",
@@ -404,8 +404,8 @@
     "fshName": "DocumentReferenceSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
-    "startLine": 107,
-    "endLine": 146
+    "startLine": 108,
+    "endLine": 147
   },
   {
     "outputFile": "StructureDefinition-DocumentoClinico.json",
@@ -452,8 +452,8 @@
     "fshName": "MedicationDispenseRecetaSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/RecetaSIHCE.fsh",
-    "startLine": 81,
-    "endLine": 100
+    "startLine": 82,
+    "endLine": 102
   },
   {
     "outputFile": "StructureDefinition-MedicationRequestRecetaSIHCE.json",
@@ -461,7 +461,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/RecetaSIHCE.fsh",
     "startLine": 58,
-    "endLine": 79
+    "endLine": 80
   },
   {
     "outputFile": "StructureDefinition-MedicationStatementEpicrisisSIHCE.json",
@@ -469,7 +469,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
     "startLine": 17,
-    "endLine": 29
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-ModificarIDLocalPersona.json",

@@ -16,11 +16,9 @@
       }
     ]
   },
-  "subject": [
-    {
-      "reference": "Patient/PersonaSIHCEMin"
-    }
-  ],
+  "subject": {
+    "reference": "Patient/PersonaSIHCEMin"
+  },
   "date": "2026-06-08T16:00:00-03:00",
   "author": [
     {

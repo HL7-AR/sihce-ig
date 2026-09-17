@@ -3,7 +3,7 @@
   "id": "BuscarPersonaModeloAFHIR",
   "url": "http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR",
   "title": "BuscarPersona: modelo lógico a FHIR",
-  "description": "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5).",
+  "description": "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4).",
   "purpose": "Operación de búsqueda; el perfil SIHCE de paciente es Paciente SIHCE (PatientXBA).",
   "version": "1.2.0",
   "name": "BuscarPersonaModeloAFHIR",
@@ -21,7 +21,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -30,7 +30,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -39,7 +39,7 @@
           "target": [
             {
               "code": "Patient.gender",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -48,7 +48,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent",
+              "equivalence": "equivalent",
               "comment": "Slice idDominio del perfil PatientXBA: identificador local en el dominio."
             }
           ]
@@ -58,7 +58,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent",
+              "equivalence": "equivalent",
               "comment": "Slice idDominio: system = URI del dominio."
             }
           ]
@@ -68,7 +68,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -77,7 +77,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -86,7 +86,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -95,7 +95,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -104,7 +104,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -113,7 +113,7 @@
           "target": [
             {
               "code": "Patient.birthDate",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -122,7 +122,7 @@
           "target": [
             {
               "code": "Patient.deceased[x]",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         }
@@ -137,7 +137,7 @@
           "target": [
             {
               "code": "Organization",
-              "relationship": "equivalent",
+              "equivalence": "equivalent",
               "comment": "El bloque dominio se correlaciona con el recurso Organization del dominio solicitante cuando se modela el actor aparte del paciente."
             }
           ]
@@ -147,7 +147,7 @@
           "target": [
             {
               "code": "Organization.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         }

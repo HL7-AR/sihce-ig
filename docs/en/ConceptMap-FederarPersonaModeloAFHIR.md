@@ -1,4 +1,4 @@
-# FederarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# FederarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR | *Version*:2.0.0 |
 | Draft as of 2026-04-29 | *Computable Name*:FederarPersonaModeloAFHIR |
 
  
@@ -23,7 +23,7 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
   "resourceType" : "ConceptMap",
   "id" : "FederarPersonaModeloAFHIR",
   "url" : "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "FederarPersonaModeloAFHIR",
   "title" : "FederarPersona: modelo lógico a FHIR",
   "status" : "draft",
@@ -46,77 +46,77 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
       "code" : "FederarPersona.datosPersona.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosPersona.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosPersona.sexo",
       "target" : [{
         "code" : "Patient.gender",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosPersona.primerNombre",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosPersona.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosPersona.primerApellido",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosPersona.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosPersona.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosDominio.idLocalPersona",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosFederacion.idPersonaGlobal",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent",
+        "equivalence" : "equivalent",
         "comment" : "Identificador maestro / global según política del FederadorBA (p. ej. identifier adicional)."
       }]
     }]
@@ -128,14 +128,14 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
       "code" : "FederarPersona.datosDominio",
       "target" : [{
         "code" : "Organization",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FederarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Organization.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   },
@@ -146,7 +146,7 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
       "code" : "FederarPersona.datosFederacion.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
-        "relationship" : "equivalent",
+        "equivalence" : "equivalent",
         "comment" : "Texto informativo o de error en respuesta de operación."
       }]
     }]

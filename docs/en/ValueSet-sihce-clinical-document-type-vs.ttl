@@ -18,12 +18,12 @@
      fhir:v "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ValueSet/sihce-clinical-document-type>
   ] ; # 
-  fhir:version [ fhir:v "1.6.0"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "SIHCEClinicalDocumentTypeVS"] ; # 
   fhir:title [ fhir:v "Tipos de documento clínico SIHCE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-09-16T14:49:36-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-17T09:51:31-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;

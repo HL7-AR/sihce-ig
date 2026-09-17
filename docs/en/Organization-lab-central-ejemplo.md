@@ -1,4 +1,4 @@
-# Laboratorio Central Ejemplo - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Laboratorio Central Ejemplo - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

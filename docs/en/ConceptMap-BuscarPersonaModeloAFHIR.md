@@ -1,4 +1,4 @@
-# BuscarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# BuscarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR | *Version*:2.0.0 |
 | Draft as of 2026-04-29 | *Computable Name*:BuscarPersonaModeloAFHIR |
 
  
-Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5). 
+Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4). 
 
 
 
@@ -23,7 +23,7 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
   "resourceType" : "ConceptMap",
   "id" : "BuscarPersonaModeloAFHIR",
   "url" : "http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "BuscarPersonaModeloAFHIR",
   "title" : "BuscarPersona: modelo lógico a FHIR",
   "status" : "draft",
@@ -37,7 +37,7 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
       "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
-  "description" : "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5).",
+  "description" : "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4).",
   "purpose" : "Operación de búsqueda; el perfil SIHCE de paciente es Paciente SIHCE (PatientXBA).",
   "group" : [{
     "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
@@ -46,28 +46,28 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
       "code" : "BuscarPersona.datosConsulta.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "BuscarPersona.datosConsulta.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "BuscarPersona.datosConsulta.sexo",
       "target" : [{
         "code" : "Patient.gender",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "BuscarPersona.datosDominio.idLocalPersona",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent",
+        "equivalence" : "equivalent",
         "comment" : "Slice idDominio del perfil PatientXBA: identificador local en el dominio."
       }]
     },
@@ -75,7 +75,7 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
       "code" : "BuscarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent",
+        "equivalence" : "equivalent",
         "comment" : "Slice idDominio: system = URI del dominio."
       }]
     },
@@ -83,49 +83,49 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
       "code" : "BuscarPersona.datosRespuesta.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "BuscarPersona.datosRespuesta.primerNombre",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "BuscarPersona.datosRespuesta.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "BuscarPersona.datosRespuesta.primerApellido",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "BuscarPersona.datosRespuesta.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "BuscarPersona.datosRespuesta.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "BuscarPersona.datosRespuesta.fechaDefuncion",
       "target" : [{
         "code" : "Patient.deceased[x]",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   },
@@ -136,7 +136,7 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
       "code" : "BuscarPersona.datosDominio",
       "target" : [{
         "code" : "Organization",
-        "relationship" : "equivalent",
+        "equivalence" : "equivalent",
         "comment" : "El bloque dominio se correlaciona con el recurso Organization del dominio solicitante cuando se modela el actor aparte del paciente."
       }]
     },
@@ -144,7 +144,7 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
       "code" : "BuscarPersona.datosDominio.idDominio",
       "target" : [{
         "code" : "Organization.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   }]

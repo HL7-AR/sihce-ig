@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>InformeLaboratorio: modelo lógico a FHIR - TTL Representation - Guía de Implementación SIHCE - FHIR R5 v1.6.0</title>
+    <title>InformeLaboratorio: modelo lógico a FHIR - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -57,9 +57,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">1.6.0 - 
+            <span style="display:inline-block;">2.0.0 - 
 
 
             </span>
@@ -98,7 +98,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R5/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
 
@@ -159,7 +159,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -245,64 +245,64 @@
 # - resource -------------------------------------------------------------------
 
  a fhir:ConceptMap ;
-  <a href="https://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="https://hl7.org/fhir/R5/resource.html#XConceptMap.id">fhir:id</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;InformeLaboratorioModeloAFHIR&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/resource.html#XConceptMap.language">fhir:language</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/domainresource.html#XConceptMap.text">fhir:text</a> [
-<a href="https://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="https://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">fhir:div</a> [ <a href="https://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap InformeLaboratorioModeloAFHIR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;InformeLaboratorioModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcInformeLaboratorioModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;p&gt;Mapping from (not specified) to (not specified)&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1 &lt;/b&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.tipoDocumento (DocumentoClinico datosDocumento tipoDocumento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.type&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.idPersonaGlobal (DocumentoClinico datosDocumento idPersonaGlobal)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.subject&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.urlContenido (DocumentoClinico datosDocumento urlContenido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.content&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.nivelMadurez (InformeLaboratorio nivelMadurez)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#related-to\&quot; title=\&quot;related-to\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DiagnosticReport.result&lt;/td&gt;&lt;td&gt;Nivel 1: sin result; nivel 2: con Observation en result.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.resultado.codigoAnalito (InformeLaboratorio resultado codigoAnalito)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation.code&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.resultado.valor (InformeLaboratorio resultado valor)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation.value[x]&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  <a href="https://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.id">fhir:id</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;InformeLaboratorioModeloAFHIR&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.language">fhir:language</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">fhir:text</a> [
+<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="https://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap InformeLaboratorioModeloAFHIR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;InformeLaboratorioModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcInformeLaboratorioModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;p&gt;Mapping from (not specified) to (not specified)&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1 &lt;/b&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.tipoDocumento (DocumentoClinico datosDocumento tipoDocumento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.type&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.idPersonaGlobal (DocumentoClinico datosDocumento idPersonaGlobal)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.subject&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.urlContenido (DocumentoClinico datosDocumento urlContenido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.content&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.nivelMadurez (InformeLaboratorio nivelMadurez)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DiagnosticReport.result&lt;/td&gt;&lt;td&gt;Nivel 1: sin result; nivel 2: con Observation en result.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.resultado.codigoAnalito (InformeLaboratorio resultado codigoAnalito)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation.code&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.resultado.valor (InformeLaboratorio resultado valor)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation.value[x]&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.url">fhir:url</a> [
-<a href="https://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR&quot;^^xsd:anyURI ;
-<a href="https://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR&gt;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">fhir:url</a> [
+<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR&quot;^^xsd:anyURI ;
+<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR&gt;
   ] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.version">fhir:version</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1.6.0&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;InformeLaboratorioModeloAFHIR&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.title">fhir:title</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;InformeLaboratorio: modelo lógico a FHIR&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.experimental">fhir:experimental</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.date">fhir:date</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2026-06-09&quot;^^xsd:date] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.publisher">fhir:publisher</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.contact">fhir:contact</a> ( [
-<a href="https://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot; ] ;
-    ( <a href="https://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">fhir:telecom</a> [
-<a href="https://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="https://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://github.com/diegokaminker/sihce-ig&quot; ]     ] )
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">fhir:version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2.0.0&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;InformeLaboratorioModeloAFHIR&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">fhir:title</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;InformeLaboratorio: modelo lógico a FHIR&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">fhir:experimental</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-06-09&quot;^^xsd:date] ; # 
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">fhir:publisher</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">fhir:contact</a> ( [
+<a href="https://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot; ] ;
+    ( <a href="https://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="https://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="https://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://github.com/diegokaminker/sihce-ig&quot; ]     ] )
   ] ) ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.description">fhir:description</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport.&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group">fhir:group</a> ( [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.source">fhir:source</a> [
-<a href="https://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&quot;^^xsd:anyURI ;
-<a href="https://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&gt;     ] ;
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&quot;^^xsd:anyURI ;
-<a href="https://hl7.org/fhir/R5/datatypes.html#canonical">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&gt;     ] ;
-    ( <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element">fhir:element</a> [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentoClinico.datosDocumento.tipoDocumento&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.type&quot; ] ;
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.relationship">fhir:relationship</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentoClinico.datosDocumento.idPersonaGlobal&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.subject&quot; ] ;
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.relationship">fhir:relationship</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentoClinico.datosDocumento.urlContenido&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.content&quot; ] ;
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.relationship">fhir:relationship</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;InformeLaboratorio.nivelMadurez&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.result&quot; ] ;
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.relationship">fhir:relationship</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;related-to&quot; ] ;
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.comment">fhir:comment</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Nivel 1: sin result; nivel 2: con Observation en result.&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;InformeLaboratorio.resultado.codigoAnalito&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Observation.code&quot; ] ;
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.relationship">fhir:relationship</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;InformeLaboratorio.resultado.valor&quot; ] ;
-      ( <a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target">fhir:target</a> [
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Observation.value[x]&quot; ] ;
-<a href="https://hl7.org/fhir/R5/conceptmap.html#XConceptMap.group.element.target.relationship">fhir:relationship</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] )
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.description">fhir:description</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport.&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">fhir:group</a> ( [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">fhir:source</a> [
+<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&quot;^^xsd:anyURI ;
+<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths&gt;     ] ;
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">fhir:target</a> [
+<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&quot;^^xsd:anyURI ;
+<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&gt;     ] ;
+    ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">fhir:element</a> [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentoClinico.datosDocumento.tipoDocumento&quot; ] ;
+      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.type&quot; ] ;
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentoClinico.datosDocumento.idPersonaGlobal&quot; ] ;
+      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.subject&quot; ] ;
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentoClinico.datosDocumento.urlContenido&quot; ] ;
+      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.content&quot; ] ;
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;InformeLaboratorio.nivelMadurez&quot; ] ;
+      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.result&quot; ] ;
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;relatedto&quot; ] ;
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.comment">fhir:comment</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nivel 1: sin result; nivel 2: con Observation en result.&quot; ]       ] )     ] [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;InformeLaboratorio.resultado.codigoAnalito&quot; ] ;
+      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Observation.code&quot; ] ;
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;InformeLaboratorio.resultado.valor&quot; ] ;
+      ( <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:target</a> [
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Observation.value[x]&quot; ] ;
+<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equivalent&quot; ]       ] )     ] )
   ] ) . # 
 
 </code></pre>
@@ -335,8 +335,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Wed, Sep 16, 2026 14:49-0300">2026-09-16</span>
+          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Sep 17, 2026 09:51-0300">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

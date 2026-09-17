@@ -1,19 +1,13 @@
 {
   "resourceType": "StructureDefinition",
   "id": "extension-receta-repositorio-delegado",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
-      "valueCode": "can-bind"
-    }
-  ],
   "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado",
   "version": "1.6.0",
   "name": "ExtensionRecetaRepositorioDelegado",
   "title": "Repositorio delegado en SIHCE",
   "status": "draft",
   "description": "Marca el caso excepcional en que SIHCE almacena el MedicationRequest (caso de uso 3, variante 1b).",
-  "fhirVersion": "5.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [

@@ -1,4 +1,4 @@
-# Medicación al alta epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Medicación al alta epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE | *Version*:2.0.0 |
 | Draft as of 2026-06-09 | *Computable Name*:MedicationStatementEpicrisisSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationStateme
   "resourceType" : "StructureDefinition",
   "id" : "MedicationStatementEpicrisisSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "MedicationStatementEpicrisisSIHCE",
   "title" : "Medicación al alta epicrisis SIHCE",
   "status" : "draft",
@@ -51,16 +51,11 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationStateme
     }]
   }],
   "description" : "Medicamento declarado en la sección de medicamentos al alta (nivel 3).",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
-  },
-  {
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
   },
   {
     "identity" : "rim",
@@ -68,9 +63,14 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationStateme
     "name" : "RIM Mapping"
   },
   {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 V2 Mapping"
+    "name" : "HL7 v2 Mapping"
   }],
   "kind" : "resource",
   "abstract" : false,
@@ -88,8 +88,11 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationStateme
       "mustSupport" : true
     },
     {
-      "id" : "MedicationStatement.medication",
-      "path" : "MedicationStatement.medication",
+      "id" : "MedicationStatement.medication[x]",
+      "path" : "MedicationStatement.medication[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
       "mustSupport" : true
     },
     {

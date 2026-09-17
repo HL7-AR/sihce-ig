@@ -1,4 +1,4 @@
-# Dispensa de receta — farmacia privada - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Dispensa de receta — farmacia privada - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -10,12 +10,7 @@ Profile: [Dispensa de receta SIHCE](StructureDefinition-MedicationDispenseReceta
 
 **status**: Completed
 
-### Medications
-
-| | |
-| :--- | :--- |
-| - | **Concept** |
-| * | Amoxicilina 500 mg cápsulas |
+**medication**: Amoxicilina 500 mg cápsulas
 
 **subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))](Patient-PersonaSIHCEMin.md)
 
@@ -26,7 +21,7 @@ Profile: [Dispensa de receta SIHCE](StructureDefinition-MedicationDispenseReceta
 | - | **Actor** |
 | * | Farmacia Privada Ejemplo |
 
-**authorizingPrescription**: [MedicationRequest: identifier = http://sihce.gob.ar/cuir#NamingSystem CUIR (código único de receta)#CUIR-2026-000123; status = active; intent = order; authoredOn = 2026-09-10 11:30:00-0300](MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.md)
+**authorizingPrescription**: [MedicationRequest: identifier = http://sihce.gob.ar/cuir#SihceCuir#CUIR-2026-000123; status = active; intent = order; medication[x] = Amoxicillin 500 MG Oral Capsule; authoredOn = 2026-09-10 11:30:00-0300](MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.md)
 
 **whenHandedOver**: 2026-09-11 16:45:00-0300
 
@@ -42,10 +37,8 @@ Profile: [Dispensa de receta SIHCE](StructureDefinition-MedicationDispenseReceta
     "profile" : ["http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE"]
   },
   "status" : "completed",
-  "medication" : {
-    "concept" : {
-      "text" : "Amoxicilina 500 mg cápsulas"
-    }
+  "medicationCodeableConcept" : {
+    "text" : "Amoxicilina 500 mg cápsulas"
   },
   "subject" : {
     "reference" : "Patient/PersonaSIHCEMin"

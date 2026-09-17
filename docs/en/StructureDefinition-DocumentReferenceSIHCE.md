@@ -1,4 +1,4 @@
-# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:2.0.0 |
 | Draft as of 2026-06-09 | *Computable Name*:DocumentReferenceSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
   "resourceType" : "StructureDefinition",
   "id" : "DocumentReferenceSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "DocumentReferenceSIHCE",
   "title" : "Referencia a documento clínico SIHCE",
   "status" : "draft",
@@ -51,16 +51,11 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
     }]
   }],
   "description" : "Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio.",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
-  },
-  {
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
   },
   {
     "identity" : "fhircomposition",
@@ -73,19 +68,24 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
     "name" : "RIM Mapping"
   },
   {
-    "identity" : "xds",
-    "uri" : "http://ihe.net/xds",
-    "name" : "XDS metadata equivalent"
-  },
-  {
     "identity" : "cda",
     "uri" : "http://hl7.org/v3/cda",
     "name" : "CDA (R2)"
   },
   {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 V2 Mapping"
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "xds",
+    "uri" : "http://ihe.net/xds",
+    "name" : "XDS metadata equivalent"
   }],
   "kind" : "resource",
   "abstract" : false,

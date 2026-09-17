@@ -45,10 +45,10 @@ Description: "Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 
 * identifier[0].value = "CUIR-2026-000123"
 * status = #active
 * intent = #order
-* medication.concept.coding[0].system = "http://www.nlm.nih.gov/research/umls/rxnorm"
-* medication.concept.coding[0].code = #197361
-* medication.concept.coding[0].display = "Amoxicillin 500 MG Oral Capsule"
-* medication.concept.text = "Amoxicilina 500 mg cápsulas"
+* medicationCodeableConcept.coding[0].system = "http://www.nlm.nih.gov/research/umls/rxnorm"
+* medicationCodeableConcept.coding[0].code = #197361
+* medicationCodeableConcept.coding[0].display = "Amoxicillin 500 MG Oral Capsule"
+* medicationCodeableConcept.text = "Amoxicilina 500 mg cápsulas"
 * subject = Reference(PersonaSIHCEMin)
 * authoredOn = "2026-09-10T11:30:00-03:00"
 * requester.display = "Dr. Juan Pérez — Hospital Ramos Mejía"
@@ -60,7 +60,7 @@ Usage: #example
 Title: "Dispensa de receta — farmacia privada"
 Description: "Evento de dispensa notificado a SIHCE (anti-quema)."
 * status = #completed
-* medication.concept.text = "Amoxicilina 500 mg cápsulas"
+* medicationCodeableConcept.text = "Amoxicilina 500 mg cápsulas"
 * subject = Reference(PersonaSIHCEMin)
 * authorizingPrescription = Reference(MedicationRequestRecetaSIGEHOSEjemplo)
 * whenHandedOver = "2026-09-11T16:45:00-03:00"

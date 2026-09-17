@@ -18,7 +18,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest MedicationRequestRecetaSIGEHOSEjemplo</b></p><a name=\"MedicationRequestRecetaSIGEHOSEjemplo\"> </a><a name=\"hcMedicationRequestRecetaSIGEHOSEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationRequestRecetaSIHCE.html\">Receta MedicationRequest SIHCE</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-sihce-cuir.html\" title=\"Código Único de Identificación de Receta (CUIR). Se usa como DocumentReference.identifier y MedicationRequest.identifier.\">NamingSystem CUIR (código único de receta)</a>/CUIR-2026-000123</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><h3>Medications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Concept</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 197361}\">Amoxicilina 500 mg cápsulas</span></td></tr></table><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>authoredOn</b>: 2026-09-10 11:30:00-0300</p><p><b>requester</b>: Dr. Juan Pérez — Hospital Ramos Mejía</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>1 cápsula cada 8 horas durante 7 días</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationRequest MedicationRequestRecetaSIGEHOSEjemplo</b></p><a name=\"MedicationRequestRecetaSIGEHOSEjemplo\"> </a><a name=\"hcMedicationRequestRecetaSIGEHOSEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MedicationRequestRecetaSIHCE.html\">Receta MedicationRequest SIHCE</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-sihce-cuir.html\" title=\"Código Único de Identificación de Receta (CUIR). Se usa como DocumentReference.identifier y MedicationRequest.identifier.\">SihceCuir</a>/CUIR-2026-000123</p><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>medication</b>: <span title=\"Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 197361}\">Amoxicilina 500 mg cápsulas</span></p><p><b>subject</b>: <a href=\"Patient-PersonaSIHCEMin.html\">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))</a></p><p><b>authoredOn</b>: 2026-09-10 11:30:00-0300</p><p><b>requester</b>: Dr. Juan Pérez — Hospital Ramos Mejía</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>1 cápsula cada 8 horas durante 7 días</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
      fhir:system [
@@ -30,17 +30,16 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "order"] ; # 
   fhir:medication [
-     fhir:concept [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
-           fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
-         ] ;
-         fhir:code [ fhir:v "197361" ] ;
-         fhir:display [ fhir:v "Amoxicillin 500 MG Oral Capsule" ]
-       ] ) ;
-       fhir:text [ fhir:v "Amoxicilina 500 mg cápsulas" ]
-     ]
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ;
+         fhir:l <http://www.nlm.nih.gov/research/umls/rxnorm>
+       ] ;
+       fhir:code [ fhir:v "197361" ] ;
+       fhir:display [ fhir:v "Amoxicillin 500 MG Oral Capsule" ]
+     ] ) ;
+     fhir:text [ fhir:v "Amoxicilina 500 mg cápsulas" ]
   ] ; # 
   fhir:subject [
      fhir:l <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;

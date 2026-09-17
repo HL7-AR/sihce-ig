@@ -1,4 +1,4 @@
-# Dispensa de receta SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Dispensa de receta SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE | *Version*:1.6.0 |
-| Draft as of 2026-09-15 | *Computable Name*:MedicationDispenseRecetaSIHCE |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE | *Version*:2.0.0 |
+| Draft as of 2026-09-17 | *Computable Name*:MedicationDispenseRecetaSIHCE |
 
  
 Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationDispens
   "resourceType" : "StructureDefinition",
   "id" : "MedicationDispenseRecetaSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "MedicationDispenseRecetaSIHCE",
   "title" : "Dispensa de receta SIHCE",
   "status" : "draft",
-  "date" : "2026-09-15T00:00:00-03:00",
+  "date" : "2026-09-17T00:00:00-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -51,21 +51,21 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationDispens
     }]
   }],
   "description" : "Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen.",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
   },
   {
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
-  },
-  {
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
   },
   {
     "identity" : "rx-dispense-rmim",
@@ -75,7 +75,7 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationDispens
   {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 V2 Mapping"
+    "name" : "HL7 v2 Mapping"
   }],
   "kind" : "resource",
   "abstract" : false,
@@ -94,13 +94,17 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationDispens
       "mustSupport" : true
     },
     {
-      "id" : "MedicationDispense.medication",
-      "path" : "MedicationDispense.medication",
+      "id" : "MedicationDispense.medication[x]",
+      "path" : "MedicationDispense.medication[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
       "mustSupport" : true
     },
     {
       "id" : "MedicationDispense.subject",
       "path" : "MedicationDispense.subject",
+      "min" : 1,
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]

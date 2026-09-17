@@ -1,4 +1,4 @@
-# ModificarIDLocalPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# ModificarIDLocalPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR | *Version*:2.0.0 |
 | Draft as of 2026-04-29 | *Computable Name*:ModificarIDLocalPersonaModeloAFHIR |
 
  
@@ -23,7 +23,7 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
   "resourceType" : "ConceptMap",
   "id" : "ModificarIDLocalPersonaModeloAFHIR",
   "url" : "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "ModificarIDLocalPersonaModeloAFHIR",
   "title" : "ModificarIDLocalPersona: modelo lógico a FHIR",
   "status" : "draft",
@@ -46,63 +46,63 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
       "code" : "ModificarIDLocalPersona.datosPersona.tipoDocumento",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.datosPersona.documentoIdentificatorio",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.datosPersona.sexo",
       "target" : [{
         "code" : "Patient.gender",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.datosPersona.primerNombre",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.datosPersona.segundoNombre",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.datosPersona.primerApellido",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.datosPersona.segundoApellido",
       "target" : [{
         "code" : "Patient.name",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.datosPersona.fechaNacimiento",
       "target" : [{
         "code" : "Patient.birthDate",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.datosModificacion.idDominio",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent",
+        "equivalence" : "equivalent",
         "comment" : "URI del dominio en slice idDominio."
       }]
     },
@@ -110,14 +110,14 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
       "code" : "ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo",
       "target" : [{
         "code" : "Patient.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   },
@@ -128,7 +128,7 @@ Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y Oper
       "code" : "ModificarIDLocalPersona.datosRespuesta.mensaje",
       "target" : [{
         "code" : "OperationOutcome.issue",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   }]

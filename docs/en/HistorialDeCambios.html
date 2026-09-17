@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.6.0</title>
+    <title>Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,9 +54,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">1.6.0 - 
+            <span style="display:inline-block;">2.0.0 - 
 
 
             </span>
@@ -95,7 +95,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R5/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
 
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Historial de Cambios</h2>
   
 
@@ -180,6 +180,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#versión-200" id="markdown-toc-versión-200">Versión 2.0.0</a></li>
   <li><a href="#versión-160" id="markdown-toc-versión-160">Versión 1.6.0</a></li>
   <li><a href="#versión-150" id="markdown-toc-versión-150">Versión 1.5.0</a></li>
   <li><a href="#versión-140" id="markdown-toc-versión-140">Versión 1.4.0</a></li>
@@ -196,6 +197,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
+<h3 id="versión-200">Versión 2.0.0</h3>
+
+<ul>
+  <li><strong>Downgrade a FHIR R4.0.1</strong> (breaking): la guía deja de basarse en FHIR R5.</li>
+  <li><strong>Consent:</strong> <code class="language-plaintext highlighter-rouge">subject</code>→<code class="language-plaintext highlighter-rouge">patient</code>, <code class="language-plaintext highlighter-rouge">date</code>→<code class="language-plaintext highlighter-rouge">dateTime</code>, <code class="language-plaintext highlighter-rouge">decision</code>→<code class="language-plaintext highlighter-rouge">provision.type</code>; <code class="language-plaintext highlighter-rouge">scope</code> obligatorio; autorizaciones de hospital en <code class="language-plaintext highlighter-rouge">provision.provision</code> anidadas con <code class="language-plaintext highlighter-rouge">actor.role</code>.</li>
+  <li><strong>Medicación:</strong> <code class="language-plaintext highlighter-rouge">MedicationRequest</code> / <code class="language-plaintext highlighter-rouge">MedicationDispense</code> / <code class="language-plaintext highlighter-rouge">MedicationStatement</code> usan <code class="language-plaintext highlighter-rouge">medicationCodeableConcept</code> (ya no <code class="language-plaintext highlighter-rouge">medication.concept</code> de R5).</li>
+  <li><strong>ConceptMaps:</strong> <code class="language-plaintext highlighter-rouge">relationship</code> (R5) reemplazado por <code class="language-plaintext highlighter-rouge">equivalence</code> (R4); paths de Consent actualizados.</li>
+  <li>Implementadores que consumían v1.x R5 deben migrar payloads de Consent y medicación.</li>
+</ul>
+
 <h3 id="versión-160">Versión 1.6.0</h3>
 
 <ul>
@@ -381,8 +392,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Wed, Sep 16, 2026 14:49-0300">2026-09-16</span>
+          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Sep 17, 2026 09:51-0300">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

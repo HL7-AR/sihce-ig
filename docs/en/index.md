@@ -1,4 +1,4 @@
-# Inicio - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Inicio - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * **Inicio**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:1.6.0 |
-| Draft as of 2026-09-16 | *Computable Name*:GuiaDeImplementacionSIHCE |
+| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:2.0.0 |
+| Draft as of 2026-09-17 | *Computable Name*:GuiaDeImplementacionSIHCE |
 
 # Sistema Integrador de Historias Clínicas Electrónicas
 
@@ -64,15 +64,17 @@ This publication includes IP covered under the following statements.
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* SNOMED Clinical Terms&reg; (SNOMED CT&reg;): [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md) and [SIHCEEpicrisisDiagnosisCodeVS](ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md) and [SIHCEEpicrisisDiagnosisCodeVS](ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
+* [Consent Scope Codes](http://terminology.hl7.org/7.3.0/CodeSystem-consentscope.html): [Consent/ConsentOptInGeneralSIHCE](Consent-ConsentOptInGeneralSIHCE.md), [Consent/ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfidentialSIHCE.md)... Show 4 more, [Consent/ConsentOptInHospitalNormalSIHCE](Consent-ConsentOptInHospitalNormalSIHCE.md), [Consent/ConsentOptInHospitalSIHCE](Consent-ConsentOptInHospitalSIHCE.md), [Consent/ConsentOptOutGeneralSIHCE](Consent-ConsentOptOutGeneralSIHCE.md) and [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md)
 * [Observation Category Codes](http://terminology.hl7.org/7.3.0/CodeSystem-observation-category.html): [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md) and [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md)
 * [diagnosticServiceSectionId](http://terminology.hl7.org/7.3.0/CodeSystem-v2-0074.html): [DiagnosticReport/DiagnosticReportInformeLabNivel1](DiagnosticReport-DiagnosticReportInformeLabNivel1.md), [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md) and [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
 * [identifierType](http://terminology.hl7.org/7.3.0/CodeSystem-v2-0203.html): [Parameters/ParametrosPatchIdentifierEjemplo](Parameters-ParametrosPatchIdentifierEjemplo.md), [Parameters/ParametrosUpdateSDMEjemplo](Parameters-ParametrosUpdateSDMEjemplo.md), [Patient/PersonaSIHCEMin](Patient-PersonaSIHCEMin.md) and [Patient/PersonaSIHCEPatch](Patient-PersonaSIHCEPatch.md)
 * [ObservationInterpretation](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html): [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md)
+* [ParticipationType](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ParticipationType.html): [Consent/ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfidentialSIHCE.md), [Consent/ConsentOptInHospitalNormalSIHCE](Consent-ConsentOptInHospitalNormalSIHCE.md), [Consent/ConsentOptInHospitalSIHCE](Consent-ConsentOptInHospitalSIHCE.md) and [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md)
 
 
 

@@ -105,16 +105,16 @@
       "display": "Observation.value[x]"
     },
     {
-      "code": "Consent.subject",
-      "display": "Consent.subject"
+      "code": "Consent.patient",
+      "display": "Consent.patient"
     },
     {
-      "code": "Consent.date",
-      "display": "Consent.date"
+      "code": "Consent.dateTime",
+      "display": "Consent.dateTime"
     },
     {
-      "code": "Consent.decision",
-      "display": "Consent.decision"
+      "code": "Consent.provision.type",
+      "display": "Consent.provision.type"
     },
     {
       "code": "Consent.provision",

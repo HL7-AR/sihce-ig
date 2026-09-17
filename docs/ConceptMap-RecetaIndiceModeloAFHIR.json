@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap RecetaIndiceModeloAFHIR</b></p><a name=\"RecetaIndiceModeloAFHIR\"> </a><a name=\"hcRecetaIndiceModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>RecetaIndice.datosReceta.cuir (RecetaIndice datosReceta cuir)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.identifier</td></tr><tr><td>RecetaIndice.datosReceta.cuilPaciente (RecetaIndice datosReceta cuilPaciente)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.subject</td></tr><tr><td>RecetaIndice.datosReceta.idPersonaGlobal (RecetaIndice datosReceta idPersonaGlobal)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.subject</td></tr><tr><td>RecetaIndice.datosReceta.estado (RecetaIndice datosReceta estado)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.extension</td></tr><tr><td>RecetaIndice.datosReceta.fechaEmision (RecetaIndice datosReceta fechaEmision)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.date</td></tr><tr><td>RecetaIndice.datosReceta.urlContenido (RecetaIndice datosReceta urlContenido)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.content</td></tr><tr><td>RecetaIndice.datosPrescriptor.idDominio (RecetaIndice datosPrescriptor idDominio)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.custodian</td></tr><tr><td>RecetaIndice.datosPrescriptor.idEfector (RecetaIndice datosPrescriptor idEfector)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.custodian</td></tr><tr><td>RecetaIndice.repositorioDelegado (RecetaIndice repositorioDelegado)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DocumentReference.extension</td></tr></table></div>"
   },
   "url" : "http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "RecetaIndiceModeloAFHIR",
   "title" : "RecetaIndice: modelo lógico a FHIR",
   "status" : "draft",
@@ -28,63 +28,63 @@
       "code" : "RecetaIndice.datosReceta.cuir",
       "target" : [{
         "code" : "DocumentReference.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "RecetaIndice.datosReceta.cuilPaciente",
       "target" : [{
         "code" : "DocumentReference.subject",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "RecetaIndice.datosReceta.idPersonaGlobal",
       "target" : [{
         "code" : "DocumentReference.subject",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "RecetaIndice.datosReceta.estado",
       "target" : [{
         "code" : "DocumentReference.extension",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "RecetaIndice.datosReceta.fechaEmision",
       "target" : [{
         "code" : "DocumentReference.date",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "RecetaIndice.datosReceta.urlContenido",
       "target" : [{
         "code" : "DocumentReference.content",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "RecetaIndice.datosPrescriptor.idDominio",
       "target" : [{
         "code" : "DocumentReference.custodian",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "RecetaIndice.datosPrescriptor.idEfector",
       "target" : [{
         "code" : "DocumentReference.custodian",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "RecetaIndice.repositorioDelegado",
       "target" : [{
         "code" : "DocumentReference.extension",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   }]

@@ -1,4 +1,4 @@
-# SIHCE.fhir.core#1.6.0: Guía de Implementación SIHCE - FHIR R5(en)
+# SIHCE.fhir.core#2.0.0: Guía de Implementación SIHCE - FHIR R4(en)
 
 ## Pages
 
@@ -81,17 +81,17 @@
 
 ### ImplementationGuides
 
-* [Guía de Implementación SIHCE - FHIR R5](en/ImplementationGuide-SIHCE.fhir.core.md)
+* [Guía de Implementación SIHCE - FHIR R4](en/ImplementationGuide-SIHCE.fhir.core.md)
 
 ### NamingSystems
 
-* [NamingSystem URI Hospital Italiano (ejemplo FHIR)](en/NamingSystem-NamingSystemHospitalItalianoFHIR.md)
-* [NamingSystem URI MSGC GCBA (ejemplo)](en/NamingSystem-NamingSystemMsgcGCBA.md)
-* [NamingSystem Organization hospital (dominio MSGC, ejemplo)](en/NamingSystem-NamingSystemOrganizationHospitalMsgc.md)
+* [NamingSystemHospitalItalianoFHIR](en/NamingSystem-NamingSystemHospitalItalianoFHIR.md)
+* [NamingSystemMsgcGCBA](en/NamingSystem-NamingSystemMsgcGCBA.md)
+* [NamingSystemOrganizationHospitalMsgc](en/NamingSystem-NamingSystemOrganizationHospitalMsgc.md)
 * [RenaperDNI](en/NamingSystem-renaper-dni.md)
-* [NamingSystem CUIL (paciente)](en/NamingSystem-sihce-cuil.md)
-* [NamingSystem CUIR (código único de receta)](en/NamingSystem-sihce-cuir.md)
-* [NamingSystem idPersonaGlobal SIHCE](en/NamingSystem-sihce-persona-global.md)
+* [SihceCuil](en/NamingSystem-sihce-cuil.md)
+* [SihceCuir](en/NamingSystem-sihce-cuir.md)
+* [SihcePersonaGlobal](en/NamingSystem-sihce-persona-global.md)
 
 ### Examples
 

@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Informe laboratorio nivel 1 — DiagnosticReport con PDF - JSON Representation - Guía de Implementación SIHCE - FHIR R5 v1.6.0</title>
+    <title>Informe laboratorio nivel 1 — DiagnosticReport con PDF - JSON Representation - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -57,9 +57,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">1.6.0 - 
+            <span style="display:inline-block;">2.0.0 - 
 
 
             </span>
@@ -98,7 +98,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R5/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
 
@@ -159,7 +159,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -218,59 +218,59 @@
 
 
   <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
-  "<a href="https://hl7.org/fhir/R5/diagnosticreport.html#XDiagnosticReport">resourceType</a>" : "DiagnosticReport",
-  "<a href="https://hl7.org/fhir/R5/resource.html#XDiagnosticReport.id">id</a>" : "DiagnosticReportInformeLabNivel1",
-  "<a href="https://hl7.org/fhir/R5/resource.html#XDiagnosticReport.meta">meta</a>" : {
-    "<a href="https://hl7.org/fhir/R5/resource.html#Meta#XMeta.profile">profile</a>" : [
+  "<a href="https://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport">resourceType</a>" : "DiagnosticReport",
+  "<a href="https://hl7.org/fhir/R4/resource.html#DiagnosticReport.id">id</a>" : "DiagnosticReportInformeLabNivel1",
+  "<a href="https://hl7.org/fhir/R4/resource.html#DiagnosticReport.meta">meta</a>" : {
+    "<a href="https://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
       <a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" style="color: Maroon">&#x1F517;</a> "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"
     ]
   },
-  "<a href="https://hl7.org/fhir/R5/resource.html#XDiagnosticReport.language">language</a>" : "en",
-  "<a href="https://hl7.org/fhir/R5/domainresource.html#XDiagnosticReport.text">text</a>" : {
-    "<a href="https://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">status</a>" : "generated",
-    "<a href="https://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DiagnosticReportInformeLabNivel1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDiagnosticReportInformeLabNivel1\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DiagnosticReportLaboratorioSIHCE.html\&quot;&gt;Informe de laboratorio SIHCE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;span title=\&quot;Codes:{http://loinc.org 11502-2}\&quot;&gt;Laboratory report&lt;/span&gt; (&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\&quot;&gt;Laboratory&lt;/span&gt;) &lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Subject&lt;/td&gt;&lt;td&gt;Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier\u00a0(use:\u00a0official,\u00a0))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Reported&lt;/td&gt;&lt;td&gt;2026-06-19 15:55:00-0300&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Performer&lt;/td&gt;&lt;td&gt; &lt;a href=\&quot;Organization-lab-central-ejemplo.html\&quot;&gt;Organization Laboratorio Central Ejemplo&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Identifier&lt;/td&gt;&lt;td&gt; &lt;code&gt;http://laboratorio.ejemplo.gob.ar/informe&lt;/code&gt;/LAB-2026-0042&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Report Details&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"
+  "<a href="https://hl7.org/fhir/R4/resource.html#DiagnosticReport.language">language</a>" : "en",
+  "<a href="https://hl7.org/fhir/R4/domainresource.html#DiagnosticReport.text">text</a>" : {
+    "<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: DiagnosticReport DiagnosticReportInformeLabNivel1&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;DiagnosticReportInformeLabNivel1\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcDiagnosticReportInformeLabNivel1\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DiagnosticReportLaboratorioSIHCE.html\&quot;&gt;Informe de laboratorio SIHCE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;&lt;span title=\&quot;Codes:{http://loinc.org 11502-2}\&quot;&gt;Laboratory report&lt;/span&gt; (&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}\&quot;&gt;Laboratory&lt;/span&gt;) &lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;Subject&lt;/td&gt;&lt;td&gt;Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier\u00a0(use:\u00a0official,\u00a0))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Reported&lt;/td&gt;&lt;td&gt;2026-06-19 15:55:00-0300&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Performer&lt;/td&gt;&lt;td&gt; &lt;a href=\&quot;Organization-lab-central-ejemplo.html\&quot;&gt;Organization Laboratorio Central Ejemplo&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Identifier&lt;/td&gt;&lt;td&gt; &lt;code&gt;http://laboratorio.ejemplo.gob.ar/informe&lt;/code&gt;/LAB-2026-0042&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Report Details&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"
   },
-  "<a href="https://hl7.org/fhir/R5/diagnosticreport.html#XDiagnosticReport.identifier">identifier</a>" : [
+  "<a href="https://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.identifier">identifier</a>" : [
     {
-      "<a href="https://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.system">system</a>" : "http://laboratorio.ejemplo.gob.ar/informe",
-      "<a href="https://hl7.org/fhir/R5/datatypes.html#Identifier#XIdentifier.value">value</a>" : "LAB-2026-0042"
+      "<a href="https://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://laboratorio.ejemplo.gob.ar/informe",
+      "<a href="https://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "LAB-2026-0042"
     }
   ],
-  "<a href="https://hl7.org/fhir/R5/diagnosticreport.html#XDiagnosticReport.status">status</a>" : "final",
-  "<a href="https://hl7.org/fhir/R5/diagnosticreport.html#XDiagnosticReport.category">category</a>" : [
+  "<a href="https://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.status">status</a>" : "final",
+  "<a href="https://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.category">category</a>" : [
     {
-      "<a href="https://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+      "<a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
         {
-          "<a href="https://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0074",
-          "<a href="https://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "LAB",
-          "<a href="https://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Laboratory"
+          "<a href="https://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "<a href="https://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LAB",
+          "<a href="https://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Laboratory"
         }
       ]
     }
   ],
-  "<a href="https://hl7.org/fhir/R5/diagnosticreport.html#XDiagnosticReport.code">code</a>" : {
-    "<a href="https://hl7.org/fhir/R5/datatypes.html#CodeableConcept#XCodeableConcept.coding">coding</a>" : [
+  "<a href="https://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.code">code</a>" : {
+    "<a href="https://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
       {
-        "<a href="https://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.system">system</a>" : "http://loinc.org",
-        "<a href="https://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.code">code</a>" : "11502-2",
-        "<a href="https://hl7.org/fhir/R5/datatypes.html#Coding#XCoding.display">display</a>" : "Laboratory report"
+        "<a href="https://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+        "<a href="https://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "11502-2",
+        "<a href="https://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Laboratory report"
       }
     ]
   },
-  "<a href="https://hl7.org/fhir/R5/diagnosticreport.html#XDiagnosticReport.subject">subject</a>" : {
-    <a href="Patient-PersonaSIHCEMin.html" style="color: Maroon">&#x1F517;</a> "<a href="https://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a>" : "Patient/PersonaSIHCEMin"
+  "<a href="https://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.subject">subject</a>" : {
+    <a href="Patient-PersonaSIHCEMin.html" style="color: Maroon">&#x1F517;</a> "<a href="https://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/PersonaSIHCEMin"
   },
-  "<a href="https://hl7.org/fhir/R5/diagnosticreport.html#XDiagnosticReport.issued">issued</a>" : "2026-06-19T15:55:00-03:00",
-  "<a href="https://hl7.org/fhir/R5/diagnosticreport.html#XDiagnosticReport.performer">performer</a>" : [
+  "<a href="https://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.issued">issued</a>" : "2026-06-19T15:55:00-03:00",
+  "<a href="https://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.performer">performer</a>" : [
     {
-      <a href="Organization-lab-central-ejemplo.html" style="color: Maroon">&#x1F517;</a> "<a href="https://hl7.org/fhir/R5/references.html#Reference#XReference.reference">reference</a>" : "Organization/lab-central-ejemplo"
+      <a href="Organization-lab-central-ejemplo.html" style="color: Maroon">&#x1F517;</a> "<a href="https://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/lab-central-ejemplo"
     }
   ],
-  "<a href="https://hl7.org/fhir/R5/diagnosticreport.html#XDiagnosticReport.presentedForm">presentedForm</a>" : [
+  "<a href="https://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport.presentedForm">presentedForm</a>" : [
     {
-      "<a href="https://hl7.org/fhir/R5/datatypes.html#Attachment#XAttachment.contentType">contentType</a>" : "application/pdf",
-      "<a href="https://hl7.org/fhir/R5/datatypes.html#Attachment#XAttachment.url">url</a>" : "https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf",
-      "<a href="https://hl7.org/fhir/R5/datatypes.html#Attachment#XAttachment.title">title</a>" : "Informe LAB-2026-0042"
+      "<a href="https://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a>" : "application/pdf",
+      "<a href="https://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">url</a>" : "https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf",
+      "<a href="https://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.title">title</a>" : "Informe LAB-2026-0042"
     }
   ]
 }</code></pre>
@@ -302,8 +302,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Wed, Sep 16, 2026 14:49-0300">2026-09-16</span>
+          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Sep 17, 2026 09:51-0300">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

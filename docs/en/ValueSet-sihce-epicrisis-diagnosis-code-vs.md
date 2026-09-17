@@ -1,4 +1,4 @@
-# Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code | *Version*:1.6.0 |
-| Draft as of 2026-09-16 | *Computable Name*:SIHCEEpicrisisDiagnosisCodeVS |
+| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code | *Version*:2.0.0 |
+| Draft as of 2026-09-17 | *Computable Name*:SIHCEEpicrisisDiagnosisCodeVS |
 
  
 Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación. 
@@ -39,12 +39,12 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "sihce-epicrisis-diagnosis-code-vs",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "SIHCEEpicrisisDiagnosisCodeVS",
   "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-16T14:49:36-03:00",
+  "date" : "2026-09-17T09:51:31-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

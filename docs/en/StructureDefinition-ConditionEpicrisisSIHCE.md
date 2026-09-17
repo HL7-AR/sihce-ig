@@ -1,4 +1,4 @@
-# Condición clínica epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Condición clínica epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE | *Version*:2.0.0 |
 | Draft as of 2026-06-09 | *Computable Name*:ConditionEpicrisisSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-ConditionEpicrisi
   "resourceType" : "StructureDefinition",
   "id" : "ConditionEpicrisisSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "ConditionEpicrisisSIHCE",
   "title" : "Condición clínica epicrisis SIHCE",
   "status" : "draft",
@@ -51,11 +51,11 @@ Other representations of profile: [CSV](../StructureDefinition-ConditionEpicrisi
     }]
   }],
   "description" : "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
   },
   {
     "identity" : "sct-concept",
@@ -65,12 +65,17 @@ Other representations of profile: [CSV](../StructureDefinition-ConditionEpicrisi
   {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 V2 Mapping"
+    "name" : "HL7 v2 Mapping"
   },
   {
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
   },
   {
     "identity" : "sct-attr",
@@ -90,6 +95,7 @@ Other representations of profile: [CSV](../StructureDefinition-ConditionEpicrisi
     {
       "id" : "Condition.clinicalStatus",
       "path" : "Condition.clinicalStatus",
+      "min" : 1,
       "mustSupport" : true
     },
     {

@@ -1,4 +1,4 @@
-# MedicationRequest receta SIGEHOS - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# MedicationRequest receta SIGEHOS - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,18 +8,13 @@
 
 Profile: [Receta MedicationRequest SIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.md)
 
-**identifier**: [NamingSystem CUIR (código único de receta)](NamingSystem-sihce-cuir.md)/CUIR-2026-000123
+**identifier**: [SihceCuir](NamingSystem-sihce-cuir.md)/CUIR-2026-000123
 
 **status**: Active
 
 **intent**: Order
 
-### Medications
-
-| | |
-| :--- | :--- |
-| - | **Concept** |
-| * | Amoxicilina 500 mg cápsulas |
+**medication**: Amoxicilina 500 mg cápsulas
 
 **subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))](Patient-PersonaSIHCEMin.md)
 
@@ -51,15 +46,13 @@ Profile: [Receta MedicationRequest SIHCE](StructureDefinition-MedicationRequestR
   }],
   "status" : "active",
   "intent" : "order",
-  "medication" : {
-    "concept" : {
-      "coding" : [{
-        "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "code" : "197361",
-        "display" : "Amoxicillin 500 MG Oral Capsule"
-      }],
-      "text" : "Amoxicilina 500 mg cápsulas"
-    }
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "197361",
+      "display" : "Amoxicillin 500 MG Oral Capsule"
+    }],
+    "text" : "Amoxicilina 500 mg cápsulas"
   },
   "subject" : {
     "reference" : "Patient/PersonaSIHCEMin"

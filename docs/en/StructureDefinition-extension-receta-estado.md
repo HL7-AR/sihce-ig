@@ -1,4 +1,4 @@
-# Estado de receta en índice SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Estado de receta en índice SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/extension-receta-estado | *Version*:1.6.0 |
-| Draft as of 2026-09-16 | *Computable Name*:ExtensionRecetaEstado |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/extension-receta-estado | *Version*:2.0.0 |
+| Draft as of 2026-09-17 | *Computable Name*:ExtensionRecetaEstado |
 
 Estado vigente/dispensada/anulada del índice de receta (anti-quema).
 
@@ -40,16 +40,12 @@ Other representations of profile: [CSV](../StructureDefinition-extension-receta-
 {
   "resourceType" : "StructureDefinition",
   "id" : "extension-receta-estado",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
-    "valueCode" : "can-bind"
-  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/extension-receta-estado",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "ExtensionRecetaEstado",
   "title" : "Estado de receta en índice SIHCE",
   "status" : "draft",
-  "date" : "2026-09-16T14:49:36-03:00",
+  "date" : "2026-09-17T09:51:31-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -59,7 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-extension-receta-
     }]
   }],
   "description" : "Estado vigente/dispensada/anulada del índice de receta (anti-quema).",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

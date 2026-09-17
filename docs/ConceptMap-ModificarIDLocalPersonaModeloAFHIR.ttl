@@ -17,7 +17,7 @@
      fhir:v "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR>
   ] ; # 
-  fhir:version [ fhir:v "1.6.0"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "ModificarIDLocalPersonaModeloAFHIR"] ; # 
   fhir:title [ fhir:v "ModificarIDLocalPersona: modelo lógico a FHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
@@ -46,68 +46,68 @@
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.tipoDocumento" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.documentoIdentificatorio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.sexo" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.gender" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.primerNombre" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.segundoNombre" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.primerApellido" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.segundoApellido" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosPersona.fechaNacimiento" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.birthDate" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosModificacion.idDominio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
          fhir:comment [ fhir:v "URI del dominio en slice idDominio." ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosModificacion.idLocalPersonaActual" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosModificacion.idLocalPersonaNuevo" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] )
   ] [
@@ -123,7 +123,7 @@
        fhir:code [ fhir:v "ModificarIDLocalPersona.datosRespuesta.mensaje" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "OperationOutcome.issue" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] )
   ] ) . # 

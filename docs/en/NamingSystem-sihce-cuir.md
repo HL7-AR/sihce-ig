@@ -1,4 +1,4 @@
-# NamingSystem CUIR (código único de receta) - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# NamingSystem CUIR (código único de receta) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/NamingSystem/sihce-cuir | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/NamingSystem/sihce-cuir | *Version*:2.0.0 |
 | Active as of 2026-09-15 | *Computable Name*:SihceCuir |
 
  
@@ -22,10 +22,15 @@ Código Único de Identificación de Receta (CUIR). Se usa como DocumentReferenc
 {
   "resourceType" : "NamingSystem",
   "id" : "sihce-cuir",
-  "url" : "http://sihce.gob.ar/NamingSystem/sihce-cuir",
-  "version" : "1.6.0",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "http://sihce.gob.ar/NamingSystem/sihce-cuir"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "2.0.0"
+  }],
   "name" : "SihceCuir",
-  "title" : "NamingSystem CUIR (código único de receta)",
   "status" : "active",
   "kind" : "identifier",
   "date" : "2026-09-15",

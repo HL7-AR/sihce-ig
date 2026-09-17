@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.6.0</title>
+    <title>Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,9 +54,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">1.6.0 - 
+            <span style="display:inline-block;">2.0.0 - 
 
 
             </span>
@@ -95,7 +95,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R5/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
 
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Operaciones</h2>
   
 
@@ -228,7 +228,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><th>Operación</th><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>Búsqueda de paciente por identificador y género</td><td>GET</td><td><code>/Patient?identifier={system|value}&amp;gender={code}</code></td><td>Consulta pacientes por identificador y género (criterios estándar FHIR R5).</td></tr>
+    <tr><td>Búsqueda de paciente por identificador y género</td><td>GET</td><td><code>/Patient?identifier={system|value}&amp;gender={code}</code></td><td>Consulta pacientes por identificador y género (criterios estándar FHIR R4).</td></tr>
     <tr><td>Alta/Federación de paciente</td><td>POST</td><td><code>/Patient</code></td><td>Envía un recurso <code>Patient</code> conforme al perfil <a href="StructureDefinition-PatientXBA.html">PatientXBA</a>.</td></tr>
     <tr><td>Actualización de identificador local</td><td>POST</td><td><code>/Patient/$patch-identifier</code></td><td>Actualiza el identificador local usando <code>Parameters</code>.</td></tr>
     <tr><td>Actualización de SDM</td><td>POST</td><td><code>/Patient/$update-sdm</code></td><td>Actualiza datos mínimos del paciente mediante operación FHIR personalizada.</td></tr>
@@ -240,7 +240,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td>Obtención de detalle de receta</td><td>GET</td><td><code>/Proxy/MedicationRequest/{id}</code></td><td>Broker/proxy hacia el repositorio de origen (o lectura local si repositorio delegado).</td></tr>
     <tr><td>Notificación de dispensa</td><td>POST</td><td><code>/MedicationDispense</code></td><td>Evento de dispensa (<a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>); actualiza índice a dispensada.</td></tr>
     <tr><td>Registro de consentimiento</td><td>POST</td><td><code>/Consent</code></td><td>Registra preferencias de privacidad del paciente (<a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>).</td></tr>
-    <tr><td>Consulta de consentimiento</td><td>GET</td><td><code>/Consent?subject.identifier={system|value}&amp;status=active</code></td><td>Consulta el consentimiento vigente del paciente.</td></tr>
+    <tr><td>Consulta de consentimiento</td><td>GET</td><td><code>/Consent?patient.identifier={system|value}&amp;status=active</code></td><td>Consulta el consentimiento vigente del paciente.</td></tr>
     <tr><td>Actualización de consentimiento</td><td>PUT</td><td><code>/Consent/{id}</code></td><td>Nueva versión (opt-out, ampliación por hospital o nivel).</td></tr>
   </tbody>
 </table>
@@ -248,7 +248,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><a id="op-busqueda"></a></p>
 <h3 id="búsqueda-por-identificador-y-género">Búsqueda por identificador y género</h3>
 
-<p>Interacción estándar de búsqueda FHIR R5 sobre el recurso <code class="language-plaintext highlighter-rouge">Patient</code> (<a href="https://hl7.org/fhir/R5/patient.html#search">search</a>).</p>
+<p>Interacción estándar de búsqueda FHIR R4 sobre el recurso <code class="language-plaintext highlighter-rouge">Patient</code> (<a href="https://hl7.org/fhir/R4/patient.html#search">search</a>).</p>
 
 <h4 id="parámetros-de-búsqueda">Parámetros de búsqueda</h4>
 
@@ -271,7 +271,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><code class="language-plaintext highlighter-rouge">gender</code></td>
       <td>Requerido</td>
-      <td>token (código de <a href="https://hl7.org/fhir/R5/codesystem-administrative-gender.html">AdministrativeGender</a>)</td>
+      <td>token (código de <a href="https://hl7.org/fhir/R4/codesystem-administrative-gender.html">AdministrativeGender</a>)</td>
       <td>Género administrativo del paciente (<code class="language-plaintext highlighter-rouge">male</code>, <code class="language-plaintext highlighter-rouge">female</code>, <code class="language-plaintext highlighter-rouge">other</code>, <code class="language-plaintext highlighter-rouge">unknown</code>).</td>
     </tr>
   </tbody>
@@ -286,7 +286,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="respuesta-esperada">Respuesta esperada</h4>
 
-<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="https://hl7.org/fhir/R5/bundle.html">Bundle</a> de tipo <code class="language-plaintext highlighter-rouge">searchset</code> que contiene cero o más recursos <code class="language-plaintext highlighter-rouge">Patient</code> coincidentes.</p>
+<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> de tipo <code class="language-plaintext highlighter-rouge">searchset</code> que contiene cero o más recursos <code class="language-plaintext highlighter-rouge">Patient</code> coincidentes.</p>
 
 <p><a id="op-alta-federacion"></a></p>
 <h3 id="altafederación-de-paciente">Alta/Federación de paciente</h3>
@@ -750,7 +750,7 @@ Content-Type: application/fhir+json
 <p><a id="op-documento-consulta"></a></p>
 <h3 id="consulta-de-documentos-clínicos-iti-67">Consulta de documentos clínicos (ITI-67)</h3>
 
-<p>Búsqueda FHIR R5 sobre <code class="language-plaintext highlighter-rouge">DocumentReference</code> (<a href="https://hl7.org/fhir/R5/documentreference.html#search">search</a>). Corresponde a <strong>ITI-67</strong> (query de metadatos documentales en el índice central). El índice lo responde la capacidad de <strong>registro documental</strong> de SIHCE. La solicitud viaja por el <strong>Canal X-BA</strong>.</p>
+<p>Búsqueda FHIR R4 sobre <code class="language-plaintext highlighter-rouge">DocumentReference</code> (<a href="https://hl7.org/fhir/R4/documentreference.html#search">search</a>). Corresponde a <strong>ITI-67</strong> (query de metadatos documentales en el índice central). El índice lo responde la capacidad de <strong>registro documental</strong> de SIHCE. La solicitud viaja por el <strong>Canal X-BA</strong>.</p>
 
 <p><strong>Prerrequisito:</strong> SIHCE Core evalúa el consentimiento del paciente en el <strong>Motor Central de Consentimientos (MCC)</strong> — recurso <a href="StructureDefinition-ConsentSIHCE.html"><code class="language-plaintext highlighter-rouge">Consent</code></a> persistido en SIHCE. Sin consentimiento activo (ALLOW) → <strong>403 Forbidden</strong>. Ver <a href="#op-consentimiento">Registro de consentimiento</a>.</p>
 
@@ -818,7 +818,7 @@ Accept: application/fhir+json
 
 <h4 id="respuesta-esperada-1">Respuesta esperada</h4>
 
-<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="https://hl7.org/fhir/R5/bundle.html">Bundle</a> tipo <code class="language-plaintext highlighter-rouge">searchset</code>. Cada <code class="language-plaintext highlighter-rouge">DocumentReference</code> incluye <code class="language-plaintext highlighter-rouge">content.attachment.url</code> con la <strong>URL del Proxy Central</strong> (no la URL del hospital custodio). SIHCE filtra entradas según el nivel de privacidad otorgado al hospital (<code class="language-plaintext highlighter-rouge">normal</code> / <code class="language-plaintext highlighter-rouge">confidential</code>).</p>
+<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> tipo <code class="language-plaintext highlighter-rouge">searchset</code>. Cada <code class="language-plaintext highlighter-rouge">DocumentReference</code> incluye <code class="language-plaintext highlighter-rouge">content.attachment.url</code> con la <strong>URL del Proxy Central</strong> (no la URL del hospital custodio). SIHCE filtra entradas según el nivel de privacidad otorgado al hospital (<code class="language-plaintext highlighter-rouge">normal</code> / <code class="language-plaintext highlighter-rouge">confidential</code>).</p>
 
 <p>Fragmento de ejemplo:</p>
 
@@ -1075,17 +1075,17 @@ Content-Type: application/fhir+json
   <tbody>
     <tr>
       <td>1</td>
-      <td>Opt-in / opt-out <strong>general</strong> (<code class="language-plaintext highlighter-rouge">decision</code> = <code class="language-plaintext highlighter-rouge">permit</code> | <code class="language-plaintext highlighter-rouge">deny</code>)</td>
+      <td>Opt-in / opt-out <strong>general</strong> (<code class="language-plaintext highlighter-rouge">provision.type</code> = <code class="language-plaintext highlighter-rouge">permit</code> | <code class="language-plaintext highlighter-rouge">deny</code>)</td>
       <td>MVP</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>Opt-in por <strong>hospital</strong> (<code class="language-plaintext highlighter-rouge">provision</code> + <code class="language-plaintext highlighter-rouge">actor</code> Organization)</td>
+      <td>Opt-in por <strong>hospital</strong> (<code class="language-plaintext highlighter-rouge">provision.provision</code> + <code class="language-plaintext highlighter-rouge">actor</code> Organization, con <code class="language-plaintext highlighter-rouge">actor.role</code>)</td>
       <td>Incremento</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>Hospital + <strong>nivel de privacidad</strong> (<code class="language-plaintext highlighter-rouge">provision.securityLabel</code>: <code class="language-plaintext highlighter-rouge">normal</code> | <code class="language-plaintext highlighter-rouge">confidential</code>, <strong>obligatorio y explícito</strong>)</td>
+      <td>Hospital + <strong>nivel de privacidad</strong> (<code class="language-plaintext highlighter-rouge">provision.provision.securityLabel</code>: <code class="language-plaintext highlighter-rouge">normal</code> | <code class="language-plaintext highlighter-rouge">confidential</code>, <strong>obligatorio y explícito</strong>)</td>
       <td>Completo</td>
     </tr>
   </tbody>
@@ -1094,10 +1094,11 @@ Content-Type: application/fhir+json
 <p><strong>Reglas:</strong></p>
 
 <ul>
-  <li>Opt-out general (<code class="language-plaintext highlighter-rouge">decision</code> = <code class="language-plaintext highlighter-rouge">deny</code>) <strong>anula</strong> autorizaciones previas.</li>
+  <li>Opt-out general (<code class="language-plaintext highlighter-rouge">provision.type</code> = <code class="language-plaintext highlighter-rouge">deny</code>) <strong>anula</strong> autorizaciones previas.</li>
   <li>Un opt-in posterior <strong>solo habilita</strong> lo declarado en la nueva versión.</li>
   <li>Vigencia hasta <strong>revocación</strong>; cada PUT/POST crea <strong>versión</strong> (<code class="language-plaintext highlighter-rouge">meta.versionId</code>).</li>
   <li>Hospital = <code class="language-plaintext highlighter-rouge">Organization</code> <strong>dentro</strong> del dominio: <code class="language-plaintext highlighter-rouge">identifier.system</code> = <code class="language-plaintext highlighter-rouge">{uri-dominio}/Organization</code>, <code class="language-plaintext highlighter-rouge">identifier.value</code> = id local. Ver <a href="NamingSystem-NamingSystemOrganizationHospitalMsgc.html">NamingSystem Organization hospital MSGC (ejemplo)</a>.</li>
+  <li>R4 exige <code class="language-plaintext highlighter-rouge">scope</code> = <code class="language-plaintext highlighter-rouge">patient-privacy</code> y <code class="language-plaintext highlighter-rouge">actor.role</code> (p. ej. <code class="language-plaintext highlighter-rouge">IRCP</code>) en autorizaciones por hospital.</li>
 </ul>
 
 <h4 id="niveles-de-privacidad-etapa-3">Niveles de privacidad (etapa 3)</h4>
@@ -1133,10 +1134,11 @@ Content-Type: application/fhir+json
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Consent"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"</span><span class="p">]</span><span class="w"> </span><span class="p">},</span><span class="w">
   </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"scope"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/consentscope"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient-privacy"</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">},</span><span class="w">
   </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/consent-category"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"healthcare"</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">}],</span><span class="w">
-  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w"> </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-08-26"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"decision"</span><span class="p">:</span><span class="w"> </span><span class="s2">"permit"</span><span class="w">
+  </span><span class="nl">"patient"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w"> </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"dateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-08-26"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"provision"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"permit"</span><span class="w"> </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
@@ -1150,7 +1152,7 @@ Content-Type: application/fhir+json
 
 <h4 id="consulta-get-consent">Consulta (<code class="language-plaintext highlighter-rouge">GET /Consent</code>)</h4>
 
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Consent?subject.identifier=http://sihce.gob.ar/persona|987654321&amp;status=active
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Consent?patient.identifier=http://sihce.gob.ar/persona|987654321&amp;status=active
 </span></code></pre></div></div>
 
 <p>Historial: <code class="language-plaintext highlighter-rouge">GET /Consent/{id}/_history</code>.</p>
@@ -1193,8 +1195,8 @@ Content-Type: application/fhir+json
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Wed, Sep 16, 2026 14:49-0300">2026-09-16</span>
+          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Sep 17, 2026 09:51-0300">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

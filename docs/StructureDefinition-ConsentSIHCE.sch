@@ -12,10 +12,9 @@
   <sch:pattern>
     <sch:title>f:Consent</sch:title>
     <sch:rule context="f:Consent">
-      <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
-      <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
-      <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
-      <sch:assert test="count(f:decision) &gt;= 1">decision: minimum cardinality of 'decision' is 1</sch:assert>
+      <sch:assert test="count(f:patient) &gt;= 1">patient: minimum cardinality of 'patient' is 1</sch:assert>
+      <sch:assert test="count(f:dateTime) &gt;= 1">dateTime: minimum cardinality of 'dateTime' is 1</sch:assert>
+      <sch:assert test="count(f:provision) &gt;= 1">provision: minimum cardinality of 'provision' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -41,8 +40,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Consent/f:subject</sch:title>
-    <sch:rule context="f:Consent/f:subject">
+    <sch:title>f:Consent/f:patient</sch:title>
+    <sch:rule context="f:Consent/f:patient">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
       <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
@@ -52,14 +51,34 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Consent/f:provision/f:actor</sch:title>
-    <sch:rule context="f:Consent/f:provision/f:actor">
-      <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
+    <sch:title>f:Consent/f:provision</sch:title>
+    <sch:rule context="f:Consent/f:provision">
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Consent/f:provision/f:actor/f:reference</sch:title>
-    <sch:rule context="f:Consent/f:provision/f:actor/f:reference">
+    <sch:title>f:Consent/f:provision/f:provision</sch:title>
+    <sch:rule context="f:Consent/f:provision/f:provision">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
+      <sch:assert test="count(f:actor) &gt;= 1">actor: minimum cardinality of 'actor' is 1</sch:assert>
+      <sch:assert test="count(f:dataPeriod) &lt;= 1">dataPeriod: maximum cardinality of 'dataPeriod' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Consent/f:provision/f:provision/f:actor</sch:title>
+    <sch:rule context="f:Consent/f:provision/f:provision/f:actor">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:role) &gt;= 1">role: minimum cardinality of 'role' is 1</sch:assert>
+      <sch:assert test="count(f:role) &lt;= 1">role: maximum cardinality of 'role' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Consent/f:provision/f:provision/f:actor/f:reference</sch:title>
+    <sch:rule context="f:Consent/f:provision/f:provision/f:actor/f:reference">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
@@ -70,8 +89,8 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Consent/f:provision/f:actor/f:reference/f:identifier</sch:title>
-    <sch:rule context="f:Consent/f:provision/f:actor/f:reference/f:identifier">
+    <sch:title>f:Consent/f:provision/f:provision/f:actor/f:reference/f:identifier</sch:title>
+    <sch:rule context="f:Consent/f:provision/f:provision/f:actor/f:reference/f:identifier">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
@@ -81,6 +100,16 @@
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
       <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
       <sch:assert test="count(f:assigner) &lt;= 1">assigner: maximum cardinality of 'assigner' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Consent/f:provision/f:provision/f:data</sch:title>
+    <sch:rule context="f:Consent/f:provision/f:provision/f:data">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:meaning) &gt;= 1">meaning: minimum cardinality of 'meaning' is 1</sch:assert>
+      <sch:assert test="count(f:meaning) &lt;= 1">meaning: maximum cardinality of 'meaning' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

@@ -14,31 +14,31 @@ Usage: #definition
 * group[0].target = $SihceFhirCoreElementPaths
 * group[0].element[0].code = #"DocumentoClinico.datosDocumento.idDocumentoDominio"
 * group[0].element[0].target[0].code = #"DocumentReference.identifier"
-* group[0].element[0].target[0].relationship = #equivalent
+* group[0].element[0].target[0].equivalence = #equivalent
 * group[0].element[1].code = #"DocumentoClinico.datosDocumento.uriSistemaId"
 * group[0].element[1].target[0].code = #"DocumentReference.identifier"
-* group[0].element[1].target[0].relationship = #equivalent
+* group[0].element[1].target[0].equivalence = #equivalent
 * group[0].element[2].code = #"DocumentoClinico.datosDocumento.tipoDocumento"
 * group[0].element[2].target[0].code = #"DocumentReference.type"
-* group[0].element[2].target[0].relationship = #equivalent
+* group[0].element[2].target[0].equivalence = #equivalent
 * group[0].element[3].code = #"DocumentoClinico.datosDocumento.fecha"
 * group[0].element[3].target[0].code = #"DocumentReference.date"
-* group[0].element[3].target[0].relationship = #equivalent
+* group[0].element[3].target[0].equivalence = #equivalent
 * group[0].element[4].code = #"DocumentoClinico.datosDocumento.urlContenido"
 * group[0].element[4].target[0].code = #"DocumentReference.content"
-* group[0].element[4].target[0].relationship = #equivalent
+* group[0].element[4].target[0].equivalence = #equivalent
 * group[0].element[5].code = #"DocumentoClinico.datosDocumento.tipoContenido"
 * group[0].element[5].target[0].code = #"DocumentReference.content"
-* group[0].element[5].target[0].relationship = #equivalent
+* group[0].element[5].target[0].equivalence = #equivalent
 * group[0].element[6].code = #"DocumentoClinico.datosDocumento.idPersonaGlobal"
 * group[0].element[6].target[0].code = #"DocumentReference.subject"
-* group[0].element[6].target[0].relationship = #equivalent
+* group[0].element[6].target[0].equivalence = #equivalent
 * group[0].element[7].code = #"DocumentoClinico.datosDominio.idDominio"
 * group[0].element[7].target[0].code = #"DocumentReference.custodian"
-* group[0].element[7].target[0].relationship = #equivalent
+* group[0].element[7].target[0].equivalence = #equivalent
 * group[0].element[8].code = #"DocumentoClinico.datosDominio.nombreCustodio"
 * group[0].element[8].target[0].code = #"DocumentReference.custodian"
-* group[0].element[8].target[0].relationship = #equivalent
+* group[0].element[8].target[0].equivalence = #equivalent
 
 Instance: EpicrisisModeloAFHIR
 InstanceOf: ConceptMap
@@ -56,10 +56,10 @@ Usage: #definition
 * group[0].target = $SihceFhirCoreElementPaths
 * group[0].element[0].code = #"Epicrisis.seccion.codigoLoinc"
 * group[0].element[0].target[0].code = #"Composition.section"
-* group[0].element[0].target[0].relationship = #equivalent
+* group[0].element[0].target[0].equivalence = #equivalent
 * group[0].element[1].code = #"Epicrisis.seccion.texto"
 * group[0].element[1].target[0].code = #"Composition.section"
-* group[0].element[1].target[0].relationship = #equivalent
+* group[0].element[1].target[0].equivalence = #equivalent
 
 Instance: InformeLaboratorioModeloAFHIR
 InstanceOf: ConceptMap
@@ -77,20 +77,20 @@ Usage: #definition
 * group[0].target = $SihceFhirCoreElementPaths
 * group[0].element[0].code = #"DocumentoClinico.datosDocumento.tipoDocumento"
 * group[0].element[0].target[0].code = #"DocumentReference.type"
-* group[0].element[0].target[0].relationship = #equivalent
+* group[0].element[0].target[0].equivalence = #equivalent
 * group[0].element[1].code = #"DocumentoClinico.datosDocumento.idPersonaGlobal"
 * group[0].element[1].target[0].code = #"DocumentReference.subject"
-* group[0].element[1].target[0].relationship = #equivalent
+* group[0].element[1].target[0].equivalence = #equivalent
 * group[0].element[2].code = #"DocumentoClinico.datosDocumento.urlContenido"
 * group[0].element[2].target[0].code = #"DocumentReference.content"
-* group[0].element[2].target[0].relationship = #equivalent
+* group[0].element[2].target[0].equivalence = #equivalent
 * group[0].element[3].code = #"InformeLaboratorio.nivelMadurez"
 * group[0].element[3].target[0].code = #"DiagnosticReport.result"
-* group[0].element[3].target[0].relationship = #related-to
+* group[0].element[3].target[0].equivalence = #relatedto
 * group[0].element[3].target[0].comment = "Nivel 1: sin result; nivel 2: con Observation en result."
 * group[0].element[4].code = #"InformeLaboratorio.resultado.codigoAnalito"
 * group[0].element[4].target[0].code = #"Observation.code"
-* group[0].element[4].target[0].relationship = #equivalent
+* group[0].element[4].target[0].equivalence = #equivalent
 * group[0].element[5].code = #"InformeLaboratorio.resultado.valor"
 * group[0].element[5].target[0].code = #"Observation.value[x]"
-* group[0].element[5].target[0].relationship = #equivalent
+* group[0].element[5].target[0].equivalence = #equivalent

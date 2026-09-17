@@ -71,7 +71,8 @@ Description: "Contenido clínico de la receta en el repositorio de origen (SIGEH
 * status 1..1 MS
 * intent 1..1 MS
 * intent = #order
-* medication 1..1 MS
+* medication[x] only CodeableConcept
+* medicationCodeableConcept 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
 * authoredOn 1..1 MS
@@ -83,13 +84,14 @@ Parent: MedicationDispense
 Id: MedicationDispenseRecetaSIHCE
 Title: "Dispensa de receta SIHCE"
 Description: "Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen."
-* ^version = "1.6.0"
+* ^version = "2.0.0"
 * ^status = #draft
-* ^date = "2026-09-15T00:00:00-03:00"
+* ^date = "2026-09-17T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * status 1..1 MS
 * status = #completed
-* medication 1..1 MS
+* medication[x] only CodeableConcept
+* medicationCodeableConcept 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
 * authorizingPrescription 1..1 MS

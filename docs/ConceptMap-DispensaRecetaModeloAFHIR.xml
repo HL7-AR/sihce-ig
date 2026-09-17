@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap DispensaRecetaModeloAFHIR</b></p><a name="DispensaRecetaModeloAFHIR"> </a><a name="hcDispensaRecetaModeloAFHIR"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-sihce-logical-operation-element-paths.html">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href="CodeSystem-sihce-fhir-core-element-paths.html">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>DispensaReceta.cuir (DispensaReceta cuir)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationDispense.authorizingPrescription</td></tr><tr><td>DispensaReceta.cuilPaciente (DispensaReceta cuilPaciente)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationDispense.subject</td></tr><tr><td>DispensaReceta.fechaDispensa (DispensaReceta fechaDispensa)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationDispense.whenHandedOver</td></tr><tr><td>DispensaReceta.idFarmacia (DispensaReceta idFarmacia)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationDispense.performer</td></tr><tr><td>DispensaReceta.nombreFarmacia (DispensaReceta nombreFarmacia)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MedicationDispense.performer</td></tr></table></div>
   </text>
   <url value="http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR"/>
-  <version value="1.6.0"/>
+  <version value="2.0.0"/>
   <name value="DispensaRecetaModeloAFHIR"/>
   <title value="DispensaReceta: modelo lógico a FHIR"/>
   <status value="draft"/>
@@ -28,35 +28,35 @@
       <code value="DispensaReceta.cuir"/>
       <target>
         <code value="MedicationDispense.authorizingPrescription"/>
-        <relationship value="equivalent"/>
+        <equivalence value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="DispensaReceta.cuilPaciente"/>
       <target>
         <code value="MedicationDispense.subject"/>
-        <relationship value="equivalent"/>
+        <equivalence value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="DispensaReceta.fechaDispensa"/>
       <target>
         <code value="MedicationDispense.whenHandedOver"/>
-        <relationship value="equivalent"/>
+        <equivalence value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="DispensaReceta.idFarmacia"/>
       <target>
         <code value="MedicationDispense.performer"/>
-        <relationship value="equivalent"/>
+        <equivalence value="equivalent"/>
       </target>
     </element>
     <element>
       <code value="DispensaReceta.nombreFarmacia"/>
       <target>
         <code value="MedicationDispense.performer"/>
-        <relationship value="equivalent"/>
+        <equivalence value="equivalent"/>
       </target>
     </element>
   </group>

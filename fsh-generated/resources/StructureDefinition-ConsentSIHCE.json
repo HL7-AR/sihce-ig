@@ -2,13 +2,13 @@
   "resourceType": "StructureDefinition",
   "id": "ConsentSIHCE",
   "url": "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "name": "ConsentSIHCE",
   "title": "Consentimiento de paciente SIHCE",
   "status": "draft",
-  "date": "2026-08-26T00:00:00-03:00",
+  "date": "2026-09-17T00:00:00-03:00",
   "publisher": "SIHCE Development Team",
-  "description": "Preferencias de privacidad del paciente en la red SIHCE (FHIR R5). Etapa 1: decision permit/deny (opt-in/out general). Etapa 2: provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito).",
+  "description": "Preferencias de privacidad del paciente en la red SIHCE (FHIR R4). Etapa 1: provision.type permit/deny (opt-in/out general). Etapa 2: provision.provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito).",
   "jurisdiction": [
     {
       "coding": [
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "fhirVersion": "5.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Consent",
@@ -35,9 +35,21 @@
         "mustSupport": true
       },
       {
+        "id": "Consent.scope",
+        "path": "Consent.scope",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "patient-privacy",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
         "id": "Consent.category",
         "path": "Consent.category",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -62,86 +74,103 @@
         "mustSupport": true
       },
       {
-        "id": "Consent.subject",
-        "path": "Consent.subject",
+        "id": "Consent.patient",
+        "path": "Consent.patient",
         "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
-        "id": "Consent.subject.reference",
-        "path": "Consent.subject.reference",
+        "id": "Consent.patient.reference",
+        "path": "Consent.patient.reference",
         "short": "Patient/{idPersonaGlobal}",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Consent.date",
-        "path": "Consent.date",
+        "id": "Consent.dateTime",
+        "path": "Consent.dateTime",
         "short": "Fecha del registro o actualización del consentimiento",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Consent.decision",
-        "path": "Consent.decision",
-        "short": "permit = opt-in general; deny = opt-out (anula accesos previos)",
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Consent.provision",
         "path": "Consent.provision",
-        "mustSupport": true
-      },
-      {
-        "id": "Consent.provision.actor",
-        "path": "Consent.provision.actor",
-        "mustSupport": true
-      },
-      {
-        "id": "Consent.provision.actor.reference",
-        "path": "Consent.provision.actor.reference",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Consent.provision.actor.reference.type",
-        "path": "Consent.provision.actor.reference.type",
+        "id": "Consent.provision.type",
+        "path": "Consent.provision.type",
+        "short": "permit = opt-in general; deny = opt-out (anula accesos previos)",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision",
+        "path": "Consent.provision.provision",
+        "short": "Autorizaciones por hospital (etapas 2–3)",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision.actor",
+        "path": "Consent.provision.provision.actor",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision.actor.role",
+        "path": "Consent.provision.provision.actor.role",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "IRCP",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision.actor.reference",
+        "path": "Consent.provision.provision.actor.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.provision.actor.reference.type",
+        "path": "Consent.provision.provision.actor.reference.type",
         "min": 1,
         "patternUri": "Organization",
         "mustSupport": true
       },
       {
-        "id": "Consent.provision.actor.reference.identifier",
-        "path": "Consent.provision.actor.reference.identifier",
+        "id": "Consent.provision.provision.actor.reference.identifier",
+        "path": "Consent.provision.provision.actor.reference.identifier",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Consent.provision.actor.reference.identifier.system",
-        "path": "Consent.provision.actor.reference.identifier.system",
+        "id": "Consent.provision.provision.actor.reference.identifier.system",
+        "path": "Consent.provision.provision.actor.reference.identifier.system",
         "short": "URI del dominio + /Organization",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Consent.provision.actor.reference.identifier.value",
-        "path": "Consent.provision.actor.reference.identifier.value",
+        "id": "Consent.provision.provision.actor.reference.identifier.value",
+        "path": "Consent.provision.provision.actor.reference.identifier.value",
         "short": "Identificador local del hospital",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Consent.provision.securityLabel",
-        "path": "Consent.provision.securityLabel",
+        "id": "Consent.provision.provision.securityLabel",
+        "path": "Consent.provision.provision.securityLabel",
         "mustSupport": true,
         "binding": {
           "strength": "required",

@@ -1,4 +1,4 @@
-# Resource Guía de Implementación SIHCE - FHIR R5
+# Resource Guía de Implementación SIHCE - FHIR R4
 
 
 
@@ -10,11 +10,11 @@
   "id" : "SIHCE.fhir.core",
   "language" : "en",
   "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "GuiaDeImplementacionSIHCE",
-  "title" : "Guía de Implementación SIHCE - FHIR R5",
+  "title" : "Guía de Implementación SIHCE - FHIR R4",
   "status" : "draft",
-  "date" : "2026-09-16T14:49:36-03:00",
+  "date" : "2026-09-17T09:51:31-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -25,7 +25,7 @@
   }],
   "packageId" : "SIHCE.fhir.core",
   "license" : "CC0-1.0",
-  "fhirVersion" : ["5.0.0"],
+  "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7tx",
     "extension" : [{
@@ -33,7 +33,7 @@
       "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
-    "packageId" : "hl7.terminology.r5",
+    "packageId" : "hl7.terminology.r4",
     "version" : "7.3.0"
   },
   {
@@ -43,13 +43,585 @@
       "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
-    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.3.0"
   }],
   "definition" : {
     "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2026"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://sihce.gob.ar/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r5#1.1.2"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2026"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://sihce.gob.ar/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "resource" : [{
       "extension" : [{
@@ -61,7 +633,7 @@
       },
       "name" : "Analitos de laboratorio SIHCE (LOINC)",
       "description" : "Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -72,8 +644,8 @@
         "reference" : "ConceptMap/BuscarPersonaModeloAFHIR"
       },
       "name" : "BuscarPersona: modelo lógico a FHIR",
-      "description" : "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5).",
-      "isExample" : false
+      "description" : "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4).",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -85,7 +657,7 @@
       },
       "name" : "Composición epicrisis SIHCE",
       "description" : "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -97,7 +669,7 @@
       },
       "name" : "Condición clínica epicrisis SIHCE",
       "description" : "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -108,8 +680,8 @@
         "reference" : "StructureDefinition/ConsentSIHCE"
       },
       "name" : "Consentimiento de paciente SIHCE",
-      "description" : "Preferencias de privacidad del paciente en la red SIHCE (FHIR R5). Etapa 1: decision permit/deny (opt-in/out general). Etapa 2: provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito).",
-      "isExample" : false
+      "description" : "Preferencias de privacidad del paciente en la red SIHCE (FHIR R4). Etapa 1: provision.type permit/deny (opt-in/out general). Etapa 2: provision.provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito).",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -121,8 +693,7 @@
       },
       "name" : "Consentimiento hospital + nivel confidential (etapa 3)",
       "description" : "Hospital Central autorizado también para documentos confidential.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"
     },
     {
       "extension" : [{
@@ -134,8 +705,7 @@
       },
       "name" : "Consentimiento hospital + nivel normal (etapa 3)",
       "description" : "Hospital Central autorizado con nivel normal explícito.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"
     },
     {
       "extension" : [{
@@ -147,8 +717,7 @@
       },
       "name" : "Consentimiento opt-in general (etapa 1)",
       "description" : "Paciente autoriza participación general en la red SIHCE.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"
     },
     {
       "extension" : [{
@@ -160,8 +729,7 @@
       },
       "name" : "Consentimiento opt-in por hospital (etapa 2)",
       "description" : "Opt-in general con autorización explícita al Hospital Central (dominio MSGC).",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"
     },
     {
       "extension" : [{
@@ -173,8 +741,7 @@
       },
       "name" : "Consentimiento opt-out general",
       "description" : "Paciente revoca toda participación; anula autorizaciones previas.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"
     },
     {
       "extension" : [{
@@ -185,8 +752,8 @@
         "reference" : "ConceptMap/ConsentimientoModeloAFHIR"
       },
       "name" : "Consentimiento: modelo lógico a FHIR",
-      "description" : "Mapeo del registro de consentimiento del paciente a Consent SIHCE.",
-      "isExample" : false
+      "description" : "Mapeo del registro de consentimiento del paciente a Consent SIHCE (FHIR R4).",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -198,7 +765,7 @@
       },
       "name" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
       "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -210,7 +777,7 @@
       },
       "name" : "Dispensa de receta SIHCE",
       "description" : "Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -222,8 +789,7 @@
       },
       "name" : "Dispensa de receta — farmacia privada",
       "description" : "Evento de dispensa notificado a SIHCE (anti-quema).",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE"
     },
     {
       "extension" : [{
@@ -235,7 +801,7 @@
       },
       "name" : "DispensaReceta: modelo lógico a FHIR",
       "description" : "Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -247,7 +813,7 @@
       },
       "name" : "DocumentoClinico: modelo lógico a FHIR",
       "description" : "Mapeo del registro de documento clínico a DocumentReference SIHCE.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -259,8 +825,7 @@
       },
       "name" : "Ejemplo Parameters Patch Identifier",
       "description" : "Ejemplo de Parámetros para actualizar identificador local.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"
     },
     {
       "extension" : [{
@@ -272,8 +837,7 @@
       },
       "name" : "Ejemplo Parameters Update SDM",
       "description" : "Ejemplo de Parametros para actualizacion de SDM.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"
     },
     {
       "extension" : [{
@@ -285,8 +849,7 @@
       },
       "name" : "Epicrisis nivel 1 — PDF en dominio",
       "description" : "DocumentReference con enlace a PDF hospedado en el dominio emisor. Paciente: PersonaSIHCEMin.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"
     },
     {
       "extension" : [{
@@ -298,8 +861,7 @@
       },
       "name" : "Epicrisis nivel 2 — enlace a Composition",
       "description" : "DocumentReference con URL a Composition narrativa en el dominio.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"
     },
     {
       "extension" : [{
@@ -311,8 +873,7 @@
       },
       "name" : "Epicrisis nivel 2 — secciones narrativas",
       "description" : "Composition con las cinco secciones obligatorias en texto (nivel 2).",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"
     },
     {
       "extension" : [{
@@ -324,7 +885,7 @@
       },
       "name" : "Epicrisis: modelo lógico a FHIR",
       "description" : "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -336,7 +897,7 @@
       },
       "name" : "Estado de receta en índice SIHCE",
       "description" : "Estado vigente/dispensada/anulada del índice de receta (anti-quema).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -348,7 +909,7 @@
       },
       "name" : "Estado de receta en índice SIHCE",
       "description" : "Estados del índice de receta electrónica (mecanismo anti-quema).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -360,7 +921,7 @@
       },
       "name" : "Estados de receta SIHCE",
       "description" : "Estados admitidos en el índice de DocumentReferenceRecetaSIHCE.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -372,7 +933,7 @@
       },
       "name" : "FederarPersona: modelo lógico a FHIR",
       "description" : "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -384,7 +945,7 @@
       },
       "name" : "Informe de laboratorio SIHCE",
       "description" : "DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -396,8 +957,7 @@
       },
       "name" : "Informe laboratorio nivel 1 — DiagnosticReport con PDF",
       "description" : "Solo presentedForm (PDF); sin entradas en result (nivel 1).",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"
     },
     {
       "extension" : [{
@@ -409,8 +969,7 @@
       },
       "name" : "Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)",
       "description" : "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.html).",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"
     },
     {
       "extension" : [{
@@ -422,8 +981,7 @@
       },
       "name" : "Informe laboratorio nivel 2 — PDF + glucemia y urea",
       "description" : "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"
     },
     {
       "extension" : [{
@@ -435,8 +993,7 @@
       },
       "name" : "Informe laboratorio nivel 2 — PDF y observaciones",
       "description" : "Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"
     },
     {
       "extension" : [{
@@ -448,7 +1005,7 @@
       },
       "name" : "InformeLaboratorio: modelo lógico a FHIR",
       "description" : "Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -459,7 +1016,7 @@
         "reference" : "Organization/lab-central-ejemplo"
       },
       "name" : "Laboratorio Central Ejemplo",
-      "isExample" : true
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -471,7 +1028,7 @@
       },
       "name" : "Medicación al alta epicrisis SIHCE",
       "description" : "Medicamento declarado en la sección de medicamentos al alta (nivel 3).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -483,8 +1040,7 @@
       },
       "name" : "MedicationRequest receta SIGEHOS",
       "description" : "Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 / caso 3-1a).",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE"
     },
     {
       "extension" : [{
@@ -496,7 +1052,7 @@
       },
       "name" : "Modelo lógico BuscarPersona (FederadorBA)",
       "description" : "Solicitud de búsqueda de persona por datos mínimos y respuesta mínima.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -508,7 +1064,7 @@
       },
       "name" : "Modelo lógico Consentimiento (SIHCE)",
       "description" : "Registro de preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez: opt-in/out general, opt-in por hospital, hospital + nivel de privacidad.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -520,7 +1076,7 @@
       },
       "name" : "Modelo Lógico de Persona para SIHCE",
       "description" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -532,7 +1088,7 @@
       },
       "name" : "Modelo lógico DispensaReceta (SIHCE)",
       "description" : "Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -544,7 +1100,7 @@
       },
       "name" : "Modelo lógico DocumentoClinico (SIHCE)",
       "description" : "Registro e indexación de un documento clínico emitido por un dominio en SIHCE.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -556,7 +1112,7 @@
       },
       "name" : "Modelo lógico Epicrisis (SIHCE)",
       "description" : "Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -568,7 +1124,7 @@
       },
       "name" : "Modelo lógico FederarPersona (FederadorBA)",
       "description" : "Federación de una persona con identificador local y validación de datos.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -580,7 +1136,7 @@
       },
       "name" : "Modelo lógico Informe de Laboratorio (SIHCE)",
       "description" : "Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -592,7 +1148,7 @@
       },
       "name" : "Modelo lógico ModificarIDLocalPersona (FederadorBA)",
       "description" : "Modificación del identificador local de una persona federada.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -604,7 +1160,7 @@
       },
       "name" : "Modelo lógico ModificarSDMPersona (FederadorBA)",
       "description" : "Actualización del SDM de una persona federada; documento inmutable.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -616,7 +1172,7 @@
       },
       "name" : "Modelo lógico RecetaIndice (SIHCE)",
       "description" : "Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -628,7 +1184,7 @@
       },
       "name" : "ModificarIDLocalPersona: modelo lógico a FHIR",
       "description" : "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -640,7 +1196,7 @@
       },
       "name" : "ModificarSDMPersona: modelo lógico a FHIR",
       "description" : "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -652,7 +1208,7 @@
       },
       "name" : "NamingSystem CUIL (paciente)",
       "description" : "Clave Única de Identificación Laboral (CUIL) del paciente, usada en búsqueda de recetas.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -664,7 +1220,7 @@
       },
       "name" : "NamingSystem CUIR (código único de receta)",
       "description" : "Identificador único de receta electrónica (CUIR) en el ecosistema SIHCE / CPE.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -676,7 +1232,7 @@
       },
       "name" : "NamingSystem idPersonaGlobal SIHCE",
       "description" : "Identificador maestro de persona asignado por SIHCE tras la federación (idPersonaGlobal).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -688,7 +1244,7 @@
       },
       "name" : "NamingSystem Organization hospital (dominio MSGC, ejemplo)",
       "description" : "Patrón de identificación de hospitales dentro de un dominio SIHCE: system = {uri-dominio}/Organization, value = id local del hospital.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -700,7 +1256,7 @@
       },
       "name" : "NamingSystem URI Hospital Italiano (ejemplo FHIR)",
       "description" : "Identificador de dominio de ejemplo usado en instancias de este IG.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -712,7 +1268,7 @@
       },
       "name" : "NamingSystem URI MSGC GCBA (ejemplo)",
       "description" : "Sistema de identificadores de ejemplo para Parameters en este IG.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -724,7 +1280,7 @@
       },
       "name" : "Niveles de privacidad SIHCE",
       "description" : "Niveles admitidos en Consent.provision.securityLabel (etapa 3).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -736,7 +1292,7 @@
       },
       "name" : "Niveles de privacidad SIHCE",
       "description" : "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -748,7 +1304,7 @@
       },
       "name" : "Observación de laboratorio SIHCE",
       "description" : "Resultado analítico codificado (LOINC) asociado a un informe de laboratorio nivel 2.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -760,7 +1316,7 @@
       },
       "name" : "Paciente SIHCE (PatientXBA)",
       "description" : "Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación)",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -772,7 +1328,7 @@
       },
       "name" : "Parametros Patch Identifier SIHCE",
       "description" : "Estructura de Parameters para la operacion $patch-identifier de SIHCE.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -784,7 +1340,7 @@
       },
       "name" : "Parametros Update SDM SIHCE",
       "description" : "Estructura de Parameters para la operacion $update-sdm de SIHCE.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -796,8 +1352,7 @@
       },
       "name" : "PersonaSIHCEMin",
       "description" : "Ejemplo de Recurso Paciente con Set de Datos Minimos",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/PatientXBA"
     },
     {
       "extension" : [{
@@ -809,8 +1364,7 @@
       },
       "name" : "PersonaSIHCEPatch",
       "description" : "Ejemplo de Recurso Paciente para Patch de Datos Minimos",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/PatientXBA"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/PatientXBA"
     },
     {
       "extension" : [{
@@ -822,7 +1376,7 @@
       },
       "name" : "Receta MedicationRequest SIHCE",
       "description" : "Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -834,7 +1388,7 @@
       },
       "name" : "RecetaIndice: modelo lógico a FHIR",
       "description" : "Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -846,7 +1400,7 @@
       },
       "name" : "Referencia a documento clínico SIHCE",
       "description" : "Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -858,7 +1412,7 @@
       },
       "name" : "renaper-dni",
       "description" : "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -870,7 +1424,7 @@
       },
       "name" : "Repositorio delegado en SIHCE",
       "description" : "Marca el caso excepcional en que SIHCE almacena el MedicationRequest (caso de uso 3, variante 1b).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -882,7 +1436,7 @@
       },
       "name" : "Rutas de elementos en modelos lógicos de operación SIHCE",
       "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -894,7 +1448,7 @@
       },
       "name" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
       "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -906,7 +1460,7 @@
       },
       "name" : "Secciones LOINC de epicrisis SIHCE",
       "description" : "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -918,7 +1472,7 @@
       },
       "name" : "Tipo documental de receta SIHCE",
       "description" : "LOINC para índice de receta electrónica.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -930,7 +1484,7 @@
       },
       "name" : "Tipos de documento clínico SIHCE",
       "description" : "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -942,7 +1496,7 @@
       },
       "name" : "Tipos MIME de contenido documental SIHCE",
       "description" : "Formatos admitidos en DocumentReference.content.attachment.contentType.",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -954,7 +1508,7 @@
       },
       "name" : "Índice de receta electrónica SIHCE",
       "description" : "Metadatos de receta en el índice SIHCE (CUIR, paciente, efector, estado). El MedicationRequest permanece en el repositorio de origen; SIHCE actúa como broker/proxy salvo repositorio delegado (caso 3/1b).",
-      "isExample" : false
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -966,8 +1520,7 @@
       },
       "name" : "Índice receta vigente — SIGEHOS (caso 2)",
       "description" : "Metadatos de receta emitida en SIGEHOS; contenido en repositorio SIGEHOS.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"
     },
     {
       "extension" : [{
@@ -979,343 +1532,139 @@
       },
       "name" : "Índice receta — repositorio delegado SIHCE (caso 3 / 1b)",
       "description" : "Caso excepcional: SIHCE almacena el MedicationRequest; no hay URL de dominio de origen.",
-      "isExample" : true,
-      "profile" : ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"]
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"
     }],
     "page" : {
-      "sourceUrl" : "toc.html",
-      "name" : "toc.html",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
       "page" : [{
-        "sourceUrl" : "index.html",
-        "name" : "index.html",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
         "title" : "Inicio",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "Aspectos-Generales.html",
-        "name" : "Aspectos-Generales.html",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Aspectos-Generales.html"
+        }],
+        "nameUrl" : "Aspectos-Generales.html",
         "title" : "Generalidades",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "Operaciones.html",
-        "name" : "Operaciones.html",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Operaciones.html"
+        }],
+        "nameUrl" : "Operaciones.html",
         "title" : "Operaciones",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "CasosDeUso.html",
-        "name" : "CasosDeUso.html",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "CasosDeUso.html"
+        }],
+        "nameUrl" : "CasosDeUso.html",
         "title" : "Casos de Uso",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "ModeloLogico.html",
-        "name" : "ModeloLogico.html",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "ModeloLogico.html"
+        }],
+        "nameUrl" : "ModeloLogico.html",
         "title" : "Modelo Lógico",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "Seguridad.html",
-        "name" : "Seguridad.html",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Seguridad.html"
+        }],
+        "nameUrl" : "Seguridad.html",
         "title" : "Seguridad",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "HistorialDeCambios.html",
-        "name" : "HistorialDeCambios.html",
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "HistorialDeCambios.html"
+        }],
+        "nameUrl" : "HistorialDeCambios.html",
         "title" : "Historial de Cambios",
         "generation" : "markdown"
       }]
     },
     "parameter" : [{
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "copyrightyear"
-      },
-      "value" : "2026"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "releaselabel"
-      },
-      "value" : "ci-build"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "tabbed-snapshots"
-      },
-      "value" : "false"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "autoload-resources"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/capabilities"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/examples"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/extensions"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/models"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/operations"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/profiles"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/resources"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/vocabulary"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/maps"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/testing"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "input/history"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-resource"
-      },
+      "code" : "path-resource",
       "value" : "fsh-generated/resources"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-pages"
-      },
+      "code" : "path-pages",
       "value" : "template/config"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-pages"
-      },
+      "code" : "path-pages",
       "value" : "input/images"
     },
     {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "path-liquid"
-      },
-      "value" : "template/liquid"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "path-liquid"
-      },
-      "value" : "input/liquid"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "path-qa"
-      },
-      "value" : "temp/qa"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "path-temp"
-      },
-      "value" : "temp/pages"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "path-output"
-      },
-      "value" : "output"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/guide-parameter-code",
-        "code" : "path-tx-cache"
-      },
+      "code" : "path-tx-cache",
       "value" : "input-cache/txcache"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "path-suppressed-warnings"
-      },
-      "value" : "input/ignoreWarnings.txt"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "path-history"
-      },
-      "value" : "http://sihce.gob.ar/history.html"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "template-html"
-      },
-      "value" : "template-page.html"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "template-md"
-      },
-      "value" : "template-page-md.html"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "apply-contact"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "apply-context"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "apply-copyright"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "apply-jurisdiction"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "apply-license"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "apply-publisher"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "apply-version"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "apply-wg"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "active-tables"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "fmm-definition"
-      },
-      "value" : "http://hl7.org/fhir/versions.html#maturity"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "propagate-status"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "excludelogbinaryformat"
-      },
-      "value" : "true"
-    },
-    {
-      "code" : {
-        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
-        "code" : "i18n-default-lang"
-      },
-      "value" : "en"
     }]
   }
 }

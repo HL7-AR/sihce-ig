@@ -7,6 +7,14 @@
     ]
   },
   "status": "active",
+  "scope": {
+    "coding": [
+      {
+        "code": "patient-privacy",
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+      }
+    ]
+  },
   "category": [
     {
       "coding": [
@@ -17,9 +25,11 @@
       ]
     }
   ],
-  "subject": {
+  "patient": {
     "reference": "Patient/PersonaSIHCEMin"
   },
-  "date": "2026-08-27",
-  "decision": "deny"
+  "dateTime": "2026-08-27",
+  "provision": {
+    "type": "deny"
+  }
 }

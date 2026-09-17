@@ -1,4 +1,4 @@
-# Índice receta vigente — SIGEHOS (caso 2) - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Índice receta vigente — SIGEHOS (caso 2) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@ Profile: [Índice de receta electrónica SIHCE](StructureDefinition-DocumentRefe
 
 **Repositorio delegado en SIHCE**: false
 
-**identifier**: [NamingSystem CUIR (código único de receta)](NamingSystem-sihce-cuir.md)/CUIR-2026-000123
+**identifier**: [SihceCuir](NamingSystem-sihce-cuir.md)/CUIR-2026-000123
 
 **status**: Current
 

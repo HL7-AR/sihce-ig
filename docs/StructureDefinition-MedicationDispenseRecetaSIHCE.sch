@@ -12,6 +12,7 @@
   <sch:pattern>
     <sch:title>f:MedicationDispense</sch:title>
     <sch:rule context="f:MedicationDispense">
+      <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
       <sch:assert test="count(f:authorizingPrescription) &gt;= 1">authorizingPrescription: minimum cardinality of 'authorizingPrescription' is 1</sch:assert>
       <sch:assert test="count(f:authorizingPrescription) &lt;= 1">authorizingPrescription: maximum cardinality of 'authorizingPrescription' is 1</sch:assert>
       <sch:assert test="count(f:whenHandedOver) &gt;= 1">whenHandedOver: minimum cardinality of 'whenHandedOver' is 1</sch:assert>

@@ -18,7 +18,7 @@
      fhir:v "http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR>
   ] ; # 
-  fhir:version [ fhir:v "1.6.0"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "RecetaIndiceModeloAFHIR"] ; # 
   fhir:title [ fhir:v "RecetaIndice: modelo lógico a FHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
@@ -46,55 +46,55 @@
        fhir:code [ fhir:v "RecetaIndice.datosReceta.cuir" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "DocumentReference.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "RecetaIndice.datosReceta.cuilPaciente" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "DocumentReference.subject" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "RecetaIndice.datosReceta.idPersonaGlobal" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "DocumentReference.subject" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "RecetaIndice.datosReceta.estado" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "DocumentReference.extension" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "RecetaIndice.datosReceta.fechaEmision" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "DocumentReference.date" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "RecetaIndice.datosReceta.urlContenido" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "DocumentReference.content" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "RecetaIndice.datosPrescriptor.idDominio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "DocumentReference.custodian" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "RecetaIndice.datosPrescriptor.idEfector" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "DocumentReference.custodian" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "RecetaIndice.repositorioDelegado" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "DocumentReference.extension" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] )
   ] ) . # 

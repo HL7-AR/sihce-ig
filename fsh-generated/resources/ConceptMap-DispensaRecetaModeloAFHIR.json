@@ -20,7 +20,7 @@
           "target": [
             {
               "code": "MedicationDispense.authorizingPrescription",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -29,7 +29,7 @@
           "target": [
             {
               "code": "MedicationDispense.subject",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -38,7 +38,7 @@
           "target": [
             {
               "code": "MedicationDispense.whenHandedOver",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -47,7 +47,7 @@
           "target": [
             {
               "code": "MedicationDispense.performer",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -56,7 +56,7 @@
           "target": [
             {
               "code": "MedicationDispense.performer",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         }

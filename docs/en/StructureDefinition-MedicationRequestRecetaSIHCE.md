@@ -1,4 +1,4 @@
-# Receta MedicationRequest SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Receta MedicationRequest SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE | *Version*:2.0.0 |
 | Draft as of 2026-09-15 | *Computable Name*:MedicationRequestRecetaSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationRequest
   "resourceType" : "StructureDefinition",
   "id" : "MedicationRequestRecetaSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "MedicationRequestRecetaSIHCE",
   "title" : "Receta MedicationRequest SIHCE",
   "status" : "draft",
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationRequest
     }]
   }],
   "description" : "Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción).",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
@@ -63,19 +63,19 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationRequest
     "name" : "Mapping to NCPDP SCRIPT 10.6"
   },
   {
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
-  },
-  {
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
   },
   {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 V2 Mapping"
+    "name" : "HL7 v2 Mapping"
   }],
   "kind" : "resource",
   "abstract" : false,
@@ -118,8 +118,11 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationRequest
       "mustSupport" : true
     },
     {
-      "id" : "MedicationRequest.medication",
-      "path" : "MedicationRequest.medication",
+      "id" : "MedicationRequest.medication[x]",
+      "path" : "MedicationRequest.medication[x]",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
       "mustSupport" : true
     },
     {

@@ -1,4 +1,4 @@
-# DocumentoClinico: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# DocumentoClinico: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR | *Version*:2.0.0 |
 | Draft as of 2026-06-09 | *Computable Name*:DocumentoClinicoModeloAFHIR |
 
  
@@ -23,7 +23,7 @@ Mapeo del registro de documento clínico a DocumentReference SIHCE.
   "resourceType" : "ConceptMap",
   "id" : "DocumentoClinicoModeloAFHIR",
   "url" : "http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "DocumentoClinicoModeloAFHIR",
   "title" : "DocumentoClinico: modelo lógico a FHIR",
   "status" : "draft",
@@ -45,63 +45,63 @@ Mapeo del registro de documento clínico a DocumentReference SIHCE.
       "code" : "DocumentoClinico.datosDocumento.idDocumentoDominio",
       "target" : [{
         "code" : "DocumentReference.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDocumento.uriSistemaId",
       "target" : [{
         "code" : "DocumentReference.identifier",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDocumento.tipoDocumento",
       "target" : [{
         "code" : "DocumentReference.type",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDocumento.fecha",
       "target" : [{
         "code" : "DocumentReference.date",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDocumento.urlContenido",
       "target" : [{
         "code" : "DocumentReference.content",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDocumento.tipoContenido",
       "target" : [{
         "code" : "DocumentReference.content",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDocumento.idPersonaGlobal",
       "target" : [{
         "code" : "DocumentReference.subject",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDominio.idDominio",
       "target" : [{
         "code" : "DocumentReference.custodian",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDominio.nombreCustodio",
       "target" : [{
         "code" : "DocumentReference.custodian",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   }]

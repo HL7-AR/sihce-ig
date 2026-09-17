@@ -9,7 +9,7 @@
   "date": "2026-06-09T00:00:00-03:00",
   "publisher": "SIHCE Development Team",
   "description": "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).",
-  "fhirVersion": "5.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Condition",
@@ -20,6 +20,7 @@
       {
         "id": "Condition.clinicalStatus",
         "path": "Condition.clinicalStatus",
+        "min": 1,
         "mustSupport": true
       },
       {

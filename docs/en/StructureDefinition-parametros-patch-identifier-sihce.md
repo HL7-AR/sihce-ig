@@ -1,4 +1,4 @@
-# Parametros Patch Identifier SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Parametros Patch Identifier SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce | *Version*:1.6.0 |
-| Draft as of 2026-09-16 | *Computable Name*:ParametrosPatchIdentifierSIHCE |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce | *Version*:2.0.0 |
+| Draft as of 2026-09-17 | *Computable Name*:ParametrosPatchIdentifierSIHCE |
 
  
 Estructura de Parameters para la operacion $patch-identifier de SIHCE. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-patch-
   "resourceType" : "StructureDefinition",
   "id" : "parametros-patch-identifier-sihce",
   "url" : "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "ParametrosPatchIdentifierSIHCE",
   "title" : "Parametros Patch Identifier SIHCE",
   "status" : "draft",
-  "date" : "2026-09-16T14:49:36-03:00",
+  "date" : "2026-09-17T09:51:31-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -51,16 +51,11 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-patch-
     }]
   }],
   "description" : "Estructura de Parameters para la operacion $patch-identifier de SIHCE.",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
-  },
-  {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 V2 Mapping"
+    "name" : "HL7 v2 Mapping"
   },
   {
     "identity" : "rim",

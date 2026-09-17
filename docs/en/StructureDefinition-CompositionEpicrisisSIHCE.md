@@ -1,4 +1,4 @@
-# Composición epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Composición epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE | *Version*:2.0.0 |
 | Draft as of 2026-06-09 | *Computable Name*:CompositionEpicrisisSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
   "resourceType" : "StructureDefinition",
   "id" : "CompositionEpicrisisSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "CompositionEpicrisisSIHCE",
   "title" : "Composición epicrisis SIHCE",
   "status" : "draft",
@@ -51,16 +51,11 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
     }]
   }],
   "description" : "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement).",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
-  },
-  {
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
   },
   {
     "identity" : "rim",
@@ -76,6 +71,11 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
     "identity" : "fhirdocumentreference",
     "uri" : "http://hl7.org/fhir/documentreference",
     "name" : "FHIR DocumentReference"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
   }],
   "kind" : "resource",
   "abstract" : false,
@@ -109,7 +109,6 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "id" : "Composition.subject",
       "path" : "Composition.subject",
       "min" : 1,
-      "max" : "1",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]

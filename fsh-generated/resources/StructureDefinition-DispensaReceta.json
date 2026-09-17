@@ -7,7 +7,7 @@
   "title": "Modelo lógico DispensaReceta (SIHCE)",
   "status": "draft",
   "description": "Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde.",
-  "fhirVersion": "5.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "logical",
   "abstract": false,
   "type": "http://sihce.gob.ar/StructureDefinition/DispensaReceta",

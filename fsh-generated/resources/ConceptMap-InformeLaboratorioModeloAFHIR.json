@@ -20,7 +20,7 @@
           "target": [
             {
               "code": "DocumentReference.type",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -29,7 +29,7 @@
           "target": [
             {
               "code": "DocumentReference.subject",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -38,7 +38,7 @@
           "target": [
             {
               "code": "DocumentReference.content",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -47,7 +47,7 @@
           "target": [
             {
               "code": "DiagnosticReport.result",
-              "relationship": "related-to",
+              "equivalence": "relatedto",
               "comment": "Nivel 1: sin result; nivel 2: con Observation en result."
             }
           ]
@@ -57,7 +57,7 @@
           "target": [
             {
               "code": "Observation.code",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -66,7 +66,7 @@
           "target": [
             {
               "code": "Observation.value[x]",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         }

@@ -1,4 +1,4 @@
-# Epicrisis: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Epicrisis: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR | *Version*:2.0.0 |
 | Draft as of 2026-06-09 | *Computable Name*:EpicrisisModeloAFHIR |
 
  
@@ -23,7 +23,7 @@ Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3).
   "resourceType" : "ConceptMap",
   "id" : "EpicrisisModeloAFHIR",
   "url" : "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "EpicrisisModeloAFHIR",
   "title" : "Epicrisis: modelo lógico a FHIR",
   "status" : "draft",
@@ -45,14 +45,14 @@ Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3).
       "code" : "Epicrisis.seccion.codigoLoinc",
       "target" : [{
         "code" : "Composition.section",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "Epicrisis.seccion.texto",
       "target" : [{
         "code" : "Composition.section",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   }]

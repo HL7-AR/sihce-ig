@@ -1,4 +1,4 @@
-# Modelo lógico Informe de Laboratorio (SIHCE) - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Modelo lógico Informe de Laboratorio (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/InformeLaboratorio | *Version*:1.6.0 |
-| Draft as of 2026-09-16 | *Computable Name*:InformeLaboratorio |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/InformeLaboratorio | *Version*:2.0.0 |
+| Draft as of 2026-09-17 | *Computable Name*:InformeLaboratorio |
 
  
 Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](../StructureDefinition-InformeLaboratori
   "resourceType" : "StructureDefinition",
   "id" : "InformeLaboratorio",
   "url" : "http://sihce.gob.ar/StructureDefinition/InformeLaboratorio",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "InformeLaboratorio",
   "title" : "Modelo lógico Informe de Laboratorio (SIHCE)",
   "status" : "draft",
-  "date" : "2026-09-16T14:49:36-03:00",
+  "date" : "2026-09-17T09:51:31-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-InformeLaboratori
     }]
   }],
   "description" : "Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio.",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",

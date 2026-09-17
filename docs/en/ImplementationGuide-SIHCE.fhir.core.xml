@@ -7,11 +7,11 @@
     <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide SIHCE.fhir.core</b></p><a name="SIHCE.fhir.core"> </a><a name="hcSIHCE.fhir.core"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><h2>GuiaDeImplementacionSIHCE</h2><p>The official URL for this implementation guide is: </p><pre>http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core</pre></div>
   </text>
   <url value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core"/>
-  <version value="1.6.0"/>
+  <version value="2.0.0"/>
   <name value="GuiaDeImplementacionSIHCE"/>
-  <title value="Guía de Implementación SIHCE - FHIR R5"/>
+  <title value="Guía de Implementación SIHCE - FHIR R4"/>
   <status value="draft"/>
-  <date value="2026-09-16T14:49:36-03:00"/>
+  <date value="2026-09-17T09:51:31-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -22,13 +22,13 @@
   </contact>
   <packageId value="SIHCE.fhir.core"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="5.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
       <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
-    <packageId value="hl7.terminology.r5"/>
+    <packageId value="hl7.terminology.r4"/>
     <version value="7.3.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
@@ -36,12 +36,428 @@
       <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
-    <packageId value="hl7.fhir.uv.extensions.r5"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.3.0"/>
   </dependsOn>
   <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2026"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://sihce.gob.ar/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r5#1.1.2"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2026"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://sihce.gob.ar/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -52,7 +468,7 @@
       </reference>
       <name value="Analitos de laboratorio SIHCE (LOINC)"/>
       <description value="Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -62,8 +478,8 @@
         <reference value="ConceptMap/BuscarPersonaModeloAFHIR"/>
       </reference>
       <name value="BuscarPersona: modelo lógico a FHIR"/>
-      <description value="Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5)."/>
-      <isExample value="false"/>
+      <description value="Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4)."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -74,7 +490,7 @@
       </reference>
       <name value="Composición epicrisis SIHCE"/>
       <description value="Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -85,7 +501,7 @@
       </reference>
       <name value="Condición clínica epicrisis SIHCE"/>
       <description value="Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -95,8 +511,8 @@
         <reference value="StructureDefinition/ConsentSIHCE"/>
       </reference>
       <name value="Consentimiento de paciente SIHCE"/>
-      <description value="Preferencias de privacidad del paciente en la red SIHCE (FHIR R5). Etapa 1: decision permit/deny (opt-in/out general). Etapa 2: provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito)."/>
-      <isExample value="false"/>
+      <description value="Preferencias de privacidad del paciente en la red SIHCE (FHIR R4). Etapa 1: provision.type permit/deny (opt-in/out general). Etapa 2: provision.provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito)."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -107,8 +523,7 @@
       </reference>
       <name value="Consentimiento hospital + nivel confidential (etapa 3)"/>
       <description value="Hospital Central autorizado también para documentos confidential."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -119,8 +534,7 @@
       </reference>
       <name value="Consentimiento hospital + nivel normal (etapa 3)"/>
       <description value="Hospital Central autorizado con nivel normal explícito."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -131,8 +545,7 @@
       </reference>
       <name value="Consentimiento opt-in general (etapa 1)"/>
       <description value="Paciente autoriza participación general en la red SIHCE."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -143,8 +556,7 @@
       </reference>
       <name value="Consentimiento opt-in por hospital (etapa 2)"/>
       <description value="Opt-in general con autorización explícita al Hospital Central (dominio MSGC)."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -155,8 +567,7 @@
       </reference>
       <name value="Consentimiento opt-out general"/>
       <description value="Paciente revoca toda participación; anula autorizaciones previas."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -166,8 +577,8 @@
         <reference value="ConceptMap/ConsentimientoModeloAFHIR"/>
       </reference>
       <name value="Consentimiento: modelo lógico a FHIR"/>
-      <description value="Mapeo del registro de consentimiento del paciente a Consent SIHCE."/>
-      <isExample value="false"/>
+      <description value="Mapeo del registro de consentimiento del paciente a Consent SIHCE (FHIR R4)."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -178,7 +589,7 @@
       </reference>
       <name value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"/>
       <description value="Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -189,7 +600,7 @@
       </reference>
       <name value="Dispensa de receta SIHCE"/>
       <description value="Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -200,8 +611,7 @@
       </reference>
       <name value="Dispensa de receta — farmacia privada"/>
       <description value="Evento de dispensa notificado a SIHCE (anti-quema)."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -212,7 +622,7 @@
       </reference>
       <name value="DispensaReceta: modelo lógico a FHIR"/>
       <description value="Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -223,7 +633,7 @@
       </reference>
       <name value="DocumentoClinico: modelo lógico a FHIR"/>
       <description value="Mapeo del registro de documento clínico a DocumentReference SIHCE."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -234,8 +644,7 @@
       </reference>
       <name value="Ejemplo Parameters Patch Identifier"/>
       <description value="Ejemplo de Parámetros para actualizar identificador local."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -246,8 +655,7 @@
       </reference>
       <name value="Ejemplo Parameters Update SDM"/>
       <description value="Ejemplo de Parametros para actualizacion de SDM."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -258,8 +666,7 @@
       </reference>
       <name value="Epicrisis nivel 1 — PDF en dominio"/>
       <description value="DocumentReference con enlace a PDF hospedado en el dominio emisor. Paciente: PersonaSIHCEMin."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -270,8 +677,7 @@
       </reference>
       <name value="Epicrisis nivel 2 — enlace a Composition"/>
       <description value="DocumentReference con URL a Composition narrativa en el dominio."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -282,8 +688,7 @@
       </reference>
       <name value="Epicrisis nivel 2 — secciones narrativas"/>
       <description value="Composition con las cinco secciones obligatorias en texto (nivel 2)."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -294,7 +699,7 @@
       </reference>
       <name value="Epicrisis: modelo lógico a FHIR"/>
       <description value="Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -305,7 +710,7 @@
       </reference>
       <name value="Estado de receta en índice SIHCE"/>
       <description value="Estado vigente/dispensada/anulada del índice de receta (anti-quema)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -316,7 +721,7 @@
       </reference>
       <name value="Estado de receta en índice SIHCE"/>
       <description value="Estados del índice de receta electrónica (mecanismo anti-quema)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -327,7 +732,7 @@
       </reference>
       <name value="Estados de receta SIHCE"/>
       <description value="Estados admitidos en el índice de DocumentReferenceRecetaSIHCE."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -338,7 +743,7 @@
       </reference>
       <name value="FederarPersona: modelo lógico a FHIR"/>
       <description value="Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -349,7 +754,7 @@
       </reference>
       <name value="Informe de laboratorio SIHCE"/>
       <description value="DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -360,8 +765,7 @@
       </reference>
       <name value="Informe laboratorio nivel 1 — DiagnosticReport con PDF"/>
       <description value="Solo presentedForm (PDF); sin entradas en result (nivel 1)."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -372,8 +776,7 @@
       </reference>
       <name value="Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)"/>
       <description value="Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.html)."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -384,8 +787,7 @@
       </reference>
       <name value="Informe laboratorio nivel 2 — PDF + glucemia y urea"/>
       <description value="Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -396,8 +798,7 @@
       </reference>
       <name value="Informe laboratorio nivel 2 — PDF y observaciones"/>
       <description value="Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -408,7 +809,7 @@
       </reference>
       <name value="InformeLaboratorio: modelo lógico a FHIR"/>
       <description value="Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -418,7 +819,7 @@
         <reference value="Organization/lab-central-ejemplo"/>
       </reference>
       <name value="Laboratorio Central Ejemplo"/>
-      <isExample value="true"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -429,7 +830,7 @@
       </reference>
       <name value="Medicación al alta epicrisis SIHCE"/>
       <description value="Medicamento declarado en la sección de medicamentos al alta (nivel 3)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -440,8 +841,7 @@
       </reference>
       <name value="MedicationRequest receta SIGEHOS"/>
       <description value="Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 / caso 3-1a)."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -452,7 +852,7 @@
       </reference>
       <name value="Modelo lógico BuscarPersona (FederadorBA)"/>
       <description value="Solicitud de búsqueda de persona por datos mínimos y respuesta mínima."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -463,7 +863,7 @@
       </reference>
       <name value="Modelo lógico Consentimiento (SIHCE)"/>
       <description value="Registro de preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez: opt-in/out general, opt-in por hospital, hospital + nivel de privacidad."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -474,7 +874,7 @@
       </reference>
       <name value="Modelo Lógico de Persona para SIHCE"/>
       <description value="Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -485,7 +885,7 @@
       </reference>
       <name value="Modelo lógico DispensaReceta (SIHCE)"/>
       <description value="Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -496,7 +896,7 @@
       </reference>
       <name value="Modelo lógico DocumentoClinico (SIHCE)"/>
       <description value="Registro e indexación de un documento clínico emitido por un dominio en SIHCE."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -507,7 +907,7 @@
       </reference>
       <name value="Modelo lógico Epicrisis (SIHCE)"/>
       <description value="Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -518,7 +918,7 @@
       </reference>
       <name value="Modelo lógico FederarPersona (FederadorBA)"/>
       <description value="Federación de una persona con identificador local y validación de datos."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -529,7 +929,7 @@
       </reference>
       <name value="Modelo lógico Informe de Laboratorio (SIHCE)"/>
       <description value="Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -540,7 +940,7 @@
       </reference>
       <name value="Modelo lógico ModificarIDLocalPersona (FederadorBA)"/>
       <description value="Modificación del identificador local de una persona federada."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -551,7 +951,7 @@
       </reference>
       <name value="Modelo lógico ModificarSDMPersona (FederadorBA)"/>
       <description value="Actualización del SDM de una persona federada; documento inmutable."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -562,7 +962,7 @@
       </reference>
       <name value="Modelo lógico RecetaIndice (SIHCE)"/>
       <description value="Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -573,7 +973,7 @@
       </reference>
       <name value="ModificarIDLocalPersona: modelo lógico a FHIR"/>
       <description value="Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -584,7 +984,7 @@
       </reference>
       <name value="ModificarSDMPersona: modelo lógico a FHIR"/>
       <description value="Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -595,7 +995,7 @@
       </reference>
       <name value="NamingSystem CUIL (paciente)"/>
       <description value="Clave Única de Identificación Laboral (CUIL) del paciente, usada en búsqueda de recetas."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -606,7 +1006,7 @@
       </reference>
       <name value="NamingSystem CUIR (código único de receta)"/>
       <description value="Identificador único de receta electrónica (CUIR) en el ecosistema SIHCE / CPE."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -617,7 +1017,7 @@
       </reference>
       <name value="NamingSystem idPersonaGlobal SIHCE"/>
       <description value="Identificador maestro de persona asignado por SIHCE tras la federación (idPersonaGlobal)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -628,7 +1028,7 @@
       </reference>
       <name value="NamingSystem Organization hospital (dominio MSGC, ejemplo)"/>
       <description value="Patrón de identificación de hospitales dentro de un dominio SIHCE: system = {uri-dominio}/Organization, value = id local del hospital."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -639,7 +1039,7 @@
       </reference>
       <name value="NamingSystem URI Hospital Italiano (ejemplo FHIR)"/>
       <description value="Identificador de dominio de ejemplo usado en instancias de este IG."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -650,7 +1050,7 @@
       </reference>
       <name value="NamingSystem URI MSGC GCBA (ejemplo)"/>
       <description value="Sistema de identificadores de ejemplo para Parameters en este IG."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -661,7 +1061,7 @@
       </reference>
       <name value="Niveles de privacidad SIHCE"/>
       <description value="Niveles admitidos en Consent.provision.securityLabel (etapa 3)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -672,7 +1072,7 @@
       </reference>
       <name value="Niveles de privacidad SIHCE"/>
       <description value="Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -683,7 +1083,7 @@
       </reference>
       <name value="Observación de laboratorio SIHCE"/>
       <description value="Resultado analítico codificado (LOINC) asociado a un informe de laboratorio nivel 2."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -694,7 +1094,7 @@
       </reference>
       <name value="Paciente SIHCE (PatientXBA)"/>
       <description value="Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación)"/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -705,7 +1105,7 @@
       </reference>
       <name value="Parametros Patch Identifier SIHCE"/>
       <description value="Estructura de Parameters para la operacion $patch-identifier de SIHCE."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -716,7 +1116,7 @@
       </reference>
       <name value="Parametros Update SDM SIHCE"/>
       <description value="Estructura de Parameters para la operacion $update-sdm de SIHCE."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -727,8 +1127,7 @@
       </reference>
       <name value="PersonaSIHCEMin"/>
       <description value="Ejemplo de Recurso Paciente con Set de Datos Minimos"/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -739,8 +1138,7 @@
       </reference>
       <name value="PersonaSIHCEPatch"/>
       <description value="Ejemplo de Recurso Paciente para Patch de Datos Minimos"/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/PatientXBA"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -751,7 +1149,7 @@
       </reference>
       <name value="Receta MedicationRequest SIHCE"/>
       <description value="Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -762,7 +1160,7 @@
       </reference>
       <name value="RecetaIndice: modelo lógico a FHIR"/>
       <description value="Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -773,7 +1171,7 @@
       </reference>
       <name value="Referencia a documento clínico SIHCE"/>
       <description value="Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -784,7 +1182,7 @@
       </reference>
       <name value="renaper-dni"/>
       <description value="This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -795,7 +1193,7 @@
       </reference>
       <name value="Repositorio delegado en SIHCE"/>
       <description value="Marca el caso excepcional en que SIHCE almacena el MedicationRequest (caso de uso 3, variante 1b)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -806,7 +1204,7 @@
       </reference>
       <name value="Rutas de elementos en modelos lógicos de operación SIHCE"/>
       <description value="Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -817,7 +1215,7 @@
       </reference>
       <name value="Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE"/>
       <description value="Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -828,7 +1226,7 @@
       </reference>
       <name value="Secciones LOINC de epicrisis SIHCE"/>
       <description value="Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -839,7 +1237,7 @@
       </reference>
       <name value="Tipo documental de receta SIHCE"/>
       <description value="LOINC para índice de receta electrónica."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -850,7 +1248,7 @@
       </reference>
       <name value="Tipos de documento clínico SIHCE"/>
       <description value="Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -861,7 +1259,7 @@
       </reference>
       <name value="Tipos MIME de contenido documental SIHCE"/>
       <description value="Formatos admitidos en DocumentReference.content.attachment.contentType."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -872,7 +1270,7 @@
       </reference>
       <name value="Índice de receta electrónica SIHCE"/>
       <description value="Metadatos de receta en el índice SIHCE (CUIR, paciente, efector, estado). El MedicationRequest permanece en el repositorio de origen; SIHCE actúa como broker/proxy salvo repositorio delegado (caso 3/1b)."/>
-      <isExample value="false"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -883,8 +1281,7 @@
       </reference>
       <name value="Índice receta vigente — SIGEHOS (caso 2)"/>
       <description value="Metadatos de receta emitida en SIGEHOS; contenido en repositorio SIGEHOS."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -895,343 +1292,131 @@
       </reference>
       <name value="Índice receta — repositorio delegado SIHCE (caso 3 / 1b)"/>
       <description value="Caso excepcional: SIHCE almacena el MedicationRequest; no hay URL de dominio de origen."/>
-      <isExample value="true"/>
-      <profile value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"/>
+      <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"/>
     </resource>
     <page>
-      <sourceUrl value="toc.html"/>
-      <name value="toc.html"/>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
       <title value="Table of Contents"/>
       <generation value="html"/>
       <page>
-        <sourceUrl value="index.html"/>
-        <name value="index.html"/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
         <title value="Inicio"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <sourceUrl value="Aspectos-Generales.html"/>
-        <name value="Aspectos-Generales.html"/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Aspectos-Generales.html"/>
+        </extension>
+        <nameUrl value="Aspectos-Generales.html"/>
         <title value="Generalidades"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <sourceUrl value="Operaciones.html"/>
-        <name value="Operaciones.html"/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Operaciones.html"/>
+        </extension>
+        <nameUrl value="Operaciones.html"/>
         <title value="Operaciones"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <sourceUrl value="CasosDeUso.html"/>
-        <name value="CasosDeUso.html"/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="CasosDeUso.html"/>
+        </extension>
+        <nameUrl value="CasosDeUso.html"/>
         <title value="Casos de Uso"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <sourceUrl value="ModeloLogico.html"/>
-        <name value="ModeloLogico.html"/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ModeloLogico.html"/>
+        </extension>
+        <nameUrl value="ModeloLogico.html"/>
         <title value="Modelo Lógico"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <sourceUrl value="Seguridad.html"/>
-        <name value="Seguridad.html"/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Seguridad.html"/>
+        </extension>
+        <nameUrl value="Seguridad.html"/>
         <title value="Seguridad"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <sourceUrl value="HistorialDeCambios.html"/>
-        <name value="HistorialDeCambios.html"/>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="HistorialDeCambios.html"/>
+        </extension>
+        <nameUrl value="HistorialDeCambios.html"/>
         <title value="Historial de Cambios"/>
         <generation value="markdown"/>
       </page>
     </page>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="copyrightyear"/>
-      </code>
-      <value value="2026"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="releaselabel"/>
-      </code>
-      <value value="ci-build"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="tabbed-snapshots"/>
-      </code>
-      <value value="false"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="autoload-resources"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/capabilities"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/examples"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/extensions"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/models"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/operations"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/profiles"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/resources"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/vocabulary"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/maps"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/testing"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="input/history"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-resource"/>
-      </code>
+      <code value="path-resource"/>
       <value value="fsh-generated/resources"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-pages"/>
-      </code>
+      <code value="path-pages"/>
       <value value="template/config"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-pages"/>
-      </code>
+      <code value="path-pages"/>
       <value value="input/images"/>
     </parameter>
     <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="path-liquid"/>
-      </code>
-      <value value="template/liquid"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="path-liquid"/>
-      </code>
-      <value value="input/liquid"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="path-qa"/>
-      </code>
-      <value value="temp/qa"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="path-temp"/>
-      </code>
-      <value value="temp/pages"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="path-output"/>
-      </code>
-      <value value="output"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-tx-cache"/>
-      </code>
+      <code value="path-tx-cache"/>
       <value value="input-cache/txcache"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="path-suppressed-warnings"/>
-      </code>
-      <value value="input/ignoreWarnings.txt"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="path-history"/>
-      </code>
-      <value value="http://sihce.gob.ar/history.html"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="template-html"/>
-      </code>
-      <value value="template-page.html"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="template-md"/>
-      </code>
-      <value value="template-page-md.html"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="apply-contact"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="apply-context"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="apply-copyright"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="apply-jurisdiction"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="apply-license"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="apply-publisher"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="apply-version"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="apply-wg"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="active-tables"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="fmm-definition"/>
-      </code>
-      <value value="http://hl7.org/fhir/versions.html#maturity"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="propagate-status"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="excludelogbinaryformat"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="i18n-default-lang"/>
-      </code>
-      <value value="en"/>
     </parameter>
   </definition>
 </ImplementationGuide>

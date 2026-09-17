@@ -1,4 +1,4 @@
-# Artifacts Summary - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Artifacts Summary - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -33,7 +33,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | :--- | :--- |
 | [ Composición epicrisis SIHCE  ](StructureDefinition-CompositionEpicrisisSIHCE.md) | Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement). |
 | [ Condición clínica epicrisis SIHCE  ](StructureDefinition-ConditionEpicrisisSIHCE.md) | Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina). |
-| [ Consentimiento de paciente SIHCE  ](StructureDefinition-ConsentSIHCE.md) | Preferencias de privacidad del paciente en la red SIHCE (FHIR R5). Etapa 1: decision permit/deny (opt-in/out general). Etapa 2: provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito). |
+| [ Consentimiento de paciente SIHCE  ](StructureDefinition-ConsentSIHCE.md) | Preferencias de privacidad del paciente en la red SIHCE (FHIR R4). Etapa 1: provision.type permit/deny (opt-in/out general). Etapa 2: provision.provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito). |
 | [ Dispensa de receta SIHCE  ](StructureDefinition-MedicationDispenseRecetaSIHCE.md) | Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen. |
 | [ Informe de laboratorio SIHCE  ](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) | DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas. |
 | [ Medicación al alta epicrisis SIHCE  ](StructureDefinition-MedicationStatementEpicrisisSIHCE.md) | Medicamento declarado en la sección de medicamentos al alta (nivel 3). |
@@ -100,8 +100,8 @@ These define transformations to convert between codes by systems conforming with
 
 | | |
 | :--- | :--- |
-| [ BuscarPersona: modelo lógico a FHIR  ](ConceptMap-BuscarPersonaModeloAFHIR.md) | Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R5). |
-| [ Consentimiento: modelo lógico a FHIR  ](ConceptMap-ConsentimientoModeloAFHIR.md) | Mapeo del registro de consentimiento del paciente a Consent SIHCE. |
+| [ BuscarPersona: modelo lógico a FHIR  ](ConceptMap-BuscarPersonaModeloAFHIR.md) | Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4). |
+| [ Consentimiento: modelo lógico a FHIR  ](ConceptMap-ConsentimientoModeloAFHIR.md) | Mapeo del registro de consentimiento del paciente a Consent SIHCE (FHIR R4). |
 | [ DispensaReceta: modelo lógico a FHIR  ](ConceptMap-DispensaRecetaModeloAFHIR.md) | Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE. |
 | [ DocumentoClinico: modelo lógico a FHIR  ](ConceptMap-DocumentoClinicoModeloAFHIR.md) | Mapeo del registro de documento clínico a DocumentReference SIHCE. |
 | [ Epicrisis: modelo lógico a FHIR  ](ConceptMap-EpicrisisModeloAFHIR.md) | Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3). |

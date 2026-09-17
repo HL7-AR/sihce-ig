@@ -1,4 +1,4 @@
-# Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF) - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

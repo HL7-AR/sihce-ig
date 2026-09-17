@@ -1,4 +1,4 @@
-# DispensaReceta: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# DispensaReceta: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR | *Version*:2.0.0 |
 | Draft as of 2026-09-15 | *Computable Name*:DispensaRecetaModeloAFHIR |
 
  
@@ -23,7 +23,7 @@ Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE.
   "resourceType" : "ConceptMap",
   "id" : "DispensaRecetaModeloAFHIR",
   "url" : "http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "DispensaRecetaModeloAFHIR",
   "title" : "DispensaReceta: modelo lógico a FHIR",
   "status" : "draft",
@@ -45,35 +45,35 @@ Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE.
       "code" : "DispensaReceta.cuir",
       "target" : [{
         "code" : "MedicationDispense.authorizingPrescription",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DispensaReceta.cuilPaciente",
       "target" : [{
         "code" : "MedicationDispense.subject",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DispensaReceta.fechaDispensa",
       "target" : [{
         "code" : "MedicationDispense.whenHandedOver",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DispensaReceta.idFarmacia",
       "target" : [{
         "code" : "MedicationDispense.performer",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DispensaReceta.nombreFarmacia",
       "target" : [{
         "code" : "MedicationDispense.performer",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   }]

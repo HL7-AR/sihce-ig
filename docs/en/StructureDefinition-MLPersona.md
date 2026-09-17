@@ -1,4 +1,4 @@
-# Modelo Lógico de Persona para SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Modelo Lógico de Persona para SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MLPersona | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MLPersona | *Version*:2.0.0 |
 | Draft as of 2026-04-24 | *Computable Name*:MLPersona |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "MLPersona",
   "url" : "http://sihce.gob.ar/StructureDefinition/MLPersona",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "MLPersona",
   "title" : "Modelo Lógico de Persona para SIHCE",
   "status" : "draft",
@@ -51,17 +51,12 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
     }]
   }],
   "description" : "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "mlpersona-to-sihce",
     "uri" : "http://hl7.org/fhir/StructureDefinition/Patient",
     "name" : "Mapping del Modelo Lógico MLPersona al perfil PacienteSIHCE",
     "comment" : "Mapeo entre el modelo lógico MLPersona y el perfil Patient SIHCE"
-  },
-  {
-    "identity" : "rim",
-    "uri" : "http://hl7.org/v3",
-    "name" : "RIM Mapping"
   }],
   "kind" : "logical",
   "abstract" : false,

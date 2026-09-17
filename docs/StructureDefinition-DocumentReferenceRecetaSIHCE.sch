@@ -81,11 +81,6 @@
       <sch:assert test="count(f:hash) &lt;= 1">hash: maximum cardinality of 'hash' is 1</sch:assert>
       <sch:assert test="count(f:title) &lt;= 1">title: maximum cardinality of 'title' is 1</sch:assert>
       <sch:assert test="count(f:creation) &lt;= 1">creation: maximum cardinality of 'creation' is 1</sch:assert>
-      <sch:assert test="count(f:height) &lt;= 1">height: maximum cardinality of 'height' is 1</sch:assert>
-      <sch:assert test="count(f:width) &lt;= 1">width: maximum cardinality of 'width' is 1</sch:assert>
-      <sch:assert test="count(f:frames) &lt;= 1">frames: maximum cardinality of 'frames' is 1</sch:assert>
-      <sch:assert test="count(f:duration) &lt;= 1">duration: maximum cardinality of 'duration' is 1</sch:assert>
-      <sch:assert test="count(f:pages) &lt;= 1">pages: maximum cardinality of 'pages' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

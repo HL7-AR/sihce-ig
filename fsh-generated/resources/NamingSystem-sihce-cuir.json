@@ -1,8 +1,6 @@
 {
   "resourceType": "NamingSystem",
   "id": "sihce-cuir",
-  "url": "http://sihce.gob.ar/NamingSystem/sihce-cuir",
-  "title": "NamingSystem CUIR (código único de receta)",
   "description": "Código Único de Identificación de Receta (CUIR). Se usa como DocumentReference.identifier y MedicationRequest.identifier.",
   "name": "SihceCuir",
   "status": "active",

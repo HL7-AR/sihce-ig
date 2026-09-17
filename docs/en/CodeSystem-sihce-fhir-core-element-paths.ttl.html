@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE - TTL Representation - Guía de Implementación SIHCE - FHIR R5 v1.6.0</title>
+    <title>Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -57,9 +57,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R5</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">1.6.0 - 
+            <span style="display:inline-block;">2.0.0 - 
 
 
             </span>
@@ -98,7 +98,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R5/index.html">FHIR</a>
+            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <!-- menu.xml  -->
 
@@ -159,7 +159,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R5 - Local Development build (v1.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -218,7 +218,7 @@
           
 
             as of 
-2026-09-16
+2026-09-17
 
           
         
@@ -245,133 +245,133 @@
 # - resource -------------------------------------------------------------------
 
  a fhir:CodeSystem ;
-  <a href="https://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="https://hl7.org/fhir/R5/resource.html#XCodeSystem.id">fhir:id</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> &quot;sihce-fhir-core-element-paths&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/resource.html#XCodeSystem.language">fhir:language</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;en&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/domainresource.html#XCodeSystem.text">fhir:text</a> [
-<a href="https://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="https://hl7.org/fhir/R5/narrative.html#Narrative#XNarrative.div">fhir:div</a> [ <a href="https://hl7.org/fhir/R5/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem sihce-fhir-core-element-paths&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;sihce-fhir-core-element-paths\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsihce-fhir-core-element-paths\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.identifier&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46identifier\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.name&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46name\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.gender&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46gender\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.birthDate&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46birthDate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.deceased[x]&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46deceased.91x.93\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Organization&lt;a name=\&quot;sihce-fhir-core-element-paths-Organization\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Organization.identifier&lt;a name=\&quot;sihce-fhir-core-element-paths-Organization.46identifier\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OperationOutcome.issue&lt;a name=\&quot;sihce-fhir-core-element-paths-OperationOutcome.46issue\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.identifier&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46identifier\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.type&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46type\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.subject&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46subject\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.date&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46date\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.content&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46content\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.custodian&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46custodian\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Composition.section&lt;a name=\&quot;sihce-fhir-core-element-paths-Composition.46section\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Condition.code&lt;a name=\&quot;sihce-fhir-core-element-paths-Condition.46code\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationStatement.medication&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationStatement.46medication\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.code&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46code\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.subject&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46subject\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.issued&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46issued\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.presentedForm&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46presentedForm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.result&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46result\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Observation.code&lt;a name=\&quot;sihce-fhir-core-element-paths-Observation.46code\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Observation.value[x]&lt;a name=\&quot;sihce-fhir-core-element-paths-Observation.46value.91x.93\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Consent.subject&lt;a name=\&quot;sihce-fhir-core-element-paths-Consent.46subject\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Consent.date&lt;a name=\&quot;sihce-fhir-core-element-paths-Consent.46date\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Consent.decision&lt;a name=\&quot;sihce-fhir-core-element-paths-Consent.46decision\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Consent.provision&lt;a name=\&quot;sihce-fhir-core-element-paths-Consent.46provision\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.extension&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46extension\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationDispense.authorizingPrescription&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationDispense.46authorizingPrescription\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationDispense.subject&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationDispense.46subject\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationDispense.whenHandedOver&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationDispense.46whenHandedOver\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationDispense.performer&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationDispense.46performer\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+  <a href="https://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="https://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:id</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sihce-fhir-core-element-paths&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/resource.html#CodeSystem.language">fhir:language</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;en&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">fhir:text</a> [
+<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="https://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem sihce-fhir-core-element-paths&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;sihce-fhir-core-element-paths\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsihce-fhir-core-element-paths\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.identifier&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46identifier\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.name&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46name\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.gender&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46gender\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.birthDate&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46birthDate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Patient.deceased[x]&lt;a name=\&quot;sihce-fhir-core-element-paths-Patient.46deceased.91x.93\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Organization&lt;a name=\&quot;sihce-fhir-core-element-paths-Organization\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Organization.identifier&lt;a name=\&quot;sihce-fhir-core-element-paths-Organization.46identifier\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OperationOutcome.issue&lt;a name=\&quot;sihce-fhir-core-element-paths-OperationOutcome.46issue\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.identifier&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46identifier\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.type&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46type\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.subject&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46subject\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.date&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46date\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.content&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46content\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.custodian&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46custodian\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Composition.section&lt;a name=\&quot;sihce-fhir-core-element-paths-Composition.46section\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Condition.code&lt;a name=\&quot;sihce-fhir-core-element-paths-Condition.46code\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationStatement.medication&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationStatement.46medication\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.code&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46code\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.subject&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46subject\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.issued&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46issued\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.presentedForm&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46presentedForm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DiagnosticReport.result&lt;a name=\&quot;sihce-fhir-core-element-paths-DiagnosticReport.46result\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Observation.code&lt;a name=\&quot;sihce-fhir-core-element-paths-Observation.46code\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Observation.value[x]&lt;a name=\&quot;sihce-fhir-core-element-paths-Observation.46value.91x.93\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Consent.patient&lt;a name=\&quot;sihce-fhir-core-element-paths-Consent.46patient\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Consent.dateTime&lt;a name=\&quot;sihce-fhir-core-element-paths-Consent.46dateTime\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Consent.provision.type&lt;a name=\&quot;sihce-fhir-core-element-paths-Consent.46provision.46type\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;Consent.provision&lt;a name=\&quot;sihce-fhir-core-element-paths-Consent.46provision\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DocumentReference.extension&lt;a name=\&quot;sihce-fhir-core-element-paths-DocumentReference.46extension\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationDispense.authorizingPrescription&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationDispense.46authorizingPrescription\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationDispense.subject&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationDispense.46subject\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationDispense.whenHandedOver&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationDispense.46whenHandedOver\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MedicationDispense.performer&lt;a name=\&quot;sihce-fhir-core-element-paths-MedicationDispense.46performer\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.url">fhir:url</a> [
-<a href="https://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&quot;^^xsd:anyURI ;
-<a href="https://hl7.org/fhir/R5/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&gt;
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&quot;^^xsd:anyURI ;
+<a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths&gt;
   ] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.version">fhir:version</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;1.6.0&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;SIHCEFhirCoreElementPaths&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.title">fhir:title</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.experimental">fhir:experimental</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> false] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.date">fhir:date</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> &quot;2026-09-16T14:49:36-03:00&quot;^^xsd:dateTime] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.publisher">fhir:publisher</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.contact">fhir:contact</a> ( [
-<a href="https://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot; ] ;
-    ( <a href="https://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#XContactDetail.telecom">fhir:telecom</a> [
-<a href="https://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.system">fhir:system</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
-<a href="https://hl7.org/fhir/R5/datatypes.html#ContactPoint#XContactPoint.value">fhir:value</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;https://github.com/diegokaminker/sihce-ig&quot; ]     ] )
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2.0.0&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SIHCEFhirCoreElementPaths&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-09-17T09:51:31-03:00&quot;^^xsd:dateTime] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="https://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SIHCE Development Team&quot; ] ;
+    ( <a href="https://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="https://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="https://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://github.com/diegokaminker/sihce-ig&quot; ]     ] )
   ] ) ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.description">fhir:description</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> &quot;Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> true] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.content">fhir:content</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.count">fhir:count</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#unsignedInt">fhir:v</a> &quot;33&quot;^^xsd:nonNegativeInteger] ; # 
-  <a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept">fhir:concept</a> ( [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Patient.identifier&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient.identifier&quot; ]
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;33&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.identifier&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient.identifier&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Patient.name&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient.name&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.name&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient.name&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Patient.gender&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient.gender&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.gender&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient.gender&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Patient.birthDate&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient.birthDate&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.birthDate&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient.birthDate&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Patient.deceased[x]&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Patient.deceased[x]&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Patient.deceased[x]&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient.deceased[x]&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Organization&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organization&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Organization&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Organization&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Organization.identifier&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Organization.identifier&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Organization.identifier&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Organization.identifier&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;OperationOutcome.issue&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;OperationOutcome.issue&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;OperationOutcome.issue&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;OperationOutcome.issue&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.identifier&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DocumentReference.identifier&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.identifier&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference.identifier&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.type&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DocumentReference.type&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.type&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference.type&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.subject&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DocumentReference.subject&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.subject&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference.subject&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.date&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DocumentReference.date&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.date&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference.date&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.content&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DocumentReference.content&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.content&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference.content&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.custodian&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DocumentReference.custodian&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.custodian&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference.custodian&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Composition.section&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Composition.section&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Composition.section&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Composition.section&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Condition.code&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Condition.code&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Condition.code&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition.code&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;MedicationStatement.medication&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationStatement.medication&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MedicationStatement.medication&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MedicationStatement.medication&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.code&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.code&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.code&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.code&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.subject&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.subject&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.subject&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.subject&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.issued&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.issued&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.issued&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.issued&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.presentedForm&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.presentedForm&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.presentedForm&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.presentedForm&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.result&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.result&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DiagnosticReport.result&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DiagnosticReport.result&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Observation.code&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Observation.code&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Observation.code&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation.code&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Observation.value[x]&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Observation.value[x]&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Observation.value[x]&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation.value[x]&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Consent.subject&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Consent.subject&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Consent.patient&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Consent.patient&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Consent.date&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Consent.date&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Consent.dateTime&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Consent.dateTime&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Consent.decision&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Consent.decision&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Consent.provision.type&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Consent.provision.type&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;Consent.provision&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;Consent.provision&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Consent.provision&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Consent.provision&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;DocumentReference.extension&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;DocumentReference.extension&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DocumentReference.extension&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference.extension&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;MedicationDispense.authorizingPrescription&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationDispense.authorizingPrescription&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MedicationDispense.authorizingPrescription&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MedicationDispense.authorizingPrescription&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;MedicationDispense.subject&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationDispense.subject&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MedicationDispense.subject&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MedicationDispense.subject&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;MedicationDispense.whenHandedOver&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationDispense.whenHandedOver&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MedicationDispense.whenHandedOver&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MedicationDispense.whenHandedOver&quot; ]
   ] [
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> &quot;MedicationDispense.performer&quot; ] ;
-<a href="https://hl7.org/fhir/R5/codesystem.html#XCodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> &quot;MedicationDispense.performer&quot; ]
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;MedicationDispense.performer&quot; ] ;
+<a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MedicationDispense.performer&quot; ]
   ] ) . # 
 
 </code></pre>
@@ -404,8 +404,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#1.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R5/">FHIR 5.0.0</a>.
-          Generated <span title="Wed, Sep 16, 2026 14:49-0300">2026-09-16</span>
+          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Sep 17, 2026 09:51-0300">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

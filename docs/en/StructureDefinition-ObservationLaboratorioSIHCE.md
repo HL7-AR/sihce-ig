@@ -1,4 +1,4 @@
-# Observación de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Observación de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE | *Version*:2.0.0 |
 | Draft as of 2026-06-09 | *Computable Name*:ObservationLaboratorioSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-ObservationLabora
   "resourceType" : "StructureDefinition",
   "id" : "ObservationLaboratorioSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "ObservationLaboratorioSIHCE",
   "title" : "Observación de laboratorio SIHCE",
   "status" : "draft",
@@ -51,16 +51,11 @@ Other representations of profile: [CSV](../StructureDefinition-ObservationLabora
     }]
   }],
   "description" : "Resultado analítico codificado (LOINC) asociado a un informe de laboratorio nivel 2.",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
-  },
-  {
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
   },
   {
     "identity" : "sct-concept",
@@ -70,12 +65,17 @@ Other representations of profile: [CSV](../StructureDefinition-ObservationLabora
   {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 V2 Mapping"
+    "name" : "HL7 v2 Mapping"
   },
   {
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
   },
   {
     "identity" : "sct-attr",

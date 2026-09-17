@@ -21,7 +21,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -30,7 +30,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -39,7 +39,7 @@
           "target": [
             {
               "code": "Patient.gender",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -48,7 +48,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -57,7 +57,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -66,7 +66,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -75,7 +75,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -84,7 +84,7 @@
           "target": [
             {
               "code": "Patient.birthDate",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -93,7 +93,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent",
+              "equivalence": "equivalent",
               "comment": "URI del dominio en slice idDominio."
             }
           ]
@@ -103,7 +103,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -112,7 +112,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         }
@@ -127,7 +127,7 @@
           "target": [
             {
               "code": "OperationOutcome.issue",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         }

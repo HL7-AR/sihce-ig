@@ -17,7 +17,7 @@
      fhir:v "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR>
   ] ; # 
-  fhir:version [ fhir:v "1.6.0"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "FederarPersonaModeloAFHIR"] ; # 
   fhir:title [ fhir:v "FederarPersona: modelo lógico a FHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
@@ -46,67 +46,67 @@
        fhir:code [ fhir:v "FederarPersona.datosPersona.tipoDocumento" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosPersona.documentoIdentificatorio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosPersona.sexo" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.gender" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosPersona.primerNombre" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosPersona.segundoNombre" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosPersona.primerApellido" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosPersona.segundoApellido" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.name" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosPersona.fechaNacimiento" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.birthDate" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosDominio.idLocalPersona" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosDominio.idDominio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosFederacion.idPersonaGlobal" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Patient.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
          fhir:comment [ fhir:v "Identificador maestro / global según política del FederadorBA (p. ej. identifier adicional)." ]
        ] )
      ] )
@@ -123,13 +123,13 @@
        fhir:code [ fhir:v "FederarPersona.datosDominio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Organization" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] [
        fhir:code [ fhir:v "FederarPersona.datosDominio.idDominio" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "Organization.identifier" ] ;
-         fhir:relationship [ fhir:v "equivalent" ]
+         fhir:equivalence [ fhir:v "equivalent" ]
        ] )
      ] )
   ] [
@@ -145,7 +145,7 @@
        fhir:code [ fhir:v "FederarPersona.datosFederacion.mensaje" ] ;
        fhir:target ( [
          fhir:code [ fhir:v "OperationOutcome.issue" ] ;
-         fhir:relationship [ fhir:v "equivalent" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
          fhir:comment [ fhir:v "Texto informativo o de error en respuesta de operación." ]
        ] )
      ] )

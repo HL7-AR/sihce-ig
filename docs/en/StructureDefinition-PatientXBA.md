@@ -1,4 +1,4 @@
-# Paciente SIHCE (PatientXBA) - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Paciente SIHCE (PatientXBA) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/PatientXBA | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/PatientXBA | *Version*:2.0.0 |
 | Draft as of 2025-02-28 | *Computable Name*:PacienteSIHCE |
 
  
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "PatientXBA",
   "url" : "http://sihce.gob.ar/StructureDefinition/PatientXBA",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "PacienteSIHCE",
   "title" : "Paciente SIHCE (PatientXBA)",
   "status" : "draft",
@@ -52,21 +52,11 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
     }]
   }],
   "description" : "Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación)",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
-  },
-  {
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
-  },
-  {
-    "identity" : "interface",
-    "uri" : "http://hl7.org/fhir/interface",
-    "name" : "Interface Pattern"
   },
   {
     "identity" : "cda",
@@ -74,9 +64,14 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
     "name" : "CDA (R2)"
   },
   {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 V2 Mapping"
+    "name" : "HL7 v2 Mapping"
   },
   {
     "identity" : "loinc",

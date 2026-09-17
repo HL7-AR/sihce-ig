@@ -24,7 +24,8 @@ Description: "Medicamento declarado en la sección de medicamentos al alta (nive
 * ^date = "2026-06-09T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * status 1..1 MS
-* medication 1..1 MS
+* medication[x] only CodeableConcept
+* medicationCodeableConcept 1..1 MS
 * subject 1..1 MS
 * subject only Reference(Patient)
 

@@ -7,7 +7,7 @@
   "title": "Modelo lógico RecetaIndice (SIHCE)",
   "status": "draft",
   "description": "Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE.",
-  "fhirVersion": "5.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "logical",
   "abstract": false,
   "type": "http://sihce.gob.ar/StructureDefinition/RecetaIndice",

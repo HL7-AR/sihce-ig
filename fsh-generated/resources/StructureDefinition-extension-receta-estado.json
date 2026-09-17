@@ -1,19 +1,13 @@
 {
   "resourceType": "StructureDefinition",
   "id": "extension-receta-estado",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
-      "valueCode": "can-bind"
-    }
-  ],
   "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-estado",
   "version": "1.6.0",
   "name": "ExtensionRecetaEstado",
   "title": "Estado de receta en índice SIHCE",
   "status": "draft",
   "description": "Estado vigente/dispensada/anulada del índice de receta (anti-quema).",
-  "fhirVersion": "5.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [

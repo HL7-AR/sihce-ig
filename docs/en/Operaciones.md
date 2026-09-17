@@ -1,4 +1,4 @@
-# Operaciones - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * **Operaciones**
@@ -26,7 +26,7 @@ En todas las operaciones de la colección se envían estos headers:
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| Búsqueda de paciente por identificador y género | GET | `/Patient?identifier={system|value}&gender={code}` | Consulta pacientes por identificador y género (criterios estándar FHIR R5). |
+| Búsqueda de paciente por identificador y género | GET | `/Patient?identifier={system|value}&gender={code}` | Consulta pacientes por identificador y género (criterios estándar FHIR R4). |
 | Alta/Federación de paciente | POST | `/Patient` | Envía un recurso`Patient`conforme al perfil[PatientXBA](StructureDefinition-PatientXBA.md). |
 | Actualización de identificador local | POST | `/Patient/$patch-identifier` | Actualiza el identificador local usando`Parameters`. |
 | Actualización de SDM | POST | `/Patient/$update-sdm` | Actualiza datos mínimos del paciente mediante operación FHIR personalizada. |
@@ -38,19 +38,19 @@ En todas las operaciones de la colección se envían estos headers:
 | Obtención de detalle de receta | GET | `/Proxy/MedicationRequest/{id}` | Broker/proxy hacia el repositorio de origen (o lectura local si repositorio delegado). |
 | Notificación de dispensa | POST | `/MedicationDispense` | Evento de dispensa ([MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.md)); actualiza índice a dispensada. |
 | Registro de consentimiento | POST | `/Consent` | Registra preferencias de privacidad del paciente ([ConsentSIHCE](StructureDefinition-ConsentSIHCE.md)). |
-| Consulta de consentimiento | GET | `/Consent?subject.identifier={system|value}&status=active` | Consulta el consentimiento vigente del paciente. |
+| Consulta de consentimiento | GET | `/Consent?patient.identifier={system|value}&status=active` | Consulta el consentimiento vigente del paciente. |
 | Actualización de consentimiento | PUT | `/Consent/{id}` | Nueva versión (opt-out, ampliación por hospital o nivel). |
 
 ### Búsqueda por identificador y género
 
-Interacción estándar de búsqueda FHIR R5 sobre el recurso `Patient` ([search](https://hl7.org/fhir/R5/patient.html#search)).
+Interacción estándar de búsqueda FHIR R4 sobre el recurso `Patient` ([search](https://hl7.org/fhir/R4/patient.html#search)).
 
 #### Parámetros de búsqueda
 
 | | | | |
 | :--- | :--- | :--- | :--- |
 | `identifier` | Requerido | token (`system|value`o solo`value`si el sistema es implícito) | Identificador del paciente. Ejemplo de sistema nacional:`http://renaper.gob.ar/dni`. Ver[NamingSystem renaper-dni](NamingSystem-renaper-dni.md). |
-| `gender` | Requerido | token (código de[AdministrativeGender](https://hl7.org/fhir/R5/codesystem-administrative-gender.html)) | Género administrativo del paciente (`male`,`female`,`other`,`unknown`). |
+| `gender` | Requerido | token (código de[AdministrativeGender](https://hl7.org/fhir/R4/codesystem-administrative-gender.html)) | Género administrativo del paciente (`male`,`female`,`other`,`unknown`). |
 
 Otros parámetros de búsqueda definidos en la especificación base de FHIR para `Patient` pueden estar soportados o no según el despliegue; para esta guía se documentan explícitamente los criterios anteriores por ser los utilizados en los casos de uso de SIHCE.
 
@@ -63,7 +63,7 @@ GET /Patient?identifier=http://renaper.gob.ar/dni|24068773&gender=male
 
 #### Respuesta esperada
 
-`200 OK` con un [Bundle](https://hl7.org/fhir/R5/bundle.html) de tipo `searchset` que contiene cero o más recursos `Patient` coincidentes.
+`200 OK` con un [Bundle](https://hl7.org/fhir/R4/bundle.html) de tipo `searchset` que contiene cero o más recursos `Patient` coincidentes.
 
 ### Alta/Federación de paciente
 
@@ -426,7 +426,7 @@ Ejemplo equivalente para **informe de laboratorio** (índice → DiagnosticRepor
 
 ### Consulta de documentos clínicos (ITI-67)
 
-Búsqueda FHIR R5 sobre `DocumentReference` ([search](https://hl7.org/fhir/R5/documentreference.html#search)). Corresponde a **ITI-67** (query de metadatos documentales en el índice central). El índice lo responde la capacidad de **registro documental** de SIHCE. La solicitud viaja por el **Canal X-BA**.
+Búsqueda FHIR R4 sobre `DocumentReference` ([search](https://hl7.org/fhir/R4/documentreference.html#search)). Corresponde a **ITI-67** (query de metadatos documentales en el índice central). El índice lo responde la capacidad de **registro documental** de SIHCE. La solicitud viaja por el **Canal X-BA**.
 
 **Prerrequisito:** SIHCE Core evalúa el consentimiento del paciente en el **Motor Central de Consentimientos (MCC)** — recurso [`Consent`](StructureDefinition-ConsentSIHCE.md) persistido en SIHCE. Sin consentimiento activo (ALLOW) → **403 Forbidden**. Ver [Registro de consentimiento](#op-consentimiento).
 
@@ -468,7 +468,7 @@ Claims JWT recomendados para acceso documental (además de autenticación de dom
 
 #### Respuesta esperada
 
-`200 OK` con un [Bundle](https://hl7.org/fhir/R5/bundle.html) tipo `searchset`. Cada `DocumentReference` incluye `content.attachment.url` con la **URL del Proxy Central** (no la URL del hospital custodio). SIHCE filtra entradas según el nivel de privacidad otorgado al hospital (`normal` / `confidential`).
+`200 OK` con un [Bundle](https://hl7.org/fhir/R4/bundle.html) tipo `searchset`. Cada `DocumentReference` incluye `content.attachment.url` con la **URL del Proxy Central** (no la URL del hospital custodio). SIHCE filtra entradas según el nivel de privacidad otorgado al hospital (`normal` / `confidential`).
 
 Fragmento de ejemplo:
 
@@ -639,16 +639,17 @@ Cualquier **dominio autenticado** puede registrar las preferencias de privacidad
 
 | | | |
 | :--- | :--- | :--- |
-| 1 | Opt-in / opt-out**general**(`decision`=`permit`|`deny`) | MVP |
-| 2 | Opt-in por**hospital**(`provision`+`actor`Organization) | Incremento |
-| 3 | Hospital +**nivel de privacidad**(`provision.securityLabel`:`normal`|`confidential`,**obligatorio y explícito**) | Completo |
+| 1 | Opt-in / opt-out**general**(`provision.type`=`permit`|`deny`) | MVP |
+| 2 | Opt-in por**hospital**(`provision.provision`+`actor`Organization, con`actor.role`) | Incremento |
+| 3 | Hospital +**nivel de privacidad**(`provision.provision.securityLabel`:`normal`|`confidential`,**obligatorio y explícito**) | Completo |
 
 **Reglas:**
 
-* Opt-out general (`decision` = `deny`) **anula** autorizaciones previas.
+* Opt-out general (`provision.type` = `deny`) **anula** autorizaciones previas.
 * Un opt-in posterior **solo habilita** lo declarado en la nueva versión.
 * Vigencia hasta **revocación**; cada PUT/POST crea **versión** (`meta.versionId`).
 * Hospital = `Organization` **dentro** del dominio: `identifier.system` = `{uri-dominio}/Organization`, `identifier.value` = id local. Ver [NamingSystem Organization hospital MSGC (ejemplo)](NamingSystem-NamingSystemOrganizationHospitalMsgc.md).
+* R4 exige `scope` = `patient-privacy` y `actor.role` (p. ej. `IRCP`) en autorizaciones por hospital.
 
 #### Niveles de privacidad (etapa 3)
 
@@ -672,10 +673,11 @@ Content-Type: application/fhir+json
   "resourceType": "Consent",
   "meta": { "profile": ["http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"] },
   "status": "active",
+  "scope": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/consentscope", "code": "patient-privacy" }] },
   "category": [{ "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/consent-category", "code": "healthcare" }] }],
-  "subject": { "reference": "Patient/PersonaSIHCEMin" },
-  "date": "2026-08-26",
-  "decision": "permit"
+  "patient": { "reference": "Patient/PersonaSIHCEMin" },
+  "dateTime": "2026-08-26",
+  "provision": { "type": "permit" }
 }
 
 ```
@@ -691,7 +693,7 @@ Ver [ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfiden
 #### Consulta (GET /Consent)
 
 ```
-GET /Consent?subject.identifier=http://sihce.gob.ar/persona|987654321&status=active
+GET /Consent?patient.identifier=http://sihce.gob.ar/persona|987654321&status=active
 
 ```
 

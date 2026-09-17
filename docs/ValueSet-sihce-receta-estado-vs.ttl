@@ -11,18 +11,18 @@
   fhir:id [ fhir:v "sihce-receta-estado-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-receta-estado-vs</b></p><a name=\"sihce-receta-estado-vs\"> </a><a name=\"hcsihce-receta-estado-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-receta-estado.html\"><code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.6.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-receta-estado-vs</b></p><a name=\"sihce-receta-estado-vs\"> </a><a name=\"hcsihce-receta-estado-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-receta-estado.html\"><code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.0.0</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://sihce.gob.ar/ValueSet/sihce-receta-estado"^^xsd:anyURI ;
      fhir:l <http://sihce.gob.ar/ValueSet/sihce-receta-estado>
   ] ; # 
-  fhir:version [ fhir:v "1.6.0"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "SIHCERecetaEstadoVS"] ; # 
   fhir:title [ fhir:v "Estados de receta SIHCE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-09-16T14:49:36-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-09-17T09:51:31-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SIHCE Development Team"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SIHCE Development Team" ] ;

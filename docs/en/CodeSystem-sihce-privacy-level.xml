@@ -7,12 +7,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem sihce-privacy-level</b></p><a name="sihce-privacy-level"> </a><a name="hcsihce-privacy-level"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/privacy-level</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">normal<a name="sihce-privacy-level-normal"> </a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td></tr><tr><td style="white-space:nowrap">confidential<a name="sihce-privacy-level-confidential"> </a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td></tr></table></div>
   </text>
   <url value="http://sihce.gob.ar/CodeSystem/privacy-level"/>
-  <version value="1.6.0"/>
+  <version value="2.0.0"/>
   <name value="SIHCEPrivacyLevelCS"/>
   <title value="Niveles de privacidad SIHCE"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-09-16T14:49:36-03:00"/>
+  <date value="2026-09-17T09:51:31-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>

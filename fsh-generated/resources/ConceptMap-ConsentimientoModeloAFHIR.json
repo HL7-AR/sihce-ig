@@ -3,12 +3,12 @@
   "id": "ConsentimientoModeloAFHIR",
   "url": "http://sihce.gob.ar/ConceptMap/ConsentimientoModeloAFHIR",
   "title": "Consentimiento: modelo lógico a FHIR",
-  "description": "Mapeo del registro de consentimiento del paciente a Consent SIHCE.",
-  "version": "1.4.0",
+  "description": "Mapeo del registro de consentimiento del paciente a Consent SIHCE (FHIR R4).",
+  "version": "2.0.0",
   "name": "ConsentimientoModeloAFHIR",
   "status": "draft",
   "experimental": true,
-  "date": "2026-08-26",
+  "date": "2026-09-17",
   "publisher": "SIHCE Development Team",
   "group": [
     {
@@ -19,8 +19,8 @@
           "code": "Consentimiento.datosPaciente.idPersonaGlobal",
           "target": [
             {
-              "code": "Consent.subject",
-              "relationship": "equivalent"
+              "code": "Consent.patient",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -28,8 +28,8 @@
           "code": "Consentimiento.datosConsentimiento.participacionGeneral",
           "target": [
             {
-              "code": "Consent.decision",
-              "relationship": "equivalent"
+              "code": "Consent.provision.type",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -37,8 +37,8 @@
           "code": "Consentimiento.datosConsentimiento.fechaRegistro",
           "target": [
             {
-              "code": "Consent.date",
-              "relationship": "equivalent"
+              "code": "Consent.dateTime",
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -47,8 +47,8 @@
           "target": [
             {
               "code": "Consent.provision",
-              "relationship": "equivalent",
-              "comment": "Concatenado con idHospital en actor.reference.identifier."
+              "equivalence": "equivalent",
+              "comment": "Concatenado con idHospital en provision.provision.actor.reference.identifier (R4 nested)."
             }
           ]
         },
@@ -57,7 +57,7 @@
           "target": [
             {
               "code": "Consent.provision",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -66,7 +66,7 @@
           "target": [
             {
               "code": "Consent.provision",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -75,7 +75,7 @@
           "target": [
             {
               "code": "Consent.provision",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         }

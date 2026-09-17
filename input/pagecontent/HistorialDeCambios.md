@@ -1,3 +1,11 @@
+### Versión 2.0.0
+
+- **Downgrade a FHIR R4.0.1** (breaking): la guía deja de basarse en FHIR R5.
+- **Consent:** `subject`→`patient`, `date`→`dateTime`, `decision`→`provision.type`; `scope` obligatorio; autorizaciones de hospital en `provision.provision` anidadas con `actor.role`.
+- **Medicación:** `MedicationRequest` / `MedicationDispense` / `MedicationStatement` usan `medicationCodeableConcept` (ya no `medication.concept` de R5).
+- **ConceptMaps:** `relationship` (R5) reemplazado por `equivalence` (R4); paths de Consent actualizados.
+- Implementadores que consumían v1.x R5 deben migrar payloads de Consent y medicación.
+
 ### Versión 1.6.0
 
 - **Receta electrónica (CPE):** casos de uso 2 (SIGEHOS → farmacia privada) y 3 (privado → farmacia, con/sin repositorio delegado).

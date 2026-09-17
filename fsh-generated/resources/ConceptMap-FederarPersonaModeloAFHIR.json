@@ -21,7 +21,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -30,7 +30,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -39,7 +39,7 @@
           "target": [
             {
               "code": "Patient.gender",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -48,7 +48,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -57,7 +57,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -66,7 +66,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -75,7 +75,7 @@
           "target": [
             {
               "code": "Patient.name",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -84,7 +84,7 @@
           "target": [
             {
               "code": "Patient.birthDate",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -93,7 +93,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -102,7 +102,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -111,7 +111,7 @@
           "target": [
             {
               "code": "Patient.identifier",
-              "relationship": "equivalent",
+              "equivalence": "equivalent",
               "comment": "Identificador maestro / global según política del FederadorBA (p. ej. identifier adicional)."
             }
           ]
@@ -127,7 +127,7 @@
           "target": [
             {
               "code": "Organization",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         },
@@ -136,7 +136,7 @@
           "target": [
             {
               "code": "Organization.identifier",
-              "relationship": "equivalent"
+              "equivalence": "equivalent"
             }
           ]
         }
@@ -151,7 +151,7 @@
           "target": [
             {
               "code": "OperationOutcome.issue",
-              "relationship": "equivalent",
+              "equivalence": "equivalent",
               "comment": "Texto informativo o de error en respuesta de operación."
             }
           ]

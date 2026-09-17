@@ -1,4 +1,4 @@
-# Epicrisis nivel 1 — PDF en dominio - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Epicrisis nivel 1 — PDF en dominio - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -18,7 +18,7 @@ Profile: [Referencia a documento clínico SIHCE](StructureDefinition-DocumentRef
 
 **date**: 2026-06-08 14:30:00-0300
 
-**custodian**: Hospital Italiano de Buenos Aires (Identifier: [NamingSystem URI Hospital Italiano (ejemplo FHIR)](NamingSystem-NamingSystemHospitalItalianoFHIR.md)/hospital-italiano)
+**custodian**: Hospital Italiano de Buenos Aires (Identifier: [NamingSystemHospitalItalianoFHIR](NamingSystem-NamingSystemHospitalItalianoFHIR.md)/hospital-italiano)
 
 > **content**
 

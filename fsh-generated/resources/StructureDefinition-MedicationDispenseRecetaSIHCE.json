@@ -2,14 +2,14 @@
   "resourceType": "StructureDefinition",
   "id": "MedicationDispenseRecetaSIHCE",
   "url": "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "name": "MedicationDispenseRecetaSIHCE",
   "title": "Dispensa de receta SIHCE",
   "status": "draft",
-  "date": "2026-09-15T00:00:00-03:00",
+  "date": "2026-09-17T00:00:00-03:00",
   "publisher": "SIHCE Development Team",
   "description": "Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen.",
-  "fhirVersion": "5.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "MedicationDispense",
@@ -24,13 +24,19 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationDispense.medication",
-        "path": "MedicationDispense.medication",
+        "id": "MedicationDispense.medication[x]",
+        "path": "MedicationDispense.medication[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "MedicationDispense.subject",
         "path": "MedicationDispense.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",

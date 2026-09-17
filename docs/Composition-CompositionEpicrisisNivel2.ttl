@@ -32,10 +32,10 @@
        fhir:display [ fhir:v "Discharge summary" ]
      ] )
   ] ; # 
-  fhir:subject ( [
+  fhir:subject [
      fhir:l <http://sihce.gob.ar/Patient/PersonaSIHCEMin> ;
      fhir:reference [ fhir:v "Patient/PersonaSIHCEMin" ]
-  ] ) ; # 
+  ] ; # 
   fhir:date [ fhir:v "2026-06-08T16:00:00-03:00"^^xsd:dateTime] ; # 
   fhir:author ( [
      fhir:l <http://sihce.gob.ar/Organization/hospital-italiano-ejemplo> ;

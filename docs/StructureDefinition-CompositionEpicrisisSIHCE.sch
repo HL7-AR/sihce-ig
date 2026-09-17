@@ -13,7 +13,6 @@
     <sch:title>f:Composition</sch:title>
     <sch:rule context="f:Composition">
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
-      <sch:assert test="count(f:subject) &lt;= 1">subject: maximum cardinality of 'subject' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

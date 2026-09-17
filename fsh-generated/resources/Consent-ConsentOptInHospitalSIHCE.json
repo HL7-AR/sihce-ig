@@ -7,6 +7,14 @@
     ]
   },
   "status": "active",
+  "scope": {
+    "coding": [
+      {
+        "code": "patient-privacy",
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+      }
+    ]
+  },
   "category": [
     {
       "coding": [
@@ -17,25 +25,35 @@
       ]
     }
   ],
-  "provision": [
-    {
-      "actor": [
-        {
-          "reference": {
-            "type": "Organization",
-            "identifier": {
-              "system": "http://msgc.gcba.gob.ar/Organization",
-              "value": "hospital-central-88392"
+  "provision": {
+    "provision": [
+      {
+        "actor": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "code": "IRCP",
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+                }
+              ]
             },
-            "display": "Hospital Central"
+            "reference": {
+              "type": "Organization",
+              "identifier": {
+                "system": "http://msgc.gcba.gob.ar/Organization",
+                "value": "hospital-central-88392"
+              },
+              "display": "Hospital Central"
+            }
           }
-        }
-      ]
-    }
-  ],
-  "subject": {
+        ]
+      }
+    ],
+    "type": "permit"
+  },
+  "patient": {
     "reference": "Patient/PersonaSIHCEMin"
   },
-  "date": "2026-08-26",
-  "decision": "permit"
+  "dateTime": "2026-08-26"
 }

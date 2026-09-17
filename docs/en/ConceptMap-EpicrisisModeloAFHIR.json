@@ -7,7 +7,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap EpicrisisModeloAFHIR</b></p><a name=\"EpicrisisModeloAFHIR\"> </a><a name=\"hcEpicrisisModeloAFHIR\"> </a><p>Mapping from (not specified) to (not specified)</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>Epicrisis.seccion.codigoLoinc (Epicrisis seccion codigoLoinc)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Composition.section</td></tr><tr><td>Epicrisis.seccion.texto (Epicrisis seccion texto)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Composition.section</td></tr></table></div>"
   },
   "url" : "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "EpicrisisModeloAFHIR",
   "title" : "Epicrisis: modelo lógico a FHIR",
   "status" : "draft",
@@ -29,14 +29,14 @@
       "code" : "Epicrisis.seccion.codigoLoinc",
       "target" : [{
         "code" : "Composition.section",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "Epicrisis.seccion.texto",
       "target" : [{
         "code" : "Composition.section",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   }]

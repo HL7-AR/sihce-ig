@@ -1,4 +1,4 @@
-# Informe de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Informe de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE | *Version*:2.0.0 |
 | Draft as of 2026-06-09 | *Computable Name*:DiagnosticReportLaboratorioSIHCE |
 
  
@@ -37,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-DiagnosticReportL
   "resourceType" : "StructureDefinition",
   "id" : "DiagnosticReportLaboratorioSIHCE",
   "url" : "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "DiagnosticReportLaboratorioSIHCE",
   "title" : "Informe de laboratorio SIHCE",
   "status" : "draft",
@@ -51,26 +51,26 @@ Other representations of profile: [CSV](../StructureDefinition-DiagnosticReportL
     }]
   }],
   "description" : "DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas.",
-  "fhirVersion" : "5.0.0",
+  "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
     "uri" : "http://hl7.org/fhir/workflow",
     "name" : "Workflow Pattern"
   },
   {
-    "identity" : "w5",
-    "uri" : "http://hl7.org/fhir/fivews",
-    "name" : "FiveWs Pattern Mapping"
-  },
-  {
     "identity" : "v2",
     "uri" : "http://hl7.org/v2",
-    "name" : "HL7 V2 Mapping"
+    "name" : "HL7 v2 Mapping"
   },
   {
     "identity" : "rim",
     "uri" : "http://hl7.org/v3",
     "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
   }],
   "kind" : "resource",
   "abstract" : false,

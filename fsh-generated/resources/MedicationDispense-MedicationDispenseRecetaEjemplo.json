@@ -7,10 +7,8 @@
     ]
   },
   "status": "completed",
-  "medication": {
-    "concept": {
-      "text": "Amoxicilina 500 mg cápsulas"
-    }
+  "medicationCodeableConcept": {
+    "text": "Amoxicilina 500 mg cápsulas"
   },
   "subject": {
     "reference": "Patient/PersonaSIHCEMin"

@@ -1,4 +1,4 @@
-# NamingSystem CUIL (paciente) - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# NamingSystem CUIL (paciente) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/NamingSystem/sihce-cuil | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/NamingSystem/sihce-cuil | *Version*:2.0.0 |
 | Active as of 2026-09-15 | *Computable Name*:SihceCuil |
 
  
@@ -22,10 +22,15 @@ CUIL del paciente. Criterio de búsqueda en el índice de recetas junto con o en
 {
   "resourceType" : "NamingSystem",
   "id" : "sihce-cuil",
-  "url" : "http://sihce.gob.ar/NamingSystem/sihce-cuil",
-  "version" : "1.6.0",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "http://sihce.gob.ar/NamingSystem/sihce-cuil"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "2.0.0"
+  }],
   "name" : "SihceCuil",
-  "title" : "NamingSystem CUIL (paciente)",
   "status" : "active",
   "kind" : "identifier",
   "date" : "2026-09-15",

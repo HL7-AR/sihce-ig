@@ -1,9 +1,17 @@
-# Historial de Cambios - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * **Historial de Cambios**
 
 ## Historial de Cambios
+
+### Versión 2.0.0
+
+* **Downgrade a FHIR R4.0.1** (breaking): la guía deja de basarse en FHIR R5.
+* **Consent:** `subject`→`patient`, `date`→`dateTime`, `decision`→`provision.type`; `scope` obligatorio; autorizaciones de hospital en `provision.provision` anidadas con `actor.role`.
+* **Medicación:** `MedicationRequest` / `MedicationDispense` / `MedicationStatement` usan `medicationCodeableConcept` (ya no `medication.concept` de R5).
+* **ConceptMaps:** `relationship` (R5) reemplazado por `equivalence` (R4); paths de Consent actualizados.
+* Implementadores que consumían v1.x R5 deben migrar payloads de Consent y medicación.
 
 ### Versión 1.6.0
 

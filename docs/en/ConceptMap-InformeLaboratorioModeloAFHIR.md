@@ -1,4 +1,4 @@
-# InformeLaboratorio: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R5 v1.6.0
+# InformeLaboratorio: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR | *Version*:1.6.0 |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR | *Version*:2.0.0 |
 | Draft as of 2026-06-09 | *Computable Name*:InformeLaboratorioModeloAFHIR |
 
  
@@ -23,7 +23,7 @@ Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport.
   "resourceType" : "ConceptMap",
   "id" : "InformeLaboratorioModeloAFHIR",
   "url" : "http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR",
-  "version" : "1.6.0",
+  "version" : "2.0.0",
   "name" : "InformeLaboratorioModeloAFHIR",
   "title" : "InformeLaboratorio: modelo lógico a FHIR",
   "status" : "draft",
@@ -45,28 +45,28 @@ Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport.
       "code" : "DocumentoClinico.datosDocumento.tipoDocumento",
       "target" : [{
         "code" : "DocumentReference.type",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDocumento.idPersonaGlobal",
       "target" : [{
         "code" : "DocumentReference.subject",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "DocumentoClinico.datosDocumento.urlContenido",
       "target" : [{
         "code" : "DocumentReference.content",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "InformeLaboratorio.nivelMadurez",
       "target" : [{
         "code" : "DiagnosticReport.result",
-        "relationship" : "related-to",
+        "equivalence" : "relatedto",
         "comment" : "Nivel 1: sin result; nivel 2: con Observation en result."
       }]
     },
@@ -74,14 +74,14 @@ Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport.
       "code" : "InformeLaboratorio.resultado.codigoAnalito",
       "target" : [{
         "code" : "Observation.code",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "InformeLaboratorio.resultado.valor",
       "target" : [{
         "code" : "Observation.value[x]",
-        "relationship" : "equivalent"
+        "equivalence" : "equivalent"
       }]
     }]
   }]
