@@ -1,4 +1,4 @@
-# Observación de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Observación de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Resource Profile: Observación de laboratorio SIHCE 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE | *Version*:2.0.0 |
-| Draft as of 2026-06-09 | *Computable Name*:ObservationLaboratorioSIHCE |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE | *Version*:2.1.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:ObservationLaboratorioSIHCE |
 
  
 Resultado analítico codificado (LOINC) asociado a un informe de laboratorio nivel 2. 
@@ -36,8 +36,16 @@ Other representations of profile: [CSV](../StructureDefinition-ObservationLabora
 {
   "resourceType" : "StructureDefinition",
   "id" : "ObservationLaboratorioSIHCE",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ObservationLaboratorioSIHCE",
   "title" : "Observación de laboratorio SIHCE",
   "status" : "draft",

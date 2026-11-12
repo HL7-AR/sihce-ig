@@ -2,6 +2,9 @@ Extension: ExtensionRecetaEstado
 Id: extension-receta-estado
 Title: "Estado de receta en índice SIHCE"
 Description: "Estado vigente/dispensada/anulada del índice de receta (anti-quema)."
+* ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^url = "http://sihce.gob.ar/StructureDefinition/extension-receta-estado"
 * ^version = "1.6.0"
 * ^context[0].type = #element
@@ -13,6 +16,9 @@ Extension: ExtensionRecetaRepositorioDelegado
 Id: extension-receta-repositorio-delegado
 Title: "Repositorio delegado en SIHCE"
 Description: "Marca el caso excepcional en que SIHCE almacena el MedicationRequest (caso de uso 3, variante 1b)."
+* ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^url = "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado"
 * ^version = "1.6.0"
 * ^context[0].type = #element
@@ -26,6 +32,8 @@ Title: "Índice de receta electrónica SIHCE"
 Description: "Metadatos de receta en el índice SIHCE (CUIR, paciente, efector, estado). El MedicationRequest permanece en el repositorio de origen; SIHCE actúa como broker/proxy salvo repositorio delegado (caso 3/1b)."
 * ^version = "1.6.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^date = "2026-09-15T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * ^jurisdiction = urn:iso:std:iso:3166#AR "Argentina"
@@ -62,6 +70,8 @@ Title: "Receta MedicationRequest SIHCE"
 Description: "Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción)."
 * ^version = "1.6.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^date = "2026-09-15T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * identifier 1..* MS
@@ -86,6 +96,8 @@ Title: "Dispensa de receta SIHCE"
 Description: "Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen."
 * ^version = "2.0.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^date = "2026-09-17T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * status 1..1 MS

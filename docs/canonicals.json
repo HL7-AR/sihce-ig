@@ -2,391 +2,391 @@
   "id" : "sihce-privacy-level",
   "type" : "CodeSystem",
   "url" : "http://sihce.gob.ar/CodeSystem/privacy-level",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCEPrivacyLevelCS"
 },
 {
   "id" : "sihce-fhir-core-element-paths",
   "type" : "CodeSystem",
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCEFhirCoreElementPaths"
 },
 {
   "id" : "sihce-logical-operation-element-paths",
   "type" : "CodeSystem",
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCELogicalOperationElementPaths"
 },
 {
   "id" : "sihce-receta-estado",
   "type" : "CodeSystem",
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-receta-estado",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCERecetaEstadoCS"
 },
 {
   "id" : "BuscarPersonaModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "BuscarPersonaModeloAFHIR"
 },
 {
   "id" : "ConsentimientoModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/ConsentimientoModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ConsentimientoModeloAFHIR"
 },
 {
   "id" : "DispensaRecetaModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DispensaRecetaModeloAFHIR"
 },
 {
   "id" : "DocumentoClinicoModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DocumentoClinicoModeloAFHIR"
 },
 {
   "id" : "EpicrisisModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "EpicrisisModeloAFHIR"
 },
 {
   "id" : "FederarPersonaModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "FederarPersonaModeloAFHIR"
 },
 {
   "id" : "InformeLaboratorioModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "InformeLaboratorioModeloAFHIR"
 },
 {
   "id" : "ModificarIDLocalPersonaModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ModificarIDLocalPersonaModeloAFHIR"
 },
 {
   "id" : "ModificarSDMPersonaModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ModificarSDMPersonaModeloAFHIR"
 },
 {
   "id" : "RecetaIndiceModeloAFHIR",
   "type" : "ConceptMap",
   "url" : "http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "RecetaIndiceModeloAFHIR"
 },
 {
   "id" : "SIHCE.fhir.core",
   "type" : "ImplementationGuide",
   "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "GuiaDeImplementacionSIHCE"
 },
 {
   "id" : "NamingSystemHospitalItalianoFHIR",
   "type" : "NamingSystem",
   "url" : "http://sihce.gob.ar/NamingSystem/NamingSystemHospitalItalianoFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "NamingSystemHospitalItalianoFHIR"
 },
 {
   "id" : "NamingSystemMsgcGCBA",
   "type" : "NamingSystem",
   "url" : "http://sihce.gob.ar/NamingSystem/NamingSystemMsgcGCBA",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "NamingSystemMsgcGCBA"
 },
 {
   "id" : "NamingSystemOrganizationHospitalMsgc",
   "type" : "NamingSystem",
   "url" : "http://sihce.gob.ar/NamingSystem/NamingSystemOrganizationHospitalMsgc",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "NamingSystemOrganizationHospitalMsgc"
 },
 {
   "id" : "renaper-dni",
   "type" : "NamingSystem",
   "url" : "http://sihce.gob.ar/NamingSystem/renaper-dni",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "RenaperDNI"
 },
 {
   "id" : "sihce-cuil",
   "type" : "NamingSystem",
   "url" : "http://sihce.gob.ar/NamingSystem/sihce-cuil",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SihceCuil"
 },
 {
   "id" : "sihce-cuir",
   "type" : "NamingSystem",
   "url" : "http://sihce.gob.ar/NamingSystem/sihce-cuir",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SihceCuir"
 },
 {
   "id" : "sihce-persona-global",
   "type" : "NamingSystem",
   "url" : "http://sihce.gob.ar/NamingSystem/sihce-persona-global",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SihcePersonaGlobal"
 },
 {
   "id" : "BuscarPersona",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/BuscarPersona",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "BuscarPersona"
 },
 {
   "id" : "CompositionEpicrisisSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "CompositionEpicrisisSIHCE"
 },
 {
   "id" : "ConditionEpicrisisSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ConditionEpicrisisSIHCE"
 },
 {
   "id" : "ConsentSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ConsentSIHCE"
 },
 {
   "id" : "Consentimiento",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/Consentimiento",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "Consentimiento"
 },
 {
   "id" : "DiagnosticReportLaboratorioSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DiagnosticReportLaboratorioSIHCE"
 },
 {
   "id" : "DispensaReceta",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/DispensaReceta",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DispensaReceta"
 },
 {
   "id" : "DocumentReferenceRecetaSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DocumentReferenceRecetaSIHCE"
 },
 {
   "id" : "DocumentReferenceSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DocumentReferenceSIHCE"
 },
 {
   "id" : "DocumentoClinico",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentoClinico",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DocumentoClinico"
 },
 {
   "id" : "Epicrisis",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/Epicrisis",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "Epicrisis"
 },
 {
   "id" : "FederarPersona",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/FederarPersona",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "FederarPersona"
 },
 {
   "id" : "InformeLaboratorio",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/InformeLaboratorio",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "InformeLaboratorio"
 },
 {
   "id" : "MLPersona",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/MLPersona",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "MLPersona"
 },
 {
   "id" : "MedicationDispenseRecetaSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "MedicationDispenseRecetaSIHCE"
 },
 {
   "id" : "MedicationRequestRecetaSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "MedicationRequestRecetaSIHCE"
 },
 {
   "id" : "MedicationStatementEpicrisisSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "MedicationStatementEpicrisisSIHCE"
 },
 {
   "id" : "ModificarIDLocalPersona",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ModificarIDLocalPersona"
 },
 {
   "id" : "ModificarSDMPersona",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ModificarSDMPersona"
 },
 {
   "id" : "ObservationLaboratorioSIHCE",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ObservationLaboratorioSIHCE"
 },
 {
   "id" : "PatientXBA",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/PatientXBA",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "PacienteSIHCE"
 },
 {
   "id" : "RecetaIndice",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/RecetaIndice",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "RecetaIndice"
 },
 {
   "id" : "extension-receta-estado",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/extension-receta-estado",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ExtensionRecetaEstado"
 },
 {
   "id" : "extension-receta-repositorio-delegado",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ExtensionRecetaRepositorioDelegado"
 },
 {
   "id" : "parametros-patch-identifier-sihce",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ParametrosPatchIdentifierSIHCE"
 },
 {
   "id" : "parametros-update-sdm-sihce",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ParametrosUpdateSDMSIHCE"
 },
 {
   "id" : "sihce-clinical-document-type-vs",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCEClinicalDocumentTypeVS"
 },
 {
   "id" : "sihce-document-content-type-vs",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCEDocumentContentTypeVS"
 },
 {
   "id" : "sihce-epicrisis-diagnosis-code-vs",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCEEpicrisisDiagnosisCodeVS"
 },
 {
   "id" : "sihce-epicrisis-section-vs",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCEEpicrisisSectionVS"
 },
 {
   "id" : "sihce-lab-observation-code-vs",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-lab-observation-code",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCELabObservationCodeVS"
 },
 {
   "id" : "sihce-privacy-level-vs",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCEPrivacyLevelVS"
 },
 {
   "id" : "sihce-receta-document-type-vs",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-receta-document-type",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCERecetaDocumentTypeVS"
 },
 {
   "id" : "sihce-receta-estado-vs",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-receta-estado",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCERecetaEstadoVS"
 }]

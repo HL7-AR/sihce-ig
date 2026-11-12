@@ -5,6 +5,8 @@ Description: "Estados del índice de receta electrónica (mecanismo anti-quema).
 * ^url = "http://sihce.gob.ar/CodeSystem/sihce-receta-estado"
 * ^version = "1.6.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
@@ -19,6 +21,8 @@ Description: "Estados admitidos en el índice de DocumentReferenceRecetaSIHCE."
 * ^url = "http://sihce.gob.ar/ValueSet/sihce-receta-estado"
 * ^version = "1.6.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^experimental = false
 * include codes from system SIHCERecetaEstadoCS
 
@@ -29,5 +33,7 @@ Description: "LOINC para índice de receta electrónica."
 * ^url = "http://sihce.gob.ar/ValueSet/sihce-receta-document-type"
 * ^version = "1.6.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^experimental = false
 * include codes from system http://loinc.org where code = #57833-6

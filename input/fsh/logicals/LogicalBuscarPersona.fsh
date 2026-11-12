@@ -4,7 +4,9 @@ Id: BuscarPersona
 Title: "Modelo lógico BuscarPersona (FederadorBA)"
 Description: "Solicitud de búsqueda de persona por datos mínimos y respuesta mínima."
 * ^version = "1.2.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * datosConsulta 0..1 BackboneElement "Datos de consulta" "Información mínima para la búsqueda."
 * datosConsulta.tipoDocumento 1..1 string "Tipo de documento" "Ej. DNI."
 * datosConsulta.documentoIdentificatorio 1..1 string "Número de documento" "Valor numérico del documento."

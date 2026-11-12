@@ -1,4 +1,4 @@
-# Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * **Casos de Uso**
@@ -11,7 +11,7 @@ Estos son los principales casos de uso e interacciones entre dominios y **SIHCE*
 
 **SIHCE** expone capacidades de negocio (federación de personas, **consentimiento**, registro/consulta documental, **índice y broker de recetas electrónicas**). El “federador” no es un sistema aparte: es la funcionalidad de SIHCE sobre `Patient`.
 
-## Vista general (intercambio)
+### Vista general (intercambio)
 
 ```
 flowchart LR
@@ -33,13 +33,13 @@ flowchart LR
 
 Todo mensaje entre dominio y SIHCE viaja por el **Canal X-BA**. SIHCE responde según la operación: federación de persona, **consentimiento (MCC)**, registro documental, búsqueda ITI-67 o descarga ITI-68 vía **Proxy Central**.
 
-## Consentimiento
+### Consentimiento
 
 Preferencias de privacidad del paciente en la red SIHCE. **Default:** sin consentimiento activo, el acceso al índice documental se **deniega**. Cualquier dominio autenticado puede registrar el consentimiento (incluido personal administrativo).
 
 Operaciones: [Registro, consulta y PUT](Operaciones.md#op-consentimiento). Perfil: [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md).
 
-### Registro de consentimiento
+#### Registro de consentimiento
 
 ```
 sequenceDiagram
@@ -64,9 +64,9 @@ Etapas de madurez (despliegue incremental):
 
 Opt-out general anula todo; un opt-in posterior solo habilita lo declarado en la nueva versión.
 
-## Persona
+### Persona
 
-### Búsqueda de persona
+#### Búsqueda de persona
 
 Operación relacionada: [Búsqueda por identificador y género](Operaciones.md#op-busqueda).
 
@@ -82,7 +82,7 @@ sequenceDiagram
 
 ```
 
-### Alta/Federación de persona
+#### Alta/Federación de persona
 
 Operación relacionada: [Alta/Federación de paciente](Operaciones.md#op-alta-federacion). Cuerpo conforme al perfil [PatientXBA](StructureDefinition-PatientXBA.md).
 
@@ -98,7 +98,7 @@ sequenceDiagram
 
 ```
 
-### Modificación de identificador local
+#### Modificación de identificador local
 
 Operación relacionada: [Patch de identificador local](Operaciones.md#op-patch-identifier).
 
@@ -114,7 +114,7 @@ sequenceDiagram
 
 ```
 
-### Modificación de SDM
+#### Modificación de SDM
 
 Operación relacionada: [Update de SDM](Operaciones.md#op-update-sdm).
 
@@ -130,11 +130,11 @@ sequenceDiagram
 
 ```
 
-## Documentos clínicos
+### Documentos clínicos
 
 Todo documento clínico se indexa en SIHCE como `DocumentReference` ([DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md)). **Epicrisis** e **informe de laboratorio** son casos especiales del mismo patrón (distintos LOINC y distinto recurso detrás de `content.attachment.url`).
 
-### Registro de epicrisis (dominio → SIHCE)
+#### Registro de epicrisis (dominio → SIHCE)
 
 Operación relacionada: [Registro de documento clínico](Operaciones.md#op-documento-registro). Cuerpo conforme al perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md); tipo LOINC `18842-5`. Capacidad SIHCE: **registro documental**.
 
@@ -151,7 +151,7 @@ sequenceDiagram
 
 ```
 
-### Consulta de epicrisis por paciente
+#### Consulta de epicrisis por paciente
 
 Operaciones: [Búsqueda ITI-67](Operaciones.md#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones.md#op-documento-proxy). SIHCE evalúa **Consent (MCC)** en la búsqueda; la URL del índice apunta al Proxy Central; la descarga es un GET estándar con proxy pass al hospital custodio.
 
@@ -185,7 +185,7 @@ Niveles de madurez epicrisis:
 | 2 | [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)con secciones narrativas |
 | 3 | Composition con secciones codificadas (`Condition`,`MedicationStatement`) |
 
-### Registro de informe de laboratorio (dominio → SIHCE)
+#### Registro de informe de laboratorio (dominio → SIHCE)
 
 Operación relacionada: [Registro de documento clínico](Operaciones.md#op-documento-registro). Tipo LOINC `11502-2`; URL a [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) en el dominio. Capacidad SIHCE: **registro documental**.
 
@@ -209,7 +209,7 @@ Niveles de madurez informe de laboratorio:
 | 1 | Solo`presentedForm`(PDF) |
 | 2 | `presentedForm`+`result`con[ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md) |
 
-### Consulta de informes de laboratorio por paciente
+#### Consulta de informes de laboratorio por paciente
 
 Operaciones: [Búsqueda ITI-67](Operaciones.md#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones.md#op-documento-proxy). Mismo patrón que epicrisis: Consent en MCC, URL del Proxy Central, proxy pass al DiagnosticReport en el custodio.
 
@@ -234,7 +234,7 @@ sequenceDiagram
 
 ```
 
-## Receta electrónica (CPE)
+### Receta electrónica (CPE)
 
 Indexación y orquestación de recetas en SIHCE. El contenido clínico (`MedicationRequest`) permanece en el repositorio de origen; SIHCE indexa metadatos (CUIR, paciente, efector, estado) y actúa como **broker** hacia la farmacia. La dispensa actualiza el índice (anti-quema) y se propaga al origen.
 
@@ -249,7 +249,7 @@ A y B **no compiten**: A es condición técnica para que B obtenga el detalle v�
 
 Operaciones: [Indexación](Operaciones.md#op-receta-index), [Consulta](Operaciones.md#op-receta-consulta), [Proxy detalle](Operaciones.md#op-receta-proxy), [Dispensa](Operaciones.md#op-receta-dispensa). Perfiles: [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md), [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.md), [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.md).
 
-### Caso 2 — Público (SIGEHOS) → CPE → Farmacia privada
+#### Caso 2 — Público (SIGEHOS) → CPE → Farmacia privada
 
 **Actores:** Prescriptor público (efector SIGEHOS), paciente (cobertura pública), SIGEHOS (repositorio), SIHCE, farmacia privada.
 
@@ -288,7 +288,7 @@ sequenceDiagram
 
 ```
 
-### Caso 3 — Privado (Recetario) → CPE → Farmacia privada
+#### Caso 3 — Privado (Recetario) → CPE → Farmacia privada
 
 **Actores:** Prescriptor privado, paciente, repositorio del prestador (si existe) **o** SIHCE como repositorio delegado (excepción), SIHCE orquestador, farmacia privada.
 

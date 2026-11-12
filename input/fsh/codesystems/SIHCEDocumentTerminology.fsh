@@ -4,7 +4,9 @@ Title: "Tipos de documento clínico SIHCE"
 Description: "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC)."
 * ^url = "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type"
 * ^version = "1.3.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^experimental = false
 * include codes from system http://loinc.org where code = #18842-5
 * include codes from system http://loinc.org where code = #11502-2
@@ -15,7 +17,9 @@ Title: "Tipos MIME de contenido documental SIHCE"
 Description: "Formatos admitidos en DocumentReference.content.attachment.contentType."
 * ^url = "http://sihce.gob.ar/ValueSet/sihce-document-content-type"
 * ^version = "1.3.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/mimetypes where code = #application/pdf
 * include codes from system http://terminology.hl7.org/CodeSystem/mimetypes where code = #application/xml
@@ -27,7 +31,9 @@ Title: "Secciones LOINC de epicrisis SIHCE"
 Description: "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales)."
 * ^url = "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section"
 * ^version = "1.3.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^experimental = false
 * include codes from system http://loinc.org where code = #48765-2
 * include codes from system http://loinc.org where code = #78375-3
@@ -49,7 +55,9 @@ Title: "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"
 Description: "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación."
 * ^url = "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"
 * ^version = "1.3.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^experimental = false
 * include codes from system http://hl7.org/fhir/sid/icd-10 where code = #J18.9
 * include codes from system http://snomed.info/sct where code = #233604007
@@ -61,6 +69,8 @@ Description: "Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 
 * ^url = "http://sihce.gob.ar/ValueSet/sihce-lab-observation-code"
 * ^version = "1.3.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^experimental = false
 * include codes from system http://loinc.org where code = #2345-7
 * include codes from system http://loinc.org where code = #3094-0

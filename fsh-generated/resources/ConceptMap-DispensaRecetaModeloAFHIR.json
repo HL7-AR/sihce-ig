@@ -2,6 +2,16 @@
   "resourceType": "ConceptMap",
   "id": "DispensaRecetaModeloAFHIR",
   "url": "http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "title": "DispensaReceta: modelo lógico a FHIR",
   "description": "Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE.",
   "version": "1.6.0",

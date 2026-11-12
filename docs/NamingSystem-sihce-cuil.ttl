@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sihce-cuil"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem sihce-cuil</b></p><a name=\"sihce-cuil\"> </a><a name=\"hcsihce-cuil\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://sihce.gob.ar/NamingSystem/sihce-cuil</td></tr><tr><td>Version</td><td>2.0.0</td></tr><tr><td>Name</td><td>SihceCuil</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>CUIL del paciente. Criterio de búsqueda en el índice de recetas junto con o en lugar del idPersonaGlobal.</p>\n</div></td></tr><tr><td>Publisher</td><td>SIHCE Development Team</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://sihce.gob.ar/cuil</td><td>true</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem sihce-cuil</b></p><a name=\"sihce-cuil\"> </a><a name=\"hcsihce-cuil\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://sihce.gob.ar/NamingSystem/sihce-cuil</td></tr><tr><td>Version</td><td>2.1.0</td></tr><tr><td>Name</td><td>SihceCuil</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>CUIL del paciente. Criterio de búsqueda en el índice de recetas junto con o en lugar del idPersonaGlobal.</p>\n</div></td></tr><tr><td>Publisher</td><td>SIHCE Development Team</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://sihce.gob.ar/cuil</td><td>true</td></tr></table></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -19,7 +19,7 @@
   ], [
      fhir:index 1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version" ] ;
-     fhir:Extension.valueString [ fhir:value "2.0.0" ]
+     fhir:Extension.valueString [ fhir:value "2.1.0" ]
   ] ;
   fhir:NamingSystem.name [ fhir:value "SihceCuil"] ;
   fhir:NamingSystem.status [ fhir:value "active"] ;

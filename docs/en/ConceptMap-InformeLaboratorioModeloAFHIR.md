@@ -1,4 +1,4 @@
-# InformeLaboratorio: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# InformeLaboratorio: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## ConceptMap: InformeLaboratorio: modelo lógico a FHIR (Experimental) 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR | *Version*:2.0.0 |
-| Draft as of 2026-06-09 | *Computable Name*:InformeLaboratorioModeloAFHIR |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR | *Version*:2.1.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:InformeLaboratorioModeloAFHIR |
 
  
 Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport. 
@@ -22,8 +22,16 @@ Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport.
 {
   "resourceType" : "ConceptMap",
   "id" : "InformeLaboratorioModeloAFHIR",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
   "url" : "http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "InformeLaboratorioModeloAFHIR",
   "title" : "InformeLaboratorio: modelo lógico a FHIR",
   "status" : "draft",

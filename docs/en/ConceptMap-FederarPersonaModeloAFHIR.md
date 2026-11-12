@@ -1,4 +1,4 @@
-# FederarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# FederarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## ConceptMap: FederarPersona: modelo lógico a FHIR (Experimental) 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR | *Version*:2.0.0 |
-| Draft as of 2026-04-29 | *Computable Name*:FederarPersonaModeloAFHIR |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR | *Version*:2.1.0 | |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:FederarPersonaModeloAFHIR |
 
  
 Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado. 
@@ -22,11 +22,19 @@ Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de
 {
   "resourceType" : "ConceptMap",
   "id" : "FederarPersonaModeloAFHIR",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
   "url" : "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "FederarPersonaModeloAFHIR",
   "title" : "FederarPersona: modelo lógico a FHIR",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : true,
   "date" : "2026-04-29",
   "publisher" : "SIHCE Development Team",

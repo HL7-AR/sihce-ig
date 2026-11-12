@@ -1,4 +1,4 @@
-# Epicrisis nivel 2 — secciones narrativas - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Epicrisis nivel 2 — secciones narrativas - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1e409998-5b9c-4649-babc-6a9b0922500f"/>
+  <id value="182ede35-ccfe-4b98-ba1a-eb5c99774344"/>
   <meta>
-    <lastUpdated value="2026-09-17T12:17:38.029-03:00"/>
+    <lastUpdated value="2026-11-12T16:05:33.361-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set expansion contains 2 concepts.</p>
@@ -49,12 +49,12 @@
                 <td>Discharge summary</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18842-5&quot;, &quot;display&quot;: &quot;Discharge summary&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18842-5&quot;, &quot;display&quot;: &quot;Discharge summary&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18842-5&quot;&gt;&lt;display value=&quot;Discharge summary&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;18842-5&quot;/&gt;&lt;display value=&quot;Discharge summary&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -69,12 +69,12 @@
                 <td>Laboratory report</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11502-2&quot;, &quot;display&quot;: &quot;Laboratory report&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11502-2&quot;, &quot;display&quot;: &quot;Laboratory report&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;11502-2&quot;&gt;&lt;display value=&quot;Laboratory report&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11502-2&quot;/&gt;&lt;display value=&quot;Laboratory report&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -82,15 +82,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-clinical-document-type"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCEClinicalDocumentTypeVS"/>
         <title value="Tipos de documento clínico SIHCE"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:975347fd-3e86-450c-8c93-b6ea1d750be1"/>
-          <timestamp value="2026-09-17T12:21:05-03:00"/>
+          <identifier value="urn:uuid:d850901c-4981-40dc-841a-bbaa201fad9c"/>
+          <timestamp value="2026-11-12T16:08:37-03:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -148,7 +148,7 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set expansion contains 2 concepts.</p>
@@ -181,12 +181,12 @@
                 <td>Discharge summary</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18842-5&quot;, &quot;display&quot;: &quot;Discharge summary&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18842-5&quot;, &quot;display&quot;: &quot;Discharge summary&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18842-5&quot;&gt;&lt;display value=&quot;Discharge summary&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;18842-5&quot;/&gt;&lt;display value=&quot;Discharge summary&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -201,12 +201,12 @@
                 <td>Laboratory report</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11502-2&quot;, &quot;display&quot;: &quot;Laboratory report&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11502-2&quot;, &quot;display&quot;: &quot;Laboratory report&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;11502-2&quot;&gt;&lt;display value=&quot;Laboratory report&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11502-2&quot;/&gt;&lt;display value=&quot;Laboratory report&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -214,15 +214,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-clinical-document-type"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCEClinicalDocumentTypeVS"/>
         <title value="Tipos de documento clínico SIHCE"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:38f21317-f593-48f2-a307-94db30d55cf5"/>
-          <timestamp value="2026-09-17T12:21:06-03:00"/>
+          <identifier value="urn:uuid:7119f2c2-d126-440a-adb3-19322b3b4ed1"/>
+          <timestamp value="2026-11-12T16:08:37-03:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -280,7 +280,7 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set expansion contains 13 concepts.</p>
@@ -313,12 +313,12 @@
                 <td>Allergies and adverse reactions Document</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;48765-2&quot;, &quot;display&quot;: &quot;Allergies and adverse reactions Document&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;48765-2&quot;, &quot;display&quot;: &quot;Allergies and adverse reactions Document&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;48765-2&quot;&gt;&lt;display value=&quot;Allergies and adverse reactions Document&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;48765-2&quot;/&gt;&lt;display value=&quot;Allergies and adverse reactions Document&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -333,12 +333,12 @@
                 <td>Discharge diagnosis Narrative</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;78375-3&quot;, &quot;display&quot;: &quot;Discharge diagnosis Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;78375-3&quot;, &quot;display&quot;: &quot;Discharge diagnosis Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;78375-3&quot;&gt;&lt;display value=&quot;Discharge diagnosis Narrative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;78375-3&quot;/&gt;&lt;display value=&quot;Discharge diagnosis Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -353,12 +353,12 @@
                 <td>Discharge medications note</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;75311-1&quot;, &quot;display&quot;: &quot;Discharge medications note&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;75311-1&quot;, &quot;display&quot;: &quot;Discharge medications note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;75311-1&quot;&gt;&lt;display value=&quot;Discharge medications note&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;75311-1&quot;/&gt;&lt;display value=&quot;Discharge medications note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -373,12 +373,12 @@
                 <td>Hospital course note</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8648-8&quot;, &quot;display&quot;: &quot;Hospital course note&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8648-8&quot;, &quot;display&quot;: &quot;Hospital course note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;8648-8&quot;&gt;&lt;display value=&quot;Hospital course note&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8648-8&quot;/&gt;&lt;display value=&quot;Hospital course note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -393,12 +393,12 @@
                 <td>Plan of care note</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18776-5&quot;, &quot;display&quot;: &quot;Plan of care note&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18776-5&quot;, &quot;display&quot;: &quot;Plan of care note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18776-5&quot;&gt;&lt;display value=&quot;Plan of care note&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;18776-5&quot;/&gt;&lt;display value=&quot;Plan of care note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -413,12 +413,12 @@
                 <td>Admission diagnosis (narrative)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42347-5&quot;, &quot;display&quot;: &quot;Admission diagnosis (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42347-5&quot;, &quot;display&quot;: &quot;Admission diagnosis (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;42347-5&quot;&gt;&lt;display value=&quot;Admission diagnosis (narrative)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42347-5&quot;/&gt;&lt;display value=&quot;Admission diagnosis (narrative)&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -433,12 +433,12 @@
                 <td>Medications on admission (narrative)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42346-7&quot;, &quot;display&quot;: &quot;Medications on admission (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42346-7&quot;, &quot;display&quot;: &quot;Medications on admission (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;42346-7&quot;&gt;&lt;display value=&quot;Medications on admission (narrative)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42346-7&quot;/&gt;&lt;display value=&quot;Medications on admission (narrative)&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -453,12 +453,12 @@
                 <td>Chief complaint+Reason for visit Narrative</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;46239-0&quot;, &quot;display&quot;: &quot;Chief complaint+Reason for visit Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;46239-0&quot;, &quot;display&quot;: &quot;Chief complaint+Reason for visit Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;46239-0&quot;&gt;&lt;display value=&quot;Chief complaint+Reason for visit Narrative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;46239-0&quot;/&gt;&lt;display value=&quot;Chief complaint+Reason for visit Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -473,12 +473,12 @@
                 <td>Hospital Discharge instructions</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8653-8&quot;, &quot;display&quot;: &quot;Hospital Discharge instructions&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8653-8&quot;, &quot;display&quot;: &quot;Hospital Discharge instructions&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;8653-8&quot;&gt;&lt;display value=&quot;Hospital Discharge instructions&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8653-8&quot;/&gt;&lt;display value=&quot;Hospital Discharge instructions&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -493,12 +493,12 @@
                 <td>Hospital discharge studies summary Narrative</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11493-4&quot;, &quot;display&quot;: &quot;Hospital discharge studies summary Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11493-4&quot;, &quot;display&quot;: &quot;Hospital discharge studies summary Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;11493-4&quot;&gt;&lt;display value=&quot;Hospital discharge studies summary Narrative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11493-4&quot;/&gt;&lt;display value=&quot;Hospital discharge studies summary Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -513,12 +513,12 @@
                 <td>Hospital discharge physical findings Narrative</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;10184-0&quot;, &quot;display&quot;: &quot;Hospital discharge physical findings Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;10184-0&quot;, &quot;display&quot;: &quot;Hospital discharge physical findings Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;10184-0&quot;&gt;&lt;display value=&quot;Hospital discharge physical findings Narrative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;10184-0&quot;/&gt;&lt;display value=&quot;Hospital discharge physical findings Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -533,12 +533,12 @@
                 <td>History of Procedures Document</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;47519-4&quot;, &quot;display&quot;: &quot;History of Procedures Document&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;47519-4&quot;, &quot;display&quot;: &quot;History of Procedures Document&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;47519-4&quot;&gt;&lt;display value=&quot;History of Procedures Document&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;47519-4&quot;/&gt;&lt;display value=&quot;History of Procedures Document&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -553,12 +553,12 @@
                 <td>Problem list - Reported</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11450-4&quot;, &quot;display&quot;: &quot;Problem list - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11450-4&quot;, &quot;display&quot;: &quot;Problem list - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;11450-4&quot;&gt;&lt;display value=&quot;Problem list - Reported&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11450-4&quot;/&gt;&lt;display value=&quot;Problem list - Reported&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -566,15 +566,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-section"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCEEpicrisisSectionVS"/>
         <title value="Secciones LOINC de epicrisis SIHCE"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:6b87b65d-01d2-4b5c-a94e-eeaab7575f16"/>
-          <timestamp value="2026-09-17T12:21:07-03:00"/>
+          <identifier value="urn:uuid:874ff246-91e1-41ed-bc47-7d6ed4b181a7"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -687,7 +687,7 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set expansion contains 13 concepts.</p>
@@ -720,12 +720,12 @@
                 <td>Allergies and adverse reactions Document</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;48765-2&quot;, &quot;display&quot;: &quot;Allergies and adverse reactions Document&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;48765-2&quot;, &quot;display&quot;: &quot;Allergies and adverse reactions Document&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;48765-2&quot;&gt;&lt;display value=&quot;Allergies and adverse reactions Document&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;48765-2&quot;/&gt;&lt;display value=&quot;Allergies and adverse reactions Document&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -740,12 +740,12 @@
                 <td>Discharge diagnosis Narrative</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;78375-3&quot;, &quot;display&quot;: &quot;Discharge diagnosis Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;78375-3&quot;, &quot;display&quot;: &quot;Discharge diagnosis Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;78375-3&quot;&gt;&lt;display value=&quot;Discharge diagnosis Narrative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;78375-3&quot;/&gt;&lt;display value=&quot;Discharge diagnosis Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -760,12 +760,12 @@
                 <td>Discharge medications note</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;75311-1&quot;, &quot;display&quot;: &quot;Discharge medications note&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;75311-1&quot;, &quot;display&quot;: &quot;Discharge medications note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;75311-1&quot;&gt;&lt;display value=&quot;Discharge medications note&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;75311-1&quot;/&gt;&lt;display value=&quot;Discharge medications note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -780,12 +780,12 @@
                 <td>Hospital course note</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8648-8&quot;, &quot;display&quot;: &quot;Hospital course note&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8648-8&quot;, &quot;display&quot;: &quot;Hospital course note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;8648-8&quot;&gt;&lt;display value=&quot;Hospital course note&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8648-8&quot;/&gt;&lt;display value=&quot;Hospital course note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -800,12 +800,12 @@
                 <td>Plan of care note</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18776-5&quot;, &quot;display&quot;: &quot;Plan of care note&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18776-5&quot;, &quot;display&quot;: &quot;Plan of care note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;18776-5&quot;&gt;&lt;display value=&quot;Plan of care note&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;18776-5&quot;/&gt;&lt;display value=&quot;Plan of care note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -820,12 +820,12 @@
                 <td>Admission diagnosis (narrative)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42347-5&quot;, &quot;display&quot;: &quot;Admission diagnosis (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42347-5&quot;, &quot;display&quot;: &quot;Admission diagnosis (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;42347-5&quot;&gt;&lt;display value=&quot;Admission diagnosis (narrative)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42347-5&quot;/&gt;&lt;display value=&quot;Admission diagnosis (narrative)&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -840,12 +840,12 @@
                 <td>Medications on admission (narrative)</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42346-7&quot;, &quot;display&quot;: &quot;Medications on admission (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42346-7&quot;, &quot;display&quot;: &quot;Medications on admission (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;42346-7&quot;&gt;&lt;display value=&quot;Medications on admission (narrative)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42346-7&quot;/&gt;&lt;display value=&quot;Medications on admission (narrative)&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -860,12 +860,12 @@
                 <td>Chief complaint+Reason for visit Narrative</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;46239-0&quot;, &quot;display&quot;: &quot;Chief complaint+Reason for visit Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;46239-0&quot;, &quot;display&quot;: &quot;Chief complaint+Reason for visit Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;46239-0&quot;&gt;&lt;display value=&quot;Chief complaint+Reason for visit Narrative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;46239-0&quot;/&gt;&lt;display value=&quot;Chief complaint+Reason for visit Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -880,12 +880,12 @@
                 <td>Hospital Discharge instructions</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8653-8&quot;, &quot;display&quot;: &quot;Hospital Discharge instructions&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8653-8&quot;, &quot;display&quot;: &quot;Hospital Discharge instructions&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;8653-8&quot;&gt;&lt;display value=&quot;Hospital Discharge instructions&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8653-8&quot;/&gt;&lt;display value=&quot;Hospital Discharge instructions&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -900,12 +900,12 @@
                 <td>Hospital discharge studies summary Narrative</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11493-4&quot;, &quot;display&quot;: &quot;Hospital discharge studies summary Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11493-4&quot;, &quot;display&quot;: &quot;Hospital discharge studies summary Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;11493-4&quot;&gt;&lt;display value=&quot;Hospital discharge studies summary Narrative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11493-4&quot;/&gt;&lt;display value=&quot;Hospital discharge studies summary Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -920,12 +920,12 @@
                 <td>Hospital discharge physical findings Narrative</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;10184-0&quot;, &quot;display&quot;: &quot;Hospital discharge physical findings Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;10184-0&quot;, &quot;display&quot;: &quot;Hospital discharge physical findings Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;10184-0&quot;&gt;&lt;display value=&quot;Hospital discharge physical findings Narrative&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;10184-0&quot;/&gt;&lt;display value=&quot;Hospital discharge physical findings Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -940,12 +940,12 @@
                 <td>History of Procedures Document</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;47519-4&quot;, &quot;display&quot;: &quot;History of Procedures Document&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;47519-4&quot;, &quot;display&quot;: &quot;History of Procedures Document&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;47519-4&quot;&gt;&lt;display value=&quot;History of Procedures Document&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;47519-4&quot;/&gt;&lt;display value=&quot;History of Procedures Document&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -960,12 +960,12 @@
                 <td>Problem list - Reported</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11450-4&quot;, &quot;display&quot;: &quot;Problem list - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11450-4&quot;, &quot;display&quot;: &quot;Problem list - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;11450-4&quot;&gt;&lt;display value=&quot;Problem list - Reported&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11450-4&quot;/&gt;&lt;display value=&quot;Problem list - Reported&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -973,15 +973,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-section"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCEEpicrisisSectionVS"/>
         <title value="Secciones LOINC de epicrisis SIHCE"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:050d417f-43d5-4045-815f-d258d9a97b94"/>
-          <timestamp value="2026-09-17T12:21:11-03:00"/>
+          <identifier value="urn:uuid:6bb0d2a0-fa76-400c-b647-d0b7ec82e8e7"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1094,7 +1094,7 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set expansion contains 5 concepts.</p>
@@ -1127,12 +1127,12 @@
                 <td>Glucose [Mass/volume] in Serum or Plasma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;2345-7&quot;, &quot;display&quot;: &quot;Glucose [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;2345-7&quot;, &quot;display&quot;: &quot;Glucose [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;2345-7&quot;&gt;&lt;display value=&quot;Glucose [Mass/volume] in Serum or Plasma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;2345-7&quot;/&gt;&lt;display value=&quot;Glucose [Mass/volume] in Serum or Plasma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1147,12 +1147,12 @@
                 <td>Urea nitrogen [Mass/volume] in Serum or Plasma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;3094-0&quot;, &quot;display&quot;: &quot;Urea nitrogen [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;3094-0&quot;, &quot;display&quot;: &quot;Urea nitrogen [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;3094-0&quot;&gt;&lt;display value=&quot;Urea nitrogen [Mass/volume] in Serum or Plasma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;3094-0&quot;/&gt;&lt;display value=&quot;Urea nitrogen [Mass/volume] in Serum or Plasma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1167,12 +1167,12 @@
                 <td>Creatinine [Mass/volume] in Serum or Plasma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;2160-0&quot;, &quot;display&quot;: &quot;Creatinine [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;2160-0&quot;, &quot;display&quot;: &quot;Creatinine [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;2160-0&quot;&gt;&lt;display value=&quot;Creatinine [Mass/volume] in Serum or Plasma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;2160-0&quot;/&gt;&lt;display value=&quot;Creatinine [Mass/volume] in Serum or Plasma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1187,12 +1187,12 @@
                 <td>Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;1742-6&quot;, &quot;display&quot;: &quot;Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;1742-6&quot;, &quot;display&quot;: &quot;Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;1742-6&quot;&gt;&lt;display value=&quot;Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;1742-6&quot;/&gt;&lt;display value=&quot;Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1207,12 +1207,12 @@
                 <td>Hemoglobin [Mass/volume] in Blood</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;718-7&quot;, &quot;display&quot;: &quot;Hemoglobin [Mass/volume] in Blood&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;718-7&quot;, &quot;display&quot;: &quot;Hemoglobin [Mass/volume] in Blood&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;718-7&quot;&gt;&lt;display value=&quot;Hemoglobin [Mass/volume] in Blood&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;718-7&quot;/&gt;&lt;display value=&quot;Hemoglobin [Mass/volume] in Blood&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1220,15 +1220,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-lab-observation-code"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCELabObservationCodeVS"/>
         <title value="Analitos de laboratorio SIHCE (LOINC)"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:3eaa6a26-6a6c-4c45-9707-451e3ab4fd48"/>
-          <timestamp value="2026-09-17T12:21:11-03:00"/>
+          <identifier value="urn:uuid:b6ffd321-ac8c-45ec-b55a-bfcb9e468ac6"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1301,7 +1301,7 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set expansion contains 5 concepts.</p>
@@ -1334,12 +1334,12 @@
                 <td>Glucose [Mass/volume] in Serum or Plasma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;2345-7&quot;, &quot;display&quot;: &quot;Glucose [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;2345-7&quot;, &quot;display&quot;: &quot;Glucose [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;2345-7&quot;&gt;&lt;display value=&quot;Glucose [Mass/volume] in Serum or Plasma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;2345-7&quot;/&gt;&lt;display value=&quot;Glucose [Mass/volume] in Serum or Plasma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1354,12 +1354,12 @@
                 <td>Urea nitrogen [Mass/volume] in Serum or Plasma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;3094-0&quot;, &quot;display&quot;: &quot;Urea nitrogen [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;3094-0&quot;, &quot;display&quot;: &quot;Urea nitrogen [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;3094-0&quot;&gt;&lt;display value=&quot;Urea nitrogen [Mass/volume] in Serum or Plasma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;3094-0&quot;/&gt;&lt;display value=&quot;Urea nitrogen [Mass/volume] in Serum or Plasma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1374,12 +1374,12 @@
                 <td>Creatinine [Mass/volume] in Serum or Plasma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;2160-0&quot;, &quot;display&quot;: &quot;Creatinine [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;2160-0&quot;, &quot;display&quot;: &quot;Creatinine [Mass/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;2160-0&quot;&gt;&lt;display value=&quot;Creatinine [Mass/volume] in Serum or Plasma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;2160-0&quot;/&gt;&lt;display value=&quot;Creatinine [Mass/volume] in Serum or Plasma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1394,12 +1394,12 @@
                 <td>Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;1742-6&quot;, &quot;display&quot;: &quot;Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;1742-6&quot;, &quot;display&quot;: &quot;Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;1742-6&quot;&gt;&lt;display value=&quot;Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;1742-6&quot;/&gt;&lt;display value=&quot;Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1414,12 +1414,12 @@
                 <td>Hemoglobin [Mass/volume] in Blood</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;718-7&quot;, &quot;display&quot;: &quot;Hemoglobin [Mass/volume] in Blood&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;718-7&quot;, &quot;display&quot;: &quot;Hemoglobin [Mass/volume] in Blood&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;718-7&quot;&gt;&lt;display value=&quot;Hemoglobin [Mass/volume] in Blood&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;718-7&quot;/&gt;&lt;display value=&quot;Hemoglobin [Mass/volume] in Blood&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1427,15 +1427,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-lab-observation-code"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCELabObservationCodeVS"/>
         <title value="Analitos de laboratorio SIHCE (LOINC)"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:22b97595-223b-4408-b70e-4680a3ae1b60"/>
-          <timestamp value="2026-09-17T12:21:12-03:00"/>
+          <identifier value="urn:uuid:9e9d37e5-23b0-4baa-97ef-bcc57d600ef4"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1507,9 +1507,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v2.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v2.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|2.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|2.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -1546,12 +1546,12 @@
                 <td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;display value=&quot;Normal&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1567,12 +1567,12 @@
                 <td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;confidential&quot;/&gt;&lt;display value=&quot;Confidencial&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1580,15 +1580,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-privacy-level"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCEPrivacyLevelVS"/>
         <title value="Niveles de privacidad SIHCE"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:d3d7f609-eb72-423f-a886-afc4a812bd65"/>
-          <timestamp value="2026-09-17T12:21:12-03:00"/>
+          <identifier value="urn:uuid:81676b61-65f2-4925-847a-51b4a78e4556"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1609,7 +1609,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://sihce.gob.ar/CodeSystem/privacy-level|2.0.0"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/privacy-level|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://sihce.gob.ar/CodeSystem/privacy-level"/>
@@ -1634,9 +1634,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v2.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v2.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|2.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|2.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -1673,12 +1673,12 @@
                 <td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;normal&quot;&gt;&lt;display value=&quot;Normal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;display value=&quot;Normal&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1694,12 +1694,12 @@
                 <td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;confidential&quot;&gt;&lt;display value=&quot;Confidencial&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;confidential&quot;/&gt;&lt;display value=&quot;Confidencial&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1707,15 +1707,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-privacy-level"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCEPrivacyLevelVS"/>
         <title value="Niveles de privacidad SIHCE"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:e8c958d9-e171-4b49-b0ef-0a650b05dbd0"/>
-          <timestamp value="2026-09-17T12:21:12-03:00"/>
+          <identifier value="urn:uuid:03c83fa6-3b64-4e01-a022-64073924e449"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1736,7 +1736,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://sihce.gob.ar/CodeSystem/privacy-level|2.0.0"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/privacy-level|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://sihce.gob.ar/CodeSystem/privacy-level"/>
@@ -1762,7 +1762,7 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 1 concepts</p>
@@ -1795,12 +1795,12 @@
                 <td>Prescription for medication</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;57833-6&quot;, &quot;display&quot;: &quot;Prescription for medication&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;57833-6&quot;, &quot;display&quot;: &quot;Prescription for medication&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;57833-6&quot;&gt;&lt;display value=&quot;Prescription for medication&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;57833-6&quot;/&gt;&lt;display value=&quot;Prescription for medication&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1808,15 +1808,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-receta-document-type"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCERecetaDocumentTypeVS"/>
         <title value="Tipo documental de receta SIHCE"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:d150b3fe-12b2-4213-83e2-f64ffcc8ef15"/>
-          <timestamp value="2026-09-17T12:21:12-03:00"/>
+          <identifier value="urn:uuid:ec665ee1-6a65-43e3-83b2-fe2109b870bd"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -1866,7 +1866,7 @@
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.82
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 1 concepts</p>
@@ -1899,12 +1899,12 @@
                 <td>Prescription for medication</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;57833-6&quot;, &quot;display&quot;: &quot;Prescription for medication&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;57833-6&quot;, &quot;display&quot;: &quot;Prescription for medication&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;&gt;&lt;version value=&quot;2.82&quot;&gt;&lt;code value=&quot;57833-6&quot;&gt;&lt;display value=&quot;Prescription for medication&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;57833-6&quot;/&gt;&lt;display value=&quot;Prescription for medication&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1912,15 +1912,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-receta-document-type"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCERecetaDocumentTypeVS"/>
         <title value="Tipo documental de receta SIHCE"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:f2ff77e7-6c98-4236-a923-21a6b3804eb2"/>
-          <timestamp value="2026-09-17T12:21:13-03:00"/>
+          <identifier value="urn:uuid:37705e93-2c34-447e-9d69-dc0a74c0984f"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -1969,9 +1969,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-sihce-receta-estado.html">codesystem Estado de receta en índice SIHCE v2.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-sihce-receta-estado.html">codesystem Estado de receta en índice SIHCE v2.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|2.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|2.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -2008,12 +2008,12 @@
                 <td>Receta emitida y disponible para dispensa.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;vigente&quot;, &quot;display&quot;: &quot;Vigente&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;vigente&quot;, &quot;display&quot;: &quot;Vigente&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;vigente&quot;&gt;&lt;display value=&quot;Vigente&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;vigente&quot;/&gt;&lt;display value=&quot;Vigente&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2029,12 +2029,12 @@
                 <td>Receta ya dispensada (anti-quema: no puede volver a dispensarse).</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;dispensada&quot;, &quot;display&quot;: &quot;Dispensada&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;dispensada&quot;, &quot;display&quot;: &quot;Dispensada&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;dispensada&quot;&gt;&lt;display value=&quot;Dispensada&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;dispensada&quot;/&gt;&lt;display value=&quot;Dispensada&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2050,12 +2050,12 @@
                 <td>Receta anulada por el prescriptor o por política.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;anulada&quot;, &quot;display&quot;: &quot;Anulada&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;anulada&quot;, &quot;display&quot;: &quot;Anulada&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;anulada&quot;&gt;&lt;display value=&quot;Anulada&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;anulada&quot;/&gt;&lt;display value=&quot;Anulada&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2063,15 +2063,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-receta-estado"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCERecetaEstadoVS"/>
         <title value="Estados de receta SIHCE"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:bd85576f-261a-4b68-94e1-b319eee2519d"/>
-          <timestamp value="2026-09-17T12:21:13-03:00"/>
+          <identifier value="urn:uuid:aa954567-9114-4726-8ae7-950bc1a20004"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2092,7 +2092,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|2.0.0"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>
@@ -2122,9 +2122,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-sihce-receta-estado.html">codesystem Estado de receta en índice SIHCE v2.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-sihce-receta-estado.html">codesystem Estado de receta en índice SIHCE v2.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|2.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|2.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -2161,12 +2161,12 @@
                 <td>Receta emitida y disponible para dispensa.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;vigente&quot;, &quot;display&quot;: &quot;Vigente&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;vigente&quot;, &quot;display&quot;: &quot;Vigente&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;vigente&quot;&gt;&lt;display value=&quot;Vigente&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;vigente&quot;/&gt;&lt;display value=&quot;Vigente&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2182,12 +2182,12 @@
                 <td>Receta ya dispensada (anti-quema: no puede volver a dispensarse).</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;dispensada&quot;, &quot;display&quot;: &quot;Dispensada&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;dispensada&quot;, &quot;display&quot;: &quot;Dispensada&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;dispensada&quot;&gt;&lt;display value=&quot;Dispensada&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;dispensada&quot;/&gt;&lt;display value=&quot;Dispensada&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2203,12 +2203,12 @@
                 <td>Receta anulada por el prescriptor o por política.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.0.0&quot;, &quot;code&quot;: &quot;anulada&quot;, &quot;display&quot;: &quot;Anulada&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;, &quot;version&quot;: &quot;2.1.0&quot;, &quot;code&quot;: &quot;anulada&quot;, &quot;display&quot;: &quot;Anulada&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;&gt;&lt;version value=&quot;2.0.0&quot;&gt;&lt;code value=&quot;anulada&quot;&gt;&lt;display value=&quot;Anulada&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&quot;/&gt;&lt;version value=&quot;2.1.0&quot;/&gt;&lt;code value=&quot;anulada&quot;/&gt;&lt;display value=&quot;Anulada&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2216,15 +2216,15 @@
           </div>
         </text>
         <url value="http://sihce.gob.ar/ValueSet/sihce-receta-estado"/>
-        <version value="2.0.0"/>
+        <version value="2.1.0"/>
         <name value="SIHCERecetaEstadoVS"/>
         <title value="Estados de receta SIHCE"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-09-17T12:17:38-03:00"/>
+        <date value="2026-11-12T16:05:33-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:e670a3d4-f5f8-4b40-a8dc-e7b5dc1a2330"/>
-          <timestamp value="2026-09-17T12:21:13-03:00"/>
+          <identifier value="urn:uuid:10af768a-6a66-4272-97a0-185a55f2371f"/>
+          <timestamp value="2026-11-12T16:08:38-03:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2245,7 +2245,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|2.0.0"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado|2.1.0"/>
           </parameter>
           <contains>
             <system value="http://sihce.gob.ar/CodeSystem/sihce-receta-estado"/>

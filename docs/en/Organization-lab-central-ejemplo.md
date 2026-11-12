@@ -1,4 +1,4 @@
-# Laboratorio Central Ejemplo - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Laboratorio Central Ejemplo - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,9 +6,9 @@
 
 ## Example Organization: Laboratorio Central Ejemplo
 
-**identifier**: `http://laboratorio.ejemplo.gob.ar`/lab-central
+Laboratorio Central Ejemplo (http://laboratorio.ejemplo.gob.ar#lab-central)
 
-**name**: Laboratorio Central Ejemplo
+-------
 
 
 

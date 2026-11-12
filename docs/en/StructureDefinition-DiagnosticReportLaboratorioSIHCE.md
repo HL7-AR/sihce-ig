@@ -1,4 +1,4 @@
-# Informe de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Informe de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Resource Profile: Informe de laboratorio SIHCE 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE | *Version*:2.0.0 |
-| Draft as of 2026-06-09 | *Computable Name*:DiagnosticReportLaboratorioSIHCE |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE | *Version*:2.1.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DiagnosticReportLaboratorioSIHCE |
 
  
 DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas. 
@@ -36,8 +36,16 @@ Other representations of profile: [CSV](../StructureDefinition-DiagnosticReportL
 {
   "resourceType" : "StructureDefinition",
   "id" : "DiagnosticReportLaboratorioSIHCE",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DiagnosticReportLaboratorioSIHCE",
   "title" : "Informe de laboratorio SIHCE",
   "status" : "draft",

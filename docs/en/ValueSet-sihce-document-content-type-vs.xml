@@ -6,13 +6,19 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-document-content-type-vs</b></p><a name="sihce-document-content-type-vs"> </a><a name="hcsihce-document-content-type-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<code>http://terminology.hl7.org/CodeSystem/mimetypes</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = application/pdf</li><li>Include codes from<code>http://terminology.hl7.org/CodeSystem/mimetypes</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = application/xml</li><li>Include codes from<code>http://terminology.hl7.org/CodeSystem/mimetypes</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = application/fhir+json</li></ul></div>
   </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
   <url value="http://sihce.gob.ar/ValueSet/sihce-document-content-type"/>
-  <version value="2.0.0"/>
+  <version value="2.1.0"/>
   <name value="SIHCEDocumentContentTypeVS"/>
   <title value="Tipos MIME de contenido documental SIHCE"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-17T12:17:38-03:00"/>
+  <date value="2026-11-12T16:05:33-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>

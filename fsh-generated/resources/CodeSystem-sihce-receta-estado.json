@@ -24,6 +24,16 @@
       "definition": "Receta anulada por el prescriptor o por política."
     }
   ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "version": "1.6.0",
   "experimental": false,
   "caseSensitive": true,

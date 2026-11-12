@@ -5,6 +5,8 @@ Title: "Modelo lógico RecetaIndice (SIHCE)"
 Description: "Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE."
 * ^version = "1.6.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * datosReceta 1..1 BackboneElement "Receta" "Identificación y estado en el índice."
 * datosReceta.cuir 1..1 string "CUIR" "Código único de la receta."
 * datosReceta.cuilPaciente 1..1 string "CUIL paciente" "Identificador del paciente (CUIL)."
@@ -25,6 +27,8 @@ Title: "Modelo lógico DispensaReceta (SIHCE)"
 Description: "Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde."
 * ^version = "1.6.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * cuir 1..1 string "CUIR" "Receta dispensada."
 * cuilPaciente 1..1 string "CUIL paciente" "Paciente."
 * fechaDispensa 1..1 dateTime "Fecha dispensa" "Momento de la dispensa."

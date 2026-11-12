@@ -1,4 +1,4 @@
-# Informe laboratorio nivel 1 — DiagnosticReport con PDF - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Informe laboratorio nivel 1 — DiagnosticReport con PDF - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,13 +8,13 @@
 
 Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
 
-## Laboratory report (Laboratory) 
+### Laboratory report (Laboratory) 
 
 | | |
 | :--- | :--- |
-| Subject | Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, )) |
+| Subject | Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier: RenaperDNI#12345678 (use: official)) |
 | Reported | 2026-06-19 15:55:00-0300 |
-| Performer | [Organization Laboratorio Central Ejemplo](Organization-lab-central-ejemplo.md) |
+| Performer | [Laboratorio Central Ejemplo (http://laboratorio.ejemplo.gob.ar#lab-central)](Organization-lab-central-ejemplo.md) |
 | Identifier | `http://laboratorio.ejemplo.gob.ar/informe`/LAB-2026-0042 |
 | Presented Form | application/pdf @[https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf ![](external.png)](https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0042.pdf) |
 

@@ -4,7 +4,9 @@ Id: ModificarIDLocalPersona
 Title: "Modelo lógico ModificarIDLocalPersona (FederadorBA)"
 Description: "Modificación del identificador local de una persona federada."
 * ^version = "1.2.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * datosPersona 1..1 BackboneElement "Persona (SDM)" "Datos para validar identidad."
 * datosPersona.tipoDocumento 1..1 string "Tipo de documento" "Ej. DNI."
 * datosPersona.documentoIdentificatorio 1..1 string "Número de documento" "Valor del documento."

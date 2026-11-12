@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>RecetaIndice: modelo lógico a FHIR - XML Representation - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
+    <title>RecetaIndice: modelo lógico a FHIR - XML Representation - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.0.0 - 
+            <span style="display:inline-block;">2.1.0 - 
 
 
             </span>
@@ -159,7 +159,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -212,15 +212,15 @@
   <table class="colsd">
     <tr>
 
-      <td colspan="2">
+      <td colspan="1">
         
-          Draft
+          <i>Page standards status:</i> <a href="https://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Draft</a>
           
+        
+      </td>
 
-            as of 
-2026-09-15
-
-          
+      <td>
+        <a href="https://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
         
       </td>
 
@@ -237,14 +237,22 @@
 
   <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap">ConceptMap</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.id">id</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RecetaIndiceModeloAFHIR&quot;/&gt;
+  &lt;<a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.id">id</a> <a href="https://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;RecetaIndiceModeloAFHIR&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.language">language</a> <a href="https://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">text</a>&gt;
     &lt;<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="https://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap RecetaIndiceModeloAFHIR&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;RecetaIndiceModeloAFHIR&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcRecetaIndiceModeloAFHIR&quot;&gt; &lt;/a&gt;&lt;p&gt;This mapping does not specify any particular context of use.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Mapping from &lt;a href=&quot;CodeSystem-sihce-logical-operation-element-paths.html&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=&quot;CodeSystem-sihce-fhir-core-element-paths.html&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RecetaIndice.datosReceta.cuir (RecetaIndice datosReceta cuir)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RecetaIndice.datosReceta.cuilPaciente (RecetaIndice datosReceta cuilPaciente)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.subject&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RecetaIndice.datosReceta.idPersonaGlobal (RecetaIndice datosReceta idPersonaGlobal)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.subject&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RecetaIndice.datosReceta.estado (RecetaIndice datosReceta estado)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.extension&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RecetaIndice.datosReceta.fechaEmision (RecetaIndice datosReceta fechaEmision)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.date&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RecetaIndice.datosReceta.urlContenido (RecetaIndice datosReceta urlContenido)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RecetaIndice.datosPrescriptor.idDominio (RecetaIndice datosPrescriptor idDominio)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.custodian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RecetaIndice.datosPrescriptor.idEfector (RecetaIndice datosPrescriptor idEfector)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.custodian&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;RecetaIndice.repositorioDelegado (RecetaIndice repositorioDelegado)&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent&quot; title=&quot;equivalent&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.extension&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">text</a>&gt;
+  &lt;<a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.extension">extension</a>
+             <a href="https://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;&gt;
+    &lt;<a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueInteger</a> <a href="https://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;1&quot;/&gt;
+  &lt;/<a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.extension">extension</a>&gt;
+  &lt;<a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.extension">extension</a>
+             <a href="https://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
+    &lt;<a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a> <a href="https://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;/<a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.extension">extension</a>&gt;
   &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">url</a> <a href="https://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR&quot;/&gt;
-  &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.0.0&quot;/&gt;
+  &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.1.0&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">name</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RecetaIndiceModeloAFHIR&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">title</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RecetaIndice: modelo lógico a FHIR&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">status</a> <a href="https://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
@@ -358,8 +366,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 17, 2026 12:17-0300">2026-09-17</span>
+          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

@@ -1,10 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "parametros-patch-identifier-sihce",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "url": "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce",
   "name": "ParametrosPatchIdentifierSIHCE",
   "title": "Parametros Patch Identifier SIHCE",
-  "status": "draft",
+  "status": "active",
   "description": "Estructura de Parameters para la operacion $patch-identifier de SIHCE.",
   "fhirVersion": "4.0.1",
   "kind": "resource",

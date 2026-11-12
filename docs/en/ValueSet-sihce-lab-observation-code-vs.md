@@ -1,4 +1,4 @@
-# Analitos de laboratorio SIHCE (LOINC) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Analitos de laboratorio SIHCE (LOINC) - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## ValueSet: Analitos de laboratorio SIHCE (LOINC) 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-lab-observation-code | *Version*:2.0.0 |
-| Draft as of 2026-09-17 | *Computable Name*:SIHCELabObservationCodeVS |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-lab-observation-code | *Version*:2.1.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:SIHCELabObservationCodeVS |
 
  
 Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2. 
@@ -36,13 +36,21 @@ Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2.
 {
   "resourceType" : "ValueSet",
   "id" : "sihce-lab-observation-code-vs",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
   "url" : "http://sihce.gob.ar/ValueSet/sihce-lab-observation-code",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCELabObservationCodeVS",
   "title" : "Analitos de laboratorio SIHCE (LOINC)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T12:17:38-03:00",
+  "date" : "2026-11-12T16:05:33-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

@@ -2,12 +2,22 @@
   "resourceType": "ConceptMap",
   "id": "ModificarIDLocalPersonaModeloAFHIR",
   "url": "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "title": "ModificarIDLocalPersona: modelo lógico a FHIR",
   "description": "Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje).",
   "purpose": "Cambio de id local manteniendo validación por SDM.",
   "version": "1.2.0",
   "name": "ModificarIDLocalPersonaModeloAFHIR",
-  "status": "draft",
+  "status": "active",
   "experimental": true,
   "date": "2026-04-29",
   "publisher": "SIHCE Development Team",

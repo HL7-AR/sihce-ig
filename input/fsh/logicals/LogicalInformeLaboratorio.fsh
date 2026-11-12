@@ -5,6 +5,8 @@ Title: "Modelo lógico Informe de Laboratorio (SIHCE)"
 Description: "Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio."
 * ^version = "1.3.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * nivelMadurez 1..1 code "Nivel madurez" "1=solo PDF en presentedForm; 2=PDF y observaciones codificadas."
 * resultado 0..* BackboneElement "Resultado analítico" "Observaciones codificadas (nivel 2)."
 * resultado.codigoAnalito 1..1 code "Código analito" "LOINC preferido."

@@ -4,7 +4,9 @@ Id: PatientXBA
 Title: "Paciente SIHCE (PatientXBA)"
 Description: "Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación)"
 * ^version = "1.2.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^date = "2025-02-28T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * ^contact.name = "SIHCE Development Team"

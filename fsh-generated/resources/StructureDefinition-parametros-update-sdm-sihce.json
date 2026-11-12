@@ -1,10 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "parametros-update-sdm-sihce",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "url": "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce",
   "name": "ParametrosUpdateSDMSIHCE",
   "title": "Parametros Update SDM SIHCE",
-  "status": "draft",
+  "status": "active",
   "description": "Estructura de Parameters para la operacion $update-sdm de SIHCE.",
   "fhirVersion": "4.0.1",
   "kind": "resource",

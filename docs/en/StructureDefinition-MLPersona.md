@@ -1,4 +1,4 @@
-# Modelo Lógico de Persona para SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Modelo Lógico de Persona para SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Logical Model: Modelo Lógico de Persona para SIHCE 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MLPersona | *Version*:2.0.0 |
-| Draft as of 2026-04-24 | *Computable Name*:MLPersona |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MLPersona | *Version*:2.1.0 | |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:MLPersona |
 
  
 Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación 
@@ -36,11 +36,19 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
 {
   "resourceType" : "StructureDefinition",
   "id" : "MLPersona",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/MLPersona",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "MLPersona",
   "title" : "Modelo Lógico de Persona para SIHCE",
-  "status" : "draft",
+  "status" : "active",
   "date" : "2026-04-24T09:43:51-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{

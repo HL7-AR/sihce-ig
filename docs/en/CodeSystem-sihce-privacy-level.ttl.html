@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Niveles de privacidad SIHCE - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
+    <title>Niveles de privacidad SIHCE - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.0.0 - 
+            <span style="display:inline-block;">2.1.0 - 
 
 
             </span>
@@ -159,7 +159,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -209,18 +209,18 @@
 
 <h2 id="root">: Niveles de privacidad SIHCE</h2>
 
-  <table class="colsd">
+  <table class="colstu">
     <tr>
 
-      <td colspan="2">
+      <td colspan="1">
         
-          Draft
+          <i>Page standards status:</i> <a href="https://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Trial-use</a>
           
+        
+      </td>
 
-            as of 
-2026-09-17
-
-          
+      <td>
+        <a href="https://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 3
         
       </td>
 
@@ -245,19 +245,28 @@
 
 &lt;http://hl7.org/fhir/CodeSystem/sihce-privacy-level&gt; a fhir:CodeSystem ;
   <a href="https://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="https://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:Resource.id</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;sihce-privacy-level&quot;] ;
+  <a href="https://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:Resource.id</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;sihce-privacy-level&quot;] ;
   <a href="https://hl7.org/fhir/R4/resource.html#CodeSystem.language">fhir:Resource.language</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
   <a href="https://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">fhir:DomainResource.text</a> [
      <a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem sihce-privacy-level&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;sihce-privacy-level\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsihce-privacy-level\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://sihce.gob.ar/CodeSystem/privacy-level&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;normal&lt;a name=\&quot;sihce-privacy-level-normal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normal&lt;/td&gt;&lt;td&gt;Acceso a documentos sin etiqueta de confidencialidad elevada.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;confidential&lt;a name=\&quot;sihce-privacy-level-confidential\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Confidencial&lt;/td&gt;&lt;td&gt;Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ] ;
+  <a href="https://hl7.org/fhir/R4/domainresource.html#CodeSystem.extension">fhir:DomainResource.extension</a> [
+     <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot; ] ;
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueInteger</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#integer">fhir:value</a> &quot;3&quot;^^xsd:integer ]
+  ], [
+     <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot; ] ;
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;trial-use&quot; ]
+  ] ;
   <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;] ;
-  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.0.0&quot;] ;
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.1.0&quot;] ;
   <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SIHCEPrivacyLevelCS&quot;] ;
   <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:CodeSystem.title</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Niveles de privacidad SIHCE&quot;] ;
-  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;] ;
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
   <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:CodeSystem.experimental</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
-  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-09-17T12:17:38-03:00&quot;^^xsd:dateTime] ;
+  <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-11-12T16:05:33-03:00&quot;^^xsd:dateTime] ;
   <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:CodeSystem.publisher</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SIHCE Development Team&quot;] ;
   <a href="https://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:CodeSystem.contact</a> [
      <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -320,8 +329,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 17, 2026 12:17-0300">2026-09-17</span>
+          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

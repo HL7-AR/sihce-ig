@@ -1,11 +1,21 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ConsentSIHCE",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "url": "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE",
   "version": "2.0.0",
   "name": "ConsentSIHCE",
   "title": "Consentimiento de paciente SIHCE",
-  "status": "draft",
+  "status": "active",
   "date": "2026-09-17T00:00:00-03:00",
   "publisher": "SIHCE Development Team",
   "description": "Preferencias de privacidad del paciente en la red SIHCE (FHIR R4). Etapa 1: provision.type permit/deny (opt-in/out general). Etapa 2: provision.provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito).",

@@ -1,3 +1,8 @@
+### Versión 2.1.0
+
+- **Madurez por artefacto (FMM + standards-status):** trial-use / FMM 3 para Federación, Consentimiento, Orquestación (índice `DocumentReferenceSIHCE`) y Epicrisis; draft / FMM 1 para receta, laboratorio y soporte restante.
+- Documentado en [Aspectos Generales](Aspectos-Generales.html#niveles-de-madurez-fmm).
+
 ### Versión 2.0.0
 
 - **Downgrade a FHIR R4.0.1** (breaking): la guía deja de basarse en FHIR R5.

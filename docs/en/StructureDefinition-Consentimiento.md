@@ -1,4 +1,4 @@
-# Modelo lógico Consentimiento (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Modelo lógico Consentimiento (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Logical Model: Modelo lógico Consentimiento (SIHCE) 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/Consentimiento | *Version*:2.0.0 |
-| Draft as of 2026-09-17 | *Computable Name*:Consentimiento |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/Consentimiento | *Version*:2.1.0 | |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:Consentimiento |
 
  
 Registro de preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez: opt-in/out general, opt-in por hospital, hospital + nivel de privacidad. 
@@ -36,12 +36,20 @@ Other representations of profile: [CSV](../StructureDefinition-Consentimiento.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "Consentimiento",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/Consentimiento",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "Consentimiento",
   "title" : "Modelo lógico Consentimiento (SIHCE)",
-  "status" : "draft",
-  "date" : "2026-09-17T12:17:38-03:00",
+  "status" : "active",
+  "date" : "2026-11-12T16:05:33-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

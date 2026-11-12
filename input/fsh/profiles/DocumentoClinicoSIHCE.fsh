@@ -4,7 +4,9 @@ Id: ConditionEpicrisisSIHCE
 Title: "Condición clínica epicrisis SIHCE"
 Description: "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina)."
 * ^version = "1.3.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^date = "2026-06-09T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * clinicalStatus 1..1 MS
@@ -20,7 +22,9 @@ Id: MedicationStatementEpicrisisSIHCE
 Title: "Medicación al alta epicrisis SIHCE"
 Description: "Medicamento declarado en la sección de medicamentos al alta (nivel 3)."
 * ^version = "1.3.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^date = "2026-06-09T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * status 1..1 MS
@@ -35,7 +39,9 @@ Id: CompositionEpicrisisSIHCE
 Title: "Composición epicrisis SIHCE"
 Description: "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement)."
 * ^version = "1.3.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^date = "2026-06-09T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * ^jurisdiction = urn:iso:std:iso:3166#AR "Argentina"
@@ -111,7 +117,9 @@ Id: DocumentReferenceSIHCE
 Title: "Referencia a documento clínico SIHCE"
 Description: "Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio."
 * ^version = "1.3.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^date = "2026-06-09T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * ^jurisdiction = urn:iso:std:iso:3166#AR "Argentina"

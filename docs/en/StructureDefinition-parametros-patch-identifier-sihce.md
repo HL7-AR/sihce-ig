@@ -1,4 +1,4 @@
-# Parametros Patch Identifier SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Parametros Patch Identifier SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Resource Profile: Parametros Patch Identifier SIHCE 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce | *Version*:2.0.0 |
-| Draft as of 2026-09-17 | *Computable Name*:ParametrosPatchIdentifierSIHCE |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce | *Version*:2.1.0 | |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:ParametrosPatchIdentifierSIHCE |
 
  
 Estructura de Parameters para la operacion $patch-identifier de SIHCE. 
@@ -36,12 +36,20 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-patch-
 {
   "resourceType" : "StructureDefinition",
   "id" : "parametros-patch-identifier-sihce",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/parametros-patch-identifier-sihce",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ParametrosPatchIdentifierSIHCE",
   "title" : "Parametros Patch Identifier SIHCE",
-  "status" : "draft",
-  "date" : "2026-09-17T12:17:38-03:00",
+  "status" : "active",
+  "date" : "2026-11-12T16:05:33-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

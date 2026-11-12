@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ModificarSDMPersona: modelo lógico a FHIR - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
+    <title>ModificarSDMPersona: modelo lógico a FHIR - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.0.0 - 
+            <span style="display:inline-block;">2.1.0 - 
 
 
             </span>
@@ -159,7 +159,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -209,18 +209,18 @@
 
 <h2 id="root">: ModificarSDMPersona: modelo lógico a FHIR</h2>
 
-  <table class="colsd">
+  <table class="colstu">
     <tr>
 
-      <td colspan="2">
+      <td colspan="1">
         
-          Draft
+          <i>Page standards status:</i> <a href="https://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Trial-use</a>
           
+        
+      </td>
 
-            as of 
-2026-04-29
-
-          
+      <td>
+        <a href="https://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 3
         
       </td>
 
@@ -245,17 +245,26 @@
 
 &lt;http://hl7.org/fhir/ConceptMap/ModificarSDMPersonaModeloAFHIR&gt; a fhir:ConceptMap ;
   <a href="https://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.id">fhir:Resource.id</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ModificarSDMPersonaModeloAFHIR&quot;] ;
+  <a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.id">fhir:Resource.id</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;ModificarSDMPersonaModeloAFHIR&quot;] ;
   <a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.language">fhir:Resource.language</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
   <a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">fhir:DomainResource.text</a> [
      <a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
      fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap ModificarSDMPersonaModeloAFHIR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ModificarSDMPersonaModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcModificarSDMPersonaModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;p&gt;This mapping does not specify any particular context of use.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1 &lt;/b&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmActual.tipoDocumento (ModificarSDMPersona sdmActual tipoDocumento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmActual.documentoIdentificatorio (ModificarSDMPersona sdmActual documentoIdentificatorio)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmActual.sexo (ModificarSDMPersona sdmActual sexo)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.gender&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmActual.primerNombre (ModificarSDMPersona sdmActual primerNombre)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmActual.segundoNombre (ModificarSDMPersona sdmActual segundoNombre)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmActual.primerApellido (ModificarSDMPersona sdmActual primerApellido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmActual.segundoApellido (ModificarSDMPersona sdmActual segundoApellido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmActual.fechaNacimiento (ModificarSDMPersona sdmActual fechaNacimiento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.birthDate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmActual.fechaDefuncion (ModificarSDMPersona sdmActual fechaDefuncion)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.deceased[x]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmNuevo.sexo (ModificarSDMPersona sdmNuevo sexo)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.gender&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmNuevo.primerNombre (ModificarSDMPersona sdmNuevo primerNombre)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmNuevo.segundoNombre (ModificarSDMPersona sdmNuevo segundoNombre)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmNuevo.primerApellido (ModificarSDMPersona sdmNuevo primerApellido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmNuevo.segundoApellido (ModificarSDMPersona sdmNuevo segundoApellido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmNuevo.fechaNacimiento (ModificarSDMPersona sdmNuevo fechaNacimiento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.birthDate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.sdmNuevo.fechaDefuncion (ModificarSDMPersona sdmNuevo fechaDefuncion)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.deceased[x]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.datosDominio.idDominio (ModificarSDMPersona datosDominio idDominio)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.datosDominio.idLocalPersona (ModificarSDMPersona datosDominio idLocalPersona)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient.identifier&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Group 2 &lt;/b&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ModificarSDMPersona.datosRespuesta.mensaje (ModificarSDMPersona datosRespuesta mensaje)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;OperationOutcome.issue&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ] ;
+  <a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.extension">fhir:DomainResource.extension</a> [
+     <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot; ] ;
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueInteger</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#integer">fhir:value</a> &quot;3&quot;^^xsd:integer ]
+  ], [
+     <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot; ] ;
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;trial-use&quot; ]
+  ] ;
   <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">fhir:ConceptMap.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR&quot;] ;
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">fhir:ConceptMap.version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.0.0&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">fhir:ConceptMap.version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.1.0&quot;] ;
   <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">fhir:ConceptMap.name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ModificarSDMPersonaModeloAFHIR&quot;] ;
   <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">fhir:ConceptMap.title</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;ModificarSDMPersona: modelo lógico a FHIR&quot;] ;
-  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">fhir:ConceptMap.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;] ;
+  <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">fhir:ConceptMap.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
   <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">fhir:ConceptMap.experimental</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean] ;
   <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:ConceptMap.date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-04-29&quot;^^xsd:date] ;
   <a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">fhir:ConceptMap.publisher</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SIHCE Development Team&quot;] ;
@@ -470,8 +479,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 17, 2026 12:17-0300">2026-09-17</span>
+          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

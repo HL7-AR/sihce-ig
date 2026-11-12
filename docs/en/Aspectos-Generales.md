@@ -1,4 +1,4 @@
-# Generalidades - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Generalidades - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * **Generalidades**
@@ -8,6 +8,22 @@
 ### Aspectos a considerar para comprender la Guía
 
 Las siguientes secciones describen definiciones, interpretaciones y requisitos importantes aplicables a todos los artefactos utilizados en esta guía. Los verbos de conformidad - SHALL(Debe), SHOULD(Debería Si Condición), MAY(Podría) - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
+
+### Niveles de madurez (FMM)
+
+| | | |
+| :--- | :--- | :--- |
+| Cada artefacto de conformidad declara su madurez con las extensiones HL7`structuredefinition-fmm`(0–5) y`structuredefinition-standards-status`(`draft` | `trial-use` | …). El Publisher muestra el nivel en la cabecera de cada página de artefacto. |
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| **Federación** | trial-use | 3 | Paciente / empadronamiento (`PatientXBA`, búsqueda, federación, patch de id local, update SDM) |
+| **Consentimiento** | trial-use | 3 | `ConsentSIHCE`(all-in al incorporarse; otras modalidades por institución/documento en evolución) |
+| **Orquestación** | trial-use | 3 | Índice documental`DocumentReferenceSIHCE`+ MCC/proxy (flujos entre dominios) |
+| **Epicrisis** | trial-use | 3 | `CompositionEpicrisisSIHCE`y perfiles/logicals/ValueSets asociados |
+| **Resto**(receta, laboratorio, etc.) | draft | 1 | Aún en definición; no exigir implementación productiva |
+
+La guía en conjunto permanece en estado `draft` mientras convivan capacidades trial-use y draft.
 
 ### Perfiles
 

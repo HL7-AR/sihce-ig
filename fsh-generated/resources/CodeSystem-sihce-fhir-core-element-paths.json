@@ -141,6 +141,16 @@
       "display": "MedicationDispense.performer"
     }
   ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "version": "1.2.0",
   "experimental": false,
   "caseSensitive": true,

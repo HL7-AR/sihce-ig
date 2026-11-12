@@ -1,4 +1,4 @@
-# Dispensa de receta SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Dispensa de receta SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Resource Profile: Dispensa de receta SIHCE 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE | *Version*:2.0.0 |
-| Draft as of 2026-09-17 | *Computable Name*:MedicationDispenseRecetaSIHCE |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE | *Version*:2.1.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:MedicationDispenseRecetaSIHCE |
 
  
 Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen. 
@@ -36,8 +36,16 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationDispens
 {
   "resourceType" : "StructureDefinition",
   "id" : "MedicationDispenseRecetaSIHCE",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "MedicationDispenseRecetaSIHCE",
   "title" : "Dispensa de receta SIHCE",
   "status" : "draft",

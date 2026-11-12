@@ -11,15 +11,24 @@
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-receta-document-type-vs</b></p><a name=\"sihce-receta-document-type-vs\"> </a><a name=\"hcsihce-receta-document-type-vs\"> </a><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 57833-6 (Prescription for medication)</li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-receta-document-type-vs</b></p><a name=\"sihce-receta-document-type-vs\"> </a><a name=\"hcsihce-receta-document-type-vs\"> </a><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 57833-6</li></ul></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "1"^^xsd:integer ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:ValueSet.url [ fhir:value "http://sihce.gob.ar/ValueSet/sihce-receta-document-type"] ;
-  fhir:ValueSet.version [ fhir:value "2.0.0"] ;
+  fhir:ValueSet.version [ fhir:value "2.1.0"] ;
   fhir:ValueSet.name [ fhir:value "SIHCERecetaDocumentTypeVS"] ;
   fhir:ValueSet.title [ fhir:value "Tipo documental de receta SIHCE"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-09-17T12:17:38-03:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-12T16:05:33-03:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:ValueSet.contact [
      fhir:index -1 ;

@@ -1,11 +1,21 @@
 {
   "resourceType": "StructureDefinition",
   "id": "BuscarPersona",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "url": "http://sihce.gob.ar/StructureDefinition/BuscarPersona",
   "version": "1.2.0",
   "name": "BuscarPersona",
   "title": "Modelo lógico BuscarPersona (FederadorBA)",
-  "status": "draft",
+  "status": "active",
   "description": "Solicitud de búsqueda de persona por datos mínimos y respuesta mínima.",
   "fhirVersion": "4.0.1",
   "kind": "logical",

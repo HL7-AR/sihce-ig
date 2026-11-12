@@ -4,7 +4,9 @@ Id: FederarPersona
 Title: "Modelo lógico FederarPersona (FederadorBA)"
 Description: "Federación de una persona con identificador local y validación de datos."
 * ^version = "1.2.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * datosPersona 1..1 BackboneElement "Persona a federar" "SDM mínimo de la persona."
 * datosPersona.tipoDocumento 1..1 string "Tipo de documento" "Ej. DNI."
 * datosPersona.documentoIdentificatorio 1..1 string "Número de documento" "Valor del documento."

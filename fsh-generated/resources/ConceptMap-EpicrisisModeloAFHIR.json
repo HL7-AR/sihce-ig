@@ -2,11 +2,21 @@
   "resourceType": "ConceptMap",
   "id": "EpicrisisModeloAFHIR",
   "url": "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "title": "Epicrisis: modelo lógico a FHIR",
   "description": "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3).",
   "version": "1.3.0",
   "name": "EpicrisisModeloAFHIR",
-  "status": "draft",
+  "status": "active",
   "experimental": true,
   "date": "2026-06-09",
   "publisher": "SIHCE Development Team",

@@ -1,9 +1,14 @@
-# Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * **Historial de Cambios**
 
 ## Historial de Cambios
+
+### Versión 2.1.0
+
+* **Madurez por artefacto (FMM + standards-status):** trial-use / FMM 3 para Federación, Consentimiento, Orquestación (índice `DocumentReferenceSIHCE`) y Epicrisis; draft / FMM 1 para receta, laboratorio y soporte restante.
+* Documentado en [Aspectos Generales](Aspectos-Generales.md#niveles-de-madurez-fmm).
 
 ### Versión 2.0.0
 

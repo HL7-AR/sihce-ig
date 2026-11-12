@@ -1,11 +1,21 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ModificarSDMPersona",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "url": "http://sihce.gob.ar/StructureDefinition/ModificarSDMPersona",
   "version": "1.2.0",
   "name": "ModificarSDMPersona",
   "title": "Modelo lógico ModificarSDMPersona (FederadorBA)",
-  "status": "draft",
+  "status": "active",
   "description": "Actualización del SDM de una persona federada; documento inmutable.",
   "fhirVersion": "4.0.1",
   "kind": "logical",

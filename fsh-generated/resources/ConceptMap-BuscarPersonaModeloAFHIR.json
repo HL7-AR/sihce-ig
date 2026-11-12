@@ -2,12 +2,22 @@
   "resourceType": "ConceptMap",
   "id": "BuscarPersonaModeloAFHIR",
   "url": "http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "title": "BuscarPersona: modelo lógico a FHIR",
   "description": "Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient y Organization (FHIR R4).",
   "purpose": "Operación de búsqueda; el perfil SIHCE de paciente es Paciente SIHCE (PatientXBA).",
   "version": "1.2.0",
   "name": "BuscarPersonaModeloAFHIR",
-  "status": "draft",
+  "status": "active",
   "experimental": true,
   "date": "2026-04-29",
   "publisher": "SIHCE Development Team",

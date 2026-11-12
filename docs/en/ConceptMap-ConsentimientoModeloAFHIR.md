@@ -1,4 +1,4 @@
-# Consentimiento: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Consentimiento: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## ConceptMap: Consentimiento: modelo lógico a FHIR (Experimental) 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/ConsentimientoModeloAFHIR | *Version*:2.0.0 |
-| Draft as of 2026-09-17 | *Computable Name*:ConsentimientoModeloAFHIR |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/ConsentimientoModeloAFHIR | *Version*:2.1.0 | |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:ConsentimientoModeloAFHIR |
 
  
 Mapeo del registro de consentimiento del paciente a Consent SIHCE (FHIR R4). 
@@ -22,11 +22,19 @@ Mapeo del registro de consentimiento del paciente a Consent SIHCE (FHIR R4).
 {
   "resourceType" : "ConceptMap",
   "id" : "ConsentimientoModeloAFHIR",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
   "url" : "http://sihce.gob.ar/ConceptMap/ConsentimientoModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "ConsentimientoModeloAFHIR",
   "title" : "Consentimiento: modelo lógico a FHIR",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : true,
   "date" : "2026-09-17",
   "publisher" : "SIHCE Development Team",

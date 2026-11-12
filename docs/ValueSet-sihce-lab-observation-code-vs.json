@@ -3,15 +3,23 @@
   "id" : "sihce-lab-observation-code-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-lab-observation-code-vs</b></p><a name=\"sihce-lab-observation-code-vs\"> </a><a name=\"hcsihce-lab-observation-code-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 2345-7 (Glucose [Mass/volume] in Serum or Plasma)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 3094-0 (Urea nitrogen [Mass/volume] in Serum or Plasma)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 2160-0 (Creatinine [Mass/volume] in Serum or Plasma)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 1742-6 (Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 718-7 (Hemoglobin [Mass/volume] in Blood)</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-lab-observation-code-vs</b></p><a name=\"sihce-lab-observation-code-vs\"> </a><a name=\"hcsihce-lab-observation-code-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 2345-7</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 3094-0</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 2160-0</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 1742-6</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 718-7</li></ul></div>"
   },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
   "url" : "http://sihce.gob.ar/ValueSet/sihce-lab-observation-code",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCELabObservationCodeVS",
   "title" : "Analitos de laboratorio SIHCE (LOINC)",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T12:17:38-03:00",
+  "date" : "2026-11-12T16:05:33-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

@@ -4,15 +4,21 @@
   <id value="sihce-epicrisis-diagnosis-code-vs"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-epicrisis-diagnosis-code-vs</b></p><a name="sihce-epicrisis-diagnosis-code-vs"> </a><a name="hcsihce-epicrisis-diagnosis-code-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://tx.fhir.org/r5"><code>http://hl7.org/fhir/sid/icd-10</code></a><span style="opacity: 0.5" title="Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used"> version ⏿2019-covid-expanded</span> where code  = <a href="http://tx.fhir.org/r5/ValueSet/icd10-2019#icd10-2019-J18.469">J18.9</a></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 233604007 (Pneumonia)</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-epicrisis-diagnosis-code-vs</b></p><a name="sihce-epicrisis-diagnosis-code-vs"> </a><a name="hcsihce-epicrisis-diagnosis-code-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://tx.fhir.org/r5"><code>http://hl7.org/fhir/sid/icd-10</code></a><span title="Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used" class="xhtPieceDeEmphasized"> version ⏿2019-covid-expanded</span> where code  = <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469">J18.9</a></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 233604007</li></ul></div>
   </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
   <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"/>
-  <version value="2.0.0"/>
+  <version value="2.1.0"/>
   <name value="SIHCEEpicrisisDiagnosisCodeVS"/>
   <title value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"/>
-  <status value="draft"/>
+  <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-17T12:17:38-03:00"/>
+  <date value="2026-11-12T16:05:33-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>

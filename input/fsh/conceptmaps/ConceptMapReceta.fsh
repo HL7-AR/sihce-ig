@@ -7,6 +7,8 @@ Usage: #definition
 * version = "1.6.0"
 * name = "RecetaIndiceModeloAFHIR"
 * status = #draft
+* extension[$fmm].valueInteger = 1
+* extension[$standards-status].valueCode = #draft
 * experimental = true
 * date = "2026-09-15"
 * publisher = "SIHCE Development Team"
@@ -49,6 +51,8 @@ Usage: #definition
 * version = "1.6.0"
 * name = "DispensaRecetaModeloAFHIR"
 * status = #draft
+* extension[$fmm].valueInteger = 1
+* extension[$standards-status].valueCode = #draft
 * experimental = true
 * date = "2026-09-15"
 * publisher = "SIHCE Development Team"

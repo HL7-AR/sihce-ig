@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>InformeLaboratorio: modelo lógico a FHIR - JSON Representation - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
+    <title>InformeLaboratorio: modelo lógico a FHIR - JSON Representation - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.0.0 - 
+            <span style="display:inline-block;">2.1.0 - 
 
 
             </span>
@@ -159,7 +159,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -212,15 +212,15 @@
   <table class="colsd">
     <tr>
 
-      <td colspan="2">
+      <td colspan="1">
         
-          Draft
+          <i>Page standards status:</i> <a href="https://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Draft</a>
           
+        
+      </td>
 
-            as of 
-2026-06-09
-
-          
+      <td>
+        <a href="https://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
         
       </td>
 
@@ -241,10 +241,20 @@
   "<a href="https://hl7.org/fhir/R4/resource.html#ConceptMap.language">language</a>" : "en",
   "<a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.text">text</a>" : {
     "<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap InformeLaboratorioModeloAFHIR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;InformeLaboratorioModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcInformeLaboratorioModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;p&gt;This mapping does not specify any particular context of use.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.tipoDocumento (DocumentoClinico datosDocumento tipoDocumento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.type&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.idPersonaGlobal (DocumentoClinico datosDocumento idPersonaGlobal)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.subject&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.urlContenido (DocumentoClinico datosDocumento urlContenido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.content&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.nivelMadurez (InformeLaboratorio nivelMadurez)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto\&quot; title=\&quot;relatedto\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DiagnosticReport.result&lt;/td&gt;&lt;td&gt;Nivel 1: sin result; nivel 2: con Observation en result.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.resultado.codigoAnalito (InformeLaboratorio resultado codigoAnalito)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation.code&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.resultado.valor (InformeLaboratorio resultado valor)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation.value[x]&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+    "<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ConceptMap InformeLaboratorioModeloAFHIR&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;InformeLaboratorioModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcInformeLaboratorioModeloAFHIR\&quot;&gt; &lt;/a&gt;&lt;p&gt;This mapping does not specify any particular context of use.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Mapping from &lt;a href=\&quot;CodeSystem-sihce-logical-operation-element-paths.html\&quot;&gt;Rutas de elementos en modelos lógicos de operación SIHCE&lt;/a&gt; to &lt;a href=\&quot;CodeSystem-sihce-fhir-core-element-paths.html\&quot;&gt;Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE&lt;/a&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.tipoDocumento (DocumentoClinico datosDocumento tipoDocumento)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.type&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.idPersonaGlobal (DocumentoClinico datosDocumento idPersonaGlobal)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.subject&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;DocumentoClinico.datosDocumento.urlContenido (DocumentoClinico datosDocumento urlContenido)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DocumentReference.content&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.nivelMadurez (InformeLaboratorio nivelMadurez)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-related-to\&quot; title=\&quot;related-to\&quot;&gt;is related to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DiagnosticReport.result&lt;/td&gt;&lt;td&gt;Nivel 1: sin result; nivel 2: con Observation en result.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.resultado.codigoAnalito (InformeLaboratorio resultado codigoAnalito)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation.code&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;InformeLaboratorio.resultado.valor (InformeLaboratorio resultado valor)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\&quot; title=\&quot;equivalent\&quot;&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation.value[x]&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
+  "<a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.extension">extension</a>" : [
+    {
+      "<a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "<a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueInteger</a>" : 1
+    },
+    {
+      "<a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "<a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "draft"
+    }
+  ],
   "<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">url</a>" : "http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR",
-  "<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a>" : "2.0.0",
+  "<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a>" : "2.1.0",
   "<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">name</a>" : "InformeLaboratorioModeloAFHIR",
   "<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">title</a>" : "InformeLaboratorio: modelo lógico a FHIR",
   "<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">status</a>" : "draft",
@@ -355,8 +365,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 17, 2026 12:17-0300">2026-09-17</span>
+          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

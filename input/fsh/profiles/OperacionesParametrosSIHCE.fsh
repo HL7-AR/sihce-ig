@@ -3,6 +3,9 @@ Parent: Parameters
 Id: parametros-patch-identifier-sihce
 Title: "Parametros Patch Identifier SIHCE"
 Description: "Estructura de Parameters para la operacion $patch-identifier de SIHCE."
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #closed
@@ -26,6 +29,9 @@ Parent: Parameters
 Id: parametros-update-sdm-sihce
 Title: "Parametros Update SDM SIHCE"
 Description: "Estructura de Parameters para la operacion $update-sdm de SIHCE."
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #closed

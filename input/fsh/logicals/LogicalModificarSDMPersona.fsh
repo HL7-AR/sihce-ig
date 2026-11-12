@@ -4,7 +4,9 @@ Id: ModificarSDMPersona
 Title: "Modelo lógico ModificarSDMPersona (FederadorBA)"
 Description: "Actualización del SDM de una persona federada; documento inmutable."
 * ^version = "1.2.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * sdmActual 1..1 BackboneElement "SDM actual" "Datos vigentes en FederadorBA."
 * sdmActual.tipoDocumento 1..1 string "Tipo de documento" "Ej. DNI."
 * sdmActual.documentoIdentificatorio 1..1 string "Número de documento" "Valor del documento."

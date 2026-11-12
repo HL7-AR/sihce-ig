@@ -1,4 +1,4 @@
-# Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF) - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -14,7 +14,7 @@ Profile: [Referencia a documento clínico SIHCE](StructureDefinition-DocumentRef
 
 **type**: Laboratory report
 
-**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))](Patient-PersonaSIHCEMin.md)
+**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier: RenaperDNI#12345678 (use: official))](Patient-PersonaSIHCEMin.md)
 
 **date**: 2026-06-19 15:55:00-0300
 

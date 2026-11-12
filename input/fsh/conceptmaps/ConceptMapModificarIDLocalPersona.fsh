@@ -7,7 +7,9 @@ Usage: #definition
 * url = "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR"
 * version = "1.2.0"
 * name = "ModificarIDLocalPersonaModeloAFHIR"
-* status = #draft
+* status = #active
+* extension[$fmm].valueInteger = 3
+* extension[$standards-status].valueCode = #trial-use
 * experimental = true
 * date = "2026-04-29"
 * publisher = "SIHCE Development Team"

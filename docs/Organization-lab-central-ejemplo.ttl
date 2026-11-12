@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "lab-central-ejemplo"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization lab-central-ejemplo</b></p><a name=\"lab-central-ejemplo\"> </a><a name=\"hclab-central-ejemplo\"> </a><p><b>identifier</b>: <code>http://laboratorio.ejemplo.gob.ar</code>/lab-central</p><p><b>name</b>: Laboratorio Central Ejemplo</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization lab-central-ejemplo</b></p><a name=\"lab-central-ejemplo\"> </a><a name=\"hclab-central-ejemplo\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Laboratorio Central Ejemplo (http://laboratorio.ejemplo.gob.ar#lab-central)</p><hr/></div>"
   ] ;
   fhir:Organization.identifier [
      fhir:index 0 ;

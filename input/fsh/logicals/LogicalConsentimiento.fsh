@@ -4,7 +4,9 @@ Id: Consentimiento
 Title: "Modelo lógico Consentimiento (SIHCE)"
 Description: "Registro de preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez: opt-in/out general, opt-in por hospital, hospital + nivel de privacidad."
 * ^version = "1.4.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * datosPaciente 1..1 BackboneElement "Paciente" "Persona titular del consentimiento."
 * datosPaciente.idPersonaGlobal 1..1 string "Id persona SIHCE" "Identificador global ([NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.html))."
 * datosConsentimiento 1..1 BackboneElement "Consentimiento" "Decisión de participación en la red."

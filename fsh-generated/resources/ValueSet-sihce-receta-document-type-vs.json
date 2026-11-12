@@ -6,6 +6,16 @@
   "title": "Tipo documental de receta SIHCE",
   "description": "LOINC para índice de receta electrónica.",
   "url": "http://sihce.gob.ar/ValueSet/sihce-receta-document-type",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "version": "1.6.0",
   "experimental": false,
   "compose": {

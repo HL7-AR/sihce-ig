@@ -2,12 +2,22 @@
   "resourceType": "ConceptMap",
   "id": "ModificarSDMPersonaModeloAFHIR",
   "url": "http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "title": "ModificarSDMPersona: modelo lógico a FHIR",
   "description": "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome.",
   "purpose": "Actualización de SDM con documento inmutable; correlación con PatientXBA.",
   "version": "1.2.0",
   "name": "ModificarSDMPersonaModeloAFHIR",
-  "status": "draft",
+  "status": "active",
   "experimental": true,
   "date": "2026-04-29",
   "publisher": "SIHCE Development Team",

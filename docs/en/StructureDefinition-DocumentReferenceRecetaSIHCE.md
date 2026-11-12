@@ -1,4 +1,4 @@
-# Índice de receta electrónica SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Índice de receta electrónica SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Resource Profile: Índice de receta electrónica SIHCE 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE | *Version*:2.0.0 |
-| Draft as of 2026-09-15 | *Computable Name*:DocumentReferenceRecetaSIHCE |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE | *Version*:2.1.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DocumentReferenceRecetaSIHCE |
 
  
 Metadatos de receta en el índice SIHCE (CUIR, paciente, efector, estado). El MedicationRequest permanece en el repositorio de origen; SIHCE actúa como broker/proxy salvo repositorio delegado (caso 3/1b). 
@@ -36,8 +36,16 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
 {
   "resourceType" : "StructureDefinition",
   "id" : "DocumentReferenceRecetaSIHCE",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DocumentReferenceRecetaSIHCE",
   "title" : "Índice de receta electrónica SIHCE",
   "status" : "draft",

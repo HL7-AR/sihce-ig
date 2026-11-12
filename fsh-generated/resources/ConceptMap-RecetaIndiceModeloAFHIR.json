@@ -2,6 +2,16 @@
   "resourceType": "ConceptMap",
   "id": "RecetaIndiceModeloAFHIR",
   "url": "http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "title": "RecetaIndice: modelo lógico a FHIR",
   "description": "Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest.",
   "version": "1.6.0",

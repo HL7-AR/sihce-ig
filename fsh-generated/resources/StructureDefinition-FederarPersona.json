@@ -1,11 +1,21 @@
 {
   "resourceType": "StructureDefinition",
   "id": "FederarPersona",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "url": "http://sihce.gob.ar/StructureDefinition/FederarPersona",
   "version": "1.2.0",
   "name": "FederarPersona",
   "title": "Modelo lógico FederarPersona (FederadorBA)",
-  "status": "draft",
+  "status": "active",
   "description": "Federación de una persona con identificador local y validación de datos.",
   "fhirVersion": "4.0.1",
   "kind": "logical",

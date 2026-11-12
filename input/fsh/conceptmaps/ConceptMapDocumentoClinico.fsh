@@ -7,6 +7,8 @@ Usage: #definition
 * version = "1.3.0"
 * name = "DocumentoClinicoModeloAFHIR"
 * status = #draft
+* extension[$fmm].valueInteger = 1
+* extension[$standards-status].valueCode = #draft
 * experimental = true
 * date = "2026-06-09"
 * publisher = "SIHCE Development Team"
@@ -48,7 +50,9 @@ Usage: #definition
 * url = "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR"
 * version = "1.3.0"
 * name = "EpicrisisModeloAFHIR"
-* status = #draft
+* status = #active
+* extension[$fmm].valueInteger = 3
+* extension[$standards-status].valueCode = #trial-use
 * experimental = true
 * date = "2026-06-09"
 * publisher = "SIHCE Development Team"
@@ -70,6 +74,8 @@ Usage: #definition
 * version = "1.3.0"
 * name = "InformeLaboratorioModeloAFHIR"
 * status = #draft
+* extension[$fmm].valueInteger = 1
+* extension[$standards-status].valueCode = #draft
 * experimental = true
 * date = "2026-06-09"
 * publisher = "SIHCE Development Team"

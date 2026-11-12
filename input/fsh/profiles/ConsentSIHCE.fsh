@@ -4,7 +4,9 @@ Id: ConsentSIHCE
 Title: "Consentimiento de paciente SIHCE"
 Description: "Preferencias de privacidad del paciente en la red SIHCE (FHIR R4). Etapa 1: provision.type permit/deny (opt-in/out general). Etapa 2: provision.provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito)."
 * ^version = "2.0.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^date = "2026-09-17T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * ^jurisdiction = urn:iso:std:iso:3166#AR "Argentina"

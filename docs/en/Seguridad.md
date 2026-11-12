@@ -1,4 +1,4 @@
-# Seguridad - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Seguridad - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * **Seguridad**
@@ -7,7 +7,7 @@
 
 > **X-BA – Manual de interoperabilidad (2026)** — referencia normativa de capa de seguridad y adhesión.
 
-## 1. Objetivo de la capa de seguridad
+### 1. Objetivo de la capa de seguridad
 
 El intercambio de información clínica entre sistemas debe garantizar confidencialidad, autenticidad, integridad y trazabilidad. Para cumplir estos principios, las integraciones FHIR dentro del ecosistema se realizan a través de una capa de seguridad basada en servidores de seguridad, que actúan como intermediarios entre los sistemas participantes.
 
@@ -24,7 +24,7 @@ Este mecanismo asegura que toda comunicación:
 * esté cifrada;
 * tenga control de acceso entre organizaciones.
 
-## 2. Flujo de intercambio de datos
+### 2. Flujo de intercambio de datos
 
 El caso de uso principal es la federación de pacientes: el dominio realiza un `POST` del recurso FHIR `Patient` hacia SIHCE.
 
@@ -59,7 +59,7 @@ Pasos (narrativa):
 
 Este mecanismo garantiza que el intercambio se realice solo entre sistemas autorizados.
 
-## 3. Modelo de arquitectura de seguridad
+### 3. Modelo de arquitectura de seguridad
 
 La arquitectura utilizada es descentralizada. Cada organización participante debe contar con su propio **Servidor de Seguridad**, que actúa como gateway de interoperabilidad.
 
@@ -83,7 +83,7 @@ Características del modelo:
 * Cada mensaje es firmado y auditado.
 * Los accesos se controlan mediante permisos.
 
-## 4. Identificación de sistemas (Subsistemas)
+### 4. Identificación de sistemas (Subsistemas)
 
 Dentro de la red de interoperabilidad, cada sistema se registra como un **subsistema**. Los subsistemas representan sistemas de información específicos que participan en el intercambio de datos.
 
@@ -94,7 +94,7 @@ Para este caso de uso, los subsistemas relevantes son:
 | **Dominio** | Cons-DOMINIO-PRD | Envía recursos FHIR / inicia la comunicación |
 | **SIHCE** | Prov-SIHCE-PRD | Expone endpoints FHIR / recibe y procesa recursos |
 
-## 5. Endpoint FHIR
+### 5. Endpoint FHIR
 
 El sistema SIHCE expone el endpoint `POST /fhir/Patient` para la federación de pacientes (detalle de ruta y subsistema según habilitación). Ejemplo de solicitud a través de la capa X-BA:
 
@@ -127,14 +127,14 @@ Body (recurso FHIR `Patient`), alineado con la guía:
 
 Los valores específicos de la URL (DNS del servidor de seguridad, ruta X-BA, ambiente) son provistos por el equipo de SIHCE al momento de la habilitación. El perfil de payload interoperable se documenta en [PatientXBA](StructureDefinition-PatientXBA.md).
 
-## 6. Autenticación y confianza
+### 6. Autenticación y confianza
 
 La autenticación entre organizaciones se realiza mediante infraestructura de clave pública (PKI). Cada servidor de seguridad utiliza dos certificados principales:
 
 * **Certificado de autenticación:** permite establecer canales seguros entre servidores y verificar la identidad del servidor emisor.
 * **Certificado de firma:** permite firmar digitalmente cada mensaje, garantizar no repudio y detectar modificaciones en tránsito.
 
-## 7. Cifrado de comunicaciones
+### 7. Cifrado de comunicaciones
 
 Toda comunicación entre servidores de seguridad se realiza utilizando HTTPS, lo que garantiza:
 
@@ -144,13 +144,13 @@ Toda comunicación entre servidores de seguridad se realiza utilizando HTTPS, lo
 
 El cifrado se aplica tanto a headers como al body de las solicitudes y respuestas.
 
-## 8. Control de acceso entre sistemas
+### 8. Control de acceso entre sistemas
 
 El acceso a los servicios no es abierto dentro de la red. Cada servicio expuesto debe definir explícitamente qué subsistemas están autorizados a consumirlo.
 
 Para este caso de uso, el servicio `POST Patient` expuesto por `Prov-SIHCE-PRD` debe habilitar explícitamente al subsistema `Cons-DOMINIO-PRD`. Si un subsistema no autorizado intenta consumir el servicio, la solicitud será rechazada.
 
-## 9. Trazabilidad y auditoría
+### 9. Trazabilidad y auditoría
 
 Todos los intercambios son registrados automáticamente por los servidores de seguridad. Cada transacción genera un registro de auditoría que incluye:
 
@@ -161,7 +161,7 @@ Todos los intercambios son registrados automáticamente por los servidores de se
 
 Esto permite trazabilidad completa, auditoría posterior, análisis de incidentes y cumplimiento normativo.
 
-## 10. Requisitos de infraestructura
+### 10. Requisitos de infraestructura
 
 Cada organización participante debe operar su propio Servidor de Seguridad con los siguientes requisitos mínimos:
 
@@ -175,7 +175,7 @@ Cada organización participante debe operar su propio Servidor de Seguridad con 
 
 Los certificados digitales (autenticación y firma) son provistos por la PKI del GCBA durante el proceso de adhesión.
 
-## 11. Responsabilidades de cada organización
+### 11. Responsabilidades de cada organización
 
 **Organización DOMINIO** es responsable de:
 
@@ -190,7 +190,7 @@ Los certificados digitales (autenticación y firma) son provistos por la PKI del
 * gestionar permisos de acceso;
 * garantizar disponibilidad del servicio.
 
-## 12. Beneficios del modelo de seguridad
+### 12. Beneficios del modelo de seguridad
 
 | | |
 | :--- | :--- |

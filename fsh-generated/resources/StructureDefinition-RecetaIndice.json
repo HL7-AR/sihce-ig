@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "RecetaIndice",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "url": "http://sihce.gob.ar/StructureDefinition/RecetaIndice",
   "version": "1.6.0",
   "name": "RecetaIndice",

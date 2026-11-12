@@ -4,8 +4,8 @@
     "fshName": "SIHCEFhirCoreElementPaths",
     "fshType": "CodeSystem",
     "fshFile": "codesystems/SIHCEConceptMapSupport.fsh",
-    "startLine": 108,
-    "endLine": 150
+    "startLine": 110,
+    "endLine": 154
   },
   {
     "outputFile": "CodeSystem-sihce-logical-operation-element-paths.json",
@@ -13,7 +13,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/SIHCEConceptMapSupport.fsh",
     "startLine": 1,
-    "endLine": 106
+    "endLine": 108
   },
   {
     "outputFile": "CodeSystem-sihce-privacy-level.json",
@@ -21,7 +21,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/SIHCEConsentTerminology.fsh",
     "startLine": 1,
-    "endLine": 12
+    "endLine": 14
   },
   {
     "outputFile": "CodeSystem-sihce-receta-estado.json",
@@ -29,7 +29,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/SIHCERecetaTerminology.fsh",
     "startLine": 1,
-    "endLine": 13
+    "endLine": 15
   },
   {
     "outputFile": "Composition-CompositionEpicrisisNivel2.json",
@@ -45,7 +45,7 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapBuscarPersona.fsh",
     "startLine": 1,
-    "endLine": 64
+    "endLine": 66
   },
   {
     "outputFile": "ConceptMap-ConsentimientoModeloAFHIR.json",
@@ -53,15 +53,15 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapConsentimiento.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 38
   },
   {
     "outputFile": "ConceptMap-DispensaRecetaModeloAFHIR.json",
     "fshName": "DispensaRecetaModeloAFHIR",
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapReceta.fsh",
-    "startLine": 43,
-    "endLine": 71
+    "startLine": 45,
+    "endLine": 75
   },
   {
     "outputFile": "ConceptMap-DocumentoClinicoModeloAFHIR.json",
@@ -69,15 +69,15 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapDocumentoClinico.fsh",
     "startLine": 1,
-    "endLine": 41
+    "endLine": 43
   },
   {
     "outputFile": "ConceptMap-EpicrisisModeloAFHIR.json",
     "fshName": "EpicrisisModeloAFHIR",
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapDocumentoClinico.fsh",
-    "startLine": 43,
-    "endLine": 62
+    "startLine": 45,
+    "endLine": 66
   },
   {
     "outputFile": "ConceptMap-FederarPersonaModeloAFHIR.json",
@@ -85,15 +85,15 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapFederarPersona.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 65
   },
   {
     "outputFile": "ConceptMap-InformeLaboratorioModeloAFHIR.json",
     "fshName": "InformeLaboratorioModeloAFHIR",
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapDocumentoClinico.fsh",
-    "startLine": 64,
-    "endLine": 96
+    "startLine": 68,
+    "endLine": 102
   },
   {
     "outputFile": "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.json",
@@ -101,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapModificarIDLocalPersona.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 56
   },
   {
     "outputFile": "ConceptMap-ModificarSDMPersonaModeloAFHIR.json",
@@ -109,7 +109,7 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapModificarSDMPersona.fsh",
     "startLine": 1,
-    "endLine": 74
+    "endLine": 76
   },
   {
     "outputFile": "ConceptMap-RecetaIndiceModeloAFHIR.json",
@@ -117,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "conceptmaps/ConceptMapReceta.fsh",
     "startLine": 1,
-    "endLine": 41
+    "endLine": 43
   },
   {
     "outputFile": "Consent-ConsentOptInGeneralSIHCE.json",
@@ -341,15 +341,15 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalBuscarPersona.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-CompositionEpicrisisSIHCE.json",
     "fshName": "CompositionEpicrisisSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
-    "startLine": 32,
-    "endLine": 106
+    "startLine": 36,
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-ConditionEpicrisisSIHCE.json",
@@ -357,7 +357,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
     "startLine": 1,
-    "endLine": 15
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-ConsentSIHCE.json",
@@ -365,7 +365,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/ConsentSIHCE.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 46
   },
   {
     "outputFile": "StructureDefinition-Consentimiento.json",
@@ -373,7 +373,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalConsentimiento.fsh",
     "startLine": 1,
-    "endLine": 17
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-DiagnosticReportLaboratorioSIHCE.json",
@@ -381,31 +381,31 @@
     "fshType": "Profile",
     "fshFile": "profiles/InformeLaboratorioSIHCE.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-DispensaReceta.json",
     "fshName": "DispensaReceta",
     "fshType": "Logical",
     "fshFile": "logicals/LogicalReceta.fsh",
-    "startLine": 21,
-    "endLine": 33
+    "startLine": 23,
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-DocumentReferenceRecetaSIHCE.json",
     "fshName": "DocumentReferenceRecetaSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/RecetaSIHCE.fsh",
-    "startLine": 22,
-    "endLine": 56
+    "startLine": 28,
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-DocumentReferenceSIHCE.json",
     "fshName": "DocumentReferenceSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
-    "startLine": 108,
-    "endLine": 147
+    "startLine": 114,
+    "endLine": 155
   },
   {
     "outputFile": "StructureDefinition-DocumentoClinico.json",
@@ -413,15 +413,15 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalDocumentoClinico.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 20
   },
   {
     "outputFile": "StructureDefinition-Epicrisis.json",
     "fshName": "Epicrisis",
     "fshType": "Logical",
     "fshFile": "logicals/LogicalDocumentoClinico.fsh",
-    "startLine": 20,
-    "endLine": 31
+    "startLine": 22,
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-FederarPersona.json",
@@ -429,7 +429,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalFederarPersona.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-InformeLaboratorio.json",
@@ -437,7 +437,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalInformeLaboratorio.fsh",
     "startLine": 1,
-    "endLine": 13
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-MLPersona.json",
@@ -445,31 +445,31 @@
     "fshType": "Logical",
     "fshFile": "logicals/MLPersona.fsh",
     "startLine": 1,
-    "endLine": 31
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-MedicationDispenseRecetaSIHCE.json",
     "fshName": "MedicationDispenseRecetaSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/RecetaSIHCE.fsh",
-    "startLine": 82,
-    "endLine": 102
+    "startLine": 92,
+    "endLine": 114
   },
   {
     "outputFile": "StructureDefinition-MedicationRequestRecetaSIHCE.json",
     "fshName": "MedicationRequestRecetaSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/RecetaSIHCE.fsh",
-    "startLine": 58,
-    "endLine": 80
+    "startLine": 66,
+    "endLine": 90
   },
   {
     "outputFile": "StructureDefinition-MedicationStatementEpicrisisSIHCE.json",
     "fshName": "MedicationStatementEpicrisisSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
-    "startLine": 17,
-    "endLine": 30
+    "startLine": 19,
+    "endLine": 34
   },
   {
     "outputFile": "StructureDefinition-ModificarIDLocalPersona.json",
@@ -477,7 +477,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalModificarIDLocalPersona.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-ModificarSDMPersona.json",
@@ -485,15 +485,15 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalModificarSDMPersona.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-ObservationLaboratorioSIHCE.json",
     "fshName": "ObservationLaboratorioSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/InformeLaboratorioSIHCE.fsh",
-    "startLine": 37,
-    "endLine": 60
+    "startLine": 39,
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-PatientXBA.json",
@@ -501,7 +501,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/PacienteSIHCE.fsh",
     "startLine": 1,
-    "endLine": 74
+    "endLine": 76
   },
   {
     "outputFile": "StructureDefinition-RecetaIndice.json",
@@ -509,7 +509,7 @@
     "fshType": "Logical",
     "fshFile": "logicals/LogicalReceta.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-extension-receta-estado.json",
@@ -517,15 +517,15 @@
     "fshType": "Extension",
     "fshFile": "profiles/RecetaSIHCE.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 13
   },
   {
     "outputFile": "StructureDefinition-extension-receta-repositorio-delegado.json",
     "fshName": "ExtensionRecetaRepositorioDelegado",
     "fshType": "Extension",
     "fshFile": "profiles/RecetaSIHCE.fsh",
-    "startLine": 12,
-    "endLine": 20
+    "startLine": 15,
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-parametros-patch-identifier-sihce.json",
@@ -533,15 +533,15 @@
     "fshType": "Profile",
     "fshFile": "profiles/OperacionesParametrosSIHCE.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-parametros-update-sdm-sihce.json",
     "fshName": "ParametrosUpdateSDMSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/OperacionesParametrosSIHCE.fsh",
-    "startLine": 24,
-    "endLine": 35
+    "startLine": 27,
+    "endLine": 41
   },
   {
     "outputFile": "ValueSet-sihce-clinical-document-type-vs.json",
@@ -549,62 +549,62 @@
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
     "startLine": 1,
-    "endLine": 10
+    "endLine": 12
   },
   {
     "outputFile": "ValueSet-sihce-document-content-type-vs.json",
     "fshName": "SIHCEDocumentContentTypeVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
-    "startLine": 12,
-    "endLine": 22
+    "startLine": 14,
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-sihce-epicrisis-diagnosis-code-vs.json",
     "fshName": "SIHCEEpicrisisDiagnosisCodeVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
-    "startLine": 46,
-    "endLine": 55
+    "startLine": 52,
+    "endLine": 63
   },
   {
     "outputFile": "ValueSet-sihce-epicrisis-section-vs.json",
     "fshName": "SIHCEEpicrisisSectionVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
-    "startLine": 24,
-    "endLine": 44
+    "startLine": 28,
+    "endLine": 50
   },
   {
     "outputFile": "ValueSet-sihce-lab-observation-code-vs.json",
     "fshName": "SIHCELabObservationCodeVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
-    "startLine": 57,
-    "endLine": 69
+    "startLine": 65,
+    "endLine": 79
   },
   {
     "outputFile": "ValueSet-sihce-privacy-level-vs.json",
     "fshName": "SIHCEPrivacyLevelVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEConsentTerminology.fsh",
-    "startLine": 14,
-    "endLine": 22
+    "startLine": 16,
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-sihce-receta-document-type-vs.json",
     "fshName": "SIHCERecetaDocumentTypeVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCERecetaTerminology.fsh",
-    "startLine": 25,
-    "endLine": 33
+    "startLine": 29,
+    "endLine": 39
   },
   {
     "outputFile": "ValueSet-sihce-receta-estado-vs.json",
     "fshName": "SIHCERecetaEstadoVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCERecetaTerminology.fsh",
-    "startLine": 15,
-    "endLine": 23
+    "startLine": 17,
+    "endLine": 27
   }
 ]

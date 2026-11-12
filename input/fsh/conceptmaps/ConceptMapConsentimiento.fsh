@@ -6,7 +6,9 @@ Usage: #definition
 * url = "http://sihce.gob.ar/ConceptMap/ConsentimientoModeloAFHIR"
 * version = "2.0.0"
 * name = "ConsentimientoModeloAFHIR"
-* status = #draft
+* status = #active
+* extension[$fmm].valueInteger = 3
+* extension[$standards-status].valueCode = #trial-use
 * experimental = true
 * date = "2026-09-17"
 * publisher = "SIHCE Development Team"

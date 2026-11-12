@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MedicationDispenseRecetaSIHCE",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "url": "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE",
   "version": "2.0.0",
   "name": "MedicationDispenseRecetaSIHCE",

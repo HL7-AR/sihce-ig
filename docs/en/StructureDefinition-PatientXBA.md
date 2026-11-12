@@ -1,4 +1,4 @@
-# Paciente SIHCE (PatientXBA) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Paciente SIHCE (PatientXBA) - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Resource Profile: Paciente SIHCE (PatientXBA) 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/PatientXBA | *Version*:2.0.0 |
-| Draft as of 2025-02-28 | *Computable Name*:PacienteSIHCE |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/PatientXBA | *Version*:2.1.0 | |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:PacienteSIHCE |
 
  
 Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación) 
@@ -37,11 +37,19 @@ Other representations of profile: [CSV](../StructureDefinition-PatientXBA.csv), 
 {
   "resourceType" : "StructureDefinition",
   "id" : "PatientXBA",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/PatientXBA",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "PacienteSIHCE",
   "title" : "Paciente SIHCE (PatientXBA)",
-  "status" : "draft",
+  "status" : "active",
   "date" : "2025-02-28T00:00:00-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{

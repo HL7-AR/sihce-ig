@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Seguridad - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
+    <title>Seguridad - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.0.0 - 
+            <span style="display:inline-block;">2.1.0 - 
 
 
             </span>
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Seguridad</h2>
   
 
@@ -178,15 +178,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#1-objetivo-de-la-capa-de-seguridad" id="markdown-toc-1-objetivo-de-la-capa-de-seguridad">1. Objetivo de la capa de seguridad</a></li>
+  <li><a href="#2-flujo-de-intercambio-de-datos" id="markdown-toc-2-flujo-de-intercambio-de-datos">2. Flujo de intercambio de datos</a></li>
+  <li><a href="#3-modelo-de-arquitectura-de-seguridad" id="markdown-toc-3-modelo-de-arquitectura-de-seguridad">3. Modelo de arquitectura de seguridad</a></li>
+  <li><a href="#4-identificación-de-sistemas-subsistemas" id="markdown-toc-4-identificación-de-sistemas-subsistemas">4. Identificación de sistemas (Subsistemas)</a></li>
+  <li><a href="#5-endpoint-fhir" id="markdown-toc-5-endpoint-fhir">5. Endpoint FHIR</a></li>
+  <li><a href="#6-autenticación-y-confianza" id="markdown-toc-6-autenticación-y-confianza">6. Autenticación y confianza</a></li>
+  <li><a href="#7-cifrado-de-comunicaciones" id="markdown-toc-7-cifrado-de-comunicaciones">7. Cifrado de comunicaciones</a></li>
+  <li><a href="#8-control-de-acceso-entre-sistemas" id="markdown-toc-8-control-de-acceso-entre-sistemas">8. Control de acceso entre sistemas</a></li>
+  <li><a href="#9-trazabilidad-y-auditoría" id="markdown-toc-9-trazabilidad-y-auditoría">9. Trazabilidad y auditoría</a></li>
+  <li><a href="#10-requisitos-de-infraestructura" id="markdown-toc-10-requisitos-de-infraestructura">10. Requisitos de infraestructura</a></li>
+  <li><a href="#11-responsabilidades-de-cada-organización" id="markdown-toc-11-responsabilidades-de-cada-organización">11. Responsabilidades de cada organización</a></li>
+  <li><a href="#12-beneficios-del-modelo-de-seguridad" id="markdown-toc-12-beneficios-del-modelo-de-seguridad">12. Beneficios del modelo de seguridad</a></li>
+</ul>
 
+</div>
 <blockquote>
   <p><strong>X-BA – Manual de interoperabilidad (2026)</strong> — referencia normativa de capa de seguridad y adhesión.</p>
 </blockquote>
 
-<h2 id="1-objetivo-de-la-capa-de-seguridad">1. Objetivo de la capa de seguridad</h2>
+<h3 id="1-objetivo-de-la-capa-de-seguridad">1. Objetivo de la capa de seguridad</h3>
 
 <p>El intercambio de información clínica entre sistemas debe garantizar confidencialidad, autenticidad, integridad y trazabilidad. Para cumplir estos principios, las integraciones FHIR dentro del ecosistema se realizan a través de una capa de seguridad basada en servidores de seguridad, que actúan como intermediarios entre los sistemas participantes.</p>
 
@@ -207,7 +220,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>tenga control de acceso entre organizaciones.</li>
 </ul>
 
-<h2 id="2-flujo-de-intercambio-de-datos">2. Flujo de intercambio de datos</h2>
+<h3 id="2-flujo-de-intercambio-de-datos">2. Flujo de intercambio de datos</h3>
 
 <p>El caso de uso principal es la federación de pacientes: el dominio realiza un <code class="language-plaintext highlighter-rouge">POST</code> del recurso FHIR <code class="language-plaintext highlighter-rouge">Patient</code> hacia SIHCE.</p>
 
@@ -242,7 +255,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Este mecanismo garantiza que el intercambio se realice solo entre sistemas autorizados.</p>
 
-<h2 id="3-modelo-de-arquitectura-de-seguridad">3. Modelo de arquitectura de seguridad</h2>
+<h3 id="3-modelo-de-arquitectura-de-seguridad">3. Modelo de arquitectura de seguridad</h3>
 
 <p>La arquitectura utilizada es descentralizada. Cada organización participante debe contar con su propio <strong>Servidor de Seguridad</strong>, que actúa como gateway de interoperabilidad.</p>
 
@@ -266,7 +279,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Los accesos se controlan mediante permisos.</li>
 </ul>
 
-<h2 id="4-identificación-de-sistemas-subsistemas">4. Identificación de sistemas (Subsistemas)</h2>
+<h3 id="4-identificación-de-sistemas-subsistemas">4. Identificación de sistemas (Subsistemas)</h3>
 
 <p>Dentro de la red de interoperabilidad, cada sistema se registra como un <strong>subsistema</strong>. Los subsistemas representan sistemas de información específicos que participan en el intercambio de datos.</p>
 
@@ -294,7 +307,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h2 id="5-endpoint-fhir">5. Endpoint FHIR</h2>
+<h3 id="5-endpoint-fhir">5. Endpoint FHIR</h3>
 
 <p>El sistema SIHCE expone el endpoint <code class="language-plaintext highlighter-rouge">POST /fhir/Patient</code> para la federación de pacientes (detalle de ruta y subsistema según habilitación). Ejemplo de solicitud a través de la capa X-BA:</p>
 
@@ -323,7 +336,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Los valores específicos de la URL (DNS del servidor de seguridad, ruta X-BA, ambiente) son provistos por el equipo de SIHCE al momento de la habilitación. El perfil de payload interoperable se documenta en <a href="StructureDefinition-PatientXBA.html">PatientXBA</a>.</p>
 
-<h2 id="6-autenticación-y-confianza">6. Autenticación y confianza</h2>
+<h3 id="6-autenticación-y-confianza">6. Autenticación y confianza</h3>
 
 <p>La autenticación entre organizaciones se realiza mediante infraestructura de clave pública (PKI). Cada servidor de seguridad utiliza dos certificados principales:</p>
 
@@ -332,7 +345,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Certificado de firma:</strong> permite firmar digitalmente cada mensaje, garantizar no repudio y detectar modificaciones en tránsito.</li>
 </ul>
 
-<h2 id="7-cifrado-de-comunicaciones">7. Cifrado de comunicaciones</h2>
+<h3 id="7-cifrado-de-comunicaciones">7. Cifrado de comunicaciones</h3>
 
 <p>Toda comunicación entre servidores de seguridad se realiza utilizando HTTPS, lo que garantiza:</p>
 
@@ -344,13 +357,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>El cifrado se aplica tanto a headers como al body de las solicitudes y respuestas.</p>
 
-<h2 id="8-control-de-acceso-entre-sistemas">8. Control de acceso entre sistemas</h2>
+<h3 id="8-control-de-acceso-entre-sistemas">8. Control de acceso entre sistemas</h3>
 
 <p>El acceso a los servicios no es abierto dentro de la red. Cada servicio expuesto debe definir explícitamente qué subsistemas están autorizados a consumirlo.</p>
 
 <p>Para este caso de uso, el servicio <code class="language-plaintext highlighter-rouge">POST Patient</code> expuesto por <code class="language-plaintext highlighter-rouge">Prov-SIHCE-PRD</code> debe habilitar explícitamente al subsistema <code class="language-plaintext highlighter-rouge">Cons-DOMINIO-PRD</code>. Si un subsistema no autorizado intenta consumir el servicio, la solicitud será rechazada.</p>
 
-<h2 id="9-trazabilidad-y-auditoría">9. Trazabilidad y auditoría</h2>
+<h3 id="9-trazabilidad-y-auditoría">9. Trazabilidad y auditoría</h3>
 
 <p>Todos los intercambios son registrados automáticamente por los servidores de seguridad. Cada transacción genera un registro de auditoría que incluye:</p>
 
@@ -363,7 +376,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Esto permite trazabilidad completa, auditoría posterior, análisis de incidentes y cumplimiento normativo.</p>
 
-<h2 id="10-requisitos-de-infraestructura">10. Requisitos de infraestructura</h2>
+<h3 id="10-requisitos-de-infraestructura">10. Requisitos de infraestructura</h3>
 
 <p>Cada organización participante debe operar su propio Servidor de Seguridad con los siguientes requisitos mínimos:</p>
 
@@ -400,7 +413,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Los certificados digitales (autenticación y firma) son provistos por la PKI del GCBA durante el proceso de adhesión.</p>
 
-<h2 id="11-responsabilidades-de-cada-organización">11. Responsabilidades de cada organización</h2>
+<h3 id="11-responsabilidades-de-cada-organización">11. Responsabilidades de cada organización</h3>
 
 <p><strong>Organización DOMINIO</strong> es responsable de:</p>
 
@@ -419,7 +432,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>garantizar disponibilidad del servicio.</li>
 </ul>
 
-<h2 id="12-beneficios-del-modelo-de-seguridad">12. Beneficios del modelo de seguridad</h2>
+<h3 id="12-beneficios-del-modelo-de-seguridad">12. Beneficios del modelo de seguridad</h3>
 
 <table>
   <thead>
@@ -474,8 +487,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 17, 2026 12:17-0300">2026-09-17</span>
+          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

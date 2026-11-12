@@ -13,11 +13,20 @@
      fhir:Narrative.status [ fhir:value "generated" ] ;
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ConsentimientoModeloAFHIR</b></p><a name=\"ConsentimientoModeloAFHIR\"> </a><a name=\"hcConsentimientoModeloAFHIR\"> </a><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping from <a href=\"CodeSystem-sihce-logical-operation-element-paths.html\">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href=\"CodeSystem-sihce-fhir-core-element-paths.html\">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>Consentimiento.datosPaciente.idPersonaGlobal (Consentimiento datosPaciente idPersonaGlobal)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Consent.patient</td><td/></tr><tr><td>Consentimiento.datosConsentimiento.participacionGeneral (Consentimiento datosConsentimiento participacionGeneral)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Consent.provision.type</td><td/></tr><tr><td>Consentimiento.datosConsentimiento.fechaRegistro (Consentimiento datosConsentimiento fechaRegistro)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Consent.dateTime</td><td/></tr><tr><td>Consentimiento.autorizacionHospital.uriDominio (Consentimiento autorizacionHospital uriDominio)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Consent.provision</td><td>Concatenado con idHospital en provision.provision.actor.reference.identifier (R4 nested).</td></tr><tr><td>Consentimiento.autorizacionHospital.idHospital (Consentimiento autorizacionHospital idHospital)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Consent.provision</td><td/></tr><tr><td>Consentimiento.autorizacionHospital.nombreHospital (Consentimiento autorizacionHospital nombreHospital)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Consent.provision</td><td/></tr><tr><td>Consentimiento.autorizacionHospital.nivelPrivacidad (Consentimiento autorizacionHospital nivelPrivacidad)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Consent.provision</td><td/></tr></table></div>"
   ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "3"^^xsd:integer ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "trial-use" ]
+  ] ;
   fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/ConsentimientoModeloAFHIR"] ;
-  fhir:ConceptMap.version [ fhir:value "2.0.0"] ;
+  fhir:ConceptMap.version [ fhir:value "2.1.0"] ;
   fhir:ConceptMap.name [ fhir:value "ConsentimientoModeloAFHIR"] ;
   fhir:ConceptMap.title [ fhir:value "Consentimiento: modelo lógico a FHIR"] ;
-  fhir:ConceptMap.status [ fhir:value "draft"] ;
+  fhir:ConceptMap.status [ fhir:value "active"] ;
   fhir:ConceptMap.experimental [ fhir:value "true"^^xsd:boolean] ;
   fhir:ConceptMap.date [ fhir:value "2026-09-17"^^xsd:date] ;
   fhir:ConceptMap.publisher [ fhir:value "SIHCE Development Team"] ;

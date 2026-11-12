@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>InformeLaboratorio: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
+    <title>InformeLaboratorio: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.0.0 - 
+            <span style="display:inline-block;">2.1.0 - 
 
 
             </span>
@@ -157,7 +157,7 @@
 
 <!-- layouts\layout-canonical -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -213,7 +213,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR|2.0.0"/></span>
+      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR|2.1.0"/></span>
       </td>
     </tr>
 
@@ -225,15 +225,18 @@
 
 
 
-      <td colspan="4">
+      <td colspan="3">
         
-          Draft
+          <i>
+            
+            Standards status:
+          </i> <a href="https://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Draft</a>
           
+        
+      </td>
 
-            as of 
-2026-06-09
-
-          
+      <td>
+        <a href="https://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
         
       </td>
 
@@ -266,7 +269,7 @@
   
 
 
-  <div data-fhir="generated"><p class="res-header-id"/><a name="InformeLaboratorioModeloAFHIR"> </a><a name="hcInformeLaboratorioModeloAFHIR"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping from <a href="CodeSystem-sihce-logical-operation-element-paths.html">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href="CodeSystem-sihce-fhir-core-element-paths.html">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>DocumentoClinico.datosDocumento.tipoDocumento (DocumentoClinico datosDocumento tipoDocumento)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.type</td><td/></tr><tr><td>DocumentoClinico.datosDocumento.idPersonaGlobal (DocumentoClinico datosDocumento idPersonaGlobal)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.subject</td><td/></tr><tr><td>DocumentoClinico.datosDocumento.urlContenido (DocumentoClinico datosDocumento urlContenido)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.content</td><td/></tr><tr><td>InformeLaboratorio.nivelMadurez (InformeLaboratorio nivelMadurez)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-relatedto" title="relatedto">is related to</a></td><td>DiagnosticReport.result</td><td>Nivel 1: sin result; nivel 2: con Observation en result.</td></tr><tr><td>InformeLaboratorio.resultado.codigoAnalito (InformeLaboratorio resultado codigoAnalito)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>Observation.code</td><td/></tr><tr><td>InformeLaboratorio.resultado.valor (InformeLaboratorio resultado valor)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>Observation.value[x]</td><td/></tr></table></div>
+  <div data-fhir="generated"><p class="res-header-id"/><a name="InformeLaboratorioModeloAFHIR"> </a><a name="hcInformeLaboratorioModeloAFHIR"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p>This mapping does not specify any particular context of use.</p><br/><p>Mapping from <a href="CodeSystem-sihce-logical-operation-element-paths.html">Rutas de elementos en modelos lógicos de operación SIHCE</a> to <a href="CodeSystem-sihce-fhir-core-element-paths.html">Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>DocumentoClinico.datosDocumento.tipoDocumento (DocumentoClinico datosDocumento tipoDocumento)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.type</td><td/></tr><tr><td>DocumentoClinico.datosDocumento.idPersonaGlobal (DocumentoClinico datosDocumento idPersonaGlobal)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.subject</td><td/></tr><tr><td>DocumentoClinico.datosDocumento.urlContenido (DocumentoClinico datosDocumento urlContenido)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>DocumentReference.content</td><td/></tr><tr><td>InformeLaboratorio.nivelMadurez (InformeLaboratorio nivelMadurez)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-related-to" title="related-to">is related to</a></td><td>DiagnosticReport.result</td><td>Nivel 1: sin result; nivel 2: con Observation en result.</td></tr><tr><td>InformeLaboratorio.resultado.codigoAnalito (InformeLaboratorio resultado codigoAnalito)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>Observation.code</td><td/></tr><tr><td>InformeLaboratorio.resultado.valor (InformeLaboratorio resultado valor)</td><td><a href="https://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#concept-map-equivalence-equivalent" title="equivalent">is equivalent to</a></td><td>Observation.value[x]</td><td/></tr></table></div>
 
   <!-- insert notes if present -->
   
@@ -296,8 +299,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 17, 2026 12:17-0300">2026-09-17</span>
+          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

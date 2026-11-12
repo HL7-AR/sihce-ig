@@ -1,4 +1,4 @@
-# Informe laboratorio nivel 2 — PDF + glucemia y urea - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Informe laboratorio nivel 2 — PDF + glucemia y urea - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,11 +8,11 @@
 
 Profile: [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
 
-## Laboratory report (Laboratory) 
+### Laboratory report (Laboratory) 
 
 | | |
 | :--- | :--- |
-| Subject | Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, )) |
+| Subject | Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier: RenaperDNI#12345678 (use: official)) |
 | Reported | 2026-06-19 16:10:00-0300 |
 | Identifier | `http://laboratorio.ejemplo.gob.ar/informe`/LAB-2026-0110 |
 | Presented Form | application/pdf @[https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0110.pdf ![](external.png)](https://laboratorio.ejemplo.gob.ar/fhir/Binary/informe-LAB-2026-0110.pdf) |
@@ -40,7 +40,7 @@ Profile: [Observación de laboratorio SIHCE](StructureDefinition-ObservationLabo
 
 **code**: Glucose [Mass/volume] in Serum or Plasma
 
-**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))](Patient-PersonaSIHCEMin.md)
+**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier: RenaperDNI#12345678 (use: official))](Patient-PersonaSIHCEMin.md)
 
 **effective**: 2026-06-19 15:28:00-0300
 
@@ -48,7 +48,7 @@ Profile: [Observación de laboratorio SIHCE](StructureDefinition-ObservationLabo
 
 **interpretation**: Low
 
-### ReferenceRanges
+#### ReferenceRanges
 
 | | | |
 | :--- | :--- | :--- |
@@ -65,7 +65,7 @@ Profile: [Observación de laboratorio SIHCE](StructureDefinition-ObservationLabo
 
 **code**: Urea [Mass/volume] in Serum or Plasma
 
-**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))](Patient-PersonaSIHCEMin.md)
+**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier: RenaperDNI#12345678 (use: official))](Patient-PersonaSIHCEMin.md)
 
 **effective**: 2026-06-19 15:28:00-0300
 
@@ -73,7 +73,7 @@ Profile: [Observación de laboratorio SIHCE](StructureDefinition-ObservationLabo
 
 **interpretation**: Normal
 
-### ReferenceRanges
+#### ReferenceRanges
 
 | | |
 | :--- | :--- |

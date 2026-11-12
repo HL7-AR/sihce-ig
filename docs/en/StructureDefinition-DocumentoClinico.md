@@ -1,4 +1,4 @@
-# Modelo lógico DocumentoClinico (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Modelo lógico DocumentoClinico (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Logical Model: Modelo lógico DocumentoClinico (SIHCE) 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentoClinico | *Version*:2.0.0 |
-| Draft as of 2026-09-17 | *Computable Name*:DocumentoClinico |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentoClinico | *Version*:2.1.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DocumentoClinico |
 
  
 Registro e indexación de un documento clínico emitido por un dominio en SIHCE. 
@@ -36,12 +36,20 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentoClinico.
 {
   "resourceType" : "StructureDefinition",
   "id" : "DocumentoClinico",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentoClinico",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DocumentoClinico",
   "title" : "Modelo lógico DocumentoClinico (SIHCE)",
   "status" : "draft",
-  "date" : "2026-09-17T12:17:38-03:00",
+  "date" : "2026-11-12T16:05:33-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

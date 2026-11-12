@@ -1,4 +1,4 @@
-# Epicrisis: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Epicrisis: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## ConceptMap: Epicrisis: modelo lógico a FHIR (Experimental) 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR | *Version*:2.0.0 |
-| Draft as of 2026-06-09 | *Computable Name*:EpicrisisModeloAFHIR |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR | *Version*:2.1.0 | |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:EpicrisisModeloAFHIR |
 
  
 Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3). 
@@ -22,11 +22,19 @@ Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3).
 {
   "resourceType" : "ConceptMap",
   "id" : "EpicrisisModeloAFHIR",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
   "url" : "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "EpicrisisModeloAFHIR",
   "title" : "Epicrisis: modelo lógico a FHIR",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : true,
   "date" : "2026-06-09",
   "publisher" : "SIHCE Development Team",

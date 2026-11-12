@@ -1,4 +1,4 @@
-# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## Resource Profile: Referencia a documento clínico SIHCE 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:2.0.0 |
-| Draft as of 2026-06-09 | *Computable Name*:DocumentReferenceSIHCE |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:2.1.0 | |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:DocumentReferenceSIHCE |
 
  
 Índice federado de documentos clínicos. En POST el dominio emisor registra metadatos con la URL real en content.attachment.url. En GET (consulta ITI-67) SIHCE devuelve URLs del Proxy Central (/Proxy/Binary/{id}). La descarga (ITI-68) es GET al proxy: SIHCE revalida Consent (MCC) y hace proxy pass sincrónico al custodio. 
@@ -36,11 +36,19 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
 {
   "resourceType" : "StructureDefinition",
   "id" : "DocumentReferenceSIHCE",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "DocumentReferenceSIHCE",
   "title" : "Referencia a documento clínico SIHCE",
-  "status" : "draft",
+  "status" : "active",
   "date" : "2026-06-09T00:00:00-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{

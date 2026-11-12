@@ -1,15 +1,15 @@
 {
   "codeSystems" : [{
     "url" : "http://sihce.gob.ar/CodeSystem/privacy-level",
-    "version" : "2.0.0",
-    "status" : "draft",
+    "version" : "2.1.0",
+    "status" : "active",
     "name" : "SIHCEPrivacyLevelCS",
     "title" : "Niveles de privacidad SIHCE",
     "description" : "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3)."
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
-    "version" : "2.0.0",
+    "version" : "2.1.0",
     "status" : "draft",
     "name" : "SIHCEFhirCoreElementPaths",
     "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
@@ -17,7 +17,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-    "version" : "2.0.0",
+    "version" : "2.1.0",
     "status" : "draft",
     "name" : "SIHCELogicalOperationElementPaths",
     "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
@@ -25,7 +25,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-receta-estado",
-    "version" : "2.0.0",
+    "version" : "2.1.0",
     "status" : "draft",
     "name" : "SIHCERecetaEstadoCS",
     "title" : "Estado de receta en índice SIHCE",

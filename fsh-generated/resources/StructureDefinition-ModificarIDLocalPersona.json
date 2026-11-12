@@ -1,11 +1,21 @@
 {
   "resourceType": "StructureDefinition",
   "id": "ModificarIDLocalPersona",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "url": "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
   "version": "1.2.0",
   "name": "ModificarIDLocalPersona",
   "title": "Modelo lógico ModificarIDLocalPersona (FederadorBA)",
-  "status": "draft",
+  "status": "active",
   "description": "Modificación del identificador local de una persona federada.",
   "fhirVersion": "4.0.1",
   "kind": "logical",

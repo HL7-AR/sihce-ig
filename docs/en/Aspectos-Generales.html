@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Generalidades - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
+    <title>Generalidades - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.0.0 - 
+            <span style="display:inline-block;">2.1.0 - 
 
 
             </span>
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Generalidades</h2>
   
 
@@ -181,6 +181,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#aspectos-a-considerar-para-comprender-la-guía" id="markdown-toc-aspectos-a-considerar-para-comprender-la-guía">Aspectos a considerar para comprender la Guía</a></li>
+  <li><a href="#niveles-de-madurez-fmm" id="markdown-toc-niveles-de-madurez-fmm">Niveles de madurez (FMM)</a></li>
   <li><a href="#perfiles" id="markdown-toc-perfiles">Perfiles</a></li>
   <li><a href="#cardinalidad" id="markdown-toc-cardinalidad">Cardinalidad</a></li>
   <li><a href="#definición-del-conjunto-mínimo-de-datos" id="markdown-toc-definición-del-conjunto-mínimo-de-datos">Definición del Conjunto Mínimo de Datos</a></li>
@@ -194,6 +195,63 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="aspectos-a-considerar-para-comprender-la-guía">Aspectos a considerar para comprender la Guía</h3>
 
 <p>Las siguientes secciones describen definiciones, interpretaciones y requisitos importantes aplicables a todos los artefactos utilizados en esta guía. Los verbos de conformidad - SHALL(Debe), SHOULD(Debería Si Condición), MAY(Podría) - utilizados en esta guía se definen en las reglas de conformidad de FHIR.</p>
+
+<h3 id="niveles-de-madurez-fmm">Niveles de madurez (FMM)</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Cada artefacto de conformidad declara su madurez con las extensiones HL7 <code class="language-plaintext highlighter-rouge">structuredefinition-fmm</code> (0–5) y <code class="language-plaintext highlighter-rouge">structuredefinition-standards-status</code> (<code class="language-plaintext highlighter-rouge">draft</code></td>
+      <td><code class="language-plaintext highlighter-rouge">trial-use</code></td>
+      <td>…). El Publisher muestra el nivel en la cabecera de cada página de artefacto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Capacidad</th>
+      <th>Standards status</th>
+      <th>FMM</th>
+      <th>Alcance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Federación</strong></td>
+      <td>trial-use</td>
+      <td>3</td>
+      <td>Paciente / empadronamiento (<code class="language-plaintext highlighter-rouge">PatientXBA</code>, búsqueda, federación, patch de id local, update SDM)</td>
+    </tr>
+    <tr>
+      <td><strong>Consentimiento</strong></td>
+      <td>trial-use</td>
+      <td>3</td>
+      <td><code class="language-plaintext highlighter-rouge">ConsentSIHCE</code> (all-in al incorporarse; otras modalidades por institución/documento en evolución)</td>
+    </tr>
+    <tr>
+      <td><strong>Orquestación</strong></td>
+      <td>trial-use</td>
+      <td>3</td>
+      <td>Índice documental <code class="language-plaintext highlighter-rouge">DocumentReferenceSIHCE</code> + MCC/proxy (flujos entre dominios)</td>
+    </tr>
+    <tr>
+      <td><strong>Epicrisis</strong></td>
+      <td>trial-use</td>
+      <td>3</td>
+      <td><code class="language-plaintext highlighter-rouge">CompositionEpicrisisSIHCE</code> y perfiles/logicals/ValueSets asociados</td>
+    </tr>
+    <tr>
+      <td><strong>Resto</strong> (receta, laboratorio, etc.)</td>
+      <td>draft</td>
+      <td>1</td>
+      <td>Aún en definición; no exigir implementación productiva</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>La guía en conjunto permanece en estado <code class="language-plaintext highlighter-rouge">draft</code> mientras convivan capacidades trial-use y draft.</p>
 
 <h3 id="perfiles">Perfiles</h3>
 
@@ -342,8 +400,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 17, 2026 12:17-0300">2026-09-17</span>
+          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

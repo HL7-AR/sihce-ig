@@ -5,6 +5,8 @@ Description: "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.
 * ^url = "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"
 * ^version = "1.2.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
@@ -112,6 +114,8 @@ Description: "Códigos de correlación con Patient, Organization y OperationOutc
 * ^url = "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"
 * ^version = "1.2.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete

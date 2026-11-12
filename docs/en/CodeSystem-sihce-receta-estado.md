@@ -1,4 +1,4 @@
-# Estado de receta en índice SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Estado de receta en índice SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## CodeSystem: Estado de receta en índice SIHCE 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-receta-estado | *Version*:2.0.0 |
-| Draft as of 2026-09-17 | *Computable Name*:SIHCERecetaEstadoCS |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-receta-estado | *Version*:2.1.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:SIHCERecetaEstadoCS |
 
  
 Estados del índice de receta electrónica (mecanismo anti-quema). 
@@ -30,13 +30,21 @@ This Code system is referenced in the definition of the following value sets:
 {
   "resourceType" : "CodeSystem",
   "id" : "sihce-receta-estado",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "draft"
+  }],
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-receta-estado",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCERecetaEstadoCS",
   "title" : "Estado de receta en índice SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-17T12:17:38-03:00",
+  "date" : "2026-11-12T16:05:33-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

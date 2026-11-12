@@ -1,4 +1,4 @@
-# Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,10 +6,10 @@
 
 ## ValueSet: Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) 
 
-| | |
-| :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code | *Version*:2.0.0 |
-| Draft as of 2026-09-17 | *Computable Name*:SIHCEEpicrisisDiagnosisCodeVS |
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code | *Version*:2.1.0 | |
+| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:SIHCEEpicrisisDiagnosisCodeVS |
 
  
 Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación. 
@@ -38,13 +38,21 @@ No Expansion for this valueset (Unknown Code System)
 {
   "resourceType" : "ValueSet",
   "id" : "sihce-epicrisis-diagnosis-code-vs",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
   "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
-  "version" : "2.0.0",
+  "version" : "2.1.0",
   "name" : "SIHCEEpicrisisDiagnosisCodeVS",
   "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T12:17:38-03:00",
+  "date" : "2026-11-12T16:05:33-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

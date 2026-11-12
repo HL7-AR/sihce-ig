@@ -2,12 +2,22 @@
   "resourceType": "ConceptMap",
   "id": "FederarPersonaModeloAFHIR",
   "url": "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    }
+  ],
   "title": "FederarPersona: modelo lógico a FHIR",
   "description": "Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado.",
   "purpose": "Federación de persona; resultado incluye id global y mensaje.",
   "version": "1.2.0",
   "name": "FederarPersonaModeloAFHIR",
-  "status": "draft",
+  "status": "active",
   "experimental": true,
   "date": "2026-04-29",
   "publisher": "SIHCE Development Team",

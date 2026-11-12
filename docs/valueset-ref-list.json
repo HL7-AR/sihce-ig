@@ -29,8 +29,8 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
-    "version" : "2.0.0",
-    "status" : "draft",
+    "version" : "2.1.0",
+    "status" : "active",
     "name" : "SIHCEClinicalDocumentTypeVS",
     "title" : "Tipos de documento clínico SIHCE",
     "description" : "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC).",
@@ -41,8 +41,8 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
-    "version" : "2.0.0",
-    "status" : "draft",
+    "version" : "2.1.0",
+    "status" : "active",
     "name" : "SIHCEDocumentContentTypeVS",
     "title" : "Tipos MIME de contenido documental SIHCE",
     "description" : "Formatos admitidos en DocumentReference.content.attachment.contentType.",
@@ -54,8 +54,8 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
-    "version" : "2.0.0",
-    "status" : "draft",
+    "version" : "2.1.0",
+    "status" : "active",
     "name" : "SIHCEEpicrisisDiagnosisCodeVS",
     "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
     "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.",
@@ -66,8 +66,8 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
-    "version" : "2.0.0",
-    "status" : "draft",
+    "version" : "2.1.0",
+    "status" : "active",
     "name" : "SIHCEEpicrisisSectionVS",
     "title" : "Secciones LOINC de epicrisis SIHCE",
     "description" : "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales).",
@@ -75,7 +75,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-lab-observation-code",
-    "version" : "2.0.0",
+    "version" : "2.1.0",
     "status" : "draft",
     "name" : "SIHCELabObservationCodeVS",
     "title" : "Analitos de laboratorio SIHCE (LOINC)",
@@ -87,8 +87,8 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
-    "version" : "2.0.0",
-    "status" : "draft",
+    "version" : "2.1.0",
+    "status" : "active",
     "name" : "SIHCEPrivacyLevelVS",
     "title" : "Niveles de privacidad SIHCE",
     "description" : "Niveles admitidos en Consent.provision.securityLabel (etapa 3).",
@@ -99,7 +99,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-receta-document-type",
-    "version" : "2.0.0",
+    "version" : "2.1.0",
     "status" : "draft",
     "name" : "SIHCERecetaDocumentTypeVS",
     "title" : "Tipo documental de receta SIHCE",
@@ -111,7 +111,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-receta-estado",
-    "version" : "2.0.0",
+    "version" : "2.1.0",
     "status" : "draft",
     "name" : "SIHCERecetaEstadoVS",
     "title" : "Estados de receta SIHCE",

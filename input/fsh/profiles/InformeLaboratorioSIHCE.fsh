@@ -5,6 +5,8 @@ Title: "Informe de laboratorio SIHCE"
 Description: "DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas."
 * ^version = "1.3.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^date = "2026-06-09T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * ^jurisdiction = urn:iso:std:iso:3166#AR "Argentina"
@@ -41,6 +43,8 @@ Title: "Observación de laboratorio SIHCE"
 Description: "Resultado analítico codificado (LOINC) asociado a un informe de laboratorio nivel 2."
 * ^version = "1.3.0"
 * ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^date = "2026-06-09T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * status 1..1 MS

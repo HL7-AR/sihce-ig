@@ -1,4 +1,4 @@
-# MedicationRequest receta SIGEHOS - Guía de Implementación SIHCE - FHIR R4 v2.0.0
+# MedicationRequest receta SIGEHOS - Guía de Implementación SIHCE - FHIR R4 v2.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -16,7 +16,7 @@ Profile: [Receta MedicationRequest SIHCE](StructureDefinition-MedicationRequestR
 
 **medication**: Amoxicilina 500 mg cápsulas
 
-**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier (use: official, ))](Patient-PersonaSIHCEMin.md)
+**subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier: RenaperDNI#12345678 (use: official))](Patient-PersonaSIHCEMin.md)
 
 **authoredOn**: 2026-09-10 11:30:00-0300
 

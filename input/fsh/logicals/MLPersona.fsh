@@ -3,7 +3,9 @@ Id: MLPersona
 Title: "Modelo Lógico de Persona para SIHCE"
 Description: "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación"
 * ^version = "1.2.0"
-* ^status = #draft
+* ^status = #active
+* ^extension[$fmm].valueInteger = 3
+* ^extension[$standards-status].valueCode = #trial-use
 * ^date = "2026-04-24T09:43:51-03:00"
 * ^publisher = "SIHCE Development Team"
 * ^contact.name = "SIHCE Development Team"

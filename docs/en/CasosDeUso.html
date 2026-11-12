@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.0.0</title>
+    <title>Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.0.0 - 
+            <span style="display:inline-block;">2.1.0 - 
 
 
             </span>
@@ -162,7 +162,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Casos de Uso</h2>
   
 
@@ -181,29 +181,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#vista-general-intercambio" id="markdown-toc-vista-general-intercambio">Vista general (intercambio)</a></li>
-  <li><a href="#consentimiento" id="markdown-toc-consentimiento">Consentimiento</a>    <ul>
-      <li><a href="#registro-de-consentimiento" id="markdown-toc-registro-de-consentimiento">Registro de consentimiento</a></li>
-    </ul>
-  </li>
-  <li><a href="#persona" id="markdown-toc-persona">Persona</a>    <ul>
-      <li><a href="#búsqueda-de-persona" id="markdown-toc-búsqueda-de-persona">Búsqueda de persona</a></li>
-      <li><a href="#altafederación-de-persona" id="markdown-toc-altafederación-de-persona">Alta/Federación de persona</a></li>
-      <li><a href="#modificación-de-identificador-local" id="markdown-toc-modificación-de-identificador-local">Modificación de identificador local</a></li>
-      <li><a href="#modificación-de-sdm" id="markdown-toc-modificación-de-sdm">Modificación de SDM</a></li>
-    </ul>
-  </li>
-  <li><a href="#documentos-clínicos" id="markdown-toc-documentos-clínicos">Documentos clínicos</a>    <ul>
-      <li><a href="#registro-de-epicrisis-dominio--sihce" id="markdown-toc-registro-de-epicrisis-dominio--sihce">Registro de epicrisis (dominio → SIHCE)</a></li>
-      <li><a href="#consulta-de-epicrisis-por-paciente" id="markdown-toc-consulta-de-epicrisis-por-paciente">Consulta de epicrisis por paciente</a></li>
-      <li><a href="#registro-de-informe-de-laboratorio-dominio--sihce" id="markdown-toc-registro-de-informe-de-laboratorio-dominio--sihce">Registro de informe de laboratorio (dominio → SIHCE)</a></li>
-      <li><a href="#consulta-de-informes-de-laboratorio-por-paciente" id="markdown-toc-consulta-de-informes-de-laboratorio-por-paciente">Consulta de informes de laboratorio por paciente</a></li>
-    </ul>
-  </li>
-  <li><a href="#receta-electrónica-cpe" id="markdown-toc-receta-electrónica-cpe">Receta electrónica (CPE)</a>    <ul>
-      <li><a href="#caso-2--público-sigehos--cpe--farmacia-privada" id="markdown-toc-caso-2--público-sigehos--cpe--farmacia-privada">Caso 2 — Público (SIGEHOS) → CPE → Farmacia privada</a></li>
-      <li><a href="#caso-3--privado-recetario--cpe--farmacia-privada" id="markdown-toc-caso-3--privado-recetario--cpe--farmacia-privada">Caso 3 — Privado (Recetario) → CPE → Farmacia privada</a></li>
-    </ul>
-  </li>
+  <li><a href="#consentimiento" id="markdown-toc-consentimiento">Consentimiento</a></li>
+  <li><a href="#persona" id="markdown-toc-persona">Persona</a></li>
+  <li><a href="#documentos-clínicos" id="markdown-toc-documentos-clínicos">Documentos clínicos</a></li>
+  <li><a href="#receta-electrónica-cpe" id="markdown-toc-receta-electrónica-cpe">Receta electrónica (CPE)</a></li>
 </ul>
 
 </div>
@@ -213,7 +194,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>SIHCE</strong> expone capacidades de negocio (federación de personas, <strong>consentimiento</strong>, registro/consulta documental, <strong>índice y broker de recetas electrónicas</strong>). El “federador” no es un sistema aparte: es la funcionalidad de SIHCE sobre <code class="language-plaintext highlighter-rouge">Patient</code>.</p>
 
-<h2 id="vista-general-intercambio">Vista general (intercambio)</h2>
+<h3 id="vista-general-intercambio">Vista general (intercambio)</h3>
 
 <pre><code class="language-mermaid">flowchart LR
   subgraph Dominio["Dominio"]
@@ -233,13 +214,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Todo mensaje entre dominio y SIHCE viaja por el <strong>Canal X-BA</strong>. SIHCE responde según la operación: federación de persona, <strong>consentimiento (MCC)</strong>, registro documental, búsqueda ITI-67 o descarga ITI-68 vía <strong>Proxy Central</strong>.</p>
 
-<h2 id="consentimiento">Consentimiento</h2>
+<h3 id="consentimiento">Consentimiento</h3>
 
 <p>Preferencias de privacidad del paciente en la red SIHCE. <strong>Default:</strong> sin consentimiento activo, el acceso al índice documental se <strong>deniega</strong>. Cualquier dominio autenticado puede registrar el consentimiento (incluido personal administrativo).</p>
 
 <p>Operaciones: <a href="Operaciones.html#op-consentimiento">Registro, consulta y PUT</a>. Perfil: <a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>.</p>
 
-<h3 id="registro-de-consentimiento">Registro de consentimiento</h3>
+<h4 id="registro-de-consentimiento">Registro de consentimiento</h4>
 
 <pre><code class="language-mermaid">sequenceDiagram
   participant D as Dominio
@@ -279,9 +260,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Opt-out general anula todo; un opt-in posterior solo habilita lo declarado en la nueva versión.</p>
 
-<h2 id="persona">Persona</h2>
+<h3 id="persona">Persona</h3>
 
-<h3 id="búsqueda-de-persona">Búsqueda de persona</h3>
+<h4 id="búsqueda-de-persona">Búsqueda de persona</h4>
 
 <p>Operación relacionada: <a href="Operaciones.html#op-busqueda">Búsqueda por identificador y género</a>.</p>
 
@@ -295,7 +276,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   X--&gt;&gt;C: 200 Bundle (searchset)
 </code></pre>
 
-<h3 id="altafederación-de-persona">Alta/Federación de persona</h3>
+<h4 id="altafederación-de-persona">Alta/Federación de persona</h4>
 
 <p>Operación relacionada: <a href="Operaciones.html#op-alta-federacion">Alta/Federación de paciente</a>. Cuerpo conforme al perfil <a href="StructureDefinition-PatientXBA.html">PatientXBA</a>.</p>
 
@@ -309,7 +290,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   X--&gt;&gt;C: 201/200 resultado federación
 </code></pre>
 
-<h3 id="modificación-de-identificador-local">Modificación de identificador local</h3>
+<h4 id="modificación-de-identificador-local">Modificación de identificador local</h4>
 
 <p>Operación relacionada: <a href="Operaciones.html#op-patch-identifier">Patch de identificador local</a>.</p>
 
@@ -323,7 +304,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   X--&gt;&gt;C: 200 OperationOutcome / Patient
 </code></pre>
 
-<h3 id="modificación-de-sdm">Modificación de SDM</h3>
+<h4 id="modificación-de-sdm">Modificación de SDM</h4>
 
 <p>Operación relacionada: <a href="Operaciones.html#op-update-sdm">Update de SDM</a>.</p>
 
@@ -337,11 +318,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   X--&gt;&gt;C: 200 OperationOutcome / Patient
 </code></pre>
 
-<h2 id="documentos-clínicos">Documentos clínicos</h2>
+<h3 id="documentos-clínicos">Documentos clínicos</h3>
 
 <p>Todo documento clínico se indexa en SIHCE como <code class="language-plaintext highlighter-rouge">DocumentReference</code> (<a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>). <strong>Epicrisis</strong> e <strong>informe de laboratorio</strong> son casos especiales del mismo patrón (distintos LOINC y distinto recurso detrás de <code class="language-plaintext highlighter-rouge">content.attachment.url</code>).</p>
 
-<h3 id="registro-de-epicrisis-dominio--sihce">Registro de epicrisis (dominio → SIHCE)</h3>
+<h4 id="registro-de-epicrisis-dominio--sihce">Registro de epicrisis (dominio → SIHCE)</h4>
 
 <p>Operación relacionada: <a href="Operaciones.html#op-documento-registro">Registro de documento clínico</a>. Cuerpo conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>; tipo LOINC <code class="language-plaintext highlighter-rouge">18842-5</code>. Capacidad SIHCE: <strong>registro documental</strong>.</p>
 
@@ -356,7 +337,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   X--&gt;&gt;D: 201 Created + Location
 </code></pre>
 
-<h3 id="consulta-de-epicrisis-por-paciente">Consulta de epicrisis por paciente</h3>
+<h4 id="consulta-de-epicrisis-por-paciente">Consulta de epicrisis por paciente</h4>
 
 <p>Operaciones: <a href="Operaciones.html#op-documento-consulta">Búsqueda ITI-67</a>, <a href="Operaciones.html#op-documento-proxy">Descarga ITI-68 vía Proxy</a>. SIHCE evalúa <strong>Consent (MCC)</strong> en la búsqueda; la URL del índice apunta al Proxy Central; la descarga es un GET estándar con proxy pass al hospital custodio.</p>
 
@@ -405,7 +386,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="registro-de-informe-de-laboratorio-dominio--sihce">Registro de informe de laboratorio (dominio → SIHCE)</h3>
+<h4 id="registro-de-informe-de-laboratorio-dominio--sihce">Registro de informe de laboratorio (dominio → SIHCE)</h4>
 
 <p>Operación relacionada: <a href="Operaciones.html#op-documento-registro">Registro de documento clínico</a>. Tipo LOINC <code class="language-plaintext highlighter-rouge">11502-2</code>; URL a <a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">DiagnosticReportLaboratorioSIHCE</a> en el dominio. Capacidad SIHCE: <strong>registro documental</strong>.</p>
 
@@ -441,7 +422,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="consulta-de-informes-de-laboratorio-por-paciente">Consulta de informes de laboratorio por paciente</h3>
+<h4 id="consulta-de-informes-de-laboratorio-por-paciente">Consulta de informes de laboratorio por paciente</h4>
 
 <p>Operaciones: <a href="Operaciones.html#op-documento-consulta">Búsqueda ITI-67</a>, <a href="Operaciones.html#op-documento-proxy">Descarga ITI-68 vía Proxy</a>. Mismo patrón que epicrisis: Consent en MCC, URL del Proxy Central, proxy pass al DiagnosticReport en el custodio.</p>
 
@@ -464,7 +445,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   X--&gt;&gt;C: 200 DiagnosticReport
 </code></pre>
 
-<h2 id="receta-electrónica-cpe">Receta electrónica (CPE)</h2>
+<h3 id="receta-electrónica-cpe">Receta electrónica (CPE)</h3>
 
 <p>Indexación y orquestación de recetas en SIHCE. El contenido clínico (<code class="language-plaintext highlighter-rouge">MedicationRequest</code>) permanece en el repositorio de origen; SIHCE indexa metadatos (CUIR, paciente, efector, estado) y actúa como <strong>broker</strong> hacia la farmacia. La dispensa actualiza el índice (anti-quema) y se propaga al origen.</p>
 
@@ -493,7 +474,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Operaciones: <a href="Operaciones.html#op-receta-index">Indexación</a>, <a href="Operaciones.html#op-receta-consulta">Consulta</a>, <a href="Operaciones.html#op-receta-proxy">Proxy detalle</a>, <a href="Operaciones.html#op-receta-dispensa">Dispensa</a>. Perfiles: <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>, <a href="StructureDefinition-MedicationRequestRecetaSIHCE.html">MedicationRequestRecetaSIHCE</a>, <a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>.</p>
 
-<h3 id="caso-2--público-sigehos--cpe--farmacia-privada">Caso 2 — Público (SIGEHOS) → CPE → Farmacia privada</h3>
+<h4 id="caso-2--público-sigehos--cpe--farmacia-privada">Caso 2 — Público (SIGEHOS) → CPE → Farmacia privada</h4>
 
 <p><strong>Actores:</strong> Prescriptor público (efector SIGEHOS), paciente (cobertura pública), SIGEHOS (repositorio), SIHCE, farmacia privada.</p>
 
@@ -530,7 +511,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   X--&gt;&gt;F: 201 Created
 </code></pre>
 
-<h3 id="caso-3--privado-recetario--cpe--farmacia-privada">Caso 3 — Privado (Recetario) → CPE → Farmacia privada</h3>
+<h4 id="caso-3--privado-recetario--cpe--farmacia-privada">Caso 3 — Privado (Recetario) → CPE → Farmacia privada</h4>
 
 <p><strong>Actores:</strong> Prescriptor privado, paciente, repositorio del prestador (si existe) <strong>o</strong> SIHCE como repositorio delegado (excepción), SIHCE orquestador, farmacia privada.</p>
 
@@ -621,8 +602,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Sep 17, 2026 12:17-0300">2026-09-17</span>
+          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

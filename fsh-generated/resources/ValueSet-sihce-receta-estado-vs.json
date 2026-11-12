@@ -6,6 +6,16 @@
   "title": "Estados de receta SIHCE",
   "description": "Estados admitidos en el índice de DocumentReferenceRecetaSIHCE.",
   "url": "http://sihce.gob.ar/ValueSet/sihce-receta-estado",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "version": "1.6.0",
   "experimental": false,
   "compose": {
