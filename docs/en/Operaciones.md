@@ -1,4 +1,4 @@
-# Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Operaciones**
@@ -314,7 +314,7 @@ Un dominio emisor registra en SIHCE los **metadatos** del documento mediante `PO
 | | | |
 | :--- | :--- | :--- |
 | Documento genérico / índice | según tipo | Recurso o binario en el dominio |
-| **Epicrisis**(caso especial) | `18842-5` | Nivel 1: Binary PDF/XML. Niveles 2–3:[CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md) |
+| **Epicrisis**(caso especial) | `18842-5` | Nivel 1: Binary PDF/XML. Niveles 2–3:[CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md). Detalle normativo:[Epicrisis](Epicrisis.md). Nivel 3: solo Motivo de internación (ICD-10). |
 | **Informe de laboratorio**(caso especial) | `11502-2` | [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)(`contentType`=`application/fhir+json`). El PDF va en`DiagnosticReport.presentedForm`; en nivel 2, las observaciones en`result` |
 
 El POST de abajo es un ejemplo de epicrisis nivel 1 (URL a PDF). Para laboratorio, el mismo `DocumentReference` usa `type` = `11502-2` y `content.attachment.url` apunta al **DiagnosticReport** (ver [DocumentReferenceInformeLabNivel1](DocumentReference-DocumentReferenceInformeLabNivel1.md)).
@@ -419,6 +419,9 @@ Ejemplo equivalente para **informe de laboratorio** (índice → DiagnosticRepor
 * [DocumentReference epicrisis nivel 1 (PDF)](DocumentReference-DocumentReferenceEpicrisisNivel1.md)
 * [DocumentReference epicrisis nivel 2 (Composition)](DocumentReference-DocumentReferenceEpicrisisNivel2.md)
 * [Composition epicrisis nivel 2 (narrativa)](Composition-CompositionEpicrisisNivel2.md)
+* [DocumentReference epicrisis nivel 3](DocumentReference-DocumentReferenceEpicrisisNivel3.md)
+* [Composition epicrisis nivel 3 (Motivo ICD-10)](Composition-CompositionEpicrisisNivel3.md)
+* [Condition Motivo de internación (ejemplo)](Condition-ConditionMotivoInternacionEjemplo.md)
 * [DocumentReference informe laboratorio nivel 1](DocumentReference-DocumentReferenceInformeLabNivel1.md)
 * [DiagnosticReport informe laboratorio nivel 1 (solo PDF)](DiagnosticReport-DiagnosticReportInformeLabNivel1.md)
 * [DocumentReference informe laboratorio nivel 2](DocumentReference-DocumentReferenceInformeLabNivel2.md)

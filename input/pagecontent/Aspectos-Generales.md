@@ -15,7 +15,7 @@ Cada artefacto de conformidad declara su madurez con las extensiones HL7 `struct
 | **Federación** | trial-use | 3 | Paciente / empadronamiento (`PatientXBA`, búsqueda, federación, patch de id local, update SDM) |
 | **Consentimiento** | trial-use | 3 | `ConsentSIHCE` (all-in al incorporarse; otras modalidades por institución/documento en evolución) |
 | **Orquestación** | trial-use | 3 | Índice documental `DocumentReferenceSIHCE` + MCC/proxy (flujos entre dominios) |
-| **Epicrisis** | trial-use | 3 | `CompositionEpicrisisSIHCE` y perfiles/logicals/ValueSets asociados |
+| **Epicrisis** | trial-use | 3 | `CompositionEpicrisisSIHCE`, Motivo de internación (`ConditionEpicrisisSIHCE` + ICD-10); ver [Epicrisis](Epicrisis.html). Otras secciones codificadas = propuestas (draft) |
 | **Resto** (receta, laboratorio, etc.) | draft | 1 | Aún en definición; no exigir implementación productiva |
 
 La guía en conjunto permanece en estado `draft` mientras convivan capacidades trial-use y draft.

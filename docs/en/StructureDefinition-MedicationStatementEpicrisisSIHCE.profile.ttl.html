@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Medicación al alta epicrisis SIHCE - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
+    <title>Medicación al alta epicrisis SIHCE - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,8 +52,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.17"}
-    h3,h4,h5,h6{--heading-prefix:"8.17"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.27"}
+    h3,h4,h5,h6{--heading-prefix:"14.27"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -61,7 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - 
+            <span style="display:inline-block;">2.2.0 - 
 
 
             </span>
@@ -117,8 +117,40 @@
   <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
-  <li>
-    <a href="CasosDeUso.html">Casos de Uso</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -160,7 +192,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -229,18 +261,18 @@
 
 <h2 id="root">Resource Profile: Medicación al alta epicrisis SIHCE - TTL Profile</h2>
 
-  <table class="colstu">
+  <table class="colsd">
     <tr>
 
       <td colspan="1">
         
-          <i>Page standards status:</i> <a href="https://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Trial-use</a>
+          <i>Page standards status:</i> <a href="https://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Draft</a>
           
         
       </td>
 
       <td>
-        <a href="https://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 3
+        <a href="https://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
         
       </td>
 
@@ -277,17 +309,17 @@
   <a href="https://hl7.org/fhir/R4/domainresource.html#StructureDefinition.extension">fhir:DomainResource.extension</a> [
      <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
      <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot; ] ;
-     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueInteger</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#integer">fhir:value</a> &quot;3&quot;^^xsd:integer ]
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueInteger</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#integer">fhir:value</a> &quot;1&quot;^^xsd:integer ]
   ], [
      <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
      <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot; ] ;
-     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;trial-use&quot; ]
+     <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot; ]
   ] ;
   <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">fhir:StructureDefinition.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE&quot;] ;
-  <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:StructureDefinition.version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.1.0&quot;] ;
+  <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:StructureDefinition.version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.2.0&quot;] ;
   <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">fhir:StructureDefinition.name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;MedicationStatementEpicrisisSIHCE&quot;] ;
   <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">fhir:StructureDefinition.title</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Medicación al alta epicrisis SIHCE&quot;] ;
-  <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;] ;
+  <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;] ;
   <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-06-09T00:00:00-03:00&quot;^^xsd:dateTime] ;
   <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">fhir:StructureDefinition.publisher</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SIHCE Development Team&quot;] ;
   <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">fhir:StructureDefinition.contact</a> [
@@ -299,7 +331,7 @@
        <a href="https://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://github.com/diegokaminker/sihce-ig&quot; ]
      ]
   ] ;
-  <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">fhir:StructureDefinition.description</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Medicamento declarado en la sección de medicamentos al alta (nivel 3).&quot;] ;
+  <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">fhir:StructureDefinition.description</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas.&quot;] ;
   <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhir:StructureDefinition.fhirVersion</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;4.0.1&quot;] ;
   <a href="https://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">fhir:StructureDefinition.mapping</a> [
      <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -1723,8 +1755,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

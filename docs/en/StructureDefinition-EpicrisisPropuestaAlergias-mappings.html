@@ -1,0 +1,383 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Propuesta: Alergias (epicrisis) - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/sihce-brand.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"14.12"}
+    h3,h4,h5,h6{--heading-prefix:"14.12"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
+            <br/>
+            <span style="display:inline-block;">2.2.0 - 
+
+
+            </span>
+          </p>
+        </div>
+        <!-- Logos locales (assets/images); sin enlaces a sitios externos -->
+<div id="ig-brand-logos" class="ig-brand-logos" aria-label="HL7 Argentina y Ciudad de Buenos Aires">
+  <img class="ig-brand-logo ig-brand-logo--hl7ar"
+       src="assets/images/logo-hl7-argentina.png"
+       alt="HL7 Argentina"
+       height="44"
+       width="145"
+       loading="lazy"/>
+  <img class="ig-brand-logo ig-brand-logo--caba"
+       src="assets/images/logo-caba.svg"
+       alt="Ciudad Autónoma de Buenos Aires"
+       height="44"
+       width="134"
+       loading="lazy"/>
+</div>
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="toc.html">Contenido</a>
+  </li>
+  <li>
+    <a href="index.html">Inicio</a>
+  </li>
+  <li>
+    <a href="Aspectos-Generales.html">Generalidades</a>
+  </li>
+  <li>
+    <a href="Operaciones.html">Operaciones</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="ModeloLogico.html">Modelo Lógico</a>
+  </li>
+  <li>
+    <a href="Seguridad.html">Seguridad</a>
+  </li>
+  <li>
+    <a href="HistorialDeCambios.html">Historial de Cambios</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Propuesta: Alergias (epicrisis)</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-profile-mappings -->
+<div style="counter-reset: section 5" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-EpicrisisPropuestaAlergias.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">Mappings</a>
+    </li>
+  
+
+
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-EpicrisisPropuestaAlergias.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-EpicrisisPropuestaAlergias.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-EpicrisisPropuestaAlergias.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+<h2 id="root">Logical Model: Propuesta: Alergias (epicrisis) - Mappings</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="1">
+        
+          <i>Page standards status:</i> <a href="https://hl7.org/fhir/R4/versions.html#std-process" title="Standards Status">Draft</a>
+          
+        
+      </td>
+
+      <td>
+        <a href="https://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 1
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+
+  <p>Mappings for the EpicrisisPropuestaAlergias logical model.</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <h3>Mappings to Structures in this Implementation Guide</h3>
+<p>No Mappings Found</p>
+<h3>Mappings to other Structures</h3>
+<p>No Mappings Found</p>
+<h3>Other Mappings</h3>
+<table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" id="EpicrisisPropuestaAlergiasMo" class="xhtTableBorder0" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" class="xhtRowBorder1" data-fhir="generated-heirarchy"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/v3" title="http://hl7.org/v3">RIM Mapping</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" id="o-a" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html#EpicrisisPropuestaAlergias" title="Sugerencia para votación: alergias codificadas. No normativa hasta aceptación.">EpicrisisPropuestaAlergias</a><a name="o-EpicrisisPropuestaAlergias"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-aa" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EpicrisisPropuestaAlergias / </span><a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html#EpicrisisPropuestaAlergias.id" title="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.">@id</a><a name="o-EpicrisisPropuestaAlergias.id"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ab" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck12.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_extension_simple.png" alt="" style="background-color: white; background-color: inherit" title="Simple Extension" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EpicrisisPropuestaAlergias / </span><a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html#EpicrisisPropuestaAlergias.extension" title="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.">extension</a><a name="o-EpicrisisPropuestaAlergias.extension"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div>n/a</div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ac" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EpicrisisPropuestaAlergias / </span><a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html#EpicrisisPropuestaAlergias.seccionConsenso" title="Alergias">seccionConsenso</a><a name="o-EpicrisisPropuestaAlergias.seccionConsenso"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ad" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EpicrisisPropuestaAlergias / </span><a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html#EpicrisisPropuestaAlergias.categoriaConsenso" title="obligatorio">categoriaConsenso</a><a name="o-EpicrisisPropuestaAlergias.categoriaConsenso"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ae" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EpicrisisPropuestaAlergias / </span><a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html#EpicrisisPropuestaAlergias.loincSeccion" title="48765-2">loincSeccion</a><a name="o-EpicrisisPropuestaAlergias.loincSeccion"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-af" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EpicrisisPropuestaAlergias / </span><a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html#EpicrisisPropuestaAlergias.recursoFhir" title="AllergyIntolerance">recursoFhir</a><a name="o-EpicrisisPropuestaAlergias.recursoFhir"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ag" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EpicrisisPropuestaAlergias / </span><a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html#EpicrisisPropuestaAlergias.elementosClave" title="code; criticality; patient">elementosClave</a><a name="o-EpicrisisPropuestaAlergias.elementosClave"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" id="o-ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EpicrisisPropuestaAlergias / </span><a href="StructureDefinition-EpicrisisPropuestaAlergias-definitions.html#EpicrisisPropuestaAlergias.sistemaCodigos" title="SNOMED-CT; ATC">sistemaCodigos</a><a name="o-EpicrisisPropuestaAlergias.sistemaCodigos"> </a></td>
+<td style="" class="hierarchy xhtCellBorder0">
+<div></div></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="2" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table>
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/ig-navbar.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

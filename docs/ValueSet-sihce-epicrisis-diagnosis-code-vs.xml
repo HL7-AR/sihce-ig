@@ -6,18 +6,18 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-epicrisis-diagnosis-code-vs</b></p><a name="sihce-epicrisis-diagnosis-code-vs"> </a><a name="hcsihce-epicrisis-diagnosis-code-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://tx.fhir.org/r5"><code>http://hl7.org/fhir/sid/icd-10</code></a><span title="Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used" class="xhtPieceDeEmphasized"> version ⏿2019-covid-expanded</span> where code  = <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469">J18.9</a></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 233604007</li></ul></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="3"/>
+    <valueInteger value="1"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="trial-use"/>
+    <valueCode value="draft"/>
   </extension>
   <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"/>
-  <version value="2.1.0"/>
+  <version value="2.2.0"/>
   <name value="SIHCEEpicrisisDiagnosisCodeVS"/>
-  <title value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"/>
-  <status value="active"/>
-  <experimental value="false"/>
-  <date value="2026-11-12T16:05:33-03:00"/>
+  <title value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-12T19:26:41-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -26,7 +26,7 @@
       <value value="https://github.com/diegokaminker/sihce-ig"/>
     </telecom>
   </contact>
-  <description value="Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación."/>
+  <description value="ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas."/>
   <compose>
     <include>
       <system value="http://hl7.org/fhir/sid/icd-10"/>

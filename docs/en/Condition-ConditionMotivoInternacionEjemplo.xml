@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="ConditionMotivoInternacionEjemplo"/>
+  <meta>
+    <profile value="http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition ConditionMotivoInternacionEjemplo</b></p><a name="ConditionMotivoInternacionEjemplo"> </a><a name="hcConditionMotivoInternacionEjemplo"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ConditionEpicrisisSIHCE.html">Condición clínica epicrisis SIHCE</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10 J18.9}">Pneumonia, unspecified</span></p><p><b>subject</b>: <a href="Patient-PersonaSIHCEMin.html">Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier: RenaperDNI#12345678 (use: official))</a></p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <code value="J18.9"/>
+      <display value="Pneumonia, unspecified"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PersonaSIHCEMin"/>
+  </subject>
+</Condition>

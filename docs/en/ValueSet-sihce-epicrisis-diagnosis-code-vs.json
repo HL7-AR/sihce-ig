@@ -8,19 +8,19 @@
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 3
+    "valueInteger" : 1
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
+    "valueCode" : "draft"
   }],
   "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
-  "version" : "2.1.0",
+  "version" : "2.2.0",
   "name" : "SIHCEEpicrisisDiagnosisCodeVS",
-  "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
-  "status" : "active",
-  "experimental" : false,
-  "date" : "2026-11-12T16:05:33-03:00",
+  "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-12T19:26:41-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -29,7 +29,7 @@
       "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
-  "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.",
+  "description" : "ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas.",
   "compose" : {
     "include" : [{
       "system" : "http://hl7.org/fhir/sid/icd-10",

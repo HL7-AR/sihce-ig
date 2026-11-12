@@ -1,4 +1,4 @@
-# Generalidades - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Generalidades - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Generalidades**
@@ -20,7 +20,7 @@ Las siguientes secciones describen definiciones, interpretaciones y requisitos i
 | **Federación** | trial-use | 3 | Paciente / empadronamiento (`PatientXBA`, búsqueda, federación, patch de id local, update SDM) |
 | **Consentimiento** | trial-use | 3 | `ConsentSIHCE`(all-in al incorporarse; otras modalidades por institución/documento en evolución) |
 | **Orquestación** | trial-use | 3 | Índice documental`DocumentReferenceSIHCE`+ MCC/proxy (flujos entre dominios) |
-| **Epicrisis** | trial-use | 3 | `CompositionEpicrisisSIHCE`y perfiles/logicals/ValueSets asociados |
+| **Epicrisis** | trial-use | 3 | `CompositionEpicrisisSIHCE`, Motivo de internación (`ConditionEpicrisisSIHCE`+ ICD-10); ver[Epicrisis](Epicrisis.md). Otras secciones codificadas = propuestas (draft) |
 | **Resto**(receta, laboratorio, etc.) | draft | 1 | Aún en definición; no exigir implementación productiva |
 
 La guía en conjunto permanece en estado `draft` mientras convivan capacidades trial-use y draft.

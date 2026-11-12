@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Observación de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
+    <title>Observación de laboratorio SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -48,8 +48,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.18"}
-    h3,h4,h5,h6{--heading-prefix:"8.18"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.28"}
+    h3,h4,h5,h6{--heading-prefix:"14.28"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - 
+            <span style="display:inline-block;">2.2.0 - 
 
 
             </span>
@@ -113,8 +113,40 @@
   <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
-  <li>
-    <a href="CasosDeUso.html">Casos de Uso</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -157,7 +189,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -239,7 +271,7 @@ Observación de laboratorio SIHCE
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE|2.1.0"/></span>
+      <span class="copy-text">2.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE|2.2.0"/></span>
       </td>
     </tr>
 
@@ -504,7 +536,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Extensions that cannot be ignored even if unrecognized<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbObservationLaboratorioSIHCEK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ObservationLaboratorioSIHCEK'), 'binding', document.getElementById('cbObservationLaboratorioSIHCEK-binding').checked, document.getElementById('ppObservationLaboratorioSIHCEK'));
 document.getElementById('cbObservationLaboratorioSIHCEK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -577,7 +609,7 @@ filterDesc(document.getElementById('ObservationLaboratorioSIHCEK'), 'obligation'
       <a href="ValueSet-sihce-lab-observation-code-vs.html">Analitos de laboratorio SIHCE (LOINC)</a>
       <button data-clipboard-text="http://sihce.gob.ar/ValueSet/sihce-lab-observation-code" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.1.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -792,7 +824,7 @@ filterDesc(document.getElementById('ObservationLaboratorioSIHCEK'), 'obligation'
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#BackboneElement" class="xhtPieceDeEmphasized">BackboneElement</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Provides guide for interpretation</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbObservationLaboratorioSIHCED-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ObservationLaboratorioSIHCED'), 'binding', document.getElementById('cbObservationLaboratorioSIHCED-binding').checked, document.getElementById('ppObservationLaboratorioSIHCED'));
 document.getElementById('cbObservationLaboratorioSIHCED-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -837,7 +869,7 @@ filterDesc(document.getElementById('ObservationLaboratorioSIHCED'), 'obligation'
       <a href="ValueSet-sihce-lab-observation-code-vs.html" class="unchangedStyle">Analitos de laboratorio SIHCE (LOINC)</a>
       <button data-clipboard-text="http://sihce.gob.ar/ValueSet/sihce-lab-observation-code" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.1.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0</td>
     <td>This IG</td>
   </tr>
 </table>
@@ -1297,7 +1329,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0">See <a href="https://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbObservationLaboratorioSIHCES-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ObservationLaboratorioSIHCES'), 'binding', document.getElementById('cbObservationLaboratorioSIHCES-binding').checked, document.getElementById('ppObservationLaboratorioSIHCES'));
 document.getElementById('cbObservationLaboratorioSIHCES-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1386,7 +1418,7 @@ filterDesc(document.getElementById('ObservationLaboratorioSIHCES'), 'obligation'
       <a href="ValueSet-sihce-lab-observation-code-vs.html">Analitos de laboratorio SIHCE (LOINC)</a>
       <button data-clipboard-text="http://sihce.gob.ar/ValueSet/sihce-lab-observation-code" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.1.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -2021,7 +2053,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Extensions that cannot be ignored even if unrecognized<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbObservationLaboratorioSIHCEKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ObservationLaboratorioSIHCEKA'), 'binding', document.getElementById('cbObservationLaboratorioSIHCEKA-binding').checked, document.getElementById('ppObservationLaboratorioSIHCEKA'));
 document.getElementById('cbObservationLaboratorioSIHCEKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2093,7 +2125,7 @@ filterDesc(document.getElementById('ObservationLaboratorioSIHCEKA'), 'obligation
       <a href="ValueSet-sihce-lab-observation-code-vs.html">Analitos de laboratorio SIHCE (LOINC)</a>
       <button data-clipboard-text="http://sihce.gob.ar/ValueSet/sihce-lab-observation-code" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.1.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -2308,7 +2340,7 @@ filterDesc(document.getElementById('ObservationLaboratorioSIHCEKA'), 'obligation
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#BackboneElement" class="xhtPieceDeEmphasized">BackboneElement</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Provides guide for interpretation</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbObservationLaboratorioSIHCEDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ObservationLaboratorioSIHCEDA'), 'binding', document.getElementById('cbObservationLaboratorioSIHCEDA-binding').checked, document.getElementById('ppObservationLaboratorioSIHCEDA'));
 document.getElementById('cbObservationLaboratorioSIHCEDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2350,7 +2382,7 @@ filterDesc(document.getElementById('ObservationLaboratorioSIHCEDA'), 'obligation
       <a href="ValueSet-sihce-lab-observation-code-vs.html" class="unchangedStyle">Analitos de laboratorio SIHCE (LOINC)</a>
       <button data-clipboard-text="http://sihce.gob.ar/ValueSet/sihce-lab-observation-code" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.1.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0</td>
     <td>This IG</td>
   </tr>
 </table>
@@ -2810,7 +2842,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0">See <a href="https://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbObservationLaboratorioSIHCESA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ObservationLaboratorioSIHCESA'), 'binding', document.getElementById('cbObservationLaboratorioSIHCESA-binding').checked, document.getElementById('ppObservationLaboratorioSIHCESA'));
 document.getElementById('cbObservationLaboratorioSIHCESA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2897,7 +2929,7 @@ filterDesc(document.getElementById('ObservationLaboratorioSIHCESA'), 'obligation
       <a href="ValueSet-sihce-lab-observation-code-vs.html">Analitos de laboratorio SIHCE (LOINC)</a>
       <button data-clipboard-text="http://sihce.gob.ar/ValueSet/sihce-lab-observation-code" title="Click to copy URL" class="btn-copy" aria-label="copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.1.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;2.2.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -3395,8 +3427,8 @@ Summary
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

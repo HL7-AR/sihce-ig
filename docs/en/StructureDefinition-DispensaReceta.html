@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Modelo lógico DispensaReceta (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
+    <title>Modelo lógico DispensaReceta (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -48,8 +48,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.4"}
-    h3,h4,h5,h6{--heading-prefix:"8.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.4"}
+    h3,h4,h5,h6{--heading-prefix:"14.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - 
+            <span style="display:inline-block;">2.2.0 - 
 
 
             </span>
@@ -113,8 +113,40 @@
   <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
-  <li>
-    <a href="CasosDeUso.html">Casos de Uso</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -157,7 +189,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -239,7 +271,7 @@ Modelo lógico DispensaReceta (SIHCE)
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://sihce.gob.ar/StructureDefinition/DispensaReceta<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/StructureDefinition/DispensaReceta"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/StructureDefinition/DispensaReceta|2.1.0"/></span>
+      <span class="copy-text">2.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/StructureDefinition/DispensaReceta|2.2.0"/></span>
       </td>
     </tr>
 
@@ -386,7 +418,7 @@ Modelo lógico DispensaReceta (SIHCE)
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0">URI dominio farmacia</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbDispensaRecetaK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DispensaRecetaK'), 'binding', document.getElementById('cbDispensaRecetaK-binding').checked, document.getElementById('ppDispensaRecetaK'));
 document.getElementById('cbDispensaRecetaK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -492,7 +524,7 @@ filterDesc(document.getElementById('DispensaRecetaK'), 'obligation', document.ge
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0">URI dominio farmacia</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbDispensaRecetaD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DispensaRecetaD'), 'binding', document.getElementById('cbDispensaRecetaD-binding').checked, document.getElementById('ppDispensaRecetaD'));
 document.getElementById('cbDispensaRecetaD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -563,7 +595,7 @@ filterDesc(document.getElementById('DispensaRecetaD'), 'obligation', document.ge
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0">URI dominio farmacia</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbDispensaRecetaS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DispensaRecetaS'), 'binding', document.getElementById('cbDispensaRecetaS-binding').checked, document.getElementById('ppDispensaRecetaS'));
 document.getElementById('cbDispensaRecetaS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -744,7 +776,7 @@ Summary
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0">URI dominio farmacia</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbDispensaRecetaKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DispensaRecetaKA'), 'binding', document.getElementById('cbDispensaRecetaKA-binding').checked, document.getElementById('ppDispensaRecetaKA'));
 document.getElementById('cbDispensaRecetaKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -849,7 +881,7 @@ filterDesc(document.getElementById('DispensaRecetaKA'), 'obligation', document.g
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0">URI dominio farmacia</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbDispensaRecetaDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DispensaRecetaDA'), 'binding', document.getElementById('cbDispensaRecetaDA-binding').checked, document.getElementById('ppDispensaRecetaDA'));
 document.getElementById('cbDispensaRecetaDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -917,7 +949,7 @@ filterDesc(document.getElementById('DispensaRecetaDA'), 'obligation', document.g
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td>
 <td style="" class="hierarchy xhtCellBorder0">URI dominio farmacia</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbDispensaRecetaSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DispensaRecetaSA'), 'binding', document.getElementById('cbDispensaRecetaSA-binding').checked, document.getElementById('ppDispensaRecetaSA'));
 document.getElementById('cbDispensaRecetaSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1076,8 +1108,8 @@ Summary
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

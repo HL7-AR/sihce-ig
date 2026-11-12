@@ -1,4 +1,4 @@
-# Epicrisis nivel 2 — secciones narrativas - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Epicrisis nivel 2 — secciones narrativas - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -73,6 +73,12 @@ Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisis
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Control ambulatorio en 7 días. Reposo relativo.</p></div>"
+    }
+  },
+  {
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad.</p></div>"
     }
   }]
 }

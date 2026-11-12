@@ -7,17 +7,17 @@
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 3
+    "valueInteger" : 1
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
+    "valueCode" : "draft"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE",
-  "version" : "2.1.0",
+  "version" : "2.2.0",
   "name" : "MedicationStatementEpicrisisSIHCE",
   "title" : "Medicación al alta epicrisis SIHCE",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2026-06-09T00:00:00-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
@@ -27,7 +27,7 @@
       "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
-  "description" : "Medicamento declarado en la sección de medicamentos al alta (nivel 3).",
+  "description" : "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

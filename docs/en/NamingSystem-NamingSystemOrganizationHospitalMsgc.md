@@ -1,4 +1,4 @@
-# NamingSystem Organization hospital (dominio MSGC, ejemplo) - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# NamingSystem Organization hospital (dominio MSGC, ejemplo) - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/NamingSystem/NamingSystemOrganizationHospitalMsgc | *Version*:2.1.0 |
+| *Official URL*:http://sihce.gob.ar/NamingSystem/NamingSystemOrganizationHospitalMsgc | *Version*:2.2.0 |
 | Active as of 2026-08-26 | *Computable Name*:NamingSystemOrganizationHospitalMsgc |
 
  
@@ -28,7 +28,7 @@ Ejemplo para Hospital Central en dominio MSGC. Cada dominio publica su propio Na
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "2.1.0"
+    "valueString" : "2.2.0"
   }],
   "name" : "NamingSystemOrganizationHospitalMsgc",
   "status" : "active",

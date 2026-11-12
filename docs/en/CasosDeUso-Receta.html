@@ -1,0 +1,409 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Casos de Uso — Receta - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/sihce-brand.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
+            <br/>
+            <span style="display:inline-block;">2.2.0 - 
+
+
+            </span>
+          </p>
+        </div>
+        <!-- Logos locales (assets/images); sin enlaces a sitios externos -->
+<div id="ig-brand-logos" class="ig-brand-logos" aria-label="HL7 Argentina y Ciudad de Buenos Aires">
+  <img class="ig-brand-logo ig-brand-logo--hl7ar"
+       src="assets/images/logo-hl7-argentina.png"
+       alt="HL7 Argentina"
+       height="44"
+       width="145"
+       loading="lazy"/>
+  <img class="ig-brand-logo ig-brand-logo--caba"
+       src="assets/images/logo-caba.svg"
+       alt="Ciudad Autónoma de Buenos Aires"
+       height="44"
+       width="134"
+       loading="lazy"/>
+</div>
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="toc.html">Contenido</a>
+  </li>
+  <li>
+    <a href="index.html">Inicio</a>
+  </li>
+  <li>
+    <a href="Aspectos-Generales.html">Generalidades</a>
+  </li>
+  <li>
+    <a href="Operaciones.html">Operaciones</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="ModeloLogico.html">Modelo Lógico</a>
+  </li>
+  <li>
+    <a href="Seguridad.html">Seguridad</a>
+  </li>
+  <li>
+    <a href="HistorialDeCambios.html">Historial de Cambios</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Casos de Uso — Receta</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Casos de Uso — Receta</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#caso-2--público-sigehos--cpe--farmacia-privada" id="markdown-toc-caso-2--público-sigehos--cpe--farmacia-privada">Caso 2 — Público (SIGEHOS) → CPE → Farmacia privada</a></li>
+  <li><a href="#caso-3--privado-recetario--cpe--farmacia-privada" id="markdown-toc-caso-3--privado-recetario--cpe--farmacia-privada">Caso 3 — Privado (Recetario) → CPE → Farmacia privada</a></li>
+</ul>
+
+</div>
+<p>Indexación y orquestación de recetas en SIHCE. El contenido clínico (<code class="language-plaintext highlighter-rouge">MedicationRequest</code>) permanece en el repositorio de origen; SIHCE indexa metadatos (CUIR, paciente, efector, estado) y actúa como <strong>broker</strong> hacia la farmacia. La dispensa actualiza el índice (anti-quema) y se propaga al origen.</p>
+
+<p><strong>Actores comunes:</strong> SIHCE (orquestador/índice), farmacia privada (aplicativo de dispensa — Opción B), repositorio de origen (SIGEHOS o prestador privado — Opción A = API FHIR consultable por SIHCE).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Opción</th>
+      <th>Qué es</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>A</strong></td>
+      <td>Repositorio de origen expone API FHIR para que SIHCE haga <em>pull</em> bajo demanda (sin duplicar dato).</td>
+    </tr>
+    <tr>
+      <td><strong>B</strong></td>
+      <td>Aplicativo de dispensa de la farmacia (Farmalink/RCTA u otro) que consume la API SIHCE.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A y B <strong>no compiten</strong>: A es condición técnica para que B obtenga el detalle vía broker SIHCE.</p>
+
+<p>Operaciones: <a href="Operaciones.html#op-receta-index">Indexación</a>, <a href="Operaciones.html#op-receta-consulta">Consulta</a>, <a href="Operaciones.html#op-receta-proxy">Proxy detalle</a>, <a href="Operaciones.html#op-receta-dispensa">Dispensa</a>. Perfiles: <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>, <a href="StructureDefinition-MedicationRequestRecetaSIHCE.html">MedicationRequestRecetaSIHCE</a>, <a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>.</p>
+
+<p>Volver al <a href="CasosDeUso.html">índice de casos de uso</a>.</p>
+
+<h3 id="caso-2--público-sigehos--cpe--farmacia-privada">Caso 2 — Público (SIGEHOS) → CPE → Farmacia privada</h3>
+
+<p><strong>Actores:</strong> Prescriptor público (efector SIGEHOS), paciente (cobertura pública), SIGEHOS (repositorio), SIHCE, farmacia privada.</p>
+
+<p><strong>Precondición:</strong> Paciente con CUIR/CUIL; efector conectado a SIGEHOS.</p>
+
+<pre><code class="language-mermaid">sequenceDiagram
+  autonumber
+  participant M as Prescriptor SIGEHOS
+  participant R as SIGEHOS (repo)
+  participant X as Canal X-BA
+  participant S as SIHCE
+  participant F as Farmacia (Opción B)
+  M-&gt;&gt;R: Genera MedicationRequest (CUIR)
+  R-&gt;&gt;R: Persiste receta
+  R-&gt;&gt;X: POST DocumentReference (metadatos vigentes)
+  X-&gt;&gt;S: Indexa CUIR/CUIL/efector
+  S--&gt;&gt;X: 201 Created
+  X--&gt;&gt;R: 201 Created
+  F-&gt;&gt;X: GET DocumentReference?identifier=CUIR o CUIL
+  X-&gt;&gt;S: Consulta índice
+  S--&gt;&gt;X: 200 Bundle (estado vigente)
+  X--&gt;&gt;F: 200 Bundle
+  F-&gt;&gt;X: GET /Proxy/MedicationRequest/{id}
+  X-&gt;&gt;S: Broker
+  S-&gt;&gt;R: Pull MedicationRequest
+  R--&gt;&gt;S: MedicationRequest
+  S--&gt;&gt;X: 200 (sin persistir)
+  X--&gt;&gt;F: 200 MedicationRequest
+  F-&gt;&gt;X: POST MedicationDispense
+  X-&gt;&gt;S: Notifica dispensa
+  S-&gt;&gt;S: Índice → dispensada (anti-quema)
+  S-&gt;&gt;R: Propaga cierre a HCE pública
+  S--&gt;&gt;X: 201 Created
+  X--&gt;&gt;F: 201 Created
+</code></pre>
+
+<h3 id="caso-3--privado-recetario--cpe--farmacia-privada">Caso 3 — Privado (Recetario) → CPE → Farmacia privada</h3>
+
+<p><strong>Actores:</strong> Prescriptor privado, paciente, repositorio del prestador (si existe) <strong>o</strong> SIHCE como repositorio delegado (excepción), SIHCE orquestador, farmacia privada.</p>
+
+<p><strong>Precondición:</strong> Paciente con CUIR/CUIL; prescriptor adherido a la red SIHCE.</p>
+
+<p><strong>Bifurcación en emisión:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variante</th>
+      <th>Comportamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1a</strong> — Prestador con repositorio propio</td>
+      <td>Mismo patrón que caso 2: índice en SIHCE + contenido en el prestador.</td>
+    </tr>
+    <tr>
+      <td><strong>1b</strong> — Sin sistema propio (excepción)</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest</code> se persiste en SIHCE (<code class="language-plaintext highlighter-rouge">repositorioDelegado=true</code>); auditable y acotado.</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-mermaid">sequenceDiagram
+  autonumber
+  participant M as Prescriptor privado
+  participant P as Repo prestador (1a)
+  participant X as Canal X-BA
+  participant S as SIHCE
+  participant F as Farmacia (Opción B)
+  alt 1a — con repositorio propio
+    M-&gt;&gt;P: Genera y guarda MedicationRequest
+    P-&gt;&gt;X: POST DocumentReference (índice)
+    X-&gt;&gt;S: Indexa
+  else 1b — repositorio delegado (excepción)
+    M-&gt;&gt;X: POST MedicationRequest + DocumentReference
+    X-&gt;&gt;S: Persiste contenido + índice (delegado)
+  end
+  S--&gt;&gt;X: 201 Created
+  X--&gt;&gt;M: 201 Created
+  F-&gt;&gt;X: GET DocumentReference (CUIR/CUIL)
+  X-&gt;&gt;S: Consulta índice
+  S--&gt;&gt;X: 200 Bundle
+  X--&gt;&gt;F: 200 Bundle
+  F-&gt;&gt;X: GET /Proxy/MedicationRequest/{id}
+  X-&gt;&gt;S: Resuelve origen
+  alt 1a
+    S-&gt;&gt;P: Broker pull
+    P--&gt;&gt;S: MedicationRequest
+  else 1b
+    S-&gt;&gt;S: Lee repositorio delegado
+  end
+  S--&gt;&gt;X: 200 MedicationRequest
+  X--&gt;&gt;F: 200
+  F-&gt;&gt;X: POST MedicationDispense
+  X-&gt;&gt;S: Dispensa + anti-quema
+  opt 1a
+    S-&gt;&gt;P: Propaga cierre
+  end
+  S--&gt;&gt;X: 201 Created
+  X--&gt;&gt;F: 201 Created
+</code></pre>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/ig-navbar.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

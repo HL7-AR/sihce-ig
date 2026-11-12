@@ -1,4 +1,4 @@
-# Índice receta — repositorio delegado SIHCE (caso 3 / 1b) - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Índice receta — repositorio delegado SIHCE (caso 3 / 1b) - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

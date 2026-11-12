@@ -1,0 +1,114 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EpicrisisPropuestaDiagnosticoAdmision",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "http://sihce.gob.ar/StructureDefinition/EpicrisisPropuestaDiagnosticoAdmision",
+  "version": "0.1.0",
+  "name": "EpicrisisPropuestaDiagnosticoAdmision",
+  "title": "Propuesta: Diagnóstico de admisión (epicrisis)",
+  "status": "draft",
+  "description": "Sugerencia para votación: sección Diagnóstico de admisión codificada. No normativa hasta aceptación.",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://sihce.gob.ar/StructureDefinition/EpicrisisPropuestaDiagnosticoAdmision",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "EpicrisisPropuestaDiagnosticoAdmision",
+        "path": "EpicrisisPropuestaDiagnosticoAdmision",
+        "short": "Propuesta: Diagnóstico de admisión (epicrisis)",
+        "definition": "Sugerencia para votación: sección Diagnóstico de admisión codificada. No normativa hasta aceptación."
+      },
+      {
+        "id": "EpicrisisPropuestaDiagnosticoAdmision.seccionConsenso",
+        "path": "EpicrisisPropuestaDiagnosticoAdmision.seccionConsenso",
+        "short": "Sección consenso",
+        "definition": "Diagnóstico de admisión",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "EpicrisisPropuestaDiagnosticoAdmision.categoriaConsenso",
+        "path": "EpicrisisPropuestaDiagnosticoAdmision.categoriaConsenso",
+        "short": "Categoría",
+        "definition": "opcional",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "EpicrisisPropuestaDiagnosticoAdmision.loincSeccion",
+        "path": "EpicrisisPropuestaDiagnosticoAdmision.loincSeccion",
+        "short": "LOINC sección",
+        "definition": "42347-5",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "EpicrisisPropuestaDiagnosticoAdmision.recursoFhir",
+        "path": "EpicrisisPropuestaDiagnosticoAdmision.recursoFhir",
+        "short": "Recurso FHIR",
+        "definition": "Condition",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "EpicrisisPropuestaDiagnosticoAdmision.elementosClave",
+        "path": "EpicrisisPropuestaDiagnosticoAdmision.elementosClave",
+        "short": "Elementos clave",
+        "definition": "code; subject",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "EpicrisisPropuestaDiagnosticoAdmision.sistemaCodigos",
+        "path": "EpicrisisPropuestaDiagnosticoAdmision.sistemaCodigos",
+        "short": "Sistemas de códigos",
+        "definition": "ICD-10",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -13,7 +13,7 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR"/>
-  <version value="2.1.0"/>
+  <version value="2.2.0"/>
   <name value="EpicrisisModeloAFHIR"/>
   <title value="Epicrisis: modelo lógico a FHIR"/>
   <status value="active"/>
@@ -27,7 +27,7 @@
       <value value="https://github.com/diegokaminker/sihce-ig"/>
     </telecom>
   </contact>
-  <description value="Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3)."/>
+  <description value="Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3; nivel 3 normativo = Motivo de internación ICD-10)."/>
   <group>
     <source value="http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths"/>
     <target value="http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"/>

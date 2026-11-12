@@ -1,4 +1,4 @@
-# ModificarSDMPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# ModificarSDMPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR | *Version*:2.1.0 | |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR | *Version*:2.2.0 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:ModificarSDMPersonaModeloAFHIR |
 
  
@@ -31,7 +31,7 @@ Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a 
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR",
-  "version" : "2.1.0",
+  "version" : "2.2.0",
   "name" : "ModificarSDMPersonaModeloAFHIR",
   "title" : "ModificarSDMPersona: modelo lógico a FHIR",
   "status" : "active",

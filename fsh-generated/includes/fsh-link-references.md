@@ -19,6 +19,8 @@
 [DocumentReferenceEpicrisisNivel1]: DocumentReference-DocumentReferenceEpicrisisNivel1.html
 [DocumentReferenceEpicrisisNivel2]: DocumentReference-DocumentReferenceEpicrisisNivel2.html
 [CompositionEpicrisisNivel2]: Composition-CompositionEpicrisisNivel2.html
+[DocumentReferenceEpicrisisNivel3]: DocumentReference-DocumentReferenceEpicrisisNivel3.html
+[CompositionEpicrisisNivel3]: Composition-CompositionEpicrisisNivel3.html
 [EpicrisisModeloAFHIR]: ConceptMap-EpicrisisModeloAFHIR.html
 [ExtensionRecetaEstado]: StructureDefinition-extension-receta-estado.html
 [SIHCERecetaEstadoCS]: CodeSystem-sihce-receta-estado.html
@@ -46,6 +48,8 @@
 [RecetaIndice]: StructureDefinition-RecetaIndice.html
 [ModificarIDLocalPersonaModeloAFHIR]: ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html
 [ModificarSDMPersonaModeloAFHIR]: ConceptMap-ModificarSDMPersonaModeloAFHIR.html
+[SIHCEMotivoInternacionICD10VS]: ValueSet-sihce-motivo-internacion-icd10-vs.html
+[ConditionMotivoInternacionEjemplo]: Condition-ConditionMotivoInternacionEjemplo.html
 [sihce-cuil]: NamingSystem-sihce-cuil.html
 [sihce-cuir]: NamingSystem-sihce-cuir.html
 [sihce-persona-global]: NamingSystem-sihce-persona-global.html
@@ -60,6 +64,16 @@
 [ParametrosUpdateSDMSIHCE]: StructureDefinition-parametros-update-sdm-sihce.html
 [PersonaSIHCEMin]: Patient-PersonaSIHCEMin.html
 [PersonaSIHCEPatch]: Patient-PersonaSIHCEPatch.html
+[EpicrisisPropuestaAlergias]: StructureDefinition-EpicrisisPropuestaAlergias.html
+[EpicrisisPropuestaDiagnosticoAdmision]: StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.html
+[EpicrisisPropuestaDiagnosticoAlta]: StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.html
+[EpicrisisPropuestaDispositivos]: StructureDefinition-EpicrisisPropuestaDispositivos.html
+[EpicrisisPropuestaMedicacionAlta]: StructureDefinition-EpicrisisPropuestaMedicacionAlta.html
+[EpicrisisPropuestaMedicacionIngreso]: StructureDefinition-EpicrisisPropuestaMedicacionIngreso.html
+[EpicrisisPropuestaProblemas]: StructureDefinition-EpicrisisPropuestaProblemas.html
+[EpicrisisPropuestaProcedimientos]: StructureDefinition-EpicrisisPropuestaProcedimientos.html
+[EpicrisisPropuestaSignosVitales]: StructureDefinition-EpicrisisPropuestaSignosVitales.html
+[EpicrisisPropuestaVacunas]: StructureDefinition-EpicrisisPropuestaVacunas.html
 [MedicationRequestRecetaSIHCE]: StructureDefinition-MedicationRequestRecetaSIHCE.html
 [RecetaIndiceModeloAFHIR]: ConceptMap-RecetaIndiceModeloAFHIR.html
 [DocumentReferenceSIHCE]: StructureDefinition-DocumentReferenceSIHCE.html

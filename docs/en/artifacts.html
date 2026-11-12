@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
+    <title>Artifacts Summary - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +47,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8"}
-    h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"14"}
+    h3,h4,h5,h6{--heading-prefix:"14.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - 
+            <span style="display:inline-block;">2.2.0 - 
 
 
             </span>
@@ -112,8 +112,40 @@
   <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
-  <li>
-    <a href="CasosDeUso.html">Casos de Uso</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -162,7 +194,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -279,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3.</p>
+<p>Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3. Nivel 3 normativo: Motivo de internación (ICD-10); resto de codificaciones en propuestas.</p>
 </td>
          </tr>
          <tr>
@@ -342,6 +374,126 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaAlergias.html"
+                  title="StructureDefinition/EpicrisisPropuestaAlergias">
+                  <span title="StructureDefinition/EpicrisisPropuestaAlergias">Propuesta: Alergias (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: alergias codificadas. No normativa hasta aceptación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.html"
+                  title="StructureDefinition/EpicrisisPropuestaDiagnosticoAdmision">
+                  <span title="StructureDefinition/EpicrisisPropuestaDiagnosticoAdmision">Propuesta: Diagnóstico de admisión (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: sección Diagnóstico de admisión codificada. No normativa hasta aceptación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.html"
+                  title="StructureDefinition/EpicrisisPropuestaDiagnosticoAlta">
+                  <span title="StructureDefinition/EpicrisisPropuestaDiagnosticoAlta">Propuesta: Diagnóstico de alta (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: sección Diagnóstico de alta codificada. No normativa hasta aceptación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaDispositivos.html"
+                  title="StructureDefinition/EpicrisisPropuestaDispositivos">
+                  <span title="StructureDefinition/EpicrisisPropuestaDispositivos">Propuesta: Dispositivos e implantes (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: dispositivos/implantes codificados. No normativa hasta aceptación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaMedicacionAlta.html"
+                  title="StructureDefinition/EpicrisisPropuestaMedicacionAlta">
+                  <span title="StructureDefinition/EpicrisisPropuestaMedicacionAlta">Propuesta: Medicación de alta (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: medicación de alta codificada. No normativa hasta aceptación. Perfil draft relacionado: MedicationStatementEpicrisisSIHCE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaMedicacionIngreso.html"
+                  title="StructureDefinition/EpicrisisPropuestaMedicacionIngreso">
+                  <span title="StructureDefinition/EpicrisisPropuestaMedicacionIngreso">Propuesta: Medicación de ingreso (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: medicación de ingreso codificada. No normativa hasta aceptación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaProblemas.html"
+                  title="StructureDefinition/EpicrisisPropuestaProblemas">
+                  <span title="StructureDefinition/EpicrisisPropuestaProblemas">Propuesta: Problemas y antecedentes (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: lista de problemas codificada. No normativa hasta aceptación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaProcedimientos.html"
+                  title="StructureDefinition/EpicrisisPropuestaProcedimientos">
+                  <span title="StructureDefinition/EpicrisisPropuestaProcedimientos">Propuesta: Procedimientos (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: procedimientos codificados. No normativa hasta aceptación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaSignosVitales.html"
+                  title="StructureDefinition/EpicrisisPropuestaSignosVitales">
+                  <span title="StructureDefinition/EpicrisisPropuestaSignosVitales">Propuesta: Signos vitales (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: signos vitales codificados. No normativa hasta aceptación.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EpicrisisPropuestaVacunas.html"
+                  title="StructureDefinition/EpicrisisPropuestaVacunas">
+                  <span title="StructureDefinition/EpicrisisPropuestaVacunas">Propuesta: Vacunas (epicrisis)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Sugerencia para votación: inmunizaciones codificadas. No normativa hasta aceptación.</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="2"> </a>
@@ -359,7 +511,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement).</p>
+<p>Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones tipadas con text. Nivel 3: solo Motivo de internación (46241-6) con entry Condition + ICD-10. Resto de codificaciones en propuestas de votación.</p>
 </td>
          </tr>
          <tr>
@@ -371,7 +523,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).</p>
+<p>Motivo de internación codificado en epicrisis nivel 3 (ICD-10). Binding extensible al ValueSet SIHCEMotivoInternacionICD10VS.</p>
 </td>
          </tr>
          <tr>
@@ -419,7 +571,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Medicamento declarado en la sección de medicamentos al alta (nivel 3).</p>
+<p>Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas.</p>
 </td>
          </tr>
          <tr>
@@ -562,12 +714,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="ValueSet-sihce-epicrisis-diagnosis-code-vs.html"
                   title="ValueSet/sihce-epicrisis-diagnosis-code-vs">
-                  <span title="ValueSet/sihce-epicrisis-diagnosis-code-vs">Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)
+                  <span title="ValueSet/sihce-epicrisis-diagnosis-code-vs">Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto
 </span>
                </a>
             </td>
             <td>
-<p>Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.</p>
+<p>ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas.</p>
 </td>
          </tr>
          <tr>
@@ -580,6 +732,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Estados admitidos en el índice de DocumentReferenceRecetaSIHCE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-sihce-motivo-internacion-icd10-vs.html"
+                  title="ValueSet/sihce-motivo-internacion-icd10-vs">
+                  <span title="ValueSet/sihce-motivo-internacion-icd10-vs">Motivo de internación epicrisis (ICD-10)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación.</p>
 </td>
          </tr>
          <tr>
@@ -603,7 +767,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales).</p>
+<p>Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3).</p>
 </td>
          </tr>
          <tr>
@@ -852,7 +1016,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3).</p>
+<p>Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3; nivel 3 normativo = Motivo de internación ICD-10).</p>
 </td>
          </tr>
          <tr>
@@ -1052,7 +1216,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-<p>Composition con las cinco secciones obligatorias en texto (nivel 2).</p>
+<p>Composition con secciones tipadas en texto (nivel 2), sin entries codificadas.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-CompositionEpicrisisNivel3.html"
+                  title="Composition/CompositionEpicrisisNivel3">
+                  <span title="Composition/CompositionEpicrisisNivel3">Epicrisis nivel 3 — Motivo de internación codificado
+</span>
+               </a>
+            </td>
+            <td>
+<p>Composition narrativa más Motivo de internación con entry Condition (ICD-10).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-DocumentReferenceEpicrisisNivel3.html"
+                  title="DocumentReference/DocumentReferenceEpicrisisNivel3">
+                  <span title="DocumentReference/DocumentReferenceEpicrisisNivel3">Epicrisis nivel 3 — enlace a Composition codificada
+</span>
+               </a>
+            </td>
+            <td>
+<p>DocumentReference con URL a Composition nivel 3 (Motivo de internación ICD-10).</p>
 </td>
          </tr>
          <tr>
@@ -1129,6 +1317,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Condition-ConditionMotivoInternacionEjemplo.html"
+                  title="Condition/ConditionMotivoInternacionEjemplo">
+                  <span title="Condition/ConditionMotivoInternacionEjemplo">Motivo de internación — ICD-10 J18.9
+</span>
+               </a>
+            </td>
+            <td>
+<p>Condition de ejemplo para Motivo de internación (nivel 3).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Patient-PersonaSIHCEMin.html" title="Patient/PersonaSIHCEMin">
                   <span title="Patient/PersonaSIHCEMin">PersonaSIHCEMin
 </span>
@@ -1198,8 +1398,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

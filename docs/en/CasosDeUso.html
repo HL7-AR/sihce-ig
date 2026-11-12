@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
+    <title>Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - 
+            <span style="display:inline-block;">2.2.0 - 
 
 
             </span>
@@ -112,8 +112,40 @@
   <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
-  <li>
-    <a href="CasosDeUso.html">Casos de Uso</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -162,7 +194,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Casos de Uso</h2>
   
 
@@ -181,10 +213,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#vista-general-intercambio" id="markdown-toc-vista-general-intercambio">Vista general (intercambio)</a></li>
-  <li><a href="#consentimiento" id="markdown-toc-consentimiento">Consentimiento</a></li>
-  <li><a href="#persona" id="markdown-toc-persona">Persona</a></li>
-  <li><a href="#documentos-clínicos" id="markdown-toc-documentos-clínicos">Documentos clínicos</a></li>
-  <li><a href="#receta-electrónica-cpe" id="markdown-toc-receta-electrónica-cpe">Receta electrónica (CPE)</a></li>
+  <li><a href="#índice-de-casos-de-uso" id="markdown-toc-índice-de-casos-de-uso">Índice de casos de uso</a></li>
 </ul>
 
 </div>
@@ -214,369 +243,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Todo mensaje entre dominio y SIHCE viaja por el <strong>Canal X-BA</strong>. SIHCE responde según la operación: federación de persona, <strong>consentimiento (MCC)</strong>, registro documental, búsqueda ITI-67 o descarga ITI-68 vía <strong>Proxy Central</strong>.</p>
 
-<h3 id="consentimiento">Consentimiento</h3>
-
-<p>Preferencias de privacidad del paciente en la red SIHCE. <strong>Default:</strong> sin consentimiento activo, el acceso al índice documental se <strong>deniega</strong>. Cualquier dominio autenticado puede registrar el consentimiento (incluido personal administrativo).</p>
-
-<p>Operaciones: <a href="Operaciones.html#op-consentimiento">Registro, consulta y PUT</a>. Perfil: <a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>.</p>
-
-<h4 id="registro-de-consentimiento">Registro de consentimiento</h4>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  participant D as Dominio
-  participant X as Canal X-BA
-  participant S as SIHCE
-  D-&gt;&gt;X: POST /Consent (ConsentSIHCE)
-  X-&gt;&gt;S: Reenvía solicitud
-  S-&gt;&gt;S: Persiste versión + AuditEvent
-  S--&gt;&gt;X: 201 Created + Location
-  X--&gt;&gt;D: 201 Created
-</code></pre>
-
-<p>Etapas de madurez (despliegue incremental):</p>
+<h3 id="índice-de-casos-de-uso">Índice de casos de uso</h3>
 
 <table>
   <thead>
     <tr>
-      <th>Etapa</th>
-      <th>Qué registra</th>
+      <th>Tema</th>
+      <th>Página</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
-      <td>Opt-in / opt-out <strong>general</strong></td>
+      <td>Consentimiento</td>
+      <td><a href="CasosDeUso-Consentimiento.html">Casos de Uso — Consentimiento</a></td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>Opt-in por <strong>hospital</strong> (Organization en el dominio)</td>
+      <td>Persona (búsqueda, federación, patch, SDM)</td>
+      <td><a href="CasosDeUso-Persona.html">Casos de Uso — Persona</a></td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>Hospital + nivel <strong><code class="language-plaintext highlighter-rouge">normal</code></strong> o <strong><code class="language-plaintext highlighter-rouge">confidential</code></strong> (explícito)</td>
+      <td>Documentos clínicos (epicrisis, laboratorio)</td>
+      <td><a href="CasosDeUso-Documentos.html">Casos de Uso — Documentos</a></td>
+    </tr>
+    <tr>
+      <td>Receta electrónica (CPE)</td>
+      <td><a href="CasosDeUso-Receta.html">Casos de Uso — Receta</a></td>
     </tr>
   </tbody>
 </table>
 
-<p>Opt-out general anula todo; un opt-in posterior solo habilita lo declarado en la nueva versión.</p>
-
-<h3 id="persona">Persona</h3>
-
-<h4 id="búsqueda-de-persona">Búsqueda de persona</h4>
-
-<p>Operación relacionada: <a href="Operaciones.html#op-busqueda">Búsqueda por identificador y género</a>.</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  participant C as Dominio
-  participant X as Canal X-BA
-  participant S as SIHCE
-  C-&gt;&gt;X: GET /Patient por identifier y gender
-  X-&gt;&gt;S: Reenvía solicitud
-  S--&gt;&gt;X: 200 Bundle (searchset)
-  X--&gt;&gt;C: 200 Bundle (searchset)
-</code></pre>
-
-<h4 id="altafederación-de-persona">Alta/Federación de persona</h4>
-
-<p>Operación relacionada: <a href="Operaciones.html#op-alta-federacion">Alta/Federación de paciente</a>. Cuerpo conforme al perfil <a href="StructureDefinition-PatientXBA.html">PatientXBA</a>.</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  participant C as Dominio
-  participant X as Canal X-BA
-  participant S as SIHCE
-  C-&gt;&gt;X: POST /Patient (Patient)
-  X-&gt;&gt;S: Reenvía solicitud
-  S--&gt;&gt;X: 201/200 resultado federación
-  X--&gt;&gt;C: 201/200 resultado federación
-</code></pre>
-
-<h4 id="modificación-de-identificador-local">Modificación de identificador local</h4>
-
-<p>Operación relacionada: <a href="Operaciones.html#op-patch-identifier">Patch de identificador local</a>.</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  participant C as Dominio
-  participant X as Canal X-BA
-  participant S as SIHCE
-  C-&gt;&gt;X: POST /Patient/$patch-identifier (Parameters)
-  X-&gt;&gt;S: Reenvía solicitud
-  S--&gt;&gt;X: 200 OperationOutcome / Patient
-  X--&gt;&gt;C: 200 OperationOutcome / Patient
-</code></pre>
-
-<h4 id="modificación-de-sdm">Modificación de SDM</h4>
-
-<p>Operación relacionada: <a href="Operaciones.html#op-update-sdm">Update de SDM</a>.</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  participant C as Dominio
-  participant X as Canal X-BA
-  participant S as SIHCE
-  C-&gt;&gt;X: POST /Patient/$update-sdm (Parameters)
-  X-&gt;&gt;S: Reenvía solicitud
-  S--&gt;&gt;X: 200 OperationOutcome / Patient
-  X--&gt;&gt;C: 200 OperationOutcome / Patient
-</code></pre>
-
-<h3 id="documentos-clínicos">Documentos clínicos</h3>
-
-<p>Todo documento clínico se indexa en SIHCE como <code class="language-plaintext highlighter-rouge">DocumentReference</code> (<a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>). <strong>Epicrisis</strong> e <strong>informe de laboratorio</strong> son casos especiales del mismo patrón (distintos LOINC y distinto recurso detrás de <code class="language-plaintext highlighter-rouge">content.attachment.url</code>).</p>
-
-<h4 id="registro-de-epicrisis-dominio--sihce">Registro de epicrisis (dominio → SIHCE)</h4>
-
-<p>Operación relacionada: <a href="Operaciones.html#op-documento-registro">Registro de documento clínico</a>. Cuerpo conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>; tipo LOINC <code class="language-plaintext highlighter-rouge">18842-5</code>. Capacidad SIHCE: <strong>registro documental</strong>.</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  participant D as DominioEmisor
-  participant X as Canal X-BA
-  participant S as SIHCE
-  D-&gt;&gt;D: Publica Binary o Composition (URL dominio)
-  D-&gt;&gt;X: POST /DocumentReference (metadatos + url)
-  X-&gt;&gt;S: Reenvía solicitud
-  S--&gt;&gt;X: 201 Created + Location
-  X--&gt;&gt;D: 201 Created + Location
-</code></pre>
-
-<h4 id="consulta-de-epicrisis-por-paciente">Consulta de epicrisis por paciente</h4>
-
-<p>Operaciones: <a href="Operaciones.html#op-documento-consulta">Búsqueda ITI-67</a>, <a href="Operaciones.html#op-documento-proxy">Descarga ITI-68 vía Proxy</a>. SIHCE evalúa <strong>Consent (MCC)</strong> en la búsqueda; la URL del índice apunta al Proxy Central; la descarga es un GET estándar con proxy pass al hospital custodio.</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  autonumber
-  participant C as Hospital solicitante
-  participant X as Canal X-BA
-  participant S as SIHCE Core
-  participant E as Hospital custodio
-  C-&gt;&gt;X: GET /DocumentReference (ITI-67)
-  X-&gt;&gt;S: Reenvía solicitud
-  S-&gt;&gt;S: MCC: evalúa Consent + privacidad
-  S--&gt;&gt;X: 200 Bundle (URLs Proxy Central)
-  X--&gt;&gt;C: 200 Bundle
-  C-&gt;&gt;X: GET /Proxy/Binary/{id} (ITI-68)
-  X-&gt;&gt;S: Reenvía GET
-  S-&gt;&gt;S: Revalida Consent (MCC)
-  S-&gt;&gt;E: Proxy pass (streaming)
-  E--&gt;&gt;S: bytes del documento
-  S--&gt;&gt;X: 200 Binary o Composition
-  X--&gt;&gt;C: 200 documento
-</code></pre>
-
-<p>Niveles de madurez epicrisis:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nivel</th>
-      <th>Contenido en URL del dominio</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Binary (<code class="language-plaintext highlighter-rouge">application/pdf</code> o <code class="language-plaintext highlighter-rouge">application/xml</code>)</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td><a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a> con secciones narrativas</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Composition con secciones codificadas (<code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">MedicationStatement</code>)</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="registro-de-informe-de-laboratorio-dominio--sihce">Registro de informe de laboratorio (dominio → SIHCE)</h4>
-
-<p>Operación relacionada: <a href="Operaciones.html#op-documento-registro">Registro de documento clínico</a>. Tipo LOINC <code class="language-plaintext highlighter-rouge">11502-2</code>; URL a <a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">DiagnosticReportLaboratorioSIHCE</a> en el dominio. Capacidad SIHCE: <strong>registro documental</strong>.</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  participant D as DominioEmisor
-  participant X as Canal X-BA
-  participant S as SIHCE
-  D-&gt;&gt;D: Publica DiagnosticReport en dominio (PDF, result opcional)
-  D-&gt;&gt;X: POST /DocumentReference (metadatos + url)
-  X-&gt;&gt;S: Reenvía solicitud
-  S--&gt;&gt;X: 201 Created + Location
-  X--&gt;&gt;D: 201 Created + Location
-</code></pre>
-
-<p>Niveles de madurez informe de laboratorio:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nivel</th>
-      <th>Contenido DiagnosticReport en dominio</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Solo <code class="language-plaintext highlighter-rouge">presentedForm</code> (PDF)</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td><code class="language-plaintext highlighter-rouge">presentedForm</code> + <code class="language-plaintext highlighter-rouge">result</code> con <a href="StructureDefinition-ObservationLaboratorioSIHCE.html">ObservationLaboratorioSIHCE</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="consulta-de-informes-de-laboratorio-por-paciente">Consulta de informes de laboratorio por paciente</h4>
-
-<p>Operaciones: <a href="Operaciones.html#op-documento-consulta">Búsqueda ITI-67</a>, <a href="Operaciones.html#op-documento-proxy">Descarga ITI-68 vía Proxy</a>. Mismo patrón que epicrisis: Consent en MCC, URL del Proxy Central, proxy pass al DiagnosticReport en el custodio.</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  autonumber
-  participant C as Hospital solicitante
-  participant X as Canal X-BA
-  participant S as SIHCE Core
-  participant E as Hospital custodio
-  C-&gt;&gt;X: GET /DocumentReference (tipo 11502-2)
-  X-&gt;&gt;S: Reenvía solicitud
-  S-&gt;&gt;S: MCC: evalúa Consent
-  S--&gt;&gt;X: 200 Bundle (URLs Proxy Central)
-  X--&gt;&gt;C: 200 Bundle
-  C-&gt;&gt;X: GET /Proxy/Binary/{id}
-  X-&gt;&gt;S: Reenvía GET
-  S-&gt;&gt;E: Proxy pass
-  E--&gt;&gt;S: DiagnosticReport
-  S--&gt;&gt;X: 200 DiagnosticReport
-  X--&gt;&gt;C: 200 DiagnosticReport
-</code></pre>
-
-<h3 id="receta-electrónica-cpe">Receta electrónica (CPE)</h3>
-
-<p>Indexación y orquestación de recetas en SIHCE. El contenido clínico (<code class="language-plaintext highlighter-rouge">MedicationRequest</code>) permanece en el repositorio de origen; SIHCE indexa metadatos (CUIR, paciente, efector, estado) y actúa como <strong>broker</strong> hacia la farmacia. La dispensa actualiza el índice (anti-quema) y se propaga al origen.</p>
-
-<p><strong>Actores comunes:</strong> SIHCE (orquestador/índice), farmacia privada (aplicativo de dispensa — Opción B), repositorio de origen (SIGEHOS o prestador privado — Opción A = API FHIR consultable por SIHCE).</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Opción</th>
-      <th>Qué es</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>A</strong></td>
-      <td>Repositorio de origen expone API FHIR para que SIHCE haga <em>pull</em> bajo demanda (sin duplicar dato).</td>
-    </tr>
-    <tr>
-      <td><strong>B</strong></td>
-      <td>Aplicativo de dispensa de la farmacia (Farmalink/RCTA u otro) que consume la API SIHCE.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>A y B <strong>no compiten</strong>: A es condición técnica para que B obtenga el detalle vía broker SIHCE.</p>
-
-<p>Operaciones: <a href="Operaciones.html#op-receta-index">Indexación</a>, <a href="Operaciones.html#op-receta-consulta">Consulta</a>, <a href="Operaciones.html#op-receta-proxy">Proxy detalle</a>, <a href="Operaciones.html#op-receta-dispensa">Dispensa</a>. Perfiles: <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>, <a href="StructureDefinition-MedicationRequestRecetaSIHCE.html">MedicationRequestRecetaSIHCE</a>, <a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>.</p>
-
-<h4 id="caso-2--público-sigehos--cpe--farmacia-privada">Caso 2 — Público (SIGEHOS) → CPE → Farmacia privada</h4>
-
-<p><strong>Actores:</strong> Prescriptor público (efector SIGEHOS), paciente (cobertura pública), SIGEHOS (repositorio), SIHCE, farmacia privada.</p>
-
-<p><strong>Precondición:</strong> Paciente con CUIR/CUIL; efector conectado a SIGEHOS.</p>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  autonumber
-  participant M as Prescriptor SIGEHOS
-  participant R as SIGEHOS (repo)
-  participant X as Canal X-BA
-  participant S as SIHCE
-  participant F as Farmacia (Opción B)
-  M-&gt;&gt;R: Genera MedicationRequest (CUIR)
-  R-&gt;&gt;R: Persiste receta
-  R-&gt;&gt;X: POST DocumentReference (metadatos vigentes)
-  X-&gt;&gt;S: Indexa CUIR/CUIL/efector
-  S--&gt;&gt;X: 201 Created
-  X--&gt;&gt;R: 201 Created
-  F-&gt;&gt;X: GET DocumentReference?identifier=CUIR o CUIL
-  X-&gt;&gt;S: Consulta índice
-  S--&gt;&gt;X: 200 Bundle (estado vigente)
-  X--&gt;&gt;F: 200 Bundle
-  F-&gt;&gt;X: GET /Proxy/MedicationRequest/{id}
-  X-&gt;&gt;S: Broker
-  S-&gt;&gt;R: Pull MedicationRequest
-  R--&gt;&gt;S: MedicationRequest
-  S--&gt;&gt;X: 200 (sin persistir)
-  X--&gt;&gt;F: 200 MedicationRequest
-  F-&gt;&gt;X: POST MedicationDispense
-  X-&gt;&gt;S: Notifica dispensa
-  S-&gt;&gt;S: Índice → dispensada (anti-quema)
-  S-&gt;&gt;R: Propaga cierre a HCE pública
-  S--&gt;&gt;X: 201 Created
-  X--&gt;&gt;F: 201 Created
-</code></pre>
-
-<h4 id="caso-3--privado-recetario--cpe--farmacia-privada">Caso 3 — Privado (Recetario) → CPE → Farmacia privada</h4>
-
-<p><strong>Actores:</strong> Prescriptor privado, paciente, repositorio del prestador (si existe) <strong>o</strong> SIHCE como repositorio delegado (excepción), SIHCE orquestador, farmacia privada.</p>
-
-<p><strong>Precondición:</strong> Paciente con CUIR/CUIL; prescriptor adherido a la red SIHCE.</p>
-
-<p><strong>Bifurcación en emisión:</strong></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Variante</th>
-      <th>Comportamiento</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>1a</strong> — Prestador con repositorio propio</td>
-      <td>Mismo patrón que caso 2: índice en SIHCE + contenido en el prestador.</td>
-    </tr>
-    <tr>
-      <td><strong>1b</strong> — Sin sistema propio (excepción)</td>
-      <td><code class="language-plaintext highlighter-rouge">MedicationRequest</code> se persiste en SIHCE (<code class="language-plaintext highlighter-rouge">repositorioDelegado=true</code>); auditable y acotado.</td>
-    </tr>
-  </tbody>
-</table>
-
-<pre><code class="language-mermaid">sequenceDiagram
-  autonumber
-  participant M as Prescriptor privado
-  participant P as Repo prestador (1a)
-  participant X as Canal X-BA
-  participant S as SIHCE
-  participant F as Farmacia (Opción B)
-  alt 1a — con repositorio propio
-    M-&gt;&gt;P: Genera y guarda MedicationRequest
-    P-&gt;&gt;X: POST DocumentReference (índice)
-    X-&gt;&gt;S: Indexa
-  else 1b — repositorio delegado (excepción)
-    M-&gt;&gt;X: POST MedicationRequest + DocumentReference
-    X-&gt;&gt;S: Persiste contenido + índice (delegado)
-  end
-  S--&gt;&gt;X: 201 Created
-  X--&gt;&gt;M: 201 Created
-  F-&gt;&gt;X: GET DocumentReference (CUIR/CUIL)
-  X-&gt;&gt;S: Consulta índice
-  S--&gt;&gt;X: 200 Bundle
-  X--&gt;&gt;F: 200 Bundle
-  F-&gt;&gt;X: GET /Proxy/MedicationRequest/{id}
-  X-&gt;&gt;S: Resuelve origen
-  alt 1a
-    S-&gt;&gt;P: Broker pull
-    P--&gt;&gt;S: MedicationRequest
-  else 1b
-    S-&gt;&gt;S: Lee repositorio delegado
-  end
-  S--&gt;&gt;X: 200 MedicationRequest
-  X--&gt;&gt;F: 200
-  F-&gt;&gt;X: POST MedicationDispense
-  X-&gt;&gt;S: Dispensa + anti-quema
-  opt 1a
-    S-&gt;&gt;P: Propaga cierre
-  end
-  S--&gt;&gt;X: 201 Created
-  X--&gt;&gt;F: 201 Created
-</code></pre>
+<p>Detalle normativo de epicrisis (tres niveles y consenso de secciones): <a href="Epicrisis.html">Epicrisis</a>.</p>
 
 
 
@@ -602,8 +298,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

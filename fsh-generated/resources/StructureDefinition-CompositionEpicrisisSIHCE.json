@@ -12,13 +12,13 @@
     }
   ],
   "url": "http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "name": "CompositionEpicrisisSIHCE",
   "title": "Composición epicrisis SIHCE",
   "status": "active",
   "date": "2026-06-09T00:00:00-03:00",
   "publisher": "SIHCE Development Team",
-  "description": "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement).",
+  "description": "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones tipadas con text. Nivel 3: solo Motivo de internación (46241-6) con entry Condition + ICD-10. Resto de codificaciones en propuestas de votación.",
   "jurisdiction": [
     {
       "coding": [
@@ -166,19 +166,6 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:diagnosticoAlta.entry",
-        "path": "Composition.section.entry",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
         "id": "Composition.section:medicamentosAlta",
         "path": "Composition.section",
         "sliceName": "medicamentosAlta",
@@ -202,19 +189,6 @@
       {
         "id": "Composition.section:medicamentosAlta.text",
         "path": "Composition.section.text",
-        "mustSupport": true
-      },
-      {
-        "id": "Composition.section:medicamentosAlta.entry",
-        "path": "Composition.section.entry",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -296,19 +270,6 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:diagnosticoAdmision.entry",
-        "path": "Composition.section.entry",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
         "id": "Composition.section:medicamentosIngreso",
         "path": "Composition.section",
         "sliceName": "medicamentosIngreso",
@@ -335,34 +296,35 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:motivoConsulta",
+        "id": "Composition.section:motivoInternacion",
         "path": "Composition.section",
-        "sliceName": "motivoConsulta",
+        "sliceName": "motivoInternacion",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Composition.section:motivoConsulta.code",
+        "id": "Composition.section:motivoInternacion.code",
         "path": "Composition.section.code",
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "46239-0",
+              "code": "46241-6",
               "system": "http://loinc.org",
-              "display": "Chief complaint+Reason for visit Narrative"
+              "display": "Reason for hospitalization Narrative"
             }
           ]
         }
       },
       {
-        "id": "Composition.section:motivoConsulta.text",
+        "id": "Composition.section:motivoInternacion.text",
         "path": "Composition.section.text",
         "mustSupport": true
       },
       {
-        "id": "Composition.section:motivoConsulta.entry",
+        "id": "Composition.section:motivoInternacion.entry",
         "path": "Composition.section.entry",
+        "short": "Nivel 3: Condition con código ICD-10",
         "type": [
           {
             "code": "Reference",

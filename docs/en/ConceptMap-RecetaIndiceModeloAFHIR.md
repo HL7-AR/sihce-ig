@@ -1,4 +1,4 @@
-# RecetaIndice: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# RecetaIndice: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR | *Version*:2.1.0 | |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR | *Version*:2.2.0 | |
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:RecetaIndiceModeloAFHIR |
 
  
@@ -31,7 +31,7 @@ Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest.
     "valueCode" : "draft"
   }],
   "url" : "http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR",
-  "version" : "2.1.0",
+  "version" : "2.2.0",
   "name" : "RecetaIndiceModeloAFHIR",
   "title" : "RecetaIndice: modelo lógico a FHIR",
   "status" : "draft",

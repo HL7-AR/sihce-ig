@@ -1,4 +1,4 @@
-# Condición clínica epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Condición clínica epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,16 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE | *Version*:2.1.0 | |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE | *Version*:2.2.0 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:ConditionEpicrisisSIHCE |
 
  
-Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina). 
+Motivo de internación codificado en epicrisis nivel 3 (ICD-10). Binding extensible al ValueSet SIHCEMotivoInternacionICD10VS. 
 
 **Usages:**
 
 * Refer to this Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)
+* Examples for this Profile: [Condition/ConditionMotivoInternacionEjemplo](Condition-ConditionMotivoInternacionEjemplo.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-ConditionEpicrisisSIHCE.json)
 
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-ConditionEpicrisi
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE",
-  "version" : "2.1.0",
+  "version" : "2.2.0",
   "name" : "ConditionEpicrisisSIHCE",
   "title" : "Condición clínica epicrisis SIHCE",
   "status" : "active",
@@ -58,7 +59,7 @@ Other representations of profile: [CSV](../StructureDefinition-ConditionEpicrisi
       "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
-  "description" : "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).",
+  "description" : "Motivo de internación codificado en epicrisis nivel 3 (ICD-10). Binding extensible al ValueSet SIHCEMotivoInternacionICD10VS.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",
@@ -118,7 +119,7 @@ Other representations of profile: [CSV](../StructureDefinition-ConditionEpicrisi
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"
+        "valueSet" : "http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10"
       }
     },
     {

@@ -10,11 +10,11 @@
   "id" : "SIHCE.fhir.core",
   "language" : "en",
   "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
-  "version" : "2.1.0",
+  "version" : "2.2.0",
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R4",
   "status" : "draft",
-  "date" : "2026-11-12T16:05:33-03:00",
+  "date" : "2026-11-12T19:26:41-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -382,7 +382,7 @@
         "reference" : "StructureDefinition/CompositionEpicrisisSIHCE"
       },
       "name" : "Composición epicrisis SIHCE",
-      "description" : "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement).",
+      "description" : "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones tipadas con text. Nivel 3: solo Motivo de internación (46241-6) con entry Condition + ICD-10. Resto de codificaciones en propuestas de votación.",
       "exampleBoolean" : false
     },
     {
@@ -398,7 +398,7 @@
         "reference" : "StructureDefinition/ConditionEpicrisisSIHCE"
       },
       "name" : "Condición clínica epicrisis SIHCE",
-      "description" : "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).",
+      "description" : "Motivo de internación codificado en epicrisis nivel 3 (ICD-10). Binding extensible al ValueSet SIHCEMotivoInternacionICD10VS.",
       "exampleBoolean" : false
     },
     {
@@ -525,8 +525,8 @@
       "reference" : {
         "reference" : "ValueSet/sihce-epicrisis-diagnosis-code-vs"
       },
-      "name" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)",
-      "description" : "Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación.",
+      "name" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto",
+      "description" : "ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas.",
       "exampleBoolean" : false
     },
     {
@@ -670,7 +670,39 @@
         "reference" : "Composition/CompositionEpicrisisNivel2"
       },
       "name" : "Epicrisis nivel 2 — secciones narrativas",
-      "description" : "Composition con las cinco secciones obligatorias en texto (nivel 2).",
+      "description" : "Composition con secciones tipadas en texto (nivel 2), sin entries codificadas.",
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DocumentReference-DocumentReferenceEpicrisisNivel3.html"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/DocumentReferenceEpicrisisNivel3"
+      },
+      "name" : "Epicrisis nivel 3 — enlace a Composition codificada",
+      "description" : "DocumentReference con URL a Composition nivel 3 (Motivo de internación ICD-10).",
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Composition-CompositionEpicrisisNivel3.html"
+      }],
+      "reference" : {
+        "reference" : "Composition/CompositionEpicrisisNivel3"
+      },
+      "name" : "Epicrisis nivel 3 — Motivo de internación codificado",
+      "description" : "Composition narrativa más Motivo de internación con entry Condition (ICD-10).",
       "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"
     },
     {
@@ -686,7 +718,7 @@
         "reference" : "ConceptMap/EpicrisisModeloAFHIR"
       },
       "name" : "Epicrisis: modelo lógico a FHIR",
-      "description" : "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3).",
+      "description" : "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3; nivel 3 normativo = Motivo de internación ICD-10).",
       "exampleBoolean" : false
     },
     {
@@ -877,7 +909,7 @@
         "reference" : "StructureDefinition/MedicationStatementEpicrisisSIHCE"
       },
       "name" : "Medicación al alta epicrisis SIHCE",
-      "description" : "Medicamento declarado en la sección de medicamentos al alta (nivel 3).",
+      "description" : "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas.",
       "exampleBoolean" : false
     },
     {
@@ -989,7 +1021,7 @@
         "reference" : "StructureDefinition/Epicrisis"
       },
       "name" : "Modelo lógico Epicrisis (SIHCE)",
-      "description" : "Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3.",
+      "description" : "Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3. Nivel 3 normativo: Motivo de internación (ICD-10); resto de codificaciones en propuestas.",
       "exampleBoolean" : false
     },
     {
@@ -1103,6 +1135,38 @@
       "name" : "ModificarSDMPersona: modelo lógico a FHIR",
       "description" : "Mapeo del modelo ModificarSDMPersona (SDM actual y nuevo, dominio, respuesta) a Patient y OperationOutcome.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-sihce-motivo-internacion-icd10-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sihce-motivo-internacion-icd10-vs"
+      },
+      "name" : "Motivo de internación epicrisis (ICD-10)",
+      "description" : "Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Condition-ConditionMotivoInternacionEjemplo.html"
+      }],
+      "reference" : {
+        "reference" : "Condition/ConditionMotivoInternacionEjemplo"
+      },
+      "name" : "Motivo de internación — ICD-10 J18.9",
+      "description" : "Condition de ejemplo para Motivo de internación (nivel 3).",
+      "exampleCanonical" : "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE"
     },
     {
       "extension" : [{
@@ -1331,6 +1395,166 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaAlergias.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaAlergias"
+      },
+      "name" : "Propuesta: Alergias (epicrisis)",
+      "description" : "Sugerencia para votación: alergias codificadas. No normativa hasta aceptación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaDiagnosticoAdmision"
+      },
+      "name" : "Propuesta: Diagnóstico de admisión (epicrisis)",
+      "description" : "Sugerencia para votación: sección Diagnóstico de admisión codificada. No normativa hasta aceptación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaDiagnosticoAlta"
+      },
+      "name" : "Propuesta: Diagnóstico de alta (epicrisis)",
+      "description" : "Sugerencia para votación: sección Diagnóstico de alta codificada. No normativa hasta aceptación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaDispositivos.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaDispositivos"
+      },
+      "name" : "Propuesta: Dispositivos e implantes (epicrisis)",
+      "description" : "Sugerencia para votación: dispositivos/implantes codificados. No normativa hasta aceptación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaMedicacionAlta.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaMedicacionAlta"
+      },
+      "name" : "Propuesta: Medicación de alta (epicrisis)",
+      "description" : "Sugerencia para votación: medicación de alta codificada. No normativa hasta aceptación. Perfil draft relacionado: MedicationStatementEpicrisisSIHCE.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaMedicacionIngreso.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaMedicacionIngreso"
+      },
+      "name" : "Propuesta: Medicación de ingreso (epicrisis)",
+      "description" : "Sugerencia para votación: medicación de ingreso codificada. No normativa hasta aceptación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaProblemas.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaProblemas"
+      },
+      "name" : "Propuesta: Problemas y antecedentes (epicrisis)",
+      "description" : "Sugerencia para votación: lista de problemas codificada. No normativa hasta aceptación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaProcedimientos.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaProcedimientos"
+      },
+      "name" : "Propuesta: Procedimientos (epicrisis)",
+      "description" : "Sugerencia para votación: procedimientos codificados. No normativa hasta aceptación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaSignosVitales.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaSignosVitales"
+      },
+      "name" : "Propuesta: Signos vitales (epicrisis)",
+      "description" : "Sugerencia para votación: signos vitales codificados. No normativa hasta aceptación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EpicrisisPropuestaVacunas.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EpicrisisPropuestaVacunas"
+      },
+      "name" : "Propuesta: Vacunas (epicrisis)",
+      "description" : "Sugerencia para votación: inmunizaciones codificadas. No normativa hasta aceptación.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -1453,7 +1677,7 @@
         "reference" : "ValueSet/sihce-epicrisis-section-vs"
       },
       "name" : "Secciones LOINC de epicrisis SIHCE",
-      "description" : "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales).",
+      "description" : "Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3).",
       "exampleBoolean" : false
     },
     {
@@ -1594,6 +1818,60 @@
         }],
         "nameUrl" : "CasosDeUso.html",
         "title" : "Casos de Uso",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "CasosDeUso-Consentimiento.html"
+        }],
+        "nameUrl" : "CasosDeUso-Consentimiento.html",
+        "title" : "Casos de Uso — Consentimiento",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "CasosDeUso-Persona.html"
+        }],
+        "nameUrl" : "CasosDeUso-Persona.html",
+        "title" : "Casos de Uso — Persona",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "CasosDeUso-Documentos.html"
+        }],
+        "nameUrl" : "CasosDeUso-Documentos.html",
+        "title" : "Casos de Uso — Documentos",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "CasosDeUso-Receta.html"
+        }],
+        "nameUrl" : "CasosDeUso-Receta.html",
+        "title" : "Casos de Uso — Receta",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Epicrisis.html"
+        }],
+        "nameUrl" : "Epicrisis.html",
+        "title" : "Epicrisis",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Epicrisis-Secciones-Propuestas.html"
+        }],
+        "nameUrl" : "Epicrisis-Secciones-Propuestas.html",
+        "title" : "Epicrisis — secciones propuestas",
         "generation" : "markdown"
       },
       {

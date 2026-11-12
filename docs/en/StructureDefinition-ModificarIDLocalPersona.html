@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Modelo lógico ModificarIDLocalPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
+    <title>Modelo lógico ModificarIDLocalPersona (FederadorBA) - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -48,8 +48,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.9"}
-    h3,h4,h5,h6{--heading-prefix:"8.9"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.9"}
+    h3,h4,h5,h6{--heading-prefix:"14.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -57,7 +57,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - 
+            <span style="display:inline-block;">2.2.0 - 
 
 
             </span>
@@ -113,8 +113,40 @@
   <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
-  <li>
-    <a href="CasosDeUso.html">Casos de Uso</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -157,7 +189,7 @@
 
 <!-- layouts\layout-profile -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -239,7 +271,7 @@ Modelo lógico ModificarIDLocalPersona (FederadorBA)
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona|2.1.0"/></span>
+      <span class="copy-text">2.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona|2.2.0"/></span>
       </td>
     </tr>
 
@@ -482,7 +514,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Mensaje</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbModificarIDLocalPersonaK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ModificarIDLocalPersonaK'), 'binding', document.getElementById('cbModificarIDLocalPersonaK-binding').checked, document.getElementById('ppModificarIDLocalPersonaK'));
 document.getElementById('cbModificarIDLocalPersonaK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -633,7 +665,7 @@ filterDesc(document.getElementById('ModificarIDLocalPersonaK'), 'obligation', do
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Mensaje</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbModificarIDLocalPersonaD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ModificarIDLocalPersonaD'), 'binding', document.getElementById('cbModificarIDLocalPersonaD-binding').checked, document.getElementById('ppModificarIDLocalPersonaD'));
 document.getElementById('cbModificarIDLocalPersonaD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -800,7 +832,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Mensaje</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbModificarIDLocalPersonaS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ModificarIDLocalPersonaS'), 'binding', document.getElementById('cbModificarIDLocalPersonaS-binding').checked, document.getElementById('ppModificarIDLocalPersonaS'));
 document.getElementById('cbModificarIDLocalPersonaS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1095,7 +1127,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Mensaje</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbModificarIDLocalPersonaKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ModificarIDLocalPersonaKA'), 'binding', document.getElementById('cbModificarIDLocalPersonaKA-binding').checked, document.getElementById('ppModificarIDLocalPersonaKA'));
 document.getElementById('cbModificarIDLocalPersonaKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1245,7 +1277,7 @@ filterDesc(document.getElementById('ModificarIDLocalPersonaKA'), 'obligation', d
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Mensaje</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbModificarIDLocalPersonaDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ModificarIDLocalPersonaDA'), 'binding', document.getElementById('cbModificarIDLocalPersonaDA-binding').checked, document.getElementById('ppModificarIDLocalPersonaDA'));
 document.getElementById('cbModificarIDLocalPersonaDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1409,7 +1441,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">1..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Mensaje</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 607d68ac-872d-43ab-ab49-76a4f43a6631
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // d16f7b0f-25f9-4e48-976d-15c614585b1c
 document.getElementById('cbModificarIDLocalPersonaSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ModificarIDLocalPersonaSA'), 'binding', document.getElementById('cbModificarIDLocalPersonaSA-binding').checked, document.getElementById('ppModificarIDLocalPersonaSA'));
 document.getElementById('cbModificarIDLocalPersonaSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1586,8 +1618,8 @@ Summary
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

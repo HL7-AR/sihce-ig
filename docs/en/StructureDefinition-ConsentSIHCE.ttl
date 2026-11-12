@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.1.0"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.0"] ;
   fhir:StructureDefinition.name [ fhir:value "ConsentSIHCE"] ;
   fhir:StructureDefinition.title [ fhir:value "Consentimiento de paciente SIHCE"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;

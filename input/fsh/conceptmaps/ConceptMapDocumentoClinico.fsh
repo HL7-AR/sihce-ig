@@ -46,9 +46,9 @@ Instance: EpicrisisModeloAFHIR
 InstanceOf: ConceptMap
 Usage: #definition
 * title = "Epicrisis: modelo lógico a FHIR"
-* description = "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3)."
+* description = "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3; nivel 3 normativo = Motivo de internación ICD-10)."
 * url = "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR"
-* version = "1.3.0"
+* version = "1.4.0"
 * name = "EpicrisisModeloAFHIR"
 * status = #active
 * extension[$fmm].valueInteger = 3

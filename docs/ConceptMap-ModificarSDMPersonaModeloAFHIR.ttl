@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/ModificarSDMPersonaModeloAFHIR"] ;
-  fhir:ConceptMap.version [ fhir:value "2.1.0"] ;
+  fhir:ConceptMap.version [ fhir:value "2.2.0"] ;
   fhir:ConceptMap.name [ fhir:value "ModificarSDMPersonaModeloAFHIR"] ;
   fhir:ConceptMap.title [ fhir:value "ModificarSDMPersona: modelo lógico a FHIR"] ;
   fhir:ConceptMap.status [ fhir:value "active"] ;

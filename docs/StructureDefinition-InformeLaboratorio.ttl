@@ -22,11 +22,11 @@
      fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/InformeLaboratorio"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.1.0"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.0"] ;
   fhir:StructureDefinition.name [ fhir:value "InformeLaboratorio"] ;
   fhir:StructureDefinition.title [ fhir:value "Modelo lógico Informe de Laboratorio (SIHCE)"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-11-12T16:05:33-03:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-12T19:26:41-03:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;
@@ -57,7 +57,7 @@
      fhir:Element.extension [
        fhir:index 0 ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
-       fhir:Extension.valueString [ fhir:value "2.1.0" ]
+       fhir:Extension.valueString [ fhir:value "2.2.0" ]
      ] ;
      fhir:StructureDefinition.snapshot.element [
        fhir:index 0 ;

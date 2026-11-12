@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NamingSystem Organization hospital (dominio MSGC, ejemplo) - XML Representation - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
+    <title>NamingSystem Organization hospital (dominio MSGC, ejemplo) - XML Representation - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -50,8 +50,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.42"}
-    h3,h4,h5,h6{--heading-prefix:"8.42"}</style>
+    <style type="text/css">h2{--heading-prefix:"14.53"}
+    h3,h4,h5,h6{--heading-prefix:"14.53"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - 
+            <span style="display:inline-block;">2.2.0 - 
 
 
             </span>
@@ -115,8 +115,40 @@
   <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
-  <li>
-    <a href="CasosDeUso.html">Casos de Uso</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -159,7 +191,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -241,7 +273,7 @@
   &lt;<a href="https://hl7.org/fhir/R4/resource.html#NamingSystem.language">language</a> <a href="https://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/domainresource.html#NamingSystem.text">text</a>&gt;
     &lt;<a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="https://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: NamingSystem NamingSystemOrganizationHospitalMsgc&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;NamingSystemOrganizationHospitalMsgc&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcNamingSystemOrganizationHospitalMsgc&quot;&gt; &lt;/a&gt;&lt;h3&gt;Summary&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;Defining URL&lt;/td&gt;&lt;td&gt;http://sihce.gob.ar/NamingSystem/NamingSystemOrganizationHospitalMsgc&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Version&lt;/td&gt;&lt;td&gt;2.1.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Name&lt;/td&gt;&lt;td&gt;NamingSystemOrganizationHospitalMsgc&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Status&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Definition&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Ejemplo para Hospital Central en dominio MSGC. Cada dominio publica su propio NamingSystem con el mismo patrón de URI.&lt;/p&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: NamingSystem NamingSystemOrganizationHospitalMsgc&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;NamingSystemOrganizationHospitalMsgc&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcNamingSystemOrganizationHospitalMsgc&quot;&gt; &lt;/a&gt;&lt;h3&gt;Summary&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;Defining URL&lt;/td&gt;&lt;td&gt;http://sihce.gob.ar/NamingSystem/NamingSystemOrganizationHospitalMsgc&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Version&lt;/td&gt;&lt;td&gt;2.2.0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Name&lt;/td&gt;&lt;td&gt;NamingSystemOrganizationHospitalMsgc&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Status&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Definition&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Ejemplo para Hospital Central en dominio MSGC. Cada dominio publica su propio NamingSystem con el mismo patrón de URI.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Publisher&lt;/td&gt;&lt;td&gt;SIHCE Development Team&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h3&gt;Identifiers&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Preferred&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;URI&lt;/td&gt;&lt;td&gt;http://msgc.gcba.gob.ar/Organization&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="https://hl7.org/fhir/R4/domainresource.html#NamingSystem.text">text</a>&gt;
   &lt;<a href="https://hl7.org/fhir/R4/domainresource.html#NamingSystem.extension">extension</a>
@@ -251,7 +283,7 @@
   &lt;/<a href="https://hl7.org/fhir/R4/domainresource.html#NamingSystem.extension">extension</a>&gt;
   &lt;<a href="https://hl7.org/fhir/R4/domainresource.html#NamingSystem.extension">extension</a>
              <a href="https://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version&quot;&gt;
-    &lt;<a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.1.0&quot;/&gt;
+    &lt;<a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.2.0&quot;/&gt;
   &lt;/<a href="https://hl7.org/fhir/R4/domainresource.html#NamingSystem.extension">extension</a>&gt;
   &lt;<a href="https://hl7.org/fhir/R4/namingsystem.html#NamingSystem.name">name</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NamingSystemOrganizationHospitalMsgc&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/namingsystem.html#NamingSystem.status">status</a> <a href="https://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
@@ -301,8 +333,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

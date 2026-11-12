@@ -1,4 +1,4 @@
-# Consentimiento hospital + nivel normal (etapa 3) - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Consentimiento hospital + nivel normal (etapa 3) - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -18,11 +18,11 @@
       </div>
    </text>
    <url value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core"/>
-   <version value="2.1.0"/>
+   <version value="2.2.0"/>
    <name value="GuiaDeImplementacionSIHCE"/>
    <title value="Guía de Implementación SIHCE - FHIR R4"/>
    <status value="draft"/>
-   <date value="2026-11-12T16:05:33-03:00"/>
+   <date value="2026-11-12T19:26:41-03:00"/>
    <publisher value="SIHCE Development Team"/>
    <contact>
       <name value="SIHCE Development Team"/>
@@ -80,6 +80,20 @@
       
       
       <grouping id="-ex-example" name="Example"/>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       
@@ -305,7 +319,7 @@
             <reference value="StructureDefinition/Epicrisis"/>
          </reference>
          <name value="Modelo lógico Epicrisis (SIHCE)"/>
-         <description value="Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3."/>
+         <description value="Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3. Nivel 3 normativo: Motivo de internación (ICD-10); resto de codificaciones en propuestas."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-logicalmodel"/>
       </resource>
@@ -404,6 +418,186 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaAlergias.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaAlergias"/>
+         </reference>
+         <name value="Propuesta: Alergias (epicrisis)"/>
+         <description value="Sugerencia para votación: alergias codificadas. No normativa hasta aceptación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaDiagnosticoAdmision"/>
+         </reference>
+         <name value="Propuesta: Diagnóstico de admisión (epicrisis)"/>
+         <description value="Sugerencia para votación: sección Diagnóstico de admisión codificada. No normativa hasta aceptación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaDiagnosticoAlta"/>
+         </reference>
+         <name value="Propuesta: Diagnóstico de alta (epicrisis)"/>
+         <description value="Sugerencia para votación: sección Diagnóstico de alta codificada. No normativa hasta aceptación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaDispositivos.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaDispositivos"/>
+         </reference>
+         <name value="Propuesta: Dispositivos e implantes (epicrisis)"/>
+         <description value="Sugerencia para votación: dispositivos/implantes codificados. No normativa hasta aceptación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaMedicacionAlta.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaMedicacionAlta"/>
+         </reference>
+         <name value="Propuesta: Medicación de alta (epicrisis)"/>
+         <description value="Sugerencia para votación: medicación de alta codificada. No normativa hasta aceptación. Perfil draft relacionado: MedicationStatementEpicrisisSIHCE."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaMedicacionIngreso.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaMedicacionIngreso"/>
+         </reference>
+         <name value="Propuesta: Medicación de ingreso (epicrisis)"/>
+         <description value="Sugerencia para votación: medicación de ingreso codificada. No normativa hasta aceptación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaProblemas.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaProblemas"/>
+         </reference>
+         <name value="Propuesta: Problemas y antecedentes (epicrisis)"/>
+         <description value="Sugerencia para votación: lista de problemas codificada. No normativa hasta aceptación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaProcedimientos.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaProcedimientos"/>
+         </reference>
+         <name value="Propuesta: Procedimientos (epicrisis)"/>
+         <description value="Sugerencia para votación: procedimientos codificados. No normativa hasta aceptación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaSignosVitales.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaSignosVitales"/>
+         </reference>
+         <name value="Propuesta: Signos vitales (epicrisis)"/>
+         <description value="Sugerencia para votación: signos vitales codificados. No normativa hasta aceptación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:logical"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-EpicrisisPropuestaVacunas.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/EpicrisisPropuestaVacunas"/>
+         </reference>
+         <name value="Propuesta: Vacunas (epicrisis)"/>
+         <description value="Sugerencia para votación: inmunizaciones codificadas. No normativa hasta aceptación."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-logicalmodel"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -413,7 +607,7 @@
             <reference value="StructureDefinition/CompositionEpicrisisSIHCE"/>
          </reference>
          <name value="Composición epicrisis SIHCE"/>
-         <description value="Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement)."/>
+         <description value="Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones tipadas con text. Nivel 3: solo Motivo de internación (46241-6) con entry Condition + ICD-10. Resto de codificaciones en propuestas de votación."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -431,7 +625,7 @@
             <reference value="StructureDefinition/ConditionEpicrisisSIHCE"/>
          </reference>
          <name value="Condición clínica epicrisis SIHCE"/>
-         <description value="Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina)."/>
+         <description value="Motivo de internación codificado en epicrisis nivel 3 (ICD-10). Binding extensible al ValueSet SIHCEMotivoInternacionICD10VS."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -503,7 +697,7 @@
             <reference value="StructureDefinition/MedicationStatementEpicrisisSIHCE"/>
          </reference>
          <name value="Medicación al alta epicrisis SIHCE"/>
-         <description value="Medicamento declarado en la sección de medicamentos al alta (nivel 3)."/>
+         <description value="Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
@@ -700,8 +894,8 @@
          <reference>
             <reference value="ValueSet/sihce-epicrisis-diagnosis-code-vs"/>
          </reference>
-         <name value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"/>
-         <description value="Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación."/>
+         <name value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto"/>
+         <description value="ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -720,6 +914,24 @@
          </reference>
          <name value="Estados de receta SIHCE"/>
          <description value="Estados admitidos en el índice de DocumentReferenceRecetaSIHCE."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-sihce-motivo-internacion-icd10-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/sihce-motivo-internacion-icd10-vs"/>
+         </reference>
+         <name value="Motivo de internación epicrisis (ICD-10)"/>
+         <description value="Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -755,7 +967,7 @@
             <reference value="ValueSet/sihce-epicrisis-section-vs"/>
          </reference>
          <name value="Secciones LOINC de epicrisis SIHCE"/>
-         <description value="Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales)."/>
+         <description value="Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3)."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
@@ -1097,7 +1309,7 @@
             <reference value="ConceptMap/EpicrisisModeloAFHIR"/>
          </reference>
          <name value="Epicrisis: modelo lógico a FHIR"/>
-         <description value="Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3)."/>
+         <description value="Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3; nivel 3 normativo = Motivo de internación ICD-10)."/>
          <exampleBoolean value="false"/>
          <groupingId value="-map-conceptmap"/>
       </resource>
@@ -1385,8 +1597,44 @@
             <reference value="Composition/CompositionEpicrisisNivel2"/>
          </reference>
          <name value="Epicrisis nivel 2 — secciones narrativas"/>
-         <description value="Composition con las cinco secciones obligatorias en texto (nivel 2)."/>
+         <description value="Composition con secciones tipadas en texto (nivel 2), sin entries codificadas."/>
          <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Composition"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Composition-CompositionEpicrisisNivel3.html"/>
+         </extension>
+         <reference>
+            <reference value="Composition/CompositionEpicrisisNivel3"/>
+         </reference>
+         <name value="Epicrisis nivel 3 — Motivo de internación codificado"/>
+         <description value="Composition narrativa más Motivo de internación con entry Condition (ICD-10)."/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="DocumentReference"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="DocumentReference-DocumentReferenceEpicrisisNivel3.html"/>
+         </extension>
+         <reference>
+            <reference value="DocumentReference/DocumentReferenceEpicrisisNivel3"/>
+         </reference>
+         <name value="Epicrisis nivel 3 — enlace a Composition codificada"/>
+         <description value="DocumentReference con URL a Composition nivel 3 (Motivo de internación ICD-10)."/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -1494,6 +1742,24 @@
          <name value="MedicationRequest receta SIGEHOS"/>
          <description value="Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 / caso 3-1a)."/>
          <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Condition"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Condition-ConditionMotivoInternacionEjemplo.html"/>
+         </extension>
+         <reference>
+            <reference value="Condition/ConditionMotivoInternacionEjemplo"/>
+         </reference>
+         <name value="Motivo de internación — ICD-10 J18.9"/>
+         <description value="Condition de ejemplo para Motivo de internación (nivel 3)."/>
+         <exampleCanonical value="http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
@@ -1609,6 +1875,54 @@
          </page>
          <page>
             <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="CasosDeUso-Consentimiento.html"/>
+            </extension>
+            <nameUrl value="CasosDeUso-Consentimiento.html"/>
+            <title value="Casos de Uso — Consentimiento"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="CasosDeUso-Persona.html"/>
+            </extension>
+            <nameUrl value="CasosDeUso-Persona.html"/>
+            <title value="Casos de Uso — Persona"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="CasosDeUso-Documentos.html"/>
+            </extension>
+            <nameUrl value="CasosDeUso-Documentos.html"/>
+            <title value="Casos de Uso — Documentos"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="CasosDeUso-Receta.html"/>
+            </extension>
+            <nameUrl value="CasosDeUso-Receta.html"/>
+            <title value="Casos de Uso — Receta"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="Epicrisis.html"/>
+            </extension>
+            <nameUrl value="Epicrisis.html"/>
+            <title value="Epicrisis"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="Epicrisis-Secciones-Propuestas.html"/>
+            </extension>
+            <nameUrl value="Epicrisis-Secciones-Propuestas.html"/>
+            <title value="Epicrisis — secciones propuestas"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
                <valueUrl value="ModeloLogico.html"/>
             </extension>
             <nameUrl value="ModeloLogico.html"/>
@@ -1700,6 +2014,56 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaAlergias.html"/>
+               <title value="Propuesta: Alergias (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.html"/>
+               <title value="Propuesta: Diagnóstico de admisión (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.html"/>
+               <title value="Propuesta: Diagnóstico de alta (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaDispositivos.html"/>
+               <title value="Propuesta: Dispositivos e implantes (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaMedicacionAlta.html"/>
+               <title value="Propuesta: Medicación de alta (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaMedicacionIngreso.html"/>
+               <title value="Propuesta: Medicación de ingreso (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaProblemas.html"/>
+               <title value="Propuesta: Problemas y antecedentes (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaProcedimientos.html"/>
+               <title value="Propuesta: Procedimientos (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaSignosVitales.html"/>
+               <title value="Propuesta: Signos vitales (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-EpicrisisPropuestaVacunas.html"/>
+               <title value="Propuesta: Vacunas (epicrisis)"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-CompositionEpicrisisSIHCE.html"/>
                <title value="Composición epicrisis SIHCE"/>
                <generation value="generated"/>
@@ -1781,12 +2145,17 @@
             </page>
             <page>
                <nameUrl value="ValueSet-sihce-epicrisis-diagnosis-code-vs.html"/>
-               <title value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)"/>
+               <title value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="ValueSet-sihce-receta-estado-vs.html"/>
                <title value="Estados de receta SIHCE"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-sihce-motivo-internacion-icd10-vs.html"/>
+               <title value="Motivo de internación epicrisis (ICD-10)"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1975,6 +2344,16 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="DocumentReference-DocumentReferenceEpicrisisNivel3.html"/>
+               <title value="Epicrisis nivel 3 — enlace a Composition codificada"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Composition-CompositionEpicrisisNivel3.html"/>
+               <title value="Epicrisis nivel 3 — Motivo de internación codificado"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="DiagnosticReport-DiagnosticReportInformeLabNivel1.html"/>
                <title value="Informe laboratorio nivel 1 — DiagnosticReport con PDF"/>
                <generation value="generated"/>
@@ -2002,6 +2381,11 @@
             <page>
                <nameUrl value="MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.html"/>
                <title value="MedicationRequest receta SIGEHOS"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Condition-ConditionMotivoInternacionEjemplo.html"/>
+               <title value="Motivo de internación — ICD-10 J18.9"/>
                <generation value="generated"/>
             </page>
             <page>

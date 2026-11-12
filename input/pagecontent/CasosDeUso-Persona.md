@@ -1,0 +1,63 @@
+Operaciones de federación de personas sobre `Patient` ([PatientXBA](StructureDefinition-PatientXBA.html)).
+
+Volver al [índice de casos de uso](CasosDeUso.html).
+
+### Búsqueda de persona
+
+Operación relacionada: [Búsqueda por identificador y género](Operaciones.html#op-busqueda).
+
+```mermaid
+sequenceDiagram
+  participant C as Dominio
+  participant X as Canal X-BA
+  participant S as SIHCE
+  C->>X: GET /Patient por identifier y gender
+  X->>S: Reenvía solicitud
+  S-->>X: 200 Bundle (searchset)
+  X-->>C: 200 Bundle (searchset)
+```
+
+### Alta/Federación de persona
+
+Operación relacionada: [Alta/Federación de paciente](Operaciones.html#op-alta-federacion). Cuerpo conforme al perfil [PatientXBA](StructureDefinition-PatientXBA.html).
+
+```mermaid
+sequenceDiagram
+  participant C as Dominio
+  participant X as Canal X-BA
+  participant S as SIHCE
+  C->>X: POST /Patient (Patient)
+  X->>S: Reenvía solicitud
+  S-->>X: 201/200 resultado federación
+  X-->>C: 201/200 resultado federación
+```
+
+### Modificación de identificador local
+
+Operación relacionada: [Patch de identificador local](Operaciones.html#op-patch-identifier).
+
+```mermaid
+sequenceDiagram
+  participant C as Dominio
+  participant X as Canal X-BA
+  participant S as SIHCE
+  C->>X: POST /Patient/$patch-identifier (Parameters)
+  X->>S: Reenvía solicitud
+  S-->>X: 200 OperationOutcome / Patient
+  X-->>C: 200 OperationOutcome / Patient
+```
+
+### Modificación de SDM
+
+Operación relacionada: [Update de SDM](Operaciones.html#op-update-sdm).
+
+```mermaid
+sequenceDiagram
+  participant C as Dominio
+  participant X as Canal X-BA
+  participant S as SIHCE
+  C->>X: POST /Patient/$update-sdm (Parameters)
+  X->>S: Reenvía solicitud
+  S-->>X: 200 OperationOutcome / Patient
+  X-->>C: 200 OperationOutcome / Patient
+```

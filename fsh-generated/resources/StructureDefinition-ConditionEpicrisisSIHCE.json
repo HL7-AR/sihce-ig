@@ -12,13 +12,13 @@
     }
   ],
   "url": "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "name": "ConditionEpicrisisSIHCE",
   "title": "Condición clínica epicrisis SIHCE",
   "status": "active",
   "date": "2026-06-09T00:00:00-03:00",
   "publisher": "SIHCE Development Team",
-  "description": "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina).",
+  "description": "Motivo de internación codificado en epicrisis nivel 3 (ICD-10). Binding extensible al ValueSet SIHCEMotivoInternacionICD10VS.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -45,7 +45,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"
+          "valueSet": "http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10"
         }
       },
       {

@@ -1,0 +1,37 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "DocumentReferenceEpicrisisNivel3",
+  "meta": {
+    "profile": [
+      "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "18842-5",
+        "display": "Discharge summary"
+      }
+    ]
+  },
+  "status": "current",
+  "subject": {
+    "reference": "Patient/PersonaSIHCEMin"
+  },
+  "identifier": [
+    {
+      "system": "http://msgc.gcba.gob.ar/documento",
+      "value": "MSG-EP-2026-0103"
+    }
+  ],
+  "date": "2026-06-08T16:30:00-03:00",
+  "content": [
+    {
+      "attachment": {
+        "url": "https://msgc.gcba.gob.ar/fhir/Composition/epicrisis-MSG-EP-2026-0103",
+        "contentType": "application/fhir+json"
+      }
+    }
+  ]
+}

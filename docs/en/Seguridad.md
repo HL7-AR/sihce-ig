@@ -1,4 +1,4 @@
-# Seguridad - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Seguridad - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Seguridad**

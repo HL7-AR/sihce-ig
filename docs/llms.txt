@@ -1,15 +1,21 @@
-# SIHCE.fhir.core#2.1.0: Guía de Implementación SIHCE - FHIR R4(en)
+# SIHCE.fhir.core#2.2.0: Guía de Implementación SIHCE - FHIR R4(en)
 
 ## Pages
 
 * [Inicio](en/index.md)
 * [Generalidades](en/Aspectos-Generales.md)
+* [Casos de Uso — Documentos](en/CasosDeUso-Documentos.md)
 * [Artifacts Summary](en/artifacts.md)
 * [Casos de Uso](en/CasosDeUso.md)
+* [Casos de Uso — Consentimiento](en/CasosDeUso-Consentimiento.md)
 * [Operaciones](en/Operaciones.md)
 * [Seguridad](en/Seguridad.md)
+* [Casos de Uso — Receta](en/CasosDeUso-Receta.md)
+* [Epicrisis — secciones propuestas](en/Epicrisis-Secciones-Propuestas.md)
 * [Modelo Lógico](en/ModeloLogico.md)
+* [Epicrisis](en/Epicrisis.md)
 * [Historial de Cambios](en/HistorialDeCambios.md)
+* [Casos de Uso — Persona](en/CasosDeUso-Persona.md)
 
 ## Resources
 
@@ -24,9 +30,10 @@
 
 * [Tipos de documento clínico SIHCE](en/ValueSet-sihce-clinical-document-type-vs.md)
 * [Tipos MIME de contenido documental SIHCE](en/ValueSet-sihce-document-content-type-vs.md)
-* [Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)](en/ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
+* [Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto](en/ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
 * [Secciones LOINC de epicrisis SIHCE](en/ValueSet-sihce-epicrisis-section-vs.md)
 * [Analitos de laboratorio SIHCE (LOINC)](en/ValueSet-sihce-lab-observation-code-vs.md)
+* [Motivo de internación epicrisis (ICD-10)](en/ValueSet-sihce-motivo-internacion-icd10-vs.md)
 * [Niveles de privacidad SIHCE](en/ValueSet-sihce-privacy-level-vs.md)
 * [Tipo documental de receta SIHCE](en/ValueSet-sihce-receta-document-type-vs.md)
 * [Estados de receta SIHCE](en/ValueSet-sihce-receta-estado-vs.md)
@@ -38,6 +45,16 @@
 * [Modelo lógico DispensaReceta (SIHCE)](en/StructureDefinition-DispensaReceta.md)
 * [Modelo lógico DocumentoClinico (SIHCE)](en/StructureDefinition-DocumentoClinico.md)
 * [Modelo lógico Epicrisis (SIHCE)](en/StructureDefinition-Epicrisis.md)
+* [Propuesta: Alergias (epicrisis)](en/StructureDefinition-EpicrisisPropuestaAlergias.md)
+* [Propuesta: Diagnóstico de admisión (epicrisis)](en/StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.md)
+* [Propuesta: Diagnóstico de alta (epicrisis)](en/StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.md)
+* [Propuesta: Dispositivos e implantes (epicrisis)](en/StructureDefinition-EpicrisisPropuestaDispositivos.md)
+* [Propuesta: Medicación de alta (epicrisis)](en/StructureDefinition-EpicrisisPropuestaMedicacionAlta.md)
+* [Propuesta: Medicación de ingreso (epicrisis)](en/StructureDefinition-EpicrisisPropuestaMedicacionIngreso.md)
+* [Propuesta: Problemas y antecedentes (epicrisis)](en/StructureDefinition-EpicrisisPropuestaProblemas.md)
+* [Propuesta: Procedimientos (epicrisis)](en/StructureDefinition-EpicrisisPropuestaProcedimientos.md)
+* [Propuesta: Signos vitales (epicrisis)](en/StructureDefinition-EpicrisisPropuestaSignosVitales.md)
+* [Propuesta: Vacunas (epicrisis)](en/StructureDefinition-EpicrisisPropuestaVacunas.md)
 * [Modelo lógico FederarPersona (FederadorBA)](en/StructureDefinition-FederarPersona.md)
 * [Modelo lógico Informe de Laboratorio (SIHCE)](en/StructureDefinition-InformeLaboratorio.md)
 * [Modelo Lógico de Persona para SIHCE](en/StructureDefinition-MLPersona.md)
@@ -96,6 +113,8 @@
 ### Examples
 
 * [Epicrisis de hospitalización (Composition)](en/Composition-CompositionEpicrisisNivel2.md)
+* [Epicrisis de hospitalización (nivel 3) (Composition)](en/Composition-CompositionEpicrisisNivel3.md)
+* [ConditionMotivoInternacionEjemplo (Condition)](en/Condition-ConditionMotivoInternacionEjemplo.md)
 * [ConsentOptInGeneralSIHCE (Consent)](en/Consent-ConsentOptInGeneralSIHCE.md)
 * [ConsentOptInHospitalConfidentialSIHCE (Consent)](en/Consent-ConsentOptInHospitalConfidentialSIHCE.md)
 * [ConsentOptInHospitalNormalSIHCE (Consent)](en/Consent-ConsentOptInHospitalNormalSIHCE.md)
@@ -105,6 +124,7 @@
 * [DiagnosticReportInformeLabNivel2 (DiagnosticReport)](en/DiagnosticReport-DiagnosticReportInformeLabNivel2.md)
 * [DocumentReferenceEpicrisisNivel1 (DocumentReference)](en/DocumentReference-DocumentReferenceEpicrisisNivel1.md)
 * [DocumentReferenceEpicrisisNivel2 (DocumentReference)](en/DocumentReference-DocumentReferenceEpicrisisNivel2.md)
+* [DocumentReferenceEpicrisisNivel3 (DocumentReference)](en/DocumentReference-DocumentReferenceEpicrisisNivel3.md)
 * [DocumentReferenceInformeLabNivel1 (DocumentReference)](en/DocumentReference-DocumentReferenceInformeLabNivel1.md)
 * [DocumentReferenceInformeLabNivel2 (DocumentReference)](en/DocumentReference-DocumentReferenceInformeLabNivel2.md)
 * [DocumentReferenceRecetaDelegadaSIHCE (DocumentReference)](en/DocumentReference-DocumentReferenceRecetaDelegadaSIHCE.md)

@@ -16,17 +16,17 @@
   fhir:DomainResource.extension [
      fhir:index -1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
-     fhir:Extension.valueInteger [ fhir:value "3"^^xsd:integer ]
+     fhir:Extension.valueInteger [ fhir:value "1"^^xsd:integer ]
   ], [
      fhir:index -1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
-     fhir:Extension.valueCode [ fhir:value "trial-use" ]
+     fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.1.0"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.0"] ;
   fhir:StructureDefinition.name [ fhir:value "MedicationStatementEpicrisisSIHCE"] ;
   fhir:StructureDefinition.title [ fhir:value "Medicación al alta epicrisis SIHCE"] ;
-  fhir:StructureDefinition.status [ fhir:value "active"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
   fhir:StructureDefinition.date [ fhir:value "2026-06-09T00:00:00-03:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:StructureDefinition.contact [
@@ -38,7 +38,7 @@
        fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
      ]
   ] ;
-  fhir:StructureDefinition.description [ fhir:value "Medicamento declarado en la sección de medicamentos al alta (nivel 3)."] ;
+  fhir:StructureDefinition.description [ fhir:value "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas."] ;
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
   fhir:StructureDefinition.mapping [
      fhir:index -1 ;

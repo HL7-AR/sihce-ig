@@ -1,3 +1,10 @@
+### Versión 2.2.0
+
+- **Casos de Uso en páginas separadas** con menú anidado: Consentimiento, Persona, Documentos, Receta ([índice](CasosDeUso.html)).
+- **Epicrisis — consenso en tres niveles** documentado en [Epicrisis](Epicrisis.html): (1) archivo adjunto, (2) Composition con secciones estandarizadas, (3) codificadas cuando corresponda.
+- **Nivel 3 normativo:** solo **Motivo de internación** (LOINC 46241-6) con [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.html) + [SIHCEMotivoInternacionICD10VS](ValueSet-sihce-motivo-internacion-icd10-vs.html). Ejemplos nivel 3 publicados.
+- **Secciones propuestas a votar** (mini-logicals draft): [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.html). `MedicationStatementEpicrisisSIHCE` queda draft (ya no exigido por Composition).
+
 ### Versión 2.1.0
 
 - **Madurez por artefacto (FMM + standards-status):** trial-use / FMM 3 para Federación, Consentimiento, Orquestación (índice `DocumentReferenceSIHCE`) y Epicrisis; draft / FMM 1 para receta, laboratorio y soporte restante.

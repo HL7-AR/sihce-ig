@@ -34,7 +34,7 @@ Instance: CompositionEpicrisisNivel2
 InstanceOf: CompositionEpicrisisSIHCE
 Usage: #example
 Title: "Epicrisis nivel 2 — secciones narrativas"
-Description: "Composition con las cinco secciones obligatorias en texto (nivel 2)."
+Description: "Composition con secciones tipadas en texto (nivel 2), sin entries codificadas."
 * status = #final
 * type = http://loinc.org#18842-5 "Discharge summary"
 * subject = Reference(PersonaSIHCEMin)
@@ -51,3 +51,53 @@ Description: "Composition con las cinco secciones obligatorias en texto (nivel 2
 * section[evolucionHospitalaria].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Evolución favorable con antibiótico IV, paso a VO al alta.</p></div>"
 * section[planTratamiento].text.status = #generated
 * section[planTratamiento].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Control ambulatorio en 7 días. Reposo relativo.</p></div>"
+* section[motivoInternacion].text.status = #generated
+* section[motivoInternacion].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad.</p></div>"
+
+Instance: ConditionMotivoInternacionEjemplo
+InstanceOf: ConditionEpicrisisSIHCE
+Usage: #example
+Title: "Motivo de internación — ICD-10 J18.9"
+Description: "Condition de ejemplo para Motivo de internación (nivel 3)."
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* code = http://hl7.org/fhir/sid/icd-10#J18.9 "Pneumonia, unspecified"
+* subject = Reference(PersonaSIHCEMin)
+
+Instance: CompositionEpicrisisNivel3
+InstanceOf: CompositionEpicrisisSIHCE
+Usage: #example
+Title: "Epicrisis nivel 3 — Motivo de internación codificado"
+Description: "Composition narrativa más Motivo de internación con entry Condition (ICD-10)."
+* status = #final
+* type = http://loinc.org#18842-5 "Discharge summary"
+* subject = Reference(PersonaSIHCEMin)
+* date = "2026-06-08T16:30:00-03:00"
+* author = Reference(Organization/hospital-italiano-ejemplo)
+* title = "Epicrisis de hospitalización (nivel 3)"
+* section[alergias].text.status = #generated
+* section[alergias].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Sin alergias medicamentosas conocidas.</p></div>"
+* section[diagnosticoAlta].text.status = #generated
+* section[diagnosticoAlta].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad, resuelta.</p></div>"
+* section[medicamentosAlta].text.status = #generated
+* section[medicamentosAlta].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Amoxicilina 500 mg VO c/8h por 5 días.</p></div>"
+* section[evolucionHospitalaria].text.status = #generated
+* section[evolucionHospitalaria].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Evolución favorable con antibiótico IV, paso a VO al alta.</p></div>"
+* section[planTratamiento].text.status = #generated
+* section[planTratamiento].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Control ambulatorio en 7 días. Reposo relativo.</p></div>"
+* section[motivoInternacion].text.status = #generated
+* section[motivoInternacion].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad.</p></div>"
+* section[motivoInternacion].entry[0] = Reference(ConditionMotivoInternacionEjemplo)
+
+Instance: DocumentReferenceEpicrisisNivel3
+InstanceOf: DocumentReferenceSIHCE
+Usage: #example
+Title: "Epicrisis nivel 3 — enlace a Composition codificada"
+Description: "DocumentReference con URL a Composition nivel 3 (Motivo de internación ICD-10)."
+* status = #current
+* type = http://loinc.org#18842-5 "Discharge summary"
+* subject = Reference(PersonaSIHCEMin)
+* identifier[0].system = "http://msgc.gcba.gob.ar/documento"
+* identifier[0].value = "MSG-EP-2026-0103"
+* date = "2026-06-08T16:30:00-03:00"
+* content[0].attachment.url = "https://msgc.gcba.gob.ar/fhir/Composition/epicrisis-MSG-EP-2026-0103"
+* content[0].attachment.contentType = #application/fhir+json

@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.1.0</title>
+    <title>Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - 
+            <span style="display:inline-block;">2.2.0 - 
 
 
             </span>
@@ -112,8 +112,40 @@
   <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
-  <li>
-    <a href="CasosDeUso.html">Casos de Uso</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Epicrisis.html">Niveles y consenso</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -162,7 +194,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Operaciones</h2>
   
 
@@ -611,7 +643,7 @@ Content-Type: application/fhir+json
     <tr>
       <td><strong>Epicrisis</strong> (caso especial)</td>
       <td><code class="language-plaintext highlighter-rouge">18842-5</code></td>
-      <td>Nivel 1: Binary PDF/XML. Niveles 2–3: <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a></td>
+      <td>Nivel 1: Binary PDF/XML. Niveles 2–3: <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a>. Detalle normativo: <a href="Epicrisis.html">Epicrisis</a>. Nivel 3: solo Motivo de internación (ICD-10).</td>
     </tr>
     <tr>
       <td><strong>Informe de laboratorio</strong> (caso especial)</td>
@@ -741,6 +773,9 @@ Content-Type: application/fhir+json
   <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel1.html">DocumentReference epicrisis nivel 1 (PDF)</a></li>
   <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel2.html">DocumentReference epicrisis nivel 2 (Composition)</a></li>
   <li><a href="Composition-CompositionEpicrisisNivel2.html">Composition epicrisis nivel 2 (narrativa)</a></li>
+  <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel3.html">DocumentReference epicrisis nivel 3</a></li>
+  <li><a href="Composition-CompositionEpicrisisNivel3.html">Composition epicrisis nivel 3 (Motivo ICD-10)</a></li>
+  <li><a href="Condition-ConditionMotivoInternacionEjemplo.html">Condition Motivo de internación (ejemplo)</a></li>
   <li><a href="DocumentReference-DocumentReferenceInformeLabNivel1.html">DocumentReference informe laboratorio nivel 1</a></li>
   <li><a href="DiagnosticReport-DiagnosticReportInformeLabNivel1.html">DiagnosticReport informe laboratorio nivel 1 (solo PDF)</a></li>
   <li><a href="DocumentReference-DocumentReferenceInformeLabNivel2.html">DocumentReference informe laboratorio nivel 2</a></li>
@@ -1195,8 +1230,8 @@ Content-Type: application/fhir+json
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 16:05-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

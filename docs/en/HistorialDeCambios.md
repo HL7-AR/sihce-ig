@@ -1,9 +1,16 @@
-# Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Historial de Cambios**
 
 ## Historial de Cambios
+
+### Versión 2.2.0
+
+* **Casos de Uso en páginas separadas** con menú anidado: Consentimiento, Persona, Documentos, Receta ([índice](CasosDeUso.md)).
+* **Epicrisis — consenso en tres niveles** documentado en [Epicrisis](Epicrisis.md): (1) archivo adjunto, (2) Composition con secciones estandarizadas, (3) codificadas cuando corresponda.
+* **Nivel 3 normativo:** solo **Motivo de internación** (LOINC 46241-6) con [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md) + [SIHCEMotivoInternacionICD10VS](ValueSet-sihce-motivo-internacion-icd10-vs.md). Ejemplos nivel 3 publicados.
+* **Secciones propuestas a votar** (mini-logicals draft): [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.md). `MedicationStatementEpicrisisSIHCE` queda draft (ya no exigido por Composition).
 
 ### Versión 2.1.0
 

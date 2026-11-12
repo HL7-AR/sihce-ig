@@ -19,11 +19,11 @@
     <valueCode value="draft"/>
   </extension>
   <url value="http://sihce.gob.ar/StructureDefinition/InformeLaboratorio"/>
-  <version value="2.1.0"/>
+  <version value="2.2.0"/>
   <name value="InformeLaboratorio"/>
   <title value="Modelo lógico Informe de Laboratorio (SIHCE)"/>
   <status value="draft"/>
-  <date value="2026-11-12T16:05:33-03:00"/>
+  <date value="2026-11-12T19:26:41-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -46,7 +46,7 @@
   <derivation value="specialization"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="2.1.0"/>
+      <valueString value="2.2.0"/>
     </extension>
     <element id="InformeLaboratorio">
       <path value="InformeLaboratorio"/>

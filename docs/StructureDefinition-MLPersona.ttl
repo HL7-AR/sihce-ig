@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/MLPersona"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.1.0"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.0"] ;
   fhir:StructureDefinition.name [ fhir:value "MLPersona"] ;
   fhir:StructureDefinition.title [ fhir:value "Modelo Lógico de Persona para SIHCE"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;

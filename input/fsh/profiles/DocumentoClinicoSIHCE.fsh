@@ -2,8 +2,8 @@ Profile: ConditionEpicrisisSIHCE
 Parent: Condition
 Id: ConditionEpicrisisSIHCE
 Title: "Condición clínica epicrisis SIHCE"
-Description: "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina)."
-* ^version = "1.3.0"
+Description: "Motivo de internación codificado en epicrisis nivel 3 (ICD-10). Binding extensible al ValueSet SIHCEMotivoInternacionICD10VS."
+* ^version = "1.4.0"
 * ^status = #active
 * ^extension[$fmm].valueInteger = 3
 * ^extension[$standards-status].valueCode = #trial-use
@@ -12,7 +12,7 @@ Description: "Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 
 * clinicalStatus 1..1 MS
 * verificationStatus 0..1 MS
 * code 1..1 MS
-* code from SIHCEEpicrisisDiagnosisCodeVS (extensible)
+* code from SIHCEMotivoInternacionICD10VS (extensible)
 * subject 1..1 MS
 * subject only Reference(Patient)
 
@@ -20,11 +20,11 @@ Profile: MedicationStatementEpicrisisSIHCE
 Parent: MedicationStatement
 Id: MedicationStatementEpicrisisSIHCE
 Title: "Medicación al alta epicrisis SIHCE"
-Description: "Medicamento declarado en la sección de medicamentos al alta (nivel 3)."
-* ^version = "1.3.0"
-* ^status = #active
-* ^extension[$fmm].valueInteger = 3
-* ^extension[$standards-status].valueCode = #trial-use
+Description: "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas."
+* ^version = "1.4.0"
+* ^status = #draft
+* ^extension[$fmm].valueInteger = 1
+* ^extension[$standards-status].valueCode = #draft
 * ^date = "2026-06-09T00:00:00-03:00"
 * ^publisher = "SIHCE Development Team"
 * status 1..1 MS
@@ -37,8 +37,8 @@ Profile: CompositionEpicrisisSIHCE
 Parent: Composition
 Id: CompositionEpicrisisSIHCE
 Title: "Composición epicrisis SIHCE"
-Description: "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement)."
-* ^version = "1.3.0"
+Description: "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones tipadas con text. Nivel 3: solo Motivo de internación (46241-6) con entry Condition + ICD-10. Resto de codificaciones en propuestas de votación."
+* ^version = "1.4.0"
 * ^status = #active
 * ^extension[$fmm].valueInteger = 3
 * ^extension[$standards-status].valueCode = #trial-use
@@ -70,7 +70,7 @@ Description: "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secc
     planTratamiento 0..1 MS and
     diagnosticoAdmision 0..1 MS and
     medicamentosIngreso 0..1 MS and
-    motivoConsulta 0..1 MS and
+    motivoInternacion 0..1 MS and
     instruccionesAlta 0..1 MS and
     resumenEstudios 0..1 MS and
     hallazgosFisicos 0..1 MS and
@@ -80,26 +80,21 @@ Description: "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secc
 * section[alergias].text 0..1 MS
 * section[diagnosticoAlta].code = http://loinc.org#78375-3 "Discharge diagnosis"
 * section[diagnosticoAlta].text 0..1 MS
-* section[diagnosticoAlta].entry 0..* MS
-* section[diagnosticoAlta].entry only Reference(ConditionEpicrisisSIHCE)
 * section[medicamentosAlta].code = http://loinc.org#75311-1 "Discharge medications"
 * section[medicamentosAlta].text 0..1 MS
-* section[medicamentosAlta].entry 0..* MS
-* section[medicamentosAlta].entry only Reference(MedicationStatementEpicrisisSIHCE)
 * section[evolucionHospitalaria].code = http://loinc.org#8648-8 "Hospital course Narrative"
 * section[evolucionHospitalaria].text 0..1 MS
 * section[planTratamiento].code = http://loinc.org#18776-5 "Plan of treatment Narrative"
 * section[planTratamiento].text 0..1 MS
 * section[diagnosticoAdmision].code = http://loinc.org#42347-5 "Admission diagnosis"
 * section[diagnosticoAdmision].text 0..1 MS
-* section[diagnosticoAdmision].entry 0..* MS
-* section[diagnosticoAdmision].entry only Reference(ConditionEpicrisisSIHCE)
 * section[medicamentosIngreso].code = http://loinc.org#42346-7 "Medications on admission"
 * section[medicamentosIngreso].text 0..1 MS
-* section[motivoConsulta].code = http://loinc.org#46239-0 "Chief complaint+Reason for visit Narrative"
-* section[motivoConsulta].text 0..1 MS
-* section[motivoConsulta].entry 0..* MS
-* section[motivoConsulta].entry only Reference(ConditionEpicrisisSIHCE)
+* section[motivoInternacion].code = http://loinc.org#46241-6 "Reason for hospitalization Narrative"
+* section[motivoInternacion].text 0..1 MS
+* section[motivoInternacion].entry 0..* MS
+* section[motivoInternacion].entry only Reference(ConditionEpicrisisSIHCE)
+* section[motivoInternacion].entry ^short = "Nivel 3: Condition con código ICD-10"
 * section[instruccionesAlta].code = http://loinc.org#8653-8 "Discharge instructions"
 * section[instruccionesAlta].text 0..1 MS
 * section[resumenEstudios].code = http://loinc.org#11493-4 "Discharge studies summary Narrative"

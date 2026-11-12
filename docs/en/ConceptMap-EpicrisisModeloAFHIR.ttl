@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR"] ;
-  fhir:ConceptMap.version [ fhir:value "2.1.0"] ;
+  fhir:ConceptMap.version [ fhir:value "2.2.0"] ;
   fhir:ConceptMap.name [ fhir:value "EpicrisisModeloAFHIR"] ;
   fhir:ConceptMap.title [ fhir:value "Epicrisis: modelo lógico a FHIR"] ;
   fhir:ConceptMap.status [ fhir:value "active"] ;
@@ -39,7 +39,7 @@
        fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
      ]
   ] ;
-  fhir:ConceptMap.description [ fhir:value "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3)."] ;
+  fhir:ConceptMap.description [ fhir:value "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3; nivel 3 normativo = Motivo de internación ICD-10)."] ;
   fhir:ConceptMap.group [
      fhir:index -1 ;
      fhir:ConceptMap.group.source [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths" ] ;

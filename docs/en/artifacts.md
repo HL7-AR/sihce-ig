@@ -1,4 +1,4 @@
-# Artifacts Summary - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Artifacts Summary - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -18,12 +18,22 @@ These define data models that represent the domain covered by this implementatio
 | [ Modelo lógico Consentimiento (SIHCE)  ](StructureDefinition-Consentimiento.md) | Registro de preferencias de privacidad del paciente en SIHCE. Tres etapas de madurez: opt-in/out general, opt-in por hospital, hospital + nivel de privacidad. |
 | [ Modelo lógico DispensaReceta (SIHCE)  ](StructureDefinition-DispensaReceta.md) | Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde. |
 | [ Modelo lógico DocumentoClinico (SIHCE)  ](StructureDefinition-DocumentoClinico.md) | Registro e indexación de un documento clínico emitido por un dominio en SIHCE. |
-| [ Modelo lógico Epicrisis (SIHCE)  ](StructureDefinition-Epicrisis.md) | Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3. |
+| [ Modelo lógico Epicrisis (SIHCE)  ](StructureDefinition-Epicrisis.md) | Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3. Nivel 3 normativo: Motivo de internación (ICD-10); resto de codificaciones en propuestas. |
 | [ Modelo lógico FederarPersona (FederadorBA)  ](StructureDefinition-FederarPersona.md) | Federación de una persona con identificador local y validación de datos. |
 | [ Modelo lógico Informe de Laboratorio (SIHCE)  ](StructureDefinition-InformeLaboratorio.md) | Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio. |
 | [ Modelo lógico ModificarIDLocalPersona (FederadorBA)  ](StructureDefinition-ModificarIDLocalPersona.md) | Modificación del identificador local de una persona federada. |
 | [ Modelo lógico ModificarSDMPersona (FederadorBA)  ](StructureDefinition-ModificarSDMPersona.md) | Actualización del SDM de una persona federada; documento inmutable. |
 | [ Modelo lógico RecetaIndice (SIHCE)  ](StructureDefinition-RecetaIndice.md) | Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE. |
+| [ Propuesta: Alergias (epicrisis)  ](StructureDefinition-EpicrisisPropuestaAlergias.md) | Sugerencia para votación: alergias codificadas. No normativa hasta aceptación. |
+| [ Propuesta: Diagnóstico de admisión (epicrisis)  ](StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.md) | Sugerencia para votación: sección Diagnóstico de admisión codificada. No normativa hasta aceptación. |
+| [ Propuesta: Diagnóstico de alta (epicrisis)  ](StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.md) | Sugerencia para votación: sección Diagnóstico de alta codificada. No normativa hasta aceptación. |
+| [ Propuesta: Dispositivos e implantes (epicrisis)  ](StructureDefinition-EpicrisisPropuestaDispositivos.md) | Sugerencia para votación: dispositivos/implantes codificados. No normativa hasta aceptación. |
+| [ Propuesta: Medicación de alta (epicrisis)  ](StructureDefinition-EpicrisisPropuestaMedicacionAlta.md) | Sugerencia para votación: medicación de alta codificada. No normativa hasta aceptación. Perfil draft relacionado: MedicationStatementEpicrisisSIHCE. |
+| [ Propuesta: Medicación de ingreso (epicrisis)  ](StructureDefinition-EpicrisisPropuestaMedicacionIngreso.md) | Sugerencia para votación: medicación de ingreso codificada. No normativa hasta aceptación. |
+| [ Propuesta: Problemas y antecedentes (epicrisis)  ](StructureDefinition-EpicrisisPropuestaProblemas.md) | Sugerencia para votación: lista de problemas codificada. No normativa hasta aceptación. |
+| [ Propuesta: Procedimientos (epicrisis)  ](StructureDefinition-EpicrisisPropuestaProcedimientos.md) | Sugerencia para votación: procedimientos codificados. No normativa hasta aceptación. |
+| [ Propuesta: Signos vitales (epicrisis)  ](StructureDefinition-EpicrisisPropuestaSignosVitales.md) | Sugerencia para votación: signos vitales codificados. No normativa hasta aceptación. |
+| [ Propuesta: Vacunas (epicrisis)  ](StructureDefinition-EpicrisisPropuestaVacunas.md) | Sugerencia para votación: inmunizaciones codificadas. No normativa hasta aceptación. |
 
 ### Structures: Resource Profiles 
 
@@ -31,12 +41,12 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
-| [ Composición epicrisis SIHCE  ](StructureDefinition-CompositionEpicrisisSIHCE.md) | Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones obligatorias con text. Nivel 3: secciones codificadas con entry (Condition, MedicationStatement). |
-| [ Condición clínica epicrisis SIHCE  ](StructureDefinition-ConditionEpicrisisSIHCE.md) | Diagnóstico codificado en secciones de epicrisis nivel 3 (ICD-10 o SNOMED CT edición Argentina). |
+| [ Composición epicrisis SIHCE  ](StructureDefinition-CompositionEpicrisisSIHCE.md) | Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones tipadas con text. Nivel 3: solo Motivo de internación (46241-6) con entry Condition + ICD-10. Resto de codificaciones en propuestas de votación. |
+| [ Condición clínica epicrisis SIHCE  ](StructureDefinition-ConditionEpicrisisSIHCE.md) | Motivo de internación codificado en epicrisis nivel 3 (ICD-10). Binding extensible al ValueSet SIHCEMotivoInternacionICD10VS. |
 | [ Consentimiento de paciente SIHCE  ](StructureDefinition-ConsentSIHCE.md) | Preferencias de privacidad del paciente en la red SIHCE (FHIR R4). Etapa 1: provision.type permit/deny (opt-in/out general). Etapa 2: provision.provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito). |
 | [ Dispensa de receta SIHCE  ](StructureDefinition-MedicationDispenseRecetaSIHCE.md) | Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen. |
 | [ Informe de laboratorio SIHCE  ](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) | DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas. |
-| [ Medicación al alta epicrisis SIHCE  ](StructureDefinition-MedicationStatementEpicrisisSIHCE.md) | Medicamento declarado en la sección de medicamentos al alta (nivel 3). |
+| [ Medicación al alta epicrisis SIHCE  ](StructureDefinition-MedicationStatementEpicrisisSIHCE.md) | Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas. |
 | [ Observación de laboratorio SIHCE  ](StructureDefinition-ObservationLaboratorioSIHCE.md) | Resultado analítico codificado (LOINC) asociado a un informe de laboratorio nivel 2. |
 | [ Paciente SIHCE (PatientXBA)  ](StructureDefinition-PatientXBA.md) | Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación) |
 | [ Parametros Patch Identifier SIHCE  ](StructureDefinition-parametros-patch-identifier-sihce.md) | Estructura de Parameters para la operacion $patch-identifier de SIHCE. |
@@ -61,10 +71,11 @@ These define sets of codes used by systems conforming to this implementation gui
 | | |
 | :--- | :--- |
 | [ Analitos de laboratorio SIHCE (LOINC)  ](ValueSet-sihce-lab-observation-code-vs.md) | Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2. |
-| [ Diagnósticos epicrisis (ICD-10 y SNOMED CT AR)  ](ValueSet-sihce-epicrisis-diagnosis-code-vs.md) | Códigos de Condition en secciones codificadas de epicrisis (nivel 3). Binding extensible: se admiten códigos ICD-10 y SNOMED CT edición Argentina; este ValueSet lista códigos representativos para publicación. |
+| [ Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto  ](ValueSet-sihce-epicrisis-diagnosis-code-vs.md) | ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas. |
 | [ Estados de receta SIHCE  ](ValueSet-sihce-receta-estado-vs.md) | Estados admitidos en el índice de DocumentReferenceRecetaSIHCE. |
+| [ Motivo de internación epicrisis (ICD-10)  ](ValueSet-sihce-motivo-internacion-icd10-vs.md) | Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación. |
 | [ Niveles de privacidad SIHCE  ](ValueSet-sihce-privacy-level-vs.md) | Niveles admitidos en Consent.provision.securityLabel (etapa 3). |
-| [ Secciones LOINC de epicrisis SIHCE  ](ValueSet-sihce-epicrisis-section-vs.md) | Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales). |
+| [ Secciones LOINC de epicrisis SIHCE  ](ValueSet-sihce-epicrisis-section-vs.md) | Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3). |
 | [ Tipo documental de receta SIHCE  ](ValueSet-sihce-receta-document-type-vs.md) | LOINC para índice de receta electrónica. |
 | [ Tipos MIME de contenido documental SIHCE  ](ValueSet-sihce-document-content-type-vs.md) | Formatos admitidos en DocumentReference.content.attachment.contentType. |
 | [ Tipos de documento clínico SIHCE  ](ValueSet-sihce-clinical-document-type-vs.md) | Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC). |
@@ -104,7 +115,7 @@ These define transformations to convert between codes by systems conforming with
 | [ Consentimiento: modelo lógico a FHIR  ](ConceptMap-ConsentimientoModeloAFHIR.md) | Mapeo del registro de consentimiento del paciente a Consent SIHCE (FHIR R4). |
 | [ DispensaReceta: modelo lógico a FHIR  ](ConceptMap-DispensaRecetaModeloAFHIR.md) | Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE. |
 | [ DocumentoClinico: modelo lógico a FHIR  ](ConceptMap-DocumentoClinicoModeloAFHIR.md) | Mapeo del registro de documento clínico a DocumentReference SIHCE. |
-| [ Epicrisis: modelo lógico a FHIR  ](ConceptMap-EpicrisisModeloAFHIR.md) | Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3). |
+| [ Epicrisis: modelo lógico a FHIR  ](ConceptMap-EpicrisisModeloAFHIR.md) | Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3; nivel 3 normativo = Motivo de internación ICD-10). |
 | [ FederarPersona: modelo lógico a FHIR  ](ConceptMap-FederarPersonaModeloAFHIR.md) | Mapeo explícito del modelo FederarPersona a Patient, Organization y mensajes de resultado. |
 | [ InformeLaboratorio: modelo lógico a FHIR  ](ConceptMap-InformeLaboratorioModeloAFHIR.md) | Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport. |
 | [ ModificarIDLocalPersona: modelo lógico a FHIR  ](ConceptMap-ModificarIDLocalPersonaModeloAFHIR.md) | Mapeo del modelo ModificarIDLocalPersona a Patient (SDM, identificadores) y OperationOutcome (mensaje). |
@@ -127,13 +138,16 @@ These are example instances that show what data produced and consumed by systems
 | [ Ejemplo Parameters Update SDM  ](Parameters-ParametrosUpdateSDMEjemplo.md) | Ejemplo de Parametros para actualizacion de SDM. |
 | [ Epicrisis nivel 1 — PDF en dominio  ](DocumentReference-DocumentReferenceEpicrisisNivel1.md) | DocumentReference con enlace a PDF hospedado en el dominio emisor. Paciente: PersonaSIHCEMin. |
 | [ Epicrisis nivel 2 — enlace a Composition  ](DocumentReference-DocumentReferenceEpicrisisNivel2.md) | DocumentReference con URL a Composition narrativa en el dominio. |
-| [ Epicrisis nivel 2 — secciones narrativas  ](Composition-CompositionEpicrisisNivel2.md) | Composition con las cinco secciones obligatorias en texto (nivel 2). |
+| [ Epicrisis nivel 2 — secciones narrativas  ](Composition-CompositionEpicrisisNivel2.md) | Composition con secciones tipadas en texto (nivel 2), sin entries codificadas. |
+| [ Epicrisis nivel 3 — Motivo de internación codificado  ](Composition-CompositionEpicrisisNivel3.md) | Composition narrativa más Motivo de internación con entry Condition (ICD-10). |
+| [ Epicrisis nivel 3 — enlace a Composition codificada  ](DocumentReference-DocumentReferenceEpicrisisNivel3.md) | DocumentReference con URL a Composition nivel 3 (Motivo de internación ICD-10). |
 | [ Informe laboratorio nivel 1 — DiagnosticReport con PDF  ](DiagnosticReport-DiagnosticReportInformeLabNivel1.md) | Solo presentedForm (PDF); sin entradas en result (nivel 1). |
 | [ Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)  ](DocumentReference-DocumentReferenceInformeLabNivel1.md) | Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.md). |
 | [ Informe laboratorio nivel 2 — PDF + glucemia y urea  ](DiagnosticReport-DiagnosticReportInformeLabNivel2.md) | Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result. |
 | [ Informe laboratorio nivel 2 — PDF y observaciones  ](DocumentReference-DocumentReferenceInformeLabNivel2.md) | Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result. |
 | [ Laboratorio Central Ejemplo  ](Organization-lab-central-ejemplo.md) |  |
 | [ MedicationRequest receta SIGEHOS  ](MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.md) | Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 / caso 3-1a). |
+| [ Motivo de internación — ICD-10 J18.9  ](Condition-ConditionMotivoInternacionEjemplo.md) | Condition de ejemplo para Motivo de internación (nivel 3). |
 | [ PersonaSIHCEMin  ](Patient-PersonaSIHCEMin.md) | Ejemplo de Recurso Paciente con Set de Datos Minimos |
 | [ PersonaSIHCEPatch  ](Patient-PersonaSIHCEPatch.md) | Ejemplo de Recurso Paciente para Patch de Datos Minimos |
 | [ Índice receta vigente — SIGEHOS (caso 2)  ](DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.md) | Metadatos de receta emitida en SIGEHOS; contenido en repositorio SIGEHOS. |

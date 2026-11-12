@@ -22,12 +22,12 @@
      fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:ValueSet.url [ fhir:value "http://sihce.gob.ar/ValueSet/sihce-lab-observation-code"] ;
-  fhir:ValueSet.version [ fhir:value "2.1.0"] ;
+  fhir:ValueSet.version [ fhir:value "2.2.0"] ;
   fhir:ValueSet.name [ fhir:value "SIHCELabObservationCodeVS"] ;
   fhir:ValueSet.title [ fhir:value "Analitos de laboratorio SIHCE (LOINC)"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-11-12T16:05:33-03:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-12T19:26:41-03:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;

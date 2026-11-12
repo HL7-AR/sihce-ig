@@ -1,4 +1,4 @@
-# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:2.1.0 | |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:2.2.0 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:DocumentReferenceSIHCE |
 
  
@@ -16,7 +16,7 @@
 
 **Usages:**
 
-* Examples for this Profile: [DocumentReference/DocumentReferenceEpicrisisNivel1](DocumentReference-DocumentReferenceEpicrisisNivel1.md), [DocumentReference/DocumentReferenceEpicrisisNivel2](DocumentReference-DocumentReferenceEpicrisisNivel2.md), [DocumentReference/DocumentReferenceInformeLabNivel1](DocumentReference-DocumentReferenceInformeLabNivel1.md) and [DocumentReference/DocumentReferenceInformeLabNivel2](DocumentReference-DocumentReferenceInformeLabNivel2.md)
+* Examples for this Profile: [DocumentReference/DocumentReferenceEpicrisisNivel1](DocumentReference-DocumentReferenceEpicrisisNivel1.md), [DocumentReference/DocumentReferenceEpicrisisNivel2](DocumentReference-DocumentReferenceEpicrisisNivel2.md), [DocumentReference/DocumentReferenceEpicrisisNivel3](DocumentReference-DocumentReferenceEpicrisisNivel3.md), [DocumentReference/DocumentReferenceInformeLabNivel1](DocumentReference-DocumentReferenceInformeLabNivel1.md) and [DocumentReference/DocumentReferenceInformeLabNivel2](DocumentReference-DocumentReferenceInformeLabNivel2.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-DocumentReferenceSIHCE.json)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE",
-  "version" : "2.1.0",
+  "version" : "2.2.0",
   "name" : "DocumentReferenceSIHCE",
   "title" : "Referencia a documento clínico SIHCE",
   "status" : "active",

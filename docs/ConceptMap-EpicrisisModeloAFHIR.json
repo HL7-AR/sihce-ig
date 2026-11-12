@@ -14,7 +14,7 @@
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR",
-  "version" : "2.1.0",
+  "version" : "2.2.0",
   "name" : "EpicrisisModeloAFHIR",
   "title" : "Epicrisis: modelo lógico a FHIR",
   "status" : "active",
@@ -28,7 +28,7 @@
       "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
-  "description" : "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3).",
+  "description" : "Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3; nivel 3 normativo = Motivo de internación ICD-10).",
   "group" : [{
     "source" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
     "target" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",

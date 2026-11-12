@@ -310,7 +310,7 @@ Un dominio emisor registra en SIHCE los **metadatos** del documento mediante `PO
 | Tipo | LOINC | Qué hay detrás de `content.attachment.url` |
 |------|-------|--------------------------------------------|
 | Documento genérico / índice | según tipo | Recurso o binario en el dominio |
-| **Epicrisis** (caso especial) | `18842-5` | Nivel 1: Binary PDF/XML. Niveles 2–3: [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.html) |
+| **Epicrisis** (caso especial) | `18842-5` | Nivel 1: Binary PDF/XML. Niveles 2–3: [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.html). Detalle normativo: [Epicrisis](Epicrisis.html). Nivel 3: solo Motivo de internación (ICD-10). |
 | **Informe de laboratorio** (caso especial) | `11502-2` | [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.html) (`contentType` = `application/fhir+json`). El PDF va en `DiagnosticReport.presentedForm`; en nivel 2, las observaciones en `result` |
 
 El POST de abajo es un ejemplo de epicrisis nivel 1 (URL a PDF). Para laboratorio, el mismo `DocumentReference` usa `type` = `11502-2` y `content.attachment.url` apunta al **DiagnosticReport** (ver [DocumentReferenceInformeLabNivel1](DocumentReference-DocumentReferenceInformeLabNivel1.html)).
@@ -412,6 +412,9 @@ Ejemplo equivalente para **informe de laboratorio** (índice → DiagnosticRepor
 - [DocumentReference epicrisis nivel 1 (PDF)](DocumentReference-DocumentReferenceEpicrisisNivel1.html)
 - [DocumentReference epicrisis nivel 2 (Composition)](DocumentReference-DocumentReferenceEpicrisisNivel2.html)
 - [Composition epicrisis nivel 2 (narrativa)](Composition-CompositionEpicrisisNivel2.html)
+- [DocumentReference epicrisis nivel 3](DocumentReference-DocumentReferenceEpicrisisNivel3.html)
+- [Composition epicrisis nivel 3 (Motivo ICD-10)](Composition-CompositionEpicrisisNivel3.html)
+- [Condition Motivo de internación (ejemplo)](Condition-ConditionMotivoInternacionEjemplo.html)
 - [DocumentReference informe laboratorio nivel 1](DocumentReference-DocumentReferenceInformeLabNivel1.html)
 - [DiagnosticReport informe laboratorio nivel 1 (solo PDF)](DiagnosticReport-DiagnosticReportInformeLabNivel1.html)
 - [DocumentReference informe laboratorio nivel 2](DocumentReference-DocumentReferenceInformeLabNivel2.html)

@@ -1,4 +1,4 @@
-# Medicación al alta epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.1.0
+# Medicación al alta epicrisis SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE | *Version*:2.1.0 | |
-| * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:MedicationStatementEpicrisisSIHCE |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE | *Version*:2.2.0 | |
+| * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:MedicationStatementEpicrisisSIHCE |
 
  
-Medicamento declarado en la sección de medicamentos al alta (nivel 3). 
+Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas. 
 
 **Usages:**
 
-* Refer to this Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)
+* This Profile is not used by any profiles in this Specification
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-MedicationStatementEpicrisisSIHCE.json)
 
@@ -38,17 +38,17 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationStateme
   "id" : "MedicationStatementEpicrisisSIHCE",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 3
+    "valueInteger" : 1
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use"
+    "valueCode" : "draft"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE",
-  "version" : "2.1.0",
+  "version" : "2.2.0",
   "name" : "MedicationStatementEpicrisisSIHCE",
   "title" : "Medicación al alta epicrisis SIHCE",
-  "status" : "active",
+  "status" : "draft",
   "date" : "2026-06-09T00:00:00-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
@@ -58,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationStateme
       "value" : "https://github.com/diegokaminker/sihce-ig"
     }]
   }],
-  "description" : "Medicamento declarado en la sección de medicamentos al alta (nivel 3).",
+  "description" : "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas.",
   "fhirVersion" : "4.0.1",
   "mapping" : [{
     "identity" : "workflow",

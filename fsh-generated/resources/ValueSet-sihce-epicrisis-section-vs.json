@@ -4,7 +4,7 @@
   "name": "SIHCEEpicrisisSectionVS",
   "id": "sihce-epicrisis-section-vs",
   "title": "Secciones LOINC de epicrisis SIHCE",
-  "description": "Secciones de CompositionEpicrisisSIHCE (obligatorias y opcionales).",
+  "description": "Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3).",
   "url": "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
   "extension": [
     {
@@ -16,7 +16,7 @@
       "valueCode": "trial-use"
     }
   ],
-  "version": "1.3.0",
+  "version": "1.4.0",
   "experimental": false,
   "compose": {
     "include": [
@@ -96,7 +96,7 @@
           {
             "property": "code",
             "op": "=",
-            "value": "46239-0"
+            "value": "46241-6"
           }
         ]
       },

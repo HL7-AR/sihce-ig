@@ -72,6 +72,12 @@
        fhir:Narrative.status [ fhir:value "generated" ] ;
        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Control ambulatorio en 7 días. Reposo relativo.</p></div>"
      ]
+  ], [
+     fhir:index -1 ;
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ] ;
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad.</p></div>"
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------

@@ -23,13 +23,13 @@ Logical: Epicrisis
 Parent: DocumentoClinico
 Id: Epicrisis
 Title: "Modelo lógico Epicrisis (SIHCE)"
-Description: "Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3."
-* ^version = "1.3.0"
+Description: "Epicrisis (discharge summary) como caso particular de DocumentoClinico con niveles de madurez 1–3. Nivel 3 normativo: Motivo de internación (ICD-10); resto de codificaciones en propuestas."
+* ^version = "1.4.0"
 * ^status = #active
 * ^extension[$fmm].valueInteger = 3
 * ^extension[$standards-status].valueCode = #trial-use
-* nivelMadurez 1..1 code "Nivel madurez" "1=binario, 2=composición narrativa, 3=composición codificada."
+* nivelMadurez 1..1 code "Nivel madurez" "1=binario, 2=composición narrativa, 3=Motivo de internación codificado (ICD-10)."
 * seccion 0..* BackboneElement "Sección" "Secciones de la composición (niveles 2 y 3)."
 * seccion.codigoLoinc 1..1 code "LOINC sección" "Código LOINC de la sección."
 * seccion.texto 0..1 string "Texto narrativo" "Contenido textual (nivel 2+)."
-* seccion.codificado 0..1 boolean "Requiere codificación" "Si en nivel 3 la sección debe incluir entradas FHIR codificadas."
+* seccion.codificado 0..1 boolean "Requiere codificación" "True solo para Motivo de internación en nivel 3 normativo; otras secciones en página de propuestas."
