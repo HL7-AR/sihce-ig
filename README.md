@@ -1,4 +1,4 @@
-# SIHCE IG Source (Recovered)
+# SIHCE IG Source
 
 This folder was generated from a mirrored published IG site and converted into a SUSHI-friendly source layout.
 
