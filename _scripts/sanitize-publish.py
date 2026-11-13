@@ -6,7 +6,7 @@ Post-process IG Publisher output before public sync (GitHub Pages / QA GCABA).
 - Upgrades navigable http:// links to https:// in HTML attributes only (not JSON/XML).
 - Strips build boilerplate HTML comments (Auto-converted from …).
 - Removes public QA report footer link (qa.html is not published).
-- Replaces bootstrap.min.js script tags with ig-navbar.js (Bootstrap CSS only via bootstrap-fhir.css).
+- Removes bootstrap.min.js script tags (navbar JS is inlined via template fragment-ig-navbar-js.html).
 """
 
 from __future__ import annotations
@@ -49,9 +49,83 @@ QA_FOOTER_LINK_RE = re.compile(
     re.IGNORECASE | re.DOTALL,
 )
 
+# External bootstrap / legacy ig-navbar script tags (navbar is inlined in the template).
 BOOTSTRAP_SCRIPT_RE = re.compile(
-    r'(<script[^>]*src="[^"]*/?)bootstrap\.min\.js("[^>]*>\s*</script>)',
+    r'\s*<script[^>]*src="[^"]*/?(?:bootstrap\.min|ig-navbar)\.js"[^>]*>\s*</script>',
     re.IGNORECASE,
+)
+
+INLINE_NAVBAR_MARKER = "SIHCE: Bootstrap 3 navbar without bootstrap.min.js"
+
+# Injected when the publisher template did not embed fragment-ig-navbar-js.html yet.
+INLINE_NAVBAR_SCRIPT = """<script type="text/javascript">
+/* SIHCE: Bootstrap 3 navbar without bootstrap.min.js (publisher wipes template assets/js). */
+(function () {
+  'use strict';
+  function toggleCollapse(button) {
+    var selector = button.getAttribute('data-target');
+    if (!selector) { return; }
+    var panel = document.querySelector(selector);
+    if (!panel) { return; }
+    var open = panel.classList.toggle('in');
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function closeAllDropdowns(exceptLi) {
+    var open = document.querySelectorAll('li.dropdown.open');
+    for (var i = 0; i < open.length; i++) {
+      if (open[i] !== exceptLi) {
+        open[i].classList.remove('open');
+        var toggle = open[i].querySelector('[data-toggle="dropdown"]');
+        if (toggle) { toggle.setAttribute('aria-expanded', 'false'); }
+      }
+    }
+  }
+  function toggleDropdown(toggle) {
+    var li = toggle.closest('li.dropdown');
+    if (!li) { return; }
+    var willOpen = !li.classList.contains('open');
+    closeAllDropdowns(willOpen ? li : null);
+    if (willOpen) {
+      li.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    } else {
+      li.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  document.addEventListener('click', function (event) {
+    var collapseBtn = event.target.closest('[data-toggle="collapse"]');
+    if (collapseBtn) {
+      event.preventDefault();
+      toggleCollapse(collapseBtn);
+      return;
+    }
+    var dropdownToggle = event.target.closest('[data-toggle="dropdown"]');
+    if (dropdownToggle) {
+      event.preventDefault();
+      toggleDropdown(dropdownToggle);
+      return;
+    }
+    if (!event.target.closest('li.dropdown.open')) {
+      closeAllDropdowns(null);
+    }
+  });
+})();
+</script>
+"""
+
+# Footer respond (pageend), not the IE shim in <head>.
+FOOTER_RESPOND_RE = re.compile(
+    r'(<!--\s*JS and analytics only\.?\s*-->.*?<script[^>]*src="[^"]*/?respond\.min\.js"[^>]*>\s*</script>)',
+    re.IGNORECASE | re.DOTALL,
+)
+
+# Any previous inline navbar block (may have been injected under <head>).
+INLINE_NAVBAR_BLOCK_RE = re.compile(
+    r'\s*<script type="text/javascript">\s*/\*\s*'
+    + re.escape(INLINE_NAVBAR_MARKER)
+    + r".*?</script>",
+    re.IGNORECASE | re.DOTALL,
 )
 
 
@@ -60,6 +134,26 @@ def to_https(url: str) -> str:
         if url.startswith(prefix):
             return "https://" + url[len("http://") :]
     return url
+
+
+def ensure_inline_navbar(text: str) -> str:
+    # Drop misplaced copies (e.g. early inject before head respond.min.js).
+    text = INLINE_NAVBAR_BLOCK_RE.sub("", text)
+
+    insert_at = "<!-- JS and analytics only. -->"
+    idx = text.find(insert_at)
+    if idx != -1:
+        return text[:idx] + INLINE_NAVBAR_SCRIPT + text[idx:]
+
+    m = FOOTER_RESPOND_RE.search(text)
+    if m:
+        return text[: m.start()] + INLINE_NAVBAR_SCRIPT + text[m.start() :]
+
+    lower = text.lower()
+    body = lower.rfind("</body>")
+    if body != -1:
+        return text[:body] + INLINE_NAVBAR_SCRIPT + text[body:]
+    return text + INLINE_NAVBAR_SCRIPT
 
 
 def sanitize_html(text: str) -> str:
@@ -71,7 +165,8 @@ def sanitize_html(text: str) -> str:
     text = ABS_PATH_IN_URL_RE.sub(r"url(\1)", text)
     text = AUTO_CONVERTED_COMMENT_RE.sub("", text)
     text = QA_FOOTER_LINK_RE.sub("", text)
-    text = BOOTSTRAP_SCRIPT_RE.sub(r"\1ig-navbar.js\2", text)
+    text = BOOTSTRAP_SCRIPT_RE.sub("", text)
+    text = ensure_inline_navbar(text)
     return text
 
 
@@ -129,21 +224,34 @@ def main() -> int:
 
     bootstrap_js = list(root.rglob("bootstrap.min.js"))
     if bootstrap_js:
-        print("ERROR: bootstrap.min.js must not be published (use ig-navbar.js):", file=sys.stderr)
+        print("ERROR: bootstrap.min.js must not be published (navbar JS is inlined):", file=sys.stderr)
         for path in bootstrap_js[:20]:
             print(f"  - {path.relative_to(root)}", file=sys.stderr)
         return 1
 
     bootstrap_refs = []
-    bootstrap_ref_re = re.compile(r"bootstrap\.min\.js", re.I)
+    # Only flag actual script src loads (comment text may mention bootstrap.min.js).
+    bootstrap_ref_re = re.compile(
+        r'<script[^>]*src="[^"]*bootstrap\.min\.js"',
+        re.I,
+    )
+    missing_navbar = []
     for path in html_files:
         if path.name.startswith("qa"):
             continue
-        if bootstrap_ref_re.search(path.read_text(encoding="utf-8", errors="replace")):
+        content = path.read_text(encoding="utf-8", errors="replace")
+        if bootstrap_ref_re.search(content):
             bootstrap_refs.append(str(path.relative_to(root)))
+        if "igpublisher-navbuttons" in content and INLINE_NAVBAR_MARKER not in content:
+            missing_navbar.append(str(path.relative_to(root)))
     if bootstrap_refs:
         print("ERROR: HTML still references bootstrap.min.js:", file=sys.stderr)
         for item in bootstrap_refs[:20]:
+            print(f"  - {item}", file=sys.stderr)
+        return 1
+    if missing_navbar:
+        print("ERROR: published pages missing inline navbar script:", file=sys.stderr)
+        for item in missing_navbar[:20]:
             print(f"  - {item}", file=sys.stderr)
         return 1
 

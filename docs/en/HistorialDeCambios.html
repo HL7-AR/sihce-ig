@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
+    <title>Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.2.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +47,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"17"}
-    h3,h4,h5,h6{--heading-prefix:"17"}</style>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.2.1 - 
+            <span style="display:inline-block;">2.2.2 - 
 
 
             </span>
@@ -126,9 +126,6 @@
       <li>
         <a href="Operaciones-Documentos.html">Documentos</a>
       </li>
-      <li>
-        <a href="Operaciones-Receta.html">Receta</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -153,9 +150,6 @@
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
-      </li>
-      <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>
@@ -206,7 +200,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Historial de Cambios</h2>
   
 
@@ -224,6 +218,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#versión-222" id="markdown-toc-versión-222">Versión 2.2.2</a></li>
   <li><a href="#versión-221" id="markdown-toc-versión-221">Versión 2.2.1</a></li>
   <li><a href="#versión-220" id="markdown-toc-versión-220">Versión 2.2.0</a></li>
   <li><a href="#versión-210" id="markdown-toc-versión-210">Versión 2.1.0</a></li>
@@ -244,11 +239,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
+<h3 id="versión-222">Versión 2.2.2</h3>
+
+<ul>
+  <li><strong>Receta electrónica (CPE) no publicada:</strong> contenido aparcado en el repo (<code class="language-plaintext highlighter-rouge">wip/receta/</code>) — no aparece en menú, páginas ni artefactos del IG. Se puede reincorporar sin reescribirlo.</li>
+  <li><strong>Informe de laboratorio no publicado:</strong> perfiles, logical, ejemplos y narrativa aparcados en <code class="language-plaintext highlighter-rouge">wip/laboratorio/</code> (mismo criterio que Receta).</li>
+</ul>
+
 <h3 id="versión-221">Versión 2.2.1</h3>
 
 <ul>
   <li><strong>Menú dropdown reparado:</strong> <code class="language-plaintext highlighter-rouge">ig-navbar.js</code> maneja collapse y dropdowns (Bootstrap 3 sin Bootstrap JS).</li>
-  <li><strong>Operaciones por caso de uso</strong> con menú anidado: Consentimiento, Persona, Documentos, Receta (<a href="Operaciones.html">índice</a>).</li>
+  <li><strong>Operaciones por caso de uso</strong> con menú anidado: Consentimiento, Persona, Documentos (<a href="Operaciones.html">índice</a>).</li>
   <li><strong>Epicrisis</strong> queda bajo el menú Casos de Uso (junto a secciones propuestas).</li>
   <li><strong>Secciones propuestas</strong> reformuladas como una sola página de mapeo sección → recurso FHIR / elementos (alineado a IPS 2.0); se eliminan los mini-modelos lógicos <code class="language-plaintext highlighter-rouge">EpicrisisPropuesta*</code>.</li>
 </ul>
@@ -256,7 +258,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="versión-220">Versión 2.2.0</h3>
 
 <ul>
-  <li><strong>Casos de Uso en páginas separadas</strong> con menú anidado: Consentimiento, Persona, Documentos, Receta (<a href="CasosDeUso.html">índice</a>).</li>
+  <li><strong>Casos de Uso en páginas separadas</strong> con menú anidado: Consentimiento, Persona, Documentos (<a href="CasosDeUso.html">índice</a>).</li>
   <li><strong>Epicrisis — consenso en tres niveles</strong> documentado en <a href="Epicrisis.html">Epicrisis</a>: (1) archivo adjunto, (2) Composition con secciones estandarizadas, (3) codificadas cuando corresponda.</li>
   <li><strong>Nivel 3 normativo:</strong> solo <strong>Motivo de internación</strong> (LOINC 46241-6) con <a href="StructureDefinition-ConditionEpicrisisSIHCE.html">ConditionEpicrisisSIHCE</a> + <a href="ValueSet-sihce-motivo-internacion-icd10-vs.html">SIHCEMotivoInternacionICD10VS</a>. Ejemplos nivel 3 publicados.</li>
   <li><strong>Secciones propuestas a votar</strong>: <a href="Epicrisis-Secciones-Propuestas.html">Epicrisis — secciones propuestas</a>. <code class="language-plaintext highlighter-rouge">MedicationStatementEpicrisisSIHCE</code> queda draft (ya no exigido por Composition).</li>
@@ -265,7 +267,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="versión-210">Versión 2.1.0</h3>
 
 <ul>
-  <li><strong>Madurez por artefacto (FMM + standards-status):</strong> trial-use / FMM 3 para Federación, Consentimiento, Orquestación (índice <code class="language-plaintext highlighter-rouge">DocumentReferenceSIHCE</code>) y Epicrisis; draft / FMM 1 para receta, laboratorio y soporte restante.</li>
+  <li><strong>Madurez por artefacto (FMM + standards-status):</strong> trial-use / FMM 3 para Federación, Consentimiento, Orquestación (índice <code class="language-plaintext highlighter-rouge">DocumentReferenceSIHCE</code>) y Epicrisis; draft / FMM 1 para laboratorio y soporte restante.</li>
   <li>Documentado en <a href="Aspectos-Generales.html#niveles-de-madurez-fmm">Aspectos Generales</a>.</li>
 </ul>
 
@@ -282,10 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="versión-160">Versión 1.6.0</h3>
 
 <ul>
-  <li><strong>Receta electrónica (CPE):</strong> casos de uso 2 (SIGEHOS → farmacia privada) y 3 (privado → farmacia, con/sin repositorio delegado).</li>
-  <li>Modelos lógicos <a href="StructureDefinition-RecetaIndice.html">RecetaIndice</a> y <a href="StructureDefinition-DispensaReceta.html">DispensaReceta</a>; perfiles <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>, <a href="StructureDefinition-MedicationRequestRecetaSIHCE.html">MedicationRequestRecetaSIHCE</a>, <a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>.</li>
-  <li>NamingSystems <a href="NamingSystem-sihce-cuir.html">CUIR</a> / <a href="NamingSystem-sihce-cuil.html">CUIL</a>; CodeSystem/ValueSet estado de receta; operaciones de índice, consulta, proxy y dispensa en <a href="Operaciones-Receta.html#op-receta-index">Operaciones</a>.</li>
-  <li>Diagramas en <a href="CasosDeUso.html">Casos de Uso</a>.</li>
+  <li><strong>Receta electrónica (CPE):</strong> casos de uso 2 y 3, perfiles y NamingSystems CUIR/CUIL (contenido hoy aparcado en <code class="language-plaintext highlighter-rouge">wip/receta/</code>; no publicado en esta versión de la guía).</li>
 </ul>
 
 <h3 id="versión-150">Versión 1.5.0</h3>
@@ -311,7 +310,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li><strong>Documentos clínicos</strong>: perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>, operaciones POST/GET documentadas en <a href="Operaciones.html">Operaciones</a>.</li>
   <li><strong>Epicrisis</strong>: modelos lógicos DocumentoClinico y Epicrisis; perfiles <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a>, <a href="StructureDefinition-ConditionEpicrisisSIHCE.html">ConditionEpicrisisSIHCE</a> y <a href="StructureDefinition-MedicationStatementEpicrisisSIHCE.html">MedicationStatementEpicrisisSIHCE</a>; niveles 1–3 (binario, narrativo, codificado).</li>
-  <li><strong>Informe de laboratorio</strong>: modelo lógico InformeLaboratorio; perfiles <a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">DiagnosticReportLaboratorioSIHCE</a> y <a href="StructureDefinition-ObservationLaboratorioSIHCE.html">ObservationLaboratorioSIHCE</a>; niveles 1–2 (PDF en <code class="language-plaintext highlighter-rouge">presentedForm</code>; PDF + observaciones LOINC en <code class="language-plaintext highlighter-rouge">result</code>).</li>
+  <li><strong>Informe de laboratorio</strong>: modelo lógico InformeLaboratorio; perfiles DiagnosticReportLaboratorioSIHCE y ObservationLaboratorioSIHCE; niveles 1–2 (contenido hoy aparcado en <code class="language-plaintext highlighter-rouge">wip/laboratorio/</code>; no publicado en esta versión de la guía).</li>
   <li><a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a> para <code class="language-plaintext highlighter-rouge">idPersonaGlobal</code>.</li>
   <li>Casos de uso y diagramas de secuencia para registro y consulta de epicrisis en <a href="CasosDeUso.html">Casos de Uso</a>.</li>
 </ul>
@@ -464,8 +463,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 23:15-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
@@ -482,11 +481,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
+  <script type="text/javascript">
+/* SIHCE: Bootstrap 3 navbar without bootstrap.min.js (publisher wipes template assets/js). */
+(function () {
+  'use strict';
+  function toggleCollapse(button) {
+    var selector = button.getAttribute('data-target');
+    if (!selector) { return; }
+    var panel = document.querySelector(selector);
+    if (!panel) { return; }
+    var open = panel.classList.toggle('in');
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function closeAllDropdowns(exceptLi) {
+    var open = document.querySelectorAll('li.dropdown.open');
+    for (var i = 0; i < open.length; i++) {
+      if (open[i] !== exceptLi) {
+        open[i].classList.remove('open');
+        var toggle = open[i].querySelector('[data-toggle="dropdown"]');
+        if (toggle) { toggle.setAttribute('aria-expanded', 'false'); }
+      }
+    }
+  }
+  function toggleDropdown(toggle) {
+    var li = toggle.closest('li.dropdown');
+    if (!li) { return; }
+    var willOpen = !li.classList.contains('open');
+    closeAllDropdowns(willOpen ? li : null);
+    if (willOpen) {
+      li.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    } else {
+      li.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  document.addEventListener('click', function (event) {
+    var collapseBtn = event.target.closest('[data-toggle="collapse"]');
+    if (collapseBtn) {
+      event.preventDefault();
+      toggleCollapse(collapseBtn);
+      return;
+    }
+    var dropdownToggle = event.target.closest('[data-toggle="dropdown"]');
+    if (dropdownToggle) {
+      event.preventDefault();
+      toggleDropdown(dropdownToggle);
+      return;
+    }
+    if (!event.target.closest('li.dropdown.open')) {
+      closeAllDropdowns(null);
+    }
+  });
+})();
+</script>
+<!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/ig-navbar.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>

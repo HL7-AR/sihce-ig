@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/DocumentoClinicoModeloAFHIR"] ;
-  fhir:ConceptMap.version [ fhir:value "2.2.1"] ;
+  fhir:ConceptMap.version [ fhir:value "2.2.2"] ;
   fhir:ConceptMap.name [ fhir:value "DocumentoClinicoModeloAFHIR"] ;
   fhir:ConceptMap.title [ fhir:value "DocumentoClinico: modelo lógico a FHIR"] ;
   fhir:ConceptMap.status [ fhir:value "draft"] ;

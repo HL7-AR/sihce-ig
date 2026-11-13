@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="sihce-clinical-document-type-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-clinical-document-type-vs</b></p><a name="sihce-clinical-document-type-vs"> </a><a name="hcsihce-clinical-document-type-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 18842-5</li><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 11502-2</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-clinical-document-type-vs</b></p><a name="sihce-clinical-document-type-vs"> </a><a name="hcsihce-clinical-document-type-vs"> </a><ul><li>Include codes from<a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where code  = 18842-5</li></ul></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
@@ -12,12 +12,12 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://sihce.gob.ar/ValueSet/sihce-clinical-document-type"/>
-  <version value="2.2.1"/>
+  <version value="2.2.2"/>
   <name value="SIHCEClinicalDocumentTypeVS"/>
   <title value="Tipos de documento clínico SIHCE"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-11-12T22:44:23-03:00"/>
+  <date value="2026-11-12T23:15:14-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -34,14 +34,6 @@
         <property value="code"/>
         <op value="="/>
         <value value="18842-5"/>
-      </filter>
-    </include>
-    <include>
-      <system value="http://loinc.org"/>
-      <filter>
-        <property value="code"/>
-        <op value="="/>
-        <value value="11502-2"/>
       </filter>
     </include>
   </compose>

@@ -23,12 +23,12 @@
      fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:CodeSystem.url [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths"] ;
-  fhir:CodeSystem.version [ fhir:value "2.2.1"] ;
+  fhir:CodeSystem.version [ fhir:value "2.2.2"] ;
   fhir:CodeSystem.name [ fhir:value "SIHCEFhirCoreElementPaths"] ;
   fhir:CodeSystem.title [ fhir:value "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-12T22:44:23-03:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-12T23:15:14-03:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:CodeSystem.contact [
      fhir:index -1 ;

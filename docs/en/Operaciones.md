@@ -1,4 +1,4 @@
-# Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * **Operaciones**
@@ -28,8 +28,7 @@ En todas las operaciones de la colección se envían estos headers:
 | :--- | :--- |
 | Persona (búsqueda, federación, patch, SDM) | [Operaciones — Persona](Operaciones-Persona.md) |
 | Consentimiento | [Operaciones — Consentimiento](Operaciones-Consentimiento.md) |
-| Documentos clínicos (epicrisis, laboratorio, proxy) | [Operaciones — Documentos](Operaciones-Documentos.md) |
-| Receta electrónica (CPE) | [Operaciones — Receta](Operaciones-Receta.md) |
+| Documentos clínicos (epicrisis, proxy) | [Operaciones — Documentos](Operaciones-Documentos.md) |
 
 ### Resumen de operaciones
 
@@ -42,10 +41,6 @@ En todas las operaciones de la colección se envían estos headers:
 | [Registro de documento clínico](Operaciones-Documentos.md#op-documento-registro) | POST | `/DocumentReference` | Indexa un documento clínico conforme al perfil[DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md). |
 | [Consulta de documentos clínicos](Operaciones-Documentos.md#op-documento-consulta) | GET | `/DocumentReference?patient.identifier={system|value}&type=&date=&status=` | Búsqueda ITI-67; URLs del[Proxy Central](Operaciones-Documentos.md#op-documento-proxy); requiere[Consent](Operaciones-Consentimiento.md#op-consentimiento)(MCC). |
 | [Descarga de documento](Operaciones-Documentos.md#op-documento-proxy) | GET | `/Proxy/Binary/{id}` | Recuperación ITI-68 vía proxy pass sincrónico de SIHCE. |
-| [Indexación de receta emitida](Operaciones-Receta.md#op-receta-index) | POST | `/DocumentReference` | Índice de receta (CUIR, estado vigente) conforme a[DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md). |
-| [Consulta de recetas](Operaciones-Receta.md#op-receta-consulta) | GET | `/DocumentReference?identifier={CUIR}&type=57833-6`o`patient.identifier={CUIL}` | Búsqueda en índice de recetas por CUIR o CUIL. |
-| [Obtención de detalle de receta](Operaciones-Receta.md#op-receta-proxy) | GET | `/Proxy/MedicationRequest/{id}` | Broker/proxy hacia el repositorio de origen (o lectura local si repositorio delegado). |
-| [Notificación de dispensa](Operaciones-Receta.md#op-receta-dispensa) | POST | `/MedicationDispense` | Evento de dispensa ([MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.md)); actualiza índice a dispensada. |
 | [Registro de consentimiento](Operaciones-Consentimiento.md#op-consentimiento) | POST | `/Consent` | Registra preferencias de privacidad del paciente ([ConsentSIHCE](StructureDefinition-ConsentSIHCE.md)). |
 | [Consulta de consentimiento](Operaciones-Consentimiento.md#op-consentimiento) | GET | `/Consent?patient.identifier={system|value}&status=active` | Consulta el consentimiento vigente del paciente. |
 | [Actualización de consentimiento](Operaciones-Consentimiento.md#op-consentimiento) | PUT | `/Consent/{id}` | Nueva versión (opt-out, ampliación por hospital o nivel). |

@@ -1,4 +1,4 @@
-# Casos de Uso — Consentimiento - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Casos de Uso — Consentimiento - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * **Casos de Uso — Consentimiento**

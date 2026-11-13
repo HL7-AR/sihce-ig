@@ -11,7 +11,7 @@
   fhir:Resource.language [ fhir:value "en"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-clinical-document-type-vs</b></p><a name=\"sihce-clinical-document-type-vs\"> </a><a name=\"hcsihce-clinical-document-type-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 18842-5</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 11502-2</li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-clinical-document-type-vs</b></p><a name=\"sihce-clinical-document-type-vs\"> </a><a name=\"hcsihce-clinical-document-type-vs\"> </a><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 18842-5</li></ul></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index -1 ;
@@ -23,12 +23,12 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:ValueSet.url [ fhir:value "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type"] ;
-  fhir:ValueSet.version [ fhir:value "2.2.1"] ;
+  fhir:ValueSet.version [ fhir:value "2.2.2"] ;
   fhir:ValueSet.name [ fhir:value "SIHCEClinicalDocumentTypeVS"] ;
   fhir:ValueSet.title [ fhir:value "Tipos de documento clínico SIHCE"] ;
   fhir:ValueSet.status [ fhir:value "active"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-11-12T22:44:23-03:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-12T23:15:14-03:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:ValueSet.contact [
      fhir:index -1 ;
@@ -49,15 +49,6 @@
          fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
          fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
          fhir:ValueSet.compose.include.filter.value [ fhir:value "18842-5" ]
-       ]
-     ], [
-       fhir:index -1 ;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ] ;
-       fhir:ValueSet.compose.include.filter [
-         fhir:index -1 ;
-         fhir:ValueSet.compose.include.filter.property [ fhir:value "code" ] ;
-         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
-         fhir:ValueSet.compose.include.filter.value [ fhir:value "11502-2" ]
        ]
      ]
   ] .

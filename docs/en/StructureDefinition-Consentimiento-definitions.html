@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Modelo lógico Consentimiento (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
+    <title>Modelo lógico Consentimiento (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.2.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"18.2"}
-    h3,h4,h5,h6{--heading-prefix:"18.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"16.2"}
+    h3,h4,h5,h6{--heading-prefix:"16.2"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -53,7 +53,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.2.1 - 
+            <span style="display:inline-block;">2.2.2 - 
 
 
             </span>
@@ -113,9 +113,6 @@
       <li>
         <a href="Operaciones-Documentos.html">Documentos</a>
       </li>
-      <li>
-        <a href="Operaciones-Receta.html">Receta</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -140,9 +137,6 @@
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
-      </li>
-      <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>
@@ -187,7 +181,7 @@
 
   <!-- layouts\layout-profile-definitions -->
 <div style="counter-reset: section 4" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://sihce.gob.ar/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.2) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://sihce.gob.ar/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -326,7 +320,7 @@
 </td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span class="unchangedStyle">0</span>..<span class="unchangedStyle">*</span></td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span class="unchangedStyle"><a href="https://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span></td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td><span class="unchangedStyle">true</span> because <span class="unchangedStyle">Modifier extensions are expected to modify the meaning or interpretation of the element that contains them</span></td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p class="unchangedStyle">Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="https://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr><tr><td style="white-space: nowrap">Alternate Names</td><td><span class="unchangedStyle">extensions</span>, <span class="unchangedStyle">user content</span>, <span class="unchangedStyle">modifiers</span></td></tr><tr><td style="white-space: nowrap">Invariants</td><td><span class="unchangedStyle"><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (hasValue() or (children().count() &gt; id.count()))</span><br/><span class="unchangedStyle"><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (extension.exists() != value.exists())</span></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Consentimiento.datosPaciente.idPersonaGlobal">  </a><span style="color: grey">14</span><b>. Consentimiento.datosPaciente.idPersonaGlobal</b><a href="#key_Consentimiento.datosPaciente.idPersonaGlobal" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16" xmlns:xlink="http://www.w3.org/1999/xlink" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px"><a name="l1046">​</a>Identificador global (<a href="https://hl7.org/fhir/R4/NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>).</p>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Consentimiento.datosPaciente.idPersonaGlobal">  </a><span style="color: grey">14</span><b>. Consentimiento.datosPaciente.idPersonaGlobal</b><a href="#key_Consentimiento.datosPaciente.idPersonaGlobal" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16" xmlns:xlink="http://www.w3.org/1999/xlink" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px"><a name="l1034">​</a>Identificador global (<a href="https://hl7.org/fhir/R4/NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>).</p>
 </td></tr><tr><td style="white-space: nowrap">Short</td><td>Id persona SIHCE</td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Consentimiento.datosConsentimiento">  </a><span style="color: grey">16</span><b>. Consentimiento.datosConsentimiento</b><a href="#key_Consentimiento.datosConsentimiento" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16" xmlns:xlink="http://www.w3.org/1999/xlink" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">Decisión de participación en la red.</p>
@@ -450,7 +444,7 @@
 </td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="https://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/conformance-rules.html#ismodifier">Is Modifier</a></td><td>true because Modifier extensions are expected to modify the meaning or interpretation of the element that contains them</td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr><tr><td style="white-space: nowrap">Requirements</td><td><p style="font-size: 11px">Modifier extensions allow for extensions that <em>cannot</em> be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the <a href="https://hl7.org/fhir/R4/extensibility.html#modifierExtension">definition of modifier extensions</a>.</p>
 </td></tr><tr><td style="white-space: nowrap">Alternate Names</td><td>extensions, user content, modifiers</td></tr><tr><td style="white-space: nowrap">Invariants</td><td><b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (<code>hasValue() or (children().count() &gt; id.count())</code>)<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (<code>extension.exists() != value.exists()</code>)</td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Consentimiento.datosPaciente.idPersonaGlobal">  </a><span style="color: grey">14</span><b>. Consentimiento.datosPaciente.idPersonaGlobal</b><a href="#Consentimiento.datosPaciente.idPersonaGlobal" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16" xmlns:xlink="http://www.w3.org/1999/xlink" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px"><a name="l2977">​</a>Identificador global (<a href="https://hl7.org/fhir/R4/NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>).</p>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Consentimiento.datosPaciente.idPersonaGlobal">  </a><span style="color: grey">14</span><b>. Consentimiento.datosPaciente.idPersonaGlobal</b><a href="#Consentimiento.datosPaciente.idPersonaGlobal" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16" xmlns:xlink="http://www.w3.org/1999/xlink" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px"><a name="l2965">​</a>Identificador global (<a href="https://hl7.org/fhir/R4/NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>).</p>
 </td></tr><tr><td style="white-space: nowrap">Short</td><td>Id persona SIHCE</td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="https://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr><tr><td style="white-space: nowrap"><a href="https://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Consentimiento.datosConsentimiento">  </a><span style="color: grey">16</span><b>. Consentimiento.datosConsentimiento</b><a href="#Consentimiento.datosConsentimiento" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="16" xmlns:xlink="http://www.w3.org/1999/xlink" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Definition</td><td><p style="font-size: 11px">Decisión de participación en la red.</p>
@@ -538,8 +532,8 @@
 
 
           IG &copy; 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 23:15-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
@@ -556,11 +550,64 @@
     </div>    <!-- /container -->
   </div>    <!-- /segment-post-footer -->
 
-    <!-- JS and analytics only. -->
+    <script type="text/javascript">
+/* SIHCE: Bootstrap 3 navbar without bootstrap.min.js (publisher wipes template assets/js). */
+(function () {
+  'use strict';
+  function toggleCollapse(button) {
+    var selector = button.getAttribute('data-target');
+    if (!selector) { return; }
+    var panel = document.querySelector(selector);
+    if (!panel) { return; }
+    var open = panel.classList.toggle('in');
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function closeAllDropdowns(exceptLi) {
+    var open = document.querySelectorAll('li.dropdown.open');
+    for (var i = 0; i < open.length; i++) {
+      if (open[i] !== exceptLi) {
+        open[i].classList.remove('open');
+        var toggle = open[i].querySelector('[data-toggle="dropdown"]');
+        if (toggle) { toggle.setAttribute('aria-expanded', 'false'); }
+      }
+    }
+  }
+  function toggleDropdown(toggle) {
+    var li = toggle.closest('li.dropdown');
+    if (!li) { return; }
+    var willOpen = !li.classList.contains('open');
+    closeAllDropdowns(willOpen ? li : null);
+    if (willOpen) {
+      li.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    } else {
+      li.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  document.addEventListener('click', function (event) {
+    var collapseBtn = event.target.closest('[data-toggle="collapse"]');
+    if (collapseBtn) {
+      event.preventDefault();
+      toggleCollapse(collapseBtn);
+      return;
+    }
+    var dropdownToggle = event.target.closest('[data-toggle="dropdown"]');
+    if (dropdownToggle) {
+      event.preventDefault();
+      toggleDropdown(dropdownToggle);
+      return;
+    }
+    if (!event.target.closest('li.dropdown.open')) {
+      closeAllDropdowns(null);
+    }
+  });
+})();
+</script>
+<!-- JS and analytics only. -->
     <!-- Bootstrap core JavaScript
   ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/ig-navbar.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>

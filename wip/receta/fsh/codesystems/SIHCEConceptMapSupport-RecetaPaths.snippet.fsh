@@ -1,0 +1,16 @@
+// Snippet to re-insert into SIHCEConceptMapSupport.fsh (logical op element paths)
+// when republishing receta ConceptMaps.
+* #"RecetaIndice.datosReceta.cuir" "RecetaIndice datosReceta cuir"
+* #"RecetaIndice.datosReceta.cuilPaciente" "RecetaIndice datosReceta cuilPaciente"
+* #"RecetaIndice.datosReceta.idPersonaGlobal" "RecetaIndice datosReceta idPersonaGlobal"
+* #"RecetaIndice.datosReceta.estado" "RecetaIndice datosReceta estado"
+* #"RecetaIndice.datosReceta.fechaEmision" "RecetaIndice datosReceta fechaEmision"
+* #"RecetaIndice.datosReceta.urlContenido" "RecetaIndice datosReceta urlContenido"
+* #"RecetaIndice.datosPrescriptor.idDominio" "RecetaIndice datosPrescriptor idDominio"
+* #"RecetaIndice.datosPrescriptor.idEfector" "RecetaIndice datosPrescriptor idEfector"
+* #"RecetaIndice.repositorioDelegado" "RecetaIndice repositorioDelegado"
+* #"DispensaReceta.cuir" "DispensaReceta cuir"
+* #"DispensaReceta.cuilPaciente" "DispensaReceta cuilPaciente"
+* #"DispensaReceta.fechaDispensa" "DispensaReceta fechaDispensa"
+* #"DispensaReceta.idFarmacia" "DispensaReceta idFarmacia"
+* #"DispensaReceta.nombreFarmacia" "DispensaReceta nombreFarmacia"

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "SIHCE.fhir.core",
   "url": "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "name": "GuiaDeImplementacionSIHCE",
   "title": "Guía de Implementación SIHCE - FHIR R4",
   "status": "draft",
@@ -24,14 +24,6 @@
   ],
   "definition": {
     "resource": [
-      {
-        "reference": {
-          "reference": "ValueSet/sihce-lab-observation-code-vs"
-        },
-        "name": "Analitos de laboratorio SIHCE (LOINC)",
-        "description": "Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2.",
-        "exampleBoolean": false
-      },
       {
         "reference": {
           "reference": "ConceptMap/BuscarPersonaModeloAFHIR"
@@ -122,30 +114,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/MedicationDispenseRecetaSIHCE"
-        },
-        "name": "Dispensa de receta SIHCE",
-        "description": "Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "MedicationDispense/MedicationDispenseRecetaEjemplo"
-        },
-        "name": "Dispensa de receta — farmacia privada",
-        "description": "Evento de dispensa notificado a SIHCE (anti-quema).",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE"
-      },
-      {
-        "reference": {
-          "reference": "ConceptMap/DispensaRecetaModeloAFHIR"
-        },
-        "name": "DispensaReceta: modelo lógico a FHIR",
-        "description": "Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ConceptMap/DocumentoClinicoModeloAFHIR"
         },
         "name": "DocumentoClinico: modelo lógico a FHIR",
@@ -218,30 +186,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/extension-receta-estado"
-        },
-        "name": "Estado de receta en índice SIHCE",
-        "description": "Estado vigente/dispensada/anulada del índice de receta (anti-quema).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/sihce-receta-estado"
-        },
-        "name": "Estado de receta en índice SIHCE",
-        "description": "Estados del índice de receta electrónica (mecanismo anti-quema).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/sihce-receta-estado-vs"
-        },
-        "name": "Estados de receta SIHCE",
-        "description": "Estados admitidos en el índice de DocumentReferenceRecetaSIHCE.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ConceptMap/FederarPersonaModeloAFHIR"
         },
         "name": "FederarPersona: modelo lógico a FHIR",
@@ -250,74 +194,11 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/DiagnosticReportLaboratorioSIHCE"
-        },
-        "name": "Informe de laboratorio SIHCE",
-        "description": "DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "DiagnosticReport/DiagnosticReportInformeLabNivel1"
-        },
-        "name": "Informe laboratorio nivel 1 — DiagnosticReport con PDF",
-        "description": "Solo presentedForm (PDF); sin entradas en result (nivel 1).",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"
-      },
-      {
-        "reference": {
-          "reference": "DocumentReference/DocumentReferenceInformeLabNivel1"
-        },
-        "name": "Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)",
-        "description": "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.html).",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"
-      },
-      {
-        "reference": {
-          "reference": "DiagnosticReport/DiagnosticReportInformeLabNivel2"
-        },
-        "name": "Informe laboratorio nivel 2 — PDF + glucemia y urea",
-        "description": "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result.",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE"
-      },
-      {
-        "reference": {
-          "reference": "DocumentReference/DocumentReferenceInformeLabNivel2"
-        },
-        "name": "Informe laboratorio nivel 2 — PDF y observaciones",
-        "description": "Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result.",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"
-      },
-      {
-        "reference": {
-          "reference": "ConceptMap/InformeLaboratorioModeloAFHIR"
-        },
-        "name": "InformeLaboratorio: modelo lógico a FHIR",
-        "description": "Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Organization/lab-central-ejemplo"
-        },
-        "name": "Laboratorio Central Ejemplo",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/MedicationStatementEpicrisisSIHCE"
         },
         "name": "Medicación al alta epicrisis SIHCE",
         "description": "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo"
-        },
-        "name": "MedicationRequest receta SIGEHOS",
-        "description": "Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 / caso 3-1a).",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE"
       },
       {
         "reference": {
@@ -341,14 +222,6 @@
         },
         "name": "Modelo Lógico de Persona para SIHCE",
         "description": "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/DispensaReceta"
-        },
-        "name": "Modelo lógico DispensaReceta (SIHCE)",
-        "description": "Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde.",
         "exampleBoolean": false
       },
       {
@@ -377,14 +250,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/InformeLaboratorio"
-        },
-        "name": "Modelo lógico Informe de Laboratorio (SIHCE)",
-        "description": "Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/ModificarIDLocalPersona"
         },
         "name": "Modelo lógico ModificarIDLocalPersona (FederadorBA)",
@@ -397,14 +262,6 @@
         },
         "name": "Modelo lógico ModificarSDMPersona (FederadorBA)",
         "description": "Actualización del SDM de una persona federada; documento inmutable.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/RecetaIndice"
-        },
-        "name": "Modelo lógico RecetaIndice (SIHCE)",
-        "description": "Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE.",
         "exampleBoolean": false
       },
       {
@@ -438,22 +295,6 @@
         "name": "Motivo de internación — ICD-10 J18.9",
         "description": "Condition de ejemplo para Motivo de internación (nivel 3).",
         "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE"
-      },
-      {
-        "reference": {
-          "reference": "NamingSystem/sihce-cuil"
-        },
-        "name": "NamingSystem CUIL (paciente)",
-        "description": "Clave Única de Identificación Laboral (CUIL) del paciente, usada en búsqueda de recetas.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "NamingSystem/sihce-cuir"
-        },
-        "name": "NamingSystem CUIR (código único de receta)",
-        "description": "Identificador único de receta electrónica (CUIR) en el ecosistema SIHCE / CPE.",
-        "exampleBoolean": false
       },
       {
         "reference": {
@@ -505,14 +346,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ObservationLaboratorioSIHCE"
-        },
-        "name": "Observación de laboratorio SIHCE",
-        "description": "Resultado analítico codificado (LOINC) asociado a un informe de laboratorio nivel 2.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/PatientXBA"
         },
         "name": "Paciente SIHCE (PatientXBA)",
@@ -553,22 +386,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/MedicationRequestRecetaSIHCE"
-        },
-        "name": "Receta MedicationRequest SIHCE",
-        "description": "Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ConceptMap/RecetaIndiceModeloAFHIR"
-        },
-        "name": "RecetaIndice: modelo lógico a FHIR",
-        "description": "Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/DocumentReferenceSIHCE"
         },
         "name": "Referencia a documento clínico SIHCE",
@@ -581,14 +398,6 @@
         },
         "name": "renaper-dni",
         "description": "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/extension-receta-repositorio-delegado"
-        },
-        "name": "Repositorio delegado en SIHCE",
-        "description": "Marca el caso excepcional en que SIHCE almacena el MedicationRequest (caso de uso 3, variante 1b).",
         "exampleBoolean": false
       },
       {
@@ -617,14 +426,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/sihce-receta-document-type-vs"
-        },
-        "name": "Tipo documental de receta SIHCE",
-        "description": "LOINC para índice de receta electrónica.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/sihce-clinical-document-type-vs"
         },
         "name": "Tipos de documento clínico SIHCE",
@@ -638,30 +439,6 @@
         "name": "Tipos MIME de contenido documental SIHCE",
         "description": "Formatos admitidos en DocumentReference.content.attachment.contentType.",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/DocumentReferenceRecetaSIHCE"
-        },
-        "name": "Índice de receta electrónica SIHCE",
-        "description": "Metadatos de receta en el índice SIHCE (CUIR, paciente, efector, estado). El MedicationRequest permanece en el repositorio de origen; SIHCE actúa como broker/proxy salvo repositorio delegado (caso 3/1b).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS"
-        },
-        "name": "Índice receta vigente — SIGEHOS (caso 2)",
-        "description": "Metadatos de receta emitida en SIGEHOS; contenido en repositorio SIGEHOS.",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"
-      },
-      {
-        "reference": {
-          "reference": "DocumentReference/DocumentReferenceRecetaDelegadaSIHCE"
-        },
-        "name": "Índice receta — repositorio delegado SIHCE (caso 3 / 1b)",
-        "description": "Caso excepcional: SIHCE almacena el MedicationRequest; no hay URL de dominio de origen.",
-        "exampleCanonical": "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE"
       }
     ],
     "page": {
@@ -700,11 +477,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "Operaciones-Receta.html",
-          "title": "Operaciones — Receta",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "CasosDeUso.html",
           "title": "Casos de Uso",
           "generation": "markdown"
@@ -722,11 +494,6 @@
         {
           "nameUrl": "CasosDeUso-Documentos.html",
           "title": "Casos de Uso — Documentos",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "CasosDeUso-Receta.html",
-          "title": "Casos de Uso — Receta",
           "generation": "markdown"
         },
         {

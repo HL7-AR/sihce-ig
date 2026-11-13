@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
+    <title>Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.2.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.2.1 - 
+            <span style="display:inline-block;">2.2.2 - 
 
 
             </span>
@@ -126,9 +126,6 @@
       <li>
         <a href="Operaciones-Documentos.html">Documentos</a>
       </li>
-      <li>
-        <a href="Operaciones-Receta.html">Receta</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -153,9 +150,6 @@
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
-      </li>
-      <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>
@@ -206,7 +200,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Operaciones</h2>
   
 
@@ -273,12 +267,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="Operaciones-Consentimiento.html">Operaciones — Consentimiento</a></td>
     </tr>
     <tr>
-      <td>Documentos clínicos (epicrisis, laboratorio, proxy)</td>
+      <td>Documentos clínicos (epicrisis, proxy)</td>
       <td><a href="Operaciones-Documentos.html">Operaciones — Documentos</a></td>
-    </tr>
-    <tr>
-      <td>Receta electrónica (CPE)</td>
-      <td><a href="Operaciones-Receta.html">Operaciones — Receta</a></td>
     </tr>
   </tbody>
 </table>
@@ -297,10 +287,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><td><a href="Operaciones-Documentos.html#op-documento-registro">Registro de documento clínico</a></td><td>POST</td><td><code>/DocumentReference</code></td><td>Indexa un documento clínico conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>.</td></tr>
     <tr><td><a href="Operaciones-Documentos.html#op-documento-consulta">Consulta de documentos clínicos</a></td><td>GET</td><td><code>/DocumentReference?patient.identifier={system|value}&amp;type=&amp;date=&amp;status=</code></td><td>Búsqueda ITI-67; URLs del <a href="Operaciones-Documentos.html#op-documento-proxy">Proxy Central</a>; requiere <a href="Operaciones-Consentimiento.html#op-consentimiento">Consent</a> (MCC).</td></tr>
     <tr><td><a href="Operaciones-Documentos.html#op-documento-proxy">Descarga de documento</a></td><td>GET</td><td><code>/Proxy/Binary/{id}</code></td><td>Recuperación ITI-68 vía proxy pass sincrónico de SIHCE.</td></tr>
-    <tr><td><a href="Operaciones-Receta.html#op-receta-index">Indexación de receta emitida</a></td><td>POST</td><td><code>/DocumentReference</code></td><td>Índice de receta (CUIR, estado vigente) conforme a <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>.</td></tr>
-    <tr><td><a href="Operaciones-Receta.html#op-receta-consulta">Consulta de recetas</a></td><td>GET</td><td><code>/DocumentReference?identifier={CUIR}&amp;type=57833-6</code> o <code>patient.identifier={CUIL}</code></td><td>Búsqueda en índice de recetas por CUIR o CUIL.</td></tr>
-    <tr><td><a href="Operaciones-Receta.html#op-receta-proxy">Obtención de detalle de receta</a></td><td>GET</td><td><code>/Proxy/MedicationRequest/{id}</code></td><td>Broker/proxy hacia el repositorio de origen (o lectura local si repositorio delegado).</td></tr>
-    <tr><td><a href="Operaciones-Receta.html#op-receta-dispensa">Notificación de dispensa</a></td><td>POST</td><td><code>/MedicationDispense</code></td><td>Evento de dispensa (<a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>); actualiza índice a dispensada.</td></tr>
     <tr><td><a href="Operaciones-Consentimiento.html#op-consentimiento">Registro de consentimiento</a></td><td>POST</td><td><code>/Consent</code></td><td>Registra preferencias de privacidad del paciente (<a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>).</td></tr>
     <tr><td><a href="Operaciones-Consentimiento.html#op-consentimiento">Consulta de consentimiento</a></td><td>GET</td><td><code>/Consent?patient.identifier={system|value}&amp;status=active</code></td><td>Consulta el consentimiento vigente del paciente.</td></tr>
     <tr><td><a href="Operaciones-Consentimiento.html#op-consentimiento">Actualización de consentimiento</a></td><td>PUT</td><td><code>/Consent/{id}</code></td><td>Nueva versión (opt-out, ampliación por hospital o nivel).</td></tr>
@@ -331,8 +317,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 23:15-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
@@ -349,11 +335,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
+  <script type="text/javascript">
+/* SIHCE: Bootstrap 3 navbar without bootstrap.min.js (publisher wipes template assets/js). */
+(function () {
+  'use strict';
+  function toggleCollapse(button) {
+    var selector = button.getAttribute('data-target');
+    if (!selector) { return; }
+    var panel = document.querySelector(selector);
+    if (!panel) { return; }
+    var open = panel.classList.toggle('in');
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function closeAllDropdowns(exceptLi) {
+    var open = document.querySelectorAll('li.dropdown.open');
+    for (var i = 0; i < open.length; i++) {
+      if (open[i] !== exceptLi) {
+        open[i].classList.remove('open');
+        var toggle = open[i].querySelector('[data-toggle="dropdown"]');
+        if (toggle) { toggle.setAttribute('aria-expanded', 'false'); }
+      }
+    }
+  }
+  function toggleDropdown(toggle) {
+    var li = toggle.closest('li.dropdown');
+    if (!li) { return; }
+    var willOpen = !li.classList.contains('open');
+    closeAllDropdowns(willOpen ? li : null);
+    if (willOpen) {
+      li.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    } else {
+      li.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  document.addEventListener('click', function (event) {
+    var collapseBtn = event.target.closest('[data-toggle="collapse"]');
+    if (collapseBtn) {
+      event.preventDefault();
+      toggleCollapse(collapseBtn);
+      return;
+    }
+    var dropdownToggle = event.target.closest('[data-toggle="dropdown"]');
+    if (dropdownToggle) {
+      event.preventDefault();
+      toggleDropdown(dropdownToggle);
+      return;
+    }
+    if (!event.target.closest('li.dropdown.open')) {
+      closeAllDropdowns(null);
+    }
+  });
+})();
+</script>
+<!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/ig-navbar.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>

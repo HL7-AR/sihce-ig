@@ -24,8 +24,7 @@ En todas las operaciones de la colección se envían estos headers:
 |-------------|------------------------|
 | Persona (búsqueda, federación, patch, SDM) | [Operaciones — Persona](Operaciones-Persona.html) |
 | Consentimiento | [Operaciones — Consentimiento](Operaciones-Consentimiento.html) |
-| Documentos clínicos (epicrisis, laboratorio, proxy) | [Operaciones — Documentos](Operaciones-Documentos.html) |
-| Receta electrónica (CPE) | [Operaciones — Receta](Operaciones-Receta.html) |
+| Documentos clínicos (epicrisis, proxy) | [Operaciones — Documentos](Operaciones-Documentos.html) |
 
 ### Resumen de operaciones
 
@@ -41,10 +40,6 @@ En todas las operaciones de la colección se envían estos headers:
     <tr><td><a href="Operaciones-Documentos.html#op-documento-registro">Registro de documento clínico</a></td><td>POST</td><td><code>/DocumentReference</code></td><td>Indexa un documento clínico conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>.</td></tr>
     <tr><td><a href="Operaciones-Documentos.html#op-documento-consulta">Consulta de documentos clínicos</a></td><td>GET</td><td><code>/DocumentReference?patient.identifier={system|value}&amp;type=&amp;date=&amp;status=</code></td><td>Búsqueda ITI-67; URLs del <a href="Operaciones-Documentos.html#op-documento-proxy">Proxy Central</a>; requiere <a href="Operaciones-Consentimiento.html#op-consentimiento">Consent</a> (MCC).</td></tr>
     <tr><td><a href="Operaciones-Documentos.html#op-documento-proxy">Descarga de documento</a></td><td>GET</td><td><code>/Proxy/Binary/{id}</code></td><td>Recuperación ITI-68 vía proxy pass sincrónico de SIHCE.</td></tr>
-    <tr><td><a href="Operaciones-Receta.html#op-receta-index">Indexación de receta emitida</a></td><td>POST</td><td><code>/DocumentReference</code></td><td>Índice de receta (CUIR, estado vigente) conforme a <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>.</td></tr>
-    <tr><td><a href="Operaciones-Receta.html#op-receta-consulta">Consulta de recetas</a></td><td>GET</td><td><code>/DocumentReference?identifier={CUIR}&amp;type=57833-6</code> o <code>patient.identifier={CUIL}</code></td><td>Búsqueda en índice de recetas por CUIR o CUIL.</td></tr>
-    <tr><td><a href="Operaciones-Receta.html#op-receta-proxy">Obtención de detalle de receta</a></td><td>GET</td><td><code>/Proxy/MedicationRequest/{id}</code></td><td>Broker/proxy hacia el repositorio de origen (o lectura local si repositorio delegado).</td></tr>
-    <tr><td><a href="Operaciones-Receta.html#op-receta-dispensa">Notificación de dispensa</a></td><td>POST</td><td><code>/MedicationDispense</code></td><td>Evento de dispensa (<a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>); actualiza índice a dispensada.</td></tr>
     <tr><td><a href="Operaciones-Consentimiento.html#op-consentimiento">Registro de consentimiento</a></td><td>POST</td><td><code>/Consent</code></td><td>Registra preferencias de privacidad del paciente (<a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>).</td></tr>
     <tr><td><a href="Operaciones-Consentimiento.html#op-consentimiento">Consulta de consentimiento</a></td><td>GET</td><td><code>/Consent?patient.identifier={system|value}&amp;status=active</code></td><td>Consulta el consentimiento vigente del paciente.</td></tr>
     <tr><td><a href="Operaciones-Consentimiento.html#op-consentimiento">Actualización de consentimiento</a></td><td>PUT</td><td><code>/Consent/{id}</code></td><td>Nueva versión (opt-out, ampliación por hospital o nivel).</td></tr>

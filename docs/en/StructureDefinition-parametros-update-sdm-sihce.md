@@ -1,4 +1,4 @@
-# Parametros Update SDM SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Parametros Update SDM SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce | *Version*:2.2.1 | |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce | *Version*:2.2.2 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:ParametrosUpdateSDMSIHCE |
 
  
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-update
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/parametros-update-sdm-sihce",
-  "version" : "2.2.1",
+  "version" : "2.2.2",
   "name" : "ParametrosUpdateSDMSIHCE",
   "title" : "Parametros Update SDM SIHCE",
   "status" : "active",
-  "date" : "2026-11-12T22:44:23-03:00",
+  "date" : "2026-11-12T23:15:14-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

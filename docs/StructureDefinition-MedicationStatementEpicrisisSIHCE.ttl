@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.2.1"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.2"] ;
   fhir:StructureDefinition.name [ fhir:value "MedicationStatementEpicrisisSIHCE"] ;
   fhir:StructureDefinition.title [ fhir:value "Medicación al alta epicrisis SIHCE"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;

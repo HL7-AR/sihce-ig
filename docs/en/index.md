@@ -1,4 +1,4 @@
-# Inicio - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Inicio - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * **Inicio**
@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:2.2.1 |
+| *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:2.2.2 |
 | Draft as of 2026-11-12 | *Computable Name*:GuiaDeImplementacionSIHCE |
 
 ### Sistema Integrador de Historias Clínicas Electrónicas
@@ -59,7 +59,7 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://tx.fhir.org/r5/CodeSystem/x-loinc2.82): [Composition/CompositionEpicrisisNivel2](Composition-CompositionEpicrisisNivel2.md), [Composition/CompositionEpicrisisNivel3](Composition-CompositionEpicrisisNivel3.md)... Show 18 more, [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md), [DiagnosticReport/DiagnosticReportInformeLabNivel1](DiagnosticReport-DiagnosticReportInformeLabNivel1.md), [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md), [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md), [DocumentReference/DocumentReferenceEpicrisisNivel1](DocumentReference-DocumentReferenceEpicrisisNivel1.md), [DocumentReference/DocumentReferenceEpicrisisNivel2](DocumentReference-DocumentReferenceEpicrisisNivel2.md), [DocumentReference/DocumentReferenceEpicrisisNivel3](DocumentReference-DocumentReferenceEpicrisisNivel3.md), [DocumentReference/DocumentReferenceInformeLabNivel1](DocumentReference-DocumentReferenceInformeLabNivel1.md), [DocumentReference/DocumentReferenceInformeLabNivel2](DocumentReference-DocumentReferenceInformeLabNivel2.md), [DocumentReference/DocumentReferenceRecetaDelegadaSIHCE](DocumentReference-DocumentReferenceRecetaDelegadaSIHCE.md), [DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS](DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.md), [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md), [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md), [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md), [SIHCEClinicalDocumentTypeVS](ValueSet-sihce-clinical-document-type-vs.md), [SIHCEEpicrisisSectionVS](ValueSet-sihce-epicrisis-section-vs.md), [SIHCELabObservationCodeVS](ValueSet-sihce-lab-observation-code-vs.md) and [SIHCERecetaDocumentTypeVS](ValueSet-sihce-receta-document-type-vs.md)
+* [LOINC](http://tx.fhir.org/r5/CodeSystem/x-loinc2.82): [Composition/CompositionEpicrisisNivel2](Composition-CompositionEpicrisisNivel2.md), [Composition/CompositionEpicrisisNivel3](Composition-CompositionEpicrisisNivel3.md)... Show 7 more, [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md), [DocumentReference/DocumentReferenceEpicrisisNivel1](DocumentReference-DocumentReferenceEpicrisisNivel1.md), [DocumentReference/DocumentReferenceEpicrisisNivel2](DocumentReference-DocumentReferenceEpicrisisNivel2.md), [DocumentReference/DocumentReferenceEpicrisisNivel3](DocumentReference-DocumentReferenceEpicrisisNivel3.md), [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md), [SIHCEClinicalDocumentTypeVS](ValueSet-sihce-clinical-document-type-vs.md) and [SIHCEEpicrisisSectionVS](ValueSet-sihce-epicrisis-section-vs.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
@@ -71,10 +71,7 @@ This publication includes IP covered under the following statements.
 
 * [Condition Clinical Status Codes](http://terminology.hl7.org/7.5.0/CodeSystem-condition-clinical.html): [Condition/ConditionMotivoInternacionEjemplo](Condition-ConditionMotivoInternacionEjemplo.md)
 * [Consent Scope Codes](http://terminology.hl7.org/7.5.0/CodeSystem-consentscope.html): [Consent/ConsentOptInGeneralSIHCE](Consent-ConsentOptInGeneralSIHCE.md), [Consent/ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfidentialSIHCE.md)... Show 4 more, [Consent/ConsentOptInHospitalNormalSIHCE](Consent-ConsentOptInHospitalNormalSIHCE.md), [Consent/ConsentOptInHospitalSIHCE](Consent-ConsentOptInHospitalSIHCE.md), [Consent/ConsentOptOutGeneralSIHCE](Consent-ConsentOptOutGeneralSIHCE.md) and [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md)
-* [Observation Category Codes](http://terminology.hl7.org/7.5.0/CodeSystem-observation-category.html): [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md) and [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md)
-* [diagnosticServiceSectionId](http://terminology.hl7.org/7.5.0/CodeSystem-v2-0074.html): [DiagnosticReport/DiagnosticReportInformeLabNivel1](DiagnosticReport-DiagnosticReportInformeLabNivel1.md), [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md) and [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
 * [identifierType](http://terminology.hl7.org/7.5.0/CodeSystem-v2-0203.html): [Parameters/ParametrosPatchIdentifierEjemplo](Parameters-ParametrosPatchIdentifierEjemplo.md), [Parameters/ParametrosUpdateSDMEjemplo](Parameters-ParametrosUpdateSDMEjemplo.md), [Patient/PersonaSIHCEMin](Patient-PersonaSIHCEMin.md) and [Patient/PersonaSIHCEPatch](Patient-PersonaSIHCEPatch.md)
-* [ObservationInterpretation](http://terminology.hl7.org/7.5.0/CodeSystem-v3-ObservationInterpretation.html): [DiagnosticReport/DiagnosticReportInformeLabNivel2](DiagnosticReport-DiagnosticReportInformeLabNivel2.md)
 * [ParticipationType](http://terminology.hl7.org/7.5.0/CodeSystem-v3-ParticipationType.html): [Consent/ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfidentialSIHCE.md), [Consent/ConsentOptInHospitalNormalSIHCE](Consent-ConsentOptInHospitalNormalSIHCE.md), [Consent/ConsentOptInHospitalSIHCE](Consent-ConsentOptInHospitalSIHCE.md) and [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md)
 
 

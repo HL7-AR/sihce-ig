@@ -1,4 +1,4 @@
-# SIHCE.fhir.core#2.2.1: Guía de Implementación SIHCE - FHIR R4(en)
+# SIHCE.fhir.core#2.2.2: Guía de Implementación SIHCE - FHIR R4(en)
 
 ## Pages
 
@@ -13,10 +13,8 @@
 * [Operaciones — Consentimiento](Operaciones-Consentimiento.md)
 * [Seguridad](Seguridad.md)
 * [Operaciones — Persona](Operaciones-Persona.md)
-* [Casos de Uso — Receta](CasosDeUso-Receta.md)
 * [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.md)
 * [Modelo Lógico](ModeloLogico.md)
-* [Operaciones — Receta](Operaciones-Receta.md)
 * [Epicrisis](Epicrisis.md)
 * [Historial de Cambios](HistorialDeCambios.md)
 * [Casos de Uso — Persona](CasosDeUso-Persona.md)
@@ -28,7 +26,6 @@
 * [Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE](CodeSystem-sihce-fhir-core-element-paths.md)
 * [Rutas de elementos en modelos lógicos de operación SIHCE](CodeSystem-sihce-logical-operation-element-paths.md)
 * [Niveles de privacidad SIHCE](CodeSystem-sihce-privacy-level.md)
-* [Estado de receta en índice SIHCE](CodeSystem-sihce-receta-estado.md)
 
 ### ValueSets
 
@@ -36,59 +33,40 @@
 * [Tipos MIME de contenido documental SIHCE](ValueSet-sihce-document-content-type-vs.md)
 * [Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto](ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
 * [Secciones LOINC de epicrisis SIHCE](ValueSet-sihce-epicrisis-section-vs.md)
-* [Analitos de laboratorio SIHCE (LOINC)](ValueSet-sihce-lab-observation-code-vs.md)
 * [Motivo de internación epicrisis (ICD-10)](ValueSet-sihce-motivo-internacion-icd10-vs.md)
 * [Niveles de privacidad SIHCE](ValueSet-sihce-privacy-level-vs.md)
-* [Tipo documental de receta SIHCE](ValueSet-sihce-receta-document-type-vs.md)
-* [Estados de receta SIHCE](ValueSet-sihce-receta-estado-vs.md)
 
 ### Logicals
 
 * [Modelo lógico BuscarPersona (FederadorBA)](StructureDefinition-BuscarPersona.md)
 * [Modelo lógico Consentimiento (SIHCE)](StructureDefinition-Consentimiento.md)
-* [Modelo lógico DispensaReceta (SIHCE)](StructureDefinition-DispensaReceta.md)
 * [Modelo lógico DocumentoClinico (SIHCE)](StructureDefinition-DocumentoClinico.md)
 * [Modelo lógico Epicrisis (SIHCE)](StructureDefinition-Epicrisis.md)
 * [Modelo lógico FederarPersona (FederadorBA)](StructureDefinition-FederarPersona.md)
-* [Modelo lógico Informe de Laboratorio (SIHCE)](StructureDefinition-InformeLaboratorio.md)
 * [Modelo Lógico de Persona para SIHCE](StructureDefinition-MLPersona.md)
 * [Modelo lógico ModificarIDLocalPersona (FederadorBA)](StructureDefinition-ModificarIDLocalPersona.md)
 * [Modelo lógico ModificarSDMPersona (FederadorBA)](StructureDefinition-ModificarSDMPersona.md)
-* [Modelo lógico RecetaIndice (SIHCE)](StructureDefinition-RecetaIndice.md)
 
 ### Resource Profiles
 
 * [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md)
 * [Condición clínica epicrisis SIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md)
 * [Consentimiento de paciente SIHCE](StructureDefinition-ConsentSIHCE.md)
-* [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
-* [Índice de receta electrónica SIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md)
 * [Referencia a documento clínico SIHCE](StructureDefinition-DocumentReferenceSIHCE.md)
-* [Dispensa de receta SIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.md)
-* [Receta MedicationRequest SIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.md)
 * [Medicación al alta epicrisis SIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.md)
-* [Observación de laboratorio SIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md)
 * [Paciente SIHCE (PatientXBA)](StructureDefinition-PatientXBA.md)
 * [Parametros Patch Identifier SIHCE](StructureDefinition-parametros-patch-identifier-sihce.md)
 * [Parametros Update SDM SIHCE](StructureDefinition-parametros-update-sdm-sihce.md)
-
-### Extensions
-
-* [Estado de receta en índice SIHCE](StructureDefinition-extension-receta-estado.md)
-* [Repositorio delegado en SIHCE](StructureDefinition-extension-receta-repositorio-delegado.md)
 
 ### ConceptMaps
 
 * [BuscarPersona: modelo lógico a FHIR](ConceptMap-BuscarPersonaModeloAFHIR.md)
 * [Consentimiento: modelo lógico a FHIR](ConceptMap-ConsentimientoModeloAFHIR.md)
-* [DispensaReceta: modelo lógico a FHIR](ConceptMap-DispensaRecetaModeloAFHIR.md)
 * [DocumentoClinico: modelo lógico a FHIR](ConceptMap-DocumentoClinicoModeloAFHIR.md)
 * [Epicrisis: modelo lógico a FHIR](ConceptMap-EpicrisisModeloAFHIR.md)
 * [FederarPersona: modelo lógico a FHIR](ConceptMap-FederarPersonaModeloAFHIR.md)
-* [InformeLaboratorio: modelo lógico a FHIR](ConceptMap-InformeLaboratorioModeloAFHIR.md)
 * [ModificarIDLocalPersona: modelo lógico a FHIR](ConceptMap-ModificarIDLocalPersonaModeloAFHIR.md)
 * [ModificarSDMPersona: modelo lógico a FHIR](ConceptMap-ModificarSDMPersonaModeloAFHIR.md)
-* [RecetaIndice: modelo lógico a FHIR](ConceptMap-RecetaIndiceModeloAFHIR.md)
 
 ### ImplementationGuides
 
@@ -100,8 +78,6 @@
 * [NamingSystemMsgcGCBA](NamingSystem-NamingSystemMsgcGCBA.md)
 * [NamingSystemOrganizationHospitalMsgc](NamingSystem-NamingSystemOrganizationHospitalMsgc.md)
 * [RenaperDNI](NamingSystem-renaper-dni.md)
-* [SihceCuil](NamingSystem-sihce-cuil.md)
-* [SihceCuir](NamingSystem-sihce-cuir.md)
 * [SihcePersonaGlobal](NamingSystem-sihce-persona-global.md)
 
 ### Examples
@@ -114,18 +90,9 @@
 * [ConsentOptInHospitalNormalSIHCE (Consent)](Consent-ConsentOptInHospitalNormalSIHCE.md)
 * [ConsentOptInHospitalSIHCE (Consent)](Consent-ConsentOptInHospitalSIHCE.md)
 * [ConsentOptOutGeneralSIHCE (Consent)](Consent-ConsentOptOutGeneralSIHCE.md)
-* [DiagnosticReportInformeLabNivel1 (DiagnosticReport)](DiagnosticReport-DiagnosticReportInformeLabNivel1.md)
-* [DiagnosticReportInformeLabNivel2 (DiagnosticReport)](DiagnosticReport-DiagnosticReportInformeLabNivel2.md)
 * [DocumentReferenceEpicrisisNivel1 (DocumentReference)](DocumentReference-DocumentReferenceEpicrisisNivel1.md)
 * [DocumentReferenceEpicrisisNivel2 (DocumentReference)](DocumentReference-DocumentReferenceEpicrisisNivel2.md)
 * [DocumentReferenceEpicrisisNivel3 (DocumentReference)](DocumentReference-DocumentReferenceEpicrisisNivel3.md)
-* [DocumentReferenceInformeLabNivel1 (DocumentReference)](DocumentReference-DocumentReferenceInformeLabNivel1.md)
-* [DocumentReferenceInformeLabNivel2 (DocumentReference)](DocumentReference-DocumentReferenceInformeLabNivel2.md)
-* [DocumentReferenceRecetaDelegadaSIHCE (DocumentReference)](DocumentReference-DocumentReferenceRecetaDelegadaSIHCE.md)
-* [DocumentReferenceRecetaVigenteSIGEHOS (DocumentReference)](DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.md)
-* [MedicationDispenseRecetaEjemplo (MedicationDispense)](MedicationDispense-MedicationDispenseRecetaEjemplo.md)
-* [MedicationRequestRecetaSIGEHOSEjemplo (MedicationRequest)](MedicationRequest-MedicationRequestRecetaSIGEHOSEjemplo.md)
-* [Laboratorio Central Ejemplo (Organization)](Organization-lab-central-ejemplo.md)
 * [ParametrosPatchIdentifierEjemplo (Parameters)](Parameters-ParametrosPatchIdentifierEjemplo.md)
 * [ParametrosUpdateSDMEjemplo (Parameters)](Parameters-ParametrosUpdateSDMEjemplo.md)
 * [PersonaSIHCEMin (Patient)](Patient-PersonaSIHCEMin.md)

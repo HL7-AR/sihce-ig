@@ -1,4 +1,4 @@
-# Operaciones — Persona - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Operaciones — Persona - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * **Operaciones — Persona**

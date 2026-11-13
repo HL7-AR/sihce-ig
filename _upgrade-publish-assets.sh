@@ -6,6 +6,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 TEMPLATE_ASSETS="${ROOT}/template/content/assets"
+# Optional backup copy; primary navbar JS is inlined via template/includes/fragment-ig-navbar-js.html
 CANONICAL_NAVBAR="${ROOT}/_assets/js/ig-navbar.js"
 OUTPUT_ASSETS="${1:-${ROOT}/output/assets}"
 
@@ -35,12 +36,10 @@ install_assets() {
   fetch "https://code.jquery.com/ui/${JQUERY_UI_VER}/themes/base/jquery-ui.min.css" "${base}/css/jquery-ui.css"
   cp "${base}/css/jquery-ui.css" "${base}/css/jquery-ui.structure.min.css"
 
-  # Navbar from repo-stable path (publisher may wipe template/content/assets/js).
-  if [ ! -f "${CANONICAL_NAVBAR}" ]; then
-    echo "ERROR: missing ${CANONICAL_NAVBAR} (required; replaces bootstrap.min.js)" >&2
-    exit 1
+  # Optional legacy file; pages get navbar JS inlined by sanitize / fragment-ig-navbar-js.html.
+  if [ -f "${CANONICAL_NAVBAR}" ]; then
+    cp "${CANONICAL_NAVBAR}" "${base}/js/ig-navbar.js"
   fi
-  cp "${CANONICAL_NAVBAR}" "${base}/js/ig-navbar.js"
   # Clipboard helper (template source if present).
   if [ "${base}" != "${TEMPLATE_ASSETS}" ] && [ -f "${TEMPLATE_ASSETS}/js/clipboard-btn.js" ]; then
     cp "${TEMPLATE_ASSETS}/js/clipboard-btn.js" "${base}/js/clipboard-btn.js"

@@ -14,11 +14,11 @@
      fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide SIHCE.fhir.core</b></p><a name=\"SIHCE.fhir.core\"> </a><a name=\"hcSIHCE.fhir.core\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>GuiaDeImplementacionSIHCE</h2><p>The official URL for this implementation guide is: </p><pre>http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core</pre></div>"
   ] ;
   fhir:ImplementationGuide.url [ fhir:value "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core"] ;
-  fhir:ImplementationGuide.version [ fhir:value "2.2.1"] ;
+  fhir:ImplementationGuide.version [ fhir:value "2.2.2"] ;
   fhir:ImplementationGuide.name [ fhir:value "GuiaDeImplementacionSIHCE"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guía de Implementación SIHCE - FHIR R4"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-12T22:44:23-03:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-12T23:15:14-03:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -387,20 +387,6 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ValueSet/sihce-lab-observation-code-vs> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/sihce-lab-observation-code-vs" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analitos de laboratorio SIHCE (LOINC)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -570,51 +556,6 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationDispenseRecetaSIHCE" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispensa de receta SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Evento de dispensa notificado a SIHCE por la farmacia (aplicativo Opción B). Dispara actualización del índice a estado dispensada y propagación al repositorio de origen." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "MedicationDispense" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/MedicationDispense/MedicationDispenseRecetaEjemplo> ;
-         fhir:Reference.reference [ fhir:value "MedicationDispense/MedicationDispenseRecetaEjemplo" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dispensa de receta — farmacia privada" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Evento de dispensa notificado a SIHCE (anti-quema)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE" ;
-         fhir:link <http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE>
-       ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ConceptMap/DispensaRecetaModeloAFHIR> ;
-         fhir:Reference.reference [ fhir:value "ConceptMap/DispensaRecetaModeloAFHIR" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DispensaReceta: modelo lógico a FHIR" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapeo del evento de dispensa a MedicationDispenseRecetaSIHCE." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -762,48 +703,6 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/extension-receta-estado> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-receta-estado" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado de receta en índice SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Estado vigente/dispensada/anulada del índice de receta (anti-quema)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/CodeSystem/sihce-receta-estado> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/sihce-receta-estado" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado de receta en índice SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Estados del índice de receta electrónica (mecanismo anti-quema)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ValueSet/sihce-receta-estado-vs> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/sihce-receta-estado-vs" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estados de receta SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Estados admitidos en el índice de DocumentReferenceRecetaSIHCE." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -821,138 +720,12 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/DiagnosticReportLaboratorioSIHCE" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Informe de laboratorio SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReport referenciado desde DocumentReference (LOINC 11502-2). Nivel 1: presentedForm PDF. Nivel 2: presentedForm + result con Observation codificadas." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/DiagnosticReport/DiagnosticReportInformeLabNivel1> ;
-         fhir:Reference.reference [ fhir:value "DiagnosticReport/DiagnosticReportInformeLabNivel1" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Informe laboratorio nivel 1 — DiagnosticReport con PDF" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Solo presentedForm (PDF); sin entradas en result (nivel 1)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE" ;
-         fhir:link <http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE>
-       ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "DocumentReference" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/DocumentReference/DocumentReferenceInformeLabNivel1> ;
-         fhir:Reference.reference [ fhir:value "DocumentReference/DocumentReferenceInformeLabNivel1" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Informe laboratorio nivel 1 — enlace a DiagnosticReport (solo PDF)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Índice SIHCE; la URL apunta a un DiagnosticReport con presentedForm PDF sin observaciones codificadas. Paciente: [PersonaSIHCEMin](Patient-PersonaSIHCEMin.html)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE" ;
-         fhir:link <http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE>
-       ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/DiagnosticReport/DiagnosticReportInformeLabNivel2> ;
-         fhir:Reference.reference [ fhir:value "DiagnosticReport/DiagnosticReportInformeLabNivel2" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Informe laboratorio nivel 2 — PDF + glucemia y urea" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Basado en docs/examples/diagnosticreport.json (simplificado): presentedForm PDF y Observation LOINC en contained/result." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE" ;
-         fhir:link <http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE>
-       ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "DocumentReference" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/DocumentReference/DocumentReferenceInformeLabNivel2> ;
-         fhir:Reference.reference [ fhir:value "DocumentReference/DocumentReferenceInformeLabNivel2" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Informe laboratorio nivel 2 — PDF y observaciones" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Índice SIHCE; URL a DiagnosticReport con presentedForm y Observation contenidas en result." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE" ;
-         fhir:link <http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE>
-       ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ConceptMap/InformeLaboratorioModeloAFHIR> ;
-         fhir:Reference.reference [ fhir:value "ConceptMap/InformeLaboratorioModeloAFHIR" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "InformeLaboratorio: modelo lógico a FHIR" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapeo del informe de laboratorio a DocumentReference e DiagnosticReport." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "Organization" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/Organization/lab-central-ejemplo> ;
-         fhir:Reference.reference [ fhir:value "Organization/lab-central-ejemplo" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratorio Central Ejemplo" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationStatementEpicrisisSIHCE" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicación al alta epicrisis SIHCE" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "MedicationRequest" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo> ;
-         fhir:Reference.reference [ fhir:value "MedicationRequest/MedicationRequestRecetaSIGEHOSEjemplo" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationRequest receta SIGEHOS" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contenido clínico de la receta en el repositorio SIGEHOS (caso 2 / caso 3-1a)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE" ;
-         fhir:link <http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE>
-       ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -994,20 +767,6 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modelo Lógico de Persona para SIHCE" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modelo Lógico de Persona para SIHCE con foco en empadronamiento e identificación" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/DispensaReceta> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/DispensaReceta" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modelo lógico DispensaReceta (SIHCE)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Evento de dispensa notificado a SIHCE por la farmacia. Actualiza el índice (anti-quema) y se propaga al repositorio de origen cuando corresponde." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1059,20 +818,6 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/InformeLaboratorio> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/InformeLaboratorio" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modelo lógico Informe de Laboratorio (SIHCE)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Informe de laboratorio indexado vía DocumentReference; contenido DiagnosticReport en URL del dominio." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ModificarIDLocalPersona" ]
        ] ;
@@ -1092,20 +837,6 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modelo lógico ModificarSDMPersona (FederadorBA)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Actualización del SDM de una persona federada; documento inmutable." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/RecetaIndice> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/RecetaIndice" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modelo lógico RecetaIndice (SIHCE)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1166,34 +897,6 @@
          fhir:value "http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE" ;
          fhir:link <http://sihce.gob.ar/StructureDefinition/ConditionEpicrisisSIHCE>
        ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/NamingSystem/sihce-cuil> ;
-         fhir:Reference.reference [ fhir:value "NamingSystem/sihce-cuil" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NamingSystem CUIL (paciente)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Clave Única de Identificación Laboral (CUIL) del paciente, usada en búsqueda de recetas." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/NamingSystem/sihce-cuir> ;
-         fhir:Reference.reference [ fhir:value "NamingSystem/sihce-cuir" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NamingSystem CUIR (código único de receta)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identificador único de receta electrónica (CUIR) en el ecosistema SIHCE / CPE." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -1286,20 +989,6 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ObservationLaboratorioSIHCE" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observación de laboratorio SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resultado analítico codificado (LOINC) asociado a un informe de laboratorio nivel 2." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://sihce.gob.ar/StructureDefinition/PatientXBA> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/PatientXBA" ]
        ] ;
@@ -1376,34 +1065,6 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationRequestRecetaSIHCE" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Receta MedicationRequest SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contenido clínico de la receta en el repositorio de origen (SIGEHOS, prestador) o en SIHCE como repositorio delegado (excepción)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR> ;
-         fhir:Reference.reference [ fhir:value "ConceptMap/RecetaIndiceModeloAFHIR" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RecetaIndice: modelo lógico a FHIR" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapeo del índice de receta a DocumentReferenceRecetaSIHCE y MedicationRequest." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DocumentReferenceSIHCE" ]
        ] ;
@@ -1423,20 +1084,6 @@
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "renaper-dni" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/extension-receta-repositorio-delegado" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Repositorio delegado en SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Marca el caso excepcional en que SIHCE almacena el MedicationRequest (caso de uso 3, variante 1b)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1488,20 +1135,6 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ValueSet/sihce-receta-document-type-vs> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/sihce-receta-document-type-vs" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo documental de receta SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "LOINC para índice de receta electrónica." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://sihce.gob.ar/ValueSet/sihce-clinical-document-type-vs> ;
          fhir:Reference.reference [ fhir:value "ValueSet/sihce-clinical-document-type-vs" ]
        ] ;
@@ -1522,54 +1155,6 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos MIME de contenido documental SIHCE" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formatos admitidos en DocumentReference.content.attachment.contentType." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/DocumentReferenceRecetaSIHCE" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Índice de receta electrónica SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Metadatos de receta en el índice SIHCE (CUIR, paciente, efector, estado). El MedicationRequest permanece en el repositorio de origen; SIHCE actúa como broker/proxy salvo repositorio delegado (caso 3/1b)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "DocumentReference" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS> ;
-         fhir:Reference.reference [ fhir:value "DocumentReference/DocumentReferenceRecetaVigenteSIGEHOS" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Índice receta vigente — SIGEHOS (caso 2)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Metadatos de receta emitida en SIGEHOS; contenido en repositorio SIGEHOS." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE" ;
-         fhir:link <http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE>
-       ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "DocumentReference" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/DocumentReference/DocumentReferenceRecetaDelegadaSIHCE> ;
-         fhir:Reference.reference [ fhir:value "DocumentReference/DocumentReferenceRecetaDelegadaSIHCE" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Índice receta — repositorio delegado SIHCE (caso 3 / 1b)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Caso excepcional: SIHCE almacena el MedicationRequest; no hay URL de dominio de origen." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE" ;
-         fhir:link <http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE>
-       ]
      ] ;
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [
@@ -1645,16 +1230,6 @@
          fhir:Element.extension [
            fhir:index -1 ;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "Operaciones-Receta.html" ]
-         ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Operaciones-Receta.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Operaciones — Receta" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Element.extension [
-           fhir:index -1 ;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
            fhir:Extension.valueUrl [ fhir:value "CasosDeUso.html" ]
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CasosDeUso.html" ] ;
@@ -1689,16 +1264,6 @@
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CasosDeUso-Documentos.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Casos de Uso — Documentos" ] ;
-         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
-       ], [
-         fhir:index -1 ;
-         fhir:Element.extension [
-           fhir:index -1 ;
-           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-           fhir:Extension.valueUrl [ fhir:value "CasosDeUso-Receta.html" ]
-         ] ;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "CasosDeUso-Receta.html" ] ;
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Casos de Uso — Receta" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index -1 ;

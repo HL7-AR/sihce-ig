@@ -24,7 +24,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/CompositionEpicrisisSIHCE"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.2.1"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.2"] ;
   fhir:StructureDefinition.name [ fhir:value "CompositionEpicrisisSIHCE"] ;
   fhir:StructureDefinition.title [ fhir:value "Composición epicrisis SIHCE"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;

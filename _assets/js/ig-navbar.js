@@ -1,5 +1,8 @@
 /**
  * Minimal navbar for HL7 IG (Bootstrap 3 markup, no Bootstrap JS).
+ * Canonical copy for reference / optional asset publish.
+ * Runtime source of truth: template/includes/fragment-ig-navbar-js.html
+ * (inlined into every page; sanitize-publish.py also injects if missing).
  * - Collapse: toggles .collapse.in for [data-toggle="collapse"]
  * - Dropdown: toggles .open on parent .dropdown for [data-toggle="dropdown"]
  */

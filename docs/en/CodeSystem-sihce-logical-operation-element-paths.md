@@ -1,4 +1,4 @@
-# Rutas de elementos en modelos lógicos de operación SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Rutas de elementos en modelos lógicos de operación SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths | *Version*:2.2.1 | |
+| *Official URL*:http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths | *Version*:2.2.2 | |
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:SIHCELogicalOperationElementPaths |
 
  
@@ -39,12 +39,12 @@ This Code system is referenced in the definition of the following value sets:
     "valueCode" : "draft"
   }],
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-  "version" : "2.2.1",
+  "version" : "2.2.2",
   "name" : "SIHCELogicalOperationElementPaths",
   "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-11-12T22:44:23-03:00",
+  "date" : "2026-11-12T23:15:14-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -56,7 +56,7 @@ This Code system is referenced in the definition of the following value sets:
   "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 96,
+  "count" : 77,
   "concept" : [{
     "code" : "BuscarPersona.datosConsulta.tipoDocumento",
     "display" : "BuscarPersona datosConsulta tipoDocumento"
@@ -338,26 +338,6 @@ This Code system is referenced in the definition of the following value sets:
     "display" : "Epicrisis seccion codificado"
   },
   {
-    "code" : "InformeLaboratorio.nivelMadurez",
-    "display" : "InformeLaboratorio nivelMadurez"
-  },
-  {
-    "code" : "InformeLaboratorio.resultado.codigoAnalito",
-    "display" : "InformeLaboratorio resultado codigoAnalito"
-  },
-  {
-    "code" : "InformeLaboratorio.resultado.valor",
-    "display" : "InformeLaboratorio resultado valor"
-  },
-  {
-    "code" : "InformeLaboratorio.resultado.unidad",
-    "display" : "InformeLaboratorio resultado unidad"
-  },
-  {
-    "code" : "InformeLaboratorio.resultado.interpretacion",
-    "display" : "InformeLaboratorio resultado interpretacion"
-  },
-  {
     "code" : "Consentimiento.datosPaciente.idPersonaGlobal",
     "display" : "Consentimiento datosPaciente idPersonaGlobal"
   },
@@ -384,62 +364,6 @@ This Code system is referenced in the definition of the following value sets:
   {
     "code" : "Consentimiento.autorizacionHospital.nivelPrivacidad",
     "display" : "Consentimiento autorizacionHospital nivelPrivacidad"
-  },
-  {
-    "code" : "RecetaIndice.datosReceta.cuir",
-    "display" : "RecetaIndice datosReceta cuir"
-  },
-  {
-    "code" : "RecetaIndice.datosReceta.cuilPaciente",
-    "display" : "RecetaIndice datosReceta cuilPaciente"
-  },
-  {
-    "code" : "RecetaIndice.datosReceta.idPersonaGlobal",
-    "display" : "RecetaIndice datosReceta idPersonaGlobal"
-  },
-  {
-    "code" : "RecetaIndice.datosReceta.estado",
-    "display" : "RecetaIndice datosReceta estado"
-  },
-  {
-    "code" : "RecetaIndice.datosReceta.fechaEmision",
-    "display" : "RecetaIndice datosReceta fechaEmision"
-  },
-  {
-    "code" : "RecetaIndice.datosReceta.urlContenido",
-    "display" : "RecetaIndice datosReceta urlContenido"
-  },
-  {
-    "code" : "RecetaIndice.datosPrescriptor.idDominio",
-    "display" : "RecetaIndice datosPrescriptor idDominio"
-  },
-  {
-    "code" : "RecetaIndice.datosPrescriptor.idEfector",
-    "display" : "RecetaIndice datosPrescriptor idEfector"
-  },
-  {
-    "code" : "RecetaIndice.repositorioDelegado",
-    "display" : "RecetaIndice repositorioDelegado"
-  },
-  {
-    "code" : "DispensaReceta.cuir",
-    "display" : "DispensaReceta cuir"
-  },
-  {
-    "code" : "DispensaReceta.cuilPaciente",
-    "display" : "DispensaReceta cuilPaciente"
-  },
-  {
-    "code" : "DispensaReceta.fechaDispensa",
-    "display" : "DispensaReceta fechaDispensa"
-  },
-  {
-    "code" : "DispensaReceta.idFarmacia",
-    "display" : "DispensaReceta idFarmacia"
-  },
-  {
-    "code" : "DispensaReceta.nombreFarmacia",
-    "display" : "DispensaReceta nombreFarmacia"
   }]
 }
 

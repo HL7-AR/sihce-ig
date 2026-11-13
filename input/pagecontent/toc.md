@@ -8,14 +8,12 @@
    - [Consentimiento](Operaciones-Consentimiento.html)
    - [Persona](Operaciones-Persona.html)
    - [Documentos](Operaciones-Documentos.html)
-   - [Receta](Operaciones-Receta.html)
 4. [Casos de Uso](CasosDeUso.html)
    - [Consentimiento](CasosDeUso-Consentimiento.html)
    - [Persona](CasosDeUso-Persona.html)
    - [Documentos](CasosDeUso-Documentos.html)
    - [Epicrisis](Epicrisis.html)
    - [Secciones propuestas](Epicrisis-Secciones-Propuestas.html)
-   - [Receta](CasosDeUso-Receta.html)
 5. [Modelo Lógico](ModeloLogico.html)
 6. [Seguridad](Seguridad.html)
 7. [Historial de Cambios](HistorialDeCambios.html)
@@ -53,40 +51,14 @@
 
 8.15 [Composition epicrisis nivel 2](Composition-CompositionEpicrisisNivel2.html)
 
-8.16 [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.html)
+8.16 [Consentimiento SIHCE](StructureDefinition-ConsentSIHCE.html)
 
-8.17 [Observación de laboratorio SIHCE](StructureDefinition-ObservationLaboratorioSIHCE.html)
+8.17 [CodeSystem privacy-level](CodeSystem-sihce-privacy-level.html)
 
-8.18 [DocumentReference informe laboratorio nivel 1](DocumentReference-DocumentReferenceInformeLabNivel1.html)
+8.18 [NamingSystem Organization hospital (ejemplo MSGC)](NamingSystem-NamingSystemOrganizationHospitalMsgc.html)
 
-8.19 [DiagnosticReport informe laboratorio nivel 1](DiagnosticReport-DiagnosticReportInformeLabNivel1.html)
-
-8.20 [DocumentReference informe laboratorio nivel 2](DocumentReference-DocumentReferenceInformeLabNivel2.html)
-
-8.21 [DiagnosticReport informe laboratorio nivel 2](DiagnosticReport-DiagnosticReportInformeLabNivel2.html)
-
-8.22 [Consentimiento SIHCE](StructureDefinition-ConsentSIHCE.html)
-
-8.23 [CodeSystem privacy-level](CodeSystem-sihce-privacy-level.html)
-
-8.24 [NamingSystem Organization hospital (ejemplo MSGC)](NamingSystem-NamingSystemOrganizationHospitalMsgc.html)
-
-8.25 [Descarga vía Proxy Central (ITI-68)](Operaciones-Documentos.html#op-documento-proxy)
+8.19 [Descarga vía Proxy Central (ITI-68)](Operaciones-Documentos.html#op-documento-proxy)
 
 8.26 [Consent opt-in general (etapa 1)](Consent-ConsentOptInGeneralSIHCE.html)
 
 8.27 [Consent opt-in hospital + confidential (etapa 3)](Consent-ConsentOptInHospitalConfidentialSIHCE.html)
-
-8.28 [Índice de receta SIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.html)
-
-8.29 [MedicationRequest receta SIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.html)
-
-8.30 [MedicationDispense receta SIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.html)
-
-8.31 [NamingSystem CUIR](NamingSystem-sihce-cuir.html)
-
-8.32 [NamingSystem CUIL](NamingSystem-sihce-cuil.html)
-
-8.33 [Índice receta vigente SIGEHOS (ejemplo)](DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.html)
-
-8.34 [Dispensa receta (ejemplo)](MedicationDispense-MedicationDispenseRecetaEjemplo.html)

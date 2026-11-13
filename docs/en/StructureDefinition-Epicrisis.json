@@ -15,11 +15,11 @@
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/Epicrisis",
-  "version" : "2.2.1",
+  "version" : "2.2.2",
   "name" : "Epicrisis",
   "title" : "Modelo lógico Epicrisis (SIHCE)",
   "status" : "active",
-  "date" : "2026-11-12T22:44:23-03:00",
+  "date" : "2026-11-12T23:15:14-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -43,7 +43,7 @@
   "snapshot" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString" : "2.2.1"
+      "valueString" : "2.2.2"
     }],
     "element" : [{
       "id" : "Epicrisis",

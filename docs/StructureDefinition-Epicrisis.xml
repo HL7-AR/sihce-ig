@@ -18,11 +18,11 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://sihce.gob.ar/StructureDefinition/Epicrisis"/>
-  <version value="2.2.1"/>
+  <version value="2.2.2"/>
   <name value="Epicrisis"/>
   <title value="Modelo lógico Epicrisis (SIHCE)"/>
   <status value="active"/>
-  <date value="2026-11-12T22:44:23-03:00"/>
+  <date value="2026-11-12T23:15:14-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>
@@ -45,7 +45,7 @@
   <derivation value="specialization"/>
   <snapshot>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
-      <valueString value="2.2.1"/>
+      <valueString value="2.2.2"/>
     </extension>
     <element id="Epicrisis">
       <path value="Epicrisis"/>

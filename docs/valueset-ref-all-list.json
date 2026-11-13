@@ -25,8 +25,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
+    "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -40,7 +39,6 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
     "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
@@ -55,22 +53,7 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
     "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "SNOMEDCTClinicalFindings",
-    "title" : "SNOMED CT Clinical Findings",
-    "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
-    "systems" : ["http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113883.4.642.3.232"],
-    "sources" : ["2.16.840.1.113883.4.642.3.232"],
-    "uses" : {
-    },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
@@ -98,9 +81,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.241"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -142,8 +124,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.161"],
     "uses" : {
     },
-    "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
+    "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -333,48 +314,6 @@
     "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE"
   },
   {
-    "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
-    "version" : "4.0.1",
-    "status" : "active",
-    "name" : "DataAbsentReason",
-    "title" : "DataAbsentReason",
-    "description" : "Used to specify why the normally expected content of the data element is missing.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
-    "oids" : ["2.16.840.1.113883.4.642.3.5"],
-    "sources" : ["2.16.840.1.113883.4.642.3.5"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "DiagnosticReportStatus",
-    "title" : "DiagnosticReportStatus",
-    "description" : "The status of the diagnostic report.",
-    "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
-    "oids" : ["2.16.840.1.113883.4.642.3.235"],
-    "sources" : ["2.16.840.1.113883.4.642.3.235"],
-    "uses" : {
-    },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "DiagnosticServiceSectionCodes",
-    "title" : "Diagnostic Service Section Codes",
-    "description" : "This value set includes all the codes in HL7 V2 table 0074.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
-    "oids" : ["2.16.840.1.113883.4.642.3.234"],
-    "sources" : ["2.16.840.1.113883.4.642.3.234"],
-    "uses" : {
-    },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE"
-  },
-  {
     "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
     "version" : "4.0.1",
     "status" : "draft",
@@ -414,9 +353,8 @@
     "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
@@ -430,7 +368,6 @@
     "sources" : ["2.16.840.1.113883.4.642.3.7"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
     "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
@@ -445,9 +382,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.244"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/formatcodes",
@@ -461,7 +397,6 @@
     "sources" : ["1.3.6.1.4.1.19376.1.2.7.1"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
     "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
@@ -476,14 +411,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
     "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
-    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
+    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -497,14 +429,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
     "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
-    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
+    "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -518,19 +447,14 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-parametros-update-sdm-sihce.html" : "Parametros Update SDM SIHCE",
     "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE",
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)",
+    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
     "StructureDefinition-ConditionEpicrisisSIHCE.html" : "Condición clínica epicrisis SIHCE",
     "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-parametros-patch-identifier-sihce.html" : "Parametros Patch Identifier SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE",
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-parametros-update-sdm-sihce.html" : "Parametros Update SDM SIHCE",
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE",
-    "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -629,9 +553,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.375"],
     "uses" : {
     },
-    "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE",
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
+    "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/medication-statement-category",
@@ -662,146 +584,6 @@
     "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE"
   },
   {
-    "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-category",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "MedicationDispense Category Codes",
-    "title" : "Medication dispense  category  codes",
-    "description" : "MedicationDispense Category Codes",
-    "systems" : ["http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1314"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1314"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-performer-function",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "MedicationDispense Performer Function Codes",
-    "title" : "Medication dispense  performer  function  codes",
-    "description" : "MedicationDispense Performer Function Codes",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1318"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1318"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "MedicationDispense Status Codes",
-    "title" : "Medication dispense  status  codes",
-    "description" : "MedicationDispense Status Codes",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/medicationdispense-status"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1312"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1312"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status-reason",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "MedicationDispense Status Reason Codes",
-    "title" : "Medication dispense  status  reason  codes",
-    "description" : "MedicationDispense Status Codes",
-    "systems" : ["http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1316"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1316"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "medicationRequest Category Codes",
-    "title" : "Medication request  category  codes",
-    "description" : "MedicationRequest Category Codes",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/medicationrequest-category"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1322"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1322"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "medicationRequest Course of Therapy Codes",
-    "title" : "Medication request  course of  therapy  codes",
-    "description" : "MedicationRequest Course of Therapy Codes",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1326"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1326"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "medicationRequest Intent",
-    "title" : "Medication request  intent",
-    "description" : "MedicationRequest Intent Codes",
-    "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1321"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1321"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "medicationrequest Status",
-    "title" : "Medicationrequest  status",
-    "description" : "MedicationRequest Status Codes",
-    "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1320"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1320"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "medicationRequest Status Reason Codes",
-    "title" : "Medication request  status  reason  codes",
-    "description" : "MedicationRequest Status Reason Codes",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1324"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1324"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
-    "version" : "4.0.1",
-    "status" : "active",
-    "name" : "Mime Types",
-    "title" : "MimeType",
-    "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
-    "systems" : ["urn:ietf:bcp:13"],
-    "oids" : ["2.16.840.1.113883.4.642.3.1024"],
-    "sources" : ["2.16.840.1.113883.4.642.3.1024"],
-    "uses" : {
-    },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE"
-  },
-  {
     "url" : "http://hl7.org/fhir/ValueSet/name-use",
     "version" : "4.0.1",
     "status" : "active",
@@ -815,76 +597,6 @@
     },
     "StructureDefinition-MLPersona.html" : "Modelo Lógico de Persona para SIHCE",
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/observation-category",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "ObservationCategoryCodes",
-    "title" : "Observation Category Codes",
-    "description" : "Observation Category codes.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
-    "oids" : ["2.16.840.1.113883.4.642.3.403"],
-    "sources" : ["2.16.840.1.113883.4.642.3.403"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "LOINCCodes",
-    "title" : "LOINC Codes",
-    "description" : "This value set includes all LOINC codes",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113883.4.642.3.396"],
-    "sources" : ["2.16.840.1.113883.4.642.3.396"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
-    "version" : "4.0.1",
-    "status" : "active",
-    "name" : "ObservationInterpretationCodes",
-    "title" : "Observation Interpretation Codes",
-    "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"],
-    "oids" : ["2.16.840.1.113883.4.642.3.399"],
-    "sources" : ["2.16.840.1.113883.4.642.3.399"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "ObservationMethods",
-    "title" : "Observation Methods",
-    "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
-    "systems" : ["http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113883.4.642.3.395"],
-    "sources" : ["2.16.840.1.113883.4.642.3.395"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/observation-status",
-    "version" : "4.0.1",
-    "status" : "active",
-    "name" : "ObservationStatus",
-    "title" : "ObservationStatus",
-    "description" : "Codes providing the status of an observation.",
-    "systems" : ["http://hl7.org/fhir/observation-status"],
-    "oids" : ["2.16.840.1.113883.4.642.3.400"],
-    "sources" : ["2.16.840.1.113883.4.642.3.400"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -901,34 +613,6 @@
     "StructureDefinition-PatientXBA.html" : "Paciente SIHCE (PatientXBA)"
   },
   {
-    "url" : "http://hl7.org/fhir/ValueSet/performer-role",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "ProcedurePerformerRoleCodes",
-    "title" : "Procedure Performer Role Codes",
-    "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
-    "systems" : ["http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113883.4.642.3.433"],
-    "sources" : ["2.16.840.1.113883.4.642.3.433"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
-    "version" : "4.0.1",
-    "status" : "active",
-    "name" : "QuantityComparator",
-    "title" : "QuantityComparator",
-    "description" : "How the Quantity should be understood and represented.",
-    "systems" : ["http://hl7.org/fhir/quantity-comparator"],
-    "oids" : ["2.16.840.1.113883.4.642.3.59"],
-    "sources" : ["2.16.840.1.113883.4.642.3.59"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
-  },
-  {
     "url" : "http://hl7.org/fhir/ValueSet/reason-medication-status-codes",
     "version" : "4.0.1",
     "status" : "draft",
@@ -943,63 +627,6 @@
     "StructureDefinition-MedicationStatementEpicrisisSIHCE.html" : "Medicación al alta epicrisis SIHCE"
   },
   {
-    "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "ObservationReferenceRangeAppliesToCodes",
-    "title" : "Observation Reference Range Applies To Codes",
-    "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Race",
-    "http://snomed.info/sct"],
-    "oids" : ["2.16.840.1.113883.4.642.3.407"],
-    "sources" : ["2.16.840.1.113883.4.642.3.407"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "ObservationReferenceRangeMeaningCodes",
-    "title" : "Observation Reference Range Meaning Codes",
-    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/referencerange-meaning"],
-    "oids" : ["2.16.840.1.113883.4.642.3.397"],
-    "sources" : ["2.16.840.1.113883.4.642.3.397"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/report-codes",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "LOINCDiagnosticReportCodes",
-    "title" : "LOINC Diagnostic Report Codes",
-    "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
-    "systems" : ["http://loinc.org"],
-    "oids" : ["2.16.840.1.113883.4.642.3.233"],
-    "sources" : ["2.16.840.1.113883.4.642.3.233"],
-    "uses" : {
-    },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE"
-  },
-  {
-    "url" : "http://hl7.org/fhir/ValueSet/request-priority",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "RequestPriority",
-    "title" : "Request priority",
-    "description" : "The clinical priority of a diagnostic order.",
-    "systems" : ["http://hl7.org/fhir/request-priority"],
-    "oids" : ["2.16.840.1.113883.4.642.3.115"],
-    "sources" : ["2.16.840.1.113883.4.642.3.115"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
-  },
-  {
     "url" : "http://hl7.org/fhir/ValueSet/resource-types",
     "version" : "4.0.1",
     "status" : "active",
@@ -1011,11 +638,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
     "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1034,7 +659,6 @@
     "uses" : {
     },
     "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE",
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
     "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
@@ -1059,7 +683,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
-    "version" : "2.2.1",
+    "version" : "2.2.2",
     "status" : "active",
     "name" : "SIHCEClinicalDocumentTypeVS",
     "title" : "Tipos de documento clínico SIHCE",
@@ -1071,7 +695,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
-    "version" : "2.2.1",
+    "version" : "2.2.2",
     "status" : "active",
     "name" : "SIHCEDocumentContentTypeVS",
     "title" : "Tipos MIME de contenido documental SIHCE",
@@ -1079,12 +703,11 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/mimetypes"],
     "uses" : {
     },
-    "StructureDefinition-DiagnosticReportLaboratorioSIHCE.html" : "Informe de laboratorio SIHCE",
     "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
-    "version" : "2.2.1",
+    "version" : "2.2.2",
     "status" : "draft",
     "name" : "SIHCEEpicrisisDiagnosisCodeVS",
     "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto",
@@ -1093,7 +716,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
-    "version" : "2.2.1",
+    "version" : "2.2.2",
     "status" : "active",
     "name" : "SIHCEEpicrisisSectionVS",
     "title" : "Secciones LOINC de epicrisis SIHCE",
@@ -1101,20 +724,8 @@
     "systems" : ["http://loinc.org"]
   },
   {
-    "url" : "http://sihce.gob.ar/ValueSet/sihce-lab-observation-code",
-    "version" : "2.2.1",
-    "status" : "draft",
-    "name" : "SIHCELabObservationCodeVS",
-    "title" : "Analitos de laboratorio SIHCE (LOINC)",
-    "description" : "Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2.",
-    "systems" : ["http://loinc.org"],
-    "uses" : {
-    },
-    "StructureDefinition-ObservationLaboratorioSIHCE.html" : "Observación de laboratorio SIHCE"
-  },
-  {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10",
-    "version" : "2.2.1",
+    "version" : "2.2.2",
     "status" : "active",
     "name" : "SIHCEMotivoInternacionICD10VS",
     "title" : "Motivo de internación epicrisis (ICD-10)",
@@ -1126,7 +737,7 @@
   },
   {
     "url" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
-    "version" : "2.2.1",
+    "version" : "2.2.2",
     "status" : "active",
     "name" : "SIHCEPrivacyLevelVS",
     "title" : "Niveles de privacidad SIHCE",
@@ -1135,30 +746,6 @@
     "uses" : {
     },
     "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE"
-  },
-  {
-    "url" : "http://sihce.gob.ar/ValueSet/sihce-receta-document-type",
-    "version" : "2.2.1",
-    "status" : "draft",
-    "name" : "SIHCERecetaDocumentTypeVS",
-    "title" : "Tipo documental de receta SIHCE",
-    "description" : "LOINC para índice de receta electrónica.",
-    "systems" : ["http://loinc.org"],
-    "uses" : {
-    },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE"
-  },
-  {
-    "url" : "http://sihce.gob.ar/ValueSet/sihce-receta-estado",
-    "version" : "2.2.1",
-    "status" : "draft",
-    "name" : "SIHCERecetaEstadoVS",
-    "title" : "Estados de receta SIHCE",
-    "description" : "Estados admitidos en el índice de DocumentReferenceRecetaSIHCE.",
-    "systems" : ["http://sihce.gob.ar/CodeSystem/sihce-receta-estado"],
-    "uses" : {
-    },
-    "StructureDefinition-extension-receta-estado.html" : "Estado de receta en índice SIHCE"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
@@ -1170,38 +757,8 @@
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
     "uses" : {
     },
-    "StructureDefinition-DocumentReferenceRecetaSIHCE.html" : "Índice de receta electrónica SIHCE",
-    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE",
-    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE"
-  },
-  {
-    "url" : "http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType",
-    "version" : "3.0.0",
-    "status" : "active",
-    "name" : "ActPharmacySupplyType",
-    "title" : "ActPharmacySupplyType",
-    "description" : "Identifies types of dispensing events",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
-    "oids" : ["2.16.840.1.113883.1.11.16208"],
-    "sources" : ["2.16.840.1.113883.1.11.16208"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE"
-  },
-  {
-    "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
-    "version" : "3.0.0",
-    "status" : "active",
-    "name" : "ActSubstanceAdminSubstitutionCode",
-    "title" : "ActSubstanceAdminSubstitutionCode",
-    "description" : "***No description***",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"],
-    "oids" : ["2.16.840.1.113883.1.11.16621"],
-    "sources" : ["2.16.840.1.113883.1.11.16621"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
+    "StructureDefinition-CompositionEpicrisisSIHCE.html" : "Composición epicrisis SIHCE",
+    "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
@@ -1230,20 +787,5 @@
     "uses" : {
     },
     "StructureDefinition-ConsentSIHCE.html" : "Consentimiento de paciente SIHCE"
-  },
-  {
-    "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
-    "version" : "3.0.0",
-    "status" : "active",
-    "name" : "SubstanceAdminSubstitutionReason",
-    "title" : "SubstanceAdminSubstitutionReason",
-    "description" : "***No description***",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
-    "oids" : ["2.16.840.1.113883.1.11.19377"],
-    "sources" : ["2.16.840.1.113883.1.11.19377"],
-    "uses" : {
-    },
-    "StructureDefinition-MedicationDispenseRecetaSIHCE.html" : "Dispensa de receta SIHCE",
-    "StructureDefinition-MedicationRequestRecetaSIHCE.html" : "Receta MedicationRequest SIHCE"
   }]
 }

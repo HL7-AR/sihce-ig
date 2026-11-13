@@ -1,4 +1,4 @@
-# Tipos MIME de contenido documental SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Tipos MIME de contenido documental SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-document-content-type | *Version*:2.2.1 | |
+| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-document-content-type | *Version*:2.2.2 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:SIHCEDocumentContentTypeVS |
 
  
@@ -16,7 +16,6 @@ Formatos admitidos en DocumentReference.content.attachment.contentType.
 
  **References** 
 
-* [Informe de laboratorio SIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md)
 * [Referencia a documento clínico SIHCE](StructureDefinition-DocumentReferenceSIHCE.md)
 
 ### Logical Definition (CLD)
@@ -48,12 +47,12 @@ No Expansion for this valueset (Unknown Code System)
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
-  "version" : "2.2.1",
+  "version" : "2.2.2",
   "name" : "SIHCEDocumentContentTypeVS",
   "title" : "Tipos MIME de contenido documental SIHCE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-12T22:44:23-03:00",
+  "date" : "2026-11-12T23:15:14-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

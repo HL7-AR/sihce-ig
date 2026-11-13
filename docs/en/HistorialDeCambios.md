@@ -1,27 +1,32 @@
-# Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Historial de Cambios - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * **Historial de Cambios**
 
 ## Historial de Cambios
 
+### Versión 2.2.2
+
+* **Receta electrónica (CPE) no publicada:** contenido aparcado en el repo (`wip/receta/`) — no aparece en menú, páginas ni artefactos del IG. Se puede reincorporar sin reescribirlo.
+* **Informe de laboratorio no publicado:** perfiles, logical, ejemplos y narrativa aparcados en `wip/laboratorio/` (mismo criterio que Receta).
+
 ### Versión 2.2.1
 
 * **Menú dropdown reparado:** `ig-navbar.js` maneja collapse y dropdowns (Bootstrap 3 sin Bootstrap JS).
-* **Operaciones por caso de uso** con menú anidado: Consentimiento, Persona, Documentos, Receta ([índice](Operaciones.md)).
+* **Operaciones por caso de uso** con menú anidado: Consentimiento, Persona, Documentos ([índice](Operaciones.md)).
 * **Epicrisis** queda bajo el menú Casos de Uso (junto a secciones propuestas).
 * **Secciones propuestas** reformuladas como una sola página de mapeo sección → recurso FHIR / elementos (alineado a IPS 2.0); se eliminan los mini-modelos lógicos `EpicrisisPropuesta*`.
 
 ### Versión 2.2.0
 
-* **Casos de Uso en páginas separadas** con menú anidado: Consentimiento, Persona, Documentos, Receta ([índice](CasosDeUso.md)).
+* **Casos de Uso en páginas separadas** con menú anidado: Consentimiento, Persona, Documentos ([índice](CasosDeUso.md)).
 * **Epicrisis — consenso en tres niveles** documentado en [Epicrisis](Epicrisis.md): (1) archivo adjunto, (2) Composition con secciones estandarizadas, (3) codificadas cuando corresponda.
 * **Nivel 3 normativo:** solo **Motivo de internación** (LOINC 46241-6) con [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md) + [SIHCEMotivoInternacionICD10VS](ValueSet-sihce-motivo-internacion-icd10-vs.md). Ejemplos nivel 3 publicados.
 * **Secciones propuestas a votar**: [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.md). `MedicationStatementEpicrisisSIHCE` queda draft (ya no exigido por Composition).
 
 ### Versión 2.1.0
 
-* **Madurez por artefacto (FMM + standards-status):** trial-use / FMM 3 para Federación, Consentimiento, Orquestación (índice `DocumentReferenceSIHCE`) y Epicrisis; draft / FMM 1 para receta, laboratorio y soporte restante.
+* **Madurez por artefacto (FMM + standards-status):** trial-use / FMM 3 para Federación, Consentimiento, Orquestación (índice `DocumentReferenceSIHCE`) y Epicrisis; draft / FMM 1 para laboratorio y soporte restante.
 * Documentado en [Aspectos Generales](Aspectos-Generales.md#niveles-de-madurez-fmm).
 
 ### Versión 2.0.0
@@ -34,10 +39,7 @@
 
 ### Versión 1.6.0
 
-* **Receta electrónica (CPE):** casos de uso 2 (SIGEHOS → farmacia privada) y 3 (privado → farmacia, con/sin repositorio delegado).
-* Modelos lógicos [RecetaIndice](StructureDefinition-RecetaIndice.md) y [DispensaReceta](StructureDefinition-DispensaReceta.md); perfiles [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md), [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.md), [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.md).
-* NamingSystems [CUIR](NamingSystem-sihce-cuir.md) / [CUIL](NamingSystem-sihce-cuil.md); CodeSystem/ValueSet estado de receta; operaciones de índice, consulta, proxy y dispensa en [Operaciones](Operaciones-Receta.md#op-receta-index).
-* Diagramas en [Casos de Uso](CasosDeUso.md).
+* **Receta electrónica (CPE):** casos de uso 2 y 3, perfiles y NamingSystems CUIR/CUIL (contenido hoy aparcado en `wip/receta/`; no publicado en esta versión de la guía).
 
 ### Versión 1.5.0
 
@@ -57,7 +59,7 @@
 
 * **Documentos clínicos**: perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md), operaciones POST/GET documentadas en [Operaciones](Operaciones.md).
 * **Epicrisis**: modelos lógicos DocumentoClinico y Epicrisis; perfiles [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md), [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md) y [MedicationStatementEpicrisisSIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.md); niveles 1–3 (binario, narrativo, codificado).
-* **Informe de laboratorio**: modelo lógico InformeLaboratorio; perfiles [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) y [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md); niveles 1–2 (PDF en `presentedForm`; PDF + observaciones LOINC en `result`).
+* **Informe de laboratorio**: modelo lógico InformeLaboratorio; perfiles DiagnosticReportLaboratorioSIHCE y ObservationLaboratorioSIHCE; niveles 1–2 (contenido hoy aparcado en `wip/laboratorio/`; no publicado en esta versión de la guía).
 * [NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.md) para `idPersonaGlobal`.
 * Casos de uso y diagramas de secuencia para registro y consulta de epicrisis en [Casos de Uso](CasosDeUso.md).
 

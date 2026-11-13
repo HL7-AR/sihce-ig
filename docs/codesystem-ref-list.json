@@ -44,14 +44,12 @@
     "description" : "This is a place holder for the code system which is fully supported through internal means (not by this code system)",
     "uses" : {
     },
-    "ValueSet-sihce-receta-document-type-vs.html" : "Tipo documental de receta SIHCE",
     "ValueSet-sihce-clinical-document-type-vs.html" : "Tipos de documento clínico SIHCE",
-    "ValueSet-sihce-epicrisis-section-vs.html" : "Secciones LOINC de epicrisis SIHCE",
-    "ValueSet-sihce-lab-observation-code-vs.html" : "Analitos de laboratorio SIHCE (LOINC)"
+    "ValueSet-sihce-epicrisis-section-vs.html" : "Secciones LOINC de epicrisis SIHCE"
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/privacy-level",
-    "version" : "2.2.1",
+    "version" : "2.2.2",
     "status" : "active",
     "name" : "SIHCEPrivacyLevelCS",
     "title" : "Niveles de privacidad SIHCE",
@@ -62,54 +60,37 @@
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
-    "version" : "2.2.1",
+    "version" : "2.2.2",
     "status" : "draft",
     "name" : "SIHCEFhirCoreElementPaths",
     "title" : "Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE",
     "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
     "uses" : {
     },
-    "ConceptMap-ConsentimientoModeloAFHIR.html" : "Consentimiento: modelo lógico a FHIR",
-    "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
-    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR",
-    "ConceptMap-DispensaRecetaModeloAFHIR.html" : "DispensaReceta: modelo lógico a FHIR",
-    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
-    "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
-    "ConceptMap-RecetaIndiceModeloAFHIR.html" : "RecetaIndice: modelo lógico a FHIR",
-    "ConceptMap-InformeLaboratorioModeloAFHIR.html" : "InformeLaboratorio: modelo lógico a FHIR",
     "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
-    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR"
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
+    "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
+    "ConceptMap-ConsentimientoModeloAFHIR.html" : "Consentimiento: modelo lógico a FHIR",
+    "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
-    "version" : "2.2.1",
+    "version" : "2.2.2",
     "status" : "draft",
     "name" : "SIHCELogicalOperationElementPaths",
     "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
     "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
     "uses" : {
     },
-    "ConceptMap-ConsentimientoModeloAFHIR.html" : "Consentimiento: modelo lógico a FHIR",
-    "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
-    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR",
-    "ConceptMap-DispensaRecetaModeloAFHIR.html" : "DispensaReceta: modelo lógico a FHIR",
-    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
-    "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
-    "ConceptMap-RecetaIndiceModeloAFHIR.html" : "RecetaIndice: modelo lógico a FHIR",
-    "ConceptMap-InformeLaboratorioModeloAFHIR.html" : "InformeLaboratorio: modelo lógico a FHIR",
     "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
-    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR"
-  },
-  {
-    "url" : "http://sihce.gob.ar/CodeSystem/sihce-receta-estado",
-    "version" : "2.2.1",
-    "status" : "draft",
-    "name" : "SIHCERecetaEstadoCS",
-    "title" : "Estado de receta en índice SIHCE",
-    "description" : "Estados del índice de receta electrónica (mecanismo anti-quema).",
-    "uses" : {
-    },
-    "ValueSet-sihce-receta-estado-vs.html" : "Estados de receta SIHCE"
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
+    "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
+    "ConceptMap-ConsentimientoModeloAFHIR.html" : "Consentimiento: modelo lógico a FHIR",
+    "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
   },
   {
     "url" : "http://snomed.info/sct",

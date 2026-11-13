@@ -16,7 +16,7 @@ Cada artefacto de conformidad declara su madurez con las extensiones HL7 `struct
 | **Consentimiento** | trial-use | 3 | `ConsentSIHCE` (all-in al incorporarse; otras modalidades por institución/documento en evolución) |
 | **Orquestación** | trial-use | 3 | Índice documental `DocumentReferenceSIHCE` + MCC/proxy (flujos entre dominios) |
 | **Epicrisis** | trial-use | 3 | `CompositionEpicrisisSIHCE`, Motivo de internación (`ConditionEpicrisisSIHCE` + ICD-10); ver [Epicrisis](Epicrisis.html). Otras secciones codificadas = propuestas (draft) |
-| **Resto** (receta, laboratorio, etc.) | draft | 1 | Aún en definición; no exigir implementación productiva |
+| **Resto** (soporte / WIP) | draft | 1 | Aún en definición; laboratorio aparcado en `wip/laboratorio/` |
 
 La guía en conjunto permanece en estado `draft` mientras convivan capacidades trial-use y draft.
 

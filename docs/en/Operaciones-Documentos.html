@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Operaciones — Documentos - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
+    <title>Operaciones — Documentos - Guía de Implementación SIHCE - FHIR R4 v2.2.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.2.1 - 
+            <span style="display:inline-block;">2.2.2 - 
 
 
             </span>
@@ -126,9 +126,6 @@
       <li>
         <a href="Operaciones-Documentos.html">Documentos</a>
       </li>
-      <li>
-        <a href="Operaciones-Receta.html">Receta</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -153,9 +150,6 @@
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
-      </li>
-      <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>
@@ -206,7 +200,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Operaciones — Documentos</h2>
   
 
@@ -260,15 +254,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><code class="language-plaintext highlighter-rouge">18842-5</code></td>
       <td>Nivel 1: Binary PDF/XML. Niveles 2–3: <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a>. Detalle normativo: <a href="Epicrisis.html">Epicrisis</a>. Nivel 3: solo Motivo de internación (ICD-10).</td>
     </tr>
-    <tr>
-      <td><strong>Informe de laboratorio</strong> (caso especial)</td>
-      <td><code class="language-plaintext highlighter-rouge">11502-2</code></td>
-      <td><a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">DiagnosticReportLaboratorioSIHCE</a> (<code class="language-plaintext highlighter-rouge">contentType</code> = <code class="language-plaintext highlighter-rouge">application/fhir+json</code>). El PDF va en <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code>; en nivel 2, las observaciones en <code class="language-plaintext highlighter-rouge">result</code></td>
-    </tr>
   </tbody>
 </table>
 
-<p>El POST de abajo es un ejemplo de epicrisis nivel 1 (URL a PDF). Para laboratorio, el mismo <code class="language-plaintext highlighter-rouge">DocumentReference</code> usa <code class="language-plaintext highlighter-rouge">type</code> = <code class="language-plaintext highlighter-rouge">11502-2</code> y <code class="language-plaintext highlighter-rouge">content.attachment.url</code> apunta al <strong>DiagnosticReport</strong> (ver <a href="DocumentReference-DocumentReferenceInformeLabNivel1.html">DocumentReferenceInformeLabNivel1</a>).</p>
+<p>El POST de abajo es un ejemplo de epicrisis nivel 1 (URL a PDF).</p>
 
 <h4 id="request">Request</h4>
 
@@ -314,39 +303,6 @@ Content-Type: application/fhir+json
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p>Ejemplo equivalente para <strong>informe de laboratorio</strong> (índice → DiagnosticReport por URL):</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"</span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11502-2"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Laboratory report"</span><span class="w">
-    </span><span class="p">}]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://laboratorio.ejemplo.gob.ar/informe"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LAB-2026-0042"</span><span class="w">
-  </span><span class="p">}],</span><span class="w">
-  </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-06-19T15:55:00-03:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0042"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/fhir+json"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Informe LAB-2026-0042"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
 <table>
   <thead>
     <tr>
@@ -357,7 +313,7 @@ Content-Type: application/fhir+json
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">type</code></td>
-      <td>LOINC del documento (<code class="language-plaintext highlighter-rouge">18842-5</code> epicrisis, <code class="language-plaintext highlighter-rouge">11502-2</code> laboratorio, u otros del <a href="ValueSet-sihce-clinical-document-type-vs.html">ValueSet</a>).</td>
+      <td>LOINC del documento (<code class="language-plaintext highlighter-rouge">18842-5</code> epicrisis u otros del <a href="ValueSet-sihce-clinical-document-type-vs.html">ValueSet</a>).</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">subject.reference</code></td>
@@ -369,11 +325,11 @@ Content-Type: application/fhir+json
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content.attachment.url</code></td>
-      <td>URL absoluta al contenido en el dominio: Binary/Composition (epicrisis) o <strong>DiagnosticReport</strong> (laboratorio).</td>
+      <td>URL absoluta al contenido en el dominio (Binary/Composition para epicrisis).</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">content.attachment.contentType</code></td>
-      <td><code class="language-plaintext highlighter-rouge">application/pdf</code> / <code class="language-plaintext highlighter-rouge">application/xml</code> (binario) o <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition o DiagnosticReport).</td>
+      <td><code class="language-plaintext highlighter-rouge">application/pdf</code> / <code class="language-plaintext highlighter-rouge">application/xml</code> (binario) o <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition).</td>
     </tr>
   </tbody>
 </table>
@@ -391,10 +347,6 @@ Content-Type: application/fhir+json
   <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel3.html">DocumentReference epicrisis nivel 3</a></li>
   <li><a href="Composition-CompositionEpicrisisNivel3.html">Composition epicrisis nivel 3 (Motivo ICD-10)</a></li>
   <li><a href="Condition-ConditionMotivoInternacionEjemplo.html">Condition Motivo de internación (ejemplo)</a></li>
-  <li><a href="DocumentReference-DocumentReferenceInformeLabNivel1.html">DocumentReference informe laboratorio nivel 1</a></li>
-  <li><a href="DiagnosticReport-DiagnosticReportInformeLabNivel1.html">DiagnosticReport informe laboratorio nivel 1 (solo PDF)</a></li>
-  <li><a href="DocumentReference-DocumentReferenceInformeLabNivel2.html">DocumentReference informe laboratorio nivel 2</a></li>
-  <li><a href="DiagnosticReport-DiagnosticReportInformeLabNivel2.html">DiagnosticReport informe laboratorio nivel 2 (PDF + observaciones)</a></li>
 </ul>
 
 <p><a id="op-documento-consulta"></a></p>
@@ -432,7 +384,7 @@ Content-Type: application/fhir+json
       <td><code class="language-plaintext highlighter-rouge">type</code></td>
       <td>Opcional</td>
       <td>token</td>
-      <td>Tipo LOINC (<code class="language-plaintext highlighter-rouge">\|18842-5</code> epicrisis, <code class="language-plaintext highlighter-rouge">\|11502-2</code> informe de laboratorio).</td>
+      <td>Tipo LOINC (<code class="language-plaintext highlighter-rouge">\|18842-5</code> epicrisis).</td>
     </tr>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">date</code></td>
@@ -561,8 +513,7 @@ Accept: application/pdf
 
 <ul>
   <li>Nivel 1 epicrisis: <code class="language-plaintext highlighter-rouge">application/pdf</code> (Binary)</li>
-  <li>Nivel 2+: <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition o DiagnosticReport)</li>
-  <li>Informe laboratorio: PDF o DiagnosticReport según nivel</li>
+  <li>Nivel 2+: <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition)</li>
 </ul>
 
 <h4 id="errores-1">Errores</h4>
@@ -628,8 +579,8 @@ Accept: application/pdf
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 23:15-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
@@ -646,11 +597,64 @@ Accept: application/pdf
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
+  <script type="text/javascript">
+/* SIHCE: Bootstrap 3 navbar without bootstrap.min.js (publisher wipes template assets/js). */
+(function () {
+  'use strict';
+  function toggleCollapse(button) {
+    var selector = button.getAttribute('data-target');
+    if (!selector) { return; }
+    var panel = document.querySelector(selector);
+    if (!panel) { return; }
+    var open = panel.classList.toggle('in');
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function closeAllDropdowns(exceptLi) {
+    var open = document.querySelectorAll('li.dropdown.open');
+    for (var i = 0; i < open.length; i++) {
+      if (open[i] !== exceptLi) {
+        open[i].classList.remove('open');
+        var toggle = open[i].querySelector('[data-toggle="dropdown"]');
+        if (toggle) { toggle.setAttribute('aria-expanded', 'false'); }
+      }
+    }
+  }
+  function toggleDropdown(toggle) {
+    var li = toggle.closest('li.dropdown');
+    if (!li) { return; }
+    var willOpen = !li.classList.contains('open');
+    closeAllDropdowns(willOpen ? li : null);
+    if (willOpen) {
+      li.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    } else {
+      li.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  document.addEventListener('click', function (event) {
+    var collapseBtn = event.target.closest('[data-toggle="collapse"]');
+    if (collapseBtn) {
+      event.preventDefault();
+      toggleCollapse(collapseBtn);
+      return;
+    }
+    var dropdownToggle = event.target.closest('[data-toggle="dropdown"]');
+    if (dropdownToggle) {
+      event.preventDefault();
+      toggleDropdown(dropdownToggle);
+      return;
+    }
+    if (!event.target.closest('li.dropdown.open')) {
+      closeAllDropdowns(null);
+    }
+  });
+})();
+</script>
+<!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/ig-navbar.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>

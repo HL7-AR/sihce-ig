@@ -4,7 +4,7 @@
   <id value="sihce-privacy-level-vs"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-privacy-level-vs</b></p><a name="sihce-privacy-level-vs"> </a><a name="hcsihce-privacy-level-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-sihce-privacy-level.html"><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2.2.1</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-privacy-level-vs</b></p><a name="sihce-privacy-level-vs"> </a><a name="hcsihce-privacy-level-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-sihce-privacy-level.html"><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2.2.2</span></li></ul></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="3"/>
@@ -13,12 +13,12 @@
     <valueCode value="trial-use"/>
   </extension>
   <url value="http://sihce.gob.ar/ValueSet/sihce-privacy-level"/>
-  <version value="2.2.1"/>
+  <version value="2.2.2"/>
   <name value="SIHCEPrivacyLevelVS"/>
   <title value="Niveles de privacidad SIHCE"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-11-12T22:44:23-03:00"/>
+  <date value="2026-11-12T23:15:14-03:00"/>
   <publisher value="SIHCE Development Team"/>
   <contact>
     <name value="SIHCE Development Team"/>

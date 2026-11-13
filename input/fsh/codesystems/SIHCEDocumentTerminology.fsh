@@ -9,7 +9,6 @@ Description: "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC)."
 * ^extension[$standards-status].valueCode = #trial-use
 * ^experimental = false
 * include codes from system http://loinc.org where code = #18842-5
-* include codes from system http://loinc.org where code = #11502-2
 
 ValueSet: SIHCEDocumentContentTypeVS
 Id: sihce-document-content-type-vs
@@ -75,19 +74,3 @@ Description: "ValueSet histórico/propuesto para otras secciones de diagnóstico
 * ^experimental = true
 * include codes from system http://hl7.org/fhir/sid/icd-10 where code = #J18.9
 * include codes from system http://snomed.info/sct where code = #233604007
-
-ValueSet: SIHCELabObservationCodeVS
-Id: sihce-lab-observation-code-vs
-Title: "Analitos de laboratorio SIHCE (LOINC)"
-Description: "Códigos LOINC para ObservationLaboratorioSIHCE en informes nivel 2."
-* ^url = "http://sihce.gob.ar/ValueSet/sihce-lab-observation-code"
-* ^version = "1.3.0"
-* ^status = #draft
-* ^extension[$fmm].valueInteger = 1
-* ^extension[$standards-status].valueCode = #draft
-* ^experimental = false
-* include codes from system http://loinc.org where code = #2345-7
-* include codes from system http://loinc.org where code = #3094-0
-* include codes from system http://loinc.org where code = #2160-0
-* include codes from system http://loinc.org where code = #1742-6
-* include codes from system http://loinc.org where code = #718-7

@@ -13,9 +13,8 @@ Un dominio emisor registra en SIHCE los **metadatos** del documento mediante `PO
 |------|-------|--------------------------------------------|
 | Documento genérico / índice | según tipo | Recurso o binario en el dominio |
 | **Epicrisis** (caso especial) | `18842-5` | Nivel 1: Binary PDF/XML. Niveles 2–3: [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.html). Detalle normativo: [Epicrisis](Epicrisis.html). Nivel 3: solo Motivo de internación (ICD-10). |
-| **Informe de laboratorio** (caso especial) | `11502-2` | [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.html) (`contentType` = `application/fhir+json`). El PDF va en `DiagnosticReport.presentedForm`; en nivel 2, las observaciones en `result` |
 
-El POST de abajo es un ejemplo de epicrisis nivel 1 (URL a PDF). Para laboratorio, el mismo `DocumentReference` usa `type` = `11502-2` y `content.attachment.url` apunta al **DiagnosticReport** (ver [DocumentReferenceInformeLabNivel1](DocumentReference-DocumentReferenceInformeLabNivel1.html)).
+El POST de abajo es un ejemplo de epicrisis nivel 1 (URL a PDF).
 
 #### Request
 
@@ -63,47 +62,14 @@ Content-Type: application/fhir+json
 }
 ```
 
-Ejemplo equivalente para **informe de laboratorio** (índice → DiagnosticReport por URL):
-
-```json
-{
-  "resourceType": "DocumentReference",
-  "meta": {
-    "profile": ["http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"]
-  },
-  "status": "current",
-  "type": {
-    "coding": [{
-      "system": "http://loinc.org",
-      "code": "11502-2",
-      "display": "Laboratory report"
-    }]
-  },
-  "subject": {
-    "reference": "Patient/PersonaSIHCEMin"
-  },
-  "identifier": [{
-    "system": "http://laboratorio.ejemplo.gob.ar/informe",
-    "value": "LAB-2026-0042"
-  }],
-  "date": "2026-06-19T15:55:00-03:00",
-  "content": [{
-    "attachment": {
-      "url": "https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0042",
-      "contentType": "application/fhir+json",
-      "title": "Informe LAB-2026-0042"
-    }
-  }]
-}
-```
 
 | Elemento | Notas |
 |----------|--------|
-| `type` | LOINC del documento (`18842-5` epicrisis, `11502-2` laboratorio, u otros del [ValueSet](ValueSet-sihce-clinical-document-type-vs.html)). |
+| `type` | LOINC del documento (`18842-5` epicrisis u otros del [ValueSet](ValueSet-sihce-clinical-document-type-vs.html)). |
 | `subject.reference` | `Patient/{idPersonaGlobal}` — identificador SIHCE ([NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.html)). En los ejemplos publicados se usa [PersonaSIHCEMin](Patient-PersonaSIHCEMin.html). |
 | `identifier` | Id del documento asignado por el **dominio** (`system` = URI/NamingSystem del dominio). |
-| `content.attachment.url` | URL absoluta al contenido en el dominio: Binary/Composition (epicrisis) o **DiagnosticReport** (laboratorio). |
-| `content.attachment.contentType` | `application/pdf` / `application/xml` (binario) o `application/fhir+json` (Composition o DiagnosticReport). |
+| `content.attachment.url` | URL absoluta al contenido en el dominio (Binary/Composition para epicrisis). |
+| `content.attachment.contentType` | `application/pdf` / `application/xml` (binario) o `application/fhir+json` (Composition). |
 
 #### Respuesta (éxito)
 
@@ -117,10 +83,6 @@ Ejemplo equivalente para **informe de laboratorio** (índice → DiagnosticRepor
 - [DocumentReference epicrisis nivel 3](DocumentReference-DocumentReferenceEpicrisisNivel3.html)
 - [Composition epicrisis nivel 3 (Motivo ICD-10)](Composition-CompositionEpicrisisNivel3.html)
 - [Condition Motivo de internación (ejemplo)](Condition-ConditionMotivoInternacionEjemplo.html)
-- [DocumentReference informe laboratorio nivel 1](DocumentReference-DocumentReferenceInformeLabNivel1.html)
-- [DiagnosticReport informe laboratorio nivel 1 (solo PDF)](DiagnosticReport-DiagnosticReportInformeLabNivel1.html)
-- [DocumentReference informe laboratorio nivel 2](DocumentReference-DocumentReferenceInformeLabNivel2.html)
-- [DiagnosticReport informe laboratorio nivel 2 (PDF + observaciones)](DiagnosticReport-DiagnosticReportInformeLabNivel2.html)
 
 <a id="op-documento-consulta"></a>
 ### Consulta de documentos clínicos (ITI-67)
@@ -140,7 +102,7 @@ SIHCE identifica al **hospital consumidor** (Organization dentro del dominio aut
 | Parámetro | Obligatoriedad en SIHCE | Tipo / formato | Descripción |
 |-----------|-------------------------|----------------|-------------|
 | `patient.identifier` | Requerido | token (`system\|value`) | Identificador del paciente en `DocumentReference.subject` (p. ej. `http://sihce.gob.ar/persona\|{idPersonaGlobal}`). Ver [NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.html). |
-| `type` | Opcional | token | Tipo LOINC (`\|18842-5` epicrisis, `\|11502-2` informe de laboratorio). |
+| `type` | Opcional | token | Tipo LOINC (`\|18842-5` epicrisis). |
 | `date` | Opcional | date | Fecha del documento (`DocumentReference.date`). |
 | `status` | Opcional | token | `current`, `superseded`, `entered-in-error`, etc. |
 
@@ -222,8 +184,7 @@ Accept: application/pdf
 `200 OK` con el cuerpo del documento:
 
 - Nivel 1 epicrisis: `application/pdf` (Binary)
-- Nivel 2+: `application/fhir+json` (Composition o DiagnosticReport)
-- Informe laboratorio: PDF o DiagnosticReport según nivel
+- Nivel 2+: `application/fhir+json` (Composition)
 
 #### Errores
 

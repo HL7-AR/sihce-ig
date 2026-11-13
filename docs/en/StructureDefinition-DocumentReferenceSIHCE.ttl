@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.2.1"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.2"] ;
   fhir:StructureDefinition.name [ fhir:value "DocumentReferenceSIHCE"] ;
   fhir:StructureDefinition.title [ fhir:value "Referencia a documento clínico SIHCE"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;

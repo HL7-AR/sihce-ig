@@ -1,4 +1,4 @@
-# Modelo Lógico - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Modelo Lógico - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * **Modelo Lógico**
@@ -336,28 +336,6 @@ Terminología nivel 3: ICD-10 y SNOMED CT edición Argentina ([ValueSet sihce-ep
 
 Ver [ConceptMap EpicrisisModeloAFHIR](ConceptMap-EpicrisisModeloAFHIR.md), [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md), [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md) y [MedicationStatementEpicrisisSIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.md).
 
-### InformeLaboratorio
-
-#### Descripción general
-
-Caso particular de DocumentoClinico (LOINC `11502-2`) con dos niveles de madurez: (1) PDF en `DiagnosticReport.presentedForm` sin observaciones codificadas; (2) mismo PDF más `result` con [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md) (LOINC, valor cuantitativo, interpretación).
-
-#### Elementos del modelo (nivel 2)
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| nivelMadurez | code | 1..1 | `1`= solo PDF;`2`= PDF + observaciones. |
-| resultado.codigoAnalito | code | 1..1 | LOINC (p. ej.`2345-7`glucemia,`3094-0`urea). |
-| resultado.valor | string | 1..1 | Valor del resultado. |
-| resultado.unidad | string | 0..1 | Unidad UCUM. |
-| resultado.interpretacion | code | 0..1 | H / L / N (v3-ObservationInterpretation). |
-
-Terminología analitos: [ValueSet sihce-lab-observation-code](ValueSet-sihce-lab-observation-code-vs.md).
-
-#### Relaciones con FHIR
-
-Ver [ConceptMap InformeLaboratorioModeloAFHIR](ConceptMap-InformeLaboratorioModeloAFHIR.md), [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) y [ObservationLaboratorioSIHCE](StructureDefinition-ObservationLaboratorioSIHCE.md).
-
 ### Consentimiento
 
 #### Descripción general
@@ -391,62 +369,4 @@ Modelo lógico para registrar las preferencias de privacidad del paciente en SIH
 #### Relaciones con FHIR
 
 Ver [ConceptMap ConsentimientoModeloAFHIR](ConceptMap-ConsentimientoModeloAFHIR.md) y el perfil [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md).
-
-### RecetaIndice
-
-#### Descripción general
-
-Metadatos de receta electrónica indexados en SIHCE. El contenido clínico (`MedicationRequest`) permanece en el repositorio de origen (SIGEHOS o prestador privado), salvo el caso excepcional de **repositorio delegado** en SIHCE (caso de uso 3 / variante 1b).
-
-#### Elementos del modelo
-
-##### datosReceta
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| cuir | string | 1..1 | Código único de receta ([NamingSystem sihce-cuir](NamingSystem-sihce-cuir.md)). |
-| cuilPaciente | string | 1..1 | CUIL del paciente ([NamingSystem sihce-cuil](NamingSystem-sihce-cuil.md)). |
-| idPersonaGlobal | string | 0..1 | idPersonaGlobal SIHCE si ya está federado. |
-| estado | code | 1..1 | `vigente`\|`dispensada`\|`anulada`(anti-quema). |
-| fechaEmision | dateTime | 1..1 | Fecha/hora de emisión. |
-| urlContenido | URI | 1..1 | URL del MedicationRequest en el origen, o en SIHCE si repositorio delegado. |
-
-##### datosPrescriptor
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| idDominio | URI | 1..1 | URI del dominio emisor (SIGEHOS, prestador, etc.). |
-| idEfector | string | 0..1 | Identificador del establecimiento / prestador. |
-| nombreEfector | string | 0..1 | Nombre legible. |
-
-##### repositorioDelegado
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| repositorioDelegado | boolean | 0..1 | `true`solo en caso 3 / 1b (contenido en SIHCE). |
-
-#### Relaciones con FHIR
-
-Ver [ConceptMap RecetaIndiceModeloAFHIR](ConceptMap-RecetaIndiceModeloAFHIR.md), [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md) y [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.md).
-
-### DispensaReceta
-
-#### Descripción general
-
-Evento de dispensa notificado por la farmacia (aplicativo Opción B). Actualiza el índice a `dispensada` y propaga el cierre al repositorio de origen cuando corresponde.
-
-#### Elementos del modelo
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| cuir | string | 1..1 | CUIR de la receta dispensada. |
-| cuilPaciente | string | 1..1 | CUIL del paciente. |
-| fechaDispensa | dateTime | 1..1 | Momento de la dispensa. |
-| idFarmacia | string | 1..1 | Identificador de la farmacia. |
-| nombreFarmacia | string | 0..1 | Nombre legible. |
-| idDominioFarmacia | URI | 0..1 | Dominio del aplicativo de dispensa. |
-
-#### Relaciones con FHIR
-
-Ver [ConceptMap DispensaRecetaModeloAFHIR](ConceptMap-DispensaRecetaModeloAFHIR.md) y [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.md).
 

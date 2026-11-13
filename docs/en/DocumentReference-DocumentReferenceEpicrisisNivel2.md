@@ -1,4 +1,4 @@
-# Epicrisis nivel 2 — enlace a Composition - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Epicrisis nivel 2 — enlace a Composition - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

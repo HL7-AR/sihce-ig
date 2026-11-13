@@ -289,26 +289,6 @@
       "display": "Epicrisis seccion codificado"
     },
     {
-      "code": "InformeLaboratorio.nivelMadurez",
-      "display": "InformeLaboratorio nivelMadurez"
-    },
-    {
-      "code": "InformeLaboratorio.resultado.codigoAnalito",
-      "display": "InformeLaboratorio resultado codigoAnalito"
-    },
-    {
-      "code": "InformeLaboratorio.resultado.valor",
-      "display": "InformeLaboratorio resultado valor"
-    },
-    {
-      "code": "InformeLaboratorio.resultado.unidad",
-      "display": "InformeLaboratorio resultado unidad"
-    },
-    {
-      "code": "InformeLaboratorio.resultado.interpretacion",
-      "display": "InformeLaboratorio resultado interpretacion"
-    },
-    {
       "code": "Consentimiento.datosPaciente.idPersonaGlobal",
       "display": "Consentimiento datosPaciente idPersonaGlobal"
     },
@@ -335,62 +315,6 @@
     {
       "code": "Consentimiento.autorizacionHospital.nivelPrivacidad",
       "display": "Consentimiento autorizacionHospital nivelPrivacidad"
-    },
-    {
-      "code": "RecetaIndice.datosReceta.cuir",
-      "display": "RecetaIndice datosReceta cuir"
-    },
-    {
-      "code": "RecetaIndice.datosReceta.cuilPaciente",
-      "display": "RecetaIndice datosReceta cuilPaciente"
-    },
-    {
-      "code": "RecetaIndice.datosReceta.idPersonaGlobal",
-      "display": "RecetaIndice datosReceta idPersonaGlobal"
-    },
-    {
-      "code": "RecetaIndice.datosReceta.estado",
-      "display": "RecetaIndice datosReceta estado"
-    },
-    {
-      "code": "RecetaIndice.datosReceta.fechaEmision",
-      "display": "RecetaIndice datosReceta fechaEmision"
-    },
-    {
-      "code": "RecetaIndice.datosReceta.urlContenido",
-      "display": "RecetaIndice datosReceta urlContenido"
-    },
-    {
-      "code": "RecetaIndice.datosPrescriptor.idDominio",
-      "display": "RecetaIndice datosPrescriptor idDominio"
-    },
-    {
-      "code": "RecetaIndice.datosPrescriptor.idEfector",
-      "display": "RecetaIndice datosPrescriptor idEfector"
-    },
-    {
-      "code": "RecetaIndice.repositorioDelegado",
-      "display": "RecetaIndice repositorioDelegado"
-    },
-    {
-      "code": "DispensaReceta.cuir",
-      "display": "DispensaReceta cuir"
-    },
-    {
-      "code": "DispensaReceta.cuilPaciente",
-      "display": "DispensaReceta cuilPaciente"
-    },
-    {
-      "code": "DispensaReceta.fechaDispensa",
-      "display": "DispensaReceta fechaDispensa"
-    },
-    {
-      "code": "DispensaReceta.idFarmacia",
-      "display": "DispensaReceta idFarmacia"
-    },
-    {
-      "code": "DispensaReceta.nombreFarmacia",
-      "display": "DispensaReceta nombreFarmacia"
     }
   ],
   "extension": [
@@ -406,5 +330,5 @@
   "version": "1.2.0",
   "experimental": false,
   "caseSensitive": true,
-  "count": 96
+  "count": 77
 }

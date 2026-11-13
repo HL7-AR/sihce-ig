@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/FederarPersonaModeloAFHIR"] ;
-  fhir:ConceptMap.version [ fhir:value "2.2.1"] ;
+  fhir:ConceptMap.version [ fhir:value "2.2.2"] ;
   fhir:ConceptMap.name [ fhir:value "FederarPersonaModeloAFHIR"] ;
   fhir:ConceptMap.title [ fhir:value "FederarPersona: modelo lógico a FHIR"] ;
   fhir:ConceptMap.status [ fhir:value "active"] ;

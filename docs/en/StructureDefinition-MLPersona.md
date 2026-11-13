@@ -1,4 +1,4 @@
-# Modelo Lógico de Persona para SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Modelo Lógico de Persona para SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MLPersona | *Version*:2.2.1 | |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MLPersona | *Version*:2.2.2 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:MLPersona |
 
  
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/MLPersona",
-  "version" : "2.2.1",
+  "version" : "2.2.2",
   "name" : "MLPersona",
   "title" : "Modelo Lógico de Persona para SIHCE",
   "status" : "active",

@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR"] ;
-  fhir:ConceptMap.version [ fhir:value "2.2.1"] ;
+  fhir:ConceptMap.version [ fhir:value "2.2.2"] ;
   fhir:ConceptMap.name [ fhir:value "EpicrisisModeloAFHIR"] ;
   fhir:ConceptMap.title [ fhir:value "Epicrisis: modelo lógico a FHIR"] ;
   fhir:ConceptMap.status [ fhir:value "active"] ;

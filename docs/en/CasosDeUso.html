@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
+    <title>Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.2.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +47,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8"}
-    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.2.1 - 
+            <span style="display:inline-block;">2.2.2 - 
 
 
             </span>
@@ -126,9 +126,6 @@
       <li>
         <a href="Operaciones-Documentos.html">Documentos</a>
       </li>
-      <li>
-        <a href="Operaciones-Receta.html">Receta</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -153,9 +150,6 @@
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
-      </li>
-      <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>
@@ -206,7 +200,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Casos de Uso</h2>
   
 
@@ -233,7 +227,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Canal X-BA</strong> es la capa de seguridad (servidores de seguridad / ruta acordada): <strong>todo</strong> intercambio FHIR entre organizaciones transita por ese canal. No es un actor de negocio.</p>
 
-<p><strong>SIHCE</strong> expone capacidades de negocio (federación de personas, <strong>consentimiento</strong>, registro/consulta documental, <strong>índice y broker de recetas electrónicas</strong>). El “federador” no es un sistema aparte: es la funcionalidad de SIHCE sobre <code class="language-plaintext highlighter-rouge">Patient</code>.</p>
+<p><strong>SIHCE</strong> expone capacidades de negocio (federación de personas, <strong>consentimiento</strong>, registro/consulta documental). El “federador” no es un sistema aparte: es la funcionalidad de SIHCE sobre <code class="language-plaintext highlighter-rouge">Patient</code>.</p>
 
 <h3 id="vista-general-intercambio">Vista general (intercambio)</h3>
 
@@ -245,9 +239,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     XR[Servidores de seguridad]
   end
   subgraph Proveedor["SIHCE"]
-    FHIR[API FHIR Patient, Consent, DocumentReference, Receta]
+    FHIR[API FHIR Patient, Consent, DocumentReference]
   end
-  CAPP --&gt;|"Persona, documentos, recetas, contenido"| XR
+  CAPP --&gt;|"Persona, documentos, contenido"| XR
   XR --&gt; FHIR
   FHIR --&gt; XR
   XR --&gt; CAPP
@@ -274,7 +268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="CasosDeUso-Persona.html">Casos de Uso — Persona</a></td>
     </tr>
     <tr>
-      <td>Documentos clínicos (laboratorio e índice)</td>
+      <td>Documentos clínicos (índice / epicrisis)</td>
       <td><a href="CasosDeUso-Documentos.html">Casos de Uso — Documentos</a></td>
     </tr>
     <tr>
@@ -284,10 +278,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>Secciones propuestas a votar</td>
       <td><a href="Epicrisis-Secciones-Propuestas.html">Epicrisis — secciones propuestas</a></td>
-    </tr>
-    <tr>
-      <td>Receta electrónica (CPE)</td>
-      <td><a href="CasosDeUso-Receta.html">Casos de Uso — Receta</a></td>
     </tr>
   </tbody>
 </table>
@@ -316,8 +306,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 23:15-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
@@ -334,11 +324,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
+  <script type="text/javascript">
+/* SIHCE: Bootstrap 3 navbar without bootstrap.min.js (publisher wipes template assets/js). */
+(function () {
+  'use strict';
+  function toggleCollapse(button) {
+    var selector = button.getAttribute('data-target');
+    if (!selector) { return; }
+    var panel = document.querySelector(selector);
+    if (!panel) { return; }
+    var open = panel.classList.toggle('in');
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  function closeAllDropdowns(exceptLi) {
+    var open = document.querySelectorAll('li.dropdown.open');
+    for (var i = 0; i < open.length; i++) {
+      if (open[i] !== exceptLi) {
+        open[i].classList.remove('open');
+        var toggle = open[i].querySelector('[data-toggle="dropdown"]');
+        if (toggle) { toggle.setAttribute('aria-expanded', 'false'); }
+      }
+    }
+  }
+  function toggleDropdown(toggle) {
+    var li = toggle.closest('li.dropdown');
+    if (!li) { return; }
+    var willOpen = !li.classList.contains('open');
+    closeAllDropdowns(willOpen ? li : null);
+    if (willOpen) {
+      li.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    } else {
+      li.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  document.addEventListener('click', function (event) {
+    var collapseBtn = event.target.closest('[data-toggle="collapse"]');
+    if (collapseBtn) {
+      event.preventDefault();
+      toggleCollapse(collapseBtn);
+      return;
+    }
+    var dropdownToggle = event.target.closest('[data-toggle="dropdown"]');
+    if (dropdownToggle) {
+      event.preventDefault();
+      toggleDropdown(dropdownToggle);
+      return;
+    }
+    if (!event.target.closest('li.dropdown.open')) {
+      closeAllDropdowns(null);
+    }
+  });
+})();
+</script>
+<!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/ig-navbar.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>

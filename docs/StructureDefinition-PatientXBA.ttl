@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/PatientXBA"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.2.1"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.2"] ;
   fhir:StructureDefinition.name [ fhir:value "PacienteSIHCE"] ;
   fhir:StructureDefinition.title [ fhir:value "Paciente SIHCE (PatientXBA)"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;

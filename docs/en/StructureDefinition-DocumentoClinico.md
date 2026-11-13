@@ -1,4 +1,4 @@
-# Modelo lógico DocumentoClinico (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.2.1
+# Modelo lógico DocumentoClinico (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.2.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentoClinico | *Version*:2.2.1 | |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentoClinico | *Version*:2.2.2 | |
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:DocumentoClinico |
 
  
@@ -16,7 +16,7 @@ Registro e indexación de un documento clínico emitido por un dominio en SIHCE.
 
 **Usages:**
 
-* Derived from this Logical Model: [Modelo lógico Epicrisis (SIHCE)](StructureDefinition-Epicrisis.md) and [Modelo lógico Informe de Laboratorio (SIHCE)](StructureDefinition-InformeLaboratorio.md)
+* Derived from this Logical Model: [Modelo lógico Epicrisis (SIHCE)](StructureDefinition-Epicrisis.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/SIHCE.fhir.core|current/StructureDefinition/StructureDefinition-DocumentoClinico.json)
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentoClinico.
     "valueCode" : "draft"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentoClinico",
-  "version" : "2.2.1",
+  "version" : "2.2.2",
   "name" : "DocumentoClinico",
   "title" : "Modelo lógico DocumentoClinico (SIHCE)",
   "status" : "draft",
-  "date" : "2026-11-12T22:44:23-03:00",
+  "date" : "2026-11-12T23:15:14-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

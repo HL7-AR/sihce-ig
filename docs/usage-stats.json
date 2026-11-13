@@ -1,23 +1,8 @@
 {
   "package": "SIHCE.fhir.core",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "fhirVersion": "4.0.1",
-  "extensions": [
-    {
-      "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-estado",
-      "title": "Estado de receta en índice SIHCE",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado",
-      "title": "Repositorio delegado en SIHCE",
-      "types": [
-        "boolean"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
     "Composition": [
       {
@@ -37,44 +22,16 @@
         "title": "Consentimiento de paciente SIHCE"
       }
     ],
-    "DiagnosticReport": [
-      {
-        "url": "http://sihce.gob.ar/StructureDefinition/DiagnosticReportLaboratorioSIHCE",
-        "title": "Informe de laboratorio SIHCE"
-      }
-    ],
     "DocumentReference": [
-      {
-        "url": "http://sihce.gob.ar/StructureDefinition/DocumentReferenceRecetaSIHCE",
-        "title": "Índice de receta electrónica SIHCE"
-      },
       {
         "url": "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE",
         "title": "Referencia a documento clínico SIHCE"
-      }
-    ],
-    "MedicationDispense": [
-      {
-        "url": "http://sihce.gob.ar/StructureDefinition/MedicationDispenseRecetaSIHCE",
-        "title": "Dispensa de receta SIHCE"
-      }
-    ],
-    "MedicationRequest": [
-      {
-        "url": "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE",
-        "title": "Receta MedicationRequest SIHCE"
       }
     ],
     "MedicationStatement": [
       {
         "url": "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE",
         "title": "Medicación al alta epicrisis SIHCE"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE",
-        "title": "Observación de laboratorio SIHCE"
       }
     ],
     "Patient": [
@@ -119,9 +76,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -153,9 +107,6 @@
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
       "ImplementationGuide.dependsOn"
     ],
-    "http://hl7.org/fhir/tools/StructureDefinition/implied-type-slice": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
@@ -164,12 +115,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/type-profile-constraints": [
       "StructureDefinition.snapshot.element.type.profile"
-    ],
-    "http://sihce.gob.ar/StructureDefinition/extension-receta-estado": [
-      "DocumentReference"
-    ],
-    "http://sihce.gob.ar/StructureDefinition/extension-receta-repositorio-delegado": [
-      "DocumentReference"
     ]
   }
 }
