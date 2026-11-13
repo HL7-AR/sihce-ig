@@ -41,7 +41,7 @@ La tabla de consenso (abajo) indica qué secciones del negocio ya tienen slice e
 - `section.entry` → [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.html)
 - `Condition.code` → [SIHCEMotivoInternacionICD10VS](ValueSet-sihce-motivo-internacion-icd10-vs.html) (ICD-10, extensible)
 
-El resto de secciones candidatas a codificar (diagnóstico de alta, alergias, medicación, procedimientos, etc.) están en [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.html) como mini-modelos lógicos para votación; **no** son exigidas por el Composition.
+El resto de secciones candidatas a codificar están en [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.html) (mapeo sección → recurso / elementos, alineado a IPS 2.0); **no** son exigidas por el Composition.
 
 Ejemplo: [CompositionEpicrisisNivel3](Composition-CompositionEpicrisisNivel3.html).
 

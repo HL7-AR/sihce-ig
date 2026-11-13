@@ -64,16 +64,6 @@
 [ParametrosUpdateSDMSIHCE]: StructureDefinition-parametros-update-sdm-sihce.html
 [PersonaSIHCEMin]: Patient-PersonaSIHCEMin.html
 [PersonaSIHCEPatch]: Patient-PersonaSIHCEPatch.html
-[EpicrisisPropuestaAlergias]: StructureDefinition-EpicrisisPropuestaAlergias.html
-[EpicrisisPropuestaDiagnosticoAdmision]: StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.html
-[EpicrisisPropuestaDiagnosticoAlta]: StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.html
-[EpicrisisPropuestaDispositivos]: StructureDefinition-EpicrisisPropuestaDispositivos.html
-[EpicrisisPropuestaMedicacionAlta]: StructureDefinition-EpicrisisPropuestaMedicacionAlta.html
-[EpicrisisPropuestaMedicacionIngreso]: StructureDefinition-EpicrisisPropuestaMedicacionIngreso.html
-[EpicrisisPropuestaProblemas]: StructureDefinition-EpicrisisPropuestaProblemas.html
-[EpicrisisPropuestaProcedimientos]: StructureDefinition-EpicrisisPropuestaProcedimientos.html
-[EpicrisisPropuestaSignosVitales]: StructureDefinition-EpicrisisPropuestaSignosVitales.html
-[EpicrisisPropuestaVacunas]: StructureDefinition-EpicrisisPropuestaVacunas.html
 [MedicationRequestRecetaSIHCE]: StructureDefinition-MedicationRequestRecetaSIHCE.html
 [RecetaIndiceModeloAFHIR]: ConceptMap-RecetaIndiceModeloAFHIR.html
 [DocumentReferenceSIHCE]: StructureDefinition-DocumentReferenceSIHCE.html

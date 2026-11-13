@@ -19,8 +19,27 @@
   <li>
     <a href="Aspectos-Generales.html">Generalidades</a>
   </li>
-  <li>
-    <a href="Operaciones.html">Operaciones</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Operaciones
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Operaciones.html">Índice</a>
+      </li>
+      <li>
+        <a href="Operaciones-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="Operaciones-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="Operaciones-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="Operaciones-Receta.html">Receta</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
@@ -40,20 +59,13 @@
         <a href="CasosDeUso-Documentos.html">Documentos</a>
       </li>
       <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="Epicrisis.html">Niveles y consenso</a>
+        <a href="Epicrisis.html">Epicrisis</a>
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>

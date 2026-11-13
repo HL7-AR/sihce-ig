@@ -23,7 +23,7 @@
      fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/ObservationLaboratorioSIHCE"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.2.0"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.1"] ;
   fhir:StructureDefinition.name [ fhir:value "ObservationLaboratorioSIHCE"] ;
   fhir:StructureDefinition.title [ fhir:value "Observación de laboratorio SIHCE"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;

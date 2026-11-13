@@ -18,11 +18,11 @@
       </div>
    </text>
    <url value="http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core"/>
-   <version value="2.2.0"/>
+   <version value="2.2.1"/>
    <name value="GuiaDeImplementacionSIHCE"/>
    <title value="Guía de Implementación SIHCE - FHIR R4"/>
    <status value="draft"/>
-   <date value="2026-11-12T19:26:41-03:00"/>
+   <date value="2026-11-12T22:44:23-03:00"/>
    <publisher value="SIHCE Development Team"/>
    <contact>
       <name value="SIHCE Development Team"/>
@@ -1399,186 +1399,6 @@
             <valueInteger value="999999999"/>
          </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaAlergias.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaAlergias"/>
-         </reference>
-         <name value="Propuesta: Alergias (epicrisis)"/>
-         <description value="Sugerencia para votación: alergias codificadas. No normativa hasta aceptación."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaDiagnosticoAdmision"/>
-         </reference>
-         <name value="Propuesta: Diagnóstico de admisión (epicrisis)"/>
-         <description value="Sugerencia para votación: sección Diagnóstico de admisión codificada. No normativa hasta aceptación."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaDiagnosticoAlta"/>
-         </reference>
-         <name value="Propuesta: Diagnóstico de alta (epicrisis)"/>
-         <description value="Sugerencia para votación: sección Diagnóstico de alta codificada. No normativa hasta aceptación."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaDispositivos.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaDispositivos"/>
-         </reference>
-         <name value="Propuesta: Dispositivos e implantes (epicrisis)"/>
-         <description value="Sugerencia para votación: dispositivos/implantes codificados. No normativa hasta aceptación."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaMedicacionAlta.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaMedicacionAlta"/>
-         </reference>
-         <name value="Propuesta: Medicación de alta (epicrisis)"/>
-         <description value="Sugerencia para votación: medicación de alta codificada. No normativa hasta aceptación. Perfil draft relacionado: MedicationStatementEpicrisisSIHCE."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaMedicacionIngreso.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaMedicacionIngreso"/>
-         </reference>
-         <name value="Propuesta: Medicación de ingreso (epicrisis)"/>
-         <description value="Sugerencia para votación: medicación de ingreso codificada. No normativa hasta aceptación."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaProblemas.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaProblemas"/>
-         </reference>
-         <name value="Propuesta: Problemas y antecedentes (epicrisis)"/>
-         <description value="Sugerencia para votación: lista de problemas codificada. No normativa hasta aceptación."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaProcedimientos.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaProcedimientos"/>
-         </reference>
-         <name value="Propuesta: Procedimientos (epicrisis)"/>
-         <description value="Sugerencia para votación: procedimientos codificados. No normativa hasta aceptación."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaSignosVitales.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaSignosVitales"/>
-         </reference>
-         <name value="Propuesta: Signos vitales (epicrisis)"/>
-         <description value="Sugerencia para votación: signos vitales codificados. No normativa hasta aceptación."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="StructureDefinition:logical"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-EpicrisisPropuestaVacunas.html"/>
-         </extension>
-         <reference>
-            <reference value="StructureDefinition/EpicrisisPropuestaVacunas"/>
-         </reference>
-         <name value="Propuesta: Vacunas (epicrisis)"/>
-         <description value="Sugerencia para votación: inmunizaciones codificadas. No normativa hasta aceptación."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-str-logicalmodel"/>
-      </resource>
-      <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
-            <valueInteger value="999999999"/>
-         </extension>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -1855,6 +1675,38 @@
             </extension>
             <nameUrl value="Operaciones.html"/>
             <title value="Operaciones"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="Operaciones-Consentimiento.html"/>
+            </extension>
+            <nameUrl value="Operaciones-Consentimiento.html"/>
+            <title value="Operaciones — Consentimiento"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="Operaciones-Persona.html"/>
+            </extension>
+            <nameUrl value="Operaciones-Persona.html"/>
+            <title value="Operaciones — Persona"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="Operaciones-Documentos.html"/>
+            </extension>
+            <nameUrl value="Operaciones-Documentos.html"/>
+            <title value="Operaciones — Documentos"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="Operaciones-Receta.html"/>
+            </extension>
+            <nameUrl value="Operaciones-Receta.html"/>
+            <title value="Operaciones — Receta"/>
             <generation value="markdown"/>
          </page>
          <page>

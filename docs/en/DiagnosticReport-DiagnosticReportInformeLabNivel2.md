@@ -1,4 +1,4 @@
-# Informe laboratorio nivel 2 — PDF + glucemia y urea - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Informe laboratorio nivel 2 — PDF + glucemia y urea - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

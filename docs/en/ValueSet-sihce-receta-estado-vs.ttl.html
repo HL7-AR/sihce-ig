@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Estados de receta SIHCE - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
+    <title>Estados de receta SIHCE - TTL Representation - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -50,8 +50,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"14.39"}
-    h3,h4,h5,h6{--heading-prefix:"14.39"}</style>
+    <style type="text/css">h2{--heading-prefix:"18.29"}
+    h3,h4,h5,h6{--heading-prefix:"18.29"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.2.0 - 
+            <span style="display:inline-block;">2.2.1 - 
 
 
             </span>
@@ -112,8 +112,27 @@
   <li>
     <a href="Aspectos-Generales.html">Generalidades</a>
   </li>
-  <li>
-    <a href="Operaciones.html">Operaciones</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Operaciones
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Operaciones.html">Índice</a>
+      </li>
+      <li>
+        <a href="Operaciones-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="Operaciones-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="Operaciones-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="Operaciones-Receta.html">Receta</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
@@ -133,20 +152,13 @@
         <a href="CasosDeUso-Documentos.html">Documentos</a>
       </li>
       <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="Epicrisis.html">Niveles y consenso</a>
+        <a href="Epicrisis.html">Epicrisis</a>
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>
@@ -191,7 +203,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -281,7 +293,7 @@
   <a href="https://hl7.org/fhir/R4/resource.html#ValueSet.language">fhir:Resource.language</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;] ;
   <a href="https://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:DomainResource.text</a> [
      <a href="https://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ] ;
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet sihce-receta-estado-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;sihce-receta-estado-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsihce-receta-estado-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-sihce-receta-estado.html\&quot;&gt;&lt;code&gt;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version ?2.2.0&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet sihce-receta-estado-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;sihce-receta-estado-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcsihce-receta-estado-vs\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-sihce-receta-estado.html\&quot;&gt;&lt;code&gt;http://sihce.gob.ar/CodeSystem/sihce-receta-estado&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated, which means it is fixed to the version provided in this specification\&quot;&gt; version ?2.2.1&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
   ] ;
   <a href="https://hl7.org/fhir/R4/domainresource.html#ValueSet.extension">fhir:DomainResource.extension</a> [
      <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -293,12 +305,12 @@
      <a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">fhir:Extension.valueCode</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot; ]
   ] ;
   <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://sihce.gob.ar/ValueSet/sihce-receta-estado&quot;] ;
-  <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.2.0&quot;] ;
+  <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2.2.1&quot;] ;
   <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SIHCERecetaEstadoVS&quot;] ;
   <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Estados de receta SIHCE&quot;] ;
   <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;] ;
   <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">fhir:ValueSet.experimental</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean] ;
-  <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-11-12T19:26:41-03:00&quot;^^xsd:dateTime] ;
+  <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2026-11-12T22:44:23-03:00&quot;^^xsd:dateTime] ;
   <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="https://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SIHCE Development Team&quot;] ;
   <a href="https://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
      <a href="https://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> -1 ;
@@ -353,8 +365,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

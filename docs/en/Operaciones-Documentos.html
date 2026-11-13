@@ -1,0 +1,663 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Operaciones — Documentos - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/sihce-brand.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
+            <br/>
+            <span style="display:inline-block;">2.2.1 - 
+
+
+            </span>
+          </p>
+        </div>
+        <!-- Logos locales (assets/images); sin enlaces a sitios externos -->
+<div id="ig-brand-logos" class="ig-brand-logos" aria-label="HL7 Argentina y Ciudad de Buenos Aires">
+  <img class="ig-brand-logo ig-brand-logo--hl7ar"
+       src="assets/images/logo-hl7-argentina.png"
+       alt="HL7 Argentina"
+       height="44"
+       width="145"
+       loading="lazy"/>
+  <img class="ig-brand-logo ig-brand-logo--caba"
+       src="assets/images/logo-caba.svg"
+       alt="Ciudad Autónoma de Buenos Aires"
+       height="44"
+       width="134"
+       loading="lazy"/>
+</div>
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="https://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="toc.html">Contenido</a>
+  </li>
+  <li>
+    <a href="index.html">Inicio</a>
+  </li>
+  <li>
+    <a href="Aspectos-Generales.html">Generalidades</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Operaciones
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Operaciones.html">Índice</a>
+      </li>
+      <li>
+        <a href="Operaciones-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="Operaciones-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="Operaciones-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="Operaciones-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CasosDeUso.html">Índice</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="Epicrisis.html">Epicrisis</a>
+      </li>
+      <li>
+        <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="ModeloLogico.html">Modelo Lógico</a>
+  </li>
+  <li>
+    <a href="Seguridad.html">Seguridad</a>
+  </li>
+  <li>
+    <a href="HistorialDeCambios.html">Historial de Cambios</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Operaciones — Documentos</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Operaciones — Documentos</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#registro-de-documento-clínico-documentreference" id="markdown-toc-registro-de-documento-clínico-documentreference">Registro de documento clínico (DocumentReference)</a></li>
+  <li><a href="#consulta-de-documentos-clínicos-iti-67" id="markdown-toc-consulta-de-documentos-clínicos-iti-67">Consulta de documentos clínicos (ITI-67)</a></li>
+  <li><a href="#descarga-de-documento-vía-proxy-central-iti-68" id="markdown-toc-descarga-de-documento-vía-proxy-central-iti-68">Descarga de documento vía Proxy Central (ITI-68)</a></li>
+</ul>
+
+</div>
+<p>Volver al <a href="Operaciones.html">índice de operaciones</a>.</p>
+
+<p>Normativa de epicrisis: <a href="Epicrisis.html">Epicrisis</a>.</p>
+
+<p><a id="op-documento-registro"></a></p>
+<h3 id="registro-de-documento-clínico-documentreference">Registro de documento clínico (DocumentReference)</h3>
+
+<p>Un dominio emisor registra en SIHCE los <strong>metadatos</strong> del documento mediante <code class="language-plaintext highlighter-rouge">POST /DocumentReference</code> (capacidad de <strong>registro documental</strong> de SIHCE). El intercambio transita el <strong>Canal X-BA</strong>. El contenido clínico <strong>no</strong> se envía en el cuerpo del POST: permanece en el dominio emisor y se referencia con <code class="language-plaintext highlighter-rouge">content.attachment.url</code>. SIHCE <strong>no</strong> consume esas URLs; otros dominios sí pueden hacerlo, también vía Canal X-BA.</p>
+
+<p><strong>Modelo único:</strong> todo documento clínico indexado en SIHCE es un <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>. Los tipos se distinguen por LOINC en <code class="language-plaintext highlighter-rouge">DocumentReference.type</code>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>LOINC</th>
+      <th>Qué hay detrás de <code class="language-plaintext highlighter-rouge">content.attachment.url</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Documento genérico / índice</td>
+      <td>según tipo</td>
+      <td>Recurso o binario en el dominio</td>
+    </tr>
+    <tr>
+      <td><strong>Epicrisis</strong> (caso especial)</td>
+      <td><code class="language-plaintext highlighter-rouge">18842-5</code></td>
+      <td>Nivel 1: Binary PDF/XML. Niveles 2–3: <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a>. Detalle normativo: <a href="Epicrisis.html">Epicrisis</a>. Nivel 3: solo Motivo de internación (ICD-10).</td>
+    </tr>
+    <tr>
+      <td><strong>Informe de laboratorio</strong> (caso especial)</td>
+      <td><code class="language-plaintext highlighter-rouge">11502-2</code></td>
+      <td><a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">DiagnosticReportLaboratorioSIHCE</a> (<code class="language-plaintext highlighter-rouge">contentType</code> = <code class="language-plaintext highlighter-rouge">application/fhir+json</code>). El PDF va en <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code>; en nivel 2, las observaciones en <code class="language-plaintext highlighter-rouge">result</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>El POST de abajo es un ejemplo de epicrisis nivel 1 (URL a PDF). Para laboratorio, el mismo <code class="language-plaintext highlighter-rouge">DocumentReference</code> usa <code class="language-plaintext highlighter-rouge">type</code> = <code class="language-plaintext highlighter-rouge">11502-2</code> y <code class="language-plaintext highlighter-rouge">content.attachment.url</code> apunta al <strong>DiagnosticReport</strong> (ver <a href="DocumentReference-DocumentReferenceInformeLabNivel1.html">DocumentReferenceInformeLabNivel1</a>).</p>
+
+<h4 id="request">Request</h4>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /DocumentReference
+Content-Type: application/fhir+json
+</span></code></pre></div></div>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"18842-5"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Discharge summary"</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hospitalitaliano.org.ar/fhir/documento"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EP-2026-0042"</span><span class="w">
+  </span><span class="p">}],</span><span class="w">
+  </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-06-08T14:30:00-03:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"custodian"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hospitalitaliano.org.ar/fhir"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hospital-italiano"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hospital Italiano de Buenos Aires"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/pdf"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Epicrisis EP-2026-0042"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Ejemplo equivalente para <strong>informe de laboratorio</strong> (índice → DiagnosticReport por URL):</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11502-2"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Laboratory report"</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://laboratorio.ejemplo.gob.ar/informe"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LAB-2026-0042"</span><span class="w">
+  </span><span class="p">}],</span><span class="w">
+  </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-06-19T15:55:00-03:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0042"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/fhir+json"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Informe LAB-2026-0042"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>LOINC del documento (<code class="language-plaintext highlighter-rouge">18842-5</code> epicrisis, <code class="language-plaintext highlighter-rouge">11502-2</code> laboratorio, u otros del <a href="ValueSet-sihce-clinical-document-type-vs.html">ValueSet</a>).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject.reference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Patient/{idPersonaGlobal}</code> — identificador SIHCE (<a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>). En los ejemplos publicados se usa <a href="Patient-PersonaSIHCEMin.html">PersonaSIHCEMin</a>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
+      <td>Id del documento asignado por el <strong>dominio</strong> (<code class="language-plaintext highlighter-rouge">system</code> = URI/NamingSystem del dominio).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">content.attachment.url</code></td>
+      <td>URL absoluta al contenido en el dominio: Binary/Composition (epicrisis) o <strong>DiagnosticReport</strong> (laboratorio).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">content.attachment.contentType</code></td>
+      <td><code class="language-plaintext highlighter-rouge">application/pdf</code> / <code class="language-plaintext highlighter-rouge">application/xml</code> (binario) o <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition o DiagnosticReport).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="respuesta-éxito">Respuesta (éxito)</h4>
+
+<p><code class="language-plaintext highlighter-rouge">201 Created</code> con cabecera <strong><code class="language-plaintext highlighter-rouge">Location</code></strong> apuntando al <code class="language-plaintext highlighter-rouge">DocumentReference</code> creado en SIHCE y cuerpo con el recurso indexado (incluye id lógico asignado por SIHCE).</p>
+
+<h4 id="ejemplos-publicados">Ejemplos publicados</h4>
+
+<ul>
+  <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel1.html">DocumentReference epicrisis nivel 1 (PDF)</a></li>
+  <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel2.html">DocumentReference epicrisis nivel 2 (Composition)</a></li>
+  <li><a href="Composition-CompositionEpicrisisNivel2.html">Composition epicrisis nivel 2 (narrativa)</a></li>
+  <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel3.html">DocumentReference epicrisis nivel 3</a></li>
+  <li><a href="Composition-CompositionEpicrisisNivel3.html">Composition epicrisis nivel 3 (Motivo ICD-10)</a></li>
+  <li><a href="Condition-ConditionMotivoInternacionEjemplo.html">Condition Motivo de internación (ejemplo)</a></li>
+  <li><a href="DocumentReference-DocumentReferenceInformeLabNivel1.html">DocumentReference informe laboratorio nivel 1</a></li>
+  <li><a href="DiagnosticReport-DiagnosticReportInformeLabNivel1.html">DiagnosticReport informe laboratorio nivel 1 (solo PDF)</a></li>
+  <li><a href="DocumentReference-DocumentReferenceInformeLabNivel2.html">DocumentReference informe laboratorio nivel 2</a></li>
+  <li><a href="DiagnosticReport-DiagnosticReportInformeLabNivel2.html">DiagnosticReport informe laboratorio nivel 2 (PDF + observaciones)</a></li>
+</ul>
+
+<p><a id="op-documento-consulta"></a></p>
+<h3 id="consulta-de-documentos-clínicos-iti-67">Consulta de documentos clínicos (ITI-67)</h3>
+
+<p>Búsqueda FHIR R4 sobre <code class="language-plaintext highlighter-rouge">DocumentReference</code> (<a href="https://hl7.org/fhir/R4/documentreference.html#search">search</a>). Corresponde a <strong>ITI-67</strong> (query de metadatos documentales en el índice central). El índice lo responde la capacidad de <strong>registro documental</strong> de SIHCE. La solicitud viaja por el <strong>Canal X-BA</strong>.</p>
+
+<p><strong>Prerrequisito:</strong> SIHCE Core evalúa el consentimiento del paciente en el <strong>Motor Central de Consentimientos (MCC)</strong> — recurso <a href="StructureDefinition-ConsentSIHCE.html"><code class="language-plaintext highlighter-rouge">Consent</code></a> persistido en SIHCE. Sin consentimiento activo (ALLOW) → <strong>403 Forbidden</strong>. Ver <a href="Operaciones-Consentimiento.html#op-consentimiento">Registro de consentimiento</a>.</p>
+
+<p><strong>Respuesta:</strong> SIHCE <strong>no</strong> devuelve la URL real del hospital custodio. En <code class="language-plaintext highlighter-rouge">content.attachment.url</code> entrega la ruta del <strong>Proxy Central</strong> (consumible con GET estándar en la <a href="Operaciones-Documentos.html#op-documento-proxy">descarga ITI-68</a>), p. ej. <code class="language-plaintext highlighter-rouge">https://api.sihce.salud.buenosaires.gob.ar/Proxy/Binary/doc-99</code>.</p>
+
+<h4 id="contexto-del-hospital-solicitante">Contexto del hospital solicitante</h4>
+
+<p>SIHCE identifica al <strong>hospital consumidor</strong> (Organization dentro del dominio autenticado) a partir del contexto de la solicitud autenticada en Canal X-BA — p. ej. identificador de organización en el token o metadatos del cliente. Ese hospital debe coincidir con un <code class="language-plaintext highlighter-rouge">actor</code> autorizado en el Consent cuando está desplegada la etapa 2 o 3.</p>
+
+<h4 id="parámetros-de-búsqueda">Parámetros de búsqueda</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parámetro</th>
+      <th>Obligatoriedad en SIHCE</th>
+      <th>Tipo / formato</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patient.identifier</code></td>
+      <td>Requerido</td>
+      <td>token (<code class="language-plaintext highlighter-rouge">system\|value</code>)</td>
+      <td>Identificador del paciente en <code class="language-plaintext highlighter-rouge">DocumentReference.subject</code> (p. ej. <code class="language-plaintext highlighter-rouge">http://sihce.gob.ar/persona\|{idPersonaGlobal}</code>). Ver <a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>Opcional</td>
+      <td>token</td>
+      <td>Tipo LOINC (<code class="language-plaintext highlighter-rouge">\|18842-5</code> epicrisis, <code class="language-plaintext highlighter-rouge">\|11502-2</code> informe de laboratorio).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>Opcional</td>
+      <td>date</td>
+      <td>Fecha del documento (<code class="language-plaintext highlighter-rouge">DocumentReference.date</code>).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>Opcional</td>
+      <td>token</td>
+      <td><code class="language-plaintext highlighter-rouge">current</code>, <code class="language-plaintext highlighter-rouge">superseded</code>, <code class="language-plaintext highlighter-rouge">entered-in-error</code>, etc.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="request-ejemplo">Request (ejemplo)</h4>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /DocumentReference?patient.identifier=http://sihce.gob.ar/persona|987654321&amp;type=http://loinc.org|18842-5&amp;status=current
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+Accept: application/fhir+json
+</span></code></pre></div></div>
+
+<p>Claims JWT recomendados para acceso documental (además de autenticación de dominio):</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"patient_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"organization_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hospital-central-88392"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"organization_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://msgc.gcba.gob.ar"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"intent_reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tratamiento"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="respuesta-esperada">Respuesta esperada</h4>
+
+<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> tipo <code class="language-plaintext highlighter-rouge">searchset</code>. Cada <code class="language-plaintext highlighter-rouge">DocumentReference</code> incluye <code class="language-plaintext highlighter-rouge">content.attachment.url</code> con la <strong>URL del Proxy Central</strong> (no la URL del hospital custodio). SIHCE filtra entradas según el nivel de privacidad otorgado al hospital (<code class="language-plaintext highlighter-rouge">normal</code> / <code class="language-plaintext highlighter-rouge">confidential</code>).</p>
+
+<p>Fragmento de ejemplo:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dr-epi-001"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/pdf"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.sihce.salud.buenosaires.gob.ar/Proxy/Binary/doc-99"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Epicrisis"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="errores">Errores</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Situación</th>
+      <th>HTTP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sin Consent activo</td>
+      <td>403</td>
+    </tr>
+    <tr>
+      <td>Opt-out general</td>
+      <td>403</td>
+    </tr>
+    <tr>
+      <td>Hospital no autorizado (etapa 2/3)</td>
+      <td>403</td>
+    </tr>
+    <tr>
+      <td>Dominio no autenticado</td>
+      <td>401</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>SIHCE genera <strong><code class="language-plaintext highlighter-rouge">AuditEvent</code></strong> por cada consulta (éxito o denegación).</p>
+
+<p><a id="op-documento-proxy"></a></p>
+<h3 id="descarga-de-documento-vía-proxy-central-iti-68">Descarga de documento vía Proxy Central (ITI-68)</h3>
+
+<p>Para obtener el contenido clínico, el hospital solicitante ejecuta un <strong>GET HTTP estándar</strong> contra la URL devuelta en la búsqueda (Fase 1). No se requiere operación propietaria de canje.</p>
+
+<p>Corresponde a <strong>ITI-68</strong> (Retrieve Document): SIHCE Core actúa como <strong>proxy inverso sincrónico</strong> — intercepta la petición, revalida consentimiento en el MCC, resuelve la URL real del hospital custodio desde el índice y ejecuta <strong>proxy pass</strong> (streaming de bytes <strong>sin persistencia en disco</strong> en el núcleo central), propagando la identidad del solicitante de extremo a extremo.</p>
+
+<h4 id="request-1">Request</h4>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Proxy/Binary/doc-99
+Host: api.sihce.salud.buenosaires.gob.ar
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+Accept: application/pdf
+</span></code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Elemento</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{id}</code></td>
+      <td>Identificador opaco del documento en el índice SIHCE (p. ej. <code class="language-plaintext highlighter-rouge">doc-99</code>).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Authorization</code></td>
+      <td>JWT del dominio/profesional solicitante (mismo contexto que la búsqueda).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Accept</code></td>
+      <td>MIME esperado (<code class="language-plaintext highlighter-rouge">application/pdf</code>, <code class="language-plaintext highlighter-rouge">application/fhir+json</code>, etc.).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="respuesta-éxito-1">Respuesta (éxito)</h4>
+
+<p><code class="language-plaintext highlighter-rouge">200 OK</code> con el cuerpo del documento:</p>
+
+<ul>
+  <li>Nivel 1 epicrisis: <code class="language-plaintext highlighter-rouge">application/pdf</code> (Binary)</li>
+  <li>Nivel 2+: <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition o DiagnosticReport)</li>
+  <li>Informe laboratorio: PDF o DiagnosticReport según nivel</li>
+</ul>
+
+<h4 id="errores-1">Errores</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Situación</th>
+      <th>HTTP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Consentimiento denegado en MCC</td>
+      <td>403</td>
+    </tr>
+    <tr>
+      <td>Documento inexistente en índice</td>
+      <td>404</td>
+    </tr>
+    <tr>
+      <td>Hospital custodio no disponible</td>
+      <td>502 / 504</td>
+    </tr>
+    <tr>
+      <td>Dominio no autenticado</td>
+      <td>401</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>SIHCE genera <strong><code class="language-plaintext highlighter-rouge">AuditEvent</code></strong> por cada descarga (éxito o denegación).</p>
+
+<h4 id="ventajas">Ventajas</h4>
+
+<ul>
+  <li><strong>Plug &amp; play</strong> IHE MHD: cualquier visor compatible con GET puede integrarse.</li>
+  <li><strong>Menor latencia:</strong> un solo GET por documento, sin pasos intermedios de canje.</li>
+  <li><strong>Orquestación centralizada:</strong> el solicitante no contacta directamente al hospital custodio.</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
+          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/ig-navbar.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

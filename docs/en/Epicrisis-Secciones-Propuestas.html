@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Epicrisis — secciones propuestas - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
+    <title>Epicrisis — secciones propuestas - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,8 +47,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"10"}
-    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <style type="text/css">h2{--heading-prefix:"14"}
+    h3,h4,h5,h6{--heading-prefix:"14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.2.0 - 
+            <span style="display:inline-block;">2.2.1 - 
 
 
             </span>
@@ -109,8 +109,27 @@
   <li>
     <a href="Aspectos-Generales.html">Generalidades</a>
   </li>
-  <li>
-    <a href="Operaciones.html">Operaciones</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Operaciones
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Operaciones.html">Índice</a>
+      </li>
+      <li>
+        <a href="Operaciones-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="Operaciones-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="Operaciones-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="Operaciones-Receta.html">Receta</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
@@ -130,20 +149,13 @@
         <a href="CasosDeUso-Documentos.html">Documentos</a>
       </li>
       <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="Epicrisis.html">Niveles y consenso</a>
+        <a href="Epicrisis.html">Epicrisis</a>
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>
@@ -194,7 +206,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Epicrisis — secciones propuestas</h2>
   
 
@@ -212,153 +224,439 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#cómo-usar-esta-página" id="markdown-toc-cómo-usar-esta-página">Cómo usar esta página</a></li>
-  <li><a href="#tabla-de-votación-candidatas-a-nivel-3" id="markdown-toc-tabla-de-votación-candidatas-a-nivel-3">Tabla de votación (candidatas a nivel 3)</a></li>
-  <li><a href="#notas" id="markdown-toc-notas">Notas</a></li>
+  <li><a href="#criterios-de-la-propuesta" id="markdown-toc-criterios-de-la-propuesta">Criterios de la propuesta</a></li>
+  <li><a href="#cómo-votar" id="markdown-toc-cómo-votar">Cómo votar</a></li>
+  <li><a href="#cabecera-del-documento-no-son-secciones-loinc" id="markdown-toc-cabecera-del-documento-no-son-secciones-loinc">Cabecera del documento (no son “secciones” LOINC)</a></li>
+  <li><a href="#secciones-clínicas--obligatorias" id="markdown-toc-secciones-clínicas--obligatorias">Secciones clínicas — Obligatorias</a></li>
+  <li><a href="#secciones-clínicas--recomendadas" id="markdown-toc-secciones-clínicas--recomendadas">Secciones clínicas — Recomendadas</a></li>
+  <li><a href="#secciones-clínicas--opcionales" id="markdown-toc-secciones-clínicas--opcionales">Secciones clínicas — Opcionales</a></li>
+  <li><a href="#secciones--a-definir" id="markdown-toc-secciones--a-definir">Secciones — A definir</a></li>
+  <li><a href="#prioridad-sugerida-para-tipar-nivel-3-después-de-motivo" id="markdown-toc-prioridad-sugerida-para-tipar-nivel-3-después-de-motivo">Prioridad sugerida para tipar nivel 3 (después de Motivo)</a></li>
+  <li><a href="#fuera-de-esta-página" id="markdown-toc-fuera-de-esta-página">Fuera de esta página</a></li>
 </ul>
 
 </div>
-<p>Página de <strong>propuestas</strong> para votar qué secciones de epicrisis pasar a <strong>nivel 3</strong> (codificadas). <strong>No son normativa</strong> hasta que se aprueben e incorporen al <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a>.</p>
+<p>Propuesta de <strong>mapeo de secciones → recurso FHIR</strong> para epicrisis nivel 3 (codificada). Alineada a patrones de <a href="https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Composition-uv-ips.html">IPS 2.0 Composition</a> y al consenso SIHCE. <strong>No es normativa</strong> hasta votación e incorporación a <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a>.</p>
 
-<p>Normativa vigente (tres niveles + Motivo de internación ICD-10): <a href="Epicrisis.html">Epicrisis</a>.</p>
+<p>Normativa vigente: <a href="Epicrisis.html">Epicrisis</a> (tres niveles; hoy solo <strong>Motivo de internación</strong> codificado con ICD-10).</p>
 
-<p>Cada fila resume el mini-modelo lógico FSH (draft / FMM 1) con recurso FHIR sugerido, elementos clave y sistema de códigos. Los artefactos están publicados bajo Artefactos → StructureDefinitions lógicas <code class="language-plaintext highlighter-rouge">EpicrisisPropuesta*</code>.</p>
-
-<h3 id="cómo-usar-esta-página">Cómo usar esta página</h3>
+<h3 id="criterios-de-la-propuesta">Criterios de la propuesta</h3>
 
 <ol>
-  <li>Revisar prioridad del consenso (obligatorio / recomendado / opcional).</li>
-  <li>Validar LOINC de sección, recurso y terminología propuestos.</li>
-  <li>Marcar en la mesa de trabajo: <strong>aceptar</strong> / <strong>ajustar</strong> / <strong>diferir</strong>.</li>
-  <li>Solo las aceptadas se tipan como <code class="language-plaintext highlighter-rouge">section.entry</code> en el Composition.</li>
+  <li><strong>Un recurso principal por sección</strong> (entry de <code class="language-plaintext highlighter-rouge">Composition.section</code>), salvo cabecera del Composition / Encounter compartido.</li>
+  <li><strong>Elementos mínimos</strong> suficientes para interoperar (no el perfil completo).</li>
+  <li><strong>Preferir IPS 2.0</strong> cuando la sección exista allí; si es propia de epicrisis (alta hospitalaria), usar el recurso FHIR R4 más habitual en discharge summaries.</li>
+  <li>Toda sección nivel 2+ conserva <code class="language-plaintext highlighter-rouge">section.text</code>; el <code class="language-plaintext highlighter-rouge">entry</code> es el salto a nivel 3.</li>
 </ol>
 
-<h3 id="tabla-de-votación-candidatas-a-nivel-3">Tabla de votación (candidatas a nivel 3)</h3>
+<h3 id="cómo-votar">Cómo votar</h3>
+
+<p>Para cada fila: <strong>aceptar</strong> / <strong>ajustar</strong> (cambiar recurso o elementos) / <strong>diferir</strong>. Solo las aceptadas se tipan en el Composition.</p>
+
+<h3 id="cabecera-del-documento-no-son-secciones-loinc">Cabecera del documento (no son “secciones” LOINC)</h3>
+
+<p>Cubren tres ítems obligatorios del consenso vía el propio Composition / Encounter, no como <code class="language-plaintext highlighter-rouge">section.entry</code>.</p>
 
 <table>
   <thead>
     <tr>
-      <th>#</th>
-      <th>Sección</th>
-      <th>Consenso</th>
-      <th>LOINC propuesto</th>
+      <th>Dato (consenso)</th>
       <th>Recurso</th>
-      <th>Elementos clave</th>
-      <th>Codificación</th>
-      <th>Logical FSH</th>
+      <th>Elementos principales</th>
+      <th>Notas IPS / uso</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
-      <td>Diagnóstico de alta</td>
-      <td>Obligatorio</td>
-      <td>78375-3</td>
-      <td>Condition</td>
-      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">clinicalStatus</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
-      <td>ICD-10 (+ SNOMED AR opcional)</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.html">EpicrisisPropuestaDiagnosticoAlta</a></td>
+      <td>Identificación del paciente</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code> (vía <code class="language-plaintext highlighter-rouge">Composition.subject</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code>, <code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">birthDate</code>, <code class="language-plaintext highlighter-rouge">gender</code></td>
+      <td>Igual que IPS: sujeto del Composition</td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>Diagnóstico de admisión</td>
-      <td>Opcional</td>
-      <td>42347-5</td>
-      <td>Condition</td>
-      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
-      <td>ICD-10</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.html">EpicrisisPropuestaDiagnosticoAdmision</a></td>
+      <td>Fechas y horas</td>
+      <td><code class="language-plaintext highlighter-rouge">Composition</code> + <code class="language-plaintext highlighter-rouge">Encounter</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Composition.date</code>; <code class="language-plaintext highlighter-rouge">Encounter.period.start</code> / <code class="language-plaintext highlighter-rouge">end</code></td>
+      <td>Alta / internación</td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>Problemas y antecedentes</td>
-      <td>Obligatorio</td>
-      <td>11450-4</td>
-      <td>Condition</td>
-      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">category</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
-      <td>ICD-10 / SNOMED</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaProblemas.html">EpicrisisPropuestaProblemas</a></td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Alergias</td>
-      <td>Obligatorio</td>
-      <td>48765-2</td>
-      <td>AllergyIntolerance</td>
-      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">criticality</code>, <code class="language-plaintext highlighter-rouge">patient</code></td>
-      <td>SNOMED / ATC</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaAlergias.html">EpicrisisPropuestaAlergias</a></td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>Medicación de ingreso</td>
-      <td>Obligatorio</td>
-      <td>42346-7</td>
-      <td>MedicationStatement</td>
-      <td><code class="language-plaintext highlighter-rouge">medication</code>, <code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
-      <td>SNOMED / ATC / local</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaMedicacionIngreso.html">EpicrisisPropuestaMedicacionIngreso</a></td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Medicación de alta</td>
-      <td>Obligatorio</td>
-      <td>75311-1</td>
-      <td>MedicationStatement</td>
-      <td><code class="language-plaintext highlighter-rouge">medication</code>, <code class="language-plaintext highlighter-rouge">dosage</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
-      <td>SNOMED / ATC / local</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaMedicacionAlta.html">EpicrisisPropuestaMedicacionAlta</a></td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Procedimientos</td>
-      <td>Obligatorio</td>
-      <td>47519-4</td>
-      <td>Procedure</td>
-      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">performed[x]</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
-      <td>SNOMED / CIE-9/10-PCS</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaProcedimientos.html">EpicrisisPropuestaProcedimientos</a></td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>Signos vitales</td>
-      <td>Opcional</td>
-      <td>(panel)</td>
-      <td>Observation</td>
-      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">value[x]</code>, <code class="language-plaintext highlighter-rouge">effective[x]</code></td>
-      <td>LOINC</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaSignosVitales.html">EpicrisisPropuestaSignosVitales</a></td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>Vacunas</td>
-      <td>Opcional</td>
-      <td>11369-6</td>
-      <td>Immunization</td>
-      <td><code class="language-plaintext highlighter-rouge">vaccineCode</code>, <code class="language-plaintext highlighter-rouge">occurrence[x]</code>, <code class="language-plaintext highlighter-rouge">patient</code></td>
-      <td>SNOMED / CVX</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaVacunas.html">EpicrisisPropuestaVacunas</a></td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>Dispositivos e implantes</td>
-      <td>Recomendado</td>
-      <td>46264-8</td>
-      <td>Device / DeviceUseStatement</td>
-      <td><code class="language-plaintext highlighter-rouge">type</code> / <code class="language-plaintext highlighter-rouge">device</code>, <code class="language-plaintext highlighter-rouge">patient</code></td>
-      <td>SNOMED / GMDN</td>
-      <td><a href="StructureDefinition-EpicrisisPropuestaDispositivos.html">EpicrisisPropuestaDispositivos</a></td>
+      <td>Autor, validación y firma</td>
+      <td><code class="language-plaintext highlighter-rouge">Composition.author</code> → <code class="language-plaintext highlighter-rouge">Practitioner</code> / <code class="language-plaintext highlighter-rouge">Organization</code></td>
+      <td><code class="language-plaintext highlighter-rouge">author</code>, <code class="language-plaintext highlighter-rouge">attester</code> (si aplica), <code class="language-plaintext highlighter-rouge">custodian</code></td>
+      <td>IPS usa author + attester</td>
     </tr>
   </tbody>
 </table>
 
-<p><strong>Ya normativa (no votar):</strong> Motivo de internación — LOINC 46241-6, <code class="language-plaintext highlighter-rouge">Condition</code> + <a href="ValueSet-sihce-motivo-internacion-icd10-vs.html">SIHCEMotivoInternacionICD10VS</a>.</p>
+<p><code class="language-plaintext highlighter-rouge">Encounter</code> de la internación (recomendado como contexto compartido): <code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">class</code>, <code class="language-plaintext highlighter-rouge">type</code>, <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">period</code>, <code class="language-plaintext highlighter-rouge">hospitalization.admitSource</code>, <code class="language-plaintext highlighter-rouge">hospitalization.dischargeDisposition</code>, <code class="language-plaintext highlighter-rouge">location</code>.</p>
 
-<h3 id="notas">Notas</h3>
+<h3 id="secciones-clínicas--obligatorias">Secciones clínicas — Obligatorias</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sección</th>
+      <th>LOINC (propuesto)</th>
+      <th>Recurso principal</th>
+      <th>Elementos principales</th>
+      <th>Terminología</th>
+      <th>Ref. IPS / notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Motivo de internación</td>
+      <td>46241-6</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">clinicalStatus</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td><strong>ICD-10</strong></td>
+      <td><strong>Ya normativa</strong> en SIHCE</td>
+    </tr>
+    <tr>
+      <td>Problemas y antecedentes</td>
+      <td>11450-4</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">clinicalStatus</code>, <code class="language-plaintext highlighter-rouge">category</code>, <code class="language-plaintext highlighter-rouge">onset[x]</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>ICD-10 / SNOMED</td>
+      <td>IPS Problems</td>
+    </tr>
+    <tr>
+      <td>Alergias</td>
+      <td>48765-2</td>
+      <td><code class="language-plaintext highlighter-rouge">AllergyIntolerance</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">clinicalStatus</code>, <code class="language-plaintext highlighter-rouge">type</code>/<code class="language-plaintext highlighter-rouge">category</code>, <code class="language-plaintext highlighter-rouge">criticality</code>, <code class="language-plaintext highlighter-rouge">reaction</code>, <code class="language-plaintext highlighter-rouge">patient</code></td>
+      <td>SNOMED / ATC</td>
+      <td>IPS Allergies</td>
+    </tr>
+    <tr>
+      <td>Medicación de ingreso</td>
+      <td>42346-7</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationStatement</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">medication[x]</code>, <code class="language-plaintext highlighter-rouge">effective[x]</code>, <code class="language-plaintext highlighter-rouge">dosage</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>SNOMED / ATC / local</td>
+      <td>IPS Medication Summary (Statement)</td>
+    </tr>
+    <tr>
+      <td>Medicación de alta</td>
+      <td>75311-1</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationRequest</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">intent</code>, <code class="language-plaintext highlighter-rouge">medication[x]</code>, <code class="language-plaintext highlighter-rouge">dosageInstruction</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>SNOMED / ATC / local</td>
+      <td>Alta = plan; IPS también admite Request</td>
+    </tr>
+    <tr>
+      <td>Directivas anticipadas</td>
+      <td>42348-3</td>
+      <td><code class="language-plaintext highlighter-rouge">Consent</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">scope</code>, <code class="language-plaintext highlighter-rouge">category</code>, <code class="language-plaintext highlighter-rouge">patient</code>, <code class="language-plaintext highlighter-rouge">provision</code></td>
+      <td>—</td>
+      <td>IPS Advance Directives (a menudo DocumentReference); en SIHCE hay <code class="language-plaintext highlighter-rouge">ConsentSIHCE</code></td>
+    </tr>
+    <tr>
+      <td>Evolución</td>
+      <td>8648-8</td>
+      <td>— (narrativa) o <code class="language-plaintext highlighter-rouge">ClinicalImpression</code></td>
+      <td>Si entry: <code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">description</code>/<code class="language-plaintext highlighter-rouge">summary</code>, <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">effective[x]</code></td>
+      <td>—</td>
+      <td>Suele quedar en <code class="language-plaintext highlighter-rouge">section.text</code></td>
+    </tr>
+    <tr>
+      <td>Procedimientos</td>
+      <td>47519-4</td>
+      <td><code class="language-plaintext highlighter-rouge">Procedure</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">performed[x]</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>SNOMED / CIE-PCS</td>
+      <td>IPS History of Procedures</td>
+    </tr>
+    <tr>
+      <td>Diagnóstico de alta</td>
+      <td>78375-3</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">clinicalStatus</code>, <code class="language-plaintext highlighter-rouge">verificationStatus</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>ICD-10 (+ SNOMED)</td>
+      <td>Discharge diagnosis</td>
+    </tr>
+    <tr>
+      <td>Estado clínico al alta</td>
+      <td>8649-6 <em>(o narrativa)</em></td>
+      <td><code class="language-plaintext highlighter-rouge">ClinicalImpression</code> o <code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td>Impresión: <code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">summary</code>, <code class="language-plaintext highlighter-rouge">subject</code>; Obs: <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">value[x]</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>LOINC / local</td>
+      <td>A votar recurso</td>
+    </tr>
+    <tr>
+      <td>Estudios pendientes</td>
+      <td>18776-5 <em>(actividad)</em> / ServiceRequest</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">intent</code>, <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">occurrence[x]</code></td>
+      <td>LOINC / SNOMED</td>
+      <td>Pedidos al alta</td>
+    </tr>
+    <tr>
+      <td>Plan de tratamiento</td>
+      <td>18776-5</td>
+      <td><code class="language-plaintext highlighter-rouge">CarePlan</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">intent</code>, <code class="language-plaintext highlighter-rouge">description</code>, <code class="language-plaintext highlighter-rouge">activity</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>—</td>
+      <td>IPS Plan of Care</td>
+    </tr>
+    <tr>
+      <td>Tipo de ingreso y procedencia</td>
+      <td>— (Encounter)</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter</code></td>
+      <td><code class="language-plaintext highlighter-rouge">class</code>, <code class="language-plaintext highlighter-rouge">type</code>, <code class="language-plaintext highlighter-rouge">hospitalization.admitSource</code>, <code class="language-plaintext highlighter-rouge">period.start</code></td>
+      <td>HL7 v3 / local</td>
+      <td>Cabecera compartida</td>
+    </tr>
+    <tr>
+      <td>Tipo y destino de egreso</td>
+      <td>— (Encounter)</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter</code></td>
+      <td><code class="language-plaintext highlighter-rouge">hospitalization.dischargeDisposition</code>, <code class="language-plaintext highlighter-rouge">period.end</code></td>
+      <td>HL7 DischargeDisposition</td>
+      <td>Cabecera compartida</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="secciones-clínicas--recomendadas">Secciones clínicas — Recomendadas</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sección</th>
+      <th>LOINC (propuesto)</th>
+      <th>Recurso principal</th>
+      <th>Elementos principales</th>
+      <th>Terminología</th>
+      <th>Ref. IPS / notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cobertura</td>
+      <td>48768-6</td>
+      <td><code class="language-plaintext highlighter-rouge">Coverage</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">type</code>, <code class="language-plaintext highlighter-rouge">beneficiary</code>, <code class="language-plaintext highlighter-rouge">payor</code>, <code class="language-plaintext highlighter-rouge">period</code></td>
+      <td>local</td>
+      <td>IPS Insurance</td>
+    </tr>
+    <tr>
+      <td>Dispositivos e implantes</td>
+      <td>46264-8</td>
+      <td><code class="language-plaintext highlighter-rouge">DeviceUseStatement</code> (+ <code class="language-plaintext highlighter-rouge">Device</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">device</code>, <code class="language-plaintext highlighter-rouge">subject</code>; Device.<code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>SNOMED / GMDN</td>
+      <td>IPS Medical Devices</td>
+    </tr>
+    <tr>
+      <td>Reconciliación de fármacos</td>
+      <td>66109-2 <em>(o lista)</em></td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationStatement</code></td>
+      <td>mismos que medicación + <code class="language-plaintext highlighter-rouge">derivedFrom</code> / List</td>
+      <td>SNOMED / ATC</td>
+      <td>Comparar ingreso vs alta</td>
+    </tr>
+    <tr>
+      <td>Pautas de alarma</td>
+      <td>8653-8 <em>(parcial)</em></td>
+      <td>narrativa o <code class="language-plaintext highlighter-rouge">CarePlan.activity</code></td>
+      <td><code class="language-plaintext highlighter-rouge">detail.description</code>, <code class="language-plaintext highlighter-rouge">detail.status</code></td>
+      <td>—</td>
+      <td>A menudo solo texto</td>
+    </tr>
+    <tr>
+      <td>Citas y controles</td>
+      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">Appointment</code> o <code class="language-plaintext highlighter-rouge">ServiceRequest</code></td>
+      <td>Appointment: <code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">start</code>, <code class="language-plaintext highlighter-rouge">participant</code>; SR: <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">occurrence</code></td>
+      <td>—</td>
+      <td>Control post-alta</td>
+    </tr>
+    <tr>
+      <td>Metadatos del documento</td>
+      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">Composition</code> / <code class="language-plaintext highlighter-rouge">DocumentReference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code>, <code class="language-plaintext highlighter-rouge">type</code>, <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">custodian</code>, <code class="language-plaintext highlighter-rouge">relatesTo</code></td>
+      <td>LOINC doc type</td>
+      <td>Índice SIHCE ya tipa DocumentReference</td>
+    </tr>
+    <tr>
+      <td>Adjuntos y referencias</td>
+      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">DocumentReference</code> / <code class="language-plaintext highlighter-rouge">Binary</code></td>
+      <td><code class="language-plaintext highlighter-rouge">content.attachment</code>, <code class="language-plaintext highlighter-rouge">type</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>MIME</td>
+      <td>Relacionados a la epicrisis</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="secciones-clínicas--opcionales">Secciones clínicas — Opcionales</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sección</th>
+      <th>LOINC (propuesto)</th>
+      <th>Recurso principal</th>
+      <th>Elementos principales</th>
+      <th>Terminología</th>
+      <th>Ref. IPS / notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Profesional responsable</td>
+      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">PractitionerRole</code></td>
+      <td><code class="language-plaintext highlighter-rouge">practitioner</code>, <code class="language-plaintext highlighter-rouge">organization</code>, <code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>SNOMED / local</td>
+      <td>Care team</td>
+    </tr>
+    <tr>
+      <td>Médico de cabecera</td>
+      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">Practitioner</code> / <code class="language-plaintext highlighter-rouge">PractitionerRole</code></td>
+      <td><code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">identifier</code>; rol en CareTeam</td>
+      <td>—</td>
+      <td>IPS Patient (generalPractitioner)</td>
+    </tr>
+    <tr>
+      <td>Diagnóstico de admisión</td>
+      <td>42347-5</td>
+      <td><code class="language-plaintext highlighter-rouge">Condition</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">encounter</code></td>
+      <td>ICD-10</td>
+      <td>Admission diagnosis</td>
+    </tr>
+    <tr>
+      <td>Alertas y precauciones</td>
+      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">Flag</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">period</code></td>
+      <td>local / SNOMED</td>
+      <td>Alternativa: AllergyIntolerance</td>
+    </tr>
+    <tr>
+      <td>Historia social</td>
+      <td>29762-2</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">value[x]</code>, <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">effective[x]</code></td>
+      <td>LOINC social hx</td>
+      <td>IPS Social History</td>
+    </tr>
+    <tr>
+      <td>Vacunas</td>
+      <td>11369-6</td>
+      <td><code class="language-plaintext highlighter-rouge">Immunization</code></td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">vaccineCode</code>, <code class="language-plaintext highlighter-rouge">patient</code>, <code class="language-plaintext highlighter-rouge">occurrence[x]</code></td>
+      <td>SNOMED / CVX</td>
+      <td>IPS Immunizations</td>
+    </tr>
+    <tr>
+      <td>Examen físico de ingreso</td>
+      <td>29545-1 / 10184-0</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">value[x]</code>/<code class="language-plaintext highlighter-rouge">component</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>LOINC</td>
+      <td>Hallazgos</td>
+    </tr>
+    <tr>
+      <td>Signos vitales</td>
+      <td>8716-3</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">valueQuantity</code>, <code class="language-plaintext highlighter-rouge">effective[x]</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>LOINC</td>
+      <td>IPS Vital Signs</td>
+    </tr>
+    <tr>
+      <td>Tratamientos en internación</td>
+      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">Procedure</code> y/o <code class="language-plaintext highlighter-rouge">MedicationAdministration</code></td>
+      <td>Proc: <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">performed</code>; MedAdmin: <code class="language-plaintext highlighter-rouge">medication</code>, <code class="language-plaintext highlighter-rouge">effective</code></td>
+      <td>SNOMED / ATC</td>
+      <td>Durante la estadía</td>
+    </tr>
+    <tr>
+      <td>Resumen de estudios</td>
+      <td>11493-4</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport</code> (+ <code class="language-plaintext highlighter-rouge">Observation</code>)</td>
+      <td><code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">result</code>, <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">presentedForm</code></td>
+      <td>LOINC</td>
+      <td>IPS Results</td>
+    </tr>
+    <tr>
+      <td>Preocupaciones del paciente</td>
+      <td>81338-6</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code> o <code class="language-plaintext highlighter-rouge">Condition</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">valueString</code> / <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>—</td>
+      <td>Concern / goal narrative</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="secciones--a-definir">Secciones — A definir</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sección</th>
+      <th>LOINC (propuesto)</th>
+      <th>Recurso principal</th>
+      <th>Elementos principales</th>
+      <th>Terminología</th>
+      <th>Notas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Servicio y cama</td>
+      <td>—</td>
+      <td><code class="language-plaintext highlighter-rouge">Encounter.location</code> → <code class="language-plaintext highlighter-rouge">Location</code></td>
+      <td><code class="language-plaintext highlighter-rouge">location</code>, <code class="language-plaintext highlighter-rouge">status</code>, <code class="language-plaintext highlighter-rouge">physicalType</code></td>
+      <td>local</td>
+      <td>Servicio / habitación / cama</td>
+    </tr>
+    <tr>
+      <td>Embarazo y obstétricos</td>
+      <td>10162-6</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code> (estado gestacional / embarazo)</td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">value[x]</code>, <code class="language-plaintext highlighter-rouge">subject</code>, <code class="language-plaintext highlighter-rouge">effective[x]</code></td>
+      <td>LOINC / SNOMED</td>
+      <td>IPS Pregnancy</td>
+    </tr>
+    <tr>
+      <td>Estado funcional</td>
+      <td>47420-5</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code> o <code class="language-plaintext highlighter-rouge">ClinicalImpression</code></td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">value[x]</code> / <code class="language-plaintext highlighter-rouge">summary</code>, <code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>LOINC / SNOMED</td>
+      <td>IPS Functional Status (si aplica)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="prioridad-sugerida-para-tipar-nivel-3-después-de-motivo">Prioridad sugerida para tipar nivel 3 (después de Motivo)</h3>
+
+<p>Orden práctico alineado a IPS + impacto clínico en el alta:</p>
+
+<ol>
+  <li>Diagnóstico de alta (<code class="language-plaintext highlighter-rouge">Condition</code>)</li>
+  <li>Alergias (<code class="language-plaintext highlighter-rouge">AllergyIntolerance</code>)</li>
+  <li>Medicación de alta (<code class="language-plaintext highlighter-rouge">MedicationRequest</code>)</li>
+  <li>Problemas y antecedentes (<code class="language-plaintext highlighter-rouge">Condition</code>)</li>
+  <li>Procedimientos (<code class="language-plaintext highlighter-rouge">Procedure</code>)</li>
+  <li>Medicación de ingreso (<code class="language-plaintext highlighter-rouge">MedicationStatement</code>)</li>
+  <li>Resto según votación</li>
+</ol>
+
+<h3 id="fuera-de-esta-página">Fuera de esta página</h3>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">MedicationStatementEpicrisisSIHCE</code> permanece en el IG como perfil <strong>draft</strong> de apoyo a las propuestas 5 y 6; el Composition <strong>no</strong> exige <code class="language-plaintext highlighter-rouge">entry</code> de medicación en esta versión.</li>
-  <li>Secciones obligatorias aún sin LOINC claro (tipo de ingreso, directivas anticipadas, destino de egreso, etc.) se listan como “propuesto / a votar” en <a href="Epicrisis.html#estado-en-el-perfil-composition-nivel-2">Epicrisis</a> antes de crear logicals adicionales.</li>
+  <li>No se publican perfiles ni modelos lógicos provisorios por sección: la decisión se toma aquí y luego se tipa en FSH.</li>
+  <li><code class="language-plaintext highlighter-rouge">MedicationStatementEpicrisisSIHCE</code> (draft) puede reutilizarse o reemplazarse por <code class="language-plaintext highlighter-rouge">MedicationRequest</code> al tipar medicación de alta.</li>
 </ul>
 
 
@@ -385,8 +683,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

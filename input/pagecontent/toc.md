@@ -5,17 +5,21 @@
 1. [Inicio](index.html)
 2. [Generalidades](Aspectos-Generales.html)
 3. [Operaciones](Operaciones.html)
+   - [Consentimiento](Operaciones-Consentimiento.html)
+   - [Persona](Operaciones-Persona.html)
+   - [Documentos](Operaciones-Documentos.html)
+   - [Receta](Operaciones-Receta.html)
 4. [Casos de Uso](CasosDeUso.html)
    - [Consentimiento](CasosDeUso-Consentimiento.html)
    - [Persona](CasosDeUso-Persona.html)
    - [Documentos](CasosDeUso-Documentos.html)
-   - [Receta](CasosDeUso-Receta.html)
-5. [Epicrisis](Epicrisis.html)
+   - [Epicrisis](Epicrisis.html)
    - [Secciones propuestas](Epicrisis-Secciones-Propuestas.html)
-6. [Modelo Lógico](ModeloLogico.html)
-7. [Seguridad](Seguridad.html)
-8. [Historial de Cambios](HistorialDeCambios.html)
-9. [Artefactos](artifacts.html)
+   - [Receta](CasosDeUso-Receta.html)
+5. [Modelo Lógico](ModeloLogico.html)
+6. [Seguridad](Seguridad.html)
+7. [Historial de Cambios](HistorialDeCambios.html)
+8. [Artefactos](artifacts.html)
 
 ## Artefactos (resumen)
 
@@ -67,7 +71,7 @@
 
 8.24 [NamingSystem Organization hospital (ejemplo MSGC)](NamingSystem-NamingSystemOrganizationHospitalMsgc.html)
 
-8.25 [Descarga vía Proxy Central (ITI-68)](Operaciones.html#op-documento-proxy)
+8.25 [Descarga vía Proxy Central (ITI-68)](Operaciones-Documentos.html#op-documento-proxy)
 
 8.26 [Consent opt-in general (etapa 1)](Consent-ConsentOptInGeneralSIHCE.html)
 

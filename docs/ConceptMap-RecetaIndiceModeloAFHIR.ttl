@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR"] ;
-  fhir:ConceptMap.version [ fhir:value "2.2.0"] ;
+  fhir:ConceptMap.version [ fhir:value "2.2.1"] ;
   fhir:ConceptMap.name [ fhir:value "RecetaIndiceModeloAFHIR"] ;
   fhir:ConceptMap.title [ fhir:value "RecetaIndice: modelo lógico a FHIR"] ;
   fhir:ConceptMap.status [ fhir:value "draft"] ;

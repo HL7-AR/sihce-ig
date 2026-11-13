@@ -55,16 +55,6 @@ StructureDefinition-DocumentReferenceRecetaSIHCE.json           DocumentReferenc
 StructureDefinition-DocumentReferenceSIHCE.json                 DocumentReferenceSIHCE                 Profile     profiles/DocumentoClinicoSIHCE.fsh                 109 - 150
 StructureDefinition-DocumentoClinico.json                       DocumentoClinico                       Logical     logicals/LogicalDocumentoClinico.fsh               1 - 20
 StructureDefinition-Epicrisis.json                              Epicrisis                              Logical     logicals/LogicalDocumentoClinico.fsh               22 - 35
-StructureDefinition-EpicrisisPropuestaAlergias.json             EpicrisisPropuestaAlergias             Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   52 - 66
-StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.json  EpicrisisPropuestaDiagnosticoAdmision  Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   20 - 34
-StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.json      EpicrisisPropuestaDiagnosticoAlta      Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   4 - 18
-StructureDefinition-EpicrisisPropuestaDispositivos.json         EpicrisisPropuestaDispositivos         Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   148 - 162
-StructureDefinition-EpicrisisPropuestaMedicacionAlta.json       EpicrisisPropuestaMedicacionAlta       Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   84 - 98
-StructureDefinition-EpicrisisPropuestaMedicacionIngreso.json    EpicrisisPropuestaMedicacionIngreso    Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   68 - 82
-StructureDefinition-EpicrisisPropuestaProblemas.json            EpicrisisPropuestaProblemas            Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   36 - 50
-StructureDefinition-EpicrisisPropuestaProcedimientos.json       EpicrisisPropuestaProcedimientos       Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   100 - 114
-StructureDefinition-EpicrisisPropuestaSignosVitales.json        EpicrisisPropuestaSignosVitales        Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   116 - 130
-StructureDefinition-EpicrisisPropuestaVacunas.json              EpicrisisPropuestaVacunas              Logical     logicals/LogicalEpicrisisSeccionesPropuestas.fsh   132 - 146
 StructureDefinition-FederarPersona.json                         FederarPersona                         Logical     logicals/LogicalFederarPersona.fsh                 1 - 24
 StructureDefinition-InformeLaboratorio.json                     InformeLaboratorio                     Logical     logicals/LogicalInformeLaboratorio.fsh             1 - 15
 StructureDefinition-MLPersona.json                              MLPersona                              Logical     logicals/MLPersona.fsh                             1 - 33

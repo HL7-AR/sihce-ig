@@ -1,4 +1,4 @@
-# BuscarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# BuscarPersona: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR | *Version*:2.2.0 | |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR | *Version*:2.2.1 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:BuscarPersonaModeloAFHIR |
 
  
@@ -31,7 +31,7 @@ Mapeo explícito de campos del modelo lógico BuscarPersona a elementos Patient 
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/ConceptMap/BuscarPersonaModeloAFHIR",
-  "version" : "2.2.0",
+  "version" : "2.2.1",
   "name" : "BuscarPersonaModeloAFHIR",
   "title" : "BuscarPersona: modelo lógico a FHIR",
   "status" : "active",

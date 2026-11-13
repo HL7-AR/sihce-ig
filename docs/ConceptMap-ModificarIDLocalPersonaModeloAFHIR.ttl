@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:ConceptMap.url [ fhir:value "http://sihce.gob.ar/ConceptMap/ModificarIDLocalPersonaModeloAFHIR"] ;
-  fhir:ConceptMap.version [ fhir:value "2.2.0"] ;
+  fhir:ConceptMap.version [ fhir:value "2.2.1"] ;
   fhir:ConceptMap.name [ fhir:value "ModificarIDLocalPersonaModeloAFHIR"] ;
   fhir:ConceptMap.title [ fhir:value "ModificarIDLocalPersona: modelo lógico a FHIR"] ;
   fhir:ConceptMap.status [ fhir:value "active"] ;

@@ -1,4 +1,4 @@
-# Tipos de documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Tipos de documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-clinical-document-type | *Version*:2.2.0 | |
+| *Official URL*:http://sihce.gob.ar/ValueSet/sihce-clinical-document-type | *Version*:2.2.1 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:SIHCEClinicalDocumentTypeVS |
 
  
@@ -45,12 +45,12 @@ Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC).
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
-  "version" : "2.2.0",
+  "version" : "2.2.1",
   "name" : "SIHCEClinicalDocumentTypeVS",
   "title" : "Tipos de documento clínico SIHCE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-12T19:26:41-03:00",
+  "date" : "2026-11-12T22:44:23-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

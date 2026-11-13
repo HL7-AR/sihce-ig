@@ -1,4 +1,4 @@
-# Casos de Uso — Persona - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Casos de Uso — Persona - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * **Casos de Uso — Persona**
@@ -11,7 +11,7 @@ Volver al [índice de casos de uso](CasosDeUso.md).
 
 ### Búsqueda de persona
 
-Operación relacionada: [Búsqueda por identificador y género](Operaciones.md#op-busqueda).
+Operación relacionada: [Búsqueda por identificador y género](Operaciones-Persona.md#op-busqueda).
 
 ```
 sequenceDiagram
@@ -27,7 +27,7 @@ sequenceDiagram
 
 ### Alta/Federación de persona
 
-Operación relacionada: [Alta/Federación de paciente](Operaciones.md#op-alta-federacion). Cuerpo conforme al perfil [PatientXBA](StructureDefinition-PatientXBA.md).
+Operación relacionada: [Alta/Federación de paciente](Operaciones-Persona.md#op-alta-federacion). Cuerpo conforme al perfil [PatientXBA](StructureDefinition-PatientXBA.md).
 
 ```
 sequenceDiagram
@@ -43,7 +43,7 @@ sequenceDiagram
 
 ### Modificación de identificador local
 
-Operación relacionada: [Patch de identificador local](Operaciones.md#op-patch-identifier).
+Operación relacionada: [Patch de identificador local](Operaciones-Persona.md#op-patch-identifier).
 
 ```
 sequenceDiagram
@@ -59,7 +59,7 @@ sequenceDiagram
 
 ### Modificación de SDM
 
-Operación relacionada: [Update de SDM](Operaciones.md#op-update-sdm).
+Operación relacionada: [Update de SDM](Operaciones-Persona.md#op-update-sdm).
 
 ```
 sequenceDiagram

@@ -22,11 +22,11 @@
      fhir:Extension.valueCode [ fhir:value "trial-use" ]
   ] ;
   fhir:StructureDefinition.url [ fhir:value "http://sihce.gob.ar/StructureDefinition/FederarPersona"] ;
-  fhir:StructureDefinition.version [ fhir:value "2.2.0"] ;
+  fhir:StructureDefinition.version [ fhir:value "2.2.1"] ;
   fhir:StructureDefinition.name [ fhir:value "FederarPersona"] ;
   fhir:StructureDefinition.title [ fhir:value "Modelo lógico FederarPersona (FederadorBA)"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-11-12T19:26:41-03:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-11-12T22:44:23-03:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;

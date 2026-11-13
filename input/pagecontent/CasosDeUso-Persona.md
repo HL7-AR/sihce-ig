@@ -4,7 +4,7 @@ Volver al [índice de casos de uso](CasosDeUso.html).
 
 ### Búsqueda de persona
 
-Operación relacionada: [Búsqueda por identificador y género](Operaciones.html#op-busqueda).
+Operación relacionada: [Búsqueda por identificador y género](Operaciones-Persona.html#op-busqueda).
 
 ```mermaid
 sequenceDiagram
@@ -19,7 +19,7 @@ sequenceDiagram
 
 ### Alta/Federación de persona
 
-Operación relacionada: [Alta/Federación de paciente](Operaciones.html#op-alta-federacion). Cuerpo conforme al perfil [PatientXBA](StructureDefinition-PatientXBA.html).
+Operación relacionada: [Alta/Federación de paciente](Operaciones-Persona.html#op-alta-federacion). Cuerpo conforme al perfil [PatientXBA](StructureDefinition-PatientXBA.html).
 
 ```mermaid
 sequenceDiagram
@@ -34,7 +34,7 @@ sequenceDiagram
 
 ### Modificación de identificador local
 
-Operación relacionada: [Patch de identificador local](Operaciones.html#op-patch-identifier).
+Operación relacionada: [Patch de identificador local](Operaciones-Persona.html#op-patch-identifier).
 
 ```mermaid
 sequenceDiagram
@@ -49,7 +49,7 @@ sequenceDiagram
 
 ### Modificación de SDM
 
-Operación relacionada: [Update de SDM](Operaciones.html#op-update-sdm).
+Operación relacionada: [Update de SDM](Operaciones-Persona.html#op-update-sdm).
 
 ```mermaid
 sequenceDiagram

@@ -9,7 +9,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>RecetaIndice: modelo lógico a FHIR - XML Representation - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
+    <title>RecetaIndice: modelo lógico a FHIR - XML Representation - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -50,8 +50,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"14.66"}
-    h3,h4,h5,h6{--heading-prefix:"14.66"}</style>
+    <style type="text/css">h2{--heading-prefix:"18.56"}
+    h3,h4,h5,h6{--heading-prefix:"18.56"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.2.0 - 
+            <span style="display:inline-block;">2.2.1 - 
 
 
             </span>
@@ -112,8 +112,27 @@
   <li>
     <a href="Aspectos-Generales.html">Generalidades</a>
   </li>
-  <li>
-    <a href="Operaciones.html">Operaciones</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Operaciones
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Operaciones.html">Índice</a>
+      </li>
+      <li>
+        <a href="Operaciones-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="Operaciones-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="Operaciones-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="Operaciones-Receta.html">Receta</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
@@ -133,20 +152,13 @@
         <a href="CasosDeUso-Documentos.html">Documentos</a>
       </li>
       <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="Epicrisis.html">Niveles y consenso</a>
+        <a href="Epicrisis.html">Epicrisis</a>
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>
@@ -191,7 +203,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -284,7 +296,7 @@
     &lt;<a href="https://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a> <a href="https://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
   &lt;/<a href="https://hl7.org/fhir/R4/domainresource.html#ConceptMap.extension">extension</a>&gt;
   &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">url</a> <a href="https://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://sihce.gob.ar/ConceptMap/RecetaIndiceModeloAFHIR&quot;/&gt;
-  &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.2.0&quot;/&gt;
+  &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">version</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2.2.1&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">name</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RecetaIndiceModeloAFHIR&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">title</a> <a href="https://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;RecetaIndice: modelo lógico a FHIR&quot;/&gt;
   &lt;<a href="https://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">status</a> <a href="https://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
@@ -398,8 +410,8 @@
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

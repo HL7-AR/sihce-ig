@@ -1,4 +1,4 @@
-# Modelo lógico Consentimiento (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Modelo lógico Consentimiento (SIHCE) - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/Consentimiento | *Version*:2.2.0 | |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/Consentimiento | *Version*:2.2.1 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:Consentimiento |
 
  
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](../StructureDefinition-Consentimiento.cs
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/Consentimiento",
-  "version" : "2.2.0",
+  "version" : "2.2.1",
   "name" : "Consentimiento",
   "title" : "Modelo lógico Consentimiento (SIHCE)",
   "status" : "active",
-  "date" : "2026-11-12T19:26:41-03:00",
+  "date" : "2026-11-12T22:44:23-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

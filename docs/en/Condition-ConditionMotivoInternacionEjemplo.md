@@ -1,4 +1,4 @@
-# Motivo de internación — ICD-10 J18.9 - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Motivo de internación — ICD-10 J18.9 - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sihce-persona-global"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem sihce-persona-global</b></p><a name=\"sihce-persona-global\"> </a><a name=\"hcsihce-persona-global\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://sihce.gob.ar/NamingSystem/sihce-persona-global</td></tr><tr><td>Version</td><td>2.2.0</td></tr><tr><td>Name</td><td>SihcePersonaGlobal</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identificador global de persona en SIHCE (idPersonaGlobal). Se utiliza como id lógico del recurso Patient en el índice SIHCE y como criterio de búsqueda de DocumentReference.</p>\n</div></td></tr><tr><td>Publisher</td><td>SIHCE Development Team</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://sihce.gob.ar/persona</td><td>true</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem sihce-persona-global</b></p><a name=\"sihce-persona-global\"> </a><a name=\"hcsihce-persona-global\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://sihce.gob.ar/NamingSystem/sihce-persona-global</td></tr><tr><td>Version</td><td>2.2.1</td></tr><tr><td>Name</td><td>SihcePersonaGlobal</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identificador global de persona en SIHCE (idPersonaGlobal). Se utiliza como id lógico del recurso Patient en el índice SIHCE y como criterio de búsqueda de DocumentReference.</p>\n</div></td></tr><tr><td>Publisher</td><td>SIHCE Development Team</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://sihce.gob.ar/persona</td><td>true</td></tr></table></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -19,7 +19,7 @@
   ], [
      fhir:index 1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version" ] ;
-     fhir:Extension.valueString [ fhir:value "2.2.0" ]
+     fhir:Extension.valueString [ fhir:value "2.2.1" ]
   ] ;
   fhir:NamingSystem.name [ fhir:value "SihcePersonaGlobal"] ;
   fhir:NamingSystem.status [ fhir:value "active"] ;

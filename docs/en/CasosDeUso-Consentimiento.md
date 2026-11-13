@@ -1,4 +1,4 @@
-# Casos de Uso — Consentimiento - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Casos de Uso — Consentimiento - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * **Casos de Uso — Consentimiento**
@@ -7,7 +7,7 @@
 
 Preferencias de privacidad del paciente en la red SIHCE. **Default:** sin consentimiento activo, el acceso al índice documental se **deniega**. Cualquier dominio autenticado puede registrar el consentimiento (incluido personal administrativo).
 
-Operaciones: [Registro, consulta y PUT](Operaciones.md#op-consentimiento). Perfil: [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md).
+Operaciones: [Registro, consulta y PUT](Operaciones-Consentimiento.md#op-consentimiento). Perfil: [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md).
 
 Volver al [índice de casos de uso](CasosDeUso.md).
 

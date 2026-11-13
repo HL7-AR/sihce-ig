@@ -1,4 +1,4 @@
-# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Referencia a documento clínico SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:2.2.0 | |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE | *Version*:2.2.1 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:DocumentReferenceSIHCE |
 
  
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentReference
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE",
-  "version" : "2.2.0",
+  "version" : "2.2.1",
   "name" : "DocumentReferenceSIHCE",
   "title" : "Referencia a documento clínico SIHCE",
   "status" : "active",

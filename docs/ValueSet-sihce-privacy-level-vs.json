@@ -3,7 +3,7 @@
   "id" : "sihce-privacy-level-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-privacy-level-vs</b></p><a name=\"sihce-privacy-level-vs\"> </a><a name=\"hcsihce-privacy-level-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-privacy-level.html\"><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2.2.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-privacy-level-vs</b></p><a name=\"sihce-privacy-level-vs\"> </a><a name=\"hcsihce-privacy-level-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-privacy-level.html\"><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2.2.1</span></li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
@@ -14,12 +14,12 @@
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
-  "version" : "2.2.0",
+  "version" : "2.2.1",
   "name" : "SIHCEPrivacyLevelVS",
   "title" : "Niveles de privacidad SIHCE",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-11-12T19:26:41-03:00",
+  "date" : "2026-11-12T22:44:23-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

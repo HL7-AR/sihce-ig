@@ -1,4 +1,4 @@
-# NamingSystem URI MSGC GCBA (ejemplo) - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# NamingSystem URI MSGC GCBA (ejemplo) - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/NamingSystem/NamingSystemMsgcGCBA | *Version*:2.2.0 |
+| *Official URL*:http://sihce.gob.ar/NamingSystem/NamingSystemMsgcGCBA | *Version*:2.2.1 |
 | Active as of 2026-04-30 | *Computable Name*:NamingSystemMsgcGCBA |
 
  
@@ -28,7 +28,7 @@ Sistema de identificadores de ejemplo para Parameters en este IG.
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
-    "valueString" : "2.2.0"
+    "valueString" : "2.2.1"
   }],
   "name" : "NamingSystemMsgcGCBA",
   "status" : "active",

@@ -10,11 +10,11 @@
   "id" : "SIHCE.fhir.core",
   "language" : "en",
   "url" : "http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core",
-  "version" : "2.2.0",
+  "version" : "2.2.1",
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R4",
   "status" : "draft",
-  "date" : "2026-11-12T19:26:41-03:00",
+  "date" : "2026-11-12T22:44:23-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -1395,166 +1395,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaAlergias.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaAlergias"
-      },
-      "name" : "Propuesta: Alergias (epicrisis)",
-      "description" : "Sugerencia para votación: alergias codificadas. No normativa hasta aceptación.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaDiagnosticoAdmision"
-      },
-      "name" : "Propuesta: Diagnóstico de admisión (epicrisis)",
-      "description" : "Sugerencia para votación: sección Diagnóstico de admisión codificada. No normativa hasta aceptación.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaDiagnosticoAlta"
-      },
-      "name" : "Propuesta: Diagnóstico de alta (epicrisis)",
-      "description" : "Sugerencia para votación: sección Diagnóstico de alta codificada. No normativa hasta aceptación.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaDispositivos.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaDispositivos"
-      },
-      "name" : "Propuesta: Dispositivos e implantes (epicrisis)",
-      "description" : "Sugerencia para votación: dispositivos/implantes codificados. No normativa hasta aceptación.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaMedicacionAlta.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaMedicacionAlta"
-      },
-      "name" : "Propuesta: Medicación de alta (epicrisis)",
-      "description" : "Sugerencia para votación: medicación de alta codificada. No normativa hasta aceptación. Perfil draft relacionado: MedicationStatementEpicrisisSIHCE.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaMedicacionIngreso.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaMedicacionIngreso"
-      },
-      "name" : "Propuesta: Medicación de ingreso (epicrisis)",
-      "description" : "Sugerencia para votación: medicación de ingreso codificada. No normativa hasta aceptación.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaProblemas.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaProblemas"
-      },
-      "name" : "Propuesta: Problemas y antecedentes (epicrisis)",
-      "description" : "Sugerencia para votación: lista de problemas codificada. No normativa hasta aceptación.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaProcedimientos.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaProcedimientos"
-      },
-      "name" : "Propuesta: Procedimientos (epicrisis)",
-      "description" : "Sugerencia para votación: procedimientos codificados. No normativa hasta aceptación.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaSignosVitales.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaSignosVitales"
-      },
-      "name" : "Propuesta: Signos vitales (epicrisis)",
-      "description" : "Sugerencia para votación: signos vitales codificados. No normativa hasta aceptación.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-EpicrisisPropuestaVacunas.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EpicrisisPropuestaVacunas"
-      },
-      "name" : "Propuesta: Vacunas (epicrisis)",
-      "description" : "Sugerencia para votación: inmunizaciones codificadas. No normativa hasta aceptación.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -1809,6 +1649,42 @@
         }],
         "nameUrl" : "Operaciones.html",
         "title" : "Operaciones",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Operaciones-Consentimiento.html"
+        }],
+        "nameUrl" : "Operaciones-Consentimiento.html",
+        "title" : "Operaciones — Consentimiento",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Operaciones-Persona.html"
+        }],
+        "nameUrl" : "Operaciones-Persona.html",
+        "title" : "Operaciones — Persona",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Operaciones-Documentos.html"
+        }],
+        "nameUrl" : "Operaciones-Documentos.html",
+        "title" : "Operaciones — Documentos",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Operaciones-Receta.html"
+        }],
+        "nameUrl" : "Operaciones-Receta.html",
+        "title" : "Operaciones — Receta",
         "generation" : "markdown"
       },
       {

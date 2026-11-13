@@ -6,6 +6,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 TEMPLATE_ASSETS="${ROOT}/template/content/assets"
+CANONICAL_NAVBAR="${ROOT}/_assets/js/ig-navbar.js"
 OUTPUT_ASSETS="${1:-${ROOT}/output/assets}"
 
 JQUERY_VER="3.7.1"
@@ -34,14 +35,15 @@ install_assets() {
   fetch "https://code.jquery.com/ui/${JQUERY_UI_VER}/themes/base/jquery-ui.min.css" "${base}/css/jquery-ui.css"
   cp "${base}/css/jquery-ui.css" "${base}/css/jquery-ui.structure.min.css"
 
-  # Navbar collapse + clipboard (template sources). bootstrap-fhir.css stays HL7 Bootstrap 3 CSS only.
-  if [ "${base}" != "${TEMPLATE_ASSETS}" ]; then
-    if [ -f "${TEMPLATE_ASSETS}/js/ig-navbar.js" ]; then
-      cp "${TEMPLATE_ASSETS}/js/ig-navbar.js" "${base}/js/ig-navbar.js"
-    fi
-    if [ -f "${TEMPLATE_ASSETS}/js/clipboard-btn.js" ]; then
-      cp "${TEMPLATE_ASSETS}/js/clipboard-btn.js" "${base}/js/clipboard-btn.js"
-    fi
+  # Navbar from repo-stable path (publisher may wipe template/content/assets/js).
+  if [ ! -f "${CANONICAL_NAVBAR}" ]; then
+    echo "ERROR: missing ${CANONICAL_NAVBAR} (required; replaces bootstrap.min.js)" >&2
+    exit 1
+  fi
+  cp "${CANONICAL_NAVBAR}" "${base}/js/ig-navbar.js"
+  # Clipboard helper (template source if present).
+  if [ "${base}" != "${TEMPLATE_ASSETS}" ] && [ -f "${TEMPLATE_ASSETS}/js/clipboard-btn.js" ]; then
+    cp "${TEMPLATE_ASSETS}/js/clipboard-btn.js" "${base}/js/clipboard-btn.js"
   fi
 
   fetch "https://cdn.jsdelivr.net/npm/prismjs@${PRISM_VER}/prism.js" "${base}/js/prism.js"

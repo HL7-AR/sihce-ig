@@ -1,6 +1,6 @@
 Preferencias de privacidad del paciente en la red SIHCE. **Default:** sin consentimiento activo, el acceso al índice documental se **deniega**. Cualquier dominio autenticado puede registrar el consentimiento (incluido personal administrativo).
 
-Operaciones: [Registro, consulta y PUT](Operaciones.html#op-consentimiento). Perfil: [ConsentSIHCE](StructureDefinition-ConsentSIHCE.html).
+Operaciones: [Registro, consulta y PUT](Operaciones-Consentimiento.html#op-consentimiento). Perfil: [ConsentSIHCE](StructureDefinition-ConsentSIHCE.html).
 
 Volver al [índice de casos de uso](CasosDeUso.html).
 

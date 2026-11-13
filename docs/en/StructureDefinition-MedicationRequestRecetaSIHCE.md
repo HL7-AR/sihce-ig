@@ -1,4 +1,4 @@
-# Receta MedicationRequest SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Receta MedicationRequest SIHCE - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE | *Version*:2.2.0 | |
+| *Official URL*:http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE | *Version*:2.2.1 | |
 | * Standards status: *[Draft](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 1 | *Computable Name*:MedicationRequestRecetaSIHCE |
 
  
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-MedicationRequest
     "valueCode" : "draft"
   }],
   "url" : "http://sihce.gob.ar/StructureDefinition/MedicationRequestRecetaSIHCE",
-  "version" : "2.2.0",
+  "version" : "2.2.1",
   "name" : "MedicationRequestRecetaSIHCE",
   "title" : "Receta MedicationRequest SIHCE",
   "status" : "draft",

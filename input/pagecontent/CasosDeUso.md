@@ -31,7 +31,7 @@ Todo mensaje entre dominio y SIHCE viaja por el **Canal X-BA**. SIHCE responde s
 |------|--------|
 | Consentimiento | [Casos de Uso — Consentimiento](CasosDeUso-Consentimiento.html) |
 | Persona (búsqueda, federación, patch, SDM) | [Casos de Uso — Persona](CasosDeUso-Persona.html) |
-| Documentos clínicos (epicrisis, laboratorio) | [Casos de Uso — Documentos](CasosDeUso-Documentos.html) |
+| Documentos clínicos (laboratorio e índice) | [Casos de Uso — Documentos](CasosDeUso-Documentos.html) |
+| Epicrisis (tres niveles y consenso) | [Epicrisis](Epicrisis.html) |
+| Secciones propuestas a votar | [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.html) |
 | Receta electrónica (CPE) | [Casos de Uso — Receta](CasosDeUso-Receta.html) |
-
-Detalle normativo de epicrisis (tres niveles y consenso de secciones): [Epicrisis](Epicrisis.html).

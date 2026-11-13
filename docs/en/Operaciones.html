@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.2.0</title>
+    <title>Operaciones - Guía de Implementación SIHCE - FHIR R4 v2.2.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,7 +56,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación SIHCE - FHIR R4</span>
             <br/>
-            <span style="display:inline-block;">2.2.0 - 
+            <span style="display:inline-block;">2.2.1 - 
 
 
             </span>
@@ -109,8 +109,27 @@
   <li>
     <a href="Aspectos-Generales.html">Generalidades</a>
   </li>
-  <li>
-    <a href="Operaciones.html">Operaciones</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Operaciones
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Operaciones.html">Índice</a>
+      </li>
+      <li>
+        <a href="Operaciones-Consentimiento.html">Consentimiento</a>
+      </li>
+      <li>
+        <a href="Operaciones-Persona.html">Persona</a>
+      </li>
+      <li>
+        <a href="Operaciones-Documentos.html">Documentos</a>
+      </li>
+      <li>
+        <a href="Operaciones-Receta.html">Receta</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Casos de Uso
@@ -130,20 +149,13 @@
         <a href="CasosDeUso-Documentos.html">Documentos</a>
       </li>
       <li>
-        <a href="CasosDeUso-Receta.html">Receta</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Epicrisis
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="Epicrisis.html">Niveles y consenso</a>
+        <a href="Epicrisis.html">Epicrisis</a>
       </li>
       <li>
         <a href="Epicrisis-Secciones-Propuestas.html">Secciones propuestas</a>
+      </li>
+      <li>
+        <a href="CasosDeUso-Receta.html">Receta</a>
       </li>
     </ul>
   </li>
@@ -194,7 +206,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación SIHCE - FHIR R4 - Local Development build (v2.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://sihce.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Operaciones</h2>
   
 
@@ -214,19 +226,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#base-url-qa" id="markdown-toc-base-url-qa">Base URL (QA)</a></li>
   <li><a href="#headers-requeridos" id="markdown-toc-headers-requeridos">Headers requeridos</a></li>
+  <li><a href="#índice-por-caso-de-uso" id="markdown-toc-índice-por-caso-de-uso">Índice por caso de uso</a></li>
   <li><a href="#resumen-de-operaciones" id="markdown-toc-resumen-de-operaciones">Resumen de operaciones</a></li>
-  <li><a href="#búsqueda-por-identificador-y-género" id="markdown-toc-búsqueda-por-identificador-y-género">Búsqueda por identificador y género</a></li>
-  <li><a href="#altafederación-de-paciente" id="markdown-toc-altafederación-de-paciente">Alta/Federación de paciente</a></li>
-  <li><a href="#patch-de-identificador-local" id="markdown-toc-patch-de-identificador-local">Patch de identificador local</a></li>
-  <li><a href="#update-de-sdm" id="markdown-toc-update-de-sdm">Update de SDM</a></li>
-  <li><a href="#registro-de-documento-clínico-documentreference" id="markdown-toc-registro-de-documento-clínico-documentreference">Registro de documento clínico (DocumentReference)</a></li>
-  <li><a href="#consulta-de-documentos-clínicos-iti-67" id="markdown-toc-consulta-de-documentos-clínicos-iti-67">Consulta de documentos clínicos (ITI-67)</a></li>
-  <li><a href="#descarga-de-documento-vía-proxy-central-iti-68" id="markdown-toc-descarga-de-documento-vía-proxy-central-iti-68">Descarga de documento vía Proxy Central (ITI-68)</a></li>
-  <li><a href="#indexación-de-receta-emitida" id="markdown-toc-indexación-de-receta-emitida">Indexación de receta emitida</a></li>
-  <li><a href="#consulta-de-recetas" id="markdown-toc-consulta-de-recetas">Consulta de recetas</a></li>
-  <li><a href="#obtención-del-detalle-de-receta" id="markdown-toc-obtención-del-detalle-de-receta">Obtención del detalle de receta</a></li>
-  <li><a href="#notificación-de-dispensa" id="markdown-toc-notificación-de-dispensa">Notificación de dispensa</a></li>
-  <li><a href="#registro-de-consentimiento-post-consent" id="markdown-toc-registro-de-consentimiento-post-consent">Registro de consentimiento (<code class="language-plaintext highlighter-rouge">POST /Consent</code>)</a></li>
 </ul>
 
 </div>
@@ -253,6 +254,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <p>Nota: en esta guía se omiten credenciales reales.</p>
 </blockquote>
 
+<h3 id="índice-por-caso-de-uso">Índice por caso de uso</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Caso de uso</th>
+      <th>Página de operaciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Persona (búsqueda, federación, patch, SDM)</td>
+      <td><a href="Operaciones-Persona.html">Operaciones — Persona</a></td>
+    </tr>
+    <tr>
+      <td>Consentimiento</td>
+      <td><a href="Operaciones-Consentimiento.html">Operaciones — Consentimiento</a></td>
+    </tr>
+    <tr>
+      <td>Documentos clínicos (epicrisis, laboratorio, proxy)</td>
+      <td><a href="Operaciones-Documentos.html">Operaciones — Documentos</a></td>
+    </tr>
+    <tr>
+      <td>Receta electrónica (CPE)</td>
+      <td><a href="Operaciones-Receta.html">Operaciones — Receta</a></td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="resumen-de-operaciones">Resumen de operaciones</h3>
 
 <table>
@@ -260,951 +290,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr><th>Operación</th><th>Método</th><th>Ruta</th><th>Descripción</th></tr>
   </thead>
   <tbody>
-    <tr><td>Búsqueda de paciente por identificador y género</td><td>GET</td><td><code>/Patient?identifier={system|value}&amp;gender={code}</code></td><td>Consulta pacientes por identificador y género (criterios estándar FHIR R4).</td></tr>
-    <tr><td>Alta/Federación de paciente</td><td>POST</td><td><code>/Patient</code></td><td>Envía un recurso <code>Patient</code> conforme al perfil <a href="StructureDefinition-PatientXBA.html">PatientXBA</a>.</td></tr>
-    <tr><td>Actualización de identificador local</td><td>POST</td><td><code>/Patient/$patch-identifier</code></td><td>Actualiza el identificador local usando <code>Parameters</code>.</td></tr>
-    <tr><td>Actualización de SDM</td><td>POST</td><td><code>/Patient/$update-sdm</code></td><td>Actualiza datos mínimos del paciente mediante operación FHIR personalizada.</td></tr>
-    <tr><td>Registro de documento clínico</td><td>POST</td><td><code>/DocumentReference</code></td><td>Indexa un documento clínico conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>.</td></tr>
-    <tr><td>Consulta de documentos clínicos</td><td>GET</td><td><code>/DocumentReference?patient.identifier={system|value}&amp;type=&amp;date=&amp;status=</code></td><td>Búsqueda ITI-67; URLs del <a href="#op-documento-proxy">Proxy Central</a>; requiere <a href="#op-consentimiento">Consent</a> (MCC).</td></tr>
-    <tr><td>Descarga de documento</td><td>GET</td><td><code>/Proxy/Binary/{id}</code></td><td>Recuperación ITI-68 vía proxy pass sincrónico de SIHCE.</td></tr>
-    <tr><td>Indexación de receta emitida</td><td>POST</td><td><code>/DocumentReference</code></td><td>Índice de receta (CUIR, estado vigente) conforme a <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>.</td></tr>
-    <tr><td>Consulta de recetas</td><td>GET</td><td><code>/DocumentReference?identifier={CUIR}&amp;type=57833-6</code> o <code>patient.identifier={CUIL}</code></td><td>Búsqueda en índice de recetas por CUIR o CUIL.</td></tr>
-    <tr><td>Obtención de detalle de receta</td><td>GET</td><td><code>/Proxy/MedicationRequest/{id}</code></td><td>Broker/proxy hacia el repositorio de origen (o lectura local si repositorio delegado).</td></tr>
-    <tr><td>Notificación de dispensa</td><td>POST</td><td><code>/MedicationDispense</code></td><td>Evento de dispensa (<a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>); actualiza índice a dispensada.</td></tr>
-    <tr><td>Registro de consentimiento</td><td>POST</td><td><code>/Consent</code></td><td>Registra preferencias de privacidad del paciente (<a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>).</td></tr>
-    <tr><td>Consulta de consentimiento</td><td>GET</td><td><code>/Consent?patient.identifier={system|value}&amp;status=active</code></td><td>Consulta el consentimiento vigente del paciente.</td></tr>
-    <tr><td>Actualización de consentimiento</td><td>PUT</td><td><code>/Consent/{id}</code></td><td>Nueva versión (opt-out, ampliación por hospital o nivel).</td></tr>
+    <tr><td><a href="Operaciones-Persona.html#op-busqueda">Búsqueda de paciente por identificador y género</a></td><td>GET</td><td><code>/Patient?identifier={system|value}&amp;gender={code}</code></td><td>Consulta pacientes por identificador y género (criterios estándar FHIR R4).</td></tr>
+    <tr><td><a href="Operaciones-Persona.html#op-alta-federacion">Alta/Federación de paciente</a></td><td>POST</td><td><code>/Patient</code></td><td>Envía un recurso <code>Patient</code> conforme al perfil <a href="StructureDefinition-PatientXBA.html">PatientXBA</a>.</td></tr>
+    <tr><td><a href="Operaciones-Persona.html#op-patch-identifier">Actualización de identificador local</a></td><td>POST</td><td><code>/Patient/$patch-identifier</code></td><td>Actualiza el identificador local usando <code>Parameters</code>.</td></tr>
+    <tr><td><a href="Operaciones-Persona.html#op-update-sdm">Actualización de SDM</a></td><td>POST</td><td><code>/Patient/$update-sdm</code></td><td>Actualiza datos mínimos del paciente mediante operación FHIR personalizada.</td></tr>
+    <tr><td><a href="Operaciones-Documentos.html#op-documento-registro">Registro de documento clínico</a></td><td>POST</td><td><code>/DocumentReference</code></td><td>Indexa un documento clínico conforme al perfil <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>.</td></tr>
+    <tr><td><a href="Operaciones-Documentos.html#op-documento-consulta">Consulta de documentos clínicos</a></td><td>GET</td><td><code>/DocumentReference?patient.identifier={system|value}&amp;type=&amp;date=&amp;status=</code></td><td>Búsqueda ITI-67; URLs del <a href="Operaciones-Documentos.html#op-documento-proxy">Proxy Central</a>; requiere <a href="Operaciones-Consentimiento.html#op-consentimiento">Consent</a> (MCC).</td></tr>
+    <tr><td><a href="Operaciones-Documentos.html#op-documento-proxy">Descarga de documento</a></td><td>GET</td><td><code>/Proxy/Binary/{id}</code></td><td>Recuperación ITI-68 vía proxy pass sincrónico de SIHCE.</td></tr>
+    <tr><td><a href="Operaciones-Receta.html#op-receta-index">Indexación de receta emitida</a></td><td>POST</td><td><code>/DocumentReference</code></td><td>Índice de receta (CUIR, estado vigente) conforme a <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>.</td></tr>
+    <tr><td><a href="Operaciones-Receta.html#op-receta-consulta">Consulta de recetas</a></td><td>GET</td><td><code>/DocumentReference?identifier={CUIR}&amp;type=57833-6</code> o <code>patient.identifier={CUIL}</code></td><td>Búsqueda en índice de recetas por CUIR o CUIL.</td></tr>
+    <tr><td><a href="Operaciones-Receta.html#op-receta-proxy">Obtención de detalle de receta</a></td><td>GET</td><td><code>/Proxy/MedicationRequest/{id}</code></td><td>Broker/proxy hacia el repositorio de origen (o lectura local si repositorio delegado).</td></tr>
+    <tr><td><a href="Operaciones-Receta.html#op-receta-dispensa">Notificación de dispensa</a></td><td>POST</td><td><code>/MedicationDispense</code></td><td>Evento de dispensa (<a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>); actualiza índice a dispensada.</td></tr>
+    <tr><td><a href="Operaciones-Consentimiento.html#op-consentimiento">Registro de consentimiento</a></td><td>POST</td><td><code>/Consent</code></td><td>Registra preferencias de privacidad del paciente (<a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>).</td></tr>
+    <tr><td><a href="Operaciones-Consentimiento.html#op-consentimiento">Consulta de consentimiento</a></td><td>GET</td><td><code>/Consent?patient.identifier={system|value}&amp;status=active</code></td><td>Consulta el consentimiento vigente del paciente.</td></tr>
+    <tr><td><a href="Operaciones-Consentimiento.html#op-consentimiento">Actualización de consentimiento</a></td><td>PUT</td><td><code>/Consent/{id}</code></td><td>Nueva versión (opt-out, ampliación por hospital o nivel).</td></tr>
   </tbody>
 </table>
-
-<p><a id="op-busqueda"></a></p>
-<h3 id="búsqueda-por-identificador-y-género">Búsqueda por identificador y género</h3>
-
-<p>Interacción estándar de búsqueda FHIR R4 sobre el recurso <code class="language-plaintext highlighter-rouge">Patient</code> (<a href="https://hl7.org/fhir/R4/patient.html#search">search</a>).</p>
-
-<h4 id="parámetros-de-búsqueda">Parámetros de búsqueda</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parámetro</th>
-      <th>Obligatoriedad en SIHCE</th>
-      <th>Tipo / formato</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
-      <td>Requerido</td>
-      <td>token (<code class="language-plaintext highlighter-rouge">system|value</code> o solo <code class="language-plaintext highlighter-rouge">value</code> si el sistema es implícito)</td>
-      <td>Identificador del paciente. Ejemplo de sistema nacional: <code class="language-plaintext highlighter-rouge">http://renaper.gob.ar/dni</code>. Ver <a href="NamingSystem-renaper-dni.html">NamingSystem renaper-dni</a>.</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">gender</code></td>
-      <td>Requerido</td>
-      <td>token (código de <a href="https://hl7.org/fhir/R4/codesystem-administrative-gender.html">AdministrativeGender</a>)</td>
-      <td>Género administrativo del paciente (<code class="language-plaintext highlighter-rouge">male</code>, <code class="language-plaintext highlighter-rouge">female</code>, <code class="language-plaintext highlighter-rouge">other</code>, <code class="language-plaintext highlighter-rouge">unknown</code>).</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Otros parámetros de búsqueda definidos en la especificación base de FHIR para <code class="language-plaintext highlighter-rouge">Patient</code> pueden estar soportados o no según el despliegue; para esta guía se documentan explícitamente los criterios anteriores por ser los utilizados en los casos de uso de SIHCE.</p>
-
-<h4 id="request-ejemplo">Request (ejemplo)</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Patient?identifier=http://renaper.gob.ar/dni|24068773&amp;gender=male
-</span></code></pre></div></div>
-
-<h4 id="respuesta-esperada">Respuesta esperada</h4>
-
-<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> de tipo <code class="language-plaintext highlighter-rouge">searchset</code> que contiene cero o más recursos <code class="language-plaintext highlighter-rouge">Patient</code> coincidentes.</p>
-
-<p><a id="op-alta-federacion"></a></p>
-<h3 id="altafederación-de-paciente">Alta/Federación de paciente</h3>
-
-<p>El cuerpo de la solicitud debe ser un recurso <code class="language-plaintext highlighter-rouge">Patient</code> que cumpla el perfil <strong><a href="StructureDefinition-PatientXBA.html">PatientXBA</a></strong> (incluida la meta de perfil si el servidor la exige).</p>
-
-<h4 id="request">Request</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /Patient
-Content-Type: application/fhir+json
-</span></code></pre></div></div>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"secondary"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MR"</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://msgc.gcba.gob.ar"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NI"</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://renaper.gob.ar/dni"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31075635"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w"> </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PALUMBO"</span><span class="p">,</span><span class="w"> </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"YANINA GABRIELA"</span><span class="p">]</span><span class="w"> </span><span class="p">}],</span><span class="w">
-  </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1984-09-25"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"female"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="respuesta-éxito">Respuesta (éxito)</h4>
-
-<p>En un alta o federación exitosa el servidor devuelve un recurso <strong><code class="language-plaintext highlighter-rouge">Patient</code></strong> en JSON (<code class="language-plaintext highlighter-rouge">Content-Type: application/fhir+json</code>). El estado HTTP suele ser <strong><code class="language-plaintext highlighter-rouge">201 Created</code></strong> (recurso nuevo) o <strong><code class="language-plaintext highlighter-rouge">200 OK</code></strong> según política del endpoint; puede incluirse cabecera <code class="language-plaintext highlighter-rouge">Location</code> con el id lógico asignado.</p>
-
-<p>El cuerpo <strong>no cambia el contrato</strong> respecto al perfil <strong><a href="StructureDefinition-PatientXBA.html">PatientXBA</a></strong>: se esperan al menos los identificadores de dominio (tipo MR, uso secundario) y DNI (tipo NI, uso official), nombre oficial, género y fecha de nacimiento. El servidor puede añadir <strong><code class="language-plaintext highlighter-rouge">text</code></strong> narrativo generado.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Elemento</th>
-      <th>Notas para el cliente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">identifier</code> (MR)</td>
-      <td>Identificador local del paciente en el dominio; el <code class="language-plaintext highlighter-rouge">system</code> y el <code class="language-plaintext highlighter-rouge">value</code> devueltos son los que el federador registra para ese vínculo dominio–persona (en QA pueden diferir del <code class="language-plaintext highlighter-rouge">system</code> enviado en el POST de ejemplo).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">identifier</code> (NI)</td>
-      <td>DNI oficial RENAPER; debe mantenerse alineado con lo validado en federación.</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">name</code>, <code class="language-plaintext highlighter-rouge">gender</code>, <code class="language-plaintext highlighter-rouge">birthDate</code></td>
-      <td>Reflejan el SDM almacenado tras la operación.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Ejemplo de respuesta (QA):</strong></p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"generated"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"div"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;div xmlns=</span><span class="se">\"</span><span class="s2">http://www.w3.org/1999/xhtml</span><span class="se">\"</span><span class="s2">&gt;PABLO MUGUERZA KAROLYI&lt;/div&gt;"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"secondary"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MR"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hl7.org"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"90000000"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NI"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://renaper.gob.ar/dni"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24068773"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PABLO MUGUERZA KAROLYI"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MUGUERZA KAROLYI"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"PABLO"</span><span class="p">]</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"male"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1974-07-01"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p>En caso de error, el comportamiento habitual en FHIR es una respuesta con <strong><code class="language-plaintext highlighter-rouge">OperationOutcome</code></strong> (u otro detalle acordado por el proveedor); el código HTTP y el cuerpo dependen del despliegue.</p>
-
-<p><a id="op-patch-identifier"></a></p>
-<h3 id="patch-de-identificador-local">Patch de identificador local</h3>
-
-<p>La operación <code class="language-plaintext highlighter-rouge">$patch-identifier</code> recibe un recurso <code class="language-plaintext highlighter-rouge">Parameters</code> cuya estructura está definida en el perfil <strong><a href="StructureDefinition-parametros-patch-identifier-sihce.html">Parametros Patch Identifier SIHCE</a></strong>. El parámetro <code class="language-plaintext highlighter-rouge">patient</code> transporta un <code class="language-plaintext highlighter-rouge">Patient</code> conforme a <strong><a href="StructureDefinition-PatientXBA.html">PatientXBA</a></strong> (en la práctica puede enviarse mínimo o vacío según contrato del endpoint; el ejemplo sigue la colección de QA).</p>
-
-<h4 id="definición-de-parámetros-resumen">Definición de parámetros (resumen)</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nombre en <code class="language-plaintext highlighter-rouge">Parameters</code></th>
-      <th>Cardinalidad</th>
-      <th>Tipo</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">old-identifier</code></td>
-      <td>1..1</td>
-      <td>Identifier</td>
-      <td>Identificador de dominio a reemplazar (<code class="language-plaintext highlighter-rouge">system</code> + <code class="language-plaintext highlighter-rouge">value</code>).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">new-identifier</code></td>
-      <td>1..1</td>
-      <td>Identifier</td>
-      <td>Nuevo identificador de dominio (<code class="language-plaintext highlighter-rouge">system</code> + <code class="language-plaintext highlighter-rouge">value</code>).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">patient</code></td>
-      <td>1..1</td>
-      <td>Resource (Patient)</td>
-      <td>Paciente de contexto; debe conformar a <strong>PatientXBA</strong> cuando se incluye carga útil.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-ejemplo-1">Request (ejemplo)</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /Patient/$patch-identifier
-Content-Type: application/fhir+json
-</span></code></pre></div></div>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"old-identifier"</span><span class="p">,</span><span class="w"> </span><span class="nl">"valueIdentifier"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://msgc.gcba.gob.ar"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3912116"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"new-identifier"</span><span class="p">,</span><span class="w"> </span><span class="nl">"valueIdentifier"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://msgc.gcba.gob.ar"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"9876543210"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w"> </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient"</span><span class="p">,</span><span class="w"> </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="respuesta-éxito-1">Respuesta (éxito)</h4>
-
-<p>Tras un <code class="language-plaintext highlighter-rouge">$patch-identifier</code> exitoso la respuesta sigue siendo un <strong><code class="language-plaintext highlighter-rouge">Patient</code></strong> (<code class="language-plaintext highlighter-rouge">application/fhir+json</code>), alineado con <strong><a href="StructureDefinition-PatientXBA.html">PatientXBA</a></strong>. La forma general coincide con la de la federación: identificador nacional (NI), datos demográficos y, en particular, el identificador de dominio (MR) con el <strong>nuevo</strong> <code class="language-plaintext highlighter-rouge">value</code> asignado.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Diferencia respecto a <code class="language-plaintext highlighter-rouge">POST /Patient</code></th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Identificador MR</td>
-      <td>Solo cambia el <code class="language-plaintext highlighter-rouge">value</code> (y eventualmente metadatos asociados) del id local del dominio; el DNI y el resto del SDM permanecen coherentes con el registro previo.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Ejemplo de respuesta (QA):</strong></p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"generated"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"div"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;div xmlns=</span><span class="se">\"</span><span class="s2">http://www.w3.org/1999/xhtml</span><span class="se">\"</span><span class="s2">&gt;PABLO MUGUERZA KAROLYI&lt;/div&gt;"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"secondary"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MR"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hl7.org"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"90000001"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NI"</span><span class="w">
-          </span><span class="p">}</span><span class="w">
-        </span><span class="p">]</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://renaper.gob.ar/dni"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24068773"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PABLO MUGUERZA KAROLYI"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MUGUERZA KAROLYI"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"PABLO"</span><span class="p">]</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"male"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1974-07-01"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="ejemplo-publicado">Ejemplo publicado</h4>
-
-<ul>
-  <li><a href="Parameters-ParametrosPatchIdentifierEjemplo.html">Parámetros patch identifier - ejemplo</a></li>
-</ul>
-
-<p><a id="op-update-sdm"></a></p>
-<h3 id="update-de-sdm">Update de SDM</h3>
-
-<p>La operación <code class="language-plaintext highlighter-rouge">$update-sdm</code> recibe un recurso <code class="language-plaintext highlighter-rouge">Parameters</code> definido en <strong><a href="StructureDefinition-parametros-update-sdm-sihce.html">Parametros Update SDM SIHCE</a></strong>. El recurso <code class="language-plaintext highlighter-rouge">Patient</code> anidado debe cumplir <strong><a href="StructureDefinition-PatientXBA.html">PatientXBA</a></strong>.</p>
-
-<h4 id="definición-de-parámetros-resumen-1">Definición de parámetros (resumen)</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nombre en <code class="language-plaintext highlighter-rouge">Parameters</code></th>
-      <th>Cardinalidad</th>
-      <th>Tipo</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">patient</code></td>
-      <td>1..1</td>
-      <td>Resource (Patient)</td>
-      <td>Paciente con datos mínimos a actualizar; perfil <strong>PatientXBA</strong>.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-ejemplo-2">Request (ejemplo)</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /Patient/$update-sdm
-Content-Type: application/fhir+json
-</span></code></pre></div></div>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-          </span><span class="p">{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://msgc.gcba.gob.ar"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"304022"</span><span class="w"> </span><span class="p">},</span><span class="w">
-          </span><span class="p">{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://renaper.gob.ar/dni"</span><span class="p">,</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31075635"</span><span class="w"> </span><span class="p">}</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w"> </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PALUMBO"</span><span class="p">,</span><span class="w"> </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"YANINA GABRIELA"</span><span class="p">]</span><span class="w"> </span><span class="p">}],</span><span class="w">
-        </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1984-09-25"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"female"</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="ejemplo-publicado-1">Ejemplo publicado</h4>
-
-<ul>
-  <li><a href="Parameters-ParametrosUpdateSDMEjemplo.html">Parámetros update SDM - ejemplo</a></li>
-</ul>
-
-<p><a id="op-documento-registro"></a></p>
-<h3 id="registro-de-documento-clínico-documentreference">Registro de documento clínico (DocumentReference)</h3>
-
-<p>Un dominio emisor registra en SIHCE los <strong>metadatos</strong> del documento mediante <code class="language-plaintext highlighter-rouge">POST /DocumentReference</code> (capacidad de <strong>registro documental</strong> de SIHCE). El intercambio transita el <strong>Canal X-BA</strong>. El contenido clínico <strong>no</strong> se envía en el cuerpo del POST: permanece en el dominio emisor y se referencia con <code class="language-plaintext highlighter-rouge">content.attachment.url</code>. SIHCE <strong>no</strong> consume esas URLs; otros dominios sí pueden hacerlo, también vía Canal X-BA.</p>
-
-<p><strong>Modelo único:</strong> todo documento clínico indexado en SIHCE es un <a href="StructureDefinition-DocumentReferenceSIHCE.html">DocumentReferenceSIHCE</a>. Los tipos se distinguen por LOINC en <code class="language-plaintext highlighter-rouge">DocumentReference.type</code>:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Tipo</th>
-      <th>LOINC</th>
-      <th>Qué hay detrás de <code class="language-plaintext highlighter-rouge">content.attachment.url</code></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Documento genérico / índice</td>
-      <td>según tipo</td>
-      <td>Recurso o binario en el dominio</td>
-    </tr>
-    <tr>
-      <td><strong>Epicrisis</strong> (caso especial)</td>
-      <td><code class="language-plaintext highlighter-rouge">18842-5</code></td>
-      <td>Nivel 1: Binary PDF/XML. Niveles 2–3: <a href="StructureDefinition-CompositionEpicrisisSIHCE.html">CompositionEpicrisisSIHCE</a>. Detalle normativo: <a href="Epicrisis.html">Epicrisis</a>. Nivel 3: solo Motivo de internación (ICD-10).</td>
-    </tr>
-    <tr>
-      <td><strong>Informe de laboratorio</strong> (caso especial)</td>
-      <td><code class="language-plaintext highlighter-rouge">11502-2</code></td>
-      <td><a href="StructureDefinition-DiagnosticReportLaboratorioSIHCE.html">DiagnosticReportLaboratorioSIHCE</a> (<code class="language-plaintext highlighter-rouge">contentType</code> = <code class="language-plaintext highlighter-rouge">application/fhir+json</code>). El PDF va en <code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code>; en nivel 2, las observaciones en <code class="language-plaintext highlighter-rouge">result</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>El POST de abajo es un ejemplo de epicrisis nivel 1 (URL a PDF). Para laboratorio, el mismo <code class="language-plaintext highlighter-rouge">DocumentReference</code> usa <code class="language-plaintext highlighter-rouge">type</code> = <code class="language-plaintext highlighter-rouge">11502-2</code> y <code class="language-plaintext highlighter-rouge">content.attachment.url</code> apunta al <strong>DiagnosticReport</strong> (ver <a href="DocumentReference-DocumentReferenceInformeLabNivel1.html">DocumentReferenceInformeLabNivel1</a>).</p>
-
-<h4 id="request-1">Request</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /DocumentReference
-Content-Type: application/fhir+json
-</span></code></pre></div></div>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"</span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"18842-5"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Discharge summary"</span><span class="w">
-    </span><span class="p">}]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hospitalitaliano.org.ar/fhir/documento"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EP-2026-0042"</span><span class="w">
-  </span><span class="p">}],</span><span class="w">
-  </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-06-08T14:30:00-03:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"custodian"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hospitalitaliano.org.ar/fhir"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hospital-italiano"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hospital Italiano de Buenos Aires"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://hospitalitaliano.org.ar/fhir/Binary/epicrisis-EP-2026-0042"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/pdf"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Epicrisis EP-2026-0042"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p>Ejemplo equivalente para <strong>informe de laboratorio</strong> (índice → DiagnosticReport por URL):</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://sihce.gob.ar/StructureDefinition/DocumentReferenceSIHCE"</span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"11502-2"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Laboratory report"</span><span class="w">
-    </span><span class="p">}]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://laboratorio.ejemplo.gob.ar/informe"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LAB-2026-0042"</span><span class="w">
-  </span><span class="p">}],</span><span class="w">
-  </span><span class="nl">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-06-19T15:55:00-03:00"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://laboratorio.ejemplo.gob.ar/fhir/DiagnosticReport/informe-LAB-2026-0042"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/fhir+json"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Informe LAB-2026-0042"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Elemento</th>
-      <th>Notas</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">type</code></td>
-      <td>LOINC del documento (<code class="language-plaintext highlighter-rouge">18842-5</code> epicrisis, <code class="language-plaintext highlighter-rouge">11502-2</code> laboratorio, u otros del <a href="ValueSet-sihce-clinical-document-type-vs.html">ValueSet</a>).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">subject.reference</code></td>
-      <td><code class="language-plaintext highlighter-rouge">Patient/{idPersonaGlobal}</code> — identificador SIHCE (<a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>). En los ejemplos publicados se usa <a href="Patient-PersonaSIHCEMin.html">PersonaSIHCEMin</a>.</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
-      <td>Id del documento asignado por el <strong>dominio</strong> (<code class="language-plaintext highlighter-rouge">system</code> = URI/NamingSystem del dominio).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">content.attachment.url</code></td>
-      <td>URL absoluta al contenido en el dominio: Binary/Composition (epicrisis) o <strong>DiagnosticReport</strong> (laboratorio).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">content.attachment.contentType</code></td>
-      <td><code class="language-plaintext highlighter-rouge">application/pdf</code> / <code class="language-plaintext highlighter-rouge">application/xml</code> (binario) o <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition o DiagnosticReport).</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="respuesta-éxito-2">Respuesta (éxito)</h4>
-
-<p><code class="language-plaintext highlighter-rouge">201 Created</code> con cabecera <strong><code class="language-plaintext highlighter-rouge">Location</code></strong> apuntando al <code class="language-plaintext highlighter-rouge">DocumentReference</code> creado en SIHCE y cuerpo con el recurso indexado (incluye id lógico asignado por SIHCE).</p>
-
-<h4 id="ejemplos-publicados">Ejemplos publicados</h4>
-
-<ul>
-  <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel1.html">DocumentReference epicrisis nivel 1 (PDF)</a></li>
-  <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel2.html">DocumentReference epicrisis nivel 2 (Composition)</a></li>
-  <li><a href="Composition-CompositionEpicrisisNivel2.html">Composition epicrisis nivel 2 (narrativa)</a></li>
-  <li><a href="DocumentReference-DocumentReferenceEpicrisisNivel3.html">DocumentReference epicrisis nivel 3</a></li>
-  <li><a href="Composition-CompositionEpicrisisNivel3.html">Composition epicrisis nivel 3 (Motivo ICD-10)</a></li>
-  <li><a href="Condition-ConditionMotivoInternacionEjemplo.html">Condition Motivo de internación (ejemplo)</a></li>
-  <li><a href="DocumentReference-DocumentReferenceInformeLabNivel1.html">DocumentReference informe laboratorio nivel 1</a></li>
-  <li><a href="DiagnosticReport-DiagnosticReportInformeLabNivel1.html">DiagnosticReport informe laboratorio nivel 1 (solo PDF)</a></li>
-  <li><a href="DocumentReference-DocumentReferenceInformeLabNivel2.html">DocumentReference informe laboratorio nivel 2</a></li>
-  <li><a href="DiagnosticReport-DiagnosticReportInformeLabNivel2.html">DiagnosticReport informe laboratorio nivel 2 (PDF + observaciones)</a></li>
-</ul>
-
-<p><a id="op-documento-consulta"></a></p>
-<h3 id="consulta-de-documentos-clínicos-iti-67">Consulta de documentos clínicos (ITI-67)</h3>
-
-<p>Búsqueda FHIR R4 sobre <code class="language-plaintext highlighter-rouge">DocumentReference</code> (<a href="https://hl7.org/fhir/R4/documentreference.html#search">search</a>). Corresponde a <strong>ITI-67</strong> (query de metadatos documentales en el índice central). El índice lo responde la capacidad de <strong>registro documental</strong> de SIHCE. La solicitud viaja por el <strong>Canal X-BA</strong>.</p>
-
-<p><strong>Prerrequisito:</strong> SIHCE Core evalúa el consentimiento del paciente en el <strong>Motor Central de Consentimientos (MCC)</strong> — recurso <a href="StructureDefinition-ConsentSIHCE.html"><code class="language-plaintext highlighter-rouge">Consent</code></a> persistido en SIHCE. Sin consentimiento activo (ALLOW) → <strong>403 Forbidden</strong>. Ver <a href="#op-consentimiento">Registro de consentimiento</a>.</p>
-
-<p><strong>Respuesta:</strong> SIHCE <strong>no</strong> devuelve la URL real del hospital custodio. En <code class="language-plaintext highlighter-rouge">content.attachment.url</code> entrega la ruta del <strong>Proxy Central</strong> (consumible con GET estándar en la <a href="#op-documento-proxy">descarga ITI-68</a>), p. ej. <code class="language-plaintext highlighter-rouge">https://api.sihce.salud.buenosaires.gob.ar/Proxy/Binary/doc-99</code>.</p>
-
-<h4 id="contexto-del-hospital-solicitante">Contexto del hospital solicitante</h4>
-
-<p>SIHCE identifica al <strong>hospital consumidor</strong> (Organization dentro del dominio autenticado) a partir del contexto de la solicitud autenticada en Canal X-BA — p. ej. identificador de organización en el token o metadatos del cliente. Ese hospital debe coincidir con un <code class="language-plaintext highlighter-rouge">actor</code> autorizado en el Consent cuando está desplegada la etapa 2 o 3.</p>
-
-<h4 id="parámetros-de-búsqueda-1">Parámetros de búsqueda</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parámetro</th>
-      <th>Obligatoriedad en SIHCE</th>
-      <th>Tipo / formato</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">patient.identifier</code></td>
-      <td>Requerido</td>
-      <td>token (<code class="language-plaintext highlighter-rouge">system\|value</code>)</td>
-      <td>Identificador del paciente en <code class="language-plaintext highlighter-rouge">DocumentReference.subject</code> (p. ej. <code class="language-plaintext highlighter-rouge">http://sihce.gob.ar/persona\|{idPersonaGlobal}</code>). Ver <a href="NamingSystem-sihce-persona-global.html">NamingSystem sihce-persona-global</a>.</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">type</code></td>
-      <td>Opcional</td>
-      <td>token</td>
-      <td>Tipo LOINC (<code class="language-plaintext highlighter-rouge">\|18842-5</code> epicrisis, <code class="language-plaintext highlighter-rouge">\|11502-2</code> informe de laboratorio).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">date</code></td>
-      <td>Opcional</td>
-      <td>date</td>
-      <td>Fecha del documento (<code class="language-plaintext highlighter-rouge">DocumentReference.date</code>).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">status</code></td>
-      <td>Opcional</td>
-      <td>token</td>
-      <td><code class="language-plaintext highlighter-rouge">current</code>, <code class="language-plaintext highlighter-rouge">superseded</code>, <code class="language-plaintext highlighter-rouge">entered-in-error</code>, etc.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="request-ejemplo-3">Request (ejemplo)</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /DocumentReference?patient.identifier=http://sihce.gob.ar/persona|987654321&amp;type=http://loinc.org|18842-5&amp;status=current
-Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
-Accept: application/fhir+json
-</span></code></pre></div></div>
-
-<p>Claims JWT recomendados para acceso documental (además de autenticación de dominio):</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"patient_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"987654321"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"organization_identifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hospital-central-88392"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"organization_domain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://msgc.gcba.gob.ar"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"intent_reason"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Tratamiento"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="respuesta-esperada-1">Respuesta esperada</h4>
-
-<p><code class="language-plaintext highlighter-rouge">200 OK</code> con un <a href="https://hl7.org/fhir/R4/bundle.html">Bundle</a> tipo <code class="language-plaintext highlighter-rouge">searchset</code>. Cada <code class="language-plaintext highlighter-rouge">DocumentReference</code> incluye <code class="language-plaintext highlighter-rouge">content.attachment.url</code> con la <strong>URL del Proxy Central</strong> (no la URL del hospital custodio). SIHCE filtra entradas según el nivel de privacidad otorgado al hospital (<code class="language-plaintext highlighter-rouge">normal</code> / <code class="language-plaintext highlighter-rouge">confidential</code>).</p>
-
-<p>Fragmento de ejemplo:</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DocumentReference"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"dr-epi-001"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"current"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"content"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-    </span><span class="nl">"attachment"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/pdf"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.sihce.salud.buenosaires.gob.ar/Proxy/Binary/doc-99"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Epicrisis"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">}]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="errores">Errores</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Situación</th>
-      <th>HTTP</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sin Consent activo</td>
-      <td>403</td>
-    </tr>
-    <tr>
-      <td>Opt-out general</td>
-      <td>403</td>
-    </tr>
-    <tr>
-      <td>Hospital no autorizado (etapa 2/3)</td>
-      <td>403</td>
-    </tr>
-    <tr>
-      <td>Dominio no autenticado</td>
-      <td>401</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>SIHCE genera <strong><code class="language-plaintext highlighter-rouge">AuditEvent</code></strong> por cada consulta (éxito o denegación).</p>
-
-<p><a id="op-documento-proxy"></a></p>
-<h3 id="descarga-de-documento-vía-proxy-central-iti-68">Descarga de documento vía Proxy Central (ITI-68)</h3>
-
-<p>Para obtener el contenido clínico, el hospital solicitante ejecuta un <strong>GET HTTP estándar</strong> contra la URL devuelta en la búsqueda (Fase 1). No se requiere operación propietaria de canje.</p>
-
-<p>Corresponde a <strong>ITI-68</strong> (Retrieve Document): SIHCE Core actúa como <strong>proxy inverso sincrónico</strong> — intercepta la petición, revalida consentimiento en el MCC, resuelve la URL real del hospital custodio desde el índice y ejecuta <strong>proxy pass</strong> (streaming de bytes <strong>sin persistencia en disco</strong> en el núcleo central), propagando la identidad del solicitante de extremo a extremo.</p>
-
-<h4 id="request-2">Request</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Proxy/Binary/doc-99
-Host: api.sihce.salud.buenosaires.gob.ar
-Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
-Accept: application/pdf
-</span></code></pre></div></div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Elemento</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">{id}</code></td>
-      <td>Identificador opaco del documento en el índice SIHCE (p. ej. <code class="language-plaintext highlighter-rouge">doc-99</code>).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">Authorization</code></td>
-      <td>JWT del dominio/profesional solicitante (mismo contexto que la búsqueda).</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">Accept</code></td>
-      <td>MIME esperado (<code class="language-plaintext highlighter-rouge">application/pdf</code>, <code class="language-plaintext highlighter-rouge">application/fhir+json</code>, etc.).</td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="respuesta-éxito-3">Respuesta (éxito)</h4>
-
-<p><code class="language-plaintext highlighter-rouge">200 OK</code> con el cuerpo del documento:</p>
-
-<ul>
-  <li>Nivel 1 epicrisis: <code class="language-plaintext highlighter-rouge">application/pdf</code> (Binary)</li>
-  <li>Nivel 2+: <code class="language-plaintext highlighter-rouge">application/fhir+json</code> (Composition o DiagnosticReport)</li>
-  <li>Informe laboratorio: PDF o DiagnosticReport según nivel</li>
-</ul>
-
-<h4 id="errores-1">Errores</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Situación</th>
-      <th>HTTP</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Consentimiento denegado en MCC</td>
-      <td>403</td>
-    </tr>
-    <tr>
-      <td>Documento inexistente en índice</td>
-      <td>404</td>
-    </tr>
-    <tr>
-      <td>Hospital custodio no disponible</td>
-      <td>502 / 504</td>
-    </tr>
-    <tr>
-      <td>Dominio no autenticado</td>
-      <td>401</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>SIHCE genera <strong><code class="language-plaintext highlighter-rouge">AuditEvent</code></strong> por cada descarga (éxito o denegación).</p>
-
-<h4 id="ventajas">Ventajas</h4>
-
-<ul>
-  <li><strong>Plug &amp; play</strong> IHE MHD: cualquier visor compatible con GET puede integrarse.</li>
-  <li><strong>Menor latencia:</strong> un solo GET por documento, sin pasos intermedios de canje.</li>
-  <li><strong>Orquestación centralizada:</strong> el solicitante no contacta directamente al hospital custodio.</li>
-</ul>
-
-<p><a id="op-receta-index"></a></p>
-<h3 id="indexación-de-receta-emitida">Indexación de receta emitida</h3>
-
-<p>El repositorio de origen (SIGEHOS o prestador privado) notifica a SIHCE el evento <strong>“receta emitida”</strong> con <strong>solo metadatos</strong> (CUIR, CUIL/paciente, efector, estado <code class="language-plaintext highlighter-rouge">vigente</code>). El <code class="language-plaintext highlighter-rouge">MedicationRequest</code> <strong>no</strong> viaja en este POST (salvo el caso excepcional de <a href="#op-receta-proxy">repositorio delegado</a>).</p>
-
-<p>Cuerpo conforme a <a href="StructureDefinition-DocumentReferenceRecetaSIHCE.html">DocumentReferenceRecetaSIHCE</a>. Tipo LOINC <code class="language-plaintext highlighter-rouge">57833-6</code>. Identificador CUIR: <a href="NamingSystem-sihce-cuir.html">NamingSystem sihce-cuir</a>.</p>
-
-<h4 id="request-ejemplo--caso-2--caso-3-1a">Request (ejemplo — caso 2 / caso 3-1a)</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /DocumentReference
-Content-Type: application/fhir+json
-</span></code></pre></div></div>
-
-<p>Ver <a href="DocumentReference-DocumentReferenceRecetaVigenteSIGEHOS.html">DocumentReferenceRecetaVigenteSIGEHOS</a>.</p>
-
-<h4 id="respuesta">Respuesta</h4>
-
-<p><code class="language-plaintext highlighter-rouge">201 Created</code> + <code class="language-plaintext highlighter-rouge">Location</code>. SIHCE genera <code class="language-plaintext highlighter-rouge">AuditEvent</code>.</p>
-
-<p><a id="op-receta-consulta"></a></p>
-<h3 id="consulta-de-recetas">Consulta de recetas</h3>
-
-<p>Búsqueda sobre el índice de recetas. Criterios típicos:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Parámetro</th>
-      <th>Uso</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
-      <td>CUIR (<code class="language-plaintext highlighter-rouge">http://sihce.gob.ar/cuir\|{valor}</code>)</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">patient.identifier</code></td>
-      <td>CUIL (<code class="language-plaintext highlighter-rouge">http://sihce.gob.ar/cuil\|{valor}</code>) o idPersonaGlobal</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">type</code></td>
-      <td><code class="language-plaintext highlighter-rouge">http://loinc.org\|57833-6</code></td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">status</code></td>
-      <td><code class="language-plaintext highlighter-rouge">current</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /DocumentReference?identifier=http://sihce.gob.ar/cuir|CUIR-2026-000123&amp;type=http://loinc.org|57833-6
-</span></code></pre></div></div>
-
-<p>o</p>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /DocumentReference?patient.identifier=http://sihce.gob.ar/cuil|20123456789&amp;type=http://loinc.org|57833-6
-</span></code></pre></div></div>
-
-<p><code class="language-plaintext highlighter-rouge">200 OK</code> Bundle <code class="language-plaintext highlighter-rouge">searchset</code>. Si el estado del índice es <code class="language-plaintext highlighter-rouge">dispensada</code>, la farmacia no debe proceder (anti-quema).</p>
-
-<p><a id="op-receta-proxy"></a></p>
-<h3 id="obtención-del-detalle-de-receta">Obtención del detalle de receta</h3>
-
-<p>SIHCE actúa como <strong>broker</strong>:</p>
-
-<ol>
-  <li>Resuelve el índice (<code class="language-plaintext highlighter-rouge">DocumentReferenceRecetaSIHCE</code>).</li>
-  <li>Si <code class="language-plaintext highlighter-rouge">repositorioDelegado=false</code>, hace <strong>proxy pass</strong> hacia la URL del repositorio de origen (SIGEHOS / prestador) y <strong>no</strong> persiste el contenido.</li>
-  <li>Si <code class="language-plaintext highlighter-rouge">repositorioDelegado=true</code> (caso 3 / 1b, excepcional), entrega el <code class="language-plaintext highlighter-rouge">MedicationRequest</code> almacenado en SIHCE.</li>
-</ol>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Proxy/MedicationRequest/mr-CUIR-2026-000123
-Authorization: Bearer ...
-Accept: application/fhir+json
-</span></code></pre></div></div>
-
-<p>Perfil de contenido: <a href="StructureDefinition-MedicationRequestRecetaSIHCE.html">MedicationRequestRecetaSIHCE</a>.</p>
-
-<p><a id="op-receta-dispensa"></a></p>
-<h3 id="notificación-de-dispensa">Notificación de dispensa</h3>
-
-<p>La farmacia (aplicativo Opción B) notifica la dispensa. SIHCE:</p>
-
-<ol>
-  <li>Valida que el índice esté en estado <code class="language-plaintext highlighter-rouge">vigente</code>.</li>
-  <li>Persiste el evento (<a href="StructureDefinition-MedicationDispenseRecetaSIHCE.html">MedicationDispenseRecetaSIHCE</a>).</li>
-  <li>Actualiza el índice a estado <code class="language-plaintext highlighter-rouge">dispensada</code> (anti-quema).</li>
-  <li>Propaga el cierre al repositorio de origen (SIGEHOS / prestador) cuando no es repositorio delegado.</li>
-</ol>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /MedicationDispense
-Content-Type: application/fhir+json
-</span></code></pre></div></div>
-
-<p>Ver <a href="MedicationDispense-MedicationDispenseRecetaEjemplo.html">MedicationDispenseRecetaEjemplo</a>.</p>
-
-<h4 id="respuesta-1">Respuesta</h4>
-
-<p><code class="language-plaintext highlighter-rouge">201 Created</code>. SIHCE genera <code class="language-plaintext highlighter-rouge">AuditEvent</code> y actualiza el <code class="language-plaintext highlighter-rouge">DocumentReference</code> de índice.</p>
-
-<p><a id="op-consentimiento"></a></p>
-<h3 id="registro-de-consentimiento-post-consent">Registro de consentimiento (<code class="language-plaintext highlighter-rouge">POST /Consent</code>)</h3>
-
-<p>Cualquier <strong>dominio autenticado</strong> puede registrar las preferencias de privacidad del paciente. No se exige rol de profesional clínico (puede registrar personal administrativo). Cuerpo conforme al perfil <a href="StructureDefinition-ConsentSIHCE.html">ConsentSIHCE</a>.</p>
-
-<p><strong>Default operativo:</strong> sin Consent activo, SIHCE <strong>deniega</strong> el acceso al índice documental.</p>
-
-<h4 id="etapas-de-madurez">Etapas de madurez</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Etapa</th>
-      <th>Contenido</th>
-      <th>Despliegue</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Opt-in / opt-out <strong>general</strong> (<code class="language-plaintext highlighter-rouge">provision.type</code> = <code class="language-plaintext highlighter-rouge">permit</code> | <code class="language-plaintext highlighter-rouge">deny</code>)</td>
-      <td>MVP</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Opt-in por <strong>hospital</strong> (<code class="language-plaintext highlighter-rouge">provision.provision</code> + <code class="language-plaintext highlighter-rouge">actor</code> Organization, con <code class="language-plaintext highlighter-rouge">actor.role</code>)</td>
-      <td>Incremento</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Hospital + <strong>nivel de privacidad</strong> (<code class="language-plaintext highlighter-rouge">provision.provision.securityLabel</code>: <code class="language-plaintext highlighter-rouge">normal</code> | <code class="language-plaintext highlighter-rouge">confidential</code>, <strong>obligatorio y explícito</strong>)</td>
-      <td>Completo</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>Reglas:</strong></p>
-
-<ul>
-  <li>Opt-out general (<code class="language-plaintext highlighter-rouge">provision.type</code> = <code class="language-plaintext highlighter-rouge">deny</code>) <strong>anula</strong> autorizaciones previas.</li>
-  <li>Un opt-in posterior <strong>solo habilita</strong> lo declarado en la nueva versión.</li>
-  <li>Vigencia hasta <strong>revocación</strong>; cada PUT/POST crea <strong>versión</strong> (<code class="language-plaintext highlighter-rouge">meta.versionId</code>).</li>
-  <li>Hospital = <code class="language-plaintext highlighter-rouge">Organization</code> <strong>dentro</strong> del dominio: <code class="language-plaintext highlighter-rouge">identifier.system</code> = <code class="language-plaintext highlighter-rouge">{uri-dominio}/Organization</code>, <code class="language-plaintext highlighter-rouge">identifier.value</code> = id local. Ver <a href="NamingSystem-NamingSystemOrganizationHospitalMsgc.html">NamingSystem Organization hospital MSGC (ejemplo)</a>.</li>
-  <li>R4 exige <code class="language-plaintext highlighter-rouge">scope</code> = <code class="language-plaintext highlighter-rouge">patient-privacy</code> y <code class="language-plaintext highlighter-rouge">actor.role</code> (p. ej. <code class="language-plaintext highlighter-rouge">IRCP</code>) en autorizaciones por hospital.</li>
-</ul>
-
-<h4 id="niveles-de-privacidad-etapa-3">Niveles de privacidad (etapa 3)</h4>
-
-<table>
-  <thead>
-    <tr>
-      <th>Código</th>
-      <th>Documentos accesibles</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">normal</code></td>
-      <td>Sin etiqueta confidential elevada</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">confidential</code></td>
-      <td>Normal <strong>más</strong> documentos con <code class="language-plaintext highlighter-rouge">DocumentReference.securityLabel</code> confidential</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Terminología: <a href="CodeSystem-sihce-privacy-level.html">CodeSystem privacy-level</a>, <a href="ValueSet-sihce-privacy-level-vs.html">ValueSet sihce-privacy-level</a>.</p>
-
-<h4 id="request--etapa-1-opt-in-general">Request — etapa 1 (opt-in general)</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">POST /Consent
-Content-Type: application/fhir+json
-</span></code></pre></div></div>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Consent"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://sihce.gob.ar/StructureDefinition/ConsentSIHCE"</span><span class="p">]</span><span class="w"> </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"active"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"scope"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/consentscope"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"patient-privacy"</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/consent-category"</span><span class="p">,</span><span class="w"> </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"healthcare"</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="p">}],</span><span class="w">
-  </span><span class="nl">"patient"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/PersonaSIHCEMin"</span><span class="w"> </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"dateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2026-08-26"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"provision"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"permit"</span><span class="w"> </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="request--etapa-3-hospital--confidential">Request — etapa 3 (hospital + confidential)</h4>
-
-<p>Ver <a href="Consent-ConsentOptInHospitalConfidentialSIHCE.html">ConsentOptInHospitalConfidentialSIHCE</a>.</p>
-
-<h4 id="respuesta-éxito-4">Respuesta (éxito)</h4>
-
-<p><code class="language-plaintext highlighter-rouge">201 Created</code> con cabecera <strong><code class="language-plaintext highlighter-rouge">Location</code></strong> y cuerpo con el <code class="language-plaintext highlighter-rouge">Consent</code> versionado. SIHCE genera <strong><code class="language-plaintext highlighter-rouge">AuditEvent</code></strong>.</p>
-
-<h4 id="consulta-get-consent">Consulta (<code class="language-plaintext highlighter-rouge">GET /Consent</code>)</h4>
-
-<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET /Consent?patient.identifier=http://sihce.gob.ar/persona|987654321&amp;status=active
-</span></code></pre></div></div>
-
-<p>Historial: <code class="language-plaintext highlighter-rouge">GET /Consent/{id}/_history</code>.</p>
-
-<h4 id="actualización--revocación-put-consentid">Actualización / revocación (<code class="language-plaintext highlighter-rouge">PUT /Consent/{id}</code>)</h4>
-
-<p>Nueva versión del recurso (p. ej. opt-out). Ejemplo: <a href="Consent-ConsentOptOutGeneralSIHCE.html">ConsentOptOutGeneralSIHCE</a>.</p>
-
-<h4 id="ejemplos-publicados-1">Ejemplos publicados</h4>
-
-<ul>
-  <li><a href="Consent-ConsentOptInGeneralSIHCE.html">Consent opt-in general (etapa 1)</a></li>
-  <li><a href="Consent-ConsentOptOutGeneralSIHCE.html">Consent opt-out general</a></li>
-  <li><a href="Consent-ConsentOptInHospitalSIHCE.html">Consent opt-in por hospital (etapa 2)</a></li>
-  <li><a href="Consent-ConsentOptInHospitalNormalSIHCE.html">Consent hospital + nivel normal (etapa 3)</a></li>
-  <li><a href="Consent-ConsentOptInHospitalConfidentialSIHCE.html">Consent hospital + nivel confidential (etapa 3)</a></li>
-</ul>
 
 
 
@@ -1230,8 +331,8 @@ Content-Type: application/fhir+json
 
 
           IG © 2026 <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/diegokaminker/sihce-ig">SIHCE Development Team</a>.  
-          Package SIHCE.fhir.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Thu, Nov 12, 2026 19:26-0300">2026-11-12</span>
+          Package SIHCE.fhir.core#2.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Thu, Nov 12, 2026 22:44-0300">2026-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Contenido</a>

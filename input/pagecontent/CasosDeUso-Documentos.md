@@ -6,7 +6,7 @@ Volver al [índice de casos de uso](CasosDeUso.html).
 
 ### Registro de epicrisis (dominio → SIHCE)
 
-Operación relacionada: [Registro de documento clínico](Operaciones.html#op-documento-registro). Cuerpo conforme al perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.html); tipo LOINC `18842-5`. Capacidad SIHCE: **registro documental**.
+Operación relacionada: [Registro de documento clínico](Operaciones-Documentos.html#op-documento-registro). Cuerpo conforme al perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.html); tipo LOINC `18842-5`. Capacidad SIHCE: **registro documental**.
 
 ```mermaid
 sequenceDiagram
@@ -22,7 +22,7 @@ sequenceDiagram
 
 ### Consulta de epicrisis por paciente
 
-Operaciones: [Búsqueda ITI-67](Operaciones.html#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones.html#op-documento-proxy). SIHCE evalúa **Consent (MCC)** en la búsqueda; la URL del índice apunta al Proxy Central; la descarga es un GET estándar con proxy pass al hospital custodio.
+Operaciones: [Búsqueda ITI-67](Operaciones-Documentos.html#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones-Documentos.html#op-documento-proxy). SIHCE evalúa **Consent (MCC)** en la búsqueda; la URL del índice apunta al Proxy Central; la descarga es un GET estándar con proxy pass al hospital custodio.
 
 ```mermaid
 sequenceDiagram
@@ -55,7 +55,7 @@ Niveles de madurez epicrisis (resumen; detalle en [Epicrisis](Epicrisis.html)):
 
 ### Registro de informe de laboratorio (dominio → SIHCE)
 
-Operación relacionada: [Registro de documento clínico](Operaciones.html#op-documento-registro). Tipo LOINC `11502-2`; URL a [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.html) en el dominio. Capacidad SIHCE: **registro documental**.
+Operación relacionada: [Registro de documento clínico](Operaciones-Documentos.html#op-documento-registro). Tipo LOINC `11502-2`; URL a [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.html) en el dominio. Capacidad SIHCE: **registro documental**.
 
 ```mermaid
 sequenceDiagram
@@ -78,7 +78,7 @@ Niveles de madurez informe de laboratorio:
 
 ### Consulta de informes de laboratorio por paciente
 
-Operaciones: [Búsqueda ITI-67](Operaciones.html#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones.html#op-documento-proxy). Mismo patrón que epicrisis: Consent en MCC, URL del Proxy Central, proxy pass al DiagnosticReport en el custodio.
+Operaciones: [Búsqueda ITI-67](Operaciones-Documentos.html#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones-Documentos.html#op-documento-proxy). Mismo patrón que epicrisis: Consent en MCC, URL del Proxy Central, proxy pass al DiagnosticReport en el custodio.
 
 ```mermaid
 sequenceDiagram

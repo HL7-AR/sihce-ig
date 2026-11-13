@@ -1,4 +1,4 @@
-# Epicrisis - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Epicrisis - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * **Epicrisis**
@@ -49,7 +49,7 @@ La tabla de consenso (abajo) indica qué secciones del negocio ya tienen slice e
 * `section.entry` → [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.md)
 * `Condition.code` → [SIHCEMotivoInternacionICD10VS](ValueSet-sihce-motivo-internacion-icd10-vs.md) (ICD-10, extensible)
 
-El resto de secciones candidatas a codificar (diagnóstico de alta, alergias, medicación, procedimientos, etc.) están en [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.md) como mini-modelos lógicos para votación; **no** son exigidas por el Composition.
+El resto de secciones candidatas a codificar están en [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.md) (mapeo sección → recurso / elementos, alineado a IPS 2.0); **no** son exigidas por el Composition.
 
 Ejemplo: [CompositionEpicrisisNivel3](Composition-CompositionEpicrisisNivel3.md).
 

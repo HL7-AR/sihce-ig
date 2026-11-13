@@ -9,7 +9,7 @@ Indexación y orquestación de recetas en SIHCE. El contenido clínico (`Medicat
 
 A y B **no compiten**: A es condición técnica para que B obtenga el detalle vía broker SIHCE.
 
-Operaciones: [Indexación](Operaciones.html#op-receta-index), [Consulta](Operaciones.html#op-receta-consulta), [Proxy detalle](Operaciones.html#op-receta-proxy), [Dispensa](Operaciones.html#op-receta-dispensa). Perfiles: [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.html), [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.html), [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.html).
+Operaciones: [Indexación](Operaciones-Receta.html#op-receta-index), [Consulta](Operaciones-Receta.html#op-receta-consulta), [Proxy detalle](Operaciones-Receta.html#op-receta-proxy), [Dispensa](Operaciones-Receta.html#op-receta-dispensa). Perfiles: [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.html), [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.html), [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.html).
 
 Volver al [índice de casos de uso](CasosDeUso.html).
 

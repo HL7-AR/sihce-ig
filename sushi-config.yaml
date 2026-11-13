@@ -4,7 +4,7 @@ canonical: http://sihce.gob.ar
 name: GuiaDeImplementacionSIHCE
 title: "Guía de Implementación SIHCE - FHIR R4"
 status: draft
-version: 2.2.0
+version: 2.2.1
 fhirVersion: 4.0.1
 copyrightYear: 2026
 releaseLabel: ci-build
@@ -24,6 +24,14 @@ pages:
     title: Generalidades
   Operaciones.md:
     title: Operaciones
+  Operaciones-Consentimiento.md:
+    title: Operaciones — Consentimiento
+  Operaciones-Persona.md:
+    title: Operaciones — Persona
+  Operaciones-Documentos.md:
+    title: Operaciones — Documentos
+  Operaciones-Receta.md:
+    title: Operaciones — Receta
   CasosDeUso.md:
     title: Casos de Uso
   CasosDeUso-Consentimiento.md:
@@ -48,16 +56,20 @@ menu:
   Contenido: toc.html
   Inicio: index.html
   Generalidades: Aspectos-Generales.html
-  Operaciones: Operaciones.html
+  Operaciones:
+    Índice: Operaciones.html
+    Consentimiento: Operaciones-Consentimiento.html
+    Persona: Operaciones-Persona.html
+    Documentos: Operaciones-Documentos.html
+    Receta: Operaciones-Receta.html
   Casos de Uso:
     Índice: CasosDeUso.html
     Consentimiento: CasosDeUso-Consentimiento.html
     Persona: CasosDeUso-Persona.html
     Documentos: CasosDeUso-Documentos.html
-    Receta: CasosDeUso-Receta.html
-  Epicrisis:
-    Niveles y consenso: Epicrisis.html
+    Epicrisis: Epicrisis.html
     Secciones propuestas: Epicrisis-Secciones-Propuestas.html
+    Receta: CasosDeUso-Receta.html
   Artefactos: artifacts.html
   Modelo Lógico: ModeloLogico.html
   Seguridad: Seguridad.html

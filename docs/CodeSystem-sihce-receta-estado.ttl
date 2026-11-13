@@ -22,12 +22,12 @@
      fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:CodeSystem.url [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-receta-estado"] ;
-  fhir:CodeSystem.version [ fhir:value "2.2.0"] ;
+  fhir:CodeSystem.version [ fhir:value "2.2.1"] ;
   fhir:CodeSystem.name [ fhir:value "SIHCERecetaEstadoCS"] ;
   fhir:CodeSystem.title [ fhir:value "Estado de receta en índice SIHCE"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-12T19:26:41-03:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-12T22:44:23-03:00"^^xsd:dateTime] ;
   fhir:CodeSystem.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:CodeSystem.contact [
      fhir:index 0 ;

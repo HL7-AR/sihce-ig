@@ -1,4 +1,4 @@
-# Artifacts Summary - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Artifacts Summary - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -24,16 +24,6 @@ These define data models that represent the domain covered by this implementatio
 | [ Modelo lógico ModificarIDLocalPersona (FederadorBA)  ](StructureDefinition-ModificarIDLocalPersona.md) | Modificación del identificador local de una persona federada. |
 | [ Modelo lógico ModificarSDMPersona (FederadorBA)  ](StructureDefinition-ModificarSDMPersona.md) | Actualización del SDM de una persona federada; documento inmutable. |
 | [ Modelo lógico RecetaIndice (SIHCE)  ](StructureDefinition-RecetaIndice.md) | Metadatos de receta indexados en SIHCE. El contenido clínico (MedicationRequest) permanece en el repositorio de origen (SIGEHOS o prestador) salvo el caso excepcional de repositorio delegado en SIHCE. |
-| [ Propuesta: Alergias (epicrisis)  ](StructureDefinition-EpicrisisPropuestaAlergias.md) | Sugerencia para votación: alergias codificadas. No normativa hasta aceptación. |
-| [ Propuesta: Diagnóstico de admisión (epicrisis)  ](StructureDefinition-EpicrisisPropuestaDiagnosticoAdmision.md) | Sugerencia para votación: sección Diagnóstico de admisión codificada. No normativa hasta aceptación. |
-| [ Propuesta: Diagnóstico de alta (epicrisis)  ](StructureDefinition-EpicrisisPropuestaDiagnosticoAlta.md) | Sugerencia para votación: sección Diagnóstico de alta codificada. No normativa hasta aceptación. |
-| [ Propuesta: Dispositivos e implantes (epicrisis)  ](StructureDefinition-EpicrisisPropuestaDispositivos.md) | Sugerencia para votación: dispositivos/implantes codificados. No normativa hasta aceptación. |
-| [ Propuesta: Medicación de alta (epicrisis)  ](StructureDefinition-EpicrisisPropuestaMedicacionAlta.md) | Sugerencia para votación: medicación de alta codificada. No normativa hasta aceptación. Perfil draft relacionado: MedicationStatementEpicrisisSIHCE. |
-| [ Propuesta: Medicación de ingreso (epicrisis)  ](StructureDefinition-EpicrisisPropuestaMedicacionIngreso.md) | Sugerencia para votación: medicación de ingreso codificada. No normativa hasta aceptación. |
-| [ Propuesta: Problemas y antecedentes (epicrisis)  ](StructureDefinition-EpicrisisPropuestaProblemas.md) | Sugerencia para votación: lista de problemas codificada. No normativa hasta aceptación. |
-| [ Propuesta: Procedimientos (epicrisis)  ](StructureDefinition-EpicrisisPropuestaProcedimientos.md) | Sugerencia para votación: procedimientos codificados. No normativa hasta aceptación. |
-| [ Propuesta: Signos vitales (epicrisis)  ](StructureDefinition-EpicrisisPropuestaSignosVitales.md) | Sugerencia para votación: signos vitales codificados. No normativa hasta aceptación. |
-| [ Propuesta: Vacunas (epicrisis)  ](StructureDefinition-EpicrisisPropuestaVacunas.md) | Sugerencia para votación: inmunizaciones codificadas. No normativa hasta aceptación. |
 
 ### Structures: Resource Profiles 
 

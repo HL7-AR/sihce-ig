@@ -1,4 +1,4 @@
-# Casos de Uso — Documentos - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Casos de Uso — Documentos - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * **Casos de Uso — Documentos**
@@ -13,7 +13,7 @@ Volver al [índice de casos de uso](CasosDeUso.md).
 
 ### Registro de epicrisis (dominio → SIHCE)
 
-Operación relacionada: [Registro de documento clínico](Operaciones.md#op-documento-registro). Cuerpo conforme al perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md); tipo LOINC `18842-5`. Capacidad SIHCE: **registro documental**.
+Operación relacionada: [Registro de documento clínico](Operaciones-Documentos.md#op-documento-registro). Cuerpo conforme al perfil [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md); tipo LOINC `18842-5`. Capacidad SIHCE: **registro documental**.
 
 ```
 sequenceDiagram
@@ -30,7 +30,7 @@ sequenceDiagram
 
 ### Consulta de epicrisis por paciente
 
-Operaciones: [Búsqueda ITI-67](Operaciones.md#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones.md#op-documento-proxy). SIHCE evalúa **Consent (MCC)** en la búsqueda; la URL del índice apunta al Proxy Central; la descarga es un GET estándar con proxy pass al hospital custodio.
+Operaciones: [Búsqueda ITI-67](Operaciones-Documentos.md#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones-Documentos.md#op-documento-proxy). SIHCE evalúa **Consent (MCC)** en la búsqueda; la URL del índice apunta al Proxy Central; la descarga es un GET estándar con proxy pass al hospital custodio.
 
 ```
 sequenceDiagram
@@ -64,7 +64,7 @@ Niveles de madurez epicrisis (resumen; detalle en [Epicrisis](Epicrisis.md)):
 
 ### Registro de informe de laboratorio (dominio → SIHCE)
 
-Operación relacionada: [Registro de documento clínico](Operaciones.md#op-documento-registro). Tipo LOINC `11502-2`; URL a [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) en el dominio. Capacidad SIHCE: **registro documental**.
+Operación relacionada: [Registro de documento clínico](Operaciones-Documentos.md#op-documento-registro). Tipo LOINC `11502-2`; URL a [DiagnosticReportLaboratorioSIHCE](StructureDefinition-DiagnosticReportLaboratorioSIHCE.md) en el dominio. Capacidad SIHCE: **registro documental**.
 
 ```
 sequenceDiagram
@@ -88,7 +88,7 @@ Niveles de madurez informe de laboratorio:
 
 ### Consulta de informes de laboratorio por paciente
 
-Operaciones: [Búsqueda ITI-67](Operaciones.md#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones.md#op-documento-proxy). Mismo patrón que epicrisis: Consent en MCC, URL del Proxy Central, proxy pass al DiagnosticReport en el custodio.
+Operaciones: [Búsqueda ITI-67](Operaciones-Documentos.md#op-documento-consulta), [Descarga ITI-68 vía Proxy](Operaciones-Documentos.md#op-documento-proxy). Mismo patrón que epicrisis: Consent en MCC, URL del Proxy Central, proxy pass al DiagnosticReport en el custodio.
 
 ```
 sequenceDiagram

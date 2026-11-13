@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "sihce-receta-estado-vs"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-receta-estado-vs</b></p><a name=\"sihce-receta-estado-vs\"> </a><a name=\"hcsihce-receta-estado-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-receta-estado.html\"><code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.2.0</span></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-receta-estado-vs</b></p><a name=\"sihce-receta-estado-vs\"> </a><a name=\"hcsihce-receta-estado-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-receta-estado.html\"><code>http://sihce.gob.ar/CodeSystem/sihce-receta-estado</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?2.2.1</span></li></ul></div>"
   ] ;
   fhir:DomainResource.extension [
      fhir:index 0 ;
@@ -22,12 +22,12 @@
      fhir:Extension.valueCode [ fhir:value "draft" ]
   ] ;
   fhir:ValueSet.url [ fhir:value "http://sihce.gob.ar/ValueSet/sihce-receta-estado"] ;
-  fhir:ValueSet.version [ fhir:value "2.2.0"] ;
+  fhir:ValueSet.version [ fhir:value "2.2.1"] ;
   fhir:ValueSet.name [ fhir:value "SIHCERecetaEstadoVS"] ;
   fhir:ValueSet.title [ fhir:value "Estados de receta SIHCE"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-11-12T19:26:41-03:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-12T22:44:23-03:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;

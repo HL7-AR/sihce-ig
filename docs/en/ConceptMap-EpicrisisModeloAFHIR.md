@@ -1,4 +1,4 @@
-# Epicrisis: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Epicrisis: modelo lógico a FHIR - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | | |
 | :--- | :--- | :--- |
-| *Official URL*:http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR | *Version*:2.2.0 | |
+| *Official URL*:http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR | *Version*:2.2.1 | |
 | * Standards status: *[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 3 | *Computable Name*:EpicrisisModeloAFHIR |
 
  
@@ -31,7 +31,7 @@ Mapeo de secciones de epicrisis a Composition.section (niveles 2 y 3; nivel 3 no
     "valueCode" : "trial-use"
   }],
   "url" : "http://sihce.gob.ar/ConceptMap/EpicrisisModeloAFHIR",
-  "version" : "2.2.0",
+  "version" : "2.2.1",
   "name" : "EpicrisisModeloAFHIR",
   "title" : "Epicrisis: modelo lógico a FHIR",
   "status" : "active",

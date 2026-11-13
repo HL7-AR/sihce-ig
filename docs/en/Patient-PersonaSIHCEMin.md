@@ -1,4 +1,4 @@
-# PersonaSIHCEMin - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# PersonaSIHCEMin - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

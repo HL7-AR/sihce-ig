@@ -1,4 +1,4 @@
-# Casos de Uso — Receta - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Casos de Uso — Receta - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * **Casos de Uso — Receta**
@@ -16,7 +16,7 @@ Indexación y orquestación de recetas en SIHCE. El contenido clínico (`Medicat
 
 A y B **no compiten**: A es condición técnica para que B obtenga el detalle vía broker SIHCE.
 
-Operaciones: [Indexación](Operaciones.md#op-receta-index), [Consulta](Operaciones.md#op-receta-consulta), [Proxy detalle](Operaciones.md#op-receta-proxy), [Dispensa](Operaciones.md#op-receta-dispensa). Perfiles: [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md), [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.md), [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.md).
+Operaciones: [Indexación](Operaciones-Receta.md#op-receta-index), [Consulta](Operaciones-Receta.md#op-receta-consulta), [Proxy detalle](Operaciones-Receta.md#op-receta-proxy), [Dispensa](Operaciones-Receta.md#op-receta-dispensa). Perfiles: [DocumentReferenceRecetaSIHCE](StructureDefinition-DocumentReferenceRecetaSIHCE.md), [MedicationRequestRecetaSIHCE](StructureDefinition-MedicationRequestRecetaSIHCE.md), [MedicationDispenseRecetaSIHCE](StructureDefinition-MedicationDispenseRecetaSIHCE.md).
 
 Volver al [índice de casos de uso](CasosDeUso.md).
 

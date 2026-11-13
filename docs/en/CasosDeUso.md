@@ -1,4 +1,4 @@
-# Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.2.0
+# Casos de Uso - Guía de Implementación SIHCE - FHIR R4 v2.2.1
 
 * [**Table of Contents**](toc.md)
 * **Casos de Uso**
@@ -39,8 +39,8 @@ Todo mensaje entre dominio y SIHCE viaja por el **Canal X-BA**. SIHCE responde s
 | :--- | :--- |
 | Consentimiento | [Casos de Uso — Consentimiento](CasosDeUso-Consentimiento.md) |
 | Persona (búsqueda, federación, patch, SDM) | [Casos de Uso — Persona](CasosDeUso-Persona.md) |
-| Documentos clínicos (epicrisis, laboratorio) | [Casos de Uso — Documentos](CasosDeUso-Documentos.md) |
+| Documentos clínicos (laboratorio e índice) | [Casos de Uso — Documentos](CasosDeUso-Documentos.md) |
+| Epicrisis (tres niveles y consenso) | [Epicrisis](Epicrisis.md) |
+| Secciones propuestas a votar | [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.md) |
 | Receta electrónica (CPE) | [Casos de Uso — Receta](CasosDeUso-Receta.md) |
-
-Detalle normativo de epicrisis (tres niveles y consenso de secciones): [Epicrisis](Epicrisis.md).
 
