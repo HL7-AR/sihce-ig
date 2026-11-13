@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "sihce-clinical-document-type",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-clinical-document-type</b></p><a name=\"sihce-clinical-document-type\"> </a><a name=\"hcsihce-clinical-document-type\"> </a><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where code  = 18842-5 (Discharge Summary)</li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
+  "version" : "2.2.2",
+  "name" : "SIHCEClinicalDocumentTypeVS",
+  "title" : "Tipos de documento clínico SIHCE",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-13T12:33:51-03:00",
+  "publisher" : "SIHCE Development Team",
+  "contact" : [{
+    "name" : "SIHCE Development Team",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/diegokaminker/sihce-ig"
+    }]
+  }],
+  "description" : "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC).",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "code",
+        "op" : "=",
+        "value" : "18842-5"
+      }]
+    }]
+  }
+}

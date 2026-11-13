@@ -37,9 +37,9 @@ La tabla de consenso (abajo) indica qué secciones del negocio ya tienen slice e
 
 Única sección normativa codificada en esta versión:
 
-- Slice `motivoInternacion` (LOINC **46241-6** *Reason for hospitalization*)
+- Slice `motivoInternacion` (LOINC **46241-6** *Hospital admission diagnosis Narrative - Reported*)
 - `section.entry` → [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.html)
-- `Condition.code` → [SIHCEMotivoInternacionICD10VS](ValueSet-sihce-motivo-internacion-icd10-vs.html) (ICD-10, extensible)
+- `Condition.code` → [SIHCEMotivoInternacionICD10VS](ValueSet-sihce-motivo-internacion-icd10.html) (ICD-10, extensible)
 
 El resto de secciones candidatas a codificar están en [Epicrisis — secciones propuestas](Epicrisis-Secciones-Propuestas.html) (mapeo sección → recurso / elementos, alineado a IPS 2.0); **no** son exigidas por el Composition.
 

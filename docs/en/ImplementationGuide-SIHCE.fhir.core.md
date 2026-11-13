@@ -14,7 +14,7 @@
   "name" : "GuiaDeImplementacionSIHCE",
   "title" : "Guía de Implementación SIHCE - FHIR R4",
   "status" : "draft",
-  "date" : "2026-11-12T23:15:14-03:00",
+  "date" : "2026-11-13T12:33:51-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -504,10 +504,10 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-sihce-epicrisis-diagnosis-code-vs.html"
+        "valueUri" : "ValueSet-sihce-epicrisis-diagnosis-code.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/sihce-epicrisis-diagnosis-code-vs"
+        "reference" : "ValueSet/sihce-epicrisis-diagnosis-code"
       },
       "name" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto",
       "description" : "ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas.",
@@ -676,18 +676,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Organization"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-MedicationStatementEpicrisisSIHCE.html"
+        "valueUri" : "Organization-hospital-italiano-ejemplo.html"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MedicationStatementEpicrisisSIHCE"
+        "reference" : "Organization/hospital-italiano-ejemplo"
       },
-      "name" : "Medicación al alta epicrisis SIHCE",
-      "description" : "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas.",
-      "exampleBoolean" : false
+      "name" : "Hospital Italiano de Buenos Aires (ejemplo)",
+      "description" : "Organización de ejemplo usada como author/custodian en instancias de epicrisis.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -856,10 +856,10 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-sihce-motivo-internacion-icd10-vs.html"
+        "valueUri" : "ValueSet-sihce-motivo-internacion-icd10.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/sihce-motivo-internacion-icd10-vs"
+        "reference" : "ValueSet/sihce-motivo-internacion-icd10"
       },
       "name" : "Motivo de internación epicrisis (ICD-10)",
       "description" : "Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación.",
@@ -952,10 +952,10 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-sihce-privacy-level-vs.html"
+        "valueUri" : "ValueSet-sihce-privacy-level.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/sihce-privacy-level-vs"
+        "reference" : "ValueSet/sihce-privacy-level"
       },
       "name" : "Niveles de privacidad SIHCE",
       "description" : "Niveles admitidos en Consent.provision.securityLabel (etapa 3).",
@@ -968,10 +968,10 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-sihce-privacy-level.html"
+        "valueUri" : "CodeSystem-privacy-level.html"
       }],
       "reference" : {
-        "reference" : "CodeSystem/sihce-privacy-level"
+        "reference" : "CodeSystem/privacy-level"
       },
       "name" : "Niveles de privacidad SIHCE",
       "description" : "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3).",
@@ -1128,10 +1128,10 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-sihce-epicrisis-section-vs.html"
+        "valueUri" : "ValueSet-sihce-epicrisis-section.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/sihce-epicrisis-section-vs"
+        "reference" : "ValueSet/sihce-epicrisis-section"
       },
       "name" : "Secciones LOINC de epicrisis SIHCE",
       "description" : "Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3).",
@@ -1144,10 +1144,10 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-sihce-clinical-document-type-vs.html"
+        "valueUri" : "ValueSet-sihce-clinical-document-type.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/sihce-clinical-document-type-vs"
+        "reference" : "ValueSet/sihce-clinical-document-type"
       },
       "name" : "Tipos de documento clínico SIHCE",
       "description" : "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC).",
@@ -1160,13 +1160,29 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ValueSet-sihce-document-content-type-vs.html"
+        "valueUri" : "ValueSet-sihce-document-content-type.html"
       }],
       "reference" : {
-        "reference" : "ValueSet/sihce-document-content-type-vs"
+        "reference" : "ValueSet/sihce-document-content-type"
       },
       "name" : "Tipos MIME de contenido documental SIHCE",
       "description" : "Formatos admitidos en DocumentReference.content.attachment.contentType.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-sihce-mime-type.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/sihce-mime-type"
+      },
+      "name" : "Tipos MIME documentales SIHCE",
+      "description" : "MIME types admitidos en DocumentReference.content.attachment.contentType (independiente del CodeSystem HL7 mimetypes para builds offline).",
       "exampleBoolean" : false
     }],
     "page" : {
@@ -1310,6 +1326,15 @@
         }],
         "nameUrl" : "HistorialDeCambios.html",
         "title" : "Historial de Cambios",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Descargas",
         "generation" : "markdown"
       }]
     },

@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-parametros-update
   "name" : "ParametrosUpdateSDMSIHCE",
   "title" : "Parametros Update SDM SIHCE",
   "status" : "active",
-  "date" : "2026-11-12T23:15:14-03:00",
+  "date" : "2026-11-13T12:33:51-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

@@ -16,23 +16,6 @@ Description: "Motivo de internación codificado en epicrisis nivel 3 (ICD-10). B
 * subject 1..1 MS
 * subject only Reference(Patient)
 
-Profile: MedicationStatementEpicrisisSIHCE
-Parent: MedicationStatement
-Id: MedicationStatementEpicrisisSIHCE
-Title: "Medicación al alta epicrisis SIHCE"
-Description: "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas."
-* ^version = "1.4.0"
-* ^status = #draft
-* ^extension[$fmm].valueInteger = 1
-* ^extension[$standards-status].valueCode = #draft
-* ^date = "2026-06-09T00:00:00-03:00"
-* ^publisher = "SIHCE Development Team"
-* status 1..1 MS
-* medication[x] only CodeableConcept
-* medicationCodeableConcept 1..1 MS
-* subject 1..1 MS
-* subject only Reference(Patient)
-
 Profile: CompositionEpicrisisSIHCE
 Parent: Composition
 Id: CompositionEpicrisisSIHCE
@@ -48,7 +31,7 @@ Description: "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secc
 * status 1..1 MS
 * status = #final
 * type 1..1 MS
-* type = http://loinc.org#18842-5 "Discharge summary"
+* type = http://loinc.org#18842-5 "Discharge Summary"
 * subject 1..1 MS
 * subject only Reference(Patient)
 * subject.reference 1..1 MS
@@ -59,8 +42,8 @@ Description: "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secc
 * custodian 0..1 MS
 * custodian only Reference(Organization)
 * section 0..* MS
-* section ^slicing.discriminator.type = #pattern
-* section ^slicing.discriminator.path = "code.coding"
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code.coding.code"
 * section ^slicing.rules = #open
 * section contains
     alergias 0..1 MS and
@@ -76,34 +59,73 @@ Description: "Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secc
     hallazgosFisicos 0..1 MS and
     historialProcedimientos 0..1 MS and
     listaProblemas 0..1 MS
-* section[alergias].code = http://loinc.org#48765-2 "Allergies and adverse reactions Document"
+* section[alergias].code.coding 1..1
+* section[alergias].code.coding.system = "http://loinc.org"
+* section[alergias].code.coding.code = #48765-2
+* section[alergias].code.coding.display = "Allergies and adverse reactions Document"
 * section[alergias].text 0..1 MS
-* section[diagnosticoAlta].code = http://loinc.org#78375-3 "Discharge diagnosis"
+* section[diagnosticoAlta].code.coding 1..1
+* section[diagnosticoAlta].code.coding.system = "http://loinc.org"
+* section[diagnosticoAlta].code.coding.code = #78375-3
+* section[diagnosticoAlta].code.coding.display = "Discharge diagnosis Narrative"
 * section[diagnosticoAlta].text 0..1 MS
-* section[medicamentosAlta].code = http://loinc.org#75311-1 "Discharge medications"
+* section[medicamentosAlta].code.coding 1..1
+* section[medicamentosAlta].code.coding.system = "http://loinc.org"
+* section[medicamentosAlta].code.coding.code = #75311-1
+* section[medicamentosAlta].code.coding.display = "Discharge medications note"
 * section[medicamentosAlta].text 0..1 MS
-* section[evolucionHospitalaria].code = http://loinc.org#8648-8 "Hospital course Narrative"
+* section[evolucionHospitalaria].code.coding 1..1
+* section[evolucionHospitalaria].code.coding.system = "http://loinc.org"
+* section[evolucionHospitalaria].code.coding.code = #8648-8
+* section[evolucionHospitalaria].code.coding.display = "Hospital course note"
 * section[evolucionHospitalaria].text 0..1 MS
-* section[planTratamiento].code = http://loinc.org#18776-5 "Plan of treatment Narrative"
+* section[planTratamiento].code.coding 1..1
+* section[planTratamiento].code.coding.system = "http://loinc.org"
+* section[planTratamiento].code.coding.code = #18776-5
+* section[planTratamiento].code.coding.display = "Plan of Care Note"
 * section[planTratamiento].text 0..1 MS
-* section[diagnosticoAdmision].code = http://loinc.org#42347-5 "Admission diagnosis"
+* section[diagnosticoAdmision].code.coding 1..1
+* section[diagnosticoAdmision].code.coding.system = "http://loinc.org"
+* section[diagnosticoAdmision].code.coding.code = #42347-5
+* section[diagnosticoAdmision].code.coding.display = "Admission diagnosis (narrative)"
 * section[diagnosticoAdmision].text 0..1 MS
-* section[medicamentosIngreso].code = http://loinc.org#42346-7 "Medications on admission"
+* section[medicamentosIngreso].code.coding 1..1
+* section[medicamentosIngreso].code.coding.system = "http://loinc.org"
+* section[medicamentosIngreso].code.coding.code = #42346-7
+* section[medicamentosIngreso].code.coding.display = "Medications on admission (narrative)"
 * section[medicamentosIngreso].text 0..1 MS
-* section[motivoInternacion].code = http://loinc.org#46241-6 "Reason for hospitalization Narrative"
+* section[motivoInternacion].code.coding 1..1
+* section[motivoInternacion].code.coding.system = "http://loinc.org"
+* section[motivoInternacion].code.coding.code = #46241-6
+* section[motivoInternacion].code.coding.display = "Hospital admission diagnosis Narrative - Reported"
 * section[motivoInternacion].text 0..1 MS
 * section[motivoInternacion].entry 0..* MS
 * section[motivoInternacion].entry only Reference(ConditionEpicrisisSIHCE)
 * section[motivoInternacion].entry ^short = "Nivel 3: Condition con código ICD-10"
-* section[instruccionesAlta].code = http://loinc.org#8653-8 "Discharge instructions"
+* section[instruccionesAlta].code.coding 1..1
+* section[instruccionesAlta].code.coding.system = "http://loinc.org"
+* section[instruccionesAlta].code.coding.code = #8653-8
+* section[instruccionesAlta].code.coding.display = "Hospital Discharge Instructions"
 * section[instruccionesAlta].text 0..1 MS
-* section[resumenEstudios].code = http://loinc.org#11493-4 "Discharge studies summary Narrative"
+* section[resumenEstudios].code.coding 1..1
+* section[resumenEstudios].code.coding.system = "http://loinc.org"
+* section[resumenEstudios].code.coding.code = #11493-4
+* section[resumenEstudios].code.coding.display = "Hospital discharge studies summary Narrative"
 * section[resumenEstudios].text 0..1 MS
-* section[hallazgosFisicos].code = http://loinc.org#10184-0 "Physical findings note"
+* section[hallazgosFisicos].code.coding 1..1
+* section[hallazgosFisicos].code.coding.system = "http://loinc.org"
+* section[hallazgosFisicos].code.coding.code = #10184-0
+* section[hallazgosFisicos].code.coding.display = "Hospital discharge physical findings Narrative"
 * section[hallazgosFisicos].text 0..1 MS
-* section[historialProcedimientos].code = http://loinc.org#47519-4 "History of procedures"
+* section[historialProcedimientos].code.coding 1..1
+* section[historialProcedimientos].code.coding.system = "http://loinc.org"
+* section[historialProcedimientos].code.coding.code = #47519-4
+* section[historialProcedimientos].code.coding.display = "History of Procedures Document"
 * section[historialProcedimientos].text 0..1 MS
-* section[listaProblemas].code = http://loinc.org#11450-4 "Problem list"
+* section[listaProblemas].code.coding 1..1
+* section[listaProblemas].code.coding.system = "http://loinc.org"
+* section[listaProblemas].code.coding.code = #11450-4
+* section[listaProblemas].code.coding.display = "Problem list - Reported"
 * section[listaProblemas].text 0..1 MS
 
 Profile: DocumentReferenceSIHCE

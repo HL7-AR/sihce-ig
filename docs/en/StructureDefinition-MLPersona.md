@@ -82,11 +82,11 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       "id" : "MLPersona.nombreOficial",
       "path" : "MLPersona.nombreOficial",
       "short" : "Nombre oficial de la persona",
-      "definition" : "Nombre oficial de la persona",
+      "definition" : "Nombre oficial de la persona (elementos de negocio; no es el datatype FHIR HumanName).",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "HumanName"
+        "code" : "BackboneElement"
       }],
       "mapping" : [{
         "identity" : "mlpersona-to-sihce",
@@ -162,11 +162,11 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       "id" : "MLPersona.nombreSocial",
       "path" : "MLPersona.nombreSocial",
       "short" : "Nombre o pseudonimo por el cual la persona desea ser identificada",
-      "definition" : "Nombre o pseudonimo por el cual la persona desea ser identificada",
+      "definition" : "Nombre social (elementos de negocio).",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "HumanName"
+        "code" : "BackboneElement"
       }],
       "mapping" : [{
         "identity" : "mlpersona-to-sihce",
@@ -194,11 +194,11 @@ Other representations of profile: [CSV](../StructureDefinition-MLPersona.csv), [
       "id" : "MLPersona.identificadorUnivoco",
       "path" : "MLPersona.identificadorUnivoco",
       "short" : "Identificador unívoco de la persona",
-      "definition" : "DNI + Identificador de dominio local",
+      "definition" : "DNI + Identificador de dominio local (elementos de negocio; no es el datatype FHIR Identifier).",
       "min" : 2,
       "max" : "*",
       "type" : [{
-        "code" : "Identifier"
+        "code" : "BackboneElement"
       }],
       "mapping" : [{
         "identity" : "mlpersona-to-sihce",

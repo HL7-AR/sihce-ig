@@ -1,0 +1,51 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "sihce-mime-type",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-mime-type</b></p><a name=\"sihce-mime-type\"> </a><a name=\"hcsihce-mime-type\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">application/pdf<a name=\"sihce-mime-type-application.47pdf\"> </a></td><td>PDF</td><td>application/pdf</td></tr><tr><td style=\"white-space:nowrap\">application/xml<a name=\"sihce-mime-type-application.47xml\"> </a></td><td>XML</td><td>application/xml</td></tr><tr><td style=\"white-space:nowrap\">application/fhir+json<a name=\"sihce-mime-type-application.47fhir.43json\"> </a></td><td>FHIR JSON</td><td>application/fhir+json</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+  "version" : "2.2.2",
+  "name" : "SIHCEMimeTypeCS",
+  "title" : "Tipos MIME documentales SIHCE",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-13T12:33:51-03:00",
+  "publisher" : "SIHCE Development Team",
+  "contact" : [{
+    "name" : "SIHCE Development Team",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/diegokaminker/sihce-ig"
+    }]
+  }],
+  "description" : "MIME types admitidos en DocumentReference.content.attachment.contentType (independiente del CodeSystem HL7 mimetypes para builds offline).",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "application/pdf",
+    "display" : "PDF",
+    "definition" : "application/pdf"
+  },
+  {
+    "code" : "application/xml",
+    "display" : "XML",
+    "definition" : "application/xml"
+  },
+  {
+    "code" : "application/fhir+json",
+    "display" : "FHIR JSON",
+    "definition" : "application/fhir+json"
+  }]
+}

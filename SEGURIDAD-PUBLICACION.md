@@ -52,11 +52,11 @@ _genonce.sh  →  Publisher  →  output/
 
 No se publican (se borran de `output/` antes del sync):
 
-- `qa.html`, `qa.min.html`, `qa-ipreview.html`, `qa-dep.html`, `qa-tx.html`, `qa-txservers.html`
+- `qa-ipreview.html`, `qa-dep.html`, `qa-tx.html`, `qa-txservers.html`
 - `qa.txt`, `qa.json`, `qa.xml`, `qa.compare.txt`, `qa-eslintcompact.txt`, `qa-time-report.*`
 - `searchform.html`, `package.db`, `validator*.pack`
 
-El informe QA sigue generándose en build local; solo no se expone en GitHub Pages / QA web.
+`qa.html` / `qa.min.html` **sí se publican** (link “QA Report” del footer). Antes del sync, `sanitize-publish.py` reemplaza rutas absolutas (`/Users/...`, `/home/...`) por `[local-path]`.
 
 ## Verificación local
 

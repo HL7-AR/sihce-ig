@@ -102,5 +102,5 @@ Orden práctico alineado a IPS + impacto clínico en el alta:
 ### Fuera de esta página
 
 * No se publican perfiles ni modelos lógicos provisorios por sección: la decisión se toma aquí y luego se tipa en FSH.
-* `MedicationStatementEpicrisisSIHCE` (draft) puede reutilizarse o reemplazarse por `MedicationRequest` al tipar medicación de alta.
+* Medicación de alta/ingreso: tipar con `MedicationRequest` / `MedicationStatement` (u otro recurso acordado) cuando se vote la sección; en esta versión no hay perfil SIHCE dedicado.
 

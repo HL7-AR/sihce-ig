@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d2c62478-21fe-4b2c-9472-6c28faa757eb",
+  "id" : "05cb1f5d-141b-4671-8297-76db84d38cff",
   "meta" : {
-    "lastUpdated" : "2026-11-12T23:15:14.653-03:00"
+    "lastUpdated" : "2026-11-13T12:33:51.792-03:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,10 +19,10 @@
       "title" : "Tipos de documento clínico SIHCE",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-11-12T23:15:14-03:00",
+      "date" : "2026-11-13T12:33:51-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:cb9f8051-bdf2-4d3b-a08f-75beca41b443",
-        "timestamp" : "2026-11-12T23:17:07-03:00",
+        "identifier" : "urn:uuid:cabc323e-87b3-450c-8035-eeb83f8fea03",
+        "timestamp" : "2026-11-13T12:36:00-03:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -75,10 +75,10 @@
       "title" : "Tipos de documento clínico SIHCE",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-11-12T23:15:14-03:00",
+      "date" : "2026-11-13T12:33:51-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:0ab10fcb-5892-46f7-8d04-5785eb21d1f7",
-        "timestamp" : "2026-11-12T23:17:07-03:00",
+        "identifier" : "urn:uuid:29c99b24-8409-4b81-952d-7e965a61250a",
+        "timestamp" : "2026-11-13T12:36:00-03:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -118,12 +118,650 @@
     }
   },
   {
+    "fullUrl" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sihce-mime-type.html\">codesystem Tipos MIME documentales SIHCE v2.2.2 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/sihce-mime-type|2.2.2\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/pdf\"> </a><code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47pdf\">application/pdf</a></td><td>PDF</td><td>application/pdf</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/pdf&quot;, &quot;display&quot;: &quot;PDF&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/pdf&quot;/&gt;&lt;display value=&quot;PDF&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/xml\"> </a><code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47xml\">application/xml</a></td><td>XML</td><td>application/xml</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/xml&quot;, &quot;display&quot;: &quot;XML&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/xml&quot;/&gt;&lt;display value=&quot;XML&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/fhir+json\"> </a><code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47fhir.43json\">application/fhir+json</a></td><td>FHIR JSON</td><td>application/fhir+json</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/fhir+json&quot;, &quot;display&quot;: &quot;FHIR JSON&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/fhir+json&quot;/&gt;&lt;display value=&quot;FHIR JSON&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
+      "version" : "2.2.2",
+      "name" : "SIHCEDocumentContentTypeVS",
+      "title" : "Tipos MIME de contenido documental SIHCE",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-11-13T12:33:51-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:2602e78f-f0c7-43ae-9c1c-32f24b26ab49",
+        "timestamp" : "2026-11-13T12:36:00-03:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type|2.2.2"
+        }],
+        "contains" : [{
+          "system" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+          "code" : "application/pdf",
+          "display" : "PDF"
+        },
+        {
+          "system" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+          "code" : "application/xml",
+          "display" : "XML"
+        },
+        {
+          "system" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+          "code" : "application/fhir+json",
+          "display" : "FHIR JSON"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sihce-mime-type.html\">codesystem Tipos MIME documentales SIHCE v2.2.2 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/sihce-mime-type|2.2.2\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/pdf\"> </a><code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47pdf\">application/pdf</a></td><td>PDF</td><td>application/pdf</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/pdf&quot;, &quot;display&quot;: &quot;PDF&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/pdf&quot;/&gt;&lt;display value=&quot;PDF&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/xml\"> </a><code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47xml\">application/xml</a></td><td>XML</td><td>application/xml</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/xml&quot;, &quot;display&quot;: &quot;XML&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/xml&quot;/&gt;&lt;display value=&quot;XML&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/fhir+json\"> </a><code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47fhir.43json\">application/fhir+json</a></td><td>FHIR JSON</td><td>application/fhir+json</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/fhir+json&quot;, &quot;display&quot;: &quot;FHIR JSON&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/fhir+json&quot;/&gt;&lt;display value=&quot;FHIR JSON&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
+      "version" : "2.2.2",
+      "name" : "SIHCEDocumentContentTypeVS",
+      "title" : "Tipos MIME de contenido documental SIHCE",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-11-13T12:33:51-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:5f929c8a-7117-403a-997a-64e9a3010f8a",
+        "timestamp" : "2026-11-13T12:36:01-03:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type|2.2.2"
+        }],
+        "contains" : [{
+          "system" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+          "code" : "application/pdf",
+          "display" : "PDF"
+        },
+        {
+          "system" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+          "code" : "application/xml",
+          "display" : "XML"
+        },
+        {
+          "system" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+          "code" : "application/fhir+json",
+          "display" : "FHIR JSON"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li><a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019\">codesystem ICD-10-EN v2019-covid-expanded (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/sid/icd-10|2019-covid-expanded\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></li><li>SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></li></ul></div><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-J18.9\"> </a><code>http://hl7.org/fhir/sid/icd-10</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469\">J18.9</a></td><td>Pneumonia, unspecified</td><td><div><p>Pneumonia, unspecified</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;J18.9&quot;, &quot;display&quot;: &quot;Pneumonia, unspecified&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;J18.9&quot;/&gt;&lt;display value=&quot;Pneumonia, unspecified&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-233604007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/233604007\">233604007</a></td><td>Pneumonia</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;233604007&quot;, &quot;display&quot;: &quot;Pneumonia&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;233604007&quot;/&gt;&lt;display value=&quot;Pneumonia&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
+      "version" : "2.2.2",
+      "name" : "SIHCEEpicrisisDiagnosisCodeVS",
+      "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2026-11-13T12:33:51-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:eea7d418-f73a-4fce-bf51-317ff1de69df",
+        "timestamp" : "2026-11-13T12:36:01-03:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "J18.9",
+          "display" : "Pneumonia, unspecified"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "233604007",
+          "display" : "Pneumonia"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li><a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019\">codesystem ICD-10-EN v2019-covid-expanded (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/sid/icd-10|2019-covid-expanded\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></li><li>SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></li></ul></div><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-J18.9\"> </a><code>http://hl7.org/fhir/sid/icd-10</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469\">J18.9</a></td><td>Pneumonia, unspecified</td><td><div><p>Pneumonia, unspecified</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;J18.9&quot;, &quot;display&quot;: &quot;Pneumonia, unspecified&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;J18.9&quot;/&gt;&lt;display value=&quot;Pneumonia, unspecified&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-233604007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/233604007\">233604007</a></td><td>Pneumonia</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;233604007&quot;, &quot;display&quot;: &quot;Pneumonia&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;233604007&quot;/&gt;&lt;display value=&quot;Pneumonia&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
+      "version" : "2.2.2",
+      "name" : "SIHCEEpicrisisDiagnosisCodeVS",
+      "title" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2026-11-13T12:33:51-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:28fc6521-64ab-4ef7-aabc-de6d61880637",
+        "timestamp" : "2026-11-13T12:36:01-03:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "J18.9",
+          "display" : "Pneumonia, unspecified"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "233604007",
+          "display" : "Pneumonia"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>Loinc v2.83<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.83\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></li><li>Loinc v2.82<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.82\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></li></ul></div><p>This value set expansion contains 13 concepts.</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-48765-2\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/48765-2/\">48765-2</a></td><td>Allergies and adverse reactions Document</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;48765-2&quot;, &quot;display&quot;: &quot;Allergies and adverse reactions Document&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;48765-2&quot;/&gt;&lt;display value=&quot;Allergies and adverse reactions Document&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-78375-3\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/78375-3/\">78375-3</a></td><td>Discharge diagnosis Narrative</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;78375-3&quot;, &quot;display&quot;: &quot;Discharge diagnosis Narrative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;78375-3&quot;/&gt;&lt;display value=&quot;Discharge diagnosis Narrative&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-75311-1\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/75311-1/\">75311-1</a></td><td>Discharge medications note</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;75311-1&quot;, &quot;display&quot;: &quot;Discharge medications note&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;75311-1&quot;/&gt;&lt;display value=&quot;Discharge medications note&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-8648-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/8648-8/\">8648-8</a></td><td>Hospital course note</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8648-8&quot;, &quot;display&quot;: &quot;Hospital course note&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8648-8&quot;/&gt;&lt;display value=&quot;Hospital course note&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-18776-5\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/18776-5/\">18776-5</a></td><td>Plan of care note</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18776-5&quot;, &quot;display&quot;: &quot;Plan of care note&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;18776-5&quot;/&gt;&lt;display value=&quot;Plan of care note&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-42347-5\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/42347-5/\">42347-5</a></td><td>Admission diagnosis (narrative)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42347-5&quot;, &quot;display&quot;: &quot;Admission diagnosis (narrative)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42347-5&quot;/&gt;&lt;display value=&quot;Admission diagnosis (narrative)&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-42346-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/42346-7/\">42346-7</a></td><td>Medications on admission (narrative)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42346-7&quot;, &quot;display&quot;: &quot;Medications on admission (narrative)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42346-7&quot;/&gt;&lt;display value=&quot;Medications on admission (narrative)&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-46241-6\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/46241-6/\">46241-6</a></td><td>Hospital admission diagnosis Narrative - Reported</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;46241-6&quot;, &quot;display&quot;: &quot;Hospital admission diagnosis Narrative - Reported&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;46241-6&quot;/&gt;&lt;display value=&quot;Hospital admission diagnosis Narrative - Reported&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-8653-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/8653-8/\">8653-8</a></td><td>Hospital Discharge instructions</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8653-8&quot;, &quot;display&quot;: &quot;Hospital Discharge instructions&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8653-8&quot;/&gt;&lt;display value=&quot;Hospital Discharge instructions&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-11493-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/11493-4/\">11493-4</a></td><td>Hospital discharge studies summary Narrative</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11493-4&quot;, &quot;display&quot;: &quot;Hospital discharge studies summary Narrative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11493-4&quot;/&gt;&lt;display value=&quot;Hospital discharge studies summary Narrative&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-10184-0\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/10184-0/\">10184-0</a></td><td>Hospital discharge physical findings Narrative</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;10184-0&quot;, &quot;display&quot;: &quot;Hospital discharge physical findings Narrative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;10184-0&quot;/&gt;&lt;display value=&quot;Hospital discharge physical findings Narrative&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-47519-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/47519-4/\">47519-4</a></td><td>History of Procedures Document</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;47519-4&quot;, &quot;display&quot;: &quot;History of Procedures Document&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;47519-4&quot;/&gt;&lt;display value=&quot;History of Procedures Document&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-11450-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/11450-4/\">11450-4</a></td><td>Problem list - Reported</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11450-4&quot;, &quot;display&quot;: &quot;Problem list - Reported&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11450-4&quot;/&gt;&lt;display value=&quot;Problem list - Reported&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
+      "version" : "2.2.2",
+      "name" : "SIHCEEpicrisisSectionVS",
+      "title" : "Secciones LOINC de epicrisis SIHCE",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-11-13T12:33:51-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:a1a1af1c-d060-4556-90c2-c9494f337819",
+        "timestamp" : "2026-11-13T12:36:01-03:00",
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.82"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.83"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "48765-2",
+          "display" : "Allergies and adverse reactions Document"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "78375-3",
+          "display" : "Discharge diagnosis Narrative"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "75311-1",
+          "display" : "Discharge medications note"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8648-8",
+          "display" : "Hospital course note"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "18776-5",
+          "display" : "Plan of care note"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "42347-5",
+          "display" : "Admission diagnosis (narrative)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "42346-7",
+          "display" : "Medications on admission (narrative)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "46241-6",
+          "display" : "Hospital admission diagnosis Narrative - Reported"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8653-8",
+          "display" : "Hospital Discharge instructions"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "11493-4",
+          "display" : "Hospital discharge studies summary Narrative"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "10184-0",
+          "display" : "Hospital discharge physical findings Narrative"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "47519-4",
+          "display" : "History of Procedures Document"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "11450-4",
+          "display" : "Problem list - Reported"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>Loinc v2.83<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.83\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></li><li>Loinc v2.82<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://loinc.org|2.82\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></li></ul></div><p>This value set expansion contains 13 concepts.</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://loinc.org-48765-2\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/48765-2/\">48765-2</a></td><td>Allergies and adverse reactions Document</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;48765-2&quot;, &quot;display&quot;: &quot;Allergies and adverse reactions Document&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;48765-2&quot;/&gt;&lt;display value=&quot;Allergies and adverse reactions Document&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-78375-3\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/78375-3/\">78375-3</a></td><td>Discharge diagnosis Narrative</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;78375-3&quot;, &quot;display&quot;: &quot;Discharge diagnosis Narrative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;78375-3&quot;/&gt;&lt;display value=&quot;Discharge diagnosis Narrative&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-75311-1\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/75311-1/\">75311-1</a></td><td>Discharge medications note</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;75311-1&quot;, &quot;display&quot;: &quot;Discharge medications note&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;75311-1&quot;/&gt;&lt;display value=&quot;Discharge medications note&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-8648-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/8648-8/\">8648-8</a></td><td>Hospital course note</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8648-8&quot;, &quot;display&quot;: &quot;Hospital course note&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8648-8&quot;/&gt;&lt;display value=&quot;Hospital course note&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-18776-5\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/18776-5/\">18776-5</a></td><td>Plan of care note</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18776-5&quot;, &quot;display&quot;: &quot;Plan of care note&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;18776-5&quot;/&gt;&lt;display value=&quot;Plan of care note&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-42347-5\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/42347-5/\">42347-5</a></td><td>Admission diagnosis (narrative)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42347-5&quot;, &quot;display&quot;: &quot;Admission diagnosis (narrative)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42347-5&quot;/&gt;&lt;display value=&quot;Admission diagnosis (narrative)&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-42346-7\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/42346-7/\">42346-7</a></td><td>Medications on admission (narrative)</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42346-7&quot;, &quot;display&quot;: &quot;Medications on admission (narrative)&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42346-7&quot;/&gt;&lt;display value=&quot;Medications on admission (narrative)&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-46241-6\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/46241-6/\">46241-6</a></td><td>Hospital admission diagnosis Narrative - Reported</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;46241-6&quot;, &quot;display&quot;: &quot;Hospital admission diagnosis Narrative - Reported&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;46241-6&quot;/&gt;&lt;display value=&quot;Hospital admission diagnosis Narrative - Reported&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-8653-8\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/8653-8/\">8653-8</a></td><td>Hospital Discharge instructions</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8653-8&quot;, &quot;display&quot;: &quot;Hospital Discharge instructions&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8653-8&quot;/&gt;&lt;display value=&quot;Hospital Discharge instructions&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-11493-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/11493-4/\">11493-4</a></td><td>Hospital discharge studies summary Narrative</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11493-4&quot;, &quot;display&quot;: &quot;Hospital discharge studies summary Narrative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11493-4&quot;/&gt;&lt;display value=&quot;Hospital discharge studies summary Narrative&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-10184-0\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/10184-0/\">10184-0</a></td><td>Hospital discharge physical findings Narrative</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;10184-0&quot;, &quot;display&quot;: &quot;Hospital discharge physical findings Narrative&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;10184-0&quot;/&gt;&lt;display value=&quot;Hospital discharge physical findings Narrative&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-47519-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/47519-4/\">47519-4</a></td><td>History of Procedures Document</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;47519-4&quot;, &quot;display&quot;: &quot;History of Procedures Document&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;47519-4&quot;/&gt;&lt;display value=&quot;History of Procedures Document&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://loinc.org-11450-4\"> </a><code>http://loinc.org</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://loinc.org/11450-4/\">11450-4</a></td><td>Problem list - Reported</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11450-4&quot;, &quot;display&quot;: &quot;Problem list - Reported&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11450-4&quot;/&gt;&lt;display value=&quot;Problem list - Reported&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
+      "version" : "2.2.2",
+      "name" : "SIHCEEpicrisisSectionVS",
+      "title" : "Secciones LOINC de epicrisis SIHCE",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-11-13T12:33:51-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:8f84d4c4-24b7-426a-bbdd-72a6c4ac8f92",
+        "timestamp" : "2026-11-13T12:36:01-03:00",
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.82"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.83"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "48765-2",
+          "display" : "Allergies and adverse reactions Document"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "78375-3",
+          "display" : "Discharge diagnosis Narrative"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "75311-1",
+          "display" : "Discharge medications note"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8648-8",
+          "display" : "Hospital course note"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "18776-5",
+          "display" : "Plan of care note"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "42347-5",
+          "display" : "Admission diagnosis (narrative)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "42346-7",
+          "display" : "Medications on admission (narrative)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "46241-6",
+          "display" : "Hospital admission diagnosis Narrative - Reported"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8653-8",
+          "display" : "Hospital Discharge instructions"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "11493-4",
+          "display" : "Hospital discharge studies summary Narrative"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "10184-0",
+          "display" : "Hospital discharge physical findings Narrative"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "47519-4",
+          "display" : "History of Procedures Document"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "11450-4",
+          "display" : "Problem list - Reported"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on <a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019\">codesystem ICD-10-EN v2019-covid-expanded (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/sid/icd-10|2019-covid-expanded\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set expansion contains 3 concepts.</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-J18.9\"> </a><code>http://hl7.org/fhir/sid/icd-10</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469\">J18.9</a></td><td>Pneumonia, unspecified</td><td><div><p>Pneumonia, unspecified</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;J18.9&quot;, &quot;display&quot;: &quot;Pneumonia, unspecified&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;J18.9&quot;/&gt;&lt;display value=&quot;Pneumonia, unspecified&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-I10\"> </a><code>http://hl7.org/fhir/sid/icd-10</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-I10\">I10</a></td><td>Essential (primary) hypertension</td><td><div><p>Essential (primary) hypertension</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;I10&quot;, &quot;display&quot;: &quot;Essential (primary) hypertension&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;I10&quot;/&gt;&lt;display value=&quot;Essential (primary) hypertension&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-E11.9\"> </a><code>http://hl7.org/fhir/sid/icd-10</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-E11.469\">E11.9</a></td><td>Type 2 diabetes mellitus : Without complications</td><td><div/></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;E11.9&quot;, &quot;display&quot;: &quot;Type 2 diabetes mellitus : Without complications&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;E11.9&quot;/&gt;&lt;display value=&quot;Type 2 diabetes mellitus : Without complications&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10",
+      "version" : "2.2.2",
+      "name" : "SIHCEMotivoInternacionICD10VS",
+      "title" : "Motivo de internación epicrisis (ICD-10)",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-11-13T12:33:51-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:d2e24086-2fdb-40ba-b533-0969fd6bf9c8",
+        "timestamp" : "2026-11-13T12:36:01-03:00",
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "J18.9",
+          "display" : "Pneumonia, unspecified"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "I10",
+          "display" : "Essential (primary) hypertension"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "E11.9",
+          "display" : "Type 2 diabetes mellitus : Without complications"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on <a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019\">codesystem ICD-10-EN v2019-covid-expanded (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/sid/icd-10|2019-covid-expanded\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set expansion contains 3 concepts.</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-J18.9\"> </a><code>http://hl7.org/fhir/sid/icd-10</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469\">J18.9</a></td><td>Pneumonia, unspecified</td><td><div><p>Pneumonia, unspecified</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;J18.9&quot;, &quot;display&quot;: &quot;Pneumonia, unspecified&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;J18.9&quot;/&gt;&lt;display value=&quot;Pneumonia, unspecified&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-I10\"> </a><code>http://hl7.org/fhir/sid/icd-10</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-I10\">I10</a></td><td>Essential (primary) hypertension</td><td><div><p>Essential (primary) hypertension</p>\n</div></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;I10&quot;, &quot;display&quot;: &quot;Essential (primary) hypertension&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;I10&quot;/&gt;&lt;display value=&quot;Essential (primary) hypertension&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/sid/icd-10-E11.9\"> </a><code>http://hl7.org/fhir/sid/icd-10</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-E11.469\">E11.9</a></td><td>Type 2 diabetes mellitus : Without complications</td><td><div/></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;E11.9&quot;, &quot;display&quot;: &quot;Type 2 diabetes mellitus : Without complications&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;E11.9&quot;/&gt;&lt;display value=&quot;Type 2 diabetes mellitus : Without complications&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10",
+      "version" : "2.2.2",
+      "name" : "SIHCEMotivoInternacionICD10VS",
+      "title" : "Motivo de internación epicrisis (ICD-10)",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-11-13T12:33:51-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:5f2b365a-ed7d-4eee-af3e-56280889b3ba",
+        "timestamp" : "2026-11-13T12:36:01-03:00",
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "J18.9",
+          "display" : "Pneumonia, unspecified"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "I10",
+          "display" : "Essential (primary) hypertension"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "E11.9",
+          "display" : "Type 2 diabetes mellitus : Without complications"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sihce-privacy-level.html\">codesystem Niveles de privacidad SIHCE v2.2.2 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/privacy-level|2.2.2\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-normal\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-normal\">normal</a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;display value=&quot;Normal&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-confidential\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-confidential\">confidential</a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;confidential&quot;/&gt;&lt;display value=&quot;Confidencial&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-privacy-level.html\">codesystem Niveles de privacidad SIHCE v2.2.2 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/privacy-level|2.2.2\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-normal\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-privacy-level.html#privacy-level-normal\">normal</a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;display value=&quot;Normal&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-confidential\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-privacy-level.html#privacy-level-confidential\">confidential</a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;confidential&quot;/&gt;&lt;display value=&quot;Confidencial&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
       "version" : "2.2.2",
@@ -131,10 +769,10 @@
       "title" : "Niveles de privacidad SIHCE",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-11-12T23:15:14-03:00",
+      "date" : "2026-11-13T12:33:51-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:43d41109-eff4-4bbf-8226-7d14d6dd4edb",
-        "timestamp" : "2026-11-12T23:17:08-03:00",
+        "identifier" : "urn:uuid:ec36f193-7951-4dca-8f3e-d98271ce18c1",
+        "timestamp" : "2026-11-13T12:36:01-03:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -176,7 +814,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-sihce-privacy-level.html\">codesystem Niveles de privacidad SIHCE v2.2.2 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/privacy-level|2.2.2\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-normal\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-normal\">normal</a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;display value=&quot;Normal&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-confidential\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-sihce-privacy-level.html#sihce-privacy-level-confidential\">confidential</a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;confidential&quot;/&gt;&lt;display value=&quot;Confidencial&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-privacy-level.html\">codesystem Niveles de privacidad SIHCE v2.2.2 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://sihce.gob.ar/CodeSystem/privacy-level|2.2.2\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-normal\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-privacy-level.html#privacy-level-normal\">normal</a></td><td>Normal</td><td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;normal&quot;, &quot;display&quot;: &quot;Normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;display value=&quot;Normal&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://sihce.gob.ar/CodeSystem/privacy-level-confidential\"> </a><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-privacy-level.html#privacy-level-confidential\">confidential</a></td><td>Confidencial</td><td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;confidential&quot;, &quot;display&quot;: &quot;Confidencial&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/privacy-level&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;confidential&quot;/&gt;&lt;display value=&quot;Confidencial&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
       "version" : "2.2.2",
@@ -184,10 +822,10 @@
       "title" : "Niveles de privacidad SIHCE",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-11-12T23:15:14-03:00",
+      "date" : "2026-11-13T12:33:51-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:41e2695d-0ac7-4c93-8ba9-3b7cb9d2036d",
-        "timestamp" : "2026-11-12T23:17:08-03:00",
+        "identifier" : "urn:uuid:39fc5403-d7ed-484b-af0d-67de48e5ce0d",
+        "timestamp" : "2026-11-13T12:36:01-03:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{

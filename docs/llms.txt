@@ -11,6 +11,7 @@
 * [Casos de Uso — Consentimiento](en/CasosDeUso-Consentimiento.md)
 * [Operaciones](en/Operaciones.md)
 * [Operaciones — Consentimiento](en/Operaciones-Consentimiento.md)
+* [Descargas](en/downloads.md)
 * [Seguridad](en/Seguridad.md)
 * [Operaciones — Persona](en/Operaciones-Persona.md)
 * [Epicrisis — secciones propuestas](en/Epicrisis-Secciones-Propuestas.md)
@@ -23,18 +24,19 @@
 
 ### CodeSystems
 
+* [Niveles de privacidad SIHCE](en/CodeSystem-privacy-level.md)
 * [Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE](en/CodeSystem-sihce-fhir-core-element-paths.md)
 * [Rutas de elementos en modelos lógicos de operación SIHCE](en/CodeSystem-sihce-logical-operation-element-paths.md)
-* [Niveles de privacidad SIHCE](en/CodeSystem-sihce-privacy-level.md)
+* [Tipos MIME documentales SIHCE](en/CodeSystem-sihce-mime-type.md)
 
 ### ValueSets
 
-* [Tipos de documento clínico SIHCE](en/ValueSet-sihce-clinical-document-type-vs.md)
-* [Tipos MIME de contenido documental SIHCE](en/ValueSet-sihce-document-content-type-vs.md)
-* [Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto](en/ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
-* [Secciones LOINC de epicrisis SIHCE](en/ValueSet-sihce-epicrisis-section-vs.md)
-* [Motivo de internación epicrisis (ICD-10)](en/ValueSet-sihce-motivo-internacion-icd10-vs.md)
-* [Niveles de privacidad SIHCE](en/ValueSet-sihce-privacy-level-vs.md)
+* [Tipos de documento clínico SIHCE](en/ValueSet-sihce-clinical-document-type.md)
+* [Tipos MIME de contenido documental SIHCE](en/ValueSet-sihce-document-content-type.md)
+* [Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto](en/ValueSet-sihce-epicrisis-diagnosis-code.md)
+* [Secciones LOINC de epicrisis SIHCE](en/ValueSet-sihce-epicrisis-section.md)
+* [Motivo de internación epicrisis (ICD-10)](en/ValueSet-sihce-motivo-internacion-icd10.md)
+* [Niveles de privacidad SIHCE](en/ValueSet-sihce-privacy-level.md)
 
 ### Logicals
 
@@ -53,7 +55,6 @@
 * [Condición clínica epicrisis SIHCE](en/StructureDefinition-ConditionEpicrisisSIHCE.md)
 * [Consentimiento de paciente SIHCE](en/StructureDefinition-ConsentSIHCE.md)
 * [Referencia a documento clínico SIHCE](en/StructureDefinition-DocumentReferenceSIHCE.md)
-* [Medicación al alta epicrisis SIHCE](en/StructureDefinition-MedicationStatementEpicrisisSIHCE.md)
 * [Paciente SIHCE (PatientXBA)](en/StructureDefinition-PatientXBA.md)
 * [Parametros Patch Identifier SIHCE](en/StructureDefinition-parametros-patch-identifier-sihce.md)
 * [Parametros Update SDM SIHCE](en/StructureDefinition-parametros-update-sdm-sihce.md)
@@ -93,6 +94,7 @@
 * [DocumentReferenceEpicrisisNivel1 (DocumentReference)](en/DocumentReference-DocumentReferenceEpicrisisNivel1.md)
 * [DocumentReferenceEpicrisisNivel2 (DocumentReference)](en/DocumentReference-DocumentReferenceEpicrisisNivel2.md)
 * [DocumentReferenceEpicrisisNivel3 (DocumentReference)](en/DocumentReference-DocumentReferenceEpicrisisNivel3.md)
+* [Hospital Italiano de Buenos Aires (Organization)](en/Organization-hospital-italiano-ejemplo.md)
 * [ParametrosPatchIdentifierEjemplo (Parameters)](en/Parameters-ParametrosPatchIdentifierEjemplo.md)
 * [ParametrosUpdateSDMEjemplo (Parameters)](en/Parameters-ParametrosUpdateSDMEjemplo.md)
 * [PersonaSIHCEMin (Patient)](en/Patient-PersonaSIHCEMin.md)

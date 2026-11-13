@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sihce-privacy-level"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-privacy-level</b></p><a name="sihce-privacy-level"> </a><a name="hcsihce-privacy-level"> </a><ul><li>Include all codes defined in <a href="CodeSystem-privacy-level.html"><code>http://sihce.gob.ar/CodeSystem/privacy-level</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2.2.2</span></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://sihce.gob.ar/ValueSet/sihce-privacy-level"/>
+  <version value="2.2.2"/>
+  <name value="SIHCEPrivacyLevelVS"/>
+  <title value="Niveles de privacidad SIHCE"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-13T12:33:51-03:00"/>
+  <publisher value="SIHCE Development Team"/>
+  <contact>
+    <name value="SIHCE Development Team"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
+    </telecom>
+  </contact>
+  <description value="Niveles admitidos en Consent.provision.securityLabel (etapa 3)."/>
+  <compose>
+    <include>
+      <system value="http://sihce.gob.ar/CodeSystem/privacy-level"/>
+    </include>
+  </compose>
+</ValueSet>

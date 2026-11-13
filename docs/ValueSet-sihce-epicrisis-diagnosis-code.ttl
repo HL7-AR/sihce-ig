@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "sihce-epicrisis-diagnosis-code"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-epicrisis-diagnosis-code</b></p><a name=\"sihce-epicrisis-diagnosis-code\"> </a><a name=\"hcsihce-epicrisis-diagnosis-code\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://tx.fhir.org/r5\"><code>http://hl7.org/fhir/sid/icd-10</code></a><span title=\"Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used\" class=\"xhtPieceDeEmphasized\"> version ⏿2019-covid-expanded</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469\">J18.9</a></td><td>Pneumonia, unspecified</td><td>Pneumonia, unspecified</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/233604007\">233604007</a></td><td>Pneumonia (disorder)</td></tr></table></li></ul></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "1"^^xsd:integer ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "draft" ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"] ;
+  fhir:ValueSet.version [ fhir:value "2.2.2"] ;
+  fhir:ValueSet.name [ fhir:value "SIHCEEpicrisisDiagnosisCodeVS"] ;
+  fhir:ValueSet.title [ fhir:value "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto"] ;
+  fhir:ValueSet.status [ fhir:value "draft"] ;
+  fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-13T12:33:51-03:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "SIHCE Development Team"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "SIHCE Development Team" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/sid/icd-10" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "J18.9" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pneumonia, unspecified" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "233604007" ] ;
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pneumonia (disorder)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

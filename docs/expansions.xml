@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d2c62478-21fe-4b2c-9472-6c28faa757eb"/>
+  <id value="05cb1f5d-141b-4671-8297-76db84d38cff"/>
   <meta>
-    <lastUpdated value="2026-11-12T23:15:14.653-03:00"/>
+    <lastUpdated value="2026-11-13T12:33:51.792-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -67,10 +67,10 @@
         <title value="Tipos de documento clínico SIHCE"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-12T23:15:14-03:00"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:cb9f8051-bdf2-4d3b-a08f-75beca41b443"/>
-          <timestamp value="2026-11-12T23:17:07-03:00"/>
+          <identifier value="urn:uuid:cabc323e-87b3-450c-8035-eeb83f8fea03"/>
+          <timestamp value="2026-11-13T12:36:00-03:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -171,10 +171,10 @@
         <title value="Tipos de documento clínico SIHCE"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-12T23:15:14-03:00"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:0ab10fcb-5892-46f7-8d04-5785eb21d1f7"/>
-          <timestamp value="2026-11-12T23:17:07-03:00"/>
+          <identifier value="urn:uuid:29c99b24-8409-4b81-952d-7e965a61250a"/>
+          <timestamp value="2026-11-13T12:36:00-03:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -215,6 +215,1822 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-document-content-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-sihce-mime-type.html">codesystem Tipos MIME documentales SIHCE v2.2.2 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/sihce-mime-type|2.2.2" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/pdf"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47pdf">application/pdf</a>
+                </td>
+                <td>PDF</td>
+                <td>application/pdf</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/pdf&quot;, &quot;display&quot;: &quot;PDF&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/pdf&quot;/&gt;&lt;display value=&quot;PDF&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/xml"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47xml">application/xml</a>
+                </td>
+                <td>XML</td>
+                <td>application/xml</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/xml&quot;, &quot;display&quot;: &quot;XML&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/xml&quot;/&gt;&lt;display value=&quot;XML&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/fhir+json"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47fhir.43json">application/fhir+json</a>
+                </td>
+                <td>FHIR JSON</td>
+                <td>application/fhir+json</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/fhir+json&quot;, &quot;display&quot;: &quot;FHIR JSON&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/fhir+json&quot;/&gt;&lt;display value=&quot;FHIR JSON&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-document-content-type"/>
+        <version value="2.2.2"/>
+        <name value="SIHCEDocumentContentTypeVS"/>
+        <title value="Tipos MIME de contenido documental SIHCE"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:2602e78f-f0c7-43ae-9c1c-32f24b26ab49"/>
+          <timestamp value="2026-11-13T12:36:00-03:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/sihce-mime-type|2.2.2"/>
+          </parameter>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-mime-type"/>
+            <code value="application/pdf"/>
+            <display value="PDF"/>
+          </contains>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-mime-type"/>
+            <code value="application/xml"/>
+            <display value="XML"/>
+          </contains>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-mime-type"/>
+            <code value="application/fhir+json"/>
+            <display value="FHIR JSON"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-document-content-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-sihce-mime-type.html">codesystem Tipos MIME documentales SIHCE v2.2.2 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/sihce-mime-type|2.2.2" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/pdf"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47pdf">application/pdf</a>
+                </td>
+                <td>PDF</td>
+                <td>application/pdf</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/pdf&quot;, &quot;display&quot;: &quot;PDF&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/pdf&quot;/&gt;&lt;display value=&quot;PDF&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/xml"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47xml">application/xml</a>
+                </td>
+                <td>XML</td>
+                <td>application/xml</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/xml&quot;, &quot;display&quot;: &quot;XML&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/xml&quot;/&gt;&lt;display value=&quot;XML&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://sihce.gob.ar/CodeSystem/sihce-mime-type-application/fhir+json"> </a>
+                  <code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-sihce-mime-type.html#sihce-mime-type-application.47fhir.43json">application/fhir+json</a>
+                </td>
+                <td>FHIR JSON</td>
+                <td>application/fhir+json</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;, &quot;version&quot;: &quot;2.2.2&quot;, &quot;code&quot;: &quot;application/fhir+json&quot;, &quot;display&quot;: &quot;FHIR JSON&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://sihce.gob.ar/CodeSystem/sihce-mime-type&quot;/&gt;&lt;version value=&quot;2.2.2&quot;/&gt;&lt;code value=&quot;application/fhir+json&quot;/&gt;&lt;display value=&quot;FHIR JSON&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-document-content-type"/>
+        <version value="2.2.2"/>
+        <name value="SIHCEDocumentContentTypeVS"/>
+        <title value="Tipos MIME de contenido documental SIHCE"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:5f929c8a-7117-403a-997a-64e9a3010f8a"/>
+          <timestamp value="2026-11-13T12:36:01-03:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://sihce.gob.ar/CodeSystem/sihce-mime-type|2.2.2"/>
+          </parameter>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-mime-type"/>
+            <code value="application/pdf"/>
+            <display value="PDF"/>
+          </contains>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-mime-type"/>
+            <code value="application/xml"/>
+            <display value="XML"/>
+          </contains>
+          <contains>
+            <system value="http://sihce.gob.ar/CodeSystem/sihce-mime-type"/>
+            <code value="application/fhir+json"/>
+            <display value="FHIR JSON"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019">codesystem ICD-10-EN v2019-covid-expanded (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-J18.9"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469">J18.9</a>
+                </td>
+                <td>Pneumonia, unspecified</td>
+                <td>
+                  <div>
+                    <p>Pneumonia, unspecified</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;J18.9&quot;, &quot;display&quot;: &quot;Pneumonia, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;J18.9&quot;/&gt;&lt;display value=&quot;Pneumonia, unspecified&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-233604007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/233604007">233604007</a>
+                </td>
+                <td>Pneumonia</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;233604007&quot;, &quot;display&quot;: &quot;Pneumonia&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;233604007&quot;/&gt;&lt;display value=&quot;Pneumonia&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"/>
+        <version value="2.2.2"/>
+        <name value="SIHCEEpicrisisDiagnosisCodeVS"/>
+        <title value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:eea7d418-f73a-4fce-bf51-317ff1de69df"/>
+          <timestamp value="2026-11-13T12:36:01-03:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="J18.9"/>
+            <display value="Pneumonia, unspecified"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="233604007"/>
+            <display value="Pneumonia"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019">codesystem ICD-10-EN v2019-covid-expanded (CodeSystem)</a>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+                <li>SNOMED CT International edition 01-Feb 2025
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-J18.9"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469">J18.9</a>
+                </td>
+                <td>Pneumonia, unspecified</td>
+                <td>
+                  <div>
+                    <p>Pneumonia, unspecified</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;J18.9&quot;, &quot;display&quot;: &quot;Pneumonia, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;J18.9&quot;/&gt;&lt;display value=&quot;Pneumonia, unspecified&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-233604007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/233604007">233604007</a>
+                </td>
+                <td>Pneumonia</td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;233604007&quot;, &quot;display&quot;: &quot;Pneumonia&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;233604007&quot;/&gt;&lt;display value=&quot;Pneumonia&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code"/>
+        <version value="2.2.2"/>
+        <name value="SIHCEEpicrisisDiagnosisCodeVS"/>
+        <title value="Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:28fc6521-64ab-4ef7-aabc-de6d61880637"/>
+          <timestamp value="2026-11-13T12:36:01-03:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="J18.9"/>
+            <display value="Pneumonia, unspecified"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="233604007"/>
+            <display value="Pneumonia"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-section"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>Loinc v2.83
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+                <li>Loinc v2.82
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set expansion contains 13 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-48765-2"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/48765-2/">48765-2</a>
+                </td>
+                <td>Allergies and adverse reactions Document</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;48765-2&quot;, &quot;display&quot;: &quot;Allergies and adverse reactions Document&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;48765-2&quot;/&gt;&lt;display value=&quot;Allergies and adverse reactions Document&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-78375-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/78375-3/">78375-3</a>
+                </td>
+                <td>Discharge diagnosis Narrative</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;78375-3&quot;, &quot;display&quot;: &quot;Discharge diagnosis Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;78375-3&quot;/&gt;&lt;display value=&quot;Discharge diagnosis Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-75311-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/75311-1/">75311-1</a>
+                </td>
+                <td>Discharge medications note</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;75311-1&quot;, &quot;display&quot;: &quot;Discharge medications note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;75311-1&quot;/&gt;&lt;display value=&quot;Discharge medications note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-8648-8"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/8648-8/">8648-8</a>
+                </td>
+                <td>Hospital course note</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8648-8&quot;, &quot;display&quot;: &quot;Hospital course note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8648-8&quot;/&gt;&lt;display value=&quot;Hospital course note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-18776-5"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/18776-5/">18776-5</a>
+                </td>
+                <td>Plan of care note</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18776-5&quot;, &quot;display&quot;: &quot;Plan of care note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;18776-5&quot;/&gt;&lt;display value=&quot;Plan of care note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-42347-5"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/42347-5/">42347-5</a>
+                </td>
+                <td>Admission diagnosis (narrative)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42347-5&quot;, &quot;display&quot;: &quot;Admission diagnosis (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42347-5&quot;/&gt;&lt;display value=&quot;Admission diagnosis (narrative)&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-42346-7"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/42346-7/">42346-7</a>
+                </td>
+                <td>Medications on admission (narrative)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42346-7&quot;, &quot;display&quot;: &quot;Medications on admission (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42346-7&quot;/&gt;&lt;display value=&quot;Medications on admission (narrative)&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-46241-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/46241-6/">46241-6</a>
+                </td>
+                <td>Hospital admission diagnosis Narrative - Reported</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;46241-6&quot;, &quot;display&quot;: &quot;Hospital admission diagnosis Narrative - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;46241-6&quot;/&gt;&lt;display value=&quot;Hospital admission diagnosis Narrative - Reported&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-8653-8"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/8653-8/">8653-8</a>
+                </td>
+                <td>Hospital Discharge instructions</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8653-8&quot;, &quot;display&quot;: &quot;Hospital Discharge instructions&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8653-8&quot;/&gt;&lt;display value=&quot;Hospital Discharge instructions&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-11493-4"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/11493-4/">11493-4</a>
+                </td>
+                <td>Hospital discharge studies summary Narrative</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11493-4&quot;, &quot;display&quot;: &quot;Hospital discharge studies summary Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11493-4&quot;/&gt;&lt;display value=&quot;Hospital discharge studies summary Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-10184-0"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/10184-0/">10184-0</a>
+                </td>
+                <td>Hospital discharge physical findings Narrative</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;10184-0&quot;, &quot;display&quot;: &quot;Hospital discharge physical findings Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;10184-0&quot;/&gt;&lt;display value=&quot;Hospital discharge physical findings Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-47519-4"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/47519-4/">47519-4</a>
+                </td>
+                <td>History of Procedures Document</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;47519-4&quot;, &quot;display&quot;: &quot;History of Procedures Document&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;47519-4&quot;/&gt;&lt;display value=&quot;History of Procedures Document&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-11450-4"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/11450-4/">11450-4</a>
+                </td>
+                <td>Problem list - Reported</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11450-4&quot;, &quot;display&quot;: &quot;Problem list - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11450-4&quot;/&gt;&lt;display value=&quot;Problem list - Reported&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-section"/>
+        <version value="2.2.2"/>
+        <name value="SIHCEEpicrisisSectionVS"/>
+        <title value="Secciones LOINC de epicrisis SIHCE"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:a1a1af1c-d060-4556-90c2-c9494f337819"/>
+          <timestamp value="2026-11-13T12:36:01-03:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.82"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="48765-2"/>
+            <display value="Allergies and adverse reactions Document"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="78375-3"/>
+            <display value="Discharge diagnosis Narrative"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="75311-1"/>
+            <display value="Discharge medications note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8648-8"/>
+            <display value="Hospital course note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="18776-5"/>
+            <display value="Plan of care note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="42347-5"/>
+            <display value="Admission diagnosis (narrative)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="42346-7"/>
+            <display value="Medications on admission (narrative)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="46241-6"/>
+            <display value="Hospital admission diagnosis Narrative - Reported"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8653-8"/>
+            <display value="Hospital Discharge instructions"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="11493-4"/>
+            <display value="Hospital discharge studies summary Narrative"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="10184-0"/>
+            <display value="Hospital discharge physical findings Narrative"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="47519-4"/>
+            <display value="History of Procedures Document"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="11450-4"/>
+            <display value="Problem list - Reported"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-section"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>Loinc v2.83
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.83" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+                <li>Loinc v2.82
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="http://loinc.org|2.82" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <p>This value set expansion contains 13 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-48765-2"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/48765-2/">48765-2</a>
+                </td>
+                <td>Allergies and adverse reactions Document</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;48765-2&quot;, &quot;display&quot;: &quot;Allergies and adverse reactions Document&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;48765-2&quot;/&gt;&lt;display value=&quot;Allergies and adverse reactions Document&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-78375-3"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/78375-3/">78375-3</a>
+                </td>
+                <td>Discharge diagnosis Narrative</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;78375-3&quot;, &quot;display&quot;: &quot;Discharge diagnosis Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;78375-3&quot;/&gt;&lt;display value=&quot;Discharge diagnosis Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-75311-1"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/75311-1/">75311-1</a>
+                </td>
+                <td>Discharge medications note</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;75311-1&quot;, &quot;display&quot;: &quot;Discharge medications note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;75311-1&quot;/&gt;&lt;display value=&quot;Discharge medications note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-8648-8"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/8648-8/">8648-8</a>
+                </td>
+                <td>Hospital course note</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8648-8&quot;, &quot;display&quot;: &quot;Hospital course note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8648-8&quot;/&gt;&lt;display value=&quot;Hospital course note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-18776-5"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/18776-5/">18776-5</a>
+                </td>
+                <td>Plan of care note</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;18776-5&quot;, &quot;display&quot;: &quot;Plan of care note&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;18776-5&quot;/&gt;&lt;display value=&quot;Plan of care note&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-42347-5"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/42347-5/">42347-5</a>
+                </td>
+                <td>Admission diagnosis (narrative)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42347-5&quot;, &quot;display&quot;: &quot;Admission diagnosis (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42347-5&quot;/&gt;&lt;display value=&quot;Admission diagnosis (narrative)&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-42346-7"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/42346-7/">42346-7</a>
+                </td>
+                <td>Medications on admission (narrative)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;42346-7&quot;, &quot;display&quot;: &quot;Medications on admission (narrative)&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;42346-7&quot;/&gt;&lt;display value=&quot;Medications on admission (narrative)&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-46241-6"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/46241-6/">46241-6</a>
+                </td>
+                <td>Hospital admission diagnosis Narrative - Reported</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;46241-6&quot;, &quot;display&quot;: &quot;Hospital admission diagnosis Narrative - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;46241-6&quot;/&gt;&lt;display value=&quot;Hospital admission diagnosis Narrative - Reported&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-8653-8"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/8653-8/">8653-8</a>
+                </td>
+                <td>Hospital Discharge instructions</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;8653-8&quot;, &quot;display&quot;: &quot;Hospital Discharge instructions&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;8653-8&quot;/&gt;&lt;display value=&quot;Hospital Discharge instructions&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-11493-4"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/11493-4/">11493-4</a>
+                </td>
+                <td>Hospital discharge studies summary Narrative</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11493-4&quot;, &quot;display&quot;: &quot;Hospital discharge studies summary Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11493-4&quot;/&gt;&lt;display value=&quot;Hospital discharge studies summary Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-10184-0"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/10184-0/">10184-0</a>
+                </td>
+                <td>Hospital discharge physical findings Narrative</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;10184-0&quot;, &quot;display&quot;: &quot;Hospital discharge physical findings Narrative&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;10184-0&quot;/&gt;&lt;display value=&quot;Hospital discharge physical findings Narrative&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-47519-4"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/47519-4/">47519-4</a>
+                </td>
+                <td>History of Procedures Document</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;47519-4&quot;, &quot;display&quot;: &quot;History of Procedures Document&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;47519-4&quot;/&gt;&lt;display value=&quot;History of Procedures Document&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://loinc.org-11450-4"> </a>
+                  <code>http://loinc.org</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://loinc.org/11450-4/">11450-4</a>
+                </td>
+                <td>Problem list - Reported</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://loinc.org&quot;, &quot;version&quot;: &quot;2.82&quot;, &quot;code&quot;: &quot;11450-4&quot;, &quot;display&quot;: &quot;Problem list - Reported&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://loinc.org&quot;/&gt;&lt;version value=&quot;2.82&quot;/&gt;&lt;code value=&quot;11450-4&quot;/&gt;&lt;display value=&quot;Problem list - Reported&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-epicrisis-section"/>
+        <version value="2.2.2"/>
+        <name value="SIHCEEpicrisisSectionVS"/>
+        <title value="Secciones LOINC de epicrisis SIHCE"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:8f84d4c4-24b7-426a-bbdd-72a6c4ac8f92"/>
+          <timestamp value="2026-11-13T12:36:01-03:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.82"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.83"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="48765-2"/>
+            <display value="Allergies and adverse reactions Document"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="78375-3"/>
+            <display value="Discharge diagnosis Narrative"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="75311-1"/>
+            <display value="Discharge medications note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8648-8"/>
+            <display value="Hospital course note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="18776-5"/>
+            <display value="Plan of care note"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="42347-5"/>
+            <display value="Admission diagnosis (narrative)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="42346-7"/>
+            <display value="Medications on admission (narrative)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="46241-6"/>
+            <display value="Hospital admission diagnosis Narrative - Reported"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8653-8"/>
+            <display value="Hospital Discharge instructions"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="11493-4"/>
+            <display value="Hospital discharge studies summary Narrative"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="10184-0"/>
+            <display value="Hospital discharge physical findings Narrative"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="47519-4"/>
+            <display value="History of Procedures Document"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="11450-4"/>
+            <display value="Problem list - Reported"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on 
+              <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019">codesystem ICD-10-EN v2019-covid-expanded (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 3 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-J18.9"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469">J18.9</a>
+                </td>
+                <td>Pneumonia, unspecified</td>
+                <td>
+                  <div>
+                    <p>Pneumonia, unspecified</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;J18.9&quot;, &quot;display&quot;: &quot;Pneumonia, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;J18.9&quot;/&gt;&lt;display value=&quot;Pneumonia, unspecified&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-I10"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-I10">I10</a>
+                </td>
+                <td>Essential (primary) hypertension</td>
+                <td>
+                  <div>
+                    <p>Essential (primary) hypertension</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;I10&quot;, &quot;display&quot;: &quot;Essential (primary) hypertension&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;I10&quot;/&gt;&lt;display value=&quot;Essential (primary) hypertension&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-E11.9"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-E11.469">E11.9</a>
+                </td>
+                <td>Type 2 diabetes mellitus : Without complications</td>
+                <td>
+                  <div/>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;E11.9&quot;, &quot;display&quot;: &quot;Type 2 diabetes mellitus : Without complications&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;E11.9&quot;/&gt;&lt;display value=&quot;Type 2 diabetes mellitus : Without complications&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10"/>
+        <version value="2.2.2"/>
+        <name value="SIHCEMotivoInternacionICD10VS"/>
+        <title value="Motivo de internación epicrisis (ICD-10)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:d2e24086-2fdb-40ba-b533-0969fd6bf9c8"/>
+          <timestamp value="2026-11-13T12:36:01-03:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="J18.9"/>
+            <display value="Pneumonia, unspecified"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="I10"/>
+            <display value="Essential (primary) hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="E11.9"/>
+            <display value="Type 2 diabetes mellitus : Without complications"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on 
+              <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019">codesystem ICD-10-EN v2019-covid-expanded (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 3 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-J18.9"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469">J18.9</a>
+                </td>
+                <td>Pneumonia, unspecified</td>
+                <td>
+                  <div>
+                    <p>Pneumonia, unspecified</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;J18.9&quot;, &quot;display&quot;: &quot;Pneumonia, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;J18.9&quot;/&gt;&lt;display value=&quot;Pneumonia, unspecified&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-I10"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-I10">I10</a>
+                </td>
+                <td>Essential (primary) hypertension</td>
+                <td>
+                  <div>
+                    <p>Essential (primary) hypertension</p>
+
+                  </div>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;I10&quot;, &quot;display&quot;: &quot;Essential (primary) hypertension&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;I10&quot;/&gt;&lt;display value=&quot;Essential (primary) hypertension&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.org/fhir/sid/icd-10-E11.9"> </a>
+                  <code>http://hl7.org/fhir/sid/icd-10</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-E11.469">E11.9</a>
+                </td>
+                <td>Type 2 diabetes mellitus : Without complications</td>
+                <td>
+                  <div/>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10&quot;, &quot;version&quot;: &quot;2019-covid-expanded&quot;, &quot;code&quot;: &quot;E11.9&quot;, &quot;display&quot;: &quot;Type 2 diabetes mellitus : Without complications&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10&quot;/&gt;&lt;version value=&quot;2019-covid-expanded&quot;/&gt;&lt;code value=&quot;E11.9&quot;/&gt;&lt;display value=&quot;Type 2 diabetes mellitus : Without complications&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10"/>
+        <version value="2.2.2"/>
+        <name value="SIHCEMotivoInternacionICD10VS"/>
+        <title value="Motivo de internación epicrisis (ICD-10)"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:5f2b365a-ed7d-4eee-af3e-56280889b3ba"/>
+          <timestamp value="2026-11-13T12:36:01-03:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="J18.9"/>
+            <display value="Pneumonia, unspecified"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="I10"/>
+            <display value="Essential (primary) hypertension"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/icd-10"/>
+            <code value="E11.9"/>
+            <display value="Type 2 diabetes mellitus : Without complications"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="http://sihce.gob.ar/ValueSet/sihce-privacy-level"/>
     <resource>
       <ValueSet>
@@ -223,7 +2039,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v2.2.2 (CodeSystem)</a>
+              <a href="CodeSystem-privacy-level.html">codesystem Niveles de privacidad SIHCE v2.2.2 (CodeSystem)</a>
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|2.2.2" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
@@ -256,7 +2072,7 @@
                   <code>http://sihce.gob.ar/CodeSystem/privacy-level</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-sihce-privacy-level.html#sihce-privacy-level-normal">normal</a>
+                  <a href="CodeSystem-privacy-level.html#privacy-level-normal">normal</a>
                 </td>
                 <td>Normal</td>
                 <td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td>
@@ -277,7 +2093,7 @@
                   <code>http://sihce.gob.ar/CodeSystem/privacy-level</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-sihce-privacy-level.html#sihce-privacy-level-confidential">confidential</a>
+                  <a href="CodeSystem-privacy-level.html#privacy-level-confidential">confidential</a>
                 </td>
                 <td>Confidencial</td>
                 <td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td>
@@ -301,10 +2117,10 @@
         <title value="Niveles de privacidad SIHCE"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-12T23:15:14-03:00"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:43d41109-eff4-4bbf-8226-7d14d6dd4edb"/>
-          <timestamp value="2026-11-12T23:17:08-03:00"/>
+          <identifier value="urn:uuid:ec36f193-7951-4dca-8f3e-d98271ce18c1"/>
+          <timestamp value="2026-11-13T12:36:01-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -350,7 +2166,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-sihce-privacy-level.html">codesystem Niveles de privacidad SIHCE v2.2.2 (CodeSystem)</a>
+              <a href="CodeSystem-privacy-level.html">codesystem Niveles de privacidad SIHCE v2.2.2 (CodeSystem)</a>
               <span class="copy-text-inline">
                 <button data-clipboard-text="http://sihce.gob.ar/CodeSystem/privacy-level|2.2.2" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
@@ -383,7 +2199,7 @@
                   <code>http://sihce.gob.ar/CodeSystem/privacy-level</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-sihce-privacy-level.html#sihce-privacy-level-normal">normal</a>
+                  <a href="CodeSystem-privacy-level.html#privacy-level-normal">normal</a>
                 </td>
                 <td>Normal</td>
                 <td>Acceso a documentos sin etiqueta de confidencialidad elevada.</td>
@@ -404,7 +2220,7 @@
                   <code>http://sihce.gob.ar/CodeSystem/privacy-level</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="CodeSystem-sihce-privacy-level.html#sihce-privacy-level-confidential">confidential</a>
+                  <a href="CodeSystem-privacy-level.html#privacy-level-confidential">confidential</a>
                 </td>
                 <td>Confidencial</td>
                 <td>Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel.</td>
@@ -428,10 +2244,10 @@
         <title value="Niveles de privacidad SIHCE"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-11-12T23:15:14-03:00"/>
+        <date value="2026-11-13T12:33:51-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:41e2695d-0ac7-4c93-8ba9-3b7cb9d2036d"/>
-          <timestamp value="2026-11-12T23:17:08-03:00"/>
+          <identifier value="urn:uuid:39fc5403-d7ed-484b-af0d-67de48e5ce0d"/>
+          <timestamp value="2026-11-13T12:36:01-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

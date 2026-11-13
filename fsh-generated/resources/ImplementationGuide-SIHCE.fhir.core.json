@@ -106,7 +106,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/sihce-epicrisis-diagnosis-code-vs"
+          "reference": "ValueSet/sihce-epicrisis-diagnosis-code"
         },
         "name": "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto",
         "description": "ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas.",
@@ -194,11 +194,11 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/MedicationStatementEpicrisisSIHCE"
+          "reference": "Organization/hospital-italiano-ejemplo"
         },
-        "name": "Medicación al alta epicrisis SIHCE",
-        "description": "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas.",
-        "exampleBoolean": false
+        "name": "Hospital Italiano de Buenos Aires (ejemplo)",
+        "description": "Organización de ejemplo usada como author/custodian en instancias de epicrisis.",
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -282,7 +282,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/sihce-motivo-internacion-icd10-vs"
+          "reference": "ValueSet/sihce-motivo-internacion-icd10"
         },
         "name": "Motivo de internación epicrisis (ICD-10)",
         "description": "Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación.",
@@ -330,7 +330,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/sihce-privacy-level-vs"
+          "reference": "ValueSet/sihce-privacy-level"
         },
         "name": "Niveles de privacidad SIHCE",
         "description": "Niveles admitidos en Consent.provision.securityLabel (etapa 3).",
@@ -338,7 +338,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/sihce-privacy-level"
+          "reference": "CodeSystem/privacy-level"
         },
         "name": "Niveles de privacidad SIHCE",
         "description": "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3).",
@@ -418,7 +418,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/sihce-epicrisis-section-vs"
+          "reference": "ValueSet/sihce-epicrisis-section"
         },
         "name": "Secciones LOINC de epicrisis SIHCE",
         "description": "Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3).",
@@ -426,7 +426,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/sihce-clinical-document-type-vs"
+          "reference": "ValueSet/sihce-clinical-document-type"
         },
         "name": "Tipos de documento clínico SIHCE",
         "description": "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC).",
@@ -434,10 +434,18 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/sihce-document-content-type-vs"
+          "reference": "ValueSet/sihce-document-content-type"
         },
         "name": "Tipos MIME de contenido documental SIHCE",
         "description": "Formatos admitidos en DocumentReference.content.attachment.contentType.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/sihce-mime-type"
+        },
+        "name": "Tipos MIME documentales SIHCE",
+        "description": "MIME types admitidos en DocumentReference.content.attachment.contentType (independiente del CodeSystem HL7 mimetypes para builds offline).",
         "exampleBoolean": false
       }
     ],
@@ -519,6 +527,11 @@
         {
           "nameUrl": "HistorialDeCambios.html",
           "title": "Historial de Cambios",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Descargas",
           "generation": "markdown"
         }
       ]

@@ -11,7 +11,8 @@
     "coding": [
       {
         "code": "patient-privacy",
-        "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+        "display": "Privacy Consent"
       }
     ]
   },
@@ -19,8 +20,9 @@
     {
       "coding": [
         {
-          "system": "http://terminology.hl7.org/CodeSystem/consent-category",
-          "code": "healthcare"
+          "system": "http://loinc.org",
+          "code": "59284-0",
+          "display": "Consent Document"
         }
       ]
     }
@@ -51,6 +53,15 @@
       }
     ],
     "type": "permit"
+  },
+  "policyRule": {
+    "coding": [
+      {
+        "code": "OPTIN",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "display": "opt-in"
+      }
+    ]
   },
   "patient": {
     "reference": "Patient/PersonaSIHCEMin"

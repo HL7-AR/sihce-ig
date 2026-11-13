@@ -22,5 +22,13 @@
     "name" : "SIHCELogicalOperationElementPaths",
     "title" : "Rutas de elementos en modelos lógicos de operación SIHCE",
     "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...)."
+  },
+  {
+    "url" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+    "version" : "2.2.2",
+    "status" : "active",
+    "name" : "SIHCEMimeTypeCS",
+    "title" : "Tipos MIME documentales SIHCE",
+    "description" : "MIME types admitidos en DocumentReference.content.attachment.contentType (independiente del CodeSystem HL7 mimetypes para builds offline)."
   }]
 }

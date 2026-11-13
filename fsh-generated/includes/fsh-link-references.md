@@ -8,7 +8,7 @@
 [ConsentOptInHospitalSIHCE]: Consent-ConsentOptInHospitalSIHCE.html
 [ConsentOptOutGeneralSIHCE]: Consent-ConsentOptOutGeneralSIHCE.html
 [ConsentimientoModeloAFHIR]: ConceptMap-ConsentimientoModeloAFHIR.html
-[SIHCEEpicrisisDiagnosisCodeVS]: ValueSet-sihce-epicrisis-diagnosis-code-vs.html
+[SIHCEEpicrisisDiagnosisCodeVS]: ValueSet-sihce-epicrisis-diagnosis-code.html
 [DocumentoClinicoModeloAFHIR]: ConceptMap-DocumentoClinicoModeloAFHIR.html
 [ParametrosPatchIdentifierEjemplo]: Parameters-ParametrosPatchIdentifierEjemplo.html
 [ParametrosUpdateSDMEjemplo]: Parameters-ParametrosUpdateSDMEjemplo.html
@@ -19,7 +19,7 @@
 [CompositionEpicrisisNivel3]: Composition-CompositionEpicrisisNivel3.html
 [EpicrisisModeloAFHIR]: ConceptMap-EpicrisisModeloAFHIR.html
 [FederarPersonaModeloAFHIR]: ConceptMap-FederarPersonaModeloAFHIR.html
-[MedicationStatementEpicrisisSIHCE]: StructureDefinition-MedicationStatementEpicrisisSIHCE.html
+[hospital-italiano-ejemplo]: Organization-hospital-italiano-ejemplo.html
 [BuscarPersona]: StructureDefinition-BuscarPersona.html
 [Consentimiento]: StructureDefinition-Consentimiento.html
 [MLPersona]: StructureDefinition-MLPersona.html
@@ -30,14 +30,14 @@
 [ModificarSDMPersona]: StructureDefinition-ModificarSDMPersona.html
 [ModificarIDLocalPersonaModeloAFHIR]: ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html
 [ModificarSDMPersonaModeloAFHIR]: ConceptMap-ModificarSDMPersonaModeloAFHIR.html
-[SIHCEMotivoInternacionICD10VS]: ValueSet-sihce-motivo-internacion-icd10-vs.html
+[SIHCEMotivoInternacionICD10VS]: ValueSet-sihce-motivo-internacion-icd10.html
 [ConditionMotivoInternacionEjemplo]: Condition-ConditionMotivoInternacionEjemplo.html
 [sihce-persona-global]: NamingSystem-sihce-persona-global.html
 [NamingSystemOrganizationHospitalMsgc]: NamingSystem-NamingSystemOrganizationHospitalMsgc.html
 [NamingSystemHospitalItalianoFHIR]: NamingSystem-NamingSystemHospitalItalianoFHIR.html
 [NamingSystemMsgcGCBA]: NamingSystem-NamingSystemMsgcGCBA.html
-[SIHCEPrivacyLevelVS]: ValueSet-sihce-privacy-level-vs.html
-[SIHCEPrivacyLevelCS]: CodeSystem-sihce-privacy-level.html
+[SIHCEPrivacyLevelVS]: ValueSet-sihce-privacy-level.html
+[SIHCEPrivacyLevelCS]: CodeSystem-privacy-level.html
 [PacienteSIHCE]: StructureDefinition-PatientXBA.html
 [ParametrosPatchIdentifierSIHCE]: StructureDefinition-parametros-patch-identifier-sihce.html
 [ParametrosUpdateSDMSIHCE]: StructureDefinition-parametros-update-sdm-sihce.html
@@ -47,6 +47,7 @@
 [renaper-dni]: NamingSystem-renaper-dni.html
 [SIHCELogicalOperationElementPaths]: CodeSystem-sihce-logical-operation-element-paths.html
 [SIHCEFhirCoreElementPaths]: CodeSystem-sihce-fhir-core-element-paths.html
-[SIHCEEpicrisisSectionVS]: ValueSet-sihce-epicrisis-section-vs.html
-[SIHCEClinicalDocumentTypeVS]: ValueSet-sihce-clinical-document-type-vs.html
-[SIHCEDocumentContentTypeVS]: ValueSet-sihce-document-content-type-vs.html
+[SIHCEEpicrisisSectionVS]: ValueSet-sihce-epicrisis-section.html
+[SIHCEClinicalDocumentTypeVS]: ValueSet-sihce-clinical-document-type.html
+[SIHCEDocumentContentTypeVS]: ValueSet-sihce-document-content-type.html
+[SIHCEMimeTypeCS]: CodeSystem-sihce-mime-type.html

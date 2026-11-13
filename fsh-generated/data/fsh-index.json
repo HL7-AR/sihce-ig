@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "CodeSystem-privacy-level.json",
+    "fshName": "SIHCEPrivacyLevelCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/SIHCEConsentTerminology.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
     "outputFile": "CodeSystem-sihce-fhir-core-element-paths.json",
     "fshName": "SIHCEFhirCoreElementPaths",
     "fshType": "CodeSystem",
@@ -16,28 +24,28 @@
     "endLine": 89
   },
   {
-    "outputFile": "CodeSystem-sihce-privacy-level.json",
-    "fshName": "SIHCEPrivacyLevelCS",
+    "outputFile": "CodeSystem-sihce-mime-type.json",
+    "fshName": "SIHCEMimeTypeCS",
     "fshType": "CodeSystem",
-    "fshFile": "codesystems/SIHCEConsentTerminology.fsh",
-    "startLine": 1,
-    "endLine": 14
+    "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
+    "startLine": 13,
+    "endLine": 27
   },
   {
     "outputFile": "Composition-CompositionEpicrisisNivel2.json",
     "fshName": "CompositionEpicrisisNivel2",
     "fshType": "Instance",
     "fshFile": "instances/DocumentReferenceEpicrisisEjemplos.fsh",
-    "startLine": 33,
-    "endLine": 55
+    "startLine": 41,
+    "endLine": 64
   },
   {
     "outputFile": "Composition-CompositionEpicrisisNivel3.json",
     "fshName": "CompositionEpicrisisNivel3",
     "fshType": "Instance",
     "fshFile": "instances/DocumentReferenceEpicrisisEjemplos.fsh",
-    "startLine": 66,
-    "endLine": 89
+    "startLine": 75,
+    "endLine": 99
   },
   {
     "outputFile": "ConceptMap-BuscarPersonaModeloAFHIR.json",
@@ -100,32 +108,32 @@
     "fshName": "ConditionMotivoInternacionEjemplo",
     "fshType": "Instance",
     "fshFile": "instances/DocumentReferenceEpicrisisEjemplos.fsh",
-    "startLine": 57,
-    "endLine": 64
+    "startLine": 66,
+    "endLine": 73
   },
   {
     "outputFile": "Consent-ConsentOptInGeneralSIHCE.json",
     "fshName": "ConsentOptInGeneralSIHCE",
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
-    "startLine": 1,
-    "endLine": 12
+    "startLine": 8,
+    "endLine": 15
   },
   {
     "outputFile": "Consent-ConsentOptInHospitalConfidentialSIHCE.json",
     "fshName": "ConsentOptInHospitalConfidentialSIHCE",
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
-    "startLine": 64,
-    "endLine": 81
+    "startLine": 56,
+    "endLine": 69
   },
   {
     "outputFile": "Consent-ConsentOptInHospitalNormalSIHCE.json",
     "fshName": "ConsentOptInHospitalNormalSIHCE",
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
-    "startLine": 45,
-    "endLine": 62
+    "startLine": 41,
+    "endLine": 54
   },
   {
     "outputFile": "Consent-ConsentOptInHospitalSIHCE.json",
@@ -133,14 +141,14 @@
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
     "startLine": 27,
-    "endLine": 43
+    "endLine": 39
   },
   {
     "outputFile": "Consent-ConsentOptOutGeneralSIHCE.json",
     "fshName": "ConsentOptOutGeneralSIHCE",
     "fshType": "Instance",
     "fshFile": "instances/ConsentEjemplos.fsh",
-    "startLine": 14,
+    "startLine": 17,
     "endLine": 25
   },
   {
@@ -164,8 +172,8 @@
     "fshName": "DocumentReferenceEpicrisisNivel3",
     "fshType": "Instance",
     "fshFile": "instances/DocumentReferenceEpicrisisEjemplos.fsh",
-    "startLine": 91,
-    "endLine": 103
+    "startLine": 101,
+    "endLine": 113
   },
   {
     "outputFile": "NamingSystem-NamingSystemHospitalItalianoFHIR.json",
@@ -206,6 +214,14 @@
     "fshFile": "instances/NamingSystemSihcePersonaGlobal.fsh",
     "startLine": 1,
     "endLine": 22
+  },
+  {
+    "outputFile": "Organization-hospital-italiano-ejemplo.json",
+    "fshName": "hospital-italiano-ejemplo",
+    "fshType": "Instance",
+    "fshFile": "instances/OrganizationHospitalItalianoEjemplo.fsh",
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "Parameters-ParametrosPatchIdentifierEjemplo.json",
@@ -252,8 +268,8 @@
     "fshName": "CompositionEpicrisisSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
-    "startLine": 36,
-    "endLine": 107
+    "startLine": 19,
+    "endLine": 129
   },
   {
     "outputFile": "StructureDefinition-ConditionEpicrisisSIHCE.json",
@@ -269,7 +285,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/ConsentSIHCE.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 47
   },
   {
     "outputFile": "StructureDefinition-Consentimiento.json",
@@ -284,8 +300,8 @@
     "fshName": "DocumentReferenceSIHCE",
     "fshType": "Profile",
     "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
-    "startLine": 109,
-    "endLine": 150
+    "startLine": 131,
+    "endLine": 172
   },
   {
     "outputFile": "StructureDefinition-DocumentoClinico.json",
@@ -318,14 +334,6 @@
     "fshFile": "logicals/MLPersona.fsh",
     "startLine": 1,
     "endLine": 33
-  },
-  {
-    "outputFile": "StructureDefinition-MedicationStatementEpicrisisSIHCE.json",
-    "fshName": "MedicationStatementEpicrisisSIHCE",
-    "fshType": "Profile",
-    "fshFile": "profiles/DocumentoClinicoSIHCE.fsh",
-    "startLine": 19,
-    "endLine": 34
   },
   {
     "outputFile": "StructureDefinition-ModificarIDLocalPersona.json",
@@ -368,7 +376,7 @@
     "endLine": 41
   },
   {
-    "outputFile": "ValueSet-sihce-clinical-document-type-vs.json",
+    "outputFile": "ValueSet-sihce-clinical-document-type.json",
     "fshName": "SIHCEClinicalDocumentTypeVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
@@ -376,39 +384,39 @@
     "endLine": 11
   },
   {
-    "outputFile": "ValueSet-sihce-document-content-type-vs.json",
+    "outputFile": "ValueSet-sihce-document-content-type.json",
     "fshName": "SIHCEDocumentContentTypeVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
-    "startLine": 13,
-    "endLine": 25
+    "startLine": 29,
+    "endLine": 39
   },
   {
-    "outputFile": "ValueSet-sihce-epicrisis-diagnosis-code-vs.json",
+    "outputFile": "ValueSet-sihce-epicrisis-diagnosis-code.json",
     "fshName": "SIHCEEpicrisisDiagnosisCodeVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
-    "startLine": 65,
-    "endLine": 76
+    "startLine": 79,
+    "endLine": 90
   },
   {
-    "outputFile": "ValueSet-sihce-epicrisis-section-vs.json",
+    "outputFile": "ValueSet-sihce-epicrisis-section.json",
     "fshName": "SIHCEEpicrisisSectionVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
-    "startLine": 27,
-    "endLine": 49
-  },
-  {
-    "outputFile": "ValueSet-sihce-motivo-internacion-icd10-vs.json",
-    "fshName": "SIHCEMotivoInternacionICD10VS",
-    "fshType": "ValueSet",
-    "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
-    "startLine": 51,
+    "startLine": 41,
     "endLine": 63
   },
   {
-    "outputFile": "ValueSet-sihce-privacy-level-vs.json",
+    "outputFile": "ValueSet-sihce-motivo-internacion-icd10.json",
+    "fshName": "SIHCEMotivoInternacionICD10VS",
+    "fshType": "ValueSet",
+    "fshFile": "codesystems/SIHCEDocumentTerminology.fsh",
+    "startLine": 65,
+    "endLine": 77
+  },
+  {
+    "outputFile": "ValueSet-sihce-privacy-level.json",
     "fshName": "SIHCEPrivacyLevelVS",
     "fshType": "ValueSet",
     "fshFile": "codesystems/SIHCEConsentTerminology.fsh",

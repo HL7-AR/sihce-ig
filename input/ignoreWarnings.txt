@@ -4,3 +4,35 @@
 
 # En $patch-identifier y $update-sdm el nombre de parámetro es "patient" pero el contenido va en resource (operación custom); no aplica la regla del parámetro estándar de Parameters sin value.
 %If the parameter 'patient' is an instance of the parameter defined in the base FHIR standard, then it must have a value%
+%The parameter 'patient' has the same name as a parameter for at least one operation in the core specification%
+
+# Páginas *.profile.history.html generadas por el publisher (WCAG / HTML mal formado / id root duplicado); no son contenido editorial del IG.
+%The page has more than one top level heading%
+%The html source has duplicate element ids: root%
+%The html source is not well formed: Found "</div>" expecting "</h2>"%
+%The html source is not well formed: Found "</div>" expecting "</body>"%
+
+# OID sugeridos: no exigidos para esta guía nacional (no CDA/OID-based).
+%should have an OID assigned%
+%could usefully have an OID assigned%
+
+# Aún no hay package-list / publication request en sihce.gob.ar.
+%Error fetching package-list from%
+%No publication request found%
+%This IG has never been published, so the version should start with%
+
+# Narrativa StructureDefinition del publisher: </p> vs </div> (no es markdown editorial).
+%The html source is not well formed: Found "</p>" expecting "</div>"%
+
+# ConceptMaps many-to-one (varios paths lógicos → mismo elemento FHIR): esperado.
+%are both mapped to%
+
+# Fragmento cross-version no usado en esta plantilla.
+%cross-version-analysis%
+
+# URIs de dominio de ejemplo (no son NamingSystems publicados en el ecosistema).
+%No definition could be found for URL value 'http://hospitalitaliano.org.ar/fhir/documento'%
+%No definition could be found for URL value 'http://msgc.gcba.gob.ar/documento'%
+
+# Binding base FHIR Attachment.contentType (ValueSet mimetypes): TX no lo expande; el perfil usa SIHCEDocumentContentTypeVS.
+%Binding http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 could not be expanded%

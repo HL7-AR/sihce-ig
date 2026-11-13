@@ -405,11 +405,11 @@ Caso particular de DocumentoClinico (LOINC `18842-5`) con tres niveles de madure
   </tbody>
 </table>
 
-Terminología nivel 3: ICD-10 y SNOMED CT edición Argentina ([ValueSet sihce-epicrisis-diagnosis-code](ValueSet-sihce-epicrisis-diagnosis-code-vs.html)).
+Terminología nivel 3 normativa: ICD-10 para Motivo de internación ([SIHCEMotivoInternacionICD10VS](ValueSet-sihce-motivo-internacion-icd10.html)). ValueSet propuesto para otras secciones: [sihce-epicrisis-diagnosis-code](ValueSet-sihce-epicrisis-diagnosis-code.html).
 
 #### Relaciones con FHIR
 
-Ver [ConceptMap EpicrisisModeloAFHIR](ConceptMap-EpicrisisModeloAFHIR.html), [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.html), [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.html) y [MedicationStatementEpicrisisSIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.html).
+Ver [ConceptMap EpicrisisModeloAFHIR](ConceptMap-EpicrisisModeloAFHIR.html), [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.html) y [ConditionEpicrisisSIHCE](StructureDefinition-ConditionEpicrisisSIHCE.html).
 
 ### Consentimiento
 

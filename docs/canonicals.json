@@ -1,5 +1,5 @@
 [{
-  "id" : "sihce-privacy-level",
+  "id" : "privacy-level",
   "type" : "CodeSystem",
   "url" : "http://sihce.gob.ar/CodeSystem/privacy-level",
   "version" : "2.2.2",
@@ -18,6 +18,13 @@
   "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
   "version" : "2.2.2",
   "name" : "SIHCELogicalOperationElementPaths"
+},
+{
+  "id" : "sihce-mime-type",
+  "type" : "CodeSystem",
+  "url" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+  "version" : "2.2.2",
+  "name" : "SIHCEMimeTypeCS"
 },
 {
   "id" : "BuscarPersonaModeloAFHIR",
@@ -181,13 +188,6 @@
   "name" : "MLPersona"
 },
 {
-  "id" : "MedicationStatementEpicrisisSIHCE",
-  "type" : "StructureDefinition",
-  "url" : "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE",
-  "version" : "2.2.2",
-  "name" : "MedicationStatementEpicrisisSIHCE"
-},
-{
   "id" : "ModificarIDLocalPersona",
   "type" : "StructureDefinition",
   "url" : "http://sihce.gob.ar/StructureDefinition/ModificarIDLocalPersona",
@@ -223,42 +223,42 @@
   "name" : "ParametrosUpdateSDMSIHCE"
 },
 {
-  "id" : "sihce-clinical-document-type-vs",
+  "id" : "sihce-clinical-document-type",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-clinical-document-type",
   "version" : "2.2.2",
   "name" : "SIHCEClinicalDocumentTypeVS"
 },
 {
-  "id" : "sihce-document-content-type-vs",
+  "id" : "sihce-document-content-type",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
   "version" : "2.2.2",
   "name" : "SIHCEDocumentContentTypeVS"
 },
 {
-  "id" : "sihce-epicrisis-diagnosis-code-vs",
+  "id" : "sihce-epicrisis-diagnosis-code",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code",
   "version" : "2.2.2",
   "name" : "SIHCEEpicrisisDiagnosisCodeVS"
 },
 {
-  "id" : "sihce-epicrisis-section-vs",
+  "id" : "sihce-epicrisis-section",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-epicrisis-section",
   "version" : "2.2.2",
   "name" : "SIHCEEpicrisisSectionVS"
 },
 {
-  "id" : "sihce-motivo-internacion-icd10-vs",
+  "id" : "sihce-motivo-internacion-icd10",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10",
   "version" : "2.2.2",
   "name" : "SIHCEMotivoInternacionICD10VS"
 },
 {
-  "id" : "sihce-privacy-level-vs",
+  "id" : "sihce-privacy-level",
   "type" : "ValueSet",
   "url" : "http://sihce.gob.ar/ValueSet/sihce-privacy-level",
   "version" : "2.2.2",

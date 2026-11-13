@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "GuiaDeImplementacionSIHCE"] ;
   fhir:ImplementationGuide.title [ fhir:value "Guía de Implementación SIHCE - FHIR R4"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-12T23:15:14-03:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-13T12:33:51-03:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "SIHCE Development Team"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -545,8 +545,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code-vs> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/sihce-epicrisis-diagnosis-code-vs" ]
+         fhir:link <http://sihce.gob.ar/ValueSet/sihce-epicrisis-diagnosis-code> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/sihce-epicrisis-diagnosis-code" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas." ] ;
@@ -717,15 +717,15 @@
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+         fhir:Extension.valueString [ fhir:value "Organization" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MedicationStatementEpicrisisSIHCE" ]
+         fhir:link <http://sihce.gob.ar/Organization/hospital-italiano-ejemplo> ;
+         fhir:Reference.reference [ fhir:value "Organization/hospital-italiano-ejemplo" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicación al alta epicrisis SIHCE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Hospital Italiano de Buenos Aires (ejemplo)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organización de ejemplo usada como author/custodian en instancias de epicrisis." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 22 ;
        fhir:Element.extension [
@@ -874,8 +874,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10-vs> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/sihce-motivo-internacion-icd10-vs" ]
+         fhir:link <http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/sihce-motivo-internacion-icd10" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Motivo de internación epicrisis (ICD-10)" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación." ] ;
@@ -961,8 +961,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ValueSet/sihce-privacy-level-vs> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/sihce-privacy-level-vs" ]
+         fhir:link <http://sihce.gob.ar/ValueSet/sihce-privacy-level> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/sihce-privacy-level" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Niveles de privacidad SIHCE" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Niveles admitidos en Consent.provision.securityLabel (etapa 3)." ] ;
@@ -975,8 +975,8 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/CodeSystem/sihce-privacy-level> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/sihce-privacy-level" ]
+         fhir:link <http://sihce.gob.ar/CodeSystem/privacy-level> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/privacy-level" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Niveles de privacidad SIHCE" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3)." ] ;
@@ -1121,8 +1121,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ValueSet/sihce-epicrisis-section-vs> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/sihce-epicrisis-section-vs" ]
+         fhir:link <http://sihce.gob.ar/ValueSet/sihce-epicrisis-section> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/sihce-epicrisis-section" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Secciones LOINC de epicrisis SIHCE" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3)." ] ;
@@ -1135,8 +1135,8 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ValueSet/sihce-clinical-document-type-vs> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/sihce-clinical-document-type-vs" ]
+         fhir:link <http://sihce.gob.ar/ValueSet/sihce-clinical-document-type> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/sihce-clinical-document-type" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos de documento clínico SIHCE" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC)." ] ;
@@ -1149,11 +1149,25 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://sihce.gob.ar/ValueSet/sihce-document-content-type-vs> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/sihce-document-content-type-vs" ]
+         fhir:link <http://sihce.gob.ar/ValueSet/sihce-document-content-type> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/sihce-document-content-type" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos MIME de contenido documental SIHCE" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formatos admitidos en DocumentReference.content.attachment.contentType." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://sihce.gob.ar/CodeSystem/sihce-mime-type> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/sihce-mime-type" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipos MIME documentales SIHCE" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MIME types admitidos en DocumentReference.content.attachment.contentType (independiente del CodeSystem HL7 mimetypes para builds offline)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ] ;
      fhir:ImplementationGuide.definition.page [
@@ -1314,6 +1328,16 @@
          ] ;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "HistorialDeCambios.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Historial de Cambios" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 15 ;
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "downloads.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Descargas" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ] ;

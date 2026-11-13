@@ -1,13 +1,16 @@
+RuleSet: ConsentCommonMeta
+* status = #active
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
+* category[0] = http://loinc.org#59284-0 "Consent Document"
+* policyRule = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPTIN "opt-in"
+* patient = Reference(PersonaSIHCEMin)
+
 Instance: ConsentOptInGeneralSIHCE
 InstanceOf: ConsentSIHCE
 Usage: #example
 Title: "Consentimiento opt-in general (etapa 1)"
 Description: "Paciente autoriza participación general en la red SIHCE."
-* status = #active
-* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
-* category[0].coding.system = "http://terminology.hl7.org/CodeSystem/consent-category"
-* category[0].coding.code = #healthcare
-* patient.reference = "Patient/PersonaSIHCEMin"
+* insert ConsentCommonMeta
 * dateTime = "2026-08-26"
 * provision.type = #permit
 
@@ -16,11 +19,8 @@ InstanceOf: ConsentSIHCE
 Usage: #example
 Title: "Consentimiento opt-out general"
 Description: "Paciente revoca toda participación; anula autorizaciones previas."
-* status = #active
-* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
-* category[0].coding.system = "http://terminology.hl7.org/CodeSystem/consent-category"
-* category[0].coding.code = #healthcare
-* patient.reference = "Patient/PersonaSIHCEMin"
+* insert ConsentCommonMeta
+* policyRule = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPTOUT "op-out"
 * dateTime = "2026-08-27"
 * provision.type = #deny
 
@@ -29,11 +29,7 @@ InstanceOf: ConsentSIHCE
 Usage: #example
 Title: "Consentimiento opt-in por hospital (etapa 2)"
 Description: "Opt-in general con autorización explícita al Hospital Central (dominio MSGC)."
-* status = #active
-* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
-* category[0].coding.system = "http://terminology.hl7.org/CodeSystem/consent-category"
-* category[0].coding.code = #healthcare
-* patient.reference = "Patient/PersonaSIHCEMin"
+* insert ConsentCommonMeta
 * dateTime = "2026-08-26"
 * provision.type = #permit
 * provision.provision[0].actor[0].role = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#IRCP
@@ -47,11 +43,7 @@ InstanceOf: ConsentSIHCE
 Usage: #example
 Title: "Consentimiento hospital + nivel normal (etapa 3)"
 Description: "Hospital Central autorizado con nivel normal explícito."
-* status = #active
-* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
-* category[0].coding.system = "http://terminology.hl7.org/CodeSystem/consent-category"
-* category[0].coding.code = #healthcare
-* patient.reference = "Patient/PersonaSIHCEMin"
+* insert ConsentCommonMeta
 * dateTime = "2026-08-26"
 * provision.type = #permit
 * provision.provision[0].actor[0].role = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#IRCP
@@ -66,11 +58,7 @@ InstanceOf: ConsentSIHCE
 Usage: #example
 Title: "Consentimiento hospital + nivel confidential (etapa 3)"
 Description: "Hospital Central autorizado también para documentos confidential."
-* status = #active
-* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
-* category[0].coding.system = "http://terminology.hl7.org/CodeSystem/consent-category"
-* category[0].coding.code = #healthcare
-* patient.reference = "Patient/PersonaSIHCEMin"
+* insert ConsentCommonMeta
 * dateTime = "2026-08-28"
 * provision.type = #permit
 * provision.provision[0].actor[0].role = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#IRCP

@@ -72,7 +72,7 @@ Content-Type: application/fhir+json
 
 | | |
 | :--- | :--- |
-| `type` | LOINC del documento (`18842-5`epicrisis u otros del[ValueSet](ValueSet-sihce-clinical-document-type-vs.md)). |
+| `type` | LOINC del documento (`18842-5`epicrisis u otros del[ValueSet](ValueSet-sihce-clinical-document-type.md)). |
 | `subject.reference` | `Patient/{idPersonaGlobal}`— identificador SIHCE ([NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.md)). En los ejemplos publicados se usa[PersonaSIHCEMin](Patient-PersonaSIHCEMin.md). |
 | `identifier` | Id del documento asignado por el**dominio**(`system`= URI/NamingSystem del dominio). |
 | `content.attachment.url` | URL absoluta al contenido en el dominio (Binary/Composition para epicrisis). |

@@ -4,7 +4,7 @@ Usage: #example
 Title: "Epicrisis nivel 1 — PDF en dominio"
 Description: "DocumentReference con enlace a PDF hospedado en el dominio emisor. Paciente: PersonaSIHCEMin."
 * status = #current
-* type = http://loinc.org#18842-5 "Discharge summary"
+* type = http://loinc.org#18842-5 "Discharge Summary"
 * subject = Reference(PersonaSIHCEMin)
 * identifier[0].system = "http://hospitalitaliano.org.ar/fhir/documento"
 * identifier[0].value = "EP-2026-0042"
@@ -22,7 +22,7 @@ Usage: #example
 Title: "Epicrisis nivel 2 — enlace a Composition"
 Description: "DocumentReference con URL a Composition narrativa en el dominio."
 * status = #current
-* type = http://loinc.org#18842-5 "Discharge summary"
+* type = http://loinc.org#18842-5 "Discharge Summary"
 * subject = Reference(PersonaSIHCEMin)
 * identifier[0].system = "http://msgc.gcba.gob.ar/documento"
 * identifier[0].value = "MSG-EP-2026-0100"
@@ -30,17 +30,26 @@ Description: "DocumentReference con URL a Composition narrativa en el dominio."
 * content[0].attachment.url = "https://msgc.gcba.gob.ar/fhir/Composition/epicrisis-MSG-EP-2026-0100"
 * content[0].attachment.contentType = #application/fhir+json
 
+RuleSet: EpicrisisSectionCodes
+* section[alergias].code = http://loinc.org#48765-2 "Allergies and adverse reactions Document"
+* section[diagnosticoAlta].code = http://loinc.org#78375-3 "Discharge diagnosis Narrative"
+* section[medicamentosAlta].code = http://loinc.org#75311-1 "Discharge medications note"
+* section[evolucionHospitalaria].code = http://loinc.org#8648-8 "Hospital course note"
+* section[planTratamiento].code = http://loinc.org#18776-5 "Plan of Care Note"
+* section[motivoInternacion].code = http://loinc.org#46241-6 "Hospital admission diagnosis Narrative - Reported"
+
 Instance: CompositionEpicrisisNivel2
 InstanceOf: CompositionEpicrisisSIHCE
 Usage: #example
 Title: "Epicrisis nivel 2 — secciones narrativas"
 Description: "Composition con secciones tipadas en texto (nivel 2), sin entries codificadas."
 * status = #final
-* type = http://loinc.org#18842-5 "Discharge summary"
+* type = http://loinc.org#18842-5 "Discharge Summary"
 * subject = Reference(PersonaSIHCEMin)
 * date = "2026-06-08T16:00:00-03:00"
-* author = Reference(Organization/hospital-italiano-ejemplo)
+* author = Reference(hospital-italiano-ejemplo)
 * title = "Epicrisis de hospitalización"
+* insert EpicrisisSectionCodes
 * section[alergias].text.status = #generated
 * section[alergias].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Sin alergias medicamentosas conocidas.</p></div>"
 * section[diagnosticoAlta].text.status = #generated
@@ -69,11 +78,12 @@ Usage: #example
 Title: "Epicrisis nivel 3 — Motivo de internación codificado"
 Description: "Composition narrativa más Motivo de internación con entry Condition (ICD-10)."
 * status = #final
-* type = http://loinc.org#18842-5 "Discharge summary"
+* type = http://loinc.org#18842-5 "Discharge Summary"
 * subject = Reference(PersonaSIHCEMin)
 * date = "2026-06-08T16:30:00-03:00"
-* author = Reference(Organization/hospital-italiano-ejemplo)
+* author = Reference(hospital-italiano-ejemplo)
 * title = "Epicrisis de hospitalización (nivel 3)"
+* insert EpicrisisSectionCodes
 * section[alergias].text.status = #generated
 * section[alergias].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Sin alergias medicamentosas conocidas.</p></div>"
 * section[diagnosticoAlta].text.status = #generated
@@ -94,7 +104,7 @@ Usage: #example
 Title: "Epicrisis nivel 3 — enlace a Composition codificada"
 Description: "DocumentReference con URL a Composition nivel 3 (Motivo de internación ICD-10)."
 * status = #current
-* type = http://loinc.org#18842-5 "Discharge summary"
+* type = http://loinc.org#18842-5 "Discharge Summary"
 * subject = Reference(PersonaSIHCEMin)
 * identifier[0].system = "http://msgc.gcba.gob.ar/documento"
 * identifier[0].value = "MSG-EP-2026-0103"

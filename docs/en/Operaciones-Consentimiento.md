@@ -36,7 +36,7 @@ Cualquier **dominio autenticado** puede registrar las preferencias de privacidad
 | `normal` | Sin etiqueta confidential elevada |
 | `confidential` | Normal**más**documentos con`DocumentReference.securityLabel`confidential |
 
-Terminología: [CodeSystem privacy-level](CodeSystem-sihce-privacy-level.md), [ValueSet sihce-privacy-level](ValueSet-sihce-privacy-level-vs.md).
+Terminología: [CodeSystem privacy-level](CodeSystem-privacy-level.md), [ValueSet sihce-privacy-level](ValueSet-sihce-privacy-level.md).
 
 #### Request — etapa 1 (opt-in general)
 

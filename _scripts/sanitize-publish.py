@@ -2,10 +2,10 @@
 """
 Post-process IG Publisher output before public sync (GitHub Pages / QA GCABA).
 
-- Removes absolute filesystem paths leaked into HTML (Publisher QA / dependency tables).
+- Removes absolute filesystem paths leaked into HTML (Publisher QA / dependency tables),
+  including qa.html so the public QA Report does not expose local paths.
 - Upgrades navigable http:// links to https:// in HTML attributes only (not JSON/XML).
 - Strips build boilerplate HTML comments (Auto-converted from …).
-- Removes public QA report footer link (qa.html is not published).
 - Removes bootstrap.min.js script tags (navbar JS is inlined via template fragment-ig-navbar-js.html).
 """
 
@@ -42,11 +42,6 @@ LEAK_RE = re.compile(r"/(?:Users|home)/[^\s\"'<>]+")
 AUTO_CONVERTED_COMMENT_RE = re.compile(
     r"<!--\s*Auto-converted from [^>]*?-->\s*",
     re.IGNORECASE,
-)
-
-QA_FOOTER_LINK_RE = re.compile(
-    r'\s*\|\s*<a\s[^>]*href="\.\./qa\.html"[^>]*>.*?</a>',
-    re.IGNORECASE | re.DOTALL,
 )
 
 # External bootstrap / legacy ig-navbar script tags (navbar is inlined in the template).
@@ -164,7 +159,7 @@ def sanitize_html(text: str) -> str:
     text = ATTR_URL_RE.sub(attr_repl, text)
     text = ABS_PATH_IN_URL_RE.sub(r"url(\1)", text)
     text = AUTO_CONVERTED_COMMENT_RE.sub("", text)
-    text = QA_FOOTER_LINK_RE.sub("", text)
+    text = LEAK_RE.sub("[local-path]", text)
     text = BOOTSTRAP_SCRIPT_RE.sub("", text)
     text = ensure_inline_navbar(text)
     return text
@@ -191,8 +186,6 @@ def main() -> int:
 
     leaks: list[str] = []
     for path in html_files:
-        if path.name.startswith("qa"):
-            continue
         content = path.read_text(encoding="utf-8", errors="replace")
         if LEAK_RE.search(content):
             leaks.append(str(path.relative_to(root)))
@@ -200,7 +193,7 @@ def main() -> int:
     http_nav = []
     nav_http_re = re.compile(r'\b(href|src)=(["\'])http://[^"\']+\2', re.I)
     for path in html_files:
-        if path.name.startswith("qa"):
+        if path.name.startswith("qa") and path.name not in ("qa.html", "qa.min.html"):
             continue
         for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
             if nav_http_re.search(line):

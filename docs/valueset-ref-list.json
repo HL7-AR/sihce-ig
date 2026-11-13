@@ -46,7 +46,7 @@
     "name" : "SIHCEDocumentContentTypeVS",
     "title" : "Tipos MIME de contenido documental SIHCE",
     "description" : "Formatos admitidos en DocumentReference.content.attachment.contentType.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/mimetypes"],
+    "systems" : ["http://sihce.gob.ar/CodeSystem/sihce-mime-type"],
     "uses" : {
     },
     "StructureDefinition-DocumentReferenceSIHCE.html" : "Referencia a documento clínico SIHCE"

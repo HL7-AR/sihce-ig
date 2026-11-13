@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="hospital-italiano-ejemplo"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization hospital-italiano-ejemplo</b></p><a name="hospital-italiano-ejemplo"> </a><a name="hchospital-italiano-ejemplo"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Hospital Italiano de Buenos Aires (http://hospitalitaliano.org.ar/fhir#NamingSystemHospitalItalianoFHIR#hospital-italiano)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="http://hospitalitaliano.org.ar/fhir"/>
+    <value value="hospital-italiano"/>
+  </identifier>
+  <name value="Hospital Italiano de Buenos Aires"/>
+</Organization>

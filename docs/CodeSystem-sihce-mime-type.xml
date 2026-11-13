@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="sihce-mime-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem sihce-mime-type</b></p><a name="sihce-mime-type"> </a><a name="hcsihce-mime-type"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">application/pdf<a name="sihce-mime-type-application.47pdf"> </a></td><td>PDF</td><td>application/pdf</td></tr><tr><td style="white-space:nowrap">application/xml<a name="sihce-mime-type-application.47xml"> </a></td><td>XML</td><td>application/xml</td></tr><tr><td style="white-space:nowrap">application/fhir+json<a name="sihce-mime-type-application.47fhir.43json"> </a></td><td>FHIR JSON</td><td>application/fhir+json</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://sihce.gob.ar/CodeSystem/sihce-mime-type"/>
+  <version value="2.2.2"/>
+  <name value="SIHCEMimeTypeCS"/>
+  <title value="Tipos MIME documentales SIHCE"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-13T12:33:51-03:00"/>
+  <publisher value="SIHCE Development Team"/>
+  <contact>
+    <name value="SIHCE Development Team"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
+    </telecom>
+  </contact>
+  <description value="MIME types admitidos en DocumentReference.content.attachment.contentType (independiente del CodeSystem HL7 mimetypes para builds offline)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="application/pdf"/>
+    <display value="PDF"/>
+    <definition value="application/pdf"/>
+  </concept>
+  <concept>
+    <code value="application/xml"/>
+    <display value="XML"/>
+    <definition value="application/xml"/>
+  </concept>
+  <concept>
+    <code value="application/fhir+json"/>
+    <display value="FHIR JSON"/>
+    <definition value="application/fhir+json"/>
+  </concept>
+</CodeSystem>

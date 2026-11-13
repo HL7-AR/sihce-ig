@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "sihce-document-content-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet sihce-document-content-type</b></p><a name=\"sihce-document-content-type\"> </a><a name=\"hcsihce-document-content-type\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-sihce-mime-type.html\"><code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2.2.2</span></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "http://sihce.gob.ar/ValueSet/sihce-document-content-type",
+  "version" : "2.2.2",
+  "name" : "SIHCEDocumentContentTypeVS",
+  "title" : "Tipos MIME de contenido documental SIHCE",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-11-13T12:33:51-03:00",
+  "publisher" : "SIHCE Development Team",
+  "contact" : [{
+    "name" : "SIHCE Development Team",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/diegokaminker/sihce-ig"
+    }]
+  }],
+  "description" : "Formatos admitidos en DocumentReference.content.attachment.contentType.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type"
+    }]
+  }
+}

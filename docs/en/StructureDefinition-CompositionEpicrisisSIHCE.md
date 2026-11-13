@@ -108,7 +108,7 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
         "coding" : [{
           "system" : "http://loinc.org",
           "code" : "18842-5",
-          "display" : "Discharge summary"
+          "display" : "Discharge Summary"
         }]
       },
       "mustSupport" : true
@@ -155,8 +155,8 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "path" : "Composition.section",
       "slicing" : {
         "discriminator" : [{
-          "type" : "pattern",
-          "path" : "code.coding"
+          "type" : "value",
+          "path" : "code.coding.code"
         }],
         "rules" : "open"
       },
@@ -171,15 +171,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:alergias.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "48765-2",
-          "display" : "Allergies and adverse reactions Document"
-        }]
-      }
+      "id" : "Composition.section:alergias.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:alergias.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:alergias.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "48765-2"
+    },
+    {
+      "id" : "Composition.section:alergias.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Allergies and adverse reactions Document"
     },
     {
       "id" : "Composition.section:alergias.text",
@@ -195,15 +206,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:diagnosticoAlta.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "78375-3",
-          "display" : "Discharge diagnosis"
-        }]
-      }
+      "id" : "Composition.section:diagnosticoAlta.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:diagnosticoAlta.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:diagnosticoAlta.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "78375-3"
+    },
+    {
+      "id" : "Composition.section:diagnosticoAlta.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Discharge diagnosis Narrative"
     },
     {
       "id" : "Composition.section:diagnosticoAlta.text",
@@ -219,15 +241,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:medicamentosAlta.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "75311-1",
-          "display" : "Discharge medications"
-        }]
-      }
+      "id" : "Composition.section:medicamentosAlta.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:medicamentosAlta.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:medicamentosAlta.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "75311-1"
+    },
+    {
+      "id" : "Composition.section:medicamentosAlta.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Discharge medications note"
     },
     {
       "id" : "Composition.section:medicamentosAlta.text",
@@ -243,15 +276,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:evolucionHospitalaria.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "8648-8",
-          "display" : "Hospital course Narrative"
-        }]
-      }
+      "id" : "Composition.section:evolucionHospitalaria.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:evolucionHospitalaria.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:evolucionHospitalaria.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "8648-8"
+    },
+    {
+      "id" : "Composition.section:evolucionHospitalaria.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Hospital course note"
     },
     {
       "id" : "Composition.section:evolucionHospitalaria.text",
@@ -267,15 +311,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:planTratamiento.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "18776-5",
-          "display" : "Plan of treatment Narrative"
-        }]
-      }
+      "id" : "Composition.section:planTratamiento.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:planTratamiento.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:planTratamiento.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "18776-5"
+    },
+    {
+      "id" : "Composition.section:planTratamiento.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Plan of Care Note"
     },
     {
       "id" : "Composition.section:planTratamiento.text",
@@ -291,15 +346,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:diagnosticoAdmision.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "42347-5",
-          "display" : "Admission diagnosis"
-        }]
-      }
+      "id" : "Composition.section:diagnosticoAdmision.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:diagnosticoAdmision.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:diagnosticoAdmision.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "42347-5"
+    },
+    {
+      "id" : "Composition.section:diagnosticoAdmision.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Admission diagnosis (narrative)"
     },
     {
       "id" : "Composition.section:diagnosticoAdmision.text",
@@ -315,15 +381,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:medicamentosIngreso.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "42346-7",
-          "display" : "Medications on admission"
-        }]
-      }
+      "id" : "Composition.section:medicamentosIngreso.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:medicamentosIngreso.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:medicamentosIngreso.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "42346-7"
+    },
+    {
+      "id" : "Composition.section:medicamentosIngreso.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Medications on admission (narrative)"
     },
     {
       "id" : "Composition.section:medicamentosIngreso.text",
@@ -339,15 +416,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:motivoInternacion.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "46241-6",
-          "display" : "Reason for hospitalization Narrative"
-        }]
-      }
+      "id" : "Composition.section:motivoInternacion.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:motivoInternacion.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:motivoInternacion.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "46241-6"
+    },
+    {
+      "id" : "Composition.section:motivoInternacion.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Hospital admission diagnosis Narrative - Reported"
     },
     {
       "id" : "Composition.section:motivoInternacion.text",
@@ -373,15 +461,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:instruccionesAlta.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "8653-8",
-          "display" : "Discharge instructions"
-        }]
-      }
+      "id" : "Composition.section:instruccionesAlta.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:instruccionesAlta.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:instruccionesAlta.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "8653-8"
+    },
+    {
+      "id" : "Composition.section:instruccionesAlta.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Hospital Discharge Instructions"
     },
     {
       "id" : "Composition.section:instruccionesAlta.text",
@@ -397,15 +496,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:resumenEstudios.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "11493-4",
-          "display" : "Discharge studies summary Narrative"
-        }]
-      }
+      "id" : "Composition.section:resumenEstudios.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:resumenEstudios.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:resumenEstudios.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "11493-4"
+    },
+    {
+      "id" : "Composition.section:resumenEstudios.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Hospital discharge studies summary Narrative"
     },
     {
       "id" : "Composition.section:resumenEstudios.text",
@@ -421,15 +531,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:hallazgosFisicos.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "10184-0",
-          "display" : "Physical findings note"
-        }]
-      }
+      "id" : "Composition.section:hallazgosFisicos.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:hallazgosFisicos.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:hallazgosFisicos.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "10184-0"
+    },
+    {
+      "id" : "Composition.section:hallazgosFisicos.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Hospital discharge physical findings Narrative"
     },
     {
       "id" : "Composition.section:hallazgosFisicos.text",
@@ -445,15 +566,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:historialProcedimientos.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "47519-4",
-          "display" : "History of procedures"
-        }]
-      }
+      "id" : "Composition.section:historialProcedimientos.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:historialProcedimientos.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:historialProcedimientos.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "47519-4"
+    },
+    {
+      "id" : "Composition.section:historialProcedimientos.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "History of Procedures Document"
     },
     {
       "id" : "Composition.section:historialProcedimientos.text",
@@ -469,15 +601,26 @@ Other representations of profile: [CSV](../StructureDefinition-CompositionEpicri
       "mustSupport" : true
     },
     {
-      "id" : "Composition.section:listaProblemas.code",
-      "path" : "Composition.section.code",
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "http://loinc.org",
-          "code" : "11450-4",
-          "display" : "Problem list"
-        }]
-      }
+      "id" : "Composition.section:listaProblemas.code.coding",
+      "path" : "Composition.section.code.coding",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Composition.section:listaProblemas.code.coding.system",
+      "path" : "Composition.section.code.coding.system",
+      "patternUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Composition.section:listaProblemas.code.coding.code",
+      "path" : "Composition.section.code.coding.code",
+      "min" : 1,
+      "patternCode" : "11450-4"
+    },
+    {
+      "id" : "Composition.section:listaProblemas.code.coding.display",
+      "path" : "Composition.section.code.coding.display",
+      "patternString" : "Problem list - Reported"
     },
     {
       "id" : "Composition.section:listaProblemas.text",

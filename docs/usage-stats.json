@@ -28,12 +28,6 @@
         "title": "Referencia a documento clínico SIHCE"
       }
     ],
-    "MedicationStatement": [
-      {
-        "url": "http://sihce.gob.ar/StructureDefinition/MedicationStatementEpicrisisSIHCE",
-        "title": "Medicación al alta epicrisis SIHCE"
-      }
-    ],
     "Patient": [
       {
         "url": "http://sihce.gob.ar/StructureDefinition/PatientXBA",
@@ -65,9 +59,6 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [

@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/CodeSystem/sihce-mime-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "sihce-mime-type"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sihce-mime-type</b></p><a name=\"sihce-mime-type\"> </a><a name=\"hcsihce-mime-type\"> </a><p>This case-sensitive code system <code>http://sihce.gob.ar/CodeSystem/sihce-mime-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">application/pdf<a name=\"sihce-mime-type-application.47pdf\"> </a></td><td>PDF</td><td>application/pdf</td></tr><tr><td style=\"white-space:nowrap\">application/xml<a name=\"sihce-mime-type-application.47xml\"> </a></td><td>XML</td><td>application/xml</td></tr><tr><td style=\"white-space:nowrap\">application/fhir+json<a name=\"sihce-mime-type-application.47fhir.43json\"> </a></td><td>FHIR JSON</td><td>application/fhir+json</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ] ;
+     fhir:Extension.valueInteger [ fhir:value "3"^^xsd:integer ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status" ] ;
+     fhir:Extension.valueCode [ fhir:value "trial-use" ]
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://sihce.gob.ar/CodeSystem/sihce-mime-type"] ;
+  fhir:CodeSystem.version [ fhir:value "2.2.2"] ;
+  fhir:CodeSystem.name [ fhir:value "SIHCEMimeTypeCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Tipos MIME documentales SIHCE"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-13T12:33:51-03:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "SIHCE Development Team"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "SIHCE Development Team" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/diegokaminker/sihce-ig" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "MIME types admitidos en DocumentReference.content.attachment.contentType (independiente del CodeSystem HL7 mimetypes para builds offline)."] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "application/pdf" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "PDF" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "application/pdf" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "application/xml" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "XML" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "application/xml" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "application/fhir+json" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "FHIR JSON" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "application/fhir+json" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/CodeSystem/sihce-mime-type.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

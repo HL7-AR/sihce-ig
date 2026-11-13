@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://sihce.gob.ar/Organization/hospital-italiano-ejemplo> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "hospital-italiano-ejemplo"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization hospital-italiano-ejemplo</b></p><a name=\"hospital-italiano-ejemplo\"> </a><a name=\"hchospital-italiano-ejemplo\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hospital Italiano de Buenos Aires (http://hospitalitaliano.org.ar/fhir#NamingSystemHospitalItalianoFHIR#hospital-italiano)</p><hr/></div>"
+  ] ;
+  fhir:Organization.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "http://hospitalitaliano.org.ar/fhir" ] ;
+     fhir:Identifier.value [ fhir:value "hospital-italiano" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Hospital Italiano de Buenos Aires"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://sihce.gob.ar/Organization/hospital-italiano-ejemplo.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

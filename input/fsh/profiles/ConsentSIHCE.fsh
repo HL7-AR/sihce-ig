@@ -13,13 +13,14 @@ Description: "Preferencias de privacidad del paciente en la red SIHCE (FHIR R4).
 * status 1..1 MS
 * status = #active
 * scope 1..1 MS
-* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy "Privacy Consent"
 * category 1..* MS
 * category.coding 1..1 MS
 * category.coding.system 1..1 MS
-* category.coding.system = "http://terminology.hl7.org/CodeSystem/consent-category"
+* category.coding.system = "http://loinc.org"
 * category.coding.code 1..1 MS
-* category.coding.code = #healthcare
+* category.coding.code = #59284-0
+* category.coding.display = "Consent Document"
 * patient 1..1 MS
 * patient only Reference(Patient)
 * patient.reference 1..1 MS

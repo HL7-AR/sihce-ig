@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-Consentimiento.cs
   "name" : "Consentimiento",
   "title" : "Modelo lógico Consentimiento (SIHCE)",
   "status" : "active",
-  "date" : "2026-11-12T23:15:14-03:00",
+  "date" : "2026-11-13T12:33:51-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",
@@ -92,7 +92,7 @@ Other representations of profile: [CSV](../StructureDefinition-Consentimiento.cs
       "id" : "Consentimiento.datosPaciente.idPersonaGlobal",
       "path" : "Consentimiento.datosPaciente.idPersonaGlobal",
       "short" : "Id persona SIHCE",
-      "definition" : "Identificador global ([NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.html)).",
+      "definition" : "Identificador global SIHCE (NamingSystem sihce-persona-global).",
       "min" : 1,
       "max" : "1",
       "type" : [{

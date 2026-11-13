@@ -7,14 +7,14 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionEpicrisisNivel3</b></p><a name=\"CompositionEpicrisisNivel3\"> </a><a name=\"hcCompositionEpicrisisNivel3\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CompositionEpicrisisSIHCE.html\">Composición epicrisis SIHCE</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18842-5}\">Discharge summary</span></p><p><b>date</b>: 2026-06-08 16:30:00-0300</p><p><b>author</b>: <a href=\"Organization/hospital-italiano-ejemplo\">Organization/hospital-italiano-ejemplo</a></p><p><b>title</b>: Epicrisis de hospitalización (nivel 3)</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Composition CompositionEpicrisisNivel3</b></p><a name=\"CompositionEpicrisisNivel3\"> </a><a name=\"hcCompositionEpicrisisNivel3\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CompositionEpicrisisSIHCE.html\">Composición epicrisis SIHCE</a></p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18842-5}\">Discharge Summary</span></p><p><b>date</b>: 2026-06-08 16:30:00-0300</p><p><b>author</b>: <a href=\"Organization-hospital-italiano-ejemplo.html\">Hospital Italiano de Buenos Aires (http://hospitalitaliano.org.ar/fhir#NamingSystemHospitalItalianoFHIR#hospital-italiano)</a></p><p><b>title</b>: Epicrisis de hospitalización (nivel 3)</p></div>"
   },
   "status" : "final",
   "type" : {
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "18842-5",
-      "display" : "Discharge summary"
+      "display" : "Discharge Summary"
     }]
   },
   "subject" : {
@@ -26,36 +26,78 @@
   }],
   "title" : "Epicrisis de hospitalización (nivel 3)",
   "section" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48765-2",
+        "display" : "Allergies and adverse reactions Document"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Sin alergias medicamentosas conocidas.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "78375-3",
+        "display" : "Discharge diagnosis Narrative"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad, resuelta.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "75311-1",
+        "display" : "Discharge medications note"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Amoxicilina 500 mg VO c/8h por 5 días.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8648-8",
+        "display" : "Hospital course note"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Evolución favorable con antibiótico IV, paso a VO al alta.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "18776-5",
+        "display" : "Plan of Care Note"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Control ambulatorio en 7 días. Reposo relativo.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "46241-6",
+        "display" : "Hospital admission diagnosis Narrative - Reported"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad.</p></div>"

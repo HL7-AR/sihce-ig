@@ -102,7 +102,8 @@ Other representations of profile: [CSV](../StructureDefinition-ConsentSIHCE.csv)
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
-          "code" : "patient-privacy"
+          "code" : "patient-privacy",
+          "display" : "Privacy Consent"
         }]
       },
       "mustSupport" : true
@@ -123,15 +124,20 @@ Other representations of profile: [CSV](../StructureDefinition-ConsentSIHCE.csv)
       "id" : "Consent.category.coding.system",
       "path" : "Consent.category.coding.system",
       "min" : 1,
-      "patternUri" : "http://terminology.hl7.org/CodeSystem/consent-category",
+      "patternUri" : "http://loinc.org",
       "mustSupport" : true
     },
     {
       "id" : "Consent.category.coding.code",
       "path" : "Consent.category.coding.code",
       "min" : 1,
-      "patternCode" : "healthcare",
+      "patternCode" : "59284-0",
       "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category.coding.display",
+      "path" : "Consent.category.coding.display",
+      "patternString" : "Consent Document"
     },
     {
       "id" : "Consent.patient",

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sihce-motivo-internacion-icd10"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet sihce-motivo-internacion-icd10</b></p><a name="sihce-motivo-internacion-icd10"> </a><a name="hcsihce-motivo-internacion-icd10"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://tx.fhir.org/r5"><code>http://hl7.org/fhir/sid/icd-10</code></a><span title="Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used" class="xhtPieceDeEmphasized"> version ⏿2019-covid-expanded</span> where code  = <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-J18.469">J18.9</a></li><li>Include codes from<a href="http://tx.fhir.org/r5"><code>http://hl7.org/fhir/sid/icd-10</code></a><span title="Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used" class="xhtPieceDeEmphasized"> version ⏿2019-covid-expanded</span> where code  = <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-I10">I10</a></li><li>Include codes from<a href="http://tx.fhir.org/r5"><code>http://hl7.org/fhir/sid/icd-10</code></a><span title="Version is not explicitly stated. When building this specification, the most recent version 2019-covid-expanded has been used" class="xhtPieceDeEmphasized"> version ⏿2019-covid-expanded</span> where code  = <a href="http://tx.fhir.org/r5/CodeSystem/icd10-2019#icd10-2019-E11.469">E11.9</a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="http://sihce.gob.ar/ValueSet/sihce-motivo-internacion-icd10"/>
+  <version value="2.2.2"/>
+  <name value="SIHCEMotivoInternacionICD10VS"/>
+  <title value="Motivo de internación epicrisis (ICD-10)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-13T12:33:51-03:00"/>
+  <publisher value="SIHCE Development Team"/>
+  <contact>
+    <name value="SIHCE Development Team"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/diegokaminker/sihce-ig"/>
+    </telecom>
+  </contact>
+  <description value="Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <filter>
+        <property value="code"/>
+        <op value="="/>
+        <value value="J18.9"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <filter>
+        <property value="code"/>
+        <op value="="/>
+        <value value="I10"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <filter>
+        <property value="code"/>
+        <op value="="/>
+        <value value="E11.9"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

@@ -49,7 +49,7 @@ Other representations of profile: [CSV](../StructureDefinition-FederarPersona.cs
   "name" : "FederarPersona",
   "title" : "Modelo lógico FederarPersona (FederadorBA)",
   "status" : "active",
-  "date" : "2026-11-12T23:15:14-03:00",
+  "date" : "2026-11-13T12:33:51-03:00",
   "publisher" : "SIHCE Development Team",
   "contact" : [{
     "name" : "SIHCE Development Team",

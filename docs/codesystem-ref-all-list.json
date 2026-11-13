@@ -12,18 +12,6 @@
     "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
-    "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "Medication Status Codes",
-    "title" : "Medication  status  codes",
-    "description" : "Medication Status Codes",
-    "oids" : ["2.16.840.1.113883.4.642.4.1379"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-medication-statement-status.html" : "Medication  status  codes"
-  },
-  {
     "url" : "http://hl7.org/fhir/administrative-gender",
     "version" : "4.0.1",
     "status" : "active",
@@ -188,8 +176,8 @@
     "description" : "International Statistical Classification of Diseases and Related Health Problems 10th Revision",
     "uses" : {
     },
-    "ValueSet-sihce-motivo-internacion-icd10-vs.html" : "Motivo de internación epicrisis (ICD-10)",
-    "ValueSet-sihce-epicrisis-diagnosis-code-vs.html" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto"
+    "ValueSet-sihce-motivo-internacion-icd10.html" : "Motivo de internación epicrisis (ICD-10)",
+    "ValueSet-sihce-epicrisis-diagnosis-code.html" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto"
   },
   {
     "url" : "http://loinc.org",
@@ -200,13 +188,13 @@
     "description" : "This is a place holder for the code system which is fully supported through internal means (not by this code system)",
     "uses" : {
     },
+    "ValueSet-sihce-epicrisis-section.html" : "Secciones LOINC de epicrisis SIHCE",
     "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
-    "ValueSet-sihce-clinical-document-type-vs.html" : "Tipos de documento clínico SIHCE",
-    "ValueSet-sihce-epicrisis-section-vs.html" : "Secciones LOINC de epicrisis SIHCE",
-    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
-    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
     "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
-    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
+    "ValueSet-sihce-clinical-document-type.html" : "Tipos de documento clínico SIHCE",
+    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
+    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/privacy-level",
@@ -217,7 +205,7 @@
     "description" : "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3).",
     "uses" : {
     },
-    "ValueSet-sihce-privacy-level-vs.html" : "Niveles de privacidad SIHCE"
+    "ValueSet-sihce-privacy-level.html" : "Niveles de privacidad SIHCE"
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-fhir-core-element-paths",
@@ -228,13 +216,13 @@
     "description" : "Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition).",
     "uses" : {
     },
-    "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
-    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
-    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
     "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
-    "ConceptMap-ConsentimientoModeloAFHIR.html" : "Consentimiento: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR",
     "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
-    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
+    "ConceptMap-ConsentimientoModeloAFHIR.html" : "Consentimiento: modelo lógico a FHIR",
+    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR"
   },
   {
     "url" : "http://sihce.gob.ar/CodeSystem/sihce-logical-operation-element-paths",
@@ -245,13 +233,24 @@
     "description" : "Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento...).",
     "uses" : {
     },
-    "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR",
-    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
-    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
     "ConceptMap-BuscarPersonaModeloAFHIR.html" : "BuscarPersona: modelo lógico a FHIR",
-    "ConceptMap-ConsentimientoModeloAFHIR.html" : "Consentimiento: modelo lógico a FHIR",
+    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR",
     "ConceptMap-EpicrisisModeloAFHIR.html" : "Epicrisis: modelo lógico a FHIR",
-    "ConceptMap-FederarPersonaModeloAFHIR.html" : "FederarPersona: modelo lógico a FHIR"
+    "ConceptMap-ConsentimientoModeloAFHIR.html" : "Consentimiento: modelo lógico a FHIR",
+    "ConceptMap-DocumentoClinicoModeloAFHIR.html" : "DocumentoClinico: modelo lógico a FHIR",
+    "ConceptMap-ModificarSDMPersonaModeloAFHIR.html" : "ModificarSDMPersona: modelo lógico a FHIR",
+    "ConceptMap-ModificarIDLocalPersonaModeloAFHIR.html" : "ModificarIDLocalPersona: modelo lógico a FHIR"
+  },
+  {
+    "url" : "http://sihce.gob.ar/CodeSystem/sihce-mime-type",
+    "version" : "2.2.2",
+    "status" : "active",
+    "name" : "SIHCEMimeTypeCS",
+    "title" : "Tipos MIME documentales SIHCE",
+    "description" : "MIME types admitidos en DocumentReference.content.attachment.contentType (independiente del CodeSystem HL7 mimetypes para builds offline).",
+    "uses" : {
+    },
+    "ValueSet-sihce-document-content-type.html" : "Tipos MIME de contenido documental SIHCE"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -263,17 +262,14 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "ValueSet-sihce-epicrisis-diagnosis-code.html" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto",
     "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-    "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-    "ValueSet-sihce-epicrisis-diagnosis-code-vs.html" : "Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto",
-    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
     "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-    "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
-    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes"
+    "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -405,18 +401,6 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-list-order.html" : "List Order Codes"
-  },
-  {
-    "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "Medication usage category codes",
-    "title" : "Medication usage category codes",
-    "description" : "Medication Status Codes",
-    "oids" : ["2.16.840.1.113883.4.642.4.1120"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-medication-statement-category.html" : "Medication usage category codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",

@@ -8,7 +8,7 @@ Description: "Registro de preferencias de privacidad del paciente en SIHCE. Tres
 * ^extension[$fmm].valueInteger = 3
 * ^extension[$standards-status].valueCode = #trial-use
 * datosPaciente 1..1 BackboneElement "Paciente" "Persona titular del consentimiento."
-* datosPaciente.idPersonaGlobal 1..1 string "Id persona SIHCE" "Identificador global ([NamingSystem sihce-persona-global](NamingSystem-sihce-persona-global.html))."
+* datosPaciente.idPersonaGlobal 1..1 string "Id persona SIHCE" "Identificador global SIHCE (NamingSystem sihce-persona-global)."
 * datosConsentimiento 1..1 BackboneElement "Consentimiento" "Decisión de participación en la red."
 * datosConsentimiento.participacionGeneral 1..1 code "Participación general" "permit = opt-in; deny = opt-out (anula todo lo anterior)."
 * datosConsentimiento.fechaRegistro 1..1 dateTime "Fecha registro" "Momento del alta o actualización."

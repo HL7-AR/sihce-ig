@@ -12,10 +12,102 @@
       {
         "code": "18842-5",
         "system": "http://loinc.org",
-        "display": "Discharge summary"
+        "display": "Discharge Summary"
       }
     ]
   },
+  "section": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "48765-2",
+            "system": "http://loinc.org",
+            "display": "Allergies and adverse reactions Document"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Sin alergias medicamentosas conocidas.</p></div>"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "78375-3",
+            "system": "http://loinc.org",
+            "display": "Discharge diagnosis Narrative"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad, resuelta.</p></div>"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "75311-1",
+            "system": "http://loinc.org",
+            "display": "Discharge medications note"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Amoxicilina 500 mg VO c/8h por 5 días.</p></div>"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "8648-8",
+            "system": "http://loinc.org",
+            "display": "Hospital course note"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Evolución favorable con antibiótico IV, paso a VO al alta.</p></div>"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "18776-5",
+            "system": "http://loinc.org",
+            "display": "Plan of Care Note"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Control ambulatorio en 7 días. Reposo relativo.</p></div>"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "46241-6",
+            "system": "http://loinc.org",
+            "display": "Hospital admission diagnosis Narrative - Reported"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad.</p></div>"
+      }
+    }
+  ],
   "subject": {
     "reference": "Patient/PersonaSIHCEMin"
   },
@@ -25,43 +117,5 @@
       "reference": "Organization/hospital-italiano-ejemplo"
     }
   ],
-  "title": "Epicrisis de hospitalización",
-  "section": [
-    {
-      "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Sin alergias medicamentosas conocidas.</p></div>"
-      }
-    },
-    {
-      "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad, resuelta.</p></div>"
-      }
-    },
-    {
-      "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Amoxicilina 500 mg VO c/8h por 5 días.</p></div>"
-      }
-    },
-    {
-      "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Evolución favorable con antibiótico IV, paso a VO al alta.</p></div>"
-      }
-    },
-    {
-      "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Control ambulatorio en 7 días. Reposo relativo.</p></div>"
-      }
-    },
-    {
-      "text": {
-        "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad.</p></div>"
-      }
-    }
-  ]
+  "title": "Epicrisis de hospitalización"
 }

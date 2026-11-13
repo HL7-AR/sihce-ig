@@ -1,0 +1,13 @@
+{
+  "resourceType" : "Organization",
+  "id" : "hospital-italiano-ejemplo",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization hospital-italiano-ejemplo</b></p><a name=\"hospital-italiano-ejemplo\"> </a><a name=\"hchospital-italiano-ejemplo\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Hospital Italiano de Buenos Aires (http://hospitalitaliano.org.ar/fhir#NamingSystemHospitalItalianoFHIR#hospital-italiano)</p><hr/></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hospitalitaliano.org.ar/fhir",
+    "value" : "hospital-italiano"
+  }],
+  "name" : "Hospital Italiano de Buenos Aires"
+}

@@ -1,5 +1,5 @@
 CodeSystem: SIHCEPrivacyLevelCS
-Id: sihce-privacy-level
+Id: privacy-level
 Title: "Niveles de privacidad SIHCE"
 Description: "Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3)."
 * ^url = "http://sihce.gob.ar/CodeSystem/privacy-level"
@@ -14,7 +14,7 @@ Description: "Nivel de acceso documental otorgado a un hospital en el consentimi
 * #confidential "Confidencial" "Acceso a documentos normal y a documentos marcados como confidential en DocumentReference.securityLabel."
 
 ValueSet: SIHCEPrivacyLevelVS
-Id: sihce-privacy-level-vs
+Id: sihce-privacy-level
 Title: "Niveles de privacidad SIHCE"
 Description: "Niveles admitidos en Consent.provision.securityLabel (etapa 3)."
 * ^url = "http://sihce.gob.ar/ValueSet/sihce-privacy-level"

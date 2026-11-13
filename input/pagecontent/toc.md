@@ -43,22 +43,20 @@
 
 8.11 [Condición epicrisis SIHCE](StructureDefinition-ConditionEpicrisisSIHCE.html)
 
-8.12 [Medicación al alta epicrisis SIHCE](StructureDefinition-MedicationStatementEpicrisisSIHCE.html)
+8.12 [sihce-persona-global](NamingSystem-sihce-persona-global.html)
 
-8.13 [sihce-persona-global](NamingSystem-sihce-persona-global.html)
+8.13 [DocumentReference epicrisis nivel 1](DocumentReference-DocumentReferenceEpicrisisNivel1.html)
 
-8.14 [DocumentReference epicrisis nivel 1](DocumentReference-DocumentReferenceEpicrisisNivel1.html)
+8.14 [Composition epicrisis nivel 2](Composition-CompositionEpicrisisNivel2.html)
 
-8.15 [Composition epicrisis nivel 2](Composition-CompositionEpicrisisNivel2.html)
+8.15 [Consentimiento SIHCE](StructureDefinition-ConsentSIHCE.html)
 
-8.16 [Consentimiento SIHCE](StructureDefinition-ConsentSIHCE.html)
+8.16 [CodeSystem privacy-level](CodeSystem-privacy-level.html)
 
-8.17 [CodeSystem privacy-level](CodeSystem-sihce-privacy-level.html)
+8.17 [NamingSystem Organization hospital (ejemplo MSGC)](NamingSystem-NamingSystemOrganizationHospitalMsgc.html)
 
-8.18 [NamingSystem Organization hospital (ejemplo MSGC)](NamingSystem-NamingSystemOrganizationHospitalMsgc.html)
+8.18 [Descarga vía Proxy Central (ITI-68)](Operaciones-Documentos.html#op-documento-proxy)
 
-8.19 [Descarga vía Proxy Central (ITI-68)](Operaciones-Documentos.html#op-documento-proxy)
+8.19 [Consent opt-in general (etapa 1)](Consent-ConsentOptInGeneralSIHCE.html)
 
-8.26 [Consent opt-in general (etapa 1)](Consent-ConsentOptInGeneralSIHCE.html)
-
-8.27 [Consent opt-in hospital + confidential (etapa 3)](Consent-ConsentOptInHospitalConfidentialSIHCE.html)
+8.20 [Consent opt-in hospital + confidential (etapa 3)](Consent-ConsentOptInHospitalConfidentialSIHCE.html)

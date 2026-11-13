@@ -63,8 +63,10 @@
   </div>  <!-- /segment-post-footer -->
 
   <!-- JS and analytics only. -->
-  <!-- Navbar: inline script (do not load bootstrap.min.js — ZAP / publisher wipes assets/js). -->
-  {% include fragment-ig-navbar-js.html %}
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="{{site.data.info.assets}}assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="{{site.data.info.assets}}assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="{{site.data.info.assets}}assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>

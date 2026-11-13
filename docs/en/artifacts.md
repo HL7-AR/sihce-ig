@@ -31,7 +31,6 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [ Composición epicrisis SIHCE  ](StructureDefinition-CompositionEpicrisisSIHCE.md) | Documento estructurado de epicrisis (LOINC 18842-5). Nivel 2: secciones tipadas con text. Nivel 3: solo Motivo de internación (46241-6) con entry Condition + ICD-10. Resto de codificaciones en propuestas de votación. |
 | [ Condición clínica epicrisis SIHCE  ](StructureDefinition-ConditionEpicrisisSIHCE.md) | Motivo de internación codificado en epicrisis nivel 3 (ICD-10). Binding extensible al ValueSet SIHCEMotivoInternacionICD10VS. |
 | [ Consentimiento de paciente SIHCE  ](StructureDefinition-ConsentSIHCE.md) | Preferencias de privacidad del paciente en la red SIHCE (FHIR R4). Etapa 1: provision.type permit/deny (opt-in/out general). Etapa 2: provision.provision con actor Organization (hospital). Etapa 3: securityLabel normal o confidential (obligatorio y explícito). |
-| [ Medicación al alta epicrisis SIHCE  ](StructureDefinition-MedicationStatementEpicrisisSIHCE.md) | Propuesta de medicación al alta para futuras secciones codificadas (no exigida por CompositionEpicrisisSIHCE en esta versión). Ver página de secciones propuestas. |
 | [ Paciente SIHCE (PatientXBA)  ](StructureDefinition-PatientXBA.md) | Perfil de Patient para interoperabilidad SIHCE vía X-BA (empadronamiento y federación) |
 | [ Parametros Patch Identifier SIHCE  ](StructureDefinition-parametros-patch-identifier-sihce.md) | Estructura de Parameters para la operacion $patch-identifier de SIHCE. |
 | [ Parametros Update SDM SIHCE  ](StructureDefinition-parametros-update-sdm-sihce.md) | Estructura de Parameters para la operacion $update-sdm de SIHCE. |
@@ -43,12 +42,12 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
-| [ Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto  ](ValueSet-sihce-epicrisis-diagnosis-code-vs.md) | ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas. |
-| [ Motivo de internación epicrisis (ICD-10)  ](ValueSet-sihce-motivo-internacion-icd10-vs.md) | Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación. |
-| [ Niveles de privacidad SIHCE  ](ValueSet-sihce-privacy-level-vs.md) | Niveles admitidos en Consent.provision.securityLabel (etapa 3). |
-| [ Secciones LOINC de epicrisis SIHCE  ](ValueSet-sihce-epicrisis-section-vs.md) | Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3). |
-| [ Tipos MIME de contenido documental SIHCE  ](ValueSet-sihce-document-content-type-vs.md) | Formatos admitidos en DocumentReference.content.attachment.contentType. |
-| [ Tipos de documento clínico SIHCE  ](ValueSet-sihce-clinical-document-type-vs.md) | Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC). |
+| [ Diagnósticos epicrisis (ICD-10 y SNOMED CT AR) — propuesto  ](ValueSet-sihce-epicrisis-diagnosis-code.md) | ValueSet histórico/propuesto para otras secciones de diagnóstico. En esta versión la única sección normativa codificada usa SIHCEMotivoInternacionICD10VS. Ver página Epicrisis-Secciones-Propuestas. |
+| [ Motivo de internación epicrisis (ICD-10)  ](ValueSet-sihce-motivo-internacion-icd10.md) | Códigos ICD-10 para Condition en la sección Motivo de internación (nivel 3). Binding extensible; el ValueSet lista códigos representativos para publicación. |
+| [ Niveles de privacidad SIHCE  ](ValueSet-sihce-privacy-level.md) | Niveles admitidos en Consent.provision.securityLabel (etapa 3). |
+| [ Secciones LOINC de epicrisis SIHCE  ](ValueSet-sihce-epicrisis-section.md) | Secciones tipadas de CompositionEpicrisisSIHCE (narrativas; Motivo de internación admite entry en nivel 3). |
+| [ Tipos MIME de contenido documental SIHCE  ](ValueSet-sihce-document-content-type.md) | Formatos admitidos en DocumentReference.content.attachment.contentType. |
+| [ Tipos de documento clínico SIHCE  ](ValueSet-sihce-clinical-document-type.md) | Tipos documentales admitidos en DocumentReferenceSIHCE (LOINC). |
 
 ### Terminology: Code Systems 
 
@@ -56,9 +55,10 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
-| [ Niveles de privacidad SIHCE  ](CodeSystem-sihce-privacy-level.md) | Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3). |
+| [ Niveles de privacidad SIHCE  ](CodeSystem-privacy-level.md) | Nivel de acceso documental otorgado a un hospital en el consentimiento del paciente (etapa 3). |
 | [ Rutas de elementos FHIR usadas como destino en ConceptMap SIHCE  ](CodeSystem-sihce-fhir-core-element-paths.md) | Códigos de correlación con Patient, Organization y OperationOutcome (no canónicos de StructureDefinition). |
 | [ Rutas de elementos en modelos lógicos de operación SIHCE  ](CodeSystem-sihce-logical-operation-element-paths.md) | Códigos usados como origen en ConceptMap (rutas tipo LogicalRoot.segmento…). |
+| [ Tipos MIME documentales SIHCE  ](CodeSystem-sihce-mime-type.md) | MIME types admitidos en DocumentReference.content.attachment.contentType (independiente del CodeSystem HL7 mimetypes para builds offline). |
 
 ### Terminology: Naming Systems 
 
@@ -104,6 +104,7 @@ These are example instances that show what data produced and consumed by systems
 | [ Epicrisis nivel 2 — secciones narrativas  ](Composition-CompositionEpicrisisNivel2.md) | Composition con secciones tipadas en texto (nivel 2), sin entries codificadas. |
 | [ Epicrisis nivel 3 — Motivo de internación codificado  ](Composition-CompositionEpicrisisNivel3.md) | Composition narrativa más Motivo de internación con entry Condition (ICD-10). |
 | [ Epicrisis nivel 3 — enlace a Composition codificada  ](DocumentReference-DocumentReferenceEpicrisisNivel3.md) | DocumentReference con URL a Composition nivel 3 (Motivo de internación ICD-10). |
+| [ Hospital Italiano de Buenos Aires (ejemplo)  ](Organization-hospital-italiano-ejemplo.md) | Organización de ejemplo usada como author/custodian en instancias de epicrisis. |
 | [ Motivo de internación — ICD-10 J18.9  ](Condition-ConditionMotivoInternacionEjemplo.md) | Condition de ejemplo para Motivo de internación (nivel 3). |
 | [ PersonaSIHCEMin  ](Patient-PersonaSIHCEMin.md) | Ejemplo de Recurso Paciente con Set de Datos Minimos |
 | [ PersonaSIHCEPatch  ](Patient-PersonaSIHCEPatch.md) | Ejemplo de Recurso Paciente para Patch de Datos Minimos |

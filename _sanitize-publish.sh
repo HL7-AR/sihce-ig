@@ -18,9 +18,8 @@ echo "Removing Bootstrap JS (replaced by ig-navbar.js)..."
 find "${OUTPUT}" -path '*/assets/js/bootstrap.min.js' -type f -delete 2>/dev/null || true
 
 echo "Removing internal QA / build artifacts from public output..."
+# Keep qa.html / qa.min.html (sanitized) for the public QA Report footer link.
 QA_PATTERNS=(
-  "qa.html"
-  "qa.min.html"
   "qa-ipreview.html"
   "qa-dep.html"
   "qa-tx.html"

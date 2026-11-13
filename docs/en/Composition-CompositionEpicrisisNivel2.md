@@ -10,11 +10,11 @@ Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisis
 
 **status**: Final
 
-**type**: Discharge summary
+**type**: Discharge Summary
 
 **date**: 2026-06-08 16:00:00-0300
 
-**author**: [Organization/hospital-italiano-ejemplo](Organization/hospital-italiano-ejemplo)
+**author**: [Hospital Italiano de Buenos Aires (http://hospitalitaliano.org.ar/fhir#NamingSystemHospitalItalianoFHIR#hospital-italiano)](Organization-hospital-italiano-ejemplo.md)
 
 **title**: Epicrisis de hospitalización
 
@@ -34,7 +34,7 @@ Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisis
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "18842-5",
-      "display" : "Discharge summary"
+      "display" : "Discharge Summary"
     }]
   },
   "subject" : {
@@ -46,36 +46,78 @@ Profile: [Composición epicrisis SIHCE](StructureDefinition-CompositionEpicrisis
   }],
   "title" : "Epicrisis de hospitalización",
   "section" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "48765-2",
+        "display" : "Allergies and adverse reactions Document"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Sin alergias medicamentosas conocidas.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "78375-3",
+        "display" : "Discharge diagnosis Narrative"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad, resuelta.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "75311-1",
+        "display" : "Discharge medications note"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Amoxicilina 500 mg VO c/8h por 5 días.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "8648-8",
+        "display" : "Hospital course note"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Evolución favorable con antibiótico IV, paso a VO al alta.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "18776-5",
+        "display" : "Plan of Care Note"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Control ambulatorio en 7 días. Reposo relativo.</p></div>"
     }
   },
   {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "46241-6",
+        "display" : "Hospital admission diagnosis Narrative - Reported"
+      }]
+    },
     "text" : {
       "status" : "generated",
       "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Neumonía adquirida en la comunidad.</p></div>"

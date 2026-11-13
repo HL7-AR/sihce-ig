@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://sihce.gob.ar/ImplementationGuide/SIHCE.fhir.core | *Version*:2.2.2 |
-| Draft as of 2026-11-12 | *Computable Name*:GuiaDeImplementacionSIHCE |
+| Draft as of 2026-11-13 | *Computable Name*:GuiaDeImplementacionSIHCE |
 
 ### Sistema Integrador de Historias Clínicas Electrónicas
 
@@ -59,12 +59,12 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://tx.fhir.org/r5/CodeSystem/x-loinc2.82): [Composition/CompositionEpicrisisNivel2](Composition-CompositionEpicrisisNivel2.md), [Composition/CompositionEpicrisisNivel3](Composition-CompositionEpicrisisNivel3.md)... Show 7 more, [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md), [DocumentReference/DocumentReferenceEpicrisisNivel1](DocumentReference-DocumentReferenceEpicrisisNivel1.md), [DocumentReference/DocumentReferenceEpicrisisNivel2](DocumentReference-DocumentReferenceEpicrisisNivel2.md), [DocumentReference/DocumentReferenceEpicrisisNivel3](DocumentReference-DocumentReferenceEpicrisisNivel3.md), [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md), [SIHCEClinicalDocumentTypeVS](ValueSet-sihce-clinical-document-type-vs.md) and [SIHCEEpicrisisSectionVS](ValueSet-sihce-epicrisis-section-vs.md)
+* [LOINC](http://tx.fhir.org/r5/CodeSystem/x-loinc2.82): [Composition/CompositionEpicrisisNivel2](Composition-CompositionEpicrisisNivel2.md), [Composition/CompositionEpicrisisNivel3](Composition-CompositionEpicrisisNivel3.md)... Show 12 more, [CompositionEpicrisisSIHCE](StructureDefinition-CompositionEpicrisisSIHCE.md), [Consent/ConsentOptInGeneralSIHCE](Consent-ConsentOptInGeneralSIHCE.md), [Consent/ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfidentialSIHCE.md), [Consent/ConsentOptInHospitalNormalSIHCE](Consent-ConsentOptInHospitalNormalSIHCE.md), [Consent/ConsentOptInHospitalSIHCE](Consent-ConsentOptInHospitalSIHCE.md), [Consent/ConsentOptOutGeneralSIHCE](Consent-ConsentOptOutGeneralSIHCE.md), [DocumentReference/DocumentReferenceEpicrisisNivel1](DocumentReference-DocumentReferenceEpicrisisNivel1.md), [DocumentReference/DocumentReferenceEpicrisisNivel2](DocumentReference-DocumentReferenceEpicrisisNivel2.md), [DocumentReference/DocumentReferenceEpicrisisNivel3](DocumentReference-DocumentReferenceEpicrisisNivel3.md), [DocumentReferenceSIHCE](StructureDefinition-DocumentReferenceSIHCE.md), [SIHCEClinicalDocumentTypeVS](ValueSet-sihce-clinical-document-type.md) and [SIHCEEpicrisisSectionVS](ValueSet-sihce-epicrisis-section.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [SIHCEEpicrisisDiagnosisCodeVS](ValueSet-sihce-epicrisis-diagnosis-code-vs.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [SIHCEEpicrisisDiagnosisCodeVS](ValueSet-sihce-epicrisis-diagnosis-code.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
@@ -72,6 +72,7 @@ This publication includes IP covered under the following statements.
 * [Condition Clinical Status Codes](http://terminology.hl7.org/7.5.0/CodeSystem-condition-clinical.html): [Condition/ConditionMotivoInternacionEjemplo](Condition-ConditionMotivoInternacionEjemplo.md)
 * [Consent Scope Codes](http://terminology.hl7.org/7.5.0/CodeSystem-consentscope.html): [Consent/ConsentOptInGeneralSIHCE](Consent-ConsentOptInGeneralSIHCE.md), [Consent/ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfidentialSIHCE.md)... Show 4 more, [Consent/ConsentOptInHospitalNormalSIHCE](Consent-ConsentOptInHospitalNormalSIHCE.md), [Consent/ConsentOptInHospitalSIHCE](Consent-ConsentOptInHospitalSIHCE.md), [Consent/ConsentOptOutGeneralSIHCE](Consent-ConsentOptOutGeneralSIHCE.md) and [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md)
 * [identifierType](http://terminology.hl7.org/7.5.0/CodeSystem-v2-0203.html): [Parameters/ParametrosPatchIdentifierEjemplo](Parameters-ParametrosPatchIdentifierEjemplo.md), [Parameters/ParametrosUpdateSDMEjemplo](Parameters-ParametrosUpdateSDMEjemplo.md), [Patient/PersonaSIHCEMin](Patient-PersonaSIHCEMin.md) and [Patient/PersonaSIHCEPatch](Patient-PersonaSIHCEPatch.md)
+* [ActCode](http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html): [Consent/ConsentOptInGeneralSIHCE](Consent-ConsentOptInGeneralSIHCE.md), [Consent/ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfidentialSIHCE.md), [Consent/ConsentOptInHospitalNormalSIHCE](Consent-ConsentOptInHospitalNormalSIHCE.md), [Consent/ConsentOptInHospitalSIHCE](Consent-ConsentOptInHospitalSIHCE.md) and [Consent/ConsentOptOutGeneralSIHCE](Consent-ConsentOptOutGeneralSIHCE.md)
 * [ParticipationType](http://terminology.hl7.org/7.5.0/CodeSystem-v3-ParticipationType.html): [Consent/ConsentOptInHospitalConfidentialSIHCE](Consent-ConsentOptInHospitalConfidentialSIHCE.md), [Consent/ConsentOptInHospitalNormalSIHCE](Consent-ConsentOptInHospitalNormalSIHCE.md), [Consent/ConsentOptInHospitalSIHCE](Consent-ConsentOptInHospitalSIHCE.md) and [ConsentSIHCE](StructureDefinition-ConsentSIHCE.md)
 
 

@@ -12,7 +12,7 @@ Profile: [Referencia a documento clínico SIHCE](StructureDefinition-DocumentRef
 
 **status**: Current
 
-**type**: Discharge summary
+**type**: Discharge Summary
 
 **subject**: [Carlos Pereira(official) Male, DoB: 1939-12-20 ( National unique individual identifier: RenaperDNI#12345678 (use: official))](Patient-PersonaSIHCEMin.md)
 
@@ -50,7 +50,7 @@ Profile: [Referencia a documento clínico SIHCE](StructureDefinition-DocumentRef
     "coding" : [{
       "system" : "http://loinc.org",
       "code" : "18842-5",
-      "display" : "Discharge summary"
+      "display" : "Discharge Summary"
     }]
   },
   "subject" : {
